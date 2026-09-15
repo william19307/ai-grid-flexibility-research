@@ -38,7 +38,7 @@ Public-data 2030 scenario (documented assumptions; hourly load shape not indepen
 
 - Task–power model: batch arrivals, deadlines, measured modes, idle power, backlog conservation (implemented; see `联合模型方法与验证_v0.1`).
 - Joint planning–operation LP with shared investment, chronological dispatch, transport network with losses, storage, water-conserving cascades (implemented; 118 + 74 verification checks).
-- Regional inputs: 2020 base year, official annual anchors, `[PENDING: validated hourly shapes, reconciled capacities and vintages]`.
+- Regional inputs: 2020 base year, official annual anchors; peak-load plausibility check against public reports: Jiangsu consistent (>100 GW), Gansu anchored peak ~11% above the 2021 official peak, Guizhou anchored peak above the 2026 record, so the 2018-derived hourly shape overstates peak-to-mean ratios in Gansu and Guizhou and biases scarcity upward. `[PENDING: validated hourly shapes, reconciled capacities and vintages]`.
 - Scenarios S0/S0b/S1/S2/S3 and metrics (equal service, equal reliability, system cost, investment, emissions, delivery gap, participation).
 - Data and code availability: registry `data_registry.csv`; all public sources with checksums.
 
