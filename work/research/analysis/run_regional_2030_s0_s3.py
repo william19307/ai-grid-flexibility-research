@@ -36,6 +36,17 @@ def costs_2030():
         batt_power_inv_yr=annuity('battery inverter'),batt_energy_inv_yr=g('battery storage','investment')*1000*(0.05/(1-1.05**-g('battery storage','lifetime'))),
         source='PyPSA-China V3.0 archive costs_2030.csv; 5% discount; EUR')
 
+GEM_NAME={'InnerMongolia':'Inner Mongolia'}
+def gem_fleet_any(prov):
+    t=pd.read_csv(OUT/'gem_fleet_all_provinces_2020_2030.csv');name=GEM_NAME.get(prov,prov);t=t[t.province==name].set_index('type')
+    g=lambda k:float(t.loc[k,'mw_2030']) if k in t.index else 0.
+    return dict(coal=g('coal'),gas=g('oil/gas'),nuclear=g('nuclear'),hydro_gem=g('hydropower'))
+
+def neighbours(prov):
+    code=CODE[prov];inv={v:k for k,v in CODE.items()}
+    hvdc=pd.read_csv(ROOT/'work/research/prepared/HVDC_source_list_rebuilt_UNVERIFIED_GW.csv',index_col=0);hvac=pd.read_csv(ROOT/'work/research/prepared/HVAC_source_list_rebuilt_UNVERIFIED_GW.csv',index_col=0)
+    link=(hvdc.loc[code]+hvac.loc[code]);return {inv[c]:float(v*1000) for c,v in link.items() if v>0 and c in inv}
+
 def gem_fleet(prov):
     t=pd.read_csv(OUT/'gem_fleet_three_provinces_2020_2030.csv');t=t[t.province==prov].set_index('type')
     return dict(coal=float(t.loc['coal','mw_2030_operating_plus_construction']),gas=float(t.loc['oil/gas','mw_2030_operating_plus_construction']),nuclear=float(t.loc['nuclear','mw_2030_operating_plus_construction']),hydro_gem=float(t.loc['hydropower','mw_2030_operating_plus_construction']))
@@ -70,7 +81,7 @@ def helios_queue_jobs(T,u,start_hour,slack_mult,slack_base_h,seed):
         out.append(Batch(f'h{t}_{d_}_{len(out)}',t,d_,w))
     return out,dict(extended=ext,dropped_share=dropped/target,n=len(out))
 
-def run(prov,ai_share=0.10,u=0.7,idle_frac=0.25,slack_mult=1.0,slack_base_h=6.0,export=True,ext_load_frac=0.6,coal_min=0.4,event_q=0.05,allow_new_coal=False,tag=''):
+def run(prov,ai_share=0.10,u=0.7,idle_frac=0.25,slack_mult=1.0,slack_base_h=6.0,export=True,ext_load_frac=0.6,coal_min=0.4,event_q=0.05,allow_new_coal=False,tag='',ext_mode='price',rt_price=True):
     t0=time.time();c=costs_2030();p=base.province_inputs(prov);fleet=gem_fleet(prov);ratio=load_ratio(prov)
     load30=p['load']*ratio;peak30=float(load30.max())
     q,pr,cfg=base.dvfs_modes();P_full=ai_share*peak30;idle=idle_frac*P_full;mode_power=np.maximum(P_full*pr,idle+1e-6)
@@ -86,6 +97,18 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.25,slack_mult=1.0,slack_base_h=6.0,
         if not r['feasible']:raise RuntimeError(('S1 infeasible',name))
         fixed_S1[name]=np.array(r['slot_average_power']);meta_jobs[name]['s1_bill']=r['energy_cost']
     cap=p['cap'];nodes=[prov,'EXT'];hydro_mw=fleet['hydro_gem']  # GEM 2030 hydro units (operating+construction); archive other-hydro profile applied
+    nb={}
+    if ext_mode=='neighbours':
+        # EXT = aggregate of directly connected provinces: anchored load x their 2030 ratio, GEM 2030 fleets, archive RE capacities and profiles
+        nbs=neighbours(prov);agg=dict(load=np.zeros(len(p['load'])),solar=np.zeros(len(p['load'])),onwind=np.zeros(len(p['load'])),offwind=np.zeros(len(p['load'])),hydro=np.zeros(len(p['load'])),coal=0.,gas=0.,nuclear=0.,hydro_mw=0.,solar_mw=0.,onwind_mw=0.,offwind_mw=0.)
+        for n_ in nbs:
+            try:pn=base.province_inputs(n_)
+            except Exception as ex:print('skip neighbour',n_,ex);continue
+            fn=gem_fleet_any(n_);rn=load_ratio(n_)
+            agg['load']+=pn['load']*rn;agg['solar']+=pn['solar_pu']*pn['cap'].get('solar PV',0);agg['onwind']+=pn['onwind_pu']*pn['cap'].get('onshore wind',0);agg['offwind']+=pn['offwind_pu']*pn['cap'].get('offshore wind',0)
+            agg['hydro']+=pn['hydro_pu']*fn['hydro_gem'];agg['coal']+=fn['coal'];agg['gas']+=fn['gas'];agg['nuclear']+=fn['nuclear'];agg['hydro_mw']+=fn['hydro_gem']
+            agg['solar_mw']+=pn['cap'].get('solar PV',0);agg['onwind_mw']+=pn['cap'].get('onshore wind',0);agg['offwind_mw']+=pn['cap'].get('offshore wind',0)
+        nb=dict(names=list(nbs),links_mw=nbs,agg=agg)
     # committed-capacity heuristic per week: coal committed to cover weekly max residual after RE/nuclear/hydro, /0.85, using rigid AI level
     def committed(s):
         re=s['onwind']*cap.get('onshore wind',0)+s['offwind']*cap.get('offshore wind',0)+s['solar']*cap.get('solar PV',0)
@@ -100,12 +123,25 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.25,slack_mult=1.0,slack_base_h=6.0,
            Generator('onwind',prov,cap.get('onshore wind',0),1e6,c['onwind_inv_yr']*wk,c['wind_mc'],0,availability={s['name']:s['onwind'] for s in scen}),
            Generator('offwind',prov,cap.get('offshore wind',0),0,0,c['wind_mc'],0,availability={s['name']:s['offwind'] for s in scen}),
            Generator('solar',prov,cap.get('solar PV',0),1e6,c['solar_inv_yr']*wk,c['solar_mc'],0,availability={s['name']:s['solar'] for s in scen}),
-           Generator('ext_supply','EXT',1e7,0,0,c['coal_mc']*1.1,c['coal_co2'])]
+           ]
+        if ext_mode=='neighbours':
+            a=nb['agg'];avail=lambda arr:{s_['name']:np.clip(arr[WEEK_STARTS[s_['name']]:WEEK_STARTS[s_['name']]+WEEK]/max(1e-9,x_),0,1) for s_ in scen}
+            G+=[Generator('nb_coal','EXT',a['coal'],0,0,c['coal_mc'],c['coal_co2'],min_output_fraction=coal_min*0.5),  # neighbour must-run applied at half strength (no committed-capacity heuristic there)
+                Generator('nb_gas','EXT',a['gas'],1e6,c['ocgt_inv_yr']*wk,c['gas_mc'],c['gas_co2']),
+                Generator('nb_nuclear','EXT',a['nuclear'],0,0,c['nuclear_mc'],0,availability={s_['name']:np.full(WEEK,0.9) for s_ in scen}),
+                Generator('nb_hydro','EXT',a['hydro_mw'],0,0,0.,0,availability={s_['name']:np.clip(a['hydro'][WEEK_STARTS[s_['name']]:WEEK_STARTS[s_['name']]+WEEK]/max(a['hydro_mw'],1e-9),0,1) for s_ in scen}),
+                Generator('nb_solar','EXT',a['solar_mw'],1e6,c['solar_inv_yr']*wk,c['solar_mc'],0,availability={s_['name']:np.clip(a['solar'][WEEK_STARTS[s_['name']]:WEEK_STARTS[s_['name']]+WEEK]/max(a['solar_mw'],1e-9),0,1) for s_ in scen}),
+                Generator('nb_onwind','EXT',a['onwind_mw'],1e6,c['onwind_inv_yr']*wk,c['wind_mc'],0,availability={s_['name']:np.clip(a['onwind'][WEEK_STARTS[s_['name']]:WEEK_STARTS[s_['name']]+WEEK]/max(a['onwind_mw'],1e-9),0,1) for s_ in scen}),
+                Generator('nb_offwind','EXT',a['offwind_mw'],0,0,c['wind_mc'],0,availability={s_['name']:np.clip(a['offwind'][WEEK_STARTS[s_['name']]:WEEK_STARTS[s_['name']]+WEEK]/max(a['offwind_mw'],1e-9),0,1) for s_ in scen}),
+                Generator('nb_unserved_proxy','EXT',1e7,0,0,c['gas_mc']*3,c['gas_co2'])]  # very expensive backstop so neighbour scarcity is priced, not free
+        else:G.append(Generator('ext_supply','EXT',1e7,0,0,c['coal_mc']*1.1,c['coal_co2']))
         return G
     lines=[Line('interconnection',prov,'EXT',p['interconnection_mw'] if export else 0.,0,0,0.03)]
     stor=[Storage('battery',prov,0,0,1e6,4e6,c['batt_power_inv_yr']*wk,c['batt_energy_inv_yr']*wk,0.95,0.95,0.5)]
+    if ext_mode=='neighbours':stor.append(Storage('nb_battery','EXT',0,0,1e6,4e6,c['batt_power_inv_yr']*wk,c['batt_energy_inv_yr']*wk,0.95,0.95,0.5))
     ext_load=ext_load_frac*p['interconnection_mw']
-    scenarios=[Scenario(s['name'],0.25,{prov:s['load'],'EXT':np.full(WEEK,ext_load)}) for s in scen]
+    if ext_mode=='neighbours':scenarios=[Scenario(s['name'],0.25,{prov:s['load'],'EXT':nb['agg']['load'][WEEK_STARTS[s['name']]:WEEK_STARTS[s['name']]+WEEK]}) for s in scen]
+    else:scenarios=[Scenario(s['name'],0.25,{prov:s['load'],'EXT':np.full(WEEK,ext_load)}) for s in scen]
     pool=ComputePool('ai',prov,q,mode_power,idle,{s['name']:[Batch(j.name,j.release,j.deadline,j.work) for j in jobs_by[s['name']]] for s in scen})
     def summarize(r,tagname):
         d=dict(tag=tagname,feasible=r['feasible'])
@@ -126,6 +162,14 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.25,slack_mult=1.0,slack_base_h=6.0,
     r=solve(nodes,scenarios,gens(),lines,stor,[pool],fixed_compute={s['name']:{'ai':fixed_S0[s['name']]} for s in scen},expected_unserved_limit_mwh=0.);res['S0']=summarize(r,'S0')
     r=solve(nodes,scenarios,gens(),lines,stor,[pool],fixed_compute={s['name']:{'ai':fixed_S1[s['name']]} for s in scen},expected_unserved_limit_mwh=0.);res['S1']=summarize(r,'S1')
     r=solve(nodes,scenarios,gens(),lines,stor,[pool],expected_unserved_limit_mwh=0.);res['S2']=summarize(r,'S2')
+    if rt_price:
+        fixed_S1rt={}
+        for s in scen:
+            name=s['name'];mc2=np.array(res['S2']['marginal_cost'][name]);pr_=np.maximum(mc2,0.)
+            pr_=pr_*(prices_by[name].mean()/max(pr_.mean(),1e-9))  # same average level as the tariff, S2 real-time shape
+            rr=schedule(jobs_by[name],q,mode_power,WEEK,idle,prices=pr_)
+            fixed_S1rt[name]=np.array(rr['slot_average_power']) if rr['feasible'] else fixed_S1[name]
+        r=solve(nodes,scenarios,gens(),lines,stor,[pool],fixed_compute={s['name']:{'ai':fixed_S1rt[s['name']]} for s in scen},expected_unserved_limit_mwh=0.);res['S1rt']=summarize(r,'S1rt_firm_under_S2_realtime_price')
     # S3: events = top event_q hours of S1-run nodal marginal cost per week; firm commits max deliverable reduction vs its own S1 schedule
     fixed_S3={};s3meta={}
     for s in scen:
@@ -141,9 +185,9 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.25,slack_mult=1.0,slack_base_h=6.0,
     r=solve(nodes,scenarios,gens(),lines,stor,[pool],fixed_compute={s['name']:{'ai':fixed_S3[s['name']]} for s in scen},expected_unserved_limit_mwh=0.);res['S3']=summarize(r,'S3')
     for k_ in res:res[k_].pop('marginal_cost',None)
     meta=dict(province=prov,evidence_tier='public-data 2030 scenario; hourly load shape unvalidated; documented assumptions',load_ratio_2030_2020=ratio,peak_2030_mw=peak30,fleet_2030_gem=fleet,hydro_mw_gem_2030=hydro_mw,committed_coal_mw=comm,
-        assumptions=dict(ai_share_of_peak=ai_share,ai_nameplate_mw=P_full,idle_fraction=idle_frac,utilization=u,slack='job observed queue x %.1f + %.1f h'%(slack_mult,slack_base_h),dvfs_config=cfg,tariff='official shape, level 1.5x coal marginal',coal_min_of_committed=coal_min,allow_new_coal=allow_new_coal,export=export,event_top_share=event_q,external_market='EXT load %.2f x interconnection at 1.1x coal marginal, 3%% loss'%ext_load_frac),
+        neighbours=(nb.get('names'),nb.get('links_mw')) if nb else None,assumptions=dict(ext_mode=ext_mode,ai_share_of_peak=ai_share,ai_nameplate_mw=P_full,idle_fraction=idle_frac,utilization=u,slack='job observed queue x %.1f + %.1f h'%(slack_mult,slack_base_h),dvfs_config=cfg,tariff='official shape, level 1.5x coal marginal',coal_min_of_committed=coal_min,allow_new_coal=allow_new_coal,export=export,event_top_share=event_q,external_market='EXT load %.2f x interconnection at 1.1x coal marginal, 3%% loss'%ext_load_frac),
         job_meta=meta_jobs,s3=s3meta,costs=c,runtime_s=time.time()-t0)
-    out=dict(meta=meta,results=res);name=f"{CODE[prov]}_2030_ai{int(ai_share*100)}{'' if export else '_noexport'}_sm{slack_mult:g}_sb{int(slack_base_h)}{tag}"
+    out=dict(meta=meta,results=res);name=f"{CODE[prov]}_2030_ai{int(ai_share*100)}{'' if export else '_noexport'}_sm{slack_mult:g}_sb{int(slack_base_h)}{'_nb' if ext_mode=='neighbours' else ''}{tag}"
     json.dump(out,open(OUT/f'regional_2030_{name}.json','w'),ensure_ascii=False,indent=1,default=float)
     rows=[]
     for k_,d in res.items():
@@ -154,21 +198,21 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.25,slack_mult=1.0,slack_base_h=6.0,
     print('S3:',{k:{kk:(round(vv,1) if isinstance(vv,float) else vv) for kk,vv in v.items() if kk!='events'} for k,v in s3meta.items()})
     return out
 
-def grid():
+def grid(ext_mode='price',out_name='regional_2030_grid_summary.csv'):
     rows=[]
     for prov in ['Gansu','Jiangsu','Guizhou']:
         for export in [True,False]:
             for ai in [0.05,0.10,0.20]:
                 for sm,sb in [(1.0,6.0),(3.0,24.0)]:
-                    o=run(prov,ai,slack_mult=sm,slack_base_h=sb,export=export);r=o['results'];m=o['meta']
+                    o=run(prov,ai,slack_mult=sm,slack_base_h=sb,export=export,ext_mode=ext_mode);r=o['results'];m=o['meta']
                     comp=sum(v.get('compensation_floor',0) for v in m['s3'].values())*0.25;commit=np.mean([v.get('commitment_mw',0) for v in m['s3'].values()])
                     for k,d in r.items():
                         if d['feasible']:rows.append(dict(province=prov,export=export,ai_share=ai,slack_mult=sm,slack_base_h=sb,case=k,total_cost=d['total_cost'],investment=d['cost_investment'],new_ocgt=d['new_mw']['ocgt'],new_onwind=d['new_mw']['onwind'],new_solar=d['new_mw']['solar'],new_batt_mw=d['new_batt_mw'],emissions_t=d['emissions_t'],curtail=d['curtail_rate'],ai_mwh=d['ai_mwh'],import_mwh=d['import_mwh'],export_mwh=d['export_mwh'],s3_compensation_floor_expweek=comp,s3_mean_commitment_mw=commit,peak_2030=m['peak_2030_mw']))
                         else:rows.append(dict(province=prov,export=export,ai_share=ai,slack_mult=sm,slack_base_h=sb,case=k,note=d.get('message')))
-    pd.DataFrame(rows).to_csv(OUT/'regional_2030_grid_summary.csv',index=False);print('GRID2030_DONE')
+    pd.DataFrame(rows).to_csv(OUT/out_name,index=False);print('GRID2030_DONE')
 
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('--grid',action='store_true');ap.add_argument('--province',default='Guizhou');ap.add_argument('--ai_share',type=float,default=0.10);ap.add_argument('--noexport',action='store_true');ap.add_argument('--slack_mult',type=float,default=1.0);ap.add_argument('--slack_base',type=float,default=6.0);ap.add_argument('--coal_min',type=float,default=0.4)
+    ap=argparse.ArgumentParser();ap.add_argument('--grid',action='store_true');ap.add_argument('--ext_mode',default='price');ap.add_argument('--province',default='Guizhou');ap.add_argument('--ai_share',type=float,default=0.10);ap.add_argument('--noexport',action='store_true');ap.add_argument('--slack_mult',type=float,default=1.0);ap.add_argument('--slack_base',type=float,default=6.0);ap.add_argument('--coal_min',type=float,default=0.4)
     a=ap.parse_args()
-    if a.grid:grid()
-    else:run(a.province,a.ai_share,slack_mult=a.slack_mult,slack_base_h=a.slack_base,export=not a.noexport,coal_min=a.coal_min)
+    if a.grid:grid(a.ext_mode,'regional_2030_grid_summary.csv' if a.ext_mode=='price' else 'regional_2030_grid_summary_neighbours.csv')
+    else:run(a.province,a.ai_share,slack_mult=a.slack_mult,slack_base_h=a.slack_base,export=not a.noexport,coal_min=a.coal_min,ext_mode=a.ext_mode)

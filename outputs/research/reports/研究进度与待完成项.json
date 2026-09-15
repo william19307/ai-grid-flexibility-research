@@ -43,13 +43,17 @@
   "official TOU tariff documents for Jiangsu (2020 notice), Gansu (2020-12 notice) and Guizhou (2023 notice) archived and registered (D15-D17); pipeline supports Helios-derived batch arrivals with feasibility guard and official tariff shapes; 24-run trace/official grid summarised",
   "GEM unit-level 2020/2030 fleets for Gansu, Jiangsu, Guizhou built and compared with archive (A06)",
   "provincial 2030 S0/S1/S2/S3 scenario pipeline built and run: 36 settings, 180 solves (A07); results labelled public-data scenario",
-  "manuscript v0.6 (sections 5.7, 6.1), phase report 07, English core paper v0.2 with directional results"
+  "manuscript v0.6 (sections 5.7, 6.1), phase report 07, English core paper v0.2 with directional results",
+  "GEM fleets for all 31 provinces; neighbour-aggregate exchange node implemented; S1rt (firm under system real-time price shape) implemented; both 36-setting grids rerun with S0/S1/S1rt/S2/S3",
+  "manuscript v0.7 (5.8), phase report 08, English v0.3",
+  "GEM fleets for all 31 provinces; neighbour-aggregate exchange node implemented; S1rt (firm under system real-time price shape) implemented; both 36-setting grids rerun with S0/S1/S1rt/S2/S3",
+  "manuscript v0.7 (5.8), phase report 08, English v0.3"
  ],
  "requirements_still_open": {
   "novelty": "closest-model replication and complete review pending",
   "Q1": "production traces now give observed wait/run/utilisation distributions (lower bounds on tolerated delay, no deadlines, no power); mapping to deadline distributions by workload class and to measured power modes still pending",
   "Q2": "joint solver verified and S0/S0b/S1/S2 pipeline exercised on uncalibrated provincial inputs; calibrated regional planning/dispatch, coal minimum-load/unit commitment, validated hourly load and same-reliability comparison pending",
-  "Q3": "first event-based commitment mechanism implemented and evaluated: near-zero system net benefit; v2 with system dual-price scarcity, continuous signals, baseline/verification pending",
+  "Q3": "event-based commitment yields ~no system benefit; firm under system real-time price shape closes the gap to <1%; verification, baseline and transfer accounting for continuous signals pending",
   "national_scope": "province network, generation/asset calibration and 2030/2035 scenarios pending; annual provincial load anchor available but hourly shape remains unvalidated",
   "robustness": "multi-weather-year, outages, out-of-sample validation and external system pending",
   "paper": "complete core results, English manuscript, supplement and portable reproduction package pending",
@@ -64,6 +68,6 @@
  ],
  "live_jobs": [],
  "previous_goal_turn_classification": "progress: first full S0-S3 provincial 2030 scenario results on public data; still not independently validated",
- "latest_manuscript": "outputs/research/manuscript/论文工作稿_v0.6.md",
- "latest_phase_report": "outputs/research/reports/阶段研究报告_07.md"
+ "latest_manuscript": "outputs/research/manuscript/论文工作稿_v0.7.md",
+ "latest_phase_report": "outputs/research/reports/阶段研究报告_08.md"
 }

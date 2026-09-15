@@ -17,7 +17,9 @@
    "summer": 92481.0,
    "autumn": 92481.0
   },
+  "neighbours": null,
   "assumptions": {
+   "ext_mode": "price",
    "ai_share_of_peak": 0.05,
    "ai_nameplate_mw": 6493.780430468538,
    "idle_fraction": 0.25,
@@ -111,7 +113,7 @@
    "batt_energy_inv_yr": 10075.248936490603,
    "source": "PyPSA-China V3.0 archive costs_2030.csv; 5% discount; EUR"
   },
-  "runtime_s": 4.030103921890259
+  "runtime_s": 5.355547904968262
  },
  "results": {
   "NOAI": {
@@ -216,6 +218,33 @@
    "new_batt_mw": -0.0,
    "new_batt_mwh": 0.0,
    "emissions_t": 17652855.455563754,
+   "unserved_mwh": 0.0,
+   "curtail_rate": 0.0,
+   "import_mwh": 0.0,
+   "export_mwh": 0.0,
+   "ai_mwh": 619712.3517515259
+  },
+  "S1rt": {
+   "tag": "S1rt_firm_under_S2_realtime_price",
+   "feasible": true,
+   "total_cost": 519012752.68427444,
+   "cost_investment": 0.0,
+   "cost_operating": 519012752.68426853,
+   "cost_service_delay": 0.0,
+   "cost_unserved_penalty": 0.0,
+   "new_mw": {
+    "coal": 0.0,
+    "ocgt": 0.0,
+    "nuclear": 0.0,
+    "hydro": 0.0,
+    "onwind": 0.0,
+    "offwind": 0.0,
+    "solar": 0.0,
+    "ext_supply": 0.0
+   },
+   "new_batt_mw": -0.0,
+   "new_batt_mwh": 0.0,
+   "emissions_t": 17651880.34224912,
    "unserved_mwh": 0.0,
    "curtail_rate": 0.0,
    "import_mwh": 0.0,
