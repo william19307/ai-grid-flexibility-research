@@ -68,19 +68,87 @@ def dvfs_modes(config='ft_llama_8b_dolly'):
     m=pd.read_csv(OUT/'dvfs_measured_and_derived.csv');m=m[m.Workload==config].sort_values('GPU power cap')
     return m['normalized throughput'].values,m['measured_power_ratio'].values,config
 
-def tariff_shape(hours_local,kind):
-    """Analyst-assumed TOU shape (relative to flat). Placeholder until official provincial 2020 TOU is transcribed."""
+OFFICIAL_TOU={
+ # Jiangsu: 苏发改价格发〔2020〕1183号 附件3 江苏省工业用电峰谷分时销售电价表, 220 kV 及以上大工业, 自 2021-01-01 执行 (元/kWh)
+ 'Jiangsu':dict(source='苏发改价格发〔2020〕1183号 附件3（南京市转发件 宁发改价费字〔2020〕724号）',effective='2021-01-01',unit='CNY/kWh',
+   peak=([(8,12),(17,21)],0.9297),flat=([(12,17),(21,24)],0.5318),valley=([(0,8)],0.2139)),
+ # Gansu: 甘肃省发改委《关于调整销售电价及优化峰谷分时电价政策有关事项的通知》, 自 2021-01-01 执行; 峰 +50%, 谷 -50% 相对平段; 大工业按市场价+输配电价, 此处用比例
+ 'Gansu':dict(source='甘肃省发改委 2020-12 通知（政策解读 gansu.gov.cn/art/2020/12/3/art_10359_474921.html）',effective='2021-01-01',unit='ratio to flat',
+   peak=([(7,9),(18,24)],1.5),flat=(None,1.0),valley=([(2,4),(11,17)],0.5)),
+ # Guizhou: 黔发改价格〔2023〕481号, 自 2023-08-01 执行; 峰 +60%, 谷 -60%; 2020 年口径未取得, 年份不匹配已标注
+ 'Guizhou':dict(source='黔发改价格〔2023〕481号（2023 年口径，无 2020 年文件）',effective='2023-08-01',unit='ratio to flat',
+   peak=([(10,13),(17,22)],1.6),flat=(None,1.0),valley=([(0,8)],0.4)),
+}
+def tariff_shape(hours_local,kind,prov=None):
+    """Relative TOU shape. kind='official' uses OFFICIAL_TOU[prov] (levels relative to flat); 'tou' is the earlier placeholder; 'flat' is 1."""
     h=np.asarray(hours_local)%24
     if kind=='flat':return np.ones(len(h))
+    if kind=='official':
+        t=OFFICIAL_TOU[prov];s=np.ones(len(h))*t['flat'][1]
+        for k in ['peak','valley']:
+            for a,b in t[k][0]:s[(h>=a)&(h<b)]=t[k][1]
+        return s/t['flat'][1]
     s=np.ones(len(h));s[(h>=8)&(h<11)]=1.5;s[(h>=18)&(h<21)]=1.5;s[(h>=23)|(h<7)]=0.5
     return s
+
+
+def helios_jobs(T,u,start_hour_utc8,slack_h,seed=0,cluster_gpus=None):
+    """Trace-derived batches: sample completed Helios GPU jobs by submission hour-of-day, keep run time and GPU count,
+scale total work to average utilisation u of the pool; deadline = release + ceil(run) + slack_h (slack is an ASSUMPTION;
+observed queue waits are only a lower bound). Batches are merged per (release hour, deadline hour) to bound LP size."""
+    import pandas as pd
+    hp=ROOT/'work/research/prepared/helios_completed_gpu_jobs_sample.parquet'
+    if not hp.exists():
+        fr=[]
+        for c in ['Venus','Saturn','Earth','Uranus']:
+            d=pd.read_csv(ROOT/f'work/research/sources/helios_sentime/data/{c}/cluster_log.csv') if False else pd.read_csv(ROOT/f'work/research/sources/helios_sensetime/data/{c}/cluster_log.csv')
+            d=d[(d.gpu_num>0)&(d.state=='COMPLETED')&(d.duration>0)];d['hour']=pd.to_datetime(d.submit_time).dt.hour;fr.append(d[['hour','gpu_num','duration','queue']])
+        pd.concat(fr).to_parquet(hp) if False else pd.concat(fr).to_csv(hp.with_suffix('.csv.gz'),index=False,compression='gzip')
+    d=pd.read_csv(hp.with_suffix('.csv.gz'));rng=np.random.default_rng(seed)
+    byh=d.groupby('hour').size();byh=byh/byh.sum()
+    # number of jobs per hour scaled so that expected work over the horizon = u*T pool-hours
+    mean_work=(d.gpu_num*d.duration/3600).mean();ngpu=d.gpu_num*d.duration/3600
+    total_jobs=u*T/ (mean_work/ (d.gpu_num.mean()*1.0)) if False else None
+    # pool-hours: define one pool-hour as running all pool GPUs for one hour; normalise job work by the mean concurrent GPUs of the trace
+    ref_gpus=float((d.gpu_num*d.duration).sum()/d.duration.sum())  # duration-weighted mean GPUs per job (scale reference)
+    work_per_job=(d.gpu_num*d.duration/3600)/ (ref_gpus*24.0)  # so that one 'reference job-day' = 1 pool-hour ... scale fixed below
+    target=u*T;scale=target/work_per_job.sum()*len(d)/len(d)
+    batches={}
+    for t in range(T):
+        h=(start_hour_utc8+t)%24;n=rng.poisson(byh.get(h,0)*len(d)*0+ max(1e-9,byh.get(h,0))*40)  # ~40 jobs/day-equivalent draws per hour weight
+        if n==0:continue
+        idx=rng.choice(len(d),n,replace=True);sub=d.iloc[idx]
+        for _,r in sub.iterrows():
+            run_h=min(r.duration/3600,T-t)  # work beyond the horizon belongs to the next period (steady-state truncation)
+            w=r.gpu_num*run_h/ref_gpus/24.0
+            dl=min(T,t+int(np.ceil(run_h))+int(slack_h));dl=max(dl,t+1)
+            key=(t,dl);batches[key]=batches.get(key,0.)+w
+    tot=sum(batches.values());f=target/tot if tot>0 else 0
+    # Feasibility guard: greedily reserve full-speed pool capacity (1 pool-hour per hour) earliest-first inside each
+    # batch window; if a window cannot hold its work, extend the deadline until it fits. The greedy reservation is itself
+    # a feasible full-speed schedule, so the returned batch set is jointly feasible. Extensions are counted and reported.
+    free=np.ones(T);out=[];ext=0;dropped=0.
+    for (t,dl),w in sorted(batches.items(),key=lambda kv:(kv[0][1],kv[0][0])):
+        w=w*f;d=dl
+        while (free[t:d].sum()<w-1e-9 or w>0.9*(d-t)) and d<T:d+=1
+        if free[t:d].sum()<w-1e-9:  # horizon-end overflow: the remainder belongs to the next period (documented approximation)
+            dropped+=w-free[t:d].sum();w=free[t:d].sum()
+            if w<=1e-9:continue
+        if d!=dl:ext+=1
+        rem=w
+        for h in range(t,d):
+            take=min(free[h],rem);free[h]-=take;rem-=take
+            if rem<=1e-12:break
+        out.append(Batch(f'h{t}_{d}_{len(out)}',t,d,w))
+    helios_jobs.last_extended=ext;helios_jobs.last_batches=len(out);helios_jobs.last_dropped_share=dropped/max(target,1e-9)
+    return out
 
 def build_jobs(T,u,W):
     """Uniform hourly arrivals of u full-speed pool-hours, deadline W hours later (clipped to horizon).
 Analyst assumption; to be replaced by trace-derived arrivals/work distributions."""
     return [Batch(f'b{t}',t,min(t+W,T),u) for t in range(T-0) if t< T]
 
-def run(prov,ai_share=0.05,W=24,u=0.7,idle_frac=0.25,tariff='tou',ext_load_frac=0.6,out_tag='',export=True,coal_min=0.0):
+def run(prov,ai_share=0.05,W=24,u=0.7,idle_frac=0.25,tariff='tou',ext_load_frac=0.6,out_tag='',export=True,coal_min=0.0,arrivals='uniform'):
     t0=time.time();c=costs_2020();p=province_inputs(prov)
     q,pr,cfg=dvfs_modes();P_full=ai_share*p['peak'];idle=idle_frac*P_full
     mode_power=idle+(P_full-idle)*(pr-pr.min())/(1-pr.min()) if False else P_full*pr  # measured power ratio scaled to nameplate
@@ -90,16 +158,24 @@ def run(prov,ai_share=0.05,W=24,u=0.7,idle_frac=0.25,tariff='tou',ext_load_frac=
     for name,start in WEEK_STARTS.items():
         sl=slice(start,start+WEEK);T=WEEK
         scen.append(dict(name=name,load=p['load'][sl],solar=p['solar_pu'][sl],onwind=p['onwind_pu'][sl],offwind=p['offwind_pu'][sl],hydro=p['hydro_pu'][sl]))
-        jobs=[Job(f'b{t}',t,min(t+W,T),u) for t in range(T)];jobs_by[name]=jobs
-        base=baseline_asap(jobs,1.0,float(mode_power[-1]),T,idle)
+        if arrivals=='uniform':jobs=[Job(f'b{t}',t,min(t+W,T),u) for t in range(T)]
+        else:
+            bb=helios_jobs(T,u,start%24,W,seed=start)
+            # feasibility guard: cap work in short windows by pool capacity (window length); spill remainder into next batch
+            bb.sort(key=lambda b:(b.release,b.deadline));jobs=[Job(b.name,b.release,b.deadline,b.work) for b in bb]
+        jobs_by[name]=jobs
+        try:base=baseline_asap(jobs,1.0,float(mode_power[-1]),T,idle)
+        except ValueError as ex:
+            print('ASAP baseline infeasible for',name,ex);base=None
         fixed_S0[name]=base
         # S0b: rigid in time (each hour's work done within the hour) but at the lowest-energy measured mode able to do it
         ok=[m for m in range(len(q)) if q[m]>=u-1e-9];mb=min(ok,key=lambda m:(mode_power[m]-idle)*u/q[m]+idle)
-        fixed_S0b[name]=np.full(T,idle+(mode_power[mb]-idle)*u/q[mb])
+        fixed_S0b[name]=np.full(T,idle+(mode_power[mb]-idle)*u/q[mb]) if arrivals=='uniform' else None
         hours=np.arange(start,start+WEEK)%24
-        prices=tariff_shape(hours,tariff)*c['coal_mc']*1.5  # analyst-assumed retail level: 1.5x coal marginal, TOU-shaped
+        prices=tariff_shape(hours,tariff,prov)*c['coal_mc']*1.5  # shape official or placeholder; LEVEL still 1.5x coal marginal (relative shape is what matters for S1 scheduling)
         r=schedule(jobs,q,mode_power,T,idle,prices=prices)
-        assert r['feasible'];fixed_S1[name]=np.array(r['slot_average_power']);s1_meta[name]=dict(bill=r['energy_cost'],energy=r['energy'])
+        if not r['feasible']:raise RuntimeError(f'S1 schedule infeasible for {name}: {r}')
+        fixed_S1[name]=np.array(r['slot_average_power']);s1_meta[name]=dict(bill=r['energy_cost'],energy=r['energy'],n_batches=len(jobs),deadline_extensions=getattr(helios_jobs,'last_extended',None) if arrivals!='uniform' else None,horizon_end_dropped_share=getattr(helios_jobs,'last_dropped_share',None) if arrivals!='uniform' else None)
     cap=p['cap'];nodes=[prov,'EXT']
     def gens(av):
         G=[]
@@ -136,17 +212,21 @@ def run(prov,ai_share=0.05,W=24,u=0.7,idle_frac=0.25,tariff='tou',ext_load_frac=
         d['ai_power_series']={s['name']:r['scenarios'][s['name']]['compute_power_mw'].get('ai') for s in scen}
         return d
     r=solve(nodes,scenarios(),gens(None),lines,stor,[],expected_unserved_limit_mwh=0.);res['NOAI']=summarize(r,'NOAI')
-    r=solve(nodes,scenarios(),gens(None),lines,stor,[pool],fixed_compute={s['name']:{'ai':fixed_S0[s['name']]} for s in scen},expected_unserved_limit_mwh=0.);res['S0']=summarize(r,'S0_rigid')
-    r=solve(nodes,scenarios(),gens(None),lines,stor,[pool],fixed_compute={s['name']:{'ai':fixed_S0b[s['name']]} for s in scen},expected_unserved_limit_mwh=0.);res['S0b']=summarize(r,'S0b_rigid_time_efficient_mode')
+    if all(fixed_S0[s['name']] is not None for s in scen):
+        r=solve(nodes,scenarios(),gens(None),lines,stor,[pool],fixed_compute={s['name']:{'ai':fixed_S0[s['name']]} for s in scen},expected_unserved_limit_mwh=0.);res['S0']=summarize(r,'S0_rigid')
+    else:res['S0']=dict(tag='S0_rigid',feasible=False,message='ASAP baseline infeasible under trace-derived windows')
+    if all(fixed_S0b[s['name']] is not None for s in scen):
+        r=solve(nodes,scenarios(),gens(None),lines,stor,[pool],fixed_compute={s['name']:{'ai':fixed_S0b[s['name']]} for s in scen},expected_unserved_limit_mwh=0.);res['S0b']=summarize(r,'S0b_rigid_time_efficient_mode')
+    else:res['S0b']=dict(tag='S0b',feasible=False,message='S0b defined only for uniform arrivals')
     r=solve(nodes,scenarios(),gens(None),lines,stor,[pool],fixed_compute={s['name']:{'ai':fixed_S1[s['name']]} for s in scen},expected_unserved_limit_mwh=0.);res['S1']=summarize(r,'S1_firm_autonomous')
     r=solve(nodes,scenarios(),gens(None),lines,stor,[pool],expected_unserved_limit_mwh=0.);res['S2']=summarize(r,'S2_system_coordinated')
     meta=dict(province=prov,evidence_tier='uncalibrated regional smoke test; not an empirical result',weeks=WEEK_STARTS,
         assumptions=dict(ai_nameplate_mw=P_full,ai_share_of_peak=ai_share,idle_fraction=idle_frac,utilization=u,deadline_hours=W,arrivals='uniform hourly',dvfs_config=cfg,
-            tariff=f'{tariff} shape, level 1.5x coal marginal (placeholder)',coal_min_output_fraction=coal_min,external_market='EXT node load = %.2f x interconnection, supply at 1.1x coal marginal, 3%% loss'%ext_load_frac,
+            tariff=f'{tariff} shape'+(f" ({OFFICIAL_TOU[prov]['source']}, effective {OFFICIAL_TOU[prov]['effective']})" if tariff=='official' else ' (placeholder)')+', level 1.5x coal marginal',coal_min_output_fraction=coal_min,arrival_model=arrivals,external_market='EXT node load = %.2f x interconnection, supply at 1.1x coal marginal, 3%% loss'%ext_load_frac,
             investment='annualized at 5%%, weekly share; new coal/OCGT/battery allowed; renewables fixed',capacities_mw={k:float(v) for k,v in cap.items()},big_hydro_mw=p['big_hydro_mw'],interconnection_mw=p['interconnection_mw'],peak_load_mw=p['peak']),
         costs=c,s1_bills=s1_meta,runtime_s=time.time()-t0)
     out=dict(meta=meta,results=res)
-    tag=f"{CODE[prov]}_W{W}_ai{int(ai_share*100)}{'' if export else '_noexport'}{'' if coal_min==0 else f'_coalmin{int(coal_min*100)}'}{out_tag}"
+    tag=f"{CODE[prov]}_W{W}_ai{int(ai_share*100)}{'' if export else '_noexport'}{'' if coal_min==0 else f'_coalmin{int(coal_min*100)}'}{'' if arrivals=='uniform' else '_helios'}{'' if tariff!='official' else '_offtou'}{out_tag}"
     json.dump(out,open(OUT/f'regional_smoke_{tag}.json','w'),ensure_ascii=False,indent=1,default=float)
     rows=[]
     for k,d in res.items():
@@ -157,7 +237,7 @@ def run(prov,ai_share=0.05,W=24,u=0.7,idle_frac=0.25,tariff='tou',ext_load_frac=
     return out
 
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('--province',default='Gansu');ap.add_argument('--W',type=int,default=24);ap.add_argument('--ai_share',type=float,default=0.05);ap.add_argument('--tariff',default='tou');ap.add_argument('--noexport',action='store_true');ap.add_argument('--grid',action='store_true');ap.add_argument('--coal_min',type=float,default=0.0)
+    ap=argparse.ArgumentParser();ap.add_argument('--province',default='Gansu');ap.add_argument('--W',type=int,default=24);ap.add_argument('--ai_share',type=float,default=0.05);ap.add_argument('--tariff',default='tou');ap.add_argument('--noexport',action='store_true');ap.add_argument('--grid',action='store_true');ap.add_argument('--coal_min',type=float,default=0.0);ap.add_argument('--arrivals',default='uniform')
     a=ap.parse_args()
     if a.grid:
         rows=[]
@@ -170,4 +250,4 @@ if __name__=='__main__':
                             if d['feasible']:rows.append(dict(province=prov,export=export,ai_share=ai,W=W,case=k,total_cost=d['total_cost'],investment=d['cost_investment'],new_coal=d['new_mw']['coal'],new_ocgt=d['new_mw']['ocgt'],new_batt_mw=d['new_batt_mw'],emissions_t=d['emissions_t'],curtail_rate=d['re_curtail_rate'],ai_mwh=d['ai_energy_mwh_expweek'],export_mwh=d['export_mwh_expweek'],import_mwh=d['import_mwh_expweek']))
                             else:rows.append(dict(province=prov,export=export,ai_share=ai,W=W,case=k,note=d.get('message')))
         pd.DataFrame(rows).to_csv(OUT/('regional_smoke_grid_summary.csv' if a.coal_min==0 else f'regional_smoke_grid_summary_coalmin{int(a.coal_min*100)}.csv'),index=False);print('grid written')
-    else:run(a.province,a.ai_share,a.W,tariff=a.tariff,export=not a.noexport,coal_min=a.coal_min)
+    else:run(a.province,a.ai_share,a.W,tariff=a.tariff,export=not a.noexport,coal_min=a.coal_min,arrivals=a.arrivals)

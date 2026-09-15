@@ -39,7 +39,8 @@
   "Microsoft Philly 2017 trace downloaded via LFS, sha256 recorded; job-log wait/run audit and streamed per-GPU utilisation audit implemented",
   "production-trace figure and regional smoke-grid figure rendered (PNG/SVG/PDF)",
   "English core-paper skeleton v0.1 with pending markers written",
-  "optional generator minimum-output constraint added to joint LP (default off); 118 + 74 prior checks rerun and passed; 40% uniform must-run smoke variant run and its artefacts documented"
+  "optional generator minimum-output constraint added to joint LP (default off); 118 + 74 prior checks rerun and passed; 40% uniform must-run smoke variant run and its artefacts documented",
+  "official TOU tariff documents for Jiangsu (2020 notice), Gansu (2020-12 notice) and Guizhou (2023 notice) archived and registered (D15-D17); pipeline supports Helios-derived batch arrivals with feasibility guard and official tariff shapes; 24-run trace/official grid summarised"
  ],
  "requirements_still_open": {
   "novelty": "closest-model replication and complete review pending",
@@ -53,7 +54,7 @@
  },
  "next_actions": [
   "choose final three regions (proposed: Gansu or Ningxia, Jiangsu, Guizhou) and transcribe official 2020 provincial capacity by fuel, TOU tariffs and interprovincial exchange for them",
-  "replace uniform arrivals in the smoke pipeline with trace-derived arrival/run-time/size distributions (Helios, Alibaba) and treat observed waits as lower bounds on tolerated delay; add coal minimum-load constraint",
+  "calibrate deadline distributions by workload class (traces give run-time and lower-bound waits only); keep Helios-derived arrivals as one variant; add unit-level commitment data instead of uniform must-run",
   "resolve reservoir storage references and hydro inflow years for Guizhou; reconcile thermal/wind/solar vintages and gross/net boundaries",
   "obtain independent hourly or peak load validation, then run calibrated regional S0/S1/S2 with 2030 load and AI scenarios",
   "independent chronological outages and multi-weather adequacy validation, then S3 participation and system net benefit",
