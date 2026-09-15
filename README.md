@@ -28,6 +28,8 @@
 - 核对官方 2020 年核电机组统计、可靠性报告以及大型水电投运年份。
 - 转录 31 省 2020 年官方用电量，完成年度负荷锚定和江苏月度时间结构诊断。
 - 已修正准备文件中时间戳声明与实际单位不一致的问题，并验证功率与新能源数组未改变。
+- 取得并审计三套公开生产 GPU 集群轨迹（Helios、阿里 PAI、Philly），提取排队等待、运行时长与利用率分布。
+- 建立 31 省选区筛选矩阵；把联合模型接成单省 S0/S0b/S1/S2 管线并完成三省未校准粗跑。
 
 ## 当前最重要的证据边界
 
@@ -48,6 +50,7 @@
 - `outputs/research/figures/`：已审计结果图和明确标注为 synthetic 的 Mock 图。
 - `work/research/analysis/`：数据审计、校准、绘图与模型验证脚本。
 - `work/research/models/`：联合电力—算力模型实现。
+- `outputs/research/manuscript/core_paper_en_v0.1.md`：英文核心论文骨架，所有未完成结果以 `[PENDING]` 标注。
 
 原始外部数据、归档压缩包和本地准备文件通过 `.gitignore` 排除。来源、版本、校验值和重建限制记录在 `outputs/research/tables/data_registry.csv`、各审计 JSON 和论文参考文献中。需要在另一台机器重建时，先读取来源登记，再按许可从原始来源获取数据。
 

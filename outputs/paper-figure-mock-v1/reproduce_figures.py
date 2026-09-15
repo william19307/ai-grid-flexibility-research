@@ -8,7 +8,7 @@ from matplotlib.patches import Rectangle, FancyArrowPatch
 from matplotlib.colors import LinearSegmentedColormap, TwoSlopeNorm
 from matplotlib.backends.backend_pdf import PdfPages
 
-OUT=Path('/Users/apple/Documents/Codex/2026-09-14/ni-k/outputs/paper-figure-mock-v1')
+OUT=Path('../../outputs/paper-figure-mock-v1')
 OUT.mkdir(parents=True,exist_ok=True)
 BLUE='#3B6F9E'; ORANGE='#CF8643'; GREEN='#238779'; INK='#23333E'; GREY='#71808A'; LIGHT='#E9EDF0'
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'text.color':INK,'axes.labelcolor':INK,'xtick.color':GREY,'ytick.color':GREY,'axes.edgecolor':'#9DA8AF','axes.linewidth':.7,'pdf.fonttype':42,'svg.fonttype':'none','savefig.facecolor':'white'})

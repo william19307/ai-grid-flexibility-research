@@ -25,6 +25,7 @@ class Generator:
     marginal_cost:float
     emissions_t_per_mwh:float=0.
     availability:Mapping[str,Sequence[float]]=field(default_factory=dict)
+    min_output_fraction:float=0.  # must-run share of available capacity (existing+new); 0 keeps prior behaviour
 
 
 @dataclass
@@ -141,6 +142,7 @@ so an infeasible externally supplied power trajectory is rejected.
         if not finite_nonnegative([g.existing_mw,g.max_new_mw,g.investment_cost,g.marginal_cost,g.emissions_t_per_mwh]):raise ValueError('Nonfinite or negative generator parameter')
         if g.availability and set(g.availability)!=scenario_names:raise ValueError('Explicit availability must cover exactly all scenarios')
         if g.node not in nodes or min(g.existing_mw,g.max_new_mw,g.investment_cost,g.marginal_cost,g.emissions_t_per_mwh)<0:raise ValueError('Invalid generator')
+        if not np.isfinite(g.min_output_fraction) or not 0<=g.min_output_fraction<=1:raise ValueError('min_output_fraction must be in [0,1]')
     for l in lines:
         if not finite_nonnegative([l.existing_mw,l.max_new_mw,l.investment_cost,l.flow_cost_per_mwh]):raise ValueError('Nonfinite or negative line parameter')
         if l.source not in nodes or l.target not in nodes or l.source==l.target or not 0<=l.loss_fraction<1 or min(l.existing_mw,l.max_new_mw,l.investment_cost,l.flow_cost_per_mwh)<0:raise ValueError('Invalid line')
@@ -206,6 +208,7 @@ so an infeasible externally supplied power trajectory is rejected.
                 v=m.var(('generation',s.name,g.name,t),probability*dt*g.marginal_cost)
                 arr.append(v);balances[g.node,t][v]=1
                 m.upper({v:1,gen_new[g.name]:-a},a*g.existing_mw)
+                if g.min_output_fraction>0:m.upper({v:-1,gen_new[g.name]:g.min_output_fraction*a},-g.min_output_fraction*a*g.existing_mw)
                 co2_row[v]=probability*dt*g.emissions_t_per_mwh;op_indices.append(v)
             ix['generation'][g.name]=arr
         for l in lines:

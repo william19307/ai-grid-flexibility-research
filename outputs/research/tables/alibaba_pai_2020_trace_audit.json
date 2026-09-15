@@ -1,0 +1,109 @@
+{
+ "source": "https://github.com/alibaba/clusterdata/tree/master/cluster-trace-gpu-v2020",
+ "paper": "Weng et al., NSDI 2022",
+ "license": "CC-BY-4.0 per repository LICENSE",
+ "files": {
+  "pai_job_table": {
+   "tar_sha256": "5aad7f7caac501136d14ed6a48e40546f825d7b0617a3a4f337e2348fe0a6cb0",
+   "tar_bytes": 62065432,
+   "csv_bytes": 133288147,
+   "header": "job_name,inst_id,user,status,start_time,end_time"
+  },
+  "pai_task_table": {
+   "tar_sha256": "cd1d6dc3215d2a8607ccf6b6dd952b5db776df86926c73259fea7c1499ac40e5",
+   "tar_bytes": 35514117,
+   "csv_bytes": 113398956,
+   "header": "job_name,task_name,inst_num,status,start_time,end_time,plan_cpu,plan_mem,plan_gpu,gpu_type"
+  },
+  "pai_group_tag_table": {
+   "tar_sha256": "722fef30b7fb7aa50dabd79155614b5423a9d65cf45a9b26c590d57725423a14",
+   "tar_bytes": 55064781,
+   "csv_bytes": 115521549,
+   "header": "inst_id,user,gpu_type_spec,group,workload"
+  },
+  "pai_machine_spec": {
+   "tar_sha256": "cc0d38a4045af1b1af8179de8b1b54b1ddd995e6160d6d061a6b1000f1276c2d",
+   "tar_bytes": 30449,
+   "csv_bytes": 73311,
+   "header": "machine,gpu_type,cap_cpu,cap_mem,cap_gpu"
+  },
+  "pai_instance_table": {
+   "tar_sha256": "1bf1e423a7ce3f8d086699801c362fd56a7182abdb234139e5ebbed97995ca06",
+   "tar_bytes": 694839139,
+   "csv_bytes": 1975177534,
+   "header": "job_name,task_name,inst_name,worker_name,inst_id,status,start_time,end_time,machine"
+  },
+  "pai_sensor_table": {
+   "tar_sha256": "9a0b82e8bdf3949281e4ba1423d9b4b34847e52799eecb138966de46da69c7a0",
+   "tar_bytes": 406119947,
+   "csv_bytes": 1056899391,
+   "header": "job_name,task_name,worker_name,inst_id,machine,gpu_name,cpu_usage,gpu_wrk_util,avg_mem,max_mem,avg_gpu_wrk_mem,max_gpu_wrk_mem,read,write,read_count,write_count"
+  }
+ },
+ "job_rows": 1055501,
+ "task_rows": 1261050,
+ "job_status": {
+  "Terminated": 732355,
+  "Failed": 256555,
+  "Running": 62928,
+  "Waiting": 3663
+ },
+ "job_name_unique": true,
+ "inst_id_unique": true,
+ "tasks_with_gpu": 1037085,
+ "gpu_type_counts": {
+  "MISC": 693598,
+  "T4": 225991,
+  "P100": 71344,
+  "V100": 28144,
+  "V100M32": 18007
+ },
+ "sensor_rows_with_gpu_util": 3033232,
+ "statistics": {
+  "terminated_gpu_jobs": 714903,
+  "negative_or_missing_dropped": 340598,
+  "wait_hours": {
+   "p10": 0.0,
+   "p25": 0.0,
+   "p50": 0.0,
+   "p75": 0.0,
+   "p90": 0.0008333333333333334,
+   "p95": 0.0008333333333333334,
+   "p99": 0.0044444444444444444
+  },
+  "run_hours": {
+   "p10": 0.01138888888888889,
+   "p25": 0.03805555555555556,
+   "p50": 0.17555555555555555,
+   "p75": 1.0711111111111111,
+   "p90": 3.59,
+   "p95": 6.682472222222229,
+   "p99": 19.262777777777778
+  },
+  "requested_gpus": {
+   "p10": 0.1,
+   "p25": 0.25,
+   "p50": 1.0,
+   "p75": 1.0,
+   "p90": 5.0,
+   "p95": 10.0,
+   "p99": 30.0
+  },
+  "gpu_hour_weighted_wait_share_gt_1h": 0.0020315886094662214,
+  "gpu_hour_weighted_wait_share_gt_6h": 0.0002736204886080642,
+  "gpu_hour_weighted_wait_share_gt_24h": 2.720059369409653e-05,
+  "gpu_hour_weighted_run_share_gt_1h": 0.9355937020330598,
+  "gpu_hour_weighted_run_share_gt_24h": 0.3014827520301078,
+  "note": "wait = scheduling latency observed in production (README); lower bound on tolerated delay, not a deadline. plan_gpu is requested, not used.",
+  "instance_avg_gpu_util_percent_of_one_gpu": {
+   "p10": 0.0,
+   "p25": 0.0,
+   "p50": 1.4666666666666666,
+   "p75": 9.753623188405795,
+   "p90": 31.935469966629572,
+   "p95": 50.24981884057962,
+   "p99": 88.56619834177036
+  },
+  "instance_share_gpu_util_below_10pct": 0.7539921113848199
+ }
+}

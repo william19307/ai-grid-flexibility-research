@@ -1,0 +1,9 @@
+{
+ "hub_source": "https://www.ndrc.gov.cn/fzggw/jgsj/gjss/sjdt/202203/t20220321_1319862.html",
+ "hub_source_note": "NDRC High-Tech Department interview page (2022-03-21) listing 8 hubs and 10 clusters; fetched and checked 2026-09-15",
+ "capacity_source": "PyPSA-China V3.0 archive China_current_capacity.csv and dams_large.csv; NOT verified as 2020 installed capacity (nuclear column is 2021 vintage, see nuclear_baseyear_reconciliation.json)",
+ "load_source": "official 2020 provincial electricity (NBS yearbook 2021 table 9-14) anchored shape; hourly shape unvalidated",
+ "interconnection_source": "HVDC/HVAC line lists rebuilt from Wu & Kan appendix; UNVERIFIED; conflict provinces flagged",
+ "screening_rule": "A: hub, (wind+solar)/peak>=0.6, hydro share of firm capacity<0.25; B: hub, annual load>=400 TWh; C: hub, hydro share>=0.25",
+ "status": "screening table, not a research result"
+}

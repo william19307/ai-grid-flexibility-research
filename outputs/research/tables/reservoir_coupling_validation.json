@@ -80,7 +80,7 @@
   "independent_dynamic_program_cases": 60,
   "maximum_independent_water_balance_error_m3": 0.0,
   "maximum_independent_electric_balance_error_MW": 0.0,
-  "model_sha256": "b7f5c547efe474dc017c42f5f7591b34c1404ec0347e1cc608c6a01b26647556",
+  "model_sha256": "8f74933f54b6cc196923437d520fea48bee56c022abda59a3eec167c9467740c",
   "limitations": [
     "zero travel-time routing",
     "fixed specific-water consumption; no head-dependent efficiency or evaporation",

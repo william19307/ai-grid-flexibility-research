@@ -1,0 +1,91 @@
+{
+ "source": "https://github.com/msr-fiddle/philly-traces",
+ "paper": "Jeon et al., USENIX ATC 2019",
+ "license": "CC-BY-4.0 (repository LICENSE)",
+ "tar_sha256": "2037ccf63a725a02be718b0e1aeee6142c90b7f62d0d849295120e9f6ba13d2c",
+ "tar_bytes": 1055988361,
+ "files": {
+  "cluster_gpu_util": 3042490634,
+  "cluster_cpu_util": 1647169576,
+  "cluster_mem_util": 2330800303,
+  "cluster_job_log": 38967002,
+  "cluster_machine_list": 7108
+ },
+ "jobs": 117325,
+ "status": {
+  "Pass": 84358,
+  "Failed": 18633,
+  "Killed": 14334
+ },
+ "jobid_unique": true,
+ "statistics": {
+  "gpu_jobs_with_times": 111872,
+  "wait_hours": {
+   "p10": 0.0025,
+   "p25": 0.0038888888888888888,
+   "p50": 0.03638888888888889,
+   "p75": 0.2627777777777778,
+   "p90": 1.2586111111111111,
+   "p95": 2.3773472222222214,
+   "p99": 7.8813555555554276
+  },
+  "wait_hours_pass_only": {
+   "p10": 0.0025,
+   "p25": 0.0038888888888888888,
+   "p50": 0.03777777777777778,
+   "p75": 0.30416666666666664,
+   "p90": 1.3774444444444451,
+   "p95": 2.4428888888888873,
+   "p99": 5.398455555555524
+  },
+  "run_hours_pass_only": {
+   "p10": 0.016944444444444446,
+   "p25": 0.03638888888888889,
+   "p50": 0.32944444444444443,
+   "p75": 0.9286111111111112,
+   "p90": 3.5732777777777787,
+   "p95": 13.883055555555547,
+   "p99": 79.80114444444433
+  },
+  "gpus": {
+   "p10": 1.0,
+   "p25": 1.0,
+   "p50": 1.0,
+   "p75": 1.0,
+   "p90": 4.0,
+   "p95": 8.0,
+   "p99": 16.0
+  },
+  "gpu_hour_weighted_wait_share_gt_1h": 0.14507251569573731,
+  "gpu_hour_weighted_wait_share_gt_6h": 0.05136015318790765,
+  "gpu_hour_weighted_wait_share_gt_24h": 0.021236727489252802,
+  "gpu_hour_weighted_run_share_gt_24h": 0.8955902827374405,
+  "gpu_hours_share_by_status": {
+   "Failed": 0.3372,
+   "Killed": 0.3464,
+   "Pass": 0.3164
+  },
+  "jobs_with_multiple_attempts_share": 0.14943864416475972,
+  "note": "wait = first attempt start - submission (README); lower bound on tolerated delay, not a deadline",
+  "machine_gpu_util_percent": {
+   "p10": 0,
+   "p25": 0,
+   "p50": 45,
+   "p75": 91,
+   "p90": 99,
+   "p95": 100,
+   "p99": 100
+  },
+  "cluster_hourly_mean_util_percent": {
+   "p10": 38.78080231246475,
+   "p25": 43.3988472927242,
+   "p50": 46.97758037225043,
+   "p75": 50.05689677516365,
+   "p90": 52.01902848279752,
+   "p95": 53.17029399323181,
+   "p99": 54.734928087986454
+  },
+  "share_of_gpu_minutes_below_10pct_util": 0.38380233207300457,
+  "gpu_minute_samples": 251286816
+ }
+}

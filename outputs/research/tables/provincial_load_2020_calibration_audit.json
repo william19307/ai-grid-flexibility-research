@@ -32,7 +32,7 @@
       "annual_calibration_total_overlaps_this_period": true,
       "overlapping_evidence_not_independent_samples": true,
       "source_url": "https://jsb.nea.gov.cn/dtyw/jgdt/202309/t20230910_29496.html",
-      "source_local_file": "/Users/apple/Documents/Codex/2026-09-14/ni-k/work/research/sources/official_provincial_2020/js_jul.html",
+      "source_local_file": "../../../work/research/sources/official_provincial_2020/js_jul.html",
       "source_sha256": "f22e1befe53a9d2418ccb56e928824af1955de8087a174ea1cdc14f99c1c02a5"
     },
     {
@@ -48,7 +48,7 @@
       "annual_calibration_total_overlaps_this_period": true,
       "overlapping_evidence_not_independent_samples": true,
       "source_url": "https://jsb.nea.gov.cn/dtyw/jgdt/202309/t20230910_29528.html",
-      "source_local_file": "/Users/apple/Documents/Codex/2026-09-14/ni-k/work/research/sources/official_provincial_2020/js_sep.html",
+      "source_local_file": "../../../work/research/sources/official_provincial_2020/js_sep.html",
       "source_sha256": "9c6982e63cdd6f349e0517b927cb19d99f127b79d79f241283159779f837f703"
     },
     {
@@ -64,7 +64,7 @@
       "annual_calibration_total_overlaps_this_period": true,
       "overlapping_evidence_not_independent_samples": true,
       "source_url": "https://jsb.nea.gov.cn/dtyw/jgdt/202309/t20230910_29554.html",
-      "source_local_file": "/Users/apple/Documents/Codex/2026-09-14/ni-k/work/research/sources/official_provincial_2020/js_oct.html",
+      "source_local_file": "../../../work/research/sources/official_provincial_2020/js_oct.html",
       "source_sha256": "81d262fc3c01dc0d169646f1737678a64d7313e68ce20e15e97c78535a20ae90"
     },
     {
@@ -80,7 +80,7 @@
       "annual_calibration_total_overlaps_this_period": true,
       "overlapping_evidence_not_independent_samples": true,
       "source_url": "https://jsb.nea.gov.cn/dtyw/jgdt/202309/t20230910_29575.html",
-      "source_local_file": "/Users/apple/Documents/Codex/2026-09-14/ni-k/work/research/sources/official_provincial_2020/js_nov.html",
+      "source_local_file": "../../../work/research/sources/official_provincial_2020/js_nov.html",
       "source_sha256": "6e56d12fbc0915682c02a5808aaf353730ac66647d8be433144db0c4138c1527"
     },
     {
@@ -96,7 +96,7 @@
       "annual_calibration_total_overlaps_this_period": true,
       "overlapping_evidence_not_independent_samples": true,
       "source_url": "https://jsb.nea.gov.cn/dtyw/jgdt/202309/t20230910_29496.html",
-      "source_local_file": "/Users/apple/Documents/Codex/2026-09-14/ni-k/work/research/sources/official_provincial_2020/js_jul.html",
+      "source_local_file": "../../../work/research/sources/official_provincial_2020/js_jul.html",
       "source_sha256": "f22e1befe53a9d2418ccb56e928824af1955de8087a174ea1cdc14f99c1c02a5"
     },
     {
@@ -112,7 +112,7 @@
       "annual_calibration_total_overlaps_this_period": true,
       "overlapping_evidence_not_independent_samples": true,
       "source_url": "https://jsb.nea.gov.cn/dtyw/jgdt/202309/t20230910_29528.html",
-      "source_local_file": "/Users/apple/Documents/Codex/2026-09-14/ni-k/work/research/sources/official_provincial_2020/js_sep.html",
+      "source_local_file": "../../../work/research/sources/official_provincial_2020/js_sep.html",
       "source_sha256": "9c6982e63cdd6f349e0517b927cb19d99f127b79d79f241283159779f837f703"
     },
     {
@@ -128,7 +128,7 @@
       "annual_calibration_total_overlaps_this_period": true,
       "overlapping_evidence_not_independent_samples": true,
       "source_url": "https://jsb.nea.gov.cn/dtyw/jgdt/202309/t20230910_29554.html",
-      "source_local_file": "/Users/apple/Documents/Codex/2026-09-14/ni-k/work/research/sources/official_provincial_2020/js_oct.html",
+      "source_local_file": "../../../work/research/sources/official_provincial_2020/js_oct.html",
       "source_sha256": "81d262fc3c01dc0d169646f1737678a64d7313e68ce20e15e97c78535a20ae90"
     },
     {
@@ -144,7 +144,7 @@
       "annual_calibration_total_overlaps_this_period": true,
       "overlapping_evidence_not_independent_samples": true,
       "source_url": "https://jsb.nea.gov.cn/dtyw/jgdt/202309/t20230910_29575.html",
-      "source_local_file": "/Users/apple/Documents/Codex/2026-09-14/ni-k/work/research/sources/official_provincial_2020/js_nov.html",
+      "source_local_file": "../../../work/research/sources/official_provincial_2020/js_nov.html",
       "source_sha256": "6e56d12fbc0915682c02a5808aaf353730ac66647d8be433144db0c4138c1527"
     }
   ],

@@ -1,0 +1,252 @@
+{
+ "source": "https://github.com/S-Lab-System-Group/HeliosData",
+ "paper": "Hu et al., SC 2021, doi:10.1145/3458817.3476223",
+ "zip_sha256": "3d22a5f6c0ae669e2fcbfe4200fa9c48664507bc397c677bad8f085222c032ac",
+ "zip_bytes": 36437672,
+ "clusters": {
+  "Venus": {
+   "rows": 246708,
+   "file_sha256": "41153105b5a1beedfc9f3d5151126d8a2b446ba5699a60a41522a6795e726cac",
+   "columns": [
+    "job_id",
+    "user",
+    "vc",
+    "gpu_num",
+    "cpu_num",
+    "node_num",
+    "state",
+    "submit_time",
+    "start_time",
+    "end_time",
+    "duration",
+    "queue",
+    "cluster"
+   ],
+   "submit_min": "2020-03-18 04:01:39",
+   "submit_max": "2020-09-27 23:59:30",
+   "states": {
+    "COMPLETED": 170320,
+    "CANCELLED": 45883,
+    "FAILED": 30103,
+    "NODE_FAIL": 338,
+    "TIMEOUT": 64
+   },
+   "gpu_jobs": 125303,
+   "queue_col_equals_start_minus_submit_max_abs_s": 0.0,
+   "duration_col_equals_end_minus_start_max_abs_s": 0.0,
+   "null_counts": {
+    "job_id": 0,
+    "user": 0,
+    "vc": 0,
+    "gpu_num": 0,
+    "cpu_num": 0,
+    "node_num": 0,
+    "state": 0,
+    "submit_time": 0,
+    "start_time": 0,
+    "end_time": 0,
+    "duration": 0,
+    "queue": 0,
+    "cluster": 0
+   }
+  },
+  "Saturn": {
+   "rows": 1753078,
+   "file_sha256": "f991918de22dd88fd87ed4f4d8b3b8beb34a19a57007037298c08e48d56c2377",
+   "columns": [
+    "job_id",
+    "user",
+    "vc",
+    "gpu_num",
+    "cpu_num",
+    "node_num",
+    "state",
+    "submit_time",
+    "start_time",
+    "end_time",
+    "duration",
+    "queue",
+    "cluster"
+   ],
+   "submit_min": "2020-03-18 14:21:22",
+   "submit_max": "2020-09-27 23:59:53",
+   "states": {
+    "COMPLETED": 1401406,
+    "CANCELLED": 210673,
+    "FAILED": 137690,
+    "NODE_FAIL": 1925,
+    "TIMEOUT": 1384
+   },
+   "gpu_jobs": 698896,
+   "queue_col_equals_start_minus_submit_max_abs_s": 0.0,
+   "duration_col_equals_end_minus_start_max_abs_s": 0.0,
+   "null_counts": {
+    "job_id": 0,
+    "user": 0,
+    "vc": 0,
+    "gpu_num": 0,
+    "cpu_num": 0,
+    "node_num": 0,
+    "state": 0,
+    "submit_time": 0,
+    "start_time": 0,
+    "end_time": 0,
+    "duration": 0,
+    "queue": 0,
+    "cluster": 0
+   }
+  },
+  "Earth": {
+   "rows": 872886,
+   "file_sha256": "bb62d7842ee50a093c1f872afa293a8e27500f38dfc5cd1dab3b10c53746b3db",
+   "columns": [
+    "job_id",
+    "user",
+    "vc",
+    "gpu_num",
+    "cpu_num",
+    "node_num",
+    "state",
+    "submit_time",
+    "start_time",
+    "end_time",
+    "duration",
+    "queue",
+    "cluster"
+   ],
+   "submit_min": "2020-03-20 16:06:15",
+   "submit_max": "2020-09-27 23:59:45",
+   "states": {
+    "COMPLETED": 708616,
+    "FAILED": 103297,
+    "CANCELLED": 60330,
+    "NODE_FAIL": 470,
+    "TIMEOUT": 173
+   },
+   "gpu_jobs": 427148,
+   "queue_col_equals_start_minus_submit_max_abs_s": 0.0,
+   "duration_col_equals_end_minus_start_max_abs_s": 0.0,
+   "null_counts": {
+    "job_id": 0,
+    "user": 0,
+    "vc": 0,
+    "gpu_num": 0,
+    "cpu_num": 0,
+    "node_num": 0,
+    "state": 0,
+    "submit_time": 0,
+    "start_time": 0,
+    "end_time": 0,
+    "duration": 0,
+    "queue": 0,
+    "cluster": 0
+   }
+  },
+  "Uranus": {
+   "rows": 490309,
+   "file_sha256": "785e4154cefb45dba55bdfb8c3d313f101cd75dbe78b158a09f387ef8f4418af",
+   "columns": [
+    "job_id",
+    "user",
+    "vc",
+    "gpu_num",
+    "cpu_num",
+    "node_num",
+    "state",
+    "submit_time",
+    "start_time",
+    "end_time",
+    "duration",
+    "queue",
+    "cluster"
+   ],
+   "submit_min": "2020-03-22 10:38:56",
+   "submit_max": "2020-09-27 23:58:35",
+   "states": {
+    "COMPLETED": 327440,
+    "CANCELLED": 84840,
+    "FAILED": 75330,
+    "NODE_FAIL": 1968,
+    "TIMEOUT": 653,
+    "SUSPENDED": 76,
+    "RUNNING": 2
+   },
+   "gpu_jobs": 329117,
+   "queue_col_equals_start_minus_submit_max_abs_s": 0.0,
+   "duration_col_equals_end_minus_start_max_abs_s": 0.0,
+   "null_counts": {
+    "job_id": 0,
+    "user": 0,
+    "vc": 0,
+    "gpu_num": 0,
+    "cpu_num": 0,
+    "node_num": 0,
+    "state": 0,
+    "submit_time": 0,
+    "start_time": 0,
+    "end_time": 0,
+    "duration": 0,
+    "queue": 0,
+    "cluster": 0
+   }
+  }
+ },
+ "gpu_job_statistics": {
+  "gpu_jobs_all_states": 1580464,
+  "gpu_jobs_completed": 986777,
+  "queue_hours_all_gpu_jobs": {
+   "p10": 0.0,
+   "p25": 0.0,
+   "p50": 0.0,
+   "p75": 0.0,
+   "p90": 0.05416666666666667,
+   "p95": 0.42777777777777776,
+   "p99": 6.158538888888821
+  },
+  "queue_hours_completed": {
+   "p10": 0.0,
+   "p25": 0.0,
+   "p50": 0.0,
+   "p75": 0.0,
+   "p90": 0.10111111111111111,
+   "p95": 0.7122777777777648,
+   "p99": 6.335399999999985
+  },
+  "duration_hours_completed": {
+   "p10": 0.011111111111111112,
+   "p25": 0.03138888888888889,
+   "p50": 0.06833333333333333,
+   "p75": 0.3269444444444444,
+   "p90": 2.2016666666666667,
+   "p95": 4.922777777777778,
+   "p99": 31.10906666666651
+  },
+  "gpu_hours_share_by_state": {
+   "CANCELLED": 0.3938,
+   "COMPLETED": 0.5128,
+   "FAILED": 0.0364,
+   "NODE_FAIL": 0.0321,
+   "RUNNING": 0.0,
+   "SUSPENDED": 0.0002,
+   "TIMEOUT": 0.0247
+  },
+  "gpu_hour_weighted_queue_share_gt_1h": 0.18260673073549072,
+  "gpu_hour_weighted_queue_share_gt_6h": 0.09438089814045905,
+  "gpu_hour_weighted_queue_share_gt_24h": 0.02184459187905759,
+  "gpu_hour_weighted_duration_share_gt_1h": 0.976209739711653,
+  "gpu_hour_weighted_duration_share_gt_24h": 0.6795458296497664,
+  "note": "queue = observed scheduling wait in production; a lower bound on delay users tolerated, NOT a deadline",
+  "cluster_total_gpus_first_day": {
+   "Venus": 968,
+   "Saturn": 2072,
+   "Earth": 784,
+   "Uranus": 2136
+  },
+  "reconstructed_mean_gpus_in_use": {
+   "Earth": 832.2490296220633,
+   "Saturn": 2126.8250811688313,
+   "Uranus": 1798.4573258937796,
+   "Venus": 865.41523192222
+  }
+ }
+}
