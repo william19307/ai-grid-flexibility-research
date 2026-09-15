@@ -59,13 +59,16 @@
   "Open-Meteo ERA5 multi-year wind/solar profiles for three provinces (2015-2024) built and audited (D19)",
   "60-run multi-weather-year 2030 grid with idle 0.25/0.41",
   "MLPerf v4.0 node power logs parsed: idle 35-41% of peak (D18)",
-  "manuscript v0.8, phase report 09, English v0.6"
+  "manuscript v0.8, phase report 09, English v0.6",
+  "mechanism v2: event contract vs continuous price settlement, baseline-manipulation rent quantified",
+  "English manuscript v1.0 with numbered citations, 25 references, data/code/ethics statements",
+  "Chinese working manuscript v0.9 (section 5.10)"
  ],
  "requirements_still_open": {
   "novelty": "closest-model replication and complete review pending",
   "Q1": "production traces + MLPerf node power + Emerald GPU modes now calibrate timing, idle and power modes from public data; deadlines remain assumptions by class",
   "Q2": "joint solver verified and S0/S0b/S1/S2 pipeline exercised on uncalibrated provincial inputs; calibrated regional planning/dispatch, coal minimum-load/unit commitment, validated hourly load and same-reliability comparison pending",
-  "Q3": "event-based commitment yields ~no system benefit; firm under system real-time price shape closes the gap to <1%; verification, baseline and transfer accounting for continuous signals pending",
+  "Q3": "event contracts gameable and low-value; continuous marginal-cost-shaped price closes gap to <1%; cost pass-through and sub-hourly inference remain open",
   "national_scope": "province network, generation/asset calibration and 2030/2035 scenarios pending; annual provincial load anchor available but hourly shape remains unvalidated; peak check shows Gansu/Guizhou anchored peaks overstated",
   "robustness": "multi-weather done for wind/solar (single-year hydro and load shape remain); outages and external system pending",
   "paper": "complete core results, English manuscript, supplement and portable reproduction package pending",
@@ -80,6 +83,6 @@
  ],
  "live_jobs": [],
  "previous_goal_turn_classification": "progress: first full S0-S3 provincial 2030 scenario results on public data; still not independently validated",
- "latest_manuscript": "outputs/research/manuscript/论文工作稿_v0.8.md",
+ "latest_manuscript": "outputs/research/manuscript/论文工作稿_v0.9.md",
  "latest_phase_report": "outputs/research/reports/阶段研究报告_09.md"
 }
