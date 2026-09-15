@@ -50,7 +50,8 @@
   "manuscript v0.7 (5.8), phase report 08, English v0.3",
   "peak-load plausibility check for three provinces from public reports: Jiangsu consistent, Gansu and Guizhou anchored peaks too high (2018-derived shape)",
   "peak-adjusted load sensitivity run for Gansu and Guizhou (2030, both exchange modes): directional findings robust",
-  "English core paper v0.4 with full Methods, evidence tiers and data availability"
+  "English core paper v0.4 with full Methods, evidence tiers and data availability",
+  "cost-parameter Monte Carlo (120 draws) for the 2030 constrained-exchange scenario; gap ordering and real-time-price closure robust"
  ],
  "requirements_still_open": {
   "novelty": "closest-model replication and complete review pending",

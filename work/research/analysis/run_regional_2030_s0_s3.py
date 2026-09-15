@@ -166,7 +166,7 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.25,slack_mult=1.0,slack_base_h=6.0,
     r=solve(nodes,scenarios,gens(),lines,stor,[pool],fixed_compute={s['name']:{'ai':fixed_S0[s['name']]} for s in scen},expected_unserved_limit_mwh=0.);res['S0']=summarize(r,'S0')
     r=solve(nodes,scenarios,gens(),lines,stor,[pool],fixed_compute={s['name']:{'ai':fixed_S1[s['name']]} for s in scen},expected_unserved_limit_mwh=0.);res['S1']=summarize(r,'S1')
     r=solve(nodes,scenarios,gens(),lines,stor,[pool],expected_unserved_limit_mwh=0.);res['S2']=summarize(r,'S2')
-    if rt_price:
+    if rt_price and res['S2']['feasible']:
         fixed_S1rt={}
         for s in scen:
             name=s['name'];mc2=np.array(res['S2']['marginal_cost'][name]);pr_=np.maximum(mc2,0.)
@@ -177,7 +177,9 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.25,slack_mult=1.0,slack_base_h=6.0,
     # S3: events = top event_q hours of S1-run nodal marginal cost per week; firm commits max deliverable reduction vs its own S1 schedule
     fixed_S3={};s3meta={}
     for s in scen:
-        name=s['name'];mcs=np.array(res['S1']['marginal_cost'][name]);k=max(1,int(round(event_q*WEEK)))
+        name=s['name']
+        if not res['S1']['feasible']:fixed_S3[name]=fixed_S1[name];s3meta[name]=dict(commitment_mw=0.,opportunity_cost=0.,compensation_floor=0.,events=[],reason='S1 infeasible');continue
+        mcs=np.array(res['S1']['marginal_cost'][name]);k=max(1,int(round(event_q*WEEK)))
         med=float(np.median(mcs));cand=[int(i) for i in np.argsort(-mcs)[:k] if mcs[i]>1.2*med]  # scarcity rule: only hours >20% above weekly median
         events=sorted(cand)
         if not events:

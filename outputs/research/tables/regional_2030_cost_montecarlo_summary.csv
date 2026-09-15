@@ -1,0 +1,6 @@
+,gap_S0_S2_pct,gap_S0_S2_pct,gap_S0_S2_pct,gap_S0_S2_pct,gap_S0_S2_pct,gap_S0_S2_pct,gap_S0_S2_pct,gap_S0_S2_pct,gap_S1_S2_pct,gap_S1_S2_pct,gap_S1_S2_pct,gap_S1_S2_pct,gap_S1_S2_pct,gap_S1_S2_pct,gap_S1_S2_pct,gap_S1_S2_pct,gap_S1rt_S2_pct,gap_S1rt_S2_pct,gap_S1rt_S2_pct,gap_S1rt_S2_pct,gap_S1rt_S2_pct,gap_S1rt_S2_pct,gap_S1rt_S2_pct,gap_S1rt_S2_pct,new_ocgt_S0,new_ocgt_S0,new_ocgt_S0,new_ocgt_S0,new_ocgt_S0,new_ocgt_S0,new_ocgt_S0,new_ocgt_S0,new_ocgt_S2,new_ocgt_S2,new_ocgt_S2,new_ocgt_S2,new_ocgt_S2,new_ocgt_S2,new_ocgt_S2,new_ocgt_S2
+,count,mean,std,min,10%,50%,90%,max,count,mean,std,min,10%,50%,90%,max,count,mean,std,min,10%,50%,90%,max,count,mean,std,min,10%,50%,90%,max,count,mean,std,min,10%,50%,90%,max
+province,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Gansu,16.0,2.58,1.88,0.6,0.95,1.94,4.82,7.82,16.0,1.13,1.01,0.13,0.25,0.64,2.65,3.34,16.0,0.23,0.16,0.04,0.07,0.18,0.4,0.63,16.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,16.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Guizhou,15.0,9.09,4.12,5.06,5.11,6.54,14.9,16.3,15.0,4.93,2.34,2.37,2.61,3.64,8.33,8.59,15.0,0.28,0.44,-0.27,-0.16,0.25,0.82,1.28,15.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,15.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Jiangsu,20.0,4.3,2.65,0.01,1.42,4.43,8.04,10.0,20.0,0.66,0.5,0.0,0.11,0.57,1.54,1.75,20.0,0.32,0.24,0.0,0.03,0.3,0.59,0.91,20.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,20.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
