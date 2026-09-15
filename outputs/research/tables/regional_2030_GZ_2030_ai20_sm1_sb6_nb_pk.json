@@ -30,11 +30,12 @@
    }
   ],
   "assumptions": {
+   "weather_year": null,
    "peak_target_2020": 29000.0,
    "ext_mode": "neighbours",
    "ai_share_of_peak": 0.2,
    "ai_nameplate_mw": 7783.988944384371,
-   "idle_fraction": 0.25,
+   "idle_fraction": 0.41,
    "utilization": 0.7,
    "slack": "job observed queue x 1.0 + 6.0 h",
    "dvfs_config": "ft_llama_8b_dolly",
@@ -50,31 +51,31 @@
     "extended": 0,
     "dropped_share": 0.33685200243676333,
     "n": 177,
-    "s1_bill": 26691960.098821126
+    "s1_bill": 32198841.44466278
    },
    "spring": {
     "extended": 5,
     "dropped_share": 0.0885579748098583,
     "n": 175,
-    "s1_bill": 35188753.742741
+    "s1_bill": 38340492.414645374
    },
    "summer": {
     "extended": 1,
     "dropped_share": 0.0,
     "n": 197,
-    "s1_bill": 30547600.38610532
+    "s1_bill": 33515506.952630293
    },
    "autumn": {
     "extended": 0,
     "dropped_share": 0.0019417716651195464,
     "n": 190,
-    "s1_bill": 35892170.402452394
+    "s1_bill": 39158460.5920539
    }
   },
   "s3": {
    "winter": {
     "commitment_mw": -0.0,
-    "opportunity_cost": 0.0,
+    "opportunity_cost": -3.725290298461914e-09,
     "compensation_floor": 0.0,
     "events": [
      155
@@ -118,7 +119,7 @@
    "batt_energy_inv_yr": 10075.248936490603,
    "source": "PyPSA-China V3.0 archive costs_2030.csv; 5% discount; EUR"
   },
-  "runtime_s": 3.751732110977173
+  "runtime_s": 3.3010361194610596
  },
  "results": {
   "NOAI": {
@@ -158,9 +159,9 @@
   "S0": {
    "tag": "S0",
    "feasible": true,
-   "total_cost": 422070398.1076303,
+   "total_cost": 424243579.7319963,
    "cost_investment": 0.0,
-   "cost_operating": 422070398.10763526,
+   "cost_operating": 424243579.7320007,
    "cost_service_delay": 0.0,
    "cost_unserved_penalty": 0.0,
    "new_mw": {
@@ -182,19 +183,19 @@
    },
    "new_batt_mw": -0.0,
    "new_batt_mwh": -0.0,
-   "emissions_t": 14160430.753115734,
+   "emissions_t": 14239095.964602869,
    "unserved_mwh": 0.0,
    "curtail_rate": 0.0,
-   "import_mwh": 2026.0759652219606,
-   "export_mwh": 38271.77520676152,
-   "ai_mwh": 940126.0071387698
+   "import_mwh": 2251.9017161095057,
+   "export_mwh": 28632.581734114723,
+   "ai_mwh": 1018543.9560492348
   },
   "S1": {
    "tag": "S1",
    "feasible": true,
-   "total_cost": 417947515.0738158,
+   "total_cost": 420222333.70414525,
    "cost_investment": 0.0,
-   "cost_operating": 417947515.0738215,
+   "cost_operating": 420222333.7041505,
    "cost_service_delay": 0.0,
    "cost_unserved_penalty": 0.0,
    "new_mw": {
@@ -216,19 +217,19 @@
    },
    "new_batt_mw": -0.0,
    "new_batt_mwh": -0.0,
-   "emissions_t": 14009998.921563905,
+   "emissions_t": 14092387.7586294,
    "unserved_mwh": 0.0,
    "curtail_rate": 0.0,
-   "import_mwh": 1303.5313933012726,
-   "export_mwh": 43265.90780237227,
-   "ai_mwh": 793470.4202410149
+   "import_mwh": 1364.7700434282658,
+   "export_mwh": 36245.6927581388,
+   "ai_mwh": 875405.1259669508
   },
   "S2": {
    "tag": "S2",
    "feasible": true,
-   "total_cost": 417623560.2157022,
+   "total_cost": 420048574.9338022,
    "cost_investment": 0.0,
-   "cost_operating": 417623560.21570784,
+   "cost_operating": 420048574.93380713,
    "cost_service_delay": 0.0,
    "cost_unserved_penalty": 0.0,
    "new_mw": {
@@ -250,53 +251,19 @@
    },
    "new_batt_mw": -0.0,
    "new_batt_mwh": -0.0,
-   "emissions_t": 13998059.004797174,
+   "emissions_t": 14085973.510306602,
    "unserved_mwh": 0.0,
    "curtail_rate": 0.0,
-   "import_mwh": 1303.531393301273,
-   "export_mwh": 42705.880125691736,
-   "ai_mwh": 782145.6553991019
+   "import_mwh": 1419.174941234284,
+   "export_mwh": 35413.08627474587,
+   "ai_mwh": 869359.6717042141
   },
   "S1rt": {
    "tag": "S1rt_firm_under_S2_realtime_price",
    "feasible": true,
-   "total_cost": 417625987.35009784,
+   "total_cost": 420049600.320782,
    "cost_investment": 0.0,
-   "cost_operating": 417625987.3501034,
-   "cost_service_delay": 0.0,
-   "cost_unserved_penalty": 0.0,
-   "new_mw": {
-    "coal": 0.0,
-    "ocgt": 0.0,
-    "nuclear": 0.0,
-    "hydro": 0.0,
-    "onwind": 0.0,
-    "offwind": 0.0,
-    "solar": 0.0,
-    "nb_coal": 0.0,
-    "nb_gas": 0.0,
-    "nb_nuclear": 0.0,
-    "nb_hydro": 0.0,
-    "nb_solar": 0.0,
-    "nb_onwind": 0.0,
-    "nb_offwind": 0.0,
-    "nb_unserved_proxy": 0.0
-   },
-   "new_batt_mw": -0.0,
-   "new_batt_mwh": 0.0,
-   "emissions_t": 13998147.69001363,
-   "unserved_mwh": 0.0,
-   "curtail_rate": 0.0,
-   "import_mwh": 1303.5313933012726,
-   "export_mwh": 45575.107716959676,
-   "ai_mwh": 782145.6553991019
-  },
-  "S3": {
-   "tag": "S3",
-   "feasible": true,
-   "total_cost": 417947515.0738158,
-   "cost_investment": 0.0,
-   "cost_operating": 417947515.0738214,
+   "cost_operating": 420049600.32078683,
    "cost_service_delay": 0.0,
    "cost_unserved_penalty": 0.0,
    "new_mw": {
@@ -318,12 +285,46 @@
    },
    "new_batt_mw": -0.0,
    "new_batt_mwh": -0.0,
-   "emissions_t": 14009998.921563907,
+   "emissions_t": 14086010.97698601,
    "unserved_mwh": 0.0,
    "curtail_rate": 0.0,
-   "import_mwh": 1303.5313933012724,
-   "export_mwh": 43265.90780237227,
-   "ai_mwh": 793470.4202410149
+   "import_mwh": 1419.174941234284,
+   "export_mwh": 36625.243549286024,
+   "ai_mwh": 869359.6717042141
+  },
+  "S3": {
+   "tag": "S3",
+   "feasible": true,
+   "total_cost": 420222333.70414525,
+   "cost_investment": 0.0,
+   "cost_operating": 420222333.70415044,
+   "cost_service_delay": 0.0,
+   "cost_unserved_penalty": 0.0,
+   "new_mw": {
+    "coal": 0.0,
+    "ocgt": 0.0,
+    "nuclear": 0.0,
+    "hydro": 0.0,
+    "onwind": 0.0,
+    "offwind": 0.0,
+    "solar": 0.0,
+    "nb_coal": 0.0,
+    "nb_gas": 0.0,
+    "nb_nuclear": 0.0,
+    "nb_hydro": 0.0,
+    "nb_solar": 0.0,
+    "nb_onwind": 0.0,
+    "nb_offwind": 0.0,
+    "nb_unserved_proxy": 0.0
+   },
+   "new_batt_mw": -0.0,
+   "new_batt_mwh": -0.0,
+   "emissions_t": 14092387.758629398,
+   "unserved_mwh": 0.0,
+   "curtail_rate": 0.0,
+   "import_mwh": 1364.770043428266,
+   "export_mwh": 36245.6927581388,
+   "ai_mwh": 875405.1259669508
   }
  }
 }

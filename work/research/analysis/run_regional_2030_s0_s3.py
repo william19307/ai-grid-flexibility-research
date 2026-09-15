@@ -93,7 +93,7 @@ def re_profiles_year(prov,year):
         return np.concatenate([a,a[-24*(8784-len(a))//24 - 0:][:8784-len(a)]]) if 8784-len(a)<=24 else np.resize(a,8784)
     return np.clip(fit(w),0,1),np.clip(fit(sv),0,1)
 
-def run(prov,ai_share=0.10,u=0.7,idle_frac=0.25,slack_mult=1.0,slack_base_h=6.0,export=True,ext_load_frac=0.6,coal_min=0.4,event_q=0.05,allow_new_coal=False,tag='',ext_mode='price',rt_price=True,peak_target_2020=None,weather_year=None):
+def run(prov,ai_share=0.10,u=0.7,idle_frac=0.41,slack_mult=1.0,slack_base_h=6.0,export=True,ext_load_frac=0.6,coal_min=0.4,event_q=0.05,allow_new_coal=False,tag='',ext_mode='price',rt_price=True,peak_target_2020=None,weather_year=None):
     t0=time.time();c=costs_2030();p=base.province_inputs(prov);fleet=gem_fleet(prov);ratio=load_ratio(prov)
     if weather_year is not None:
         wpu,spu=re_profiles_year(prov,weather_year);p=dict(p);p['onwind_pu']=wpu;p['solar_pu']=spu  # offshore and hydro stay archive 2020
@@ -102,7 +102,9 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.25,slack_mult=1.0,slack_base_h=6.0,
         # peak-adjusted sensitivity: compress deviations from the annual mean so the 2020 peak equals the target while annual energy is conserved
         mu=load20.mean();k=(peak_target_2020-mu)/(load20.max()-mu);load20=mu+k*(load20-mu);assert load20.min()>0
     load30=load20*ratio;peak30=float(load30.max())
-    q,pr,cfg=base.dvfs_modes();P_full=ai_share*peak30;idle=idle_frac*P_full;mode_power=np.maximum(P_full*pr,idle+1e-6)
+    q,pr,cfg=base.dvfs_modes();P_full=ai_share*peak30;idle=idle_frac*P_full
+    keep=pr>idle_frac+0.02  # modes whose measured power lies below node idle are not achievable at node level; drop them (no clipping to idle)
+    q,pr=q[keep],pr[keep];mode_power=P_full*pr
     wk=1/52.18;scen=[];jobs_by={};fixed_S0={};fixed_S1={};meta_jobs={};prices_by={}
     for name,start in WEEK_STARTS.items():
         sl=slice(start,start+WEEK);T=WEEK

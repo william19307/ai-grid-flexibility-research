@@ -16,7 +16,7 @@ rng=np.random.default_rng(7);rows=[]
 orig=m.costs_2030
 for prov in ['Gansu','Jiangsu','Guizhou']:
     for k in range(20):
-        f=dict(coal=rng.uniform(0.7,1.5),gas=rng.uniform(0.7,1.5),inv=rng.uniform(0.7,1.3));idle=rng.uniform(0.15,0.35);u=rng.uniform(0.5,0.8)
+        f=dict(coal=rng.uniform(0.7,1.5),gas=rng.uniform(0.7,1.5),inv=rng.uniform(0.7,1.3));idle=rng.uniform(0.25,0.45);u=rng.uniform(0.5,0.8)
         def costs():
             c=orig();c['coal_mc']*=f['coal'];c['gas_mc']*=f['gas']
             for key in ['ocgt_inv_yr','onwind_inv_yr','solar_inv_yr','batt_power_inv_yr','batt_energy_inv_yr']:c[key]*=f['inv']

@@ -1,0 +1,120 @@
+# From technical flexibility to realised power-system value in AI computing: service constraints, recovery limits and incentives in China's compute–power coordination
+
+**Manuscript v1.2 (15 September 2026). Article format. All quantitative results are public-data scenario results under the assumptions stated in Methods; the evidence tier of every input is recorded in the data registry.**
+
+**William Wei^1,\*^, Lanlan Liu (刘岚岚)^1^**
+
+^1^ [Affiliation, City, China — to be inserted]
+
+\* Corresponding author: weihong_william@icloud.com
+
+## Abstract
+
+AI computing clusters can modulate power and shift work in time, but this flexibility becomes power-system value only if tasks still complete, the system has hours of scarcity or surplus, and firms are induced to deliver. We link these conditions in one framework spanning task-level power modes, joint investment–dispatch and firm behaviour under tariffs and contracts. In a 2030 public-data scenario for three Chinese provinces, flexibility has no value without zero-marginal-cost or capacity-scarce hours. Where exchange is constrained, the rigid-to-coordinated gap ranges from 1–2% of incremental system cost in coal-heavy Gansu to 6–11% in hydro-rich Guizhou and 15% in Jiangsu, where rigid operation triggers 8.5 GW of gas peakers. Firms under current tariffs realise only part of this value, event contracts add almost nothing, and a firm facing the system's hourly marginal-cost shape comes within 1% of the optimum: the delivery gap is a property of the price signal.
+
+## Main
+
+AI computing load can modulate power and shift execution in time, and grid-interactive operation of AI clusters has been demonstrated experimentally [1]. Prior work has priced spatio-temporal shifting in markets [2,22,23], shown that flexible data centres can lower system cost while raising emissions [3], assessed China's regional bit migration [4], and treated inference flexibility as a resource-adequacy asset with exogenous accreditation [5]; net-grid-benefit tests for interconnection have been proposed [24] and diminishing returns to flexibility in capacity expansion reported [25]. Whether such technical capability translates into power-system value depends on three links that are usually studied separately: the service constraints under which tasks must still complete, the system conditions that give shifted energy any value, and the incentives that make an operator deliver what it technically could. We connect the three in a single framework and quantify, for Chinese provincial systems, how much of the technical flexibility envelope becomes realised system value under (i) rigid operation, (ii) autonomous firm optimisation against tariffs and (iii) system-coordinated operation, and what verifiable commitment and compensation designs narrow the gap.
+
+### Service constraints bound the power envelope
+
+(Fig. 1) Re-analysis of measured GPU power–throughput modes [1] shows that throughput-conserving power reduction of 11–29% at ≥90% throughput exists in measured configurations. Production traces show that most GPU-hours sit in jobs longer than one day (Helios 68%, Alibaba 30%, Philly 90%), while observed queueing waits exceeding one hour cover 18% of GPU-hours in Helios, 15% in Philly and almost none in Alibaba; these waits are lower bounds on tolerated delay, not deadlines, and deadlines are therefore treated as class-level assumptions with sensitivity. Node-level power logs from MLPerf Training v4.0 [10] put idle power at 35–41% of peak across three benchmarks, which bounds the share of load that any change of operating mode can shift.
+
+### Value of flexibility depends on system slack, not on flexibility alone
+
+(Fig. 2)
+
+Public-data 2030 scenario (documented assumptions; hourly load shape not independently validated; see Methods): when interprovincial exchange is represented by an unconstrained external market at a fixed price, the rigid-to-coordinated gap in incremental system cost per AI MWh is below 1% in all three provinces, that is, the exchange proxy removes local scarcity. With exchange constrained, the gap is 1–2% in Gansu (wind/solar-rich, coal-heavy), 8–11% in Guizhou (hydro–renewable mix) and 2–15% in Jiangsu, rising with the AI share of peak. At an AI share of 20% of the 2030 Jiangsu peak, rigid operation requires 8518 MW of new gas peakers and 1950 MW of batteries, whereas system-coordinated operation requires 1103 MW of gas (0 MW with longer deadlines) and no batteries.
+
+### Decomposing the delivery gap
+
+(Fig. 3) Firm-autonomous operation under official provincial time-of-use tariffs realises a province-dependent share of the coordination value: roughly 40–80% in Gansu, 10–40% in Guizhou and near 100% in Jiangsu at AI shares of 5–10% but only 30–80% at 20%. In Guizhou the tariff's valley (00:00–08:00) does not coincide with the system's surplus hours, so autonomous shifting can even raise system cost relative to rigid operation. Longer deadline slack lowers coordinated cost substantially but improves autonomous outcomes much less, because the tariff gives firms no reason to use the extra slack.
+
+### Incentives that close the gap
+
+(Fig. 3, S3 bars) A first event-based commitment mechanism (events = the top 5% hours whose marginal cost exceeds the weekly median by more than 20%; the firm commits the maximum deliverable reduction relative to its own autonomous schedule and is compensated at least its opportunity cost) yields zero or negative system savings relative to autonomous operation in most settings while its compensation floor is positive, and leaves the gap to coordinated operation essentially unchanged. Coordination value arises from continuous intra-day shifting and avoided investment rather than from a few event hours, so event-based demand-response contracts capture only a small fraction of it. When the firm instead optimises against the shape of the system's own hourly marginal cost (the dual prices of the coordinated solution, rescaled to the tariff's mean level), its outcome is within 3.1% of the coordinated optimum in every setting and with either representation of exchange. The delivery gap is therefore almost entirely a property of the price signal the firm faces, not of autonomous operation as such. Replacing the fixed-price external market with an aggregate node of directly connected provinces, each with its own load, fleet and renewables, restores local scarcity: with exchange allowed, rigid-to-coordinated gaps become 0.8–1.0% in Gansu, 0.1–0.2% in Jiangsu and 0.4–0.8% in Guizhou.
+
+### Mechanism design: continuous signals versus event contracts
+
+Two settlement designs were compared under identical tasks and reliability (Methods). An event-based commitment contract, settled against a baseline, delivers a system saving relative to autonomous operation of 1.3 thousand EUR per representative week (four-week expected value) in Guizhou and none in Gansu or Jiangsu, while its compensation floor is 12.6 thousand EUR in Guizhou; it is also exposed to baseline manipulation: if settlement used a full-speed baseline instead of the firm's own tariff-optimal schedule, the measured "reduction" during Guizhou's summer events would be inflated by 614 MW on average without any change in delivered flexibility. A continuous hourly price whose shape follows the system's marginal cost, settled on metered consumption without a baseline, saves 84, 677 and 180 thousand EUR per representative week (four-week expected value) in Gansu, Jiangsu and Guizhou relative to autonomous operation under the current tariff, and leaves a residual gap to the coordinated optimum of 0.1%, 0.2% and 0.6% of the incremental cost. Because it has no baseline it has no manipulation rent; its remaining design questions are the pass-through of transmission and adequacy costs and the treatment of interactive inference, whose service constraints operate at sub-hourly timescales [9].
+
+### Robustness
+
+(Fig. 4) Ten weather years (2015–2024) of ERA5-derived wind and solar profiles at the 20 largest GEM sites per province and technology (Open-Meteo archive; converted with a generic power curve and an irradiance model, levels scaled to the archive 2020 mean) give constrained-exchange rigid-to-coordinated gaps of 1.3–4.8% (median 2.8%) in Gansu, 1.7–3.9% (median 2.5%) in Jiangsu and 5.1–8.7% (median 7.0%) in Guizhou at an AI share of 10%; the firm-under-real-time-price gap stays below 0.61% in every year. MLPerf Training v4.0 node-level AC power logs (8×H100 nodes) put idle power at 35–41% of peak across three benchmarks, above the 25% assumed earlier; with 41% idle the gaps narrow (1.0–3.4% (median 2.1%), 1.6–3.5% (median 2.2%), 3.7–5.9% (median 5.6%)) but the ordering and the price-signal conclusion are unchanged. A peak-adjusted sensitivity (Gansu 2020 peak set to the 2021 official 17.66 GW, Guizhou to 29 GW, annual energy conserved) lowers the constrained-exchange rigid-to-coordinated gap in Guizhou from 7.9% to 5.6% (AI 10%) and from 8.4% to 6.5% (AI 20%), leaves Gansu essentially unchanged, and keeps the firm-under-real-time-price gap below 0.69% in all settings; the overstated peaks bias scarcity upward without changing the direction of any finding. A cost-parameter Monte Carlo (coal and gas fuel prices 0.7–1.5×, gas, battery, wind and solar investment 0.7–1.3×, idle power 15–35%, utilisation 50–80%; 40 draws per province, constrained exchange, AI 10% of peak) preserves the ordering of provinces and the near-closure of the gap under real-time prices: Gansu: rigid-to-coordinated gap median 1.9% (P10–P90 0.9–4.8%), firm-autonomous median 0.6%, real-time-price gap P90 0.40%; Jiangsu: rigid-to-coordinated gap median 4.4% (P10–P90 1.4–8.0%), firm-autonomous median 0.6%, real-time-price gap P90 0.59%; Guizhou: rigid-to-coordinated gap median 6.5% (P10–P90 5.1–14.9%), firm-autonomous median 3.6%, real-time-price gap P90 0.82%.
+
+### Limitations and outlook
+
+Hourly provincial load shapes derive from a 2018 reconstruction anchored to official annual electricity and checked against published peaks; Gansu and Guizhou peaks are overstated and a peak-adjusted sensitivity is reported, but metered hourly load would be required to move the results from scenario to empirical estimate. Hydro and load shapes are single-year; unit commitment is heuristic; interprovincial exchange is an aggregate neighbour node rather than an explicit network; AI pool size, deadline slack and cooling overheads are assumptions; interactive inference with sub-hourly service constraints is not modelled as shiftable. These limitations affect magnitudes, not the ordering of provinces or the conclusion that the price signal, not autonomous operation, determines realised value.
+
+## Figure legends
+
+**Fig. 1 | Service constraints and measured power modes.** a, Measured GPU power–throughput modes for eight configurations and six power caps (re-analysis of ref. 1). b, GPU-hour-weighted distributions of observed scheduling wait and run time in three public production traces (Helios [7], Alibaba PAI [6], Philly [8]); waits are lower bounds on tolerated delay. c, Node-level idle and active AC power from MLPerf Training v4.0 logs [10] (8×H100 nodes, three benchmarks). Source: `figures/production_traces_wait_duration_util.pdf`, `figures/empirical_dvfs_reanalysis.pdf`.
+
+**Fig. 2 | Incremental system cost per AI MWh by operating scenario.** Three provinces, 2030 public-data scenario with constrained interprovincial exchange, AI load equal to 5, 10 and 20% of the 2030 provincial peak; scenarios S0 rigid, S1 firm under official time-of-use tariff, S3 event-based commitment, S1rt firm under the system's hourly marginal-cost shape, S2 system-coordinated. Source: `figures/submission/fig2_cost_by_scenario.pdf`.
+
+**Fig. 3 | Share of coordination value realised.** (cost S0 − cost X)/(cost S0 − cost S2) for X = S1, S3, S1rt, same settings as Fig. 2. Values near 1 indicate that the firm's own optimisation delivers almost all of the system value; Guizhou under the current tariff realises 30–60% while the real-time price realises 90–100%. Source: `figures/submission/fig3_realised_share.pdf`.
+
+**Fig. 4 | Robustness.** Rigid-to-coordinated gap across ten ERA5-derived weather years (2015–2024) and across a cost-parameter Monte Carlo (fuel prices, investment costs, idle power, utilisation), and the gap of the firm-under-real-time-price case to the coordinated optimum, constrained exchange, AI 10% of peak. Source: `figures/submission/fig4_robustness.pdf`.
+
+## Methods
+
+### Task–power model
+Each compute pool $p$ runs batches $j$ with release $r_{pj}$, deadline $d_{pj}$ and work $w_{pj}$ in full-speed pool-hours. Execution shares $y_{pjtm}\in[0,1]$ of the pool in hour $t$ and measured mode $m$ (normalised throughput $\bar q_m$, power $P_m$) satisfy $\sum_{j,m} y_{pjtm}\le 1$, $y_{pjtm}=0$ outside $[r_{pj},d_{pj})$ and $\sum_{t,m}\bar q_m y_{pjtm}\Delta t=w_{pj}$; no work may be dropped or deferred beyond the horizon. Pool power is $P_{pt}=P^{idle}_p+\sum_{j,m}(P_m-P^{idle}_p)y_{pjtm}$. Modes are the eight configurations and six GPU power caps measured by Colangelo et al. (re-analysed, Section 2.1 of the working manuscript); the fine-tuning configuration is used for the pool, idle power is set to 41% of nameplate from MLPerf Training v4.0 node-level logs [10] (25% as a sensitivity), and switching, checkpoint and cooling overheads are not yet represented. Batches are sampled from completed GPU jobs in the Helios trace by hour of submission, keeping GPU count and run time; slack beyond the run time equals the job's own observed queueing wait times a multiplier plus a base (6 or 24 h), and a greedy full-speed reservation guarantees joint feasibility, extending deadlines where necessary and truncating work at the horizon end (counts reported). Observed waits are lower bounds on tolerated delay, not deadlines.
+
+### Joint planning–operation model
+A linear programme shares investment in generation, lines and storage across scenarios (four representative 2020 weather weeks, equal probability) and dispatches chronologically within each: nodal balance with a transport network with losses, storage with round-trip losses and cyclic state, generator availability profiles, an optional must-run fraction, an emissions cap and an expected-unserved-energy cap (set to zero for non-AI load). Investment coefficients are annualised at 5% and scaled to the weekly horizon. The model was verified against 118 independent oracle cases and, with water-conserving reservoir cascades, 74 further cases (supplementary validation records). Unit commitment, AC power flow, task migration and non-anticipative control are not represented.
+
+### Scenarios
+S0 fixes the pool to a work-conserving earliest-deadline full-speed schedule. S1 fixes it to the schedule that minimises the firm's bill under the official provincial time-of-use shape (Jiangsu 2020 notice, Gansu 2020 notice effective 2021, Guizhou 2023 notice; level set to 1.5× coal marginal cost). S1rt repeats S1 with the hourly shape of the coordinated solution's nodal marginal cost. S2 leaves task variables free in the joint LP. S3 lets the system declare event hours (top 5% hours whose S1 marginal cost exceeds the weekly median by >20%), the firm commits the maximum reduction deliverable relative to its own S1 schedule with all batches still completed, is compensated at least its opportunity cost, and the committed trajectory is fixed in the joint LP. NOAI removes the pool. Increments are reported per AI MWh relative to NOAI; compensation is treated as a transfer.
+
+### Provincial inputs
+Hourly load: the archive's 2020 provincial series (2018-derived shape) anchored to the official 2020 annual electricity of each province; a peak plausibility check against public reports shows Jiangsu consistent, Gansu about 11% above the 2021 official peak and Guizhou above the 2026 record, so a peak-adjusted sensitivity (deviations from the mean compressed to a target peak, energy conserved) is reported. 2030 load scales the shape by the archive's 2030/2020 ratio. Thermal, nuclear and hydro fleets in 2030 are unit-level from the Global Energy Monitor July-2025 tracker (operating plus construction, retirements applied; size thresholds make totals lower bounds). Wind and solar existing capacity is the 2020 archive value; new wind, solar, batteries and gas peakers are investable at archive 2030 costs; new coal is not allowed. Coal must-run is 40% of the capacity committed to cover each week's maximum residual load divided by 0.85. Interprovincial exchange is represented either by a fixed-price external market or by an aggregate node of directly connected provinces with their own load, fleets and renewables and a high-cost backstop. Costs are in EUR from the archive cost tables.
+
+### Evidence tiers and limitations
+Results are public-data scenarios with documented assumptions. Hourly load shapes are not independently validated; renewable profiles are a single weather year; hydro is a normalised archive profile; the external market or aggregate neighbour node replaces an explicit network; unit commitment is heuristic; AI pool size, idle power and slack are assumptions. Numbers are therefore directional and are labelled as such throughout; none is presented as a calibrated empirical estimate.
+
+### Data and code availability
+All inputs are public; sources, versions, checksums, licences and limitations are listed in `outputs/research/tables/data_registry.csv`; scripts and run order are in `REPRODUCE.md`.
+
+## Data availability
+All inputs are public. Sources, versions, checksums, licences and limitations are listed in `outputs/research/tables/data_registry.csv` (D01–D19). Raw external archives are not redistributed; the registry gives retrieval instructions.
+
+## Code availability
+All model, audit and figure scripts are in the research repository (`work/research/`), with run order in `REPRODUCE.md`; the joint planning model and task models carry independent verification records (`outputs/research/tables/*_validation.json`).
+
+## Author contributions
+W.W. conceived the study, developed the task and joint planning models, curated the public datasets, performed the analyses and wrote the manuscript. L.L. contributed to the research design, supervised the analysis and revised the manuscript. Both authors approved the final version.
+
+## Competing interests
+The authors declare no competing interests.
+
+## Ethics
+This study uses only public datasets and published benchmark results; no human-subject or proprietary data were used.
+
+## References
+
+1. Colangelo, G. et al. AI data centres as grid-interactive assets. Nature Energy (2025). https://doi.org/10.1038/s41560-025-01927-1
+2. Zhang, W. & Zavala, V. M. Remunerating space–time, load-shifting flexibility from data centers in electricity markets. Applied Energy 326, 119930 (2022). https://doi.org/10.1016/j.apenergy.2022.119930
+3. Knittel, C. R., Senga, K. & Wang, S. Flexible data centers reduce power system costs but can increase emissions. iScience (2026); MIT CEEPR WP 2025-14 (2025). https://ceepr.mit.edu/wp-content/uploads/2025/07/MIT-CEEPR-WP-2025-14.pdf
+4. Zhang, X., Li, Y. & Wang, C. Decarbonizing data centers through regional bits migration: a comprehensive assessment of China's Eastern Data, Western Computing initiative. Applied Energy 392, 126020 (2025). https://doi.org/10.1016/j.apenergy.2025.126020
+5. Dunlap, C. T. et al. Quantifying AI data center flexibility as a resource adequacy asset. Preprint (2026). https://climate.uchicago.edu/working-papers/quantifying-ai-data-center-flexibility-as-a-resource-adequacy-asset/
+6. Weng, Q. et al. MLaaS in the wild: workload analysis and scheduling in large-scale heterogeneous GPU clusters. In Proc. USENIX NSDI (2022). Trace: https://github.com/alibaba/clusterdata/tree/master/cluster-trace-gpu-v2020
+7. Hu, Q. et al. Characterization and prediction of deep learning workloads in large-scale GPU datacenters. In Proc. SC (2021). https://doi.org/10.1145/3458817.3476223 ; trace: https://github.com/S-Lab-System-Group/HeliosData
+8. Jeon, M. et al. Analysis of large-scale multi-tenant GPU clusters for DNN training workloads. In Proc. USENIX ATC (2019). Trace: https://github.com/msr-fiddle/philly-traces
+9. Stojkovic, J. et al. DynamoLLM: designing LLM inference clusters for performance and energy efficiency. In Proc. HPCA (2025). https://arxiv.org/abs/2408.00741
+10. MLCommons. MLPerf Training v4.0 results incl. power measurements (Supermicro AC-power submission). https://github.com/mlcommons/training_results_v4.0 (2024).
+11. Wang, Y. et al. BurstGPT: a real-world workload dataset to optimize LLM serving systems. In Proc. KDD (2025). https://doi.org/10.1145/3711896.3737413
+12. Wu, T. & Kan, S. Hourly electric power load and transmission data at the provincial level in China. Zenodo (2023). https://doi.org/10.5281/zenodo.8322210
+13. PyPSA-China V3.0 archive. Zenodo (2024). https://doi.org/10.5281/zenodo.13987282
+14. Global Energy Monitor. Global Integrated Power Tracker, July 2025 release (China subset via Zenodo). https://doi.org/10.5281/zenodo.16810831
+15. Open-Meteo. Historical weather API (ERA5-based reanalysis). https://open-meteo.com/en/docs/historical-weather-api (accessed 15 September 2026).
+16. Hersbach, H. et al. The ERA5 global reanalysis. Q. J. R. Meteorol. Soc. 146, 1999–2049 (2020). https://doi.org/10.1002/qj.3803
+17. National Bureau of Statistics of China. China Statistical Yearbook 2021, Table 9-14, electricity consumption by region (2021).
+18. Jiangsu Provincial Development and Reform Commission. Notice on 2020–2022 transmission-distribution and retail tariffs of the Jiangsu grid, 苏发改价格发〔2020〕1183号, Annex 3 (2020).
+19. Gansu Provincial Development and Reform Commission. Notice on adjusting retail tariffs and optimising time-of-use tariffs, effective 1 January 2021 (December 2020).
+20. Guizhou Provincial Development and Reform Commission. Notice on improving the time-of-use tariff mechanism, 黔发改价格〔2023〕481号 (2023).
+21. National Development and Reform Commission et al. National integrated computing-power hubs and data-centre clusters (Eastern Data, Western Computing), approvals of February 2022. https://www.ndrc.gov.cn/fzggw/jgsj/gjss/sjdt/202203/t20220321_1319862.html
+22. Zhang, T. et al. Mitigating curtailment and carbon emissions through load migration between data centers. Joule 4, 2208–2222 (2020). https://doi.org/10.1016/j.joule.2020.08.001
+23. Fridgen, G. et al. Shifting load through space: the economics of spatial demand side management using distributed data centers. Energy Policy 109, 400–413 (2017). https://doi.org/10.1016/j.enpol.2017.07.018
+24. A net-grid-benefit test for interconnecting AI data centres. npj Environmental Social Sciences (2026). https://doi.org/10.1038/s44432-026-00013-5
+25. To defer or to shift? The role of AI data center flexibility on grid interconnection. In Proc. ACM Sustainability Week Companion, 322–327 (2026). https://doi.org/10.1145/3765611.3815593

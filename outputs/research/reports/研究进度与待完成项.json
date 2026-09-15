@@ -63,7 +63,8 @@
   "mechanism v2: event contract vs continuous price settlement, baseline-manipulation rent quantified",
   "English manuscript v1.0 with numbered citations, 25 references, data/code/ethics statements",
   "Chinese working manuscript v0.9 (section 5.10)",
-  "English v1.1: abstract within 150 words, language pass, complete author-contribution and competing-interest statements with name placeholders; Word builds of manuscript, SI and Chinese draft"
+  "English v1.1: abstract within 150 words, language pass, complete author-contribution and competing-interest statements with name placeholders; Word builds of manuscript, SI and Chinese draft",
+  "authors inserted (William Wei, Lanlan Liu); multi-agent submission review workflow launched on English v1.2 and Chinese v1.0"
  ],
  "requirements_still_open": {
   "novelty": "closest-model replication and complete review pending",

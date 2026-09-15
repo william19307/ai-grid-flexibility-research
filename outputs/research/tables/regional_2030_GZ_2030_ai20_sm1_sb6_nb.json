@@ -30,11 +30,12 @@
    }
   ],
   "assumptions": {
+   "weather_year": null,
    "peak_target_2020": null,
    "ext_mode": "neighbours",
    "ai_share_of_peak": 0.2,
    "ai_nameplate_mw": 8389.290397516725,
-   "idle_fraction": 0.25,
+   "idle_fraction": 0.41,
    "utilization": 0.7,
    "slack": "job observed queue x 1.0 + 6.0 h",
    "dvfs_config": "ft_llama_8b_dolly",
@@ -50,30 +51,30 @@
     "extended": 0,
     "dropped_share": 0.33685200243676333,
     "n": 177,
-    "s1_bill": 28767590.260966107
+    "s1_bill": 34702699.769088246
    },
    "spring": {
     "extended": 5,
     "dropped_share": 0.0885579748098583,
     "n": 175,
-    "s1_bill": 37925114.74306901
+    "s1_bill": 41321940.09374793
    },
    "summer": {
     "extended": 1,
     "dropped_share": 0.0,
     "n": 197,
-    "s1_bill": 32923054.28712295
+    "s1_bill": 36121752.311641276
    },
    "autumn": {
     "extended": 0,
     "dropped_share": 0.0019417716651195464,
     "n": 190,
-    "s1_bill": 38683230.75157481
+    "s1_bill": 42203515.41781853
    }
   },
   "s3": {
    "winter": {
-    "commitment_mw": -2.0753367582083063e-11,
+    "commitment_mw": -0.0,
     "opportunity_cost": 0.0,
     "compensation_floor": 0.0,
     "events": [
@@ -118,7 +119,7 @@
    "batt_energy_inv_yr": 10075.248936490603,
    "source": "PyPSA-China V3.0 archive costs_2030.csv; 5% discount; EUR"
   },
-  "runtime_s": 3.7753169536590576
+  "runtime_s": 3.3575313091278076
  },
  "results": {
   "NOAI": {
@@ -158,9 +159,9 @@
   "S0": {
    "tag": "S0",
    "feasible": true,
-   "total_cost": 424493945.0761035,
+   "total_cost": 426824602.81791574,
    "cost_investment": 0.0,
-   "cost_operating": 424493945.07610893,
+   "cost_operating": 426824602.81792104,
    "cost_service_delay": 0.0,
    "cost_unserved_penalty": 0.0,
    "new_mw": {
@@ -182,19 +183,19 @@
    },
    "new_batt_mw": -0.0,
    "new_batt_mwh": -0.0,
-   "emissions_t": 14250846.913801998,
+   "emissions_t": 14335048.43043994,
    "unserved_mwh": 0.0,
    "curtail_rate": 0.0,
-   "import_mwh": 679.5258935162068,
-   "export_mwh": 56567.364197577146,
-   "ai_mwh": 1013232.4365433431
+   "import_mwh": 721.301622385063,
+   "export_mwh": 40423.41503806555,
+   "ai_mwh": 1097748.3512610958
   },
   "S1": {
    "tag": "S1",
    "feasible": true,
-   "total_cost": 420055323.17726773,
+   "total_cost": 422502165.07230407,
    "cost_investment": 0.0,
-   "cost_operating": 420055323.177273,
+   "cost_operating": 422502165.07230955,
    "cost_service_delay": 0.0,
    "cost_unserved_penalty": 0.0,
    "new_mw": {
@@ -216,19 +217,19 @@
    },
    "new_batt_mw": -0.0,
    "new_batt_mwh": -0.0,
-   "emissions_t": 14088916.374967448,
+   "emissions_t": 14177518.541253528,
    "unserved_mwh": 0.0,
    "curtail_rate": 0.0,
-   "import_mwh": 471.1566008808552,
-   "export_mwh": 66107.9883526207,
-   "ai_mwh": 855172.563168122
+   "import_mwh": 471.1566008808549,
+   "export_mwh": 53584.93397950728,
+   "ai_mwh": 943478.7060572184
   },
   "S2": {
    "tag": "S2",
    "feasible": true,
-   "total_cost": 419713343.92827237,
+   "total_cost": 422318777.7665812,
    "cost_investment": 0.0,
-   "cost_operating": 419713343.92827827,
+   "cost_operating": 422318777.7665868,
    "cost_service_delay": 0.0,
    "cost_unserved_penalty": 0.0,
    "new_mw": {
@@ -250,19 +251,19 @@
    },
    "new_batt_mw": -0.0,
    "new_batt_mwh": -0.0,
-   "emissions_t": 14076295.939150393,
+   "emissions_t": 14170696.000751667,
    "unserved_mwh": 0.0,
    "curtail_rate": 0.0,
-   "import_mwh": 471.1566008808553,
-   "export_mwh": 68251.65929563591,
-   "ai_mwh": 843158.8945817038
+   "import_mwh": 471.1566008808549,
+   "export_mwh": 53403.64503523707,
+   "ai_mwh": 937154.8797693744
   },
   "S1rt": {
    "tag": "S1rt_firm_under_S2_realtime_price",
    "feasible": true,
-   "total_cost": 419718763.1012443,
+   "total_cost": 422322703.13017815,
    "cost_investment": 0.0,
-   "cost_operating": 419718763.1012496,
+   "cost_operating": 422322703.13018364,
    "cost_service_delay": 0.0,
    "cost_unserved_penalty": 0.0,
    "new_mw": {
@@ -284,19 +285,19 @@
    },
    "new_batt_mw": -0.0,
    "new_batt_mwh": -0.0,
-   "emissions_t": 14076520.33479258,
+   "emissions_t": 14170854.90227733,
    "unserved_mwh": 0.0,
    "curtail_rate": 0.0,
-   "import_mwh": 471.1566008808544,
-   "export_mwh": 72071.35168584439,
-   "ai_mwh": 843198.6441429129
+   "import_mwh": 471.1566008808549,
+   "export_mwh": 55886.052561000746,
+   "ai_mwh": 937197.4239656712
   },
   "S3": {
    "tag": "S3",
    "feasible": true,
-   "total_cost": 420055323.17726773,
+   "total_cost": 422502165.0723041,
    "cost_investment": 0.0,
-   "cost_operating": 420055323.17727304,
+   "cost_operating": 422502165.07230955,
    "cost_service_delay": 0.0,
    "cost_unserved_penalty": 0.0,
    "new_mw": {
@@ -316,14 +317,14 @@
     "nb_offwind": 0.0,
     "nb_unserved_proxy": 0.0
    },
-   "new_batt_mw": -0.0,
+   "new_batt_mw": 0.0,
    "new_batt_mwh": -0.0,
-   "emissions_t": 14088916.374967448,
+   "emissions_t": 14177518.541253528,
    "unserved_mwh": 0.0,
    "curtail_rate": 0.0,
-   "import_mwh": 471.1566008808551,
-   "export_mwh": 66107.98835262071,
-   "ai_mwh": 855172.563168122
+   "import_mwh": 471.1566008808544,
+   "export_mwh": 53584.93397950728,
+   "ai_mwh": 943478.7060572184
   }
  }
 }

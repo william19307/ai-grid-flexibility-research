@@ -1,5 +1,5 @@
 """Multi-weather-year 2030 runs: ERA5-derived wind/solar profiles 2015-2024 for the three provinces, constrained exchange,
-AI 10% of peak, slack x1+6h, idle fraction 0.25 (prior assumption) and 0.41 (MLPerf node-level idle/max). Hydro and load
+AI 10% of peak, slack x1+6h, idle fraction 0.41 (MLPerf node-level idle/max, base case) and 0.25 (sensitivity). Hydro and load
 shapes remain the archive/anchored 2020 series (limitation: only wind and solar vary by weather year)."""
 import sys;sys.argv=['x']
 from pathlib import Path
