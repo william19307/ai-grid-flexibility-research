@@ -81,9 +81,13 @@ def helios_queue_jobs(T,u,start_hour,slack_mult,slack_base_h,seed):
         out.append(Batch(f'h{t}_{d_}_{len(out)}',t,d_,w))
     return out,dict(extended=ext,dropped_share=dropped/target,n=len(out))
 
-def run(prov,ai_share=0.10,u=0.7,idle_frac=0.25,slack_mult=1.0,slack_base_h=6.0,export=True,ext_load_frac=0.6,coal_min=0.4,event_q=0.05,allow_new_coal=False,tag='',ext_mode='price',rt_price=True):
+def run(prov,ai_share=0.10,u=0.7,idle_frac=0.25,slack_mult=1.0,slack_base_h=6.0,export=True,ext_load_frac=0.6,coal_min=0.4,event_q=0.05,allow_new_coal=False,tag='',ext_mode='price',rt_price=True,peak_target_2020=None):
     t0=time.time();c=costs_2030();p=base.province_inputs(prov);fleet=gem_fleet(prov);ratio=load_ratio(prov)
-    load30=p['load']*ratio;peak30=float(load30.max())
+    load20=p['load']
+    if peak_target_2020 is not None:
+        # peak-adjusted sensitivity: compress deviations from the annual mean so the 2020 peak equals the target while annual energy is conserved
+        mu=load20.mean();k=(peak_target_2020-mu)/(load20.max()-mu);load20=mu+k*(load20-mu);assert load20.min()>0
+    load30=load20*ratio;peak30=float(load30.max())
     q,pr,cfg=base.dvfs_modes();P_full=ai_share*peak30;idle=idle_frac*P_full;mode_power=np.maximum(P_full*pr,idle+1e-6)
     wk=1/52.18;scen=[];jobs_by={};fixed_S0={};fixed_S1={};meta_jobs={};prices_by={}
     for name,start in WEEK_STARTS.items():
@@ -185,9 +189,9 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.25,slack_mult=1.0,slack_base_h=6.0,
     r=solve(nodes,scenarios,gens(),lines,stor,[pool],fixed_compute={s['name']:{'ai':fixed_S3[s['name']]} for s in scen},expected_unserved_limit_mwh=0.);res['S3']=summarize(r,'S3')
     for k_ in res:res[k_].pop('marginal_cost',None)
     meta=dict(province=prov,evidence_tier='public-data 2030 scenario; hourly load shape unvalidated; documented assumptions',load_ratio_2030_2020=ratio,peak_2030_mw=peak30,fleet_2030_gem=fleet,hydro_mw_gem_2030=hydro_mw,committed_coal_mw=comm,
-        neighbours=(nb.get('names'),nb.get('links_mw')) if nb else None,assumptions=dict(ext_mode=ext_mode,ai_share_of_peak=ai_share,ai_nameplate_mw=P_full,idle_fraction=idle_frac,utilization=u,slack='job observed queue x %.1f + %.1f h'%(slack_mult,slack_base_h),dvfs_config=cfg,tariff='official shape, level 1.5x coal marginal',coal_min_of_committed=coal_min,allow_new_coal=allow_new_coal,export=export,event_top_share=event_q,external_market='EXT load %.2f x interconnection at 1.1x coal marginal, 3%% loss'%ext_load_frac),
+        neighbours=(nb.get('names'),nb.get('links_mw')) if nb else None,assumptions=dict(peak_target_2020=peak_target_2020,ext_mode=ext_mode,ai_share_of_peak=ai_share,ai_nameplate_mw=P_full,idle_fraction=idle_frac,utilization=u,slack='job observed queue x %.1f + %.1f h'%(slack_mult,slack_base_h),dvfs_config=cfg,tariff='official shape, level 1.5x coal marginal',coal_min_of_committed=coal_min,allow_new_coal=allow_new_coal,export=export,event_top_share=event_q,external_market='EXT load %.2f x interconnection at 1.1x coal marginal, 3%% loss'%ext_load_frac),
         job_meta=meta_jobs,s3=s3meta,costs=c,runtime_s=time.time()-t0)
-    out=dict(meta=meta,results=res);name=f"{CODE[prov]}_2030_ai{int(ai_share*100)}{'' if export else '_noexport'}_sm{slack_mult:g}_sb{int(slack_base_h)}{'_nb' if ext_mode=='neighbours' else ''}{tag}"
+    out=dict(meta=meta,results=res);name=f"{CODE[prov]}_2030_ai{int(ai_share*100)}{'' if export else '_noexport'}_sm{slack_mult:g}_sb{int(slack_base_h)}{'_nb' if ext_mode=='neighbours' else ''}{'' if peak_target_2020 is None else '_pk'}{tag}"
     json.dump(out,open(OUT/f'regional_2030_{name}.json','w'),ensure_ascii=False,indent=1,default=float)
     rows=[]
     for k_,d in res.items():

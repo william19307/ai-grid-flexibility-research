@@ -30,6 +30,7 @@
    }
   ],
   "assumptions": {
+   "peak_target_2020": null,
    "ext_mode": "neighbours",
    "ai_share_of_peak": 0.1,
    "ai_nameplate_mw": 4194.645198758362,
@@ -117,7 +118,7 @@
    "batt_energy_inv_yr": 10075.248936490603,
    "source": "PyPSA-China V3.0 archive costs_2030.csv; 5% discount; EUR"
   },
-  "runtime_s": 3.8431029319763184
+  "runtime_s": 3.9854719638824463
  },
  "results": {
   "NOAI": {

@@ -48,7 +48,9 @@
   "manuscript v0.7 (5.8), phase report 08, English v0.3",
   "GEM fleets for all 31 provinces; neighbour-aggregate exchange node implemented; S1rt (firm under system real-time price shape) implemented; both 36-setting grids rerun with S0/S1/S1rt/S2/S3",
   "manuscript v0.7 (5.8), phase report 08, English v0.3",
-  "peak-load plausibility check for three provinces from public reports: Jiangsu consistent, Gansu and Guizhou anchored peaks too high (2018-derived shape)"
+  "peak-load plausibility check for three provinces from public reports: Jiangsu consistent, Gansu and Guizhou anchored peaks too high (2018-derived shape)",
+  "peak-adjusted load sensitivity run for Gansu and Guizhou (2030, both exchange modes): directional findings robust",
+  "English core paper v0.4 with full Methods, evidence tiers and data availability"
  ],
  "requirements_still_open": {
   "novelty": "closest-model replication and complete review pending",
