@@ -1,0 +1,133 @@
+{
+ "sites": {
+  "Gansu|solar": {
+   "n_sites": 442,
+   "mw_total": 25551.100000000002,
+   "top_share": 0.12876157973629315
+  },
+  "Gansu|wind": {
+   "n_sites": 217,
+   "mw_total": 28770.699999999997,
+   "top_share": 0.15825127647224435
+  },
+  "Guizhou|solar": {
+   "n_sites": 227,
+   "mw_total": 19507.1,
+   "top_share": 0.104064673887969
+  },
+  "Guizhou|wind": {
+   "n_sites": 125,
+   "mw_total": 6686.1,
+   "top_share": 0.1266807256846293
+  },
+  "Jiangsu|solar": {
+   "n_sites": 1704,
+   "mw_total": 14696.0,
+   "top_share": 0.19005171475231356
+  },
+  "Jiangsu|wind": {
+   "n_sites": 187,
+   "mw_total": 22239.2,
+   "top_share": 0.14164178567574373
+  }
+ },
+ "scaling": {
+  "Gansu|solar": {
+   "level_scale": 0.9446565255400916,
+   "corr_with_archive_2020": 0.9276169436290764,
+   "mean_cf_by_year": {
+    "2015": 0.16947682266218356,
+    "2016": 0.16776230876965934,
+    "2017": 0.16219790278160712,
+    "2018": 0.15501638426492156,
+    "2019": 0.15506001167630923,
+    "2020": 0.1593802778123695,
+    "2021": 0.1580599656608536,
+    "2022": 0.1523831487968739,
+    "2023": 0.15359072391972692,
+    "2024": 0.14934867274934788
+   }
+  },
+  "Gansu|wind": {
+   "level_scale": 0.884632600899291,
+   "corr_with_archive_2020": 0.4466833380804919,
+   "mean_cf_by_year": {
+    "2015": 0.11611038259967438,
+    "2016": 0.10695088487792018,
+    "2017": 0.13594911977352747,
+    "2018": 0.14226829891336037,
+    "2019": 0.13970547287598084,
+    "2020": 0.12417993243964795,
+    "2021": 0.13649290589407265,
+    "2022": 0.124606084264386,
+    "2023": 0.1435049117372932,
+    "2024": 0.1344736105547984
+   }
+  },
+  "Guizhou|solar": {
+   "level_scale": 0.7131508039459036,
+   "corr_with_archive_2020": 0.9515797245551427,
+   "mean_cf_by_year": {
+    "2015": 0.08198241350714709,
+    "2016": 0.08861470603898075,
+    "2017": 0.08300525392914648,
+    "2018": 0.08974331172126848,
+    "2019": 0.0950470937405418,
+    "2020": 0.0936493309400248,
+    "2021": 0.09437240672200646,
+    "2022": 0.09663345849183014,
+    "2023": 0.10184466370337267,
+    "2024": 0.10069066160876029
+   }
+  },
+  "Guizhou|wind": {
+   "level_scale": 1.9005105522275534,
+   "corr_with_archive_2020": 0.9336427330356133,
+   "mean_cf_by_year": {
+    "2015": 0.05101251013911616,
+    "2016": 0.04932597660126558,
+    "2017": 0.07964718085656872,
+    "2018": 0.08932144783041189,
+    "2019": 0.07568790199479206,
+    "2020": 0.10923275743597209,
+    "2021": 0.0914917859536064,
+    "2022": 0.08795539242733263,
+    "2023": 0.11277359744764534,
+    "2024": 0.1227417523323012
+   }
+  },
+  "Jiangsu|solar": {
+   "level_scale": 0.9694648711131062,
+   "corr_with_archive_2020": 0.9615883686126685,
+   "mean_cf_by_year": {
+    "2015": 0.14195641338772697,
+    "2016": 0.1389457174074385,
+    "2017": 0.14225793539510856,
+    "2018": 0.13376587810647222,
+    "2019": 0.13607688659738704,
+    "2020": 0.1308054162046592,
+    "2021": 0.13475241739055277,
+    "2022": 0.14164167285487783,
+    "2023": 0.13831000116383302,
+    "2024": 0.13870687717777627
+   }
+  },
+  "Jiangsu|wind": {
+   "level_scale": 0.8010053859142492,
+   "corr_with_archive_2020": 0.7566622073038555,
+   "mean_cf_by_year": {
+    "2015": 0.13416567050552855,
+    "2016": 0.1615606918008674,
+    "2017": 0.16099521120475366,
+    "2018": 0.19101604842683662,
+    "2019": 0.13605500673557147,
+    "2020": 0.14728704626824582,
+    "2021": 0.18427945434997264,
+    "2022": 0.16350601604242826,
+    "2023": 0.17135161448419606,
+    "2024": 0.1817077953447436
+   }
+  }
+ },
+ "method": "Multi-year (2015-2024) hourly wind and solar capacity factors for Gansu, Jiangsu, Guizhou from Open-Meteo ERA5 archive.\n\nSites: operating wind/solar units from the GEM July-2025 tracker with coordinates; the largest N sites per province and\ntechnology (capacity share reported). Wind: 100 m wind speed -> generic IEC-class power curve (cut-in 3 m/s, rated 12 m/s,\ncut-out 25 m/s, cubic ramp) x 0.85 availability/wake factor. Solar: GHI/1000 x temperature derating 0.004/K above 25 C x\n0.85 performance ratio (horizontal plane, no tracking). Province profile = capacity-weighted mean. Each year is then\nscaled so that the 2020 annual mean equals the archive 2020 profile mean (one factor per province/technology), so levels\nfollow the archive while inter-annual variability and hourly shape follow ERA5. Evidence tier: reanalysis-derived\nprofiles with a simple conversion; not measured generation. Open-Meteo: free, no key, CC-BY 4.0 (ERA5 via Copernicus).\n"
+}

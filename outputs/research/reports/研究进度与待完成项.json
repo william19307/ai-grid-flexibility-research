@@ -51,15 +51,19 @@
   "peak-load plausibility check for three provinces from public reports: Jiangsu consistent, Gansu and Guizhou anchored peaks too high (2018-derived shape)",
   "peak-adjusted load sensitivity run for Gansu and Guizhou (2030, both exchange modes): directional findings robust",
   "English core paper v0.4 with full Methods, evidence tiers and data availability",
-  "cost-parameter Monte Carlo (120 draws) for the 2030 constrained-exchange scenario; gap ordering and real-time-price closure robust"
+  "cost-parameter Monte Carlo (120 draws) for the 2030 constrained-exchange scenario; gap ordering and real-time-price closure robust",
+  "Open-Meteo ERA5 multi-year wind/solar profiles for three provinces (2015-2024) built and audited (D19)",
+  "60-run multi-weather-year 2030 grid with idle 0.25/0.41",
+  "MLPerf v4.0 node power logs parsed: idle 35-41% of peak (D18)",
+  "manuscript v0.8, phase report 09, English v0.6"
  ],
  "requirements_still_open": {
   "novelty": "closest-model replication and complete review pending",
-  "Q1": "production traces now give observed wait/run/utilisation distributions (lower bounds on tolerated delay, no deadlines, no power); mapping to deadline distributions by workload class and to measured power modes still pending",
+  "Q1": "production traces + MLPerf node power + Emerald GPU modes now calibrate timing, idle and power modes from public data; deadlines remain assumptions by class",
   "Q2": "joint solver verified and S0/S0b/S1/S2 pipeline exercised on uncalibrated provincial inputs; calibrated regional planning/dispatch, coal minimum-load/unit commitment, validated hourly load and same-reliability comparison pending",
   "Q3": "event-based commitment yields ~no system benefit; firm under system real-time price shape closes the gap to <1%; verification, baseline and transfer accounting for continuous signals pending",
   "national_scope": "province network, generation/asset calibration and 2030/2035 scenarios pending; annual provincial load anchor available but hourly shape remains unvalidated; peak check shows Gansu/Guizhou anchored peaks overstated",
-  "robustness": "multi-weather-year, outages, out-of-sample validation and external system pending",
+  "robustness": "multi-weather done for wind/solar (single-year hydro and load shape remain); outages and external system pending",
   "paper": "complete core results, English manuscript, supplement and portable reproduction package pending",
   "regions": "candidate set screened (Gansu/Ningxia/Inner Mongolia; Jiangsu/Guangdong; Guizhou); final choice pending calibration data; Gansu large hydro absent from archive"
  },
@@ -72,6 +76,6 @@
  ],
  "live_jobs": [],
  "previous_goal_turn_classification": "progress: first full S0-S3 provincial 2030 scenario results on public data; still not independently validated",
- "latest_manuscript": "outputs/research/manuscript/论文工作稿_v0.7.md",
- "latest_phase_report": "outputs/research/reports/阶段研究报告_08.md"
+ "latest_manuscript": "outputs/research/manuscript/论文工作稿_v0.8.md",
+ "latest_phase_report": "outputs/research/reports/阶段研究报告_09.md"
 }
