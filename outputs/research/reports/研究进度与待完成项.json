@@ -62,7 +62,8 @@
   "manuscript v0.8, phase report 09, English v0.6",
   "mechanism v2: event contract vs continuous price settlement, baseline-manipulation rent quantified",
   "English manuscript v1.0 with numbered citations, 25 references, data/code/ethics statements",
-  "Chinese working manuscript v0.9 (section 5.10)"
+  "Chinese working manuscript v0.9 (section 5.10)",
+  "English v1.1: abstract within 150 words, language pass, complete author-contribution and competing-interest statements with name placeholders; Word builds of manuscript, SI and Chinese draft"
  ],
  "requirements_still_open": {
   "novelty": "closest-model replication and complete review pending",
@@ -71,7 +72,7 @@
   "Q3": "event contracts gameable and low-value; continuous marginal-cost-shaped price closes gap to <1%; cost pass-through and sub-hourly inference remain open",
   "national_scope": "province network, generation/asset calibration and 2030/2035 scenarios pending; annual provincial load anchor available but hourly shape remains unvalidated; peak check shows Gansu/Guizhou anchored peaks overstated",
   "robustness": "multi-weather done for wind/solar (single-year hydro and load shape remain); outages and external system pending",
-  "paper": "complete core results, English manuscript, supplement and portable reproduction package pending",
+  "paper": "English v1.1 and SI v1.0 complete on public data; author names/affiliations to be inserted; optional native-speaker polish; journal choice by authors",
   "regions": "candidate set screened (Gansu/Ningxia/Inner Mongolia; Jiangsu/Guangdong; Guizhou); final choice pending calibration data; Gansu large hydro absent from archive"
  },
  "next_actions": [
