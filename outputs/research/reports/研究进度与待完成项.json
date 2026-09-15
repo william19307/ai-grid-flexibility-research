@@ -40,28 +40,30 @@
   "production-trace figure and regional smoke-grid figure rendered (PNG/SVG/PDF)",
   "English core-paper skeleton v0.1 with pending markers written",
   "optional generator minimum-output constraint added to joint LP (default off); 118 + 74 prior checks rerun and passed; 40% uniform must-run smoke variant run and its artefacts documented",
-  "official TOU tariff documents for Jiangsu (2020 notice), Gansu (2020-12 notice) and Guizhou (2023 notice) archived and registered (D15-D17); pipeline supports Helios-derived batch arrivals with feasibility guard and official tariff shapes; 24-run trace/official grid summarised"
+  "official TOU tariff documents for Jiangsu (2020 notice), Gansu (2020-12 notice) and Guizhou (2023 notice) archived and registered (D15-D17); pipeline supports Helios-derived batch arrivals with feasibility guard and official tariff shapes; 24-run trace/official grid summarised",
+  "GEM unit-level 2020/2030 fleets for Gansu, Jiangsu, Guizhou built and compared with archive (A06)",
+  "provincial 2030 S0/S1/S2/S3 scenario pipeline built and run: 36 settings, 180 solves (A07); results labelled public-data scenario",
+  "manuscript v0.6 (sections 5.7, 6.1), phase report 07, English core paper v0.2 with directional results"
  ],
  "requirements_still_open": {
   "novelty": "closest-model replication and complete review pending",
   "Q1": "production traces now give observed wait/run/utilisation distributions (lower bounds on tolerated delay, no deadlines, no power); mapping to deadline distributions by workload class and to measured power modes still pending",
   "Q2": "joint solver verified and S0/S0b/S1/S2 pipeline exercised on uncalibrated provincial inputs; calibrated regional planning/dispatch, coal minimum-load/unit commitment, validated hourly load and same-reliability comparison pending",
-  "Q3": "operational cost threshold implemented; empirical delivery costs, strategic baseline, risk, system benefit and participation validation pending",
+  "Q3": "first event-based commitment mechanism implemented and evaluated: near-zero system net benefit; v2 with system dual-price scarcity, continuous signals, baseline/verification pending",
   "national_scope": "province network, generation/asset calibration and 2030/2035 scenarios pending; annual provincial load anchor available but hourly shape remains unvalidated",
   "robustness": "multi-weather-year, outages, out-of-sample validation and external system pending",
   "paper": "complete core results, English manuscript, supplement and portable reproduction package pending",
   "regions": "candidate set screened (Gansu/Ningxia/Inner Mongolia; Jiangsu/Guangdong; Guizhou); final choice pending calibration data; Gansu large hydro absent from archive"
  },
  "next_actions": [
-  "choose final three regions (proposed: Gansu or Ningxia, Jiangsu, Guizhou) and transcribe official 2020 provincial capacity by fuel, TOU tariffs and interprovincial exchange for them",
-  "calibrate deadline distributions by workload class (traces give run-time and lower-bound waits only); keep Helios-derived arrivals as one variant; add unit-level commitment data instead of uniform must-run",
-  "resolve reservoir storage references and hydro inflow years for Guizhou; reconcile thermal/wind/solar vintages and gross/net boundaries",
-  "obtain independent hourly or peak load validation, then run calibrated regional S0/S1/S2 with 2030 load and AI scenarios",
-  "independent chronological outages and multi-weather adequacy validation, then S3 participation and system net benefit",
-  "complete national 2030/2035 results, English paper, final figures and portable reproduction package"
+  "obtain independent hourly or peak load validation for the three provinces (institutional data) or document the limitation",
+  "replace the external-market proxy by a multi-province coupled network for the three provinces and their neighbours",
+  "unit-level commitment using GEM unit sizes; multi-weather years (archive 1979-2016 hydrology/weather where available) and outage samples",
+  "mechanism v2: scarcity from S2 dual prices, continuous price/dispatch signals, verification and baseline rules",
+  "finalise English manuscript, figures and reproduction package"
  ],
  "live_jobs": [],
- "previous_goal_turn_classification": "progress: this turn added three production-trace audits, a region screening matrix and an end-to-end uncalibrated S0/S0b/S1/S2 regional pipeline; still no calibrated regional result",
- "latest_manuscript": "outputs/research/manuscript/论文工作稿_v0.5.md",
- "latest_phase_report": "outputs/research/reports/阶段研究报告_06.md"
+ "previous_goal_turn_classification": "progress: first full S0-S3 provincial 2030 scenario results on public data; still not independently validated",
+ "latest_manuscript": "outputs/research/manuscript/论文工作稿_v0.6.md",
+ "latest_phase_report": "outputs/research/reports/阶段研究报告_07.md"
 }
