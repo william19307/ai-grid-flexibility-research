@@ -1,0 +1,69 @@
+{
+  "status": "archive_2020_column_matches_rounded_official_2021_first_loaded_fleet_in_all_31_provinces",
+  "archive_labeled_year": 2020,
+  "archive_total_MW": 54647.0,
+  "official_2021_total_MWe": 54646.95,
+  "official_2020_first_loaded_total_MWe": 51027.16,
+  "province_rows_checked": 31,
+  "exact_rounded_matches": 31,
+  "difference_2021_minus_2020_MWe": 3619.7899999999936,
+  "new_first_loaded_units_MWe": 3608.79,
+  "changed_rating_same_unit_MWe": 11.0,
+  "new_units": [
+    {
+      "plant": "田湾核电站",
+      "unit": "6号机组",
+      "rated_MWe_2021": 1118.0
+    },
+    {
+      "plant": "石岛湾核电厂",
+      "unit": "1号机组",
+      "rated_MWe_2021": 211.0
+    },
+    {
+      "plant": "福清核电厂",
+      "unit": "6号机组",
+      "rated_MWe_2021": 1161.0
+    },
+    {
+      "plant": "红沿河核电厂",
+      "unit": "5号机组",
+      "rated_MWe_2021": 1118.79
+    }
+  ],
+  "changed_ratings": [
+    {
+      "plant": "福清核电厂",
+      "unit": "5号机组",
+      "rated_MWe_2020": 1150.0,
+      "rated_MWe_2021": 1161.0
+    }
+  ],
+  "2020_unit_generation_sums_100million_kWh": {
+    "gross": 3662.4300000000003,
+    "net": 3428.54
+  },
+  "2020_source_reported_generation_totals_100million_kWh": {
+    "gross": 3662.43,
+    "net": 3428.54
+  },
+  "2020_rounding_residual_100million_kWh": {
+    "gross": 4.547473508864641e-13,
+    "net": 0.0
+  },
+  "source_urls": [
+    "https://www.caea.gov.cn/n6760340/n6760356/c6827514/content.html",
+    "https://www.caea.gov.cn/n6760340/n6760356/c6827530/content.html"
+  ],
+  "source_image_visually_reviewed": "2026-09-14, official 2020 tables 1 and 2",
+  "limitations": [
+    "exact numerical fingerprint establishes year/scope inconsistency, not the unpublished provenance history of the archive",
+    "first fuel loading, first grid connection and commercial operation are distinct dates",
+    "2020 table includes Fuqing 5 prior to commercial operation; not equivalent to official commercial-only or other statistical fleet totals",
+    "capacity rating changes across publications do not by themselves prove physical capacity upgrades",
+    "annual unit generation is rounded; preserve residual, do not force totals by altering a unit",
+    "year-end nameplate cannot be assumed available for all 8784 hours",
+    "net/gross generation boundary requires consistent auxiliary-power treatment in the grid model"
+  ],
+  "archive_sha256": "e5c76378f51b36bb964fb5dce0a1a31157bc5db4ab99bb4000c3cee479a28c1c"
+}

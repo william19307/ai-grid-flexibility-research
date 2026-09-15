@@ -1,0 +1,37 @@
+{
+  "status": "two_large_dam_vintages_reconciled_to_2020_year_end_not_complete_hydro_baseline",
+  "archive_combined_MW": 26200.0,
+  "confirmed_2020_year_end_MW": 6800.0,
+  "difference_MW": 19400.0,
+  "GEM_hydropower_records": 1165,
+  "GEM_hydropower_records_without_unit_phase_label": 1165,
+  "implication": "GEM plant-level start year cannot automatically recover individual units partially commissioned in 2020; province labels require physical/electrical mapping",
+  "cases": [
+    {
+      "dam": "Baihetan",
+      "archived_nameplate_MW": 16000.0,
+      "confirmed_2020_year_end_operating_MW": 0,
+      "first_production_date": "2021-06-28",
+      "source_url": "https://www.ctg.com.cn/sxjt/xwzx55/zhxw23/2024081106181629105/index.html",
+      "GEM_2025_plant_capacity_MW": 16000.0,
+      "GEM_start_year": 2022.0,
+      "GEM_unit_phase_field": "",
+      "archive_province_label": "Sichuan",
+      "GEM_province_label": "Sichuan",
+      "status": "verified year-end bound; full commissioning trajectory and cross-province allocation unresolved"
+    },
+    {
+      "dam": "Wudongde",
+      "archived_nameplate_MW": 10200.0,
+      "confirmed_2020_year_end_operating_MW": 6800,
+      "first_production_date": "2020-06-29",
+      "source_url": "https://www.ctg.com.cn/sxjt/xwzx55/zhxw23/2024081106052368282/index.html",
+      "GEM_2025_plant_capacity_MW": 10200.0,
+      "GEM_start_year": 2021.0,
+      "GEM_unit_phase_field": "",
+      "archive_province_label": "Sichuan",
+      "GEM_province_label": "Yunnan",
+      "status": "verified year-end bound; full commissioning trajectory and cross-province allocation unresolved"
+    }
+  ]
+}

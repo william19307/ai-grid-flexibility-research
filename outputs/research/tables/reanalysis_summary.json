@@ -1,0 +1,36 @@
+{
+  "status": "source_reanalysis_not_new_experiment",
+  "source_commit": "34403aef78c2690a8e4f0ba8f7f62d302cdba967",
+  "rows": 48,
+  "configurations": 8,
+  "interpolation_holdout_points": 32,
+  "interpolation_MAE_pp": 3.2916138189878104,
+  "interpolation_max_error_pp": 12.354320280184428,
+  "power_reduction_at_90pct_screen_min_pct": 11.489452488587727,
+  "power_reduction_at_90pct_screen_max_pct": 29.372875292615852,
+  "source_conflicts": [
+    {
+      "id": "A01",
+      "severity": "material_alignment",
+      "finding": "All 400 power values identical, but CSV timestamps are exactly 24 h later than XLSX.",
+      "handling": "Retain originals; prohibit date-aligned grid counterfactuals until resolved.",
+      "offset_hours": [
+        24.0
+      ]
+    },
+    {
+      "id": "A02",
+      "severity": "aggregate_conflict",
+      "finding": "Six job performance values match; published weighted aggregates disagree.",
+      "handling": "Use XLSX only for explicitly documented weight-based recomputation; do not call weights GPU or compute shares.",
+      "csv_weighted_performance": 0.909560245,
+      "xlsx_weighted_performance": 0.907884615,
+      "recomputed_from_xlsx_weights": 0.9078846145319999
+    }
+  ],
+  "china_load_rows": 8760,
+  "china_load_columns": 31,
+  "china_load_input_annual_total_TWh": 6900.099999998703,
+  "china_load_commit": "3ba042b201470e1f8b74e4356247565b4f8aee0d",
+  "china_load_sha256": "9c410dc29acfb9ce387aaa965ccfa27300975473f2b7d8d6cdc9f8d322a33f44"
+}

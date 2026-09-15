@@ -1,0 +1,37 @@
+{
+  "status": "official_aggregate_targets_extracted_not_hourly_failure_process",
+  "source_title": "2020 年全国电力可靠性年度报告",
+  "publisher": "国家能源局、中国电力企业联合会",
+  "publication": "2021-08",
+  "source_url": "https://prpq.nea.gov.cn/uploads/file1/20211009/616107fe94a8e.pdf",
+  "sha256": "86303ff20fc2c3729b79dabb9a8d3c619955b7790f97cc1cea9c72490a26ca99",
+  "tables": {
+    "2-5": 5,
+    "2-29": 7,
+    "2-28": 5
+  },
+  "checks": [
+    "600MW five yearly rows",
+    "six regional counts sum to 1865",
+    "unplanned duration counts sum to 906",
+    "duration percentages sum to 100"
+  ],
+  "interpretation_limits": [
+    "operating factor, equivalent availability and equivalent forced outage rate are distinct measures",
+    "unplanned outage distribution includes more than forced outages; cannot use as forced-only duration distribution",
+    "aggregate rates do not identify serial correlation, weather dependence or a unique Markov process",
+    "source unit-year exposure definitions and subset coverage need reconciliation before rate fitting",
+    "regional table covers six grid regions, not province-level outage telemetry",
+    "last duration bin visually prints 1000; narrative says above 1000; exact endpoint convention retained as unresolved"
+  ],
+  "next_reliability_work": "use as calibration targets; derive and stress-test explicitly assumed transition model only after exposure definitions are verified",
+  "manual_visual_review": {
+    "date": "2026-09-14",
+    "pdf_pages_1based": [
+      20,
+      38,
+      39
+    ],
+    "result": "table values and headings checked against rendered source pages"
+  }
+}

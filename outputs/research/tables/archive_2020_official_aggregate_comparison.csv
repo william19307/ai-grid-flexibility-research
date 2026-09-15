@@ -1,0 +1,5 @@
+metric,source_model_value,official_2020_value,relative_difference_pct,official_source,interpretation
+total_electricity_TWh,7587.5577611280005,7511.0,1.0192752113966197,https://www.nea.gov.cn/2021-04/16/c_139884169.htm,scope_and_year_reconciliation_required_not_a_passed_backtest
+wind_installed_MW,242974.2,281530.0,-13.695094661314954,https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901004.html,scope_and_year_reconciliation_required_not_a_passed_backtest
+solar_installed_MW,253600.0,253430.0,0.067079666969172,https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901004.html,scope_and_year_reconciliation_required_not_a_passed_backtest
+nuclear_installed_MW,54647.0,49890.0,9.534976949288442,https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901004.html,scope_and_year_reconciliation_required_not_a_passed_backtest

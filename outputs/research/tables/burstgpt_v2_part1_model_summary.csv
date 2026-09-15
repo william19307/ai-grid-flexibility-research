@@ -1,0 +1,3 @@
+model,records,zero_output_records,median_input_tokens,median_output_tokens_all_records,mean_recorded_requests_per_full_hour,max_recorded_requests_per_full_hour,recorded_hourly_peak_to_mean,p95_recorded_requests_per_full_hour,zero_record_hours
+ChatGPT,1210109,20942,225.0,31.0,827.1373889268626,33292,40.24966159877432,3673.699999999998,71
+GPT-4,219628,4501,470.0,60.0,150.11004784688996,7912,52.70799732253849,708.5999999999995,126

@@ -1,0 +1,15 @@
+source_sheet,Line No.,Power Capacity (GW),From Province,To Province,status
+HVAC,4,10.0,NM,SD,requires_project_identity_check_not_automatic_deletion
+HVAC,5,3.0,HB,SH,requires_project_identity_check_not_automatic_deletion
+HVAC,7,3.0,HB,SH,requires_project_identity_check_not_automatic_deletion
+HVAC,9,3.0,HB,SH,requires_project_identity_check_not_automatic_deletion
+HVAC,11,8.0,SC,ZJ,requires_project_identity_check_not_automatic_deletion
+HVAC,12,8.0,SC,ZJ,requires_project_identity_check_not_automatic_deletion
+HVAC,17,10.0,NM,SD,requires_project_identity_check_not_automatic_deletion
+HVAC,19,12.0,XJ,AH,requires_project_identity_check_not_automatic_deletion
+HVAC,27,12.0,XJ,AH,requires_project_identity_check_not_automatic_deletion
+HVAC,29,5.0,YN,GD,requires_project_identity_check_not_automatic_deletion
+HVAC,30,5.0,YN,GD,requires_project_identity_check_not_automatic_deletion
+HVAC,31,5.0,YN,GD,requires_project_identity_check_not_automatic_deletion
+HVAC,32,3.0,GZ,GD,requires_project_identity_check_not_automatic_deletion
+HVAC,33,3.0,GZ,GD,requires_project_identity_check_not_automatic_deletion

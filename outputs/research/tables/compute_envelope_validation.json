@@ -1,0 +1,27 @@
+{
+  "status": "controlled_component_benchmark",
+  "cases": 200,
+  "verified_checks": [
+    "two_mode_analytic_solution",
+    "zero_recovery_no_reduction",
+    "full_utilization_no_reduction",
+    "recovery_monotonicity",
+    "work_conservation"
+  ],
+  "additional_measured_mode_checks": [
+    "no_response_without_recovery",
+    "no_response_at_full_throughput",
+    "recovery_monotonicity",
+    "all_200_cases_conserve_work"
+  ],
+  "max_work_residual": 5.329070518200751e-15,
+  "assumptions": [
+    "all_work_available_at_start",
+    "single_terminal_deadline",
+    "fractional_time_sharing_between_measured_modes",
+    "zero_switching_cost",
+    "GPU_power_only",
+    "no_grid_or_price_model",
+    "utilization_and_recovery_are_scenarios_not_observations"
+  ]
+}

@@ -1,0 +1,3716 @@
+[
+  {
+    "case": 0,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 1,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 2,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 3,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 4,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 5,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 6,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 7,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 8,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 9,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 10,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 11,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 0,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 12,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 13,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 14,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 15,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 16,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 17,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 18,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 0,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 19,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 20,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 21,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 22,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 23,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 0,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 24,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 25,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 26,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 27,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 28,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 29,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 30,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 31,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 32,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 33,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 0,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 34,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 35,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 0,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 36,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 37,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 38,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 39,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 40,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 41,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 42,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 43,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 44,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 45,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 46,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 47,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 48,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 49,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 50,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 51,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 52,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 53,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 54,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 55,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 56,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 57,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 58,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 59,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 60,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 61,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 62,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 63,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 64,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 65,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 66,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 67,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 68,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 69,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 70,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 71,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 72,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 73,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 74,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 75,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 76,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 77,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 78,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 79,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 80,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 81,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 82,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 83,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 84,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 85,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 86,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 87,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 88,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 89,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 90,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 91,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 92,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 93,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 94,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 95,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 96,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 97,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 98,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 99,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 100,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 101,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 102,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 103,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 104,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 105,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 106,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 107,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 108,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 109,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 110,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 111,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 0,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 112,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 113,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "enumerated_feasible": true,
+    "solver_feasible": true
+  },
+  {
+    "case": 114,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 1,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 115,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 116,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 117,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 0,
+        "deadline": 1,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 118,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 1,
+        "deadline": 3,
+        "work": 1
+      },
+      {
+        "name": "1",
+        "release": 1,
+        "deadline": 2,
+        "work": 1
+      },
+      {
+        "name": "2",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "3",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      },
+      {
+        "name": "4",
+        "release": 3,
+        "deadline": 4,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  },
+  {
+    "case": 119,
+    "jobs": [
+      {
+        "name": "0",
+        "release": 2,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "power_caps": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "enumerated_feasible": false,
+    "solver_feasible": false
+  }
+]

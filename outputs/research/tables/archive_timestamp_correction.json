@@ -1,0 +1,16 @@
+{
+  "old_sha256": "112541220aad8e9ef18740c18838bca081971ca7fba1961459e80b56957de9f0",
+  "new_sha256": "73d9f238a258689cb51d0befebd0f48eeef578b9b430a1360af6cd02d2d4b03f",
+  "all_power_and_profile_arrays_unchanged": {
+    "provinces": true,
+    "load_MW": true,
+    "solar_pu": true,
+    "onwind_pu": true,
+    "offwind_pu": true,
+    "other_hydro_pu": true,
+    "hydro_valid_hours": true
+  },
+  "timestamp_correction": "Explicit nanosecond serialization; old values were microseconds despite key name. Corrected values equal old * 1000. Original archive data untouched.",
+  "documentation": "https://pandas.pydata.org/docs/user_guide/timeseries.html",
+  "affected_model_claims": "No regional dispatch/adequacy results previously generated from this prepared file. Previously reported source annual totals and shape correlations unchanged."
+}

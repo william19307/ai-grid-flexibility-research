@@ -1,0 +1,27 @@
+{
+  "status": "verified_deterministic_cost_component_NOT_policy_result",
+  "checks": [
+    "analytic_piecewise_linear_cost_and_dual",
+    "cost_at_zero_commitment_can_exceed_outside_option",
+    "above_boundary_infeasible",
+    "dual_matches_finite_difference_away_from_kink",
+    "service_cost_units_and_opportunity_cost",
+    "lexicographic_max_response_then_min_cost",
+    "72_cost_frontiers_nondecreasing_and_convex_on_tested_grid",
+    "all_fixed_promises_conserve_each_job",
+    "participation_compensation_relative_to_reoptimized_outside_option"
+  ],
+  "frontiers": 72,
+  "solved_fixed_commitments": 360,
+  "max_work_error": 1.0957901253050295e-13,
+  "scope": "operational electricity and optional stipulated service cost, no empirical checkpoint/migration or capital costs",
+  "limitations": [
+    "synthetic uniform arrivals",
+    "assumed deadlines and idle power",
+    "assumed tariff magnitudes and patterns",
+    "no default risk, risk aversion or transaction costs",
+    "fixed non-strategic baseline",
+    "no evidence of positive social net benefit or willingness to accept"
+  ],
+  "model_sha256": "d75a47d0f6bb53640be0a385e8eb48e4898fd6c5391e57226b4300e3331339ac"
+}

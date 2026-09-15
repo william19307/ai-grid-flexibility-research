@@ -1,0 +1,67 @@
+{
+  "status": "source_inputs_prepared_NOT_calibrated_base_year",
+  "archive_doi": "10.5281/zenodo.13987282",
+  "selected_member_count": 60,
+  "verification": "member CRC32/size and local SHA256; full 16.9GB archive not downloaded or hash-verified",
+  "weather_profiles": {
+    "year": 2020,
+    "hours": 8784,
+    "land_wind_provinces": 31,
+    "solar_provinces": 31,
+    "offshore_provinces": 11,
+    "timezone": "interpreted as UTC+8 from source build script +8h and consuming code localization; source numeric profiles have no timezone metadata"
+  },
+  "load": {
+    "type": "source_model_scaled_input_not_independent_metered_2020",
+    "annual_TWh": 7587.5577611280005,
+    "matches_source_annual_table": true,
+    "min_shape_correlation_to_2018": 0.9999979771013544
+  },
+  "other_hydro": {
+    "hours": 8760,
+    "missing_leapday_hours": 24,
+    "cross_province_profile_max_difference": 0.0,
+    "scope": "source script other existing hydro; major dam reservoirs handled separately, not all hydro"
+  },
+  "official_aggregate_comparison": [
+    {
+      "metric": "total_electricity_TWh",
+      "source_model_value": 7587.5577611280005,
+      "official_2020_value": 7511.0,
+      "relative_difference_pct": 1.0192752113966197,
+      "official_source": "https://www.nea.gov.cn/2021-04/16/c_139884169.htm",
+      "interpretation": "scope_and_year_reconciliation_required_not_a_passed_backtest"
+    },
+    {
+      "metric": "wind_installed_MW",
+      "source_model_value": 242974.2,
+      "official_2020_value": 281530.0,
+      "relative_difference_pct": -13.695094661314954,
+      "official_source": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901004.html",
+      "interpretation": "scope_and_year_reconciliation_required_not_a_passed_backtest"
+    },
+    {
+      "metric": "solar_installed_MW",
+      "source_model_value": 253600.0,
+      "official_2020_value": 253430.0,
+      "relative_difference_pct": 0.067079666969172,
+      "official_source": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901004.html",
+      "interpretation": "scope_and_year_reconciliation_required_not_a_passed_backtest"
+    },
+    {
+      "metric": "nuclear_installed_MW",
+      "source_model_value": 54647.0,
+      "official_2020_value": 49890.0,
+      "relative_difference_pct": 9.534976949288442,
+      "official_source": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901004.html",
+      "interpretation": "scope_and_year_reconciliation_required_not_a_passed_backtest"
+    }
+  ],
+  "outstanding": [
+    "asset vintage inclusion/retirement and official provincial capacity reconciliation",
+    "grid edge physical identity and available transfer capacity",
+    "major hydro inflows/reservoir constraints",
+    "load regional/year scope and base-year dispatch calibration",
+    "independent weather years and uncertainty"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "source": "https://doi.org/10.5281/zenodo.8322210",
+  "license": "CC-BY-4.0",
+  "load": {
+    "hours": 8760,
+    "provinces": 31,
+    "year": 2018,
+    "type": "reconstructed_not_raw_hourly_metering",
+    "equal_to_PyPSA_China_after_column_mapping": true,
+    "national_annual_TWh": 6900.099999998703,
+    "HB_first_occurrence_maps_to": "HE (Hebei)",
+    "HB_second_occurrence_maps_to": "HB (Hubei)",
+    "permission": "historical_shape_prototyping_only; recent_base_year_validation_pending"
+  },
+  "transmission": [
+    {
+      "source_sheet": "HVAC",
+      "listed_rows": 39,
+      "listed_capacity_sum_GW": 227.46,
+      "published_matrix_sum_divided_by_two_GW": 227.45999999999998,
+      "mismatched_undirected_pairs": 0,
+      "appendix4_table_classification": "HVDC",
+      "approved_for_grid_results": false
+    },
+    {
+      "source_sheet": "HVDC",
+      "listed_rows": 34,
+      "listed_capacity_sum_GW": 208.98999999999998,
+      "published_matrix_sum_divided_by_two_GW": 208.99,
+      "mismatched_undirected_pairs": 3,
+      "appendix4_table_classification": "HVAC",
+      "approved_for_grid_results": false
+    }
+  ],
+  "remaining_network_checks": [
+    "Appendix 3 sheet names opposite Appendix 4 table headings",
+    "three undirected matrix/list conflicts in sheet HVDC",
+    "project identity, duplicate aliases, endpoints, capacity and commissioning dates need verification",
+    "rated capacities are not available transfer capability; do not count symmetric entries twice"
+  ],
+  "provenance": [
+    {
+      "path": "work/research/sources/zenodo_8322210/Appendix 1_Hourly electric power load final.csv",
+      "sha256": "d8f5c26f3d8b4f639c64ecebf732ff360a303780252a8f498956833c9b4d6059"
+    },
+    {
+      "path": "work/research/sources/PyPSA-China/resources/data/load/Hourly_demand_of_31_province_China_modified_V2.1.csv",
+      "sha256": "9c410dc29acfb9ce387aaa965ccfa27300975473f2b7d8d6cdc9f8d322a33f44"
+    },
+    {
+      "path": "work/research/sources/zenodo_8322210/Appendix 3_Transmission lines between provinces.xlsx",
+      "sha256": "14a775bca2f252c793cc1cfe7f67e57512af50527d4d6a1cdb4a7b0a5838d519"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+type,label,cost_saving_pct,emissions_reduction_pct
+scenario,Rigid,0,0
+scenario,Private,6,2.7
+scenario,Coordinated,16,11.4
+envelope,illustrative,1,0.5
+envelope,illustrative,3,3.5
+envelope,illustrative,6,7.0
+envelope,illustrative,9,9.5
+envelope,illustrative,12,10.8
+envelope,illustrative,16,11.4

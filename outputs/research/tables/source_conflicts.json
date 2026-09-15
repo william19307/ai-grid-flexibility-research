@@ -1,0 +1,44 @@
+[
+  {
+    "id":"A01",
+    "severity":"material_alignment",
+    "finding":"All 400 power values identical, but CSV timestamps are exactly 24 h later than XLSX.",
+    "handling":"Retain originals; prohibit date-aligned grid counterfactuals until resolved.",
+    "offset_hours":[
+      24.0
+    ],
+    "csv_weighted_performance":null,
+    "xlsx_weighted_performance":null,
+    "recomputed_from_xlsx_weights":null
+  },
+  {
+    "id":"A02",
+    "severity":"aggregate_conflict",
+    "finding":"Six job performance values match; published weighted aggregates disagree.",
+    "handling":"Use XLSX only for explicitly documented weight-based recomputation; do not call weights GPU or compute shares.",
+    "offset_hours":null,
+    "csv_weighted_performance":0.909560245,
+    "xlsx_weighted_performance":0.907884615,
+    "recomputed_from_xlsx_weights":0.9078846145
+  },
+  {
+    "id":"A03",
+    "severity":"dependence",
+    "finding":"Three inference configurations have identical normalized throughput at all six caps.",
+    "handling":"Treat rows as configurations; do not claim eight independent sampled models.",
+    "offset_hours":null,
+    "csv_weighted_performance":null,
+    "xlsx_weighted_performance":null,
+    "recomputed_from_xlsx_weights":null
+  },
+  {
+    "id":"A04",
+    "severity":"external_validity",
+    "finding":"No repeated-run uncertainty, workload-arrival timestamps, or job completion telemetry in the eight enumerated source tables.",
+    "handling":"Do not infer statistical confidence, recovery feasibility, workload completion or China-wide availability from this dataset.",
+    "offset_hours":null,
+    "csv_weighted_performance":null,
+    "xlsx_weighted_performance":null,
+    "recomputed_from_xlsx_weights":null
+  }
+]

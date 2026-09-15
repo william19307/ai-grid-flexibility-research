@@ -1,0 +1,8 @@
+technology,all_records,current_operating_records,current_operating_capacity_MW,current_operating_unknown_start_records,current_operating_unknown_start_capacity_MW,surviving_operating_start_by_2020_capacity_MW,retired_after_2020_known_start_by_2020_capacity_MW,limitation
+bioenergy,749,549,20090.5,19,1110.0,11113.0,0.0,"partial reconstruction candidates; exclusions, conversions and missing dates unresolved"
+coal,6408,3269,1189040.7999999998,70,3432.0,1027504.8,12832.0,"partial reconstruction candidates; exclusions, conversions and missing dates unresolved"
+hydropower,1165,734,355037.0,17,1165.0,274942.0,0.0,"partial reconstruction candidates; exclusions, conversions and missing dates unresolved"
+nuclear,347,58,58134.0,0,0.0,49907.0,0.0,"partial reconstruction candidates; exclusions, conversions and missing dates unresolved"
+oil/gas,1178,629,152791.0,15,2115.0,99560.4,0.0,"partial reconstruction candidates; exclusions, conversions and missing dates unresolved"
+solar,16658,12891,487560.7,2019,39676.4,174494.5,0.0,"partial reconstruction candidates; exclusions, conversions and missing dates unresolved"
+wind,8666,5413,444178.1,210,27012.6,251391.7,237.2,"partial reconstruction candidates; exclusions, conversions and missing dates unresolved"

@@ -1,0 +1,21 @@
+# Raw external archives and licensed datasets are kept locally and reconstructed
+# from the source registry; do not commit them to this research repository.
+work/research/sources/
+work/research/prepared/
+work/research/figures/
+work/research/*.zip
+work/research/**/*.zip
+
+# Local runtime and generated caches
+work/figure-env/
+work/**/__pycache__/
+__pycache__/
+.DS_Store
+*.pyc
+*.log
+
+# Temporary downloads and scratch output
+work/tmp/
+work/*.out
+work/*.jsonl
+

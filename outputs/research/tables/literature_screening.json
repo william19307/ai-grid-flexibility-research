@@ -1,0 +1,162 @@
+[
+  {
+    "id": "L01",
+    "title": "AI data centres as grid-interactive assets",
+    "publication_status": "Nature Energy; online 2025, issue 2026",
+    "canonical_url": "https://doi.org/10.1038/s41560-025-01927-1",
+    "inspection_level": "Public source repository, README and 8 source files inspected; numerical reanalysis completed",
+    "known_overlap": "Actual AI power management and service constraints already demonstrated",
+    "next_comparison": "Use measured configurations for calibration; do not claim first demonstration",
+    "primary_evidence_url": "https://github.com/ai-emerald/emerald-ai-demo-may-2025"
+  },
+  {
+    "id": "L02",
+    "title": "Remunerating space–time, load-shifting flexibility from data centers in electricity markets",
+    "publication_status": "Applied Energy 326 (2022), 119930",
+    "canonical_url": "https://doi.org/10.1016/j.apenergy.2022.119930",
+    "inspection_level": "Full text obtained from NSF; model and economic-property passages inspected",
+    "known_overlap": "Spatiotemporal remuneration and market-clearing economic properties already studied",
+    "next_comparison": "Distinguish fixed completed service and recovery constraints from endogenous load served",
+    "primary_evidence_url": "https://par.nsf.gov/servlets/purl/10388099"
+  },
+  {
+    "id": "L03",
+    "title": "Flexible Data Centers and the Grid: Lower Costs, Higher Emissions? / Flexible data centers reduce power system costs but can increase emissions",
+    "publication_status": "MIT CEEPR WP 2025-14; linked iScience publication 2026",
+    "canonical_url": "https://ceepr.mit.edu/wp-content/uploads/2025/07/MIT-CEEPR-WP-2025-14.pdf",
+    "inspection_level": "Working-paper model section inspected; published-version result passages inspected",
+    "known_overlap": "Capacity expansion, temporal flexibility and cost/emissions divergence already studied",
+    "next_comparison": "Compare explicit arrivals/deadlines, measured power modes and flexibility delivery costs; track version differences",
+    "primary_evidence_url": "https://www.sciencedirect.com/science/article/pii/S2589004226018729"
+  },
+  {
+    "id": "L04",
+    "title": "Processing Power: The Effect of Data Centers on Wholesale Electricity Markets",
+    "publication_status": "Federal Reserve Bank of Dallas WP 2606 (2026); working paper",
+    "canonical_url": "https://doi.org/10.24149/wp2606",
+    "inspection_level": "Primary PDF obtained; abstract, dispatch scope and planner/siting passages inspected",
+    "known_overlap": "Spatial planner benchmark and cost of spare compute already discussed",
+    "next_comparison": "Country substitution or planner-versus-current comparison alone is insufficient",
+    "primary_evidence_url": "https://www.dallasfed.org/~/media/documents/research/papers/2026/wp2606.pdf"
+  },
+  {
+    "id": "L05",
+    "title": "Spatio-temporal load shifting for truly clean computing",
+    "publication_status": "Advances in Applied Energy 17 (2025), 100202",
+    "canonical_url": "https://doi.org/10.1016/j.adapen.2024.100202",
+    "inspection_level": "Author page and author preprint abstract inspected",
+    "known_overlap": "Spatiotemporal scheduling and hourly clean-energy matching already studied",
+    "next_comparison": "Need inspect full equations and code before claiming a missing constraint",
+    "primary_evidence_url": "https://arxiv.org/abs/2405.00036"
+  },
+  {
+    "id": "L06",
+    "title": "Mitigating Curtailment and Carbon Emissions through Load Migration between Data Centers",
+    "publication_status": "Joule 4 (2020), 2208–2222",
+    "canonical_url": "https://doi.org/10.1016/j.joule.2020.08.001",
+    "inspection_level": "Publisher summary and methods synopsis inspected",
+    "known_overlap": "Migration for curtailment and emissions reduction predates the current AI boom",
+    "next_comparison": "Cannot use renewable integration via migration as standalone novelty",
+    "primary_evidence_url": "https://www.sciencedirect.com/science/article/pii/S2542435120303470"
+  },
+  {
+    "id": "L07",
+    "title": "Shifting Load through Space: The Economics of Spatial Demand Side Management Using Distributed Data Centers",
+    "publication_status": "Energy Policy 109 (2017), 400–413",
+    "canonical_url": "https://doi.org/10.1016/j.enpol.2017.07.018",
+    "inspection_level": "University repository abstract inspected",
+    "known_overlap": "Balancing-power economics and constraints on both participating grids already studied",
+    "next_comparison": "Need compare actual settlement and delivery design, not generic incentive language",
+    "primary_evidence_url": "https://eref.uni-bayreuth.de/id/eprint/39027"
+  },
+  {
+    "id": "L08",
+    "title": "Agent Coordination via Contextual Regression (AgentCONCUR) for Data Center Flexibility",
+    "publication_status": "Author preprint 2023; revised 2024; final publication metadata pending",
+    "canonical_url": "https://arxiv.org/abs/2309.16792",
+    "inspection_level": "Author preprint abstract and code README inspected",
+    "known_overlap": "Public-signal-based data-center/grid coordination already proposed",
+    "next_comparison": "Benchmark coordination mechanisms and clarify information assumptions",
+    "primary_evidence_url": "https://github.com/wdvorkin/AgentCONCUR"
+  },
+  {
+    "id": "L09",
+    "title": "To Defer or To Shift? The Role of AI Data Center Flexibility on Grid Interconnection",
+    "publication_status": "ACM Sustainability Week Companion 2026, 322–327",
+    "canonical_url": "https://doi.org/10.1145/3765611.3815593",
+    "inspection_level": "Publisher abstract, model description and results inspected",
+    "known_overlap": "Temporal/spatial flexibility in capacity expansion and non-monotonic investment effects",
+    "next_comparison": "Cannot claim first capacity-expansion analysis or first diminishing-returns finding",
+    "primary_evidence_url": "https://doi.org/10.1145/3765611.3815593"
+  },
+  {
+    "id": "L10",
+    "title": "Quantifying AI data center flexibility as a resource adequacy asset",
+    "publication_status": "Research Square preprint (2026)",
+    "canonical_url": "https://climate.uchicago.edu/working-papers/quantifying-ai-data-center-flexibility-as-a-resource-adequacy-asset/",
+    "inspection_level": "Public author repository, May 11 manuscript and cascade methods inspected; notebooks inspected but not executed",
+    "known_overlap": "Inference flexibility, recovery saturation, conditional Monte Carlo and an exogenous 92% ELCC factor already studied",
+    "next_comparison": "Compare task-conserving sequential reliability against proxy cascade and exogenous accreditation; replication pending",
+    "primary_evidence_url": "https://github.com/ctdunlap32/data-center-flexibility-resource-adequacy"
+  },
+  {
+    "id": "L11",
+    "title": "Leveraging temporal and spatial flexibility of renewable-centric data centers in China",
+    "publication_status": "IIASA YSSP 2025 colloquium proceedings; research abstract, not journal article",
+    "canonical_url": "https://iiasa.ac.at/sites/default/files/2025-11/2025%20YSSP%20Final%20Colloquium%20Proceedings%20%28002%29.pdf",
+    "inspection_level": "Institutional proceedings obtained; relevant abstract inspected",
+    "known_overlap": "China provincial hourly planning-operation and spatiotemporal workloads already explored",
+    "next_comparison": "Must track associated full publication; national resolution alone is not a gap",
+    "primary_evidence_url": "https://iiasa.ac.at/sites/default/files/2025-11/2025%20YSSP%20Final%20Colloquium%20Proceedings%20%28002%29.pdf"
+  },
+  {
+    "id": "L12",
+    "title": "Decarbonizing data centers through regional bits migration: A comprehensive assessment of China’s eastern data, Western computing initiative and its global implications",
+    "publication_status": "Applied Energy 392 (2025), 126020",
+    "canonical_url": "https://doi.org/10.1016/j.apenergy.2025.126020",
+    "inspection_level": "University-hosted full PDF obtained; energy, emissions and economic equations in sections 5.1–5.2 inspected",
+    "known_overlap": "China regional bits migration, climate-dependent cooling, network energy, regional emissions factors and duplicate-site capital cost already assessed",
+    "next_comparison": "Compare sequential endogenous dispatch and service deadlines with regional engineering accounting; do not claim first China migration or spare-capacity-cost analysis",
+    "primary_evidence_url": "https://ira.lib.polyu.edu.hk/bitstream/10397/113048/1/1-s2.0-S0306261925007500-main.pdf"
+  },
+  {
+    "id": "L13",
+    "title": "A net-grid-benefit test for interconnecting AI data centres",
+    "publication_status": "npj Environmental Social Sciences (2026); Comment",
+    "canonical_url": "https://doi.org/10.1038/s44432-026-00013-5",
+    "inspection_level": "Publisher full text inspected in relevant mechanism passages",
+    "known_overlap": "Verifiable grid-service obligations and conditional access already proposed",
+    "next_comparison": "Quantitative implementation needed; do not claim first contract or verification concept",
+    "primary_evidence_url": "https://www.nature.com/articles/s44432-026-00013-5"
+  },
+  {
+    "id": "L14",
+    "title": "Bi-Level Optimisation Model for Harvesting Spatial-Temporal Load Shifting Flexibility of Data Centres Using Endogenously Formed Locational Price Signal",
+    "publication_status": "IET Smart Grid (2025)",
+    "canonical_url": "https://doi.org/10.1049/stg2.70020",
+    "inspection_level": "Publisher abstract and metadata inspected",
+    "known_overlap": "Endogenous locational prices and bi-level flexibility coordination already studied",
+    "next_comparison": "Inspect equilibrium, service constraints and information structure before novelty claims",
+    "primary_evidence_url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/stg2.70020"
+  },
+  {
+    "id": "L15",
+    "title": "Facilitating the provision of load flexibility to the power system by data centers: A hybrid research method applied to China",
+    "publication_status": "Utilities Policy (2023)",
+    "canonical_url": "https://www.sciencedirect.com/science/article/pii/S0957178723001480",
+    "inspection_level": "Publisher abstract and introduction passages inspected",
+    "known_overlap": "China flexibility barriers, potentials and institutional solutions already studied",
+    "next_comparison": "Modeling contribution must go beyond listing institutional barriers",
+    "primary_evidence_url": "https://www.sciencedirect.com/science/article/pii/S0957178723001480"
+  },
+  {
+    "id": "L16",
+    "title": "DynamoLLM: Designing LLM Inference Clusters for Performance and Energy Efficiency",
+    "publication_status": "HPCA 2025 conference paper",
+    "canonical_url": "https://arxiv.org/abs/2408.00741",
+    "inspection_level": "Author PDF obtained; Tables I–IV and service/controller method passages inspected",
+    "known_overlap": "SLO-conditioned power/energy optimization, workload buckets and multiscale controls already studied",
+    "next_comparison": "Use for matched workload calibration; do not treat paper SLO settings as observed trace deadlines",
+    "primary_evidence_url": "https://jovans2.github.io/files/DynamoLLM_HPCA2025.pdf"
+  }
+]

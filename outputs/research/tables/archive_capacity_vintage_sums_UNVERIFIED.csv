@@ -1,0 +1,170 @@
+province,technology,source_vintage_sum_MW,not_verified_as_2020_installed_capacity
+Anhui,onwind,3531.0,True
+Beijing,onwind,186.0,True
+Chongqing,onwind,823.0,True
+Fujian,onwind,3497.0,True
+Gansu,onwind,12801.5,True
+Guangdong,onwind,4707.3,True
+Guangxi,onwind,4533.0,True
+Guizhou,onwind,4520.0,True
+Hainan,onwind,248.0,True
+Hebei,onwind,18847.5,True
+Heilongjiang,onwind,6124.0,True
+Henan,onwind,10418.0,True
+Hubei,onwind,4553.0,True
+Hunan,onwind,6594.0,True
+InnerMongolia,onwind,33552.0,True
+Jiangsu,onwind,7688.0,True
+Jiangxi,onwind,4054.0,True
+Jilin,onwind,5226.0,True
+Liaoning,onwind,8210.0,True
+Ningxia,onwind,11394.0,True
+Qinghai,onwind,6766.0,True
+Shaanxi,onwind,6732.0,True
+Shandong,onwind,16820.0,True
+Shanghai,onwind,370.0,True
+Shanxi,onwind,17048.4,True
+Sichuan,onwind,3931.0,True
+Tianjin,onwind,788.0,True
+Tibet,onwind,49.5,True
+Xinjiang,onwind,21404.0,True
+Yunnan,onwind,8488.0,True
+Zhejiang,onwind,1320.0,True
+Fujian,offwind,627.0,True
+Guangdong,offwind,600.0,True
+Hebei,offwind,300.0,True
+Jiangsu,offwind,5012.0,True
+Liaoning,offwind,299.0,True
+Shanghai,offwind,426.0,True
+Zhejiang,offwind,486.0,True
+Beijing,solar,620.0,True
+Tianjin,solar,1640.0,True
+Hebei,solar,21900.0,True
+Shanxi,solar,13090.0,True
+InnerMongolia,solar,12370.0,True
+Liaoning,solar,4000.0,True
+Jilin,solar,3380.0,True
+Heilongjiang,solar,3180.0,True
+Shanghai,solar,1370.0,True
+Jiangsu,solar,16840.0,True
+Zhejiang,solar,15170.0,True
+Anhui,solar,13700.0,True
+Fujian,solar,2020.0,True
+Jiangxi,solar,7760.0,True
+Shandong,solar,22720.0,True
+Henan,solar,11750.0,True
+Hubei,solar,6980.0,True
+Hunan,solar,3910.0,True
+Guangdong,solar,7970.0,True
+Guangxi,solar,2050.0,True
+Hainan,solar,1430.0,True
+Chongqing,solar,670.0,True
+Sichuan,solar,1910.0,True
+Guizhou,solar,10570.0,True
+Yunnan,solar,3880.0,True
+Tibet,solar,1370.0,True
+Shaanxi,solar,10890.0,True
+Gansu,solar,9820.0,True
+Qinghai,solar,16010.0,True
+Ningxia,solar,11970.0,True
+Xinjiang,solar,12660.0,True
+Anhui,coal,47550.0,True
+Chongqing,coal,11640.0,True
+Fujian,coal,24666.0,True
+Gansu,coal,12840.0,True
+Guangdong,coal,57523.2,True
+Guangxi,coal,17325.0,True
+Guizhou,coal,31520.0,True
+Hainan,coal,2760.0,True
+Hebei,coal,29290.0,True
+Heilongjiang,coal,10285.0,True
+Henan,coal,50960.0,True
+Hubei,coal,21960.0,True
+Hunan,coal,18305.0,True
+InnerMongolia,coal,55110.0,True
+Jiangsu,coal,66160.0,True
+Jiangxi,coal,20154.0,True
+Jilin,coal,7240.0,True
+Liaoning,coal,19860.0,True
+Ningxia,coal,26190.0,True
+Qinghai,coal,2460.0,True
+Shaanxi,coal,33440.0,True
+Shandong,coal,56735.0,True
+Shanghai,coal,9610.0,True
+Shanxi,coal,46602.0,True
+Sichuan,coal,10990.0,True
+Tianjin,coal,10174.0,True
+Xinjiang,coal,36080.0,True
+Yunnan,coal,11200.0,True
+Zhejiang,coal,40320.0,True
+Anhui,CHP coal,1995.0,True
+Chongqing,CHP coal,1484.0,True
+Fujian,CHP coal,2650.0,True
+Gansu,CHP coal,7910.0,True
+Guangdong,CHP coal,7866.0,True
+Guangxi,CHP coal,1760.0,True
+Guizhou,CHP coal,1400.0,True
+Hainan,CHP coal,300.0,True
+Hebei,CHP coal,17426.0,True
+Heilongjiang,CHP coal,7786.0,True
+Henan,CHP coal,12720.0,True
+Hubei,CHP coal,6975.0,True
+Hunan,CHP coal,100.0,True
+InnerMongolia,CHP coal,36502.0,True
+Jiangsu,CHP coal,8504.0,True
+Jiangxi,CHP coal,265.0,True
+Jilin,CHP coal,7841.0,True
+Liaoning,CHP coal,10890.0,True
+Ningxia,CHP coal,4030.0,True
+Qinghai,CHP coal,700.0,True
+Shaanxi,CHP coal,10580.0,True
+Shandong,CHP coal,36860.0,True
+Shanghai,CHP coal,3200.0,True
+Shanxi,CHP coal,15870.0,True
+Sichuan,CHP coal,165.0,True
+Tianjin,CHP coal,1560.0,True
+Xinjiang,CHP coal,27390.0,True
+Zhejiang,CHP coal,2528.8,True
+Fujian,OCGT,3900.0,True
+Guangdong,OCGT,5479.0,True
+Hainan,OCGT,1576.0,True
+Henan,OCGT,1560.0,True
+InnerMongolia,OCGT,300.0,True
+Jiangsu,OCGT,3361.0,True
+Shanghai,OCGT,4768.4,True
+Shanxi,OCGT,144.0,True
+Sichuan,OCGT,700.0,True
+Tianjin,OCGT,54.0,True
+Tibet,OCGT,180.0,True
+Zhejiang,OCGT,4711.0,True
+Anhui,nuclear,0.0,True
+Beijing,nuclear,0.0,True
+Chongqing,nuclear,0.0,True
+Fujian,nuclear,11034.0,True
+Gansu,nuclear,0.0,True
+Guangdong,nuclear,16136.0,True
+Guangxi,nuclear,2172.0,True
+Guizhou,nuclear,0.0,True
+Hainan,nuclear,1300.0,True
+Hebei,nuclear,0.0,True
+Heilongjiang,nuclear,0.0,True
+Henan,nuclear,0.0,True
+Hubei,nuclear,0.0,True
+Hunan,nuclear,0.0,True
+InnerMongolia,nuclear,0.0,True
+Jiangsu,nuclear,6608.0,True
+Jiangxi,nuclear,0.0,True
+Jilin,nuclear,0.0,True
+Liaoning,nuclear,5594.0,True
+Ningxia,nuclear,0.0,True
+Qinghai,nuclear,0.0,True
+Shaanxi,nuclear,0.0,True
+Shandong,nuclear,2717.0,True
+Shanghai,nuclear,0.0,True
+Shanxi,nuclear,0.0,True
+Sichuan,nuclear,0.0,True
+Tianjin,nuclear,0.0,True
+Tibet,nuclear,0.0,True
+Xinjiang,nuclear,0.0,True
+Yunnan,nuclear,0.0,True
+Zhejiang,nuclear,9086.0,True

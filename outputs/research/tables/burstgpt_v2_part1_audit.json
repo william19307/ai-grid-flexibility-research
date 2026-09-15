@@ -1,0 +1,49 @@
+{
+  "status": "real_request_trace_audited_NOT_gpu_power_or_deadline_data",
+  "release": "v2.0",
+  "part": "1",
+  "rows": 1429737,
+  "columns": [
+    "Timestamp",
+    "Model",
+    "Request tokens",
+    "Response tokens",
+    "Total tokens",
+    "Log Type"
+  ],
+  "timestamp_min_seconds": 5,
+  "timestamp_max_seconds": 5269973,
+  "timestamps_monotonic": true,
+  "full_hour_bins_used_for_rate_summary": 1463,
+  "last_partial_hour_excluded_from_rate_summary": true,
+  "full_row_repetitions_retained": 54040,
+  "reason_repetitions_retained": "coarse timestamps and no request ID; matching metadata can be separate requests",
+  "zero_output_records_retained": 25443,
+  "zero_output_interpretation": "source release labels zero-response-token records failures; not dropped from arrival counts",
+  "token_sum_errors": 0,
+  "missing_elapsed_time": true,
+  "missing_session_id": true,
+  "documentation_version_caveat": "current README announces added columns; pinned release asset has only six columns",
+  "unknowns": [
+    "calendar_start_date",
+    "absolute_timezone_identity",
+    "collection_completeness",
+    "allowed_service_deadlines",
+    "hardware_allocation",
+    "per_request_GPU_energy",
+    "prefill_decode_work_conversion"
+  ],
+  "not_allowed": [
+    "treat ChatGPT and GPT-4 tokens as same compute work",
+    "treat observed duration as permissible deferral deadline",
+    "interpret hourly arrival counts as Chinese AI power"
+  ],
+  "download": {
+    "url": "https://github.com/HPMLL/BurstGPT/releases/download/v2.0/BurstGPT_1.csv",
+    "bytes": 52283111,
+    "sha256": "4bb3783693d0a435686fbfc885615d2349bd067239079fa4b749f2e679e12122",
+    "release_digest_matches": true,
+    "readme_commit": "d895a53bb7b8ec137d0d2fe203b335835a78c10a",
+    "license": "CC-BY-4.0"
+  }
+}

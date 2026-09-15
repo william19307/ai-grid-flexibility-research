@@ -1,0 +1,18 @@
+{
+  "status": "unit_inventory_audited_historical_reconstruction_pending",
+  "source": "Global Energy Monitor, Global Integrated Power Tracker, July 2025 release",
+  "mirror": "https://doi.org/10.5281/zenodo.16810831",
+  "license": "CC-BY-4.0, confirmed About sheet",
+  "raw_excel_rows": 136680,
+  "fully_empty_rows_removed": 101509,
+  "valid_unit_phase_records": 35171,
+  "duplicate_unit_phase_ids": 0,
+  "missing_or_nonnumeric_capacity": 0,
+  "negative_capacity": 0,
+  "unknown_start_year_records": 12022,
+  "current_operating_unknown_start_year_records": 2350,
+  "missing_province": 0,
+  "sha256": "4ed14c94a305ec43af9ac33a49134fcee5c1271e2d93d248ab608c7781ea71d0",
+  "coverage_limit": "solar/wind tracking thresholds and asset coverage mean this is not automatically the complete official capacity inventory",
+  "next_step": "reconcile unit dates, status, conversion links and official province totals; never infer all missing years as pre-2020"
+}

@@ -1,0 +1,8 @@
+region,unit_count,mean_unit_capacity_MW,annual_generation_MWh_per_kW,operating_factor_pct,equivalent_availability_factor_pct,unplanned_events_per_unit_year,source_raw_row,source_pdf_page_1based,source_printed_page,source_table,source_url
+华北,592,376.42,4.6,75.84,92.52,0.55,华北 592 376.42 4.60 75.84 92.52 0.55,39,33,2-29,https://prpq.nea.gov.cn/uploads/file1/20211009/616107fe94a8e.pdf
+东北,166,341.9,4.0,79.24,94.09,0.45,东北 166 341.90 4 79.24 94.09 0.45,39,33,2-29,https://prpq.nea.gov.cn/uploads/file1/20211009/616107fe94a8e.pdf
+华东,357,563.83,4.52,73.34,92.97,0.32,华东 357 563.83 4.52 73.34 92.97 0.32,39,33,2-29,https://prpq.nea.gov.cn/uploads/file1/20211009/616107fe94a8e.pdf
+华中,280,475.67,3.67,66.44,92.95,0.37,华中 280 475.67 3.67 66.44 92.95 0.37,39,33,2-29,https://prpq.nea.gov.cn/uploads/file1/20211009/616107fe94a8e.pdf
+西北,228,425.0,4.5,75.53,94.03,0.7,西北 228 425 4.50 75.53 94.03 0.70,39,33,2-29,https://prpq.nea.gov.cn/uploads/file1/20211009/616107fe94a8e.pdf
+南方,242,465.92,3.91,67.8,92.7,0.56,南方 242 465.92 3.91 67.80 92.70 0.56,39,33,2-29,https://prpq.nea.gov.cn/uploads/file1/20211009/616107fe94a8e.pdf
+全部,1865,441.68,4.28,72.81,93.01,0.49,全部 1865 441.68 4.28 72.81 93.01 0.49,39,33,2-29,https://prpq.nea.gov.cn/uploads/file1/20211009/616107fe94a8e.pdf
