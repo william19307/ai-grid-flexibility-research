@@ -1,0 +1,86 @@
+{
+ "source": "https://github.com/mlcommons/training_results_v4.0/tree/main/smc-ac-power (Supermicro, 8x H100 SXM 80GB per node)",
+ "benchmark": "llama2_70b_lora",
+ "nodes": 8,
+ "node_idle_w_median": 2646.5,
+ "node_active_w_median": 6250.0,
+ "node_max_w_median": 6420.0,
+ "idle_over_active": 0.42344,
+ "idle_over_max": 0.4122274143302181,
+ "per_gpu_active_w_incl_node": 781.25,
+ "note": "node-level AC power includes CPUs, memory, fans and PSU losses; idle fraction here is node-level, not GPU-level; readings start before training so early samples are idle; benchmark-specific",
+ "files": {
+  "result_5740_10/node_1.txt": {
+   "readings": 159,
+   "duration_s": 316.823,
+   "idle_w_median": 2630.0,
+   "active_w_median": 6247.0,
+   "active_w_p90": 6326.0,
+   "max_w": 6401.0,
+   "sha256": "316eb084a0db1fab2d8650133ff07c19ccc44d34923e7972834279895d6db0a8"
+  },
+  "result_5740_10/node_2.txt": {
+   "readings": 159,
+   "duration_s": 316.823,
+   "idle_w_median": 2630.0,
+   "active_w_median": 6247.0,
+   "active_w_p90": 6326.0,
+   "max_w": 6401.0,
+   "sha256": "316eb084a0db1fab2d8650133ff07c19ccc44d34923e7972834279895d6db0a8"
+  },
+  "result_5740_10/node_3.txt": {
+   "readings": 159,
+   "duration_s": 316.823,
+   "idle_w_median": 2665.0,
+   "active_w_median": 6253.0,
+   "active_w_p90": 6378.5,
+   "max_w": 6439.0,
+   "sha256": "d0427210dc3120f46655118d34f79571155f79fe6910c0bbea1ef3824fe3abb3"
+  },
+  "result_5740_10/node_4.txt": {
+   "readings": 159,
+   "duration_s": 316.8,
+   "idle_w_median": 2658.0,
+   "active_w_median": 6271.0,
+   "active_w_p90": 6380.5,
+   "max_w": 6463.0,
+   "sha256": "1c574912da9de4a55e83db3f2ba7e0bd7b0c6b39be5fa7d13fc877c4fea1ec13"
+  },
+  "result_5740_10/node_5.txt": {
+   "readings": 159,
+   "duration_s": 316.8,
+   "idle_w_median": 2658.0,
+   "active_w_median": 6271.0,
+   "active_w_p90": 6380.5,
+   "max_w": 6463.0,
+   "sha256": "1c574912da9de4a55e83db3f2ba7e0bd7b0c6b39be5fa7d13fc877c4fea1ec13"
+  },
+  "result_5740_10/node_6.txt": {
+   "readings": 159,
+   "duration_s": 316.849,
+   "idle_w_median": 2635.0,
+   "active_w_median": 6192.5,
+   "active_w_p90": 6281.5,
+   "max_w": 6354.0,
+   "sha256": "a9e7002989ac45e76c445551446a8702495fae879070335938ed5b5ebf61537b"
+  },
+  "result_5740_10/node_7.txt": {
+   "readings": 159,
+   "duration_s": 316.823,
+   "idle_w_median": 2665.0,
+   "active_w_median": 6253.0,
+   "active_w_p90": 6378.5,
+   "max_w": 6439.0,
+   "sha256": "d0427210dc3120f46655118d34f79571155f79fe6910c0bbea1ef3824fe3abb3"
+  },
+  "result_5740_10/node_8.txt": {
+   "readings": 159,
+   "duration_s": 316.849,
+   "idle_w_median": 2635.0,
+   "active_w_median": 6192.5,
+   "active_w_p90": 6281.5,
+   "max_w": 6354.0,
+   "sha256": "a9e7002989ac45e76c445551446a8702495fae879070335938ed5b5ebf61537b"
+  }
+ }
+}

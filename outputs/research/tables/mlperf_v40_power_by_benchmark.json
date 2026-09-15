@@ -1,0 +1,23 @@
+{
+ "llama2_70b_lora": {
+  "nodes": 8,
+  "idle_w": 2646.5,
+  "active_w": 6250.0,
+  "max_w": 6420.0,
+  "idle_over_max": 0.4122274143302181
+ },
+ "resnet": {
+  "nodes": 8,
+  "idle_w": 2240.5,
+  "active_w": 5859.5,
+  "max_w": 5932.5,
+  "idle_over_max": 0.3776654024441635
+ },
+ "ssd": {
+  "nodes": 8,
+  "idle_w": 2234.5,
+  "active_w": 6276.5,
+  "max_w": 6372.0,
+  "idle_over_max": 0.35067482736974265
+ }
+}
