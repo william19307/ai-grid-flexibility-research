@@ -55,6 +55,10 @@
   "Open-Meteo ERA5 multi-year wind/solar profiles for three provinces (2015-2024) built and audited (D19)",
   "60-run multi-weather-year 2030 grid with idle 0.25/0.41",
   "MLPerf v4.0 node power logs parsed: idle 35-41% of peak (D18)",
+  "manuscript v0.8, phase report 09, English v0.6",
+  "Open-Meteo ERA5 multi-year wind/solar profiles for three provinces (2015-2024) built and audited (D19)",
+  "60-run multi-weather-year 2030 grid with idle 0.25/0.41",
+  "MLPerf v4.0 node power logs parsed: idle 35-41% of peak (D18)",
   "manuscript v0.8, phase report 09, English v0.6"
  ],
  "requirements_still_open": {
