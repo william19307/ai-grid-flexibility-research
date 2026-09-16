@@ -64,7 +64,9 @@
   "English manuscript v1.0 with numbered citations, 25 references, data/code/ethics statements",
   "Chinese working manuscript v0.9 (section 5.10)",
   "English v1.1: abstract within 150 words, language pass, complete author-contribution and competing-interest statements with name placeholders; Word builds of manuscript, SI and Chinese draft",
-  "authors inserted (William Wei, Lanlan Liu); multi-agent submission review workflow launched on English v1.2 and Chinese v1.0"
+  "authors inserted (William Wei, Lanlan Liu); multi-agent submission review workflow launched on English v1.2 and Chinese v1.0",
+  "submission-review workflow round 1: 133 findings, 65 confirmed (numbers, overclaiming, style, methods); base-case idle switched to 41% with achievable-mode rule; all 2030 analyses rerun",
+  "manuscript v1.3 generated from tables (title 15 words, abstract 149 words, 24 references in order of first appearance, limitations, statements); SI v1.2; cover letter; round-2 review workflow launched"
  ],
  "requirements_still_open": {
   "novelty": "closest-model replication and complete review pending",
@@ -85,6 +87,6 @@
  ],
  "live_jobs": [],
  "previous_goal_turn_classification": "progress: first full S0-S3 provincial 2030 scenario results on public data; still not independently validated",
- "latest_manuscript": "outputs/research/manuscript/论文工作稿_v0.9.md",
+ "latest_manuscript": "outputs/research/manuscript/core_paper_en_v1.3.md",
  "latest_phase_report": "outputs/research/reports/阶段研究报告_09.md"
 }
