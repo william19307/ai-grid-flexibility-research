@@ -29,13 +29,13 @@ for prov in ['Gansu','Jiangsu','Guizhou']:
         except Exception as ex:print('fail',prov,k,ex);continue
         finally:signal.alarm(0)
         r=o['results']
-        if not all(r[c]['feasible'] for c in ['NOAI','S0','S1','S1rt','S2']):rows.append(dict(province=prov,draw=k,**f,idle=idle,u=u,infeasible=True));continue
-        b=r['NOAI'];inc=lambda c:(r[c]['total_cost']-b['total_cost'])/r[c]['ai_mwh']
-        rows.append(dict(province=prov,draw=k,**f,idle=idle,u=u,gap_S0_S2_pct=(inc('S0')/inc('S2')-1)*100,gap_S1_S2_pct=(inc('S1')/inc('S2')-1)*100,gap_S1rt_S2_pct=(inc('S1rt')/inc('S2')-1)*100,new_ocgt_S0=r['S0']['new_mw']['ocgt']-b['new_mw']['ocgt'],new_ocgt_S2=r['S2']['new_mw']['ocgt']-b['new_mw']['ocgt']))
+        if not all(r[c]['feasible'] for c in ['NOAI','S0','S0e','S1','S1rt','S2']):rows.append(dict(province=prov,draw=k,**f,idle=idle,u=u,infeasible=True));continue
+        b=r['NOAI'];inc=lambda c:(r[c]['total_cost']-b['total_cost'])
+        rows.append(dict(province=prov,draw=k,**f,idle=idle,u=u,red_S0_S2_pct=(1-inc('S2')/inc('S0'))*100,red_S0_S0e_pct=(1-inc('S0e')/inc('S0'))*100,gap_S0e_S2_pct=(inc('S0e')/inc('S2')-1)*100,timing_share_S1=(inc('S0e')-inc('S1'))/(inc('S0e')-inc('S2')) if abs(inc('S0e')-inc('S2'))>1 else np.nan,gap_S0_S2_pct=(inc('S0')/inc('S2')-1)*100,gap_S1_S2_pct=(inc('S1')/inc('S2')-1)*100,gap_S1rt_S2_pct=(inc('S1rt')/inc('S2')-1)*100,new_ocgt_S0=r['S0']['new_mw']['ocgt']-b['new_mw']['ocgt'],new_ocgt_S2=r['S2']['new_mw']['ocgt']-b['new_mw']['ocgt']))
 m.costs_2030=orig
 import glob,os
 for fpath in glob.glob(str(ROOT/'outputs/research/tables/regional_2030_*_mc*')):os.remove(fpath)
 d=pd.DataFrame(rows);d.to_csv(ROOT/'outputs/research/tables/regional_2030_cost_montecarlo.csv',index=False)
 print('infeasible draws:',d.get('infeasible',pd.Series(dtype=bool)).fillna(False).groupby(d.province).sum().to_dict());d=d[d.get('infeasible',pd.Series(False,index=d.index)).fillna(False)==False]
-q=d.groupby('province')[['gap_S0_S2_pct','gap_S1_S2_pct','gap_S1rt_S2_pct','new_ocgt_S0','new_ocgt_S2']].describe(percentiles=[.1,.5,.9]).round(2)
+q=d.groupby('province')[['red_S0_S2_pct','red_S0_S0e_pct','gap_S0e_S2_pct','timing_share_S1','gap_S1_S2_pct','gap_S1rt_S2_pct','new_ocgt_S0','new_ocgt_S2']].describe(percentiles=[.1,.5,.9]).round(3)
 q.to_csv(ROOT/'outputs/research/tables/regional_2030_cost_montecarlo_summary.csv');pd.set_option('display.width',300);print(q.to_string());print('MC_DONE')

@@ -17,10 +17,10 @@ for prov,pk in [('Gansu',17660.),('Guizhou',29000.)]:
         for pkt in [None,pk]:
             for ai in [0.10,0.20]:
                 o=m.run(prov,ai,slack_mult=1.0,slack_base_h=6.0,export=export,ext_mode=ext_mode,peak_target_2020=pkt);r=o['results'];b=r['NOAI']
-                for c in ['S0','S1','S1rt','S2','S3']:
+                for c in ['S0','S0e','S1','S1rt','S2','S3']:
                     d=r[c]
                     if not d['feasible']:continue
-                    rows.append(dict(province=prov,ext_mode=ext_mode,export=export,peak_adjusted=pkt is not None,ai_share=ai,case=c,cost_per_ai_mwh=(d['total_cost']-b['total_cost'])/d['ai_mwh'],co2_per_ai_mwh=(d['emissions_t']-b['emissions_t'])/d['ai_mwh'],new_ocgt=d['new_mw']['ocgt']-b['new_mw']['ocgt'],new_batt=d['new_batt_mw']-b['new_batt_mw'],curtail_NOAI=b['curtail_rate'],peak_2030=o['meta']['peak_2030_mw']))
+                    rows.append(dict(province=prov,ext_mode=ext_mode,export=export,peak_adjusted=pkt is not None,ai_share=ai,case=c,inc_cost=(d['total_cost']-b['total_cost']),cost_per_ai_mwh=(d['total_cost']-b['total_cost'])/d['ai_mwh'],co2_per_ai_mwh=(d['emissions_t']-b['emissions_t'])/d['ai_mwh'],new_ocgt=d['new_mw']['ocgt']-b['new_mw']['ocgt'],new_batt=d['new_batt_mw']-b['new_batt_mw'],curtail_NOAI=b['curtail_rate'],peak_2030=o['meta']['peak_2030_mw']))
 x=pd.DataFrame(rows);x.to_csv('outputs/research/tables/regional_2030_peak_adjusted_sensitivity.csv',index=False);print('PEAKADJ_DONE')
 PY
 $P $A/plot_submission_figures.py

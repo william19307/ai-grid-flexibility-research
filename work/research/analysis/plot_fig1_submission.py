@@ -7,8 +7,8 @@ plt.rcParams.update({'font.size':8,'axes.spines.top':False,'axes.spines.right':F
 fig,ax=plt.subplots(1,3,figsize=(7.5,2.8),layout='constrained')
 m=pd.read_csv(T/'dvfs_measured_and_derived.csv')
 for w,g in m.groupby('Workload'):
-    g=g.sort_values('GPU power cap');ax[0].plot(g['measured_power_ratio'],g['normalized throughput'],'-o',ms=2.5,lw=.8,label=w if 'llama' in w or 'infer' in w else None)
-ax[0].plot([0,1],[0,1],'k:',lw=.6);ax[0].set_xlabel('Measured GPU power, share of 400 W cap');ax[0].set_ylabel('Normalised throughput');ax[0].set_title('a  Measured power–\nthroughput modes',fontsize=8,loc='left');ax[0].legend(fontsize=5.5,frameon=False,loc='lower right')
+    g=g.sort_values('GPU power cap');ax[0].plot(g['measured_power_ratio'],g['normalized throughput'],'-o',ms=2.5,lw=.8,label=w)
+ax[0].plot([0,1],[0,1],'k:',lw=.6);ax[0].set_xlabel('Measured GPU power, share of 400 W cap');ax[0].set_ylabel('Normalised throughput');ax[0].set_title('a  Measured power–\nthroughput modes',fontsize=8,loc='left');ax[0].legend(fontsize=4.8,frameon=False,loc='lower right')
 hel=[]
 for c in ['Venus','Saturn','Earth','Uranus']:
     d=pd.read_csv(ROOT/f'work/research/sources/helios_sensetime/data/{c}/cluster_log.csv');d=d[d.gpu_num>0];d['gh']=d.gpu_num*d.duration/3600;hel.append(d[['queue','duration','gh']])
@@ -20,7 +20,7 @@ for name,x,w,col in [('Helios run',hel.duration/3600,hel.gh,'#1f77b4'),('Alibaba
     xx,cc=wcdf(np.maximum(x.values,1e-3),w.values);ax[1].plot(xx,cc,color=col,lw=.9,ls='--',label=name)
 ax[1].set_xscale('log');ax[1].set_xlabel('Hours');ax[1].set_ylabel('GPU-hour-weighted CDF');ax[1].set_title('b  Production traces:\nwait (solid), run (dashed)',fontsize=8,loc='left');ax[1].legend(fontsize=5.2,frameon=False,ncol=1,loc='center left',bbox_to_anchor=(0.02,0.55));ax[1].axvline(24,color='gray',lw=.5,ls=':')
 ml=json.load(open(T/'mlperf_v40_power_by_benchmark.json'));bm=list(ml);x=np.arange(len(bm))
-ax[2].bar(x-0.18,[ml[b]['idle_w']/1000 for b in bm],0.36,color='#9ecae1',label='Idle (lowest 5% of readings)');ax[2].bar(x+0.18,[ml[b]['active_w']/1000 for b in bm],0.36,color='#3182bd',label='Active (central 60%)')
+ax[2].bar(x-0.27,[ml[b]['idle_w']/1000 for b in bm],0.26,color='#9ecae1',label='Idle (median of lowest 5%)');ax[2].bar(x,[ml[b]['active_w']/1000 for b in bm],0.26,color='#3182bd',label='Active (median of central 60%)');ax[2].bar(x+0.27,[ml[b]['max_w']/1000 for b in bm],0.26,color='#08519c',label='Peak (maximum reading)')
 ax[2].set_xticks(x);ax[2].set_xticklabels(['Llama2-70B\nLoRA','ResNet-50','SSD'],fontsize=7);ax[2].set_ylabel('Node AC power (kW), 8×H100');ax[2].set_title('c  MLPerf Training v4.0\nnode power',fontsize=8,loc='left');ax[2].legend(fontsize=5.5,frameon=False,loc='upper center',bbox_to_anchor=(0.5,1.0))
 ax[2].set_ylim(0,7.6)
 [fig.savefig(F/f'fig1_constraints_and_power.{e}',dpi=300) for e in ['pdf','png','svg']];print('fig1 saved')

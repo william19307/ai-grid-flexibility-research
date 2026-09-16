@@ -9,18 +9,21 @@ fn={'price':'regional_2030_grid_summary.csv','neighbours':'regional_2030_grid_su
 d=pd.read_csv(T/fn);d=d[d.total_cost.notna()]
 keys=['province','export','ai_share','slack_mult','slack_base_h'];base=d[d.case=='NOAI'].set_index(keys);rows=[]
 for k,g in d.groupby(keys):
-    b=base.loc[k];r={c:g[g.case==c].iloc[0] for c in ['S0','S1','S2','S3','S1rt'] if (g.case==c).any()}
+    b=base.loc[k];r={c:g[g.case==c].iloc[0] for c in ['S0','S0e','S1','S2','S3','S1rt'] if (g.case==c).any()}
     if 'S1rt' not in r:r['S1rt']=r['S2']
-    inc=lambda c:(r[c].total_cost-b.total_cost)/r[c].ai_mwh;co2=lambda c:(r[c].emissions_t-b.emissions_t)/r[c].ai_mwh
-    rows.append(dict(zip(keys,k))|dict(cost_S0=inc('S0'),cost_S1=inc('S1'),cost_S2=inc('S2'),cost_S3=inc('S3'),cost_S1rt=inc('S1rt'),gap_S1rt_S2_pct=(inc('S1rt')/inc('S2')-1)*100,gap_S0_S2_pct=(inc('S0')/inc('S2')-1)*100,gap_S1_S2_pct=(inc('S1')/inc('S2')-1)*100,gap_S3_S2_pct=(inc('S3')/inc('S2')-1)*100,
-        co2_S0=co2('S0'),co2_S1=co2('S1'),co2_S1rt=co2('S1rt'),co2_S2=co2('S2'),co2_S3=co2('S3'),curtail_NOAI=b.curtail,curtail_S2=r['S2'].curtail,
+    if 'S0e' not in r:r['S0e']=r['S0']
+    inc=lambda c:(r[c].total_cost-b.total_cost)  # total incremental system cost for the same computing work (EUR per representative week)
+    co2=lambda c:(r[c].emissions_t-b.emissions_t)
+    permwh=lambda c:(r[c].total_cost-b.total_cost)/r[c].ai_mwh
+    rows.append(dict(zip(keys,k))|dict(cost_S0=inc('S0'),cost_S0e=inc('S0e'),cost_S1=inc('S1'),cost_S2=inc('S2'),cost_S3=inc('S3'),cost_S1rt=inc('S1rt'),gap_S0e_S2_pct=(inc('S0e')/inc('S2')-1)*100,gap_S1rt_S2_pct=(inc('S1rt')/inc('S2')-1)*100,red_S0_S2_pct=(1-inc('S2')/inc('S0'))*100,red_S0_S0e_pct=(1-inc('S0e')/inc('S0'))*100,share_S0e=(inc('S0')-inc('S0e'))/(inc('S0')-inc('S2')),share_S1=(inc('S0')-inc('S1'))/(inc('S0')-inc('S2')),share_S3=(inc('S0')-inc('S3'))/(inc('S0')-inc('S2')),share_S1rt=(inc('S0')-inc('S1rt'))/(inc('S0')-inc('S2')),timing_share_S1=(inc('S0e')-inc('S1'))/(inc('S0e')-inc('S2')) if abs(inc('S0e')-inc('S2'))>1 else np.nan,timing_share_S1rt=(inc('S0e')-inc('S1rt'))/(inc('S0e')-inc('S2')) if abs(inc('S0e')-inc('S2'))>1 else np.nan,permwh_S0=permwh('S0'),permwh_S2=permwh('S2'),ai_mwh_S0=r['S0'].ai_mwh,ai_mwh_S2=r['S2'].ai_mwh,gap_S0_S2_pct=(inc('S0')/inc('S2')-1)*100,gap_S1_S2_pct=(inc('S1')/inc('S2')-1)*100,gap_S3_S2_pct=(inc('S3')/inc('S2')-1)*100,
+        co2_S0=co2('S0'),co2_S0e=co2('S0e'),co2_S1=co2('S1'),co2_S1rt=co2('S1rt'),co2_S2=co2('S2'),co2_S3=co2('S3'),curtail_NOAI=b.curtail,curtail_S2=r['S2'].curtail,
         inv_S0=r['S0'].investment-b.investment,inv_S2=r['S2'].investment-b.investment,new_ocgt_S0=r['S0'].new_ocgt-b.new_ocgt,new_ocgt_S2=r['S2'].new_ocgt-b.new_ocgt,new_batt_S0=r['S0'].new_batt_mw-b.new_batt_mw,new_batt_S2=r['S2'].new_batt_mw-b.new_batt_mw,new_solar_S0=r['S0'].new_solar-b.new_solar,new_solar_S2=r['S2'].new_solar-b.new_solar,
         s3_system_saving_vs_S1=r['S1'].total_cost-r['S3'].total_cost,s3_compensation_floor=r['S3'].s3_compensation_floor_expweek,s3_mean_commitment_mw=r['S3'].s3_mean_commitment_mw,peak_2030=b.peak_2030))
 x=pd.DataFrame(rows).round(3);x.to_csv(T/('regional_2030_gaps.csv' if MODE=='price' else 'regional_2030_gaps_neighbours.csv'),index=False)
 pd.set_option('display.width',300);pd.set_option('display.max_columns',40)
-print(x[['province','export','ai_share','slack_mult','cost_S0','cost_S1','cost_S1rt','cost_S2','cost_S3','gap_S0_S2_pct','gap_S1_S2_pct','gap_S1rt_S2_pct','gap_S3_S2_pct','curtail_NOAI','new_ocgt_S0','new_ocgt_S2','new_batt_S0','new_batt_S2','s3_system_saving_vs_S1','s3_compensation_floor','s3_mean_commitment_mw']].to_string(index=False))
+print(x[['province','export','ai_share','slack_mult','red_S0_S2_pct','red_S0_S0e_pct','share_S0e','share_S1','share_S3','share_S1rt','timing_share_S1','timing_share_S1rt','gap_S1_S2_pct','gap_S1rt_S2_pct','curtail_NOAI','new_ocgt_S0','new_ocgt_S2','new_batt_S0','new_batt_S2','s3_system_saving_vs_S1','s3_compensation_floor','s3_mean_commitment_mw']].to_string(index=False))
 # figure: cost per AI MWh by case, W-slack (1,6), three provinces, export on/off, ai 10%
-fig,axes=plt.subplots(2,3,figsize=(12,6.2),sharey='row');cases=['S0','S1','S3','S1rt','S2'];cols=['#7f7f7f','#1f77b4','#d62728','#ff7f0e','#2ca02c'];lab={'S0':'S0 rigid','S1':'S1 firm under TOU tariff','S3':'S3 event commitment','S1rt':'S1rt firm under system real-time price','S2':'S2 system-coordinated'}
+fig,axes=plt.subplots(2,3,figsize=(12,6.2),sharey='row');cases=['S0','S0e','S1','S3','S1rt','S2'];cols=['#7f7f7f','#bcbd22','#1f77b4','#d62728','#ff7f0e','#2ca02c'];lab={'S0':'S0 rigid','S0e':'S0e efficient mode, no shifting','S1':'S1 firm under TOU tariff','S3':'S3 event commitment','S1rt':'S1rt firm under system real-time price','S2':'S2 system-coordinated'}
 for j,prov in enumerate(['Gansu','Jiangsu','Guizhou']):
     sub=x[(x.province==prov)&(x.slack_mult==1.0)]
     for i,(metric,yl) in enumerate([('cost','Incremental system cost per AI MWh (EUR/MWh)'),('co2','Incremental emissions per AI MWh (tCO2/MWh)')]):

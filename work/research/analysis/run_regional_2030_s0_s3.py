@@ -67,19 +67,25 @@ def helios_queue_jobs(T,u,start_hour,slack_mult,slack_base_h,seed):
             run_h=min(r.duration/3600,T-t);w=r.gpu_num*run_h/ref_gpus/24.0
             slack=r.queue/3600*slack_mult+slack_base_h
             dl=min(T,t+int(np.ceil(run_h))+int(np.ceil(slack)));dl=max(dl,t+1);batches[(t,dl)]=batches.get((t,dl),0.)+w
-    tot=sum(batches.values());f=target/tot if tot>0 else 0;free=np.ones(T);out=[];ext=0;dropped=0.
-    for (t,dl),w in sorted(batches.items(),key=lambda kv:(kv[0][1],kv[0][0])):
-        w=w*f;d_=dl
-        while (free[t:d_].sum()<w-1e-9 or w>0.9*(d_-t)) and d_<T:d_+=1
-        if free[t:d_].sum()<w-1e-9:dropped+=w-free[t:d_].sum();w=free[t:d_].sum()
-        if w<=1e-9:continue
-        if d_!=dl:ext+=1
-        rem=w
-        for hh in range(t,d_):
-            take=min(free[hh],rem);free[hh]-=take;rem-=take
-            if rem<=1e-12:break
-        out.append(Batch(f'h{t}_{d_}_{len(out)}',t,d_,w))
-    return out,dict(extended=ext,dropped_share=dropped/target,n=len(out))
+    tot=sum(batches.values());f=target/tot if tot>0 else 0
+    items=[(t,dl,w*f) for (t,dl),w in batches.items()]
+    for it in range(6):  # iterate: guard, then rescale surviving work back to the target, until truncation is negligible
+        free=np.ones(T);out=[];ext=0;dropped=0.;kept=[]
+        for (t,dl,w) in sorted(items,key=lambda x:(x[1],x[0])):
+            d_=dl
+            while (free[t:d_].sum()<w-1e-9 or w>0.9*(d_-t)) and d_<T:d_+=1
+            if free[t:d_].sum()<w-1e-9:dropped+=w-free[t:d_].sum();w=free[t:d_].sum()
+            if w<=1e-9:continue
+            if d_!=dl:ext+=1
+            rem=w
+            for hh in range(t,d_):
+                take=min(free[hh],rem);free[hh]-=take;rem-=take
+                if rem<=1e-12:break
+            out.append(Batch(f'h{t}_{d_}_{len(out)}',t,d_,w));kept.append((t,d_,w))
+        realised=sum(w for _,_,w in kept)
+        if dropped/target<0.01 or realised<=0:break
+        items=[(t,d_,w*target/realised) for (t,d_,w) in kept]
+    return out,dict(extended=ext,dropped_share=dropped/target,n=len(out),realised_utilisation=sum(b.work for b in out)/T,guard_iterations=it+1)
 
 _RE_MY=None
 def re_profiles_year(prov,year):
@@ -105,13 +111,17 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.41,slack_mult=1.0,slack_base_h=6.0,
     q,pr,cfg=base.dvfs_modes();P_full=ai_share*peak30;idle=idle_frac*P_full
     keep=pr>idle_frac+0.02  # modes whose measured power lies below node idle are not achievable at node level; drop them (no clipping to idle)
     q,pr=q[keep],pr[keep];mode_power=P_full*pr
-    wk=1/52.18;scen=[];jobs_by={};fixed_S0={};fixed_S1={};meta_jobs={};prices_by={}
+    wk=1/52.18;scen=[];jobs_by={};fixed_S0={};fixed_S0e={};fixed_S1={};meta_jobs={};prices_by={}
     for name,start in WEEK_STARTS.items():
         sl=slice(start,start+WEEK);T=WEEK
         scen.append(dict(name=name,load=load30[sl],solar=p['solar_pu'][sl],onwind=p['onwind_pu'][sl],offwind=p['offwind_pu'][sl],hydro=p['hydro_pu'][sl]))
         bb,mj=helios_queue_jobs(T,u,start%24,slack_mult,slack_base_h,seed=start);meta_jobs[name]=mj
         jobs=[Job(b.name,b.release,b.deadline,b.work) for b in bb];jobs_by[name]=jobs
         fixed_S0[name]=baseline_asap(jobs,1.0,float(mode_power[-1]),T,idle)
+        flat=np.full(T,float(c['coal_mc']*1.5));delay=np.array([[1e-3*max(0,t-j.release) for t in range(T)] for j in jobs])  # tie-break: earliest execution
+        r0e=schedule(jobs,q,mode_power,T,idle,prices=flat,service_cost_per_work=delay)
+        if not r0e['feasible']:raise RuntimeError(('S0e infeasible',name))
+        fixed_S0e[name]=np.array(r0e['slot_average_power'])
         hours=np.arange(start,start+WEEK)%24;prices=base.tariff_shape(hours,'official',prov)*c['coal_mc']*1.5;prices_by[name]=prices
         r=schedule(jobs,q,mode_power,T,idle,prices=prices)
         if not r['feasible']:raise RuntimeError(('S1 infeasible',name))
@@ -180,6 +190,7 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.41,slack_mult=1.0,slack_base_h=6.0,
     res={}
     r=solve(nodes,scenarios,gens(),lines,stor,[],expected_unserved_limit_mwh=0.);res['NOAI']=summarize(r,'NOAI')
     r=solve(nodes,scenarios,gens(),lines,stor,[pool],fixed_compute={s['name']:{'ai':fixed_S0[s['name']]} for s in scen},expected_unserved_limit_mwh=0.);res['S0']=summarize(r,'S0')
+    r=solve(nodes,scenarios,gens(),lines,stor,[pool],fixed_compute={s['name']:{'ai':fixed_S0e[s['name']]} for s in scen},expected_unserved_limit_mwh=0.);res['S0e']=summarize(r,'S0e')
     r=solve(nodes,scenarios,gens(),lines,stor,[pool],fixed_compute={s['name']:{'ai':fixed_S1[s['name']]} for s in scen},expected_unserved_limit_mwh=0.);res['S1']=summarize(r,'S1')
     r=solve(nodes,scenarios,gens(),lines,stor,[pool],expected_unserved_limit_mwh=0.);res['S2']=summarize(r,'S2')
     if rt_price and res['S2']['feasible']:
@@ -207,7 +218,7 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.41,slack_mult=1.0,slack_base_h=6.0,
     r=solve(nodes,scenarios,gens(),lines,stor,[pool],fixed_compute={s['name']:{'ai':fixed_S3[s['name']]} for s in scen},expected_unserved_limit_mwh=0.);res['S3']=summarize(r,'S3')
     for k_ in res:res[k_].pop('marginal_cost',None)
     meta=dict(province=prov,evidence_tier='public-data 2030 scenario; hourly load shape unvalidated; documented assumptions',load_ratio_2030_2020=ratio,peak_2030_mw=peak30,fleet_2030_gem=fleet,hydro_mw_gem_2030=hydro_mw,committed_coal_mw=comm,
-        neighbours=(nb.get('names'),nb.get('links_mw')) if nb else None,assumptions=dict(weather_year=weather_year,peak_target_2020=peak_target_2020,ext_mode=ext_mode,ai_share_of_peak=ai_share,ai_nameplate_mw=P_full,idle_fraction=idle_frac,utilization=u,slack='job observed queue x %.1f + %.1f h'%(slack_mult,slack_base_h),dvfs_config=cfg,tariff='official shape, level 1.5x coal marginal',coal_min_of_committed=coal_min,allow_new_coal=allow_new_coal,export=export,event_top_share=event_q,external_market='EXT load %.2f x interconnection at 1.1x coal marginal, 3%% loss'%ext_load_frac),
+        neighbours=(nb.get('names'),nb.get('links_mw')) if nb else None,exchange='islanded (interconnection = 0)' if not export else ('fixed-price external market' if ext_mode=='price' else 'neighbour aggregate node'),ai_work_pool_hours={s['name']:float(sum(j.work for j in jobs_by[s['name']])) for s in scen},assumptions=dict(modes_kept=int(len(q)),weather_year=weather_year,peak_target_2020=peak_target_2020,ext_mode=ext_mode,ai_share_of_peak=ai_share,ai_nameplate_mw=P_full,idle_fraction=idle_frac,utilization=u,slack='job observed queue x %.1f + %.1f h'%(slack_mult,slack_base_h),dvfs_config=cfg,tariff='official shape, level 1.5x coal marginal',coal_min_of_committed=coal_min,allow_new_coal=allow_new_coal,export=export,event_top_share=event_q,external_market='EXT load %.2f x interconnection at 1.1x coal marginal, 3%% loss'%ext_load_frac),
         job_meta=meta_jobs,s3=s3meta,costs=c,runtime_s=time.time()-t0)
     out=dict(meta=meta,results=res);name=f"{CODE[prov]}_2030_ai{int(ai_share*100)}{'' if export else '_noexport'}_sm{slack_mult:g}_sb{int(slack_base_h)}{'_nb' if ext_mode=='neighbours' else ''}{'' if peak_target_2020 is None else '_pk'}{'' if weather_year is None else f'_wy{weather_year}'}{tag}"
     json.dump(out,open(OUT/f'regional_2030_{name}.json','w'),ensure_ascii=False,indent=1,default=float)

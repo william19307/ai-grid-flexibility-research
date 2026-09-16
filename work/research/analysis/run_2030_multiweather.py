@@ -10,7 +10,7 @@ class TO(Exception):pass
 signal.signal(signal.SIGALRM,lambda s,f:(_ for _ in ()).throw(TO()))
 rows=[]
 for prov in ['Gansu','Jiangsu','Guizhou']:
-    for idle in [0.25,0.41]:
+    for idle in [0.41,0.25]:
         for wy in range(2015,2025):
             signal.alarm(200)
             try:o=m.run(prov,0.10,idle_frac=idle,slack_mult=1.0,slack_base_h=6.0,export=False,ext_mode='price',weather_year=wy,tag=f'_idle{int(idle*100)}')
@@ -18,12 +18,12 @@ for prov in ['Gansu','Jiangsu','Guizhou']:
             except Exception as ex:print('fail',prov,idle,wy,ex);continue
             finally:signal.alarm(0)
             r=o['results']
-            if not all(r[c]['feasible'] for c in ['NOAI','S0','S1','S1rt','S2']):rows.append(dict(province=prov,idle=idle,weather_year=wy,infeasible=True));continue
-            b=r['NOAI'];inc=lambda c:(r[c]['total_cost']-b['total_cost'])/r[c]['ai_mwh'];co2=lambda c:(r[c]['emissions_t']-b['emissions_t'])/r[c]['ai_mwh']
-            rows.append(dict(province=prov,idle=idle,weather_year=wy,cost_S0=inc('S0'),cost_S1=inc('S1'),cost_S1rt=inc('S1rt'),cost_S2=inc('S2'),gap_S0_S2_pct=(inc('S0')/inc('S2')-1)*100,gap_S1_S2_pct=(inc('S1')/inc('S2')-1)*100,gap_S1rt_S2_pct=(inc('S1rt')/inc('S2')-1)*100,co2_S0=co2('S0'),co2_S2=co2('S2'),curtail_NOAI=b['curtail_rate'],curtail_S2=r['S2']['curtail_rate'],new_ocgt_S0=r['S0']['new_mw']['ocgt']-b['new_mw']['ocgt'],new_ocgt_S2=r['S2']['new_mw']['ocgt']-b['new_mw']['ocgt'],new_batt_S0=r['S0']['new_batt_mw']-b['new_batt_mw']))
+            if not all(r[c]['feasible'] for c in ['NOAI','S0','S0e','S1','S1rt','S2']):rows.append(dict(province=prov,idle=idle,weather_year=wy,infeasible=True));continue
+            b=r['NOAI'];inc=lambda c:(r[c]['total_cost']-b['total_cost']);co2=lambda c:(r[c]['emissions_t']-b['emissions_t'])
+            rows.append(dict(province=prov,idle=idle,weather_year=wy,cost_S0=inc('S0'),cost_S0e=inc('S0e'),cost_S1=inc('S1'),cost_S1rt=inc('S1rt'),cost_S2=inc('S2'),red_S0_S2_pct=(1-inc('S2')/inc('S0'))*100,red_S0_S0e_pct=(1-inc('S0e')/inc('S0'))*100,gap_S0e_S2_pct=(inc('S0e')/inc('S2')-1)*100,timing_share_S1=(inc('S0e')-inc('S1'))/(inc('S0e')-inc('S2')) if abs(inc('S0e')-inc('S2'))>1 else np.nan,gap_S0_S2_pct=(inc('S0')/inc('S2')-1)*100,gap_S1_S2_pct=(inc('S1')/inc('S2')-1)*100,gap_S1rt_S2_pct=(inc('S1rt')/inc('S2')-1)*100,co2_S0=co2('S0'),co2_S2=co2('S2'),curtail_NOAI=b['curtail_rate'],curtail_S2=r['S2']['curtail_rate'],new_ocgt_S0=r['S0']['new_mw']['ocgt']-b['new_mw']['ocgt'],new_ocgt_S2=r['S2']['new_mw']['ocgt']-b['new_mw']['ocgt'],new_batt_S0=r['S0']['new_batt_mw']-b['new_batt_mw']))
 import glob,os
 for f in glob.glob(str(ROOT/'outputs/research/tables/regional_2030_*_wy20*')):os.remove(f)
 d=pd.DataFrame(rows);d.to_csv(ROOT/'outputs/research/tables/regional_2030_multiweather.csv',index=False)
 ok=d[d.get('infeasible',pd.Series(False,index=d.index)).fillna(False)==False]
-q=ok.groupby(['province','idle'])[['gap_S0_S2_pct','gap_S1_S2_pct','gap_S1rt_S2_pct','curtail_NOAI','new_ocgt_S0','new_ocgt_S2']].agg(['min','median','max']).round(2)
+q=ok.groupby(['province','idle'])[['red_S0_S2_pct','red_S0_S0e_pct','gap_S0e_S2_pct','timing_share_S1','gap_S1_S2_pct','gap_S1rt_S2_pct','curtail_NOAI','new_ocgt_S0','new_ocgt_S2']].agg(['min','median','max']).round(3)
 q.to_csv(ROOT/'outputs/research/tables/regional_2030_multiweather_summary.csv');pd.set_option('display.width',300);print(q.to_string());print('MW_DONE')

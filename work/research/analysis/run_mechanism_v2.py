@@ -22,6 +22,6 @@ for prov in ['Gansu','Jiangsu','Guizhou']:
     commit_own=np.mean([v.get('commitment_mw',0) for v in js['meta']['s3'].values()])
     rows.append(dict(province=prov,system_cost_S1=r['S1']['total_cost'],system_cost_S3=r['S3']['total_cost'],system_cost_S1rt=r['S1rt']['total_cost'],system_cost_S2=r['S2']['total_cost'],
         s3_saving_vs_S1=r['S1']['total_cost']-r['S3']['total_cost'],s3_compensation_floor_own_baseline=comp_own,s3_mean_commitment_mw=commit_own,
-        s1rt_saving_vs_S1=r['S1']['total_cost']-r['S1rt']['total_cost'],gap_S1rt_S2_pct=(r['S1rt']['total_cost']-r['S2']['total_cost'])/max(1e-9,(r['S2']['total_cost']-r['NOAI']['total_cost']))*100,
+        s1rt_saving_vs_S1=r['S1']['total_cost']-r['S1rt']['total_cost'],gap_S1rt_S2_pct=(r['S1rt']['total_cost']-r['S2']['total_cost'])/max(1e-9,(r['S2']['total_cost']-r['NOAI']['total_cost']))*100,system_cost_S0=r['S0']['total_cost'],system_cost_S0e=r['S0e']['total_cost'],system_cost_NOAI=r['NOAI']['total_cost'],n_events={k:len(v.get('events',[])) for k,v in meta['s3'].items()},
         ai_mwh_S1=r['S1']['ai_mwh'],ai_mwh_S1rt=r['S1rt']['ai_mwh']))
 d=pd.DataFrame(rows);d.to_csv(m.OUT/'mechanism_v2_summary.csv',index=False);pd.set_option('display.width',250);print(d.round(1).to_string(index=False))
