@@ -12,7 +12,7 @@ from pathlib import Path
 import json,time,hashlib,sys
 import numpy as np,pandas as pd,requests
 ROOT=Path(__file__).resolve().parents[3];PREP=ROOT/'work/research/prepared';OUT=ROOT/'outputs/research/tables'
-N=int(__import__("os").environ.get("RE_SITES","8"));YEARS=(2015,2024)
+N=int(__import__("os").environ.get("RE_SITES","20"));YEARS=(2015,2024)  # default 20 = the deposited site list, Methods and SI Table S6; override with RE_SITES
 x=pd.read_excel(ROOT/'work/research/sources/zenodo_16810831/Global-integrated-Plant-Tracker-July-2025_china.xlsx',sheet_name='Power facilities')
 pc='Subnational unit (state, province)'
 sub=x[(x[pc].isin(['Gansu','Jiangsu','Guizhou']))&(x['Type'].isin(['wind','solar']))&(x['Status']=='operating')&x['Latitude'].notna()]

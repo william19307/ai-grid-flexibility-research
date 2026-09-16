@@ -6,6 +6,10 @@ $P $A/run_regional_2030_s0_s3.py --grid --ext_mode neighbours 2>&1 | grep -E "GR
 $P $A/summarize_2030_grid.py price | tail -1; $P $A/summarize_2030_grid.py neighbours | tail -1
 $P $A/run_mechanism_v2.py 2>&1 | grep -vE "$F" | tail -4
 $P $A/run_mechanism_v2_manipulation.py 2>&1 | grep -vE "$F" | tail -5
+# Weather-year profiles (20 largest sites per province/technology). work/research/prepared/openmeteo_cache/ already holds the
+# Open-Meteo ERA5 pulls for every site in the current 20-site list, so this rebuilds the site CSV, the profile file and the
+# audit JSON deterministically without hitting the API (a pull happens only for a site whose coordinates are not cached).
+$P $A/build_multiyear_re_profiles.py 2>&1 | grep -E "RE_PROFILES_DONE|Traceback|openmeteo failed"
 $P $A/run_2030_multiweather.py 2>&1 | grep -E "MW_DONE|Traceback|fail|timeout"
 $P $A/run_2030_cost_montecarlo.py 2>&1 | grep -E "MC_DONE|Traceback|infeasible draws|timeout"
 $P - <<'PY' 2>&1 | grep -vE "$F" | tail -30

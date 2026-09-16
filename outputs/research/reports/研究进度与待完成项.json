@@ -68,7 +68,8 @@
   "submission-review workflow round 1: 133 findings, 65 confirmed (numbers, overclaiming, style, methods); base-case idle switched to 41% with achievable-mode rule; all 2030 analyses rerun",
   "manuscript v1.3 generated from tables (title 15 words, abstract 149 words, 24 references in order of first appearance, limitations, statements); SI v1.2; cover letter; round-2 review workflow launched",
   "round-2 review (82 findings, 69 confirmed) identified metric flaw (per-MWh with scenario-specific denominator) and islanded-vs-constrained wording; metric switched to total incremental cost for same work; S0e efficient-mode scenario added; guard iterated to <1% truncation; all analyses rerun",
-  "manuscript v1.4 generated from tables with decomposition (mode vs shifting), 24 verified references, honest exchange wording; SI v1.3; cover letter; Chinese v1.2; Word package"
+  "manuscript v1.4 generated from tables with decomposition (mode vs shifting), 24 verified references, honest exchange wording; SI v1.3; cover letter; Chinese v1.2; Word package",
+  "round-3 review (15 findings, 15 confirmed) applied in the generator: qualified tariff/S1rt claims with counts, hydro-profile scope disclosed, mode-exclusion margin, emissions cap not used, offshore wind fixed, guard cap, week convention, Fig. 1 legend; RE_SITES default 20; MC instrumented and rerun"
  ],
  "requirements_still_open": {
   "novelty": "closest-model replication and complete review pending",

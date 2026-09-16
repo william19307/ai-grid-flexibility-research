@@ -10,7 +10,7 @@ rows=[]
 for prov in ['Guizhou','Jiangsu','Gansu']:
     js=json.load(open(m.OUT/f"regional_2030_{m.CODE[prov]}_2030_ai10_noexport_sm1_sb6_mechv2.json"));meta=js['meta']
     P_full=meta['assumptions']['ai_nameplate_mw'];idle_frac=meta['assumptions']['idle_fraction'];idle=idle_frac*P_full
-    q,pr,_=base.dvfs_modes();keep=pr>idle_frac+0.02;q,pr=q[keep],pr[keep];mode_power=P_full*pr;c=m.costs_2030()
+    q,pr,_=base.dvfs_modes();keep=pr>idle_frac+0.02;q,pr=q[keep],pr[keep]  # same rule as run_regional_2030_s0_s3: drop modes below node idle (plus a 2-percentage-point margin);mode_power=P_full*pr;c=m.costs_2030()
     for name,start in m.WEEK_STARTS.items():
         ev=meta['s3'][name].get('events',[])
         if not ev:continue

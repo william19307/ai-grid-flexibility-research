@@ -109,7 +109,7 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.41,slack_mult=1.0,slack_base_h=6.0,
         mu=load20.mean();k=(peak_target_2020-mu)/(load20.max()-mu);load20=mu+k*(load20-mu);assert load20.min()>0
     load30=load20*ratio;peak30=float(load30.max())
     q,pr,cfg=base.dvfs_modes();P_full=ai_share*peak30;idle=idle_frac*P_full
-    keep=pr>idle_frac+0.02  # modes whose measured power lies below node idle are not achievable at node level; drop them (no clipping to idle)
+    keep=pr>idle_frac+0.02  # modes whose measured power lies below node idle (plus a 2-percentage-point margin) are not achievable at node level; drop them (no clipping to idle)
     q,pr=q[keep],pr[keep];mode_power=P_full*pr
     wk=1/52.18;scen=[];jobs_by={};fixed_S0={};fixed_S0e={};fixed_S1={};meta_jobs={};prices_by={}
     for name,start in WEEK_STARTS.items():
