@@ -68,5 +68,5 @@ git commit -m "Update research evidence and manuscript"
 git push
 ```
 
-本仓库自 2026-09-17 起公开（当前 v1.0.1，Zenodo 存档 DOI: https://doi.org/10.5281/zenodo.22803801；概念 DOI 10.5281/zenodo.22803800 指向最新版本）。代码为 MIT 许可，派生表格、图与文稿为 CC BY 4.0（见 LICENSE）；原始外部数据不再分发，来源与许可见 `outputs/research/tables/data_registry.csv`。投稿稿件：`outputs/research/manuscript/core_paper_en_v1.4.md`（英文）、`中文投稿稿_v1.0.md`（中文）；复现顺序见 `REPRODUCE.md`。引用方式见 `CITATION.cff`。
+本仓库自 2026-09-17 起公开（当前 v1.0.2，Zenodo 存档 DOI: https://doi.org/10.5281/zenodo.22804057；概念 DOI 10.5281/zenodo.22803800 指向最新版本）。代码为 MIT 许可，派生表格、图与文稿为 CC BY 4.0（见 LICENSE）；原始外部数据不再分发，来源与许可见 `outputs/research/tables/data_registry.csv`。投稿稿件：`outputs/research/manuscript/core_paper_en_v1.4.md`（英文）、`中文投稿稿_v1.0.md`（中文）；复现顺序见 `REPRODUCE.md`。引用方式见 `CITATION.cff`。
 
