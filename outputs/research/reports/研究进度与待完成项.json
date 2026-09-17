@@ -1,7 +1,7 @@
 {
  "objective": "完成我们的研究，并且梳理出我们的论文。",
  "status": "in_progress",
- "last_verified": "2026-09-16",
+ "last_verified": "2026-09-17",
  "completed_evidence": [
   "15-study screening registry with reading-depth labels",
   "48-record GPU data reanalysis and visual review",
@@ -69,7 +69,9 @@
   "manuscript v1.3 generated from tables (title 15 words, abstract 149 words, 24 references in order of first appearance, limitations, statements); SI v1.2; cover letter; round-2 review workflow launched",
   "round-2 review (82 findings, 69 confirmed) identified metric flaw (per-MWh with scenario-specific denominator) and islanded-vs-constrained wording; metric switched to total incremental cost for same work; S0e efficient-mode scenario added; guard iterated to <1% truncation; all analyses rerun",
   "manuscript v1.4 generated from tables with decomposition (mode vs shifting), 24 verified references, honest exchange wording; SI v1.3; cover letter; Chinese v1.2; Word package",
-  "round-3 review (15 findings, 15 confirmed) applied in the generator: qualified tariff/S1rt claims with counts, hydro-profile scope disclosed, mode-exclusion margin, emissions cap not used, offshore wind fixed, guard cap, week convention, Fig. 1 legend; RE_SITES default 20; MC instrumented and rerun"
+  "round-3 review (15 findings, 15 confirmed) applied in the generator: qualified tariff/S1rt claims with counts, hydro-profile scope disclosed, mode-exclusion margin, emissions cap not used, offshore wind fixed, guard cap, week convention, Fig. 1 legend; RE_SITES default 20; MC instrumented and rerun",
+  "Monte Carlo rerun with guard diagnostics: 16 of 60 draws stopped at the 6-round cap (residual truncation up to 2.3%), disclosed in Methods",
+  "Chinese journal manuscript v1.0 (table-generated) with a distinct emphasis on tariff shape and mechanism design for Chinese provincial markets, citing the English paper; Word build"
  ],
  "requirements_still_open": {
   "novelty": "closest-model replication and complete review pending",
