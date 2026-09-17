@@ -128,7 +128,7 @@ S0：全速最早期限调度（刚性）；S0e：平价下能耗最小且尽早
 
 [10] Chen Y, Zheng X. To defer or to shift? The role of AI data center flexibility on grid interconnection[C]//Proceedings of the 2026 ACM Sustainability Week. New York: ACM, 2026: 322-327.
 
-[11] Wei W, Liu L. Efficient modes, not load shifting, deliver most of the grid value of flexible AI computing. 待发表, 2026.
+[11] Wei W, Liu L. Efficient modes, not load shifting, deliver most of the grid value of flexible AI computing[Z/OL]. Zenodo, 2026[2026-09-17]. https://doi.org/10.5281/zenodo.22804268. 已投稿 Nature Energy，稿件编号 NENERGY-26093649，审稿中.
 
 [12] MLCommons. MLPerf Training v4.0 results, including power submissions[EB/OL]. 2024[2026-09-17]. https://github.com/mlcommons/training_results_v4.0.
 

@@ -1,6 +1,6 @@
 {
  "objective": "完成我们的研究，并且梳理出我们的论文。",
- "status": "submission_ready",
+ "status": "submitted_nature_energy",
  "last_verified": "2026-09-17",
  "completed_evidence": [
   "15-study screening registry with reading-depth labels",
@@ -73,7 +73,8 @@
   "Monte Carlo rerun with guard diagnostics: 16 of 60 draws stopped at the 6-round cap (residual truncation up to 2.3%), disclosed in Methods",
   "Chinese journal manuscript v1.0 (table-generated) with a distinct emphasis on tariff shape and mechanism design for Chinese provincial markets, citing the English paper; Word build",
   "repository public; LICENSE/CITATION/.zenodo.json; releases v1.0.0–v1.0.3; Zenodo concept DOI 10.5281/zenodo.22803800, frozen v1.0.3 DOI 10.5281/zenodo.22804268",
-  "final cross-document consistency workflow: 12 confirmed fixes applied, critic verdict READY; superseded drafts archived; Chinese manuscript with Chinese-labelled figures and submission statement"
+  "final cross-document consistency workflow: 12 confirmed fixes applied, critic verdict READY; superseded drafts archived; Chinese manuscript with Chinese-labelled figures and submission statement",
+  "English v1.4 submitted to Nature Energy as Article on 2026-09-17, manuscript NENERGY-26093649; SI v1.4 (readable tables, S6 fix, values unchanged) and supplementary_data_1.xlsx; Chinese manuscript ref [11] and submission letter updated with the ID"
  ],
  "requirements_still_open": {
   "novelty": "closest-model replication and complete review pending",
@@ -82,7 +83,7 @@
   "Q3": "event contracts gameable and low-value; continuous marginal-cost-shaped price closes gap to <1%; cost pass-through and sub-hourly inference remain open",
   "national_scope": "province network, generation/asset calibration and 2030/2035 scenarios pending; annual provincial load anchor available but hourly shape remains unvalidated; peak check shows Gansu/Guizhou anchored peaks overstated",
   "robustness": "multi-weather done for wind/solar (single-year hydro and load shape remain); outages and external system pending",
-  "paper": "English v1.4, SI v1.3, cover letter, Chinese v1.0 and statement are submission-ready; author-only items: supply manuscript IDs to each journal after submission, update ZH ref [11] once the EN manuscript has an ID",
+  "paper": "English v1.4 under editorial assessment at Nature Energy (NENERGY-26093649); Chinese v1.0 with updated ref [11] and statement ready for 中国电机工程学报; on NE decision update the Chinese letter (and transfer to Joule if offered)",
   "regions": "candidate set screened (Gansu/Ningxia/Inner Mongolia; Jiangsu/Guangdong; Guizhou); final choice pending calibration data; Gansu large hydro absent from archive"
  },
  "next_actions": [
@@ -90,7 +91,8 @@
   "replace the external-market proxy by a multi-province coupled network for the three provinces and their neighbours",
   "unit-level commitment using GEM unit sizes; multi-weather years (archive 1979-2016 hydrology/weather where available) and outage samples",
   "mechanism v2: scarcity from S2 dual prices, continuous price/dispatch signals, verification and baseline rules",
-  "finalise English manuscript, figures and reproduction package"
+  "submit Chinese manuscript to 中国电机工程学报 and notify Nature Energy editors of its status",
+  "on Nature Energy decision: revise or transfer to Joule; update Chinese submission letter"
  ],
  "live_jobs": [],
  "previous_goal_turn_classification": "progress: first full S0-S3 provincial 2030 scenario results on public data; still not independently validated",
