@@ -9,9 +9,8 @@ authors:
   - family-names: Liu
     given-names: Lanlan
     affiliation: "School of Public Administration, Fujian Normal University"
-version: 1.0.2
+version: 1.0.3
 date-released: 2026-09-17
-doi: 10.5281/zenodo.22804057
 identifiers:
   - type: doi
     value: 10.5281/zenodo.22803800

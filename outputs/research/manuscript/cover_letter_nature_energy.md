@@ -1,6 +1,6 @@
 # Cover letter
 
-[Date]
+17 September 2026
 
 Dear Editor,
 
@@ -12,7 +12,7 @@ Three findings should interest the journal's readership. First, for the same com
 
 Relative to Colangelo et al. (*Nature Energy*, 2026), which demonstrated grid-interactive operation of an AI cluster, we quantify which of the demonstrated capabilities carries system value and how much a firm delivers under actual tariff structures. Relative to Senga, Wang and Knittel (*iScience*, 2026) and Chen and Zheng (ACM Sustainability Week, 2026), which model data-centre flexibility in capacity expansion, we add measured power modes, task-level deadlines from production traces, measured idle power, firm behaviour and mechanism design, and we show that the mode and shifting components must be separated to avoid misattributing value. Relative to Zhang, Li and Wang (*Applied Energy*, 2025) on China's regional computing migration and Dunlap (2026) on resource adequacy, we replace exogenous flexibility assumptions with service-constrained schedules and test the incentive layer explicitly.
 
-All data are public and are listed with sources, versions, checksums and licences in the Supplementary Information; the code and verification records are public on GitHub and archived on Zenodo (https://doi.org/10.5281/zenodo.22804057). The manuscript states the evidence basis and limitations of every input, in particular that hourly provincial load shapes are reconstructions checked against published peaks and that the islanded case is a bounding assumption. The work is not under consideration elsewhere. A companion article in Chinese, which shares the model and data with this manuscript and focuses on time-of-use tariff design for Chinese provincial markets, is being prepared for a Chinese-language journal; it cites this manuscript, and we will inform the editors of its status. The authors declare no competing interests. Should the editors consider the manuscript better suited to *Joule*, we would welcome a transfer.
+All data are public and are listed with sources, versions, checksums and licences in the Supplementary Information; the code and verification records are public on GitHub and archived on Zenodo (https://doi.org/10.5281/zenodo.22803800, release v1.0.3). The manuscript states the evidence basis and limitations of every input, in particular that hourly provincial load shapes are reconstructions checked against published peaks and that the islanded case is a bounding assumption. The work is not under consideration elsewhere. A companion article in Chinese, which shares the model and data with this manuscript and focuses on time-of-use tariff design for Chinese provincial markets, is being prepared for a Chinese-language journal; it cites this manuscript, and we will inform the editors of its status. The authors declare no competing interests. Should the editors consider the manuscript better suited to *Joule*, we would welcome a transfer.
 
 Yours sincerely,
 
