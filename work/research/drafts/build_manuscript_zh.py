@@ -32,7 +32,7 @@ doc=f'''# 分时电价形状与算力负荷时间转移价值：面向中国省�
 
 **威宏（William Wei）^1^，刘岚岚^2^**
 
-（1. 利兹大学 工程与物理科学学部 计算机科学学院，英国 利兹 LS2 9JT；2. 福建师范大学 公共管理学院，福建省 福州市 350117）
+（1. 利兹大学 工程与物理科学学部 计算机科学学院，英国 利兹 LS2 9JT；2. 福建师范大学 公共管理学院，福建省 福州市 350007）
 
 **通信作者：** 威宏（William Wei），qkfp0742@leeds.ac.uk
 
@@ -44,7 +44,7 @@ doc=f'''# 分时电价形状与算力负荷时间转移价值：面向中国省�
 
 WEI Hong (William Wei)^1^, LIU Lanlan^2^
 
-(1. School of Computer Science, Faculty of Engineering and Physical Sciences, University of Leeds, Leeds LS2 9JT, UK; 2. School of Public Administration, Fujian Normal University, Fuzhou 350117, Fujian Province, China)
+(1. School of Computer Science, Faculty of Engineering and Physical Sciences, University of Leeds, Leeds LS2 9JT, UK; 2. School of Public Administration, Fujian Normal University, Fuzhou 350007, Fujian Province, China)
 
 **ABSTRACT:** Artificial intelligence (AI) computing load can lower the energy per unit of work by running at lower power modes, or shift execution in time; the two levers create power-system value in different ways. For the same computing work and the same supply reliability, this paper combines measured graphics processing unit (GPU) power modes, production-cluster job traces, a joint investment–dispatch planning model and firm behaviour under tariffs and contracts in one framework, applied to a 2030 public-data scenario for Gansu, Jiangsu and Guizhou, and analyses how the shape of time-of-use tariffs, an event-based commitment contract and a price shaped like the system marginal cost affect the realisation of shifting value. In islanded provinces, system coordination lowers the incremental system cost of the AI load by {f1(isl.red_S0_S2_pct.min())}%–{f1(isl.red_S0_S2_pct.max())}% relative to rigid operation, and efficient modes without any shifting deliver almost all of it; the remaining shifting value is only {f1(isl.gap_S0e_S2_pct.min())}%–{f1(isl.gap_S0e_S2_pct.max())}% of the incremental cost, and below {f1(exc.gap_S0e_S2_pct.max()+0.05)}% with interprovincial exchange. A firm optimising against the current time-of-use tariff shapes gives shifting a negative value in {neg1} of 18 islanded settings; an event-based commitment contract layered on the tariff does not repair this and is exposed to baseline manipulation; an hourly price shaped like the system marginal cost recovers shifting value in all but {negr} setting and keeps total cost within {f1(rt_isl)}% of the coordinated optimum. In the near term, the value of efficient modes should be released first; temporal shifting requires prices of the right shape rather than contracts layered on today's tariffs.
 
