@@ -1,0 +1,12 @@
+{
+  "title": "ai-grid-flexibility-research: models, audits and results for 'Efficient modes, not load shifting, deliver most of the grid value of flexible AI computing'",
+  "upload_type": "software",
+  "description": "Task-power models, joint investment-dispatch model, public-data audits, provincial 2030 scenario results, figures and manuscripts for the study of AI computing load flexibility in Chinese provincial power systems. Code is MIT; derived tables, figures and manuscripts are CC BY 4.0; upstream datasets are not redistributed (see outputs/research/tables/data_registry.csv).",
+  "creators": [
+    {"name": "Wei, William", "affiliation": "Spatial Computing (Fujian) Technology Co., Ltd."},
+    {"name": "Liu, Lanlan", "affiliation": "Spatial Computing (Fujian) Technology Co., Ltd."}
+  ],
+  "license": "MIT",
+  "keywords": ["AI computing load", "data centre flexibility", "power system planning", "demand response", "time-of-use tariff", "China"],
+  "access_right": "open"
+}
