@@ -59,7 +59,7 @@ registry=OUT/'data_registry.csv';tab=pd.read_csv(registry)
 tab=tab[tab.id!='D07']
 tab=pd.concat([tab,pd.DataFrame([dict(id='D07',dataset='BurstGPT release v2.0 part 1',
     url='https://github.com/HPMLL/BurstGPT/releases/tag/v2.0',evidence_type='production_request_metadata',
-    coverage=f'{len(d)} request records; relative timestamps; two model labels',license='CC-BY-4.0',
+    coverage=f'{len(d)} request records; relative timestamps; two model labels',licence='CC-BY-4.0',
     status='download_digest_verified_schema_and_hourly_audit_complete',
     limits='no deadlines, elapsed time, request IDs or power; retain repeated metadata and zero-output records',
     version=meta['sha256'])])],ignore_index=True)

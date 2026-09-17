@@ -51,7 +51,6 @@
 - `outputs/research/figures/`：已审计结果图和明确标注为 synthetic 的 Mock 图。
 - `work/research/analysis/`：数据审计、校准、绘图与模型验证脚本。
 - `work/research/models/`：联合电力—算力模型实现。
-- `outputs/research/manuscript/core_paper_en_v0.1.md`：英文核心论文骨架，所有未完成结果以 `[PENDING]` 标注。
 
 原始外部数据、归档压缩包和本地准备文件通过 `.gitignore` 排除。来源、版本、校验值和重建限制记录在 `outputs/research/tables/data_registry.csv`、各审计 JSON 和论文参考文献中。需要在另一台机器重建时，先读取来源登记，再按许可从原始来源获取数据。
 

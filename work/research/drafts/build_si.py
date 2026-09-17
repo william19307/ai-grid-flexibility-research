@@ -3,15 +3,16 @@ from pathlib import Path
 import pandas as pd,json
 ROOT=Path(__file__).resolve().parents[3];M=ROOT/'outputs/research/manuscript';T=ROOT/'outputs/research/tables'
 md=lambda df:df.round(3).to_markdown(index=False)
-reg=pd.read_csv(T/'data_registry.csv')[['id','dataset','url','evidence_type','license','status','limits']]
-mw=pd.read_csv(T/'regional_2030_multiweather_summary.csv');gp=pd.read_csv(T/'regional_2030_gaps.csv');gn=pd.read_csv(T/'regional_2030_gaps_neighbours.csv');mc=pd.read_csv(T/'regional_2030_cost_montecarlo_summary.csv');pk=pd.read_csv(T/'provincial_peak_load_plausibility_check.csv');fl=pd.read_csv(T/'gem_fleet_three_provinces_2020_2030.csv');re=json.load(open(T/'multiyear_re_profiles_audit.json'));v1=json.load(open(T/'coupled_grid_compute_validation.json'));v2=json.load(open(T/'reservoir_coupling_validation.json'));ml=json.load(open(T/'mlperf_v40_power_by_benchmark.json'));pka=pd.read_csv(T/'regional_2030_peak_adjusted_sensitivity.csv')
+reg=pd.read_csv(T/'data_registry.csv')[['id','dataset','url','evidence_type','licence','status','limits']]
+flat=lambda df:df.set_axis(['_'.join(str(x) for x in c if str(x)!='nan') for c in df.columns],axis=1).reset_index()
+mw=flat(pd.read_csv(T/'regional_2030_multiweather_summary.csv',header=[0,1],index_col=[0,1]));gp=pd.read_csv(T/'regional_2030_gaps.csv');gn=pd.read_csv(T/'regional_2030_gaps_neighbours.csv');mc=flat(pd.read_csv(T/'regional_2030_cost_montecarlo_summary.csv',header=[0,1],index_col=0));pk=pd.read_csv(T/'provincial_peak_load_plausibility_check.csv');fl=pd.read_csv(T/'gem_fleet_three_provinces_2020_2030.csv');re=json.load(open(T/'multiyear_re_profiles_audit.json'));v1=json.load(open(T/'coupled_grid_compute_validation.json'));v2=json.load(open(T/'reservoir_coupling_validation.json'));ml=json.load(open(T/'mlperf_v40_power_by_benchmark.json'));pka=pd.read_csv(T/'regional_2030_peak_adjusted_sensitivity.csv')
 si=f"""# Supplementary Information
 
 **Efficient modes, not load shifting, deliver most of the grid value of flexible AI computing**
 
 William Wei^1,2,\\*^, Lanlan Liu (刘岚岚)^3^ — ^1^ School of Computer Science, Faculty of Engineering and Physical Sciences, University of Leeds, Leeds, UK; ^2^ Spatial Computing (Fujian) Technology Co., Ltd., Fuzhou, China; ^3^ School of Public Administration, Fujian Normal University, Fuzhou, China; \\* qkfp0742@leeds.ac.uk
 
-Supplementary Information v1.3, 16 September 2026. Base case: idle power 41% of nameplate; 25% is a sensitivity. Metric: total incremental system cost for the same computing work (EUR per representative week, expected over four weeks); reductions are relative to rigid full-speed operation (S0); shifting value is (cost S0e − cost S2)/cost S2.
+Supplementary Information v1.3, 17 September 2026. Base case: idle power 41% of nameplate; 25% is a sensitivity. Metric: total incremental system cost for the same computing work (EUR per representative week, expected over four weeks); reductions are relative to rigid full-speed operation (S0); shifting value is (cost S0e − cost S2)/cost S2.
 
 ## S1. Data registry
 {md(reg)}
@@ -37,10 +38,10 @@ Joint planning–operation LP: {v1.get('n_checks',118)} checks in total, of whic
 ## S8. 2030 scenario results, neighbour-aggregate exchange node (export = True rows), idle 41%
 {md(gn[gn.export][['province','ai_share','slack_mult','cost_S0','cost_S0e','cost_S1','cost_S3','cost_S1rt','cost_S2','red_S0_S2_pct','red_S0_S0e_pct','gap_S0e_S2_pct','share_S1','timing_share_S1','timing_share_S1rt','gap_S1rt_S2_pct']])}
 
-## S9. Multi-weather-year summary (constrained exchange, AI 10%)
+## S9. Multi-weather-year summary (islanded, export = False, AI 10%; min/median/max across ten weather years, 2015–2024)
 {md(mw)}
 
-## S10. Cost-parameter Monte Carlo summary (20 draws per province; infeasible or timed-out draws excluded)
+## S10. Cost-parameter Monte Carlo summary (islanded, export = False, AI 10%; 20 feasible draws per province, infeasible or timed-out draws excluded)
 {md(mc)}
 
 ## S11. Peak-adjusted sensitivity (incremental cost, EUR per representative week)

@@ -18,6 +18,7 @@ def RR(df,p,col):a,b=rng(df,p,col);return f'{f2(a)}～{f2(b)}'
 def tshare(p,e,a,sm,case):
     g=grid[(grid.province==p)&(grid.export==e)&(grid.ai_share==a)&(grid.slack_mult==sm)].set_index('case').total_cost;return (g['S0e']-g[case])/(g['S0e']-g['S2'])
 ts1={p:[tshare(p,False,a,sm,'S1') for a in [0.05,0.1,0.2] for sm in [1.0,3.0]] for p in P};ts3={p:[tshare(p,False,a,sm,'S3') for a in [0.05,0.1,0.2] for sm in [1.0,3.0]] for p in P};tsr={p:[tshare(p,False,a,sm,'S1rt') for a in [0.05,0.1,0.2] for sm in [1.0,3.0]] for p in P}
+_ex=(isl.ai_mwh_S0/isl.ai_mwh_S2-1)*100;en_ex_min=float(_ex.min());en_ex_max=float(_ex.max())  # 刚性池相对协调池的电量超出（孤岛基准设定，取自 gaps 表）
 neg1=sum(1 for p in P for x in ts1[p] if x<0);neg3=sum(1 for p in P for x in ts3[p] if x<0);negr=sum(1 for p in P for x in tsr[p] if x<0)
 js=grid[(grid.province=='Jiangsu')&(~grid.export)&(grid.ai_share==0.2)].set_index(['slack_mult','case'])
 mrow={p:mech[mech.province==p].iloc[0] for p in P};mgz=man[man.province=='Guizhou'].iloc[0];mjs=man[man.province=='Jiangsu'].iloc[0]
@@ -41,7 +42,7 @@ doc=f'''# 分时电价形状与算力负荷时间转移价值：面向中国省�
 
 ## 0 引言
 
-AI 算力是中国增长最快的新增电力负荷之一。国家算力枢纽布局[1]与绿电直连等政策把算力负荷视为可调度资源，现场实验也已证明 AI 集群可以调节功率[2]。但"可调"不等于"有价值"：算力负荷是否给电力系统带来价值，取决于任务能否在服务约束下完成、系统是否存在稀缺或富余时段，以及企业面对的价格信号是否使其愿意交付。已有研究分别讨论了数据中心时空转移的市场补偿[3-5]、灵活数据中心在容量规划中降低成本但可能增加排放[6]、中国"东数西算"的能耗与排放效应[7]、推理灵活性的容量充裕性价值[8]以及并网净收益检验[9-10]，多把灵活性视为单一量。然而实测 GPU 集群提供两类不同的杠杆：降低功率上限以减少单位工作量能耗（代价是运行时间延长），以及在时间上转移执行。两者的系统价值与企业兑现份额并不相同。
+AI 算力是中国增长最快的新增电力负荷之一。国家算力枢纽布局[1]与绿电直连等政策把算力负荷视为可调度资源，现场实验也已证明 AI 集群可以调节功率[2]。但“可调”不等于“有价值”：算力负荷是否给电力系统带来价值，取决于任务能否在服务约束下完成、系统是否存在稀缺或富余时段，以及企业面对的价格信号是否使其愿意交付。已有研究分别讨论了数据中心时空转移的市场补偿[3-5]、灵活数据中心在容量规划中降低成本但可能增加排放[6]、中国“东数西算”的能耗与排放效应[7]、推理灵活性的容量充裕性价值[8]以及并网净收益检验[9-10]，多把灵活性视为单一量。然而实测 GPU 集群提供两类不同的杠杆：降低功率上限以减少单位工作量能耗（代价是运行时间延长），以及在时间上转移执行。两者的系统价值与企业兑现份额并不相同。
 
 本文的贡献是在同一框架内分离这两类价值，并检验中国省级电力市场中三种价格信号对时间转移价值兑现的影响。本文与作者的英文稿[11]共享模型、数据以及甘肃、江苏、贵州三省六种情景（S0、S0e、S1、S3、S1rt、S2）与机制比较（分时电价、事件合同、连续价格）的核心数值结果，不涉及跨国/跨地区比较；本文在共享结果基础上新增第 3 节，将其转化为对中国省级分时电价与算力负荷需求响应机制设计的政策含义。全部结果为公开数据情景结果，证据层级与局限在第 1 节与第 4 节说明。
 
@@ -59,7 +60,7 @@ AI 算力是中国增长最快的新增电力负荷之一。国家算力枢纽�
 
 S0：全速最早期限调度（刚性）；S0e：平价下能耗最小且尽早执行的调度（高效档位、不转移）；S1：企业在本省官方分时电价形状下电费最小的调度；S3：在 S1 基础上叠加事件型承诺合同（系统宣告 S1 边际成本高于周中位数 20% 以上的前 5% 小时为事件，企业相对自身 S1 调度承诺最大可交付削减并至少获得机会成本补偿）；S1rt：企业在按协调解逐时节点边际成本形状、均值与电价相同的价格下电费最小的调度；S2：任务变量在联合模型中自由优化。三省分时电价形状取自官方文件：江苏 {tou['Jiangsu']}；甘肃 {tou['Gansu']}；贵州 {tou['Guizhou']}。电价水平统一取煤电边际成本的 1.5 倍，因为只有形状是官方口径。
 
-指标为**完成相同计算工作的总增量系统成本**：有 AI 池的系统总成本减去无 AI 池的总成本。因各情景完成相同批次，直接比较总增量成本；刚性池的电量比协调池高 13%～24%，故不按单位电量比较。"转移价值"定义为 S0e 与 S2 增量成本之差占 S2 增量成本的比例；"转移价值兑现份额"定义为 (S0e − X)/(S0e − S2)。
+指标为**完成相同计算工作的总增量系统成本**：有 AI 池的系统总成本减去无 AI 池的总成本。因各情景完成相同批次，直接比较总增量成本；刚性池的电量比协调池高 {f1(en_ex_min)}%～{f1(en_ex_max)}%，故不按单位电量比较。“转移价值”定义为 S0e 与 S2 增量成本之差占 S2 增量成本的比例；“转移价值兑现份额”定义为 (S0e − X)/(S0e − S2)。
 
 ### 1.4 省级输入
 
@@ -77,7 +78,7 @@ S0：全速最早期限调度（刚性）；S0e：平价下能耗最小且尽早
 
 ### 2.3 事件型合同无法弥补，且暴露于基线操纵
 
-在 S1 基础上叠加事件型承诺合同（S3），转移价值兑现份额为 {f2(min(min(v) for v in ts3.values()))}～{f2(max(max(v) for v in ts3.values()))}，在 {neg3} 组设定中为负，与 S1 基本相同。在机制比较中，合同仅在江苏冬季周与贵州夏季周宣告事件；相对 S1，它使系统成本在江苏上升 {abs(mrow['Jiangsu'].s3_saving_vs_S1)/1e3:,.0f} 千欧元/代表周、在贵州上升 {abs(mrow['Guizhou'].s3_saving_vs_S1)/1e3:,.0f} 千欧元，而补偿下限分别为 {mrow['Jiangsu'].s3_compensation_floor_own_baseline/1e3:,.0f} 与 {mrow['Guizhou'].s3_compensation_floor_own_baseline/1e3:,.0f} 千欧元。若结算基线取全速运行而非企业自身电价最优调度，事件小时的"削减量"在江苏平均虚增 {mjs.inflated_minus_own_event_power_mw:,.0f} MW、贵州 {mgz.inflated_minus_own_event_power_mw:,.0f} MW，而实际交付的灵活性没有变化。
+在 S1 基础上叠加事件型承诺合同（S3），转移价值兑现份额为 {f2(min(min(v) for v in ts3.values()))}～{f2(max(max(v) for v in ts3.values()))}，在 {neg3} 组设定中为负，与 S1 基本相同。在机制比较中，合同仅在江苏冬季周与贵州夏季周宣告事件；相对 S1，它使系统成本在江苏上升 {abs(mrow['Jiangsu'].s3_saving_vs_S1)/1e3:,.0f} 千欧元/代表周、在贵州上升 {abs(mrow['Guizhou'].s3_saving_vs_S1)/1e3:,.0f} 千欧元，而补偿下限分别为 {mrow['Jiangsu'].s3_compensation_floor_own_baseline/1e3:,.0f} 与 {mrow['Guizhou'].s3_compensation_floor_own_baseline/1e3:,.0f} 千欧元。若结算基线取全速运行而非企业自身电价最优调度，事件小时的“削减量”在江苏平均虚增 {mjs.inflated_minus_own_event_power_mw:,.0f} MW、贵州 {mgz.inflated_minus_own_event_power_mw:,.0f} MW，而实际交付的灵活性没有变化。
 
 ### 2.4 按系统边际成本形状定价回收转移价值
 
@@ -97,17 +98,17 @@ S0：全速最早期限调度（刚性）；S0e：平价下能耗最小且尽早
 
 ## 5 结论
 
-在同等计算工作与同等可靠性条件下，AI 算力负荷对电力系统的价值主要来自高效档位运行而非时间转移；时间转移的剩余价值在孤岛省份为增量成本的 {f1(isl.gap_S0e_S2_pct.min())}%～{f1(isl.gap_S0e_S2_pct.max())}%，有省间交换时低于 {f1(exc.gap_S0e_S2_pct.max()+0.05)}%，仅在容量紧缺时能避免吉瓦级燃气机组。现行分时电价形状使转移在多数设定中产生负价值，事件型合同不能弥补且可被基线操纵，按系统边际成本形状的逐时价格可回收大部分转移价值。中国省级市场对算力负荷的机制设计应从"叠加合同"转向"校正价格形状"。
+在同等计算工作与同等可靠性条件下，AI 算力负荷对电力系统的价值主要来自高效档位运行而非时间转移；时间转移的剩余价值在孤岛省份为增量成本的 {f1(isl.gap_S0e_S2_pct.min())}%～{f1(isl.gap_S0e_S2_pct.max())}%，有省间交换时低于 {f1(exc.gap_S0e_S2_pct.max()+0.05)}%，仅在容量紧缺时能避免吉瓦级燃气机组。现行分时电价形状使转移在多数设定中产生负价值，事件型合同不能弥补且可被基线操纵，按系统边际成本形状的逐时价格可回收大部分转移价值。中国省级市场对算力负荷的机制设计应从“叠加合同”转向“校正价格形状”。
 
 **数据与代码：** 全部输入为公开数据，来源、版本、校验值与许可见英文稿补充材料；代码、审计与验证记录已公开于 https://github.com/william19307/ai-grid-flexibility-research，并存档于 Zenodo（DOI: 10.5281/zenodo.22803800，指向最新版本；本文对应版本标签 v1.0.3）。
 
 **利益冲突：** 作者声明无利益冲突。
 
-**作者简介：** 威宏（1999—），男，英国利兹大学人工智能专业硕士研究生，qkfp0742@leeds.ac.uk；刘岚岚（1998—），女，福建师范大学公共管理专业硕士研究生。
+**作者简介：** 威宏（1999—），男，人工智能专业硕士研究生，利兹大学工程与物理科学学部计算机科学学院、空间计算（福建）科技有限公司，qkfp0742@leeds.ac.uk；刘岚岚（1998—），女，公共管理专业硕士研究生，福建师范大学公共管理学院。
 
 ## 参考文献
 
-[1] 国家发展改革委高技术司. "东数西算"全面启动 八枢纽激发数据新活力[EB/OL]. (2022-03-21)[2026-09-17]. https://www.ndrc.gov.cn/fzggw/jgsj/gjss/sjdt/202203/t20220321_1319862.html.
+[1] 国家发展改革委高技术司. “东数西算”全面启动 八枢纽激发数据新活力[EB/OL]. (2022-03-21)[2026-09-17]. https://www.ndrc.gov.cn/fzggw/jgsj/gjss/sjdt/202203/t20220321_1319862.html.
 
 [2] Colangelo P, Coskun A K, Megrue J, et al. AI data centres as grid-interactive assets[J]. Nature Energy, 2026, 11: 254-261.
 
@@ -121,7 +122,7 @@ S0：全速最早期限调度（刚性）；S0e：平价下能耗最小且尽早
 
 [7] Zhang Y, Li H, Wang S. Decarbonizing data centers through regional bits migration: a comprehensive assessment of China's "Eastern Data, Western Computing" initiative and its global implications[J]. Applied Energy, 2025, 392: 126020.
 
-[8] Dunlap C. Quantifying AI data center flexibility as a resource adequacy asset[EB/OL]. Research Square, 2026[2026-09-17]. https://www.researchsquare.com/article/rs-9829457/v1.
+[8] Dunlap C. Quantifying AI data center flexibility as a resource adequacy asset[EB/OL]. Research Square, 2026[2026-09-17]. https://doi.org/10.21203/rs.3.rs-9829457/v1.
 
 [9] Birahim S A. A net-grid-benefit test for interconnecting AI data centres[J]. npj Environmental Social Sciences, 2026, 1: 8.
 
@@ -168,8 +169,6 @@ Fig. 2 Reduction of incremental system cost relative to rigid operation by scena
 **图 3** 稳健性：(a) 十个气象年（2015—2024 年）与 (b) 成本参数蒙特卡洛下刚性到协调的总降幅，(c) 十个气象年下 S1rt 与协调最优的差距（孤岛，算力负荷占峰荷 10%）。箱线图中线为中位数，箱为四分位距，须为 1.5 倍四分位距，点为离群值。
 
 Fig. 3 Robustness across ten weather years and a cost-parameter Monte Carlo, and the S1rt gap to the coordinated optimum
-
-**附图 1** 服务约束与实测功率：(a) 实测 GPU 功率—吞吐量档位；(b) 三套生产轨迹的排队等待与运行时长分布；(c) MLPerf Training v4.0 节点功率（见英文稿图 1，文件 figures/submission/fig1_constraints_and_power.pdf）。
 '''
 open(M/'中文投稿稿_v1.0.md','w',encoding='utf-8').write(doc)
 ab=doc[doc.index('**摘要：**'):doc.index('**关键词：**')];print('abstract chars',len(ab),'| total chars',len(doc))
