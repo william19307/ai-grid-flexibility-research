@@ -128,11 +128,25 @@ S0：全速最早期限调度（刚性）；S0e：平价下能耗最小且尽早
 [21] Zippenfenig P. Open-Meteo.com weather API[DS/OL]. Zenodo, 2024. https://doi.org/10.5281/zenodo.7970649.
 [22] Stojkovic J, Zhang C, Goiri Í, et al. DynamoLLM: designing LLM inference clusters for performance and energy efficiency[C]//Proceedings of the IEEE International Symposium on High-Performance Computer Architecture. Piscataway: IEEE, 2025: 1348-1362.
 
-**图 1** 孤岛情景下时间转移价值的兑现份额 (S0e − X)/(S0e − S2)，X 为 S1、S3、S1rt；负值表示转移使系统成本高于不转移（图文件：figures/submission/fig3_realised_share.pdf）。
+![](../figures/submission_zh/zh_fig1_realised_share.png)
 
-**图 2** 各情景相对刚性运行的增量系统成本降幅（孤岛，松弛 6 h，空闲功率 {pc(IDLE)}）（图文件：figures/submission/fig2_cost_by_scenario.pdf）。
+**图 1** 孤岛情景下时间转移价值的兑现份额 (S0e − X)/(S0e − S2)，X 为 S1、S3、S1rt；负值表示转移使系统成本高于不转移，低于 −0.6 的柱截断显示并标注数值（松弛 6 h，空闲功率 {pc(IDLE)}）。
 
-**图 3** 稳健性：十个气象年与成本参数蒙特卡洛下的总降幅及 S1rt 与协调最优的差距（图文件：figures/submission/fig4_robustness.pdf）。
+Fig. 1 Share of shifting value realised, (S0e − X)/(S0e − S2), for X = S1, S3 and S1rt, islanded provinces
+
+![](../figures/submission_zh/zh_fig2_cost_by_scenario.png)
+
+**图 2** 各情景相对刚性运行的增量系统成本降幅（孤岛，松弛 6 h，空闲功率 {pc(IDLE)}，AI 负荷占 2030 年峰荷 5%、10%、20%）。
+
+Fig. 2 Reduction of incremental system cost relative to rigid operation by scenario, islanded provinces
+
+![](../figures/submission_zh/zh_fig3_robustness.png)
+
+**图 3** 稳健性：(a) 十个气象年（2015—2024 年）与 (b) 成本参数蒙特卡洛下刚性到协调的总降幅，(c) 十个气象年下 S1rt 与协调最优的差距（孤岛，AI 占峰荷 10%）。箱线图中线为中位数，箱为四分位距，须为 1.5 倍四分位距，点为离群值。
+
+Fig. 3 Robustness across ten weather years and a cost-parameter Monte Carlo, and the S1rt gap to the coordinated optimum
+
+**附图 1** 服务约束与实测功率：(a) 实测 GPU 功率—吞吐量档位；(b) 三套生产轨迹的排队等待与运行时长分布；(c) MLPerf Training v4.0 节点功率（见英文稿图 1，文件 figures/submission/fig1_constraints_and_power.pdf）。
 '''
 open(M/'中文投稿稿_v1.0.md','w',encoding='utf-8').write(doc)
 ab=doc[doc.index('**摘要：**'):doc.index('**关键词：**')];print('abstract chars',len(ab),'| total chars',len(doc))

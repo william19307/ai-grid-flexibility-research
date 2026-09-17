@@ -16,5 +16,6 @@ mkdir -p $M/docx
 pandoc $M/_build_en.md -o $M/docx/$(basename ${EN%.md}).docx --resource-path=. && rm -f $M/_build_en.md
 pandoc "$SI" -o $M/docx/$(basename ${SI%.md}).docx
 pandoc "$ZH" -o $M/docx/$(basename ${ZH%.md}).docx --resource-path=$M
+ZHJ=$(ls $M/中文投稿稿_v1.*.md | sort -V | tail -1); (cd $M && pandoc "$(basename $ZHJ)" -o docx/$(basename ${ZHJ%.md}).docx --resource-path=.)
 [ -f $M/cover_letter_nature_energy.md ] && pandoc $M/cover_letter_nature_energy.md -o $M/docx/cover_letter_nature_energy.docx
 ls -la $M/docx/; echo PACKAGE_DONE
