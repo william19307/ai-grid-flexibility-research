@@ -1,6 +1,6 @@
 {
  "objective": "完成我们的研究，并且梳理出我们的论文。",
- "status": "in_progress",
+ "status": "submission_ready",
  "last_verified": "2026-09-17",
  "completed_evidence": [
   "15-study screening registry with reading-depth labels",
@@ -71,7 +71,9 @@
   "manuscript v1.4 generated from tables with decomposition (mode vs shifting), 24 verified references, honest exchange wording; SI v1.3; cover letter; Chinese v1.2; Word package",
   "round-3 review (15 findings, 15 confirmed) applied in the generator: qualified tariff/S1rt claims with counts, hydro-profile scope disclosed, mode-exclusion margin, emissions cap not used, offshore wind fixed, guard cap, week convention, Fig. 1 legend; RE_SITES default 20; MC instrumented and rerun",
   "Monte Carlo rerun with guard diagnostics: 16 of 60 draws stopped at the 6-round cap (residual truncation up to 2.3%), disclosed in Methods",
-  "Chinese journal manuscript v1.0 (table-generated) with a distinct emphasis on tariff shape and mechanism design for Chinese provincial markets, citing the English paper; Word build"
+  "Chinese journal manuscript v1.0 (table-generated) with a distinct emphasis on tariff shape and mechanism design for Chinese provincial markets, citing the English paper; Word build",
+  "repository public; LICENSE/CITATION/.zenodo.json; releases v1.0.0–v1.0.3; Zenodo concept DOI 10.5281/zenodo.22803800, frozen v1.0.3 DOI 10.5281/zenodo.22804268",
+  "final cross-document consistency workflow: 12 confirmed fixes applied, critic verdict READY; superseded drafts archived; Chinese manuscript with Chinese-labelled figures and submission statement"
  ],
  "requirements_still_open": {
   "novelty": "closest-model replication and complete review pending",
@@ -80,7 +82,7 @@
   "Q3": "event contracts gameable and low-value; continuous marginal-cost-shaped price closes gap to <1%; cost pass-through and sub-hourly inference remain open",
   "national_scope": "province network, generation/asset calibration and 2030/2035 scenarios pending; annual provincial load anchor available but hourly shape remains unvalidated; peak check shows Gansu/Guizhou anchored peaks overstated",
   "robustness": "multi-weather done for wind/solar (single-year hydro and load shape remain); outages and external system pending",
-  "paper": "English v1.1 and SI v1.0 complete on public data; author names/affiliations to be inserted; optional native-speaker polish; journal choice by authors",
+  "paper": "English v1.4, SI v1.3, cover letter, Chinese v1.0 and statement are submission-ready; author-only items: supply manuscript IDs to each journal after submission, update ZH ref [11] once the EN manuscript has an ID",
   "regions": "candidate set screened (Gansu/Ningxia/Inner Mongolia; Jiangsu/Guangdong; Guizhou); final choice pending calibration data; Gansu large hydro absent from archive"
  },
  "next_actions": [
