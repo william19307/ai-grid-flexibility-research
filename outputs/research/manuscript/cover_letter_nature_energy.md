@@ -17,4 +17,4 @@ All data are public and are listed with sources, versions, checksums and licence
 Yours sincerely,
 
 William Wei (corresponding author, weihong_william@icloud.com) and Lanlan Liu
-[Affiliation]
+Spatial Computing (Fujian) Technology Co., Ltd., Fuzhou, Fujian, China

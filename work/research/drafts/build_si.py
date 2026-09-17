@@ -9,7 +9,7 @@ si=f"""# Supplementary Information
 
 **Efficient modes, not load shifting, deliver most of the grid value of flexible AI computing**
 
-William Wei^1,\\*^, Lanlan Liu (刘岚岚)^1^ — ^1^ [Affiliation, City, China]; \\* weihong_william@icloud.com
+William Wei^1,\\*^, Lanlan Liu (刘岚岚)^1^ — ^1^ Spatial Computing (Fujian) Technology Co., Ltd., Fuzhou, Fujian, China; \\* weihong_william@icloud.com
 
 Supplementary Information v1.3, 16 September 2026. Base case: idle power 41% of nameplate; 25% is a sensitivity. Metric: total incremental system cost for the same computing work (EUR per representative week, expected over four weeks); reductions are relative to rigid full-speed operation (S0); shifting value is (cost S0e − cost S2)/cost S2.
 

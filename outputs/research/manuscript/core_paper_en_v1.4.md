@@ -2,7 +2,7 @@
 
 **William Wei^1,\*^, Lanlan Liu (刘岚岚)^1^**
 
-^1^ [Affiliation, City, China]
+^1^ Spatial Computing (Fujian) Technology Co., Ltd., Fuzhou, Fujian, China
 
 \* Corresponding author: weihong_william@icloud.com
 
