@@ -2,7 +2,7 @@
 
 **Efficient modes, not load shifting, deliver most of the grid value of flexible AI computing**
 
-William Wei^1,2,\*^, Lanlan Liu (刘岚岚)^2,3^ — ^1^ School of Computing, University of Leeds, Leeds, UK; ^2^ Spatial Computing (Fujian) Technology Co., Ltd., Fuzhou, China; ^3^ School of Public Administration, Fujian Normal University, Fuzhou, China; \* qkfp0742@leeds.ac.uk
+William Wei^1,2,\*^, Lanlan Liu (刘岚岚)^3^ — ^1^ School of Computer Science, Faculty of Engineering and Physical Sciences, University of Leeds, Leeds, UK; ^2^ Spatial Computing (Fujian) Technology Co., Ltd., Fuzhou, China; ^3^ School of Public Administration, Fujian Normal University, Fuzhou, China; \* qkfp0742@leeds.ac.uk
 
 Supplementary Information v1.3, 16 September 2026. Base case: idle power 41% of nameplate; 25% is a sensitivity. Metric: total incremental system cost for the same computing work (EUR per representative week, expected over four weeks); reductions are relative to rigid full-speed operation (S0); shifting value is (cost S0e − cost S2)/cost S2.
 

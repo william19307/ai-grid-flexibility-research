@@ -3,8 +3,8 @@
   "upload_type": "software",
   "description": "Task-power models, joint investment-dispatch model, public-data audits, provincial 2030 scenario results, figures and manuscripts for the study of AI computing load flexibility in Chinese provincial power systems. Code is MIT; derived tables, figures and manuscripts are CC BY 4.0; upstream datasets are not redistributed (see outputs/research/tables/data_registry.csv).",
   "creators": [
-    {"name": "Wei, William", "affiliation": "School of Computing, University of Leeds; Spatial Computing (Fujian) Technology Co., Ltd."},
-    {"name": "Liu, Lanlan", "affiliation": "School of Public Administration, Fujian Normal University; Spatial Computing (Fujian) Technology Co., Ltd."}
+    {"name": "Wei, William", "affiliation": "School of Computer Science, Faculty of Engineering and Physical Sciences, University of Leeds; Spatial Computing (Fujian) Technology Co., Ltd."},
+    {"name": "Liu, Lanlan", "affiliation": "School of Public Administration, Fujian Normal University"}
   ],
   "license": "MIT",
   "keywords": ["AI computing load", "data centre flexibility", "power system planning", "demand response", "time-of-use tariff", "China"],

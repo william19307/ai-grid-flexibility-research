@@ -16,4 +16,4 @@ All data are public and are listed with sources, versions, checksums and licence
 
 Yours sincerely,
 
-William Wei (corresponding author, qkfp0742@leeds.ac.uk; School of Computing, University of Leeds, and Spatial Computing (Fujian) Technology Co., Ltd.) and Lanlan Liu (School of Public Administration, Fujian Normal University, and Spatial Computing (Fujian) Technology Co., Ltd.)
+William Wei (corresponding author, qkfp0742@leeds.ac.uk; School of Computer Science, Faculty of Engineering and Physical Sciences, University of Leeds, and Spatial Computing (Fujian) Technology Co., Ltd.) and Lanlan Liu (School of Public Administration, Fujian Normal University)

@@ -4,11 +4,11 @@ title: "ai-grid-flexibility-research: models, audits and results for 'Efficient 
 authors:
   - family-names: Wei
     given-names: William
-    affiliation: "School of Computing, University of Leeds; Spatial Computing (Fujian) Technology Co., Ltd."
+    affiliation: "School of Computer Science, Faculty of Engineering and Physical Sciences, University of Leeds; Spatial Computing (Fujian) Technology Co., Ltd."
     email: qkfp0742@leeds.ac.uk
   - family-names: Liu
     given-names: Lanlan
-    affiliation: "School of Public Administration, Fujian Normal University; Spatial Computing (Fujian) Technology Co., Ltd."
+    affiliation: "School of Public Administration, Fujian Normal University"
 version: 1.0.1
 date-released: 2026-09-17
 doi: 10.5281/zenodo.22803801
