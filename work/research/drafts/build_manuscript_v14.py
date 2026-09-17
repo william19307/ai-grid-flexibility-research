@@ -86,11 +86,15 @@ def cite(*keys):
 title='Efficient modes, not load shifting, deliver most of the grid value of flexible AI computing'
 front=f'''# {title}
 
-**William Wei^1,\\*^, Lanlan Liu (刘岚岚)^1^**
+**William Wei^1,2,\\*^, Lanlan Liu (刘岚岚)^2,3^**
 
-^1^ Spatial Computing (Fujian) Technology Co., Ltd., Fuzhou, Fujian, China
+^1^ School of Computing, University of Leeds, Leeds, UK
 
-\\* Corresponding author: weihong_william@icloud.com
+^2^ Spatial Computing (Fujian) Technology Co., Ltd., Fuzhou, China
+
+^3^ School of Public Administration, Fujian Normal University, Fuzhou, China
+
+\\* Corresponding author: qkfp0742@leeds.ac.uk
 
 '''
 abstract=f'''## Abstract
