@@ -25,8 +25,8 @@ rt_isl=isl.gap_S1rt_S2_pct.abs().max();rt_all=max(gp.gap_S1rt_S2_pct.abs().max()
 def mwr(p,i,col):d=mw[(mw.province==p)&(mw.idle==i)][col];return d.min(),d.median(),d.max()
 mw_neg={p:int((mw[(mw.province==p)&(mw.idle==IDLE)].timing_share_S1<0).sum()) for p in P};mw_n={p:int(len(mw[(mw.province==p)&(mw.idle==IDLE)])) for p in P}
 idle_rng=(min(v['idle_over_max'] for v in ml.values()),max(v['idle_over_max'] for v in ml.values()))
-tou={'Jiangsu':'高峰 8:00–12:00、17:00–21:00，平段 12:00–17:00、21:00–24:00，低谷 0:00–8:00（苏发改价格发〔2020〕1183 号附件 3，220 kV 及以上大工业）','Gansu':'高峰 7:00–9:00、18:00–24:00，低谷 2:00–4:00、11:00–17:00，峰谷相对平段各浮动 50%（甘肃省发展改革委 2020 年 12 月通知，2021 年 1 月 1 日起执行）','Guizhou':'高峰 10:00–13:00、17:00–22:00，平段 8:00–10:00、13:00–17:00、22:00–24:00，低谷 0:00–8:00，峰谷相对平段各浮动 60%（黔发改价格〔2023〕481 号）'}
-mwneg_txt={p:('全部为负' if mw_neg[p]==mw_n[p] else ('全部为正' if mw_neg[p]==0 else f'{mw_n[p]} 年中 {mw_neg[p]} 年为负')) for p in P}
+tou={'Jiangsu':'高峰 8:00–12:00、17:00–21:00，平段 12:00–17:00、21:00–24:00，低谷 0:00–8:00（苏发改价格发〔2020〕1183 号附件 3，220 kV 及以上大工业）','Gansu':'高峰 7:00–9:00、18:00–24:00，低谷 2:00–4:00、11:00–17:00，峰谷相对平段各浮动 50%（甘肃省发展改革委 2020 年 12 月通知，2021 年 1 月 1 日起执行）','Guizhou':'高峰 10:00–13:00、17:00–22:00，平段 8:00–10:00、13:00–17:00、22:00–24:00，低谷 0:00–8:00，峰谷相对平段各浮动 60%（黔发改价格〔2023〕481 号；因未获得 2020 年贵州分时电价官方文件，以此 2023 年文件形状替代，年份错配见第 4 节）'}
+mwneg_txt={p:('全部为负' if mw_neg[p]==mw_n[p] else ('全部为正' if mw_neg[p]==0 else f' {mw_n[p]} 年中 {mw_neg[p]} 年为负')) for p in P}
 doc=f'''# 分时电价形状与算力负荷时间转移价值：面向中国省级电力系统的情景分析
 
 **William Wei^1^，刘岚岚^1^**
@@ -35,7 +35,7 @@ doc=f'''# 分时电价形状与算力负荷时间转移价值：面向中国省�
 
 **通信作者：** William Wei，weihong_william@icloud.com
 
-**摘要：** 人工智能（AI）算力负荷既可通过降低运行档位减少单位工作量的能耗，也可在时间上转移执行，两者对电力系统的价值来源不同。本文在同等计算工作量与同等供电可靠性条件下，将实测图形处理器（GPU）功率档位、生产集群作业轨迹、电力投资—运行联合规划模型与企业在电价和合同下的行为纳入同一框架，以甘肃、江苏、贵州三省 2030 年公开数据情景为对象，重点分析分时电价形状、事件型承诺合同与按系统边际成本形状定价三种信号对时间转移价值兑现的影响。结果表明：在孤岛情景下，系统协调相对刚性全速运行可降低 AI 负荷增量系统成本 {f1(isl.red_S0_S2_pct.min())}%～{f1(isl.red_S0_S2_pct.max())}%，其中高效档位不作任何转移即可获得绝大部分；时间转移的剩余价值仅为增量成本的 {f1(isl.gap_S0e_S2_pct.min())}%～{f1(isl.gap_S0e_S2_pct.max())}%，有省间交换时低于 {f1(exc.gap_S0e_S2_pct.max()+0.05)}%，仅在容量紧缺时可避免吉瓦级燃气机组投资。企业按现行分时电价形状优化时，时间转移在 18 组孤岛设定中的 {neg1} 组产生负价值，原因是电价低谷时段与系统富余时段错位；叠加事件型承诺合同不能改善并暴露于基线操纵；按系统边际成本形状的逐时价格可在除 {negr} 组以外的全部设定中回收转移价值，总成本与协调最优的差距不超过 {f1(rt_isl)}%。结论对中国省级分时电价与算力负荷需求响应机制设计具有直接含义：近期应优先释放高效档位价值，时间转移需要形状正确的价格而非叠加在现行电价上的合同。
+**摘要：** 人工智能（AI）算力负荷既可通过降低运行档位减少单位工作量的能耗，也可在时间上转移执行，两者对电力系统的价值来源不同。本文在同等计算工作量与同等供电可靠性条件下，将实测图形处理器（GPU）功率档位、生产集群作业轨迹、电力投资—运行联合规划模型与企业在电价和合同下的行为纳入同一框架，以甘肃、江苏、贵州三省 2030 年公开数据情景为对象，重点分析分时电价形状、事件型承诺合同与按系统边际成本形状定价三种信号对时间转移价值兑现的影响。结果表明：在孤岛情景下，系统协调相对刚性全速运行可降低算力负荷增量系统成本 {f1(isl.red_S0_S2_pct.min())}%～{f1(isl.red_S0_S2_pct.max())}%，其中高效档位不作任何转移即可获得绝大部分；时间转移的剩余价值仅为增量成本的 {f1(isl.gap_S0e_S2_pct.min())}%～{f1(isl.gap_S0e_S2_pct.max())}%，有省间交换时低于 {f1(exc.gap_S0e_S2_pct.max()+0.05)}%，仅在容量紧缺时可避免吉瓦级燃气机组投资。企业按现行分时电价形状优化时，时间转移在 18 组孤岛设定中的 {neg1} 组产生负价值，原因是电价低谷时段与系统富余时段错位；叠加事件型承诺合同不能改善并暴露于基线操纵；按系统边际成本形状的逐时价格可在除 {negr} 组以外的全部设定中回收转移价值，总成本与协调最优的差距不超过 {f1(rt_isl)}%。结论对中国省级分时电价与算力负荷需求响应机制设计具有直接含义：近期应优先释放高效档位价值，时间转移需要形状正确的价格而非叠加在现行电价上的合同。
 
 **关键词：** 算力负荷；数据中心；需求响应；分时电价；负荷灵活性；电力系统规划；机制设计
 
@@ -43,7 +43,7 @@ doc=f'''# 分时电价形状与算力负荷时间转移价值：面向中国省�
 
 AI 算力是中国增长最快的新增电力负荷之一。国家算力枢纽布局[1]与绿电直连等政策把算力负荷视为可调度资源，现场实验也已证明 AI 集群可以调节功率[2]。但"可调"不等于"有价值"：算力负荷是否给电力系统带来价值，取决于任务能否在服务约束下完成、系统是否存在稀缺或富余时段，以及企业面对的价格信号是否使其愿意交付。已有研究分别讨论了数据中心时空转移的市场补偿[3-5]、灵活数据中心在容量规划中降低成本但可能增加排放[6]、中国"东数西算"的能耗与排放效应[7]、推理灵活性的容量充裕性价值[8]以及并网净收益检验[9-10]，多把灵活性视为单一量。然而实测 GPU 集群提供两类不同的杠杆：降低功率上限以减少单位工作量能耗（代价是运行时间延长），以及在时间上转移执行。两者的系统价值与企业兑现份额并不相同。
 
-本文的贡献是在同一框架内分离这两类价值，并检验中国省级电力市场中三种价格信号对时间转移价值兑现的影响。本文与作者的英文稿[11]共享模型与数据基础；英文稿侧重价值分解与国际比较，本文侧重分时电价形状、承诺合同与连续价格的机制比较及其对中国省级市场设计的含义。全部结果为公开数据情景结果，证据层级与局限在第 1 节与第 4 节说明。
+本文的贡献是在同一框架内分离这两类价值，并检验中国省级电力市场中三种价格信号对时间转移价值兑现的影响。本文与作者的英文稿[11]共享模型、数据以及甘肃、江苏、贵州三省六种情景（S0、S0e、S1、S3、S1rt、S2）与机制比较（分时电价、事件合同、连续价格）的核心数值结果，不涉及跨国/跨地区比较；本文在共享结果基础上新增第 3 节，将其转化为对中国省级分时电价与算力负荷需求响应机制设计的政策含义。全部结果为公开数据情景结果，证据层级与局限在第 1 节与第 4 节说明。
 
 ## 1 模型与情景
 
@@ -53,7 +53,7 @@ AI 算力是中国增长最快的新增电力负荷之一。国家算力枢纽�
 
 ### 1.2 电力投资—运行联合模型
 
-线性规划在四个代表周（2020 年 1、4、7、10 月各第二个周一起的一周，等概率）之间共享发电、储能与线路投资，在周内逐时调度：节点平衡、含 3% 损耗的运输网络、充放电效率 95% 且周期闭合的储能、机组可用率曲线、可选最小出力约束以及非 AI 负荷零缺电约束。投资成本按 5% 折现率年化并折算到周。模型通过 118 项独立验证（含 100 个独立算例）。机组启停、交流潮流、任务迁移与非预见控制未建模。
+线性规划在四个代表周（2020 年 1、4、7、10 月各第二个周一起的一周，等概率）之间共享发电、储能与线路投资，在周内逐时调度：节点平衡、含 3% 损耗的运输网络、充放电效率 95% 且周期闭合的储能、机组可用率曲线、可选最小出力约束以及非算力负荷零缺电约束。投资成本按 5% 折现率年化并折算到周。成本数据沿用 PyPSA-China 模型档案的欧元计价成本表[16]，未做汇率折算为人民币。模型通过 118 项独立验证（含 100 个独立算例）。机组启停、交流潮流、任务迁移与非预见控制未建模。
 
 ### 1.3 情景与指标
 
@@ -69,11 +69,11 @@ S0：全速最早期限调度（刚性）；S0e：平价下能耗最小且尽早
 
 ### 2.1 高效档位贡献绝大部分价值
 
-在孤岛情景、AI 负荷占 2030 年省峰荷 5%～20%、两种期限松弛下，系统协调相对刚性全速运行使增量系统成本下降甘肃 {R(isl,'Gansu','red_S0_S2_pct')}、江苏 {R(isl,'Jiangsu','red_S0_S2_pct')}、贵州 {R(isl,'Guizhou','red_S0_S2_pct')}；仅采用高效档位而不转移（S0e）即下降 {R(isl,'Gansu','red_S0_S0e_pct')}、{R(isl,'Jiangsu','red_S0_S0e_pct')}、{R(isl,'Guizhou','red_S0_S0e_pct')}。留给时间转移的价值为甘肃 {R(isl,'Gansu','gap_S0e_S2_pct')}、贵州 {R(isl,'Guizhou','gap_S0e_S2_pct')}、江苏 {R(isl,'Jiangsu','gap_S0e_S2_pct')}。转移价值在容量紧缺时最大：江苏 AI 占峰荷 20%、松弛 6 h 时，刚性运行需新增燃气机组 {js.loc[(1.0,'S0'),'new_ocgt']/1000:.1f} GW 与储能 {js.loc[(1.0,'S0'),'new_batt_mw']/1000:.2f} GW，仅高效档位仍需燃气机组 {js.loc[(1.0,'S0e'),'new_ocgt']/1000:.1f} GW，协调运行只需 {js.loc[(1.0,'S2'),'new_ocgt']/1000:.1f} GW；松弛放宽到 24 h 后，高效档位本身即可避免全部新增燃气机组（图 2）。有省间交换时总降幅为 {f1(exc.red_S0_S2_pct.min())}%～{f1(exc.red_S0_S2_pct.max())}%，几乎全部来自档位效应，转移价值低于 {f1(exc.gap_S0e_S2_pct.max()+0.05)}%。
+在孤岛情景、算力负荷占 2030 年省峰荷 5%～20%、两种期限松弛下，系统协调相对刚性全速运行使增量系统成本下降甘肃 {R(isl,'Gansu','red_S0_S2_pct')}、江苏 {R(isl,'Jiangsu','red_S0_S2_pct')}、贵州 {R(isl,'Guizhou','red_S0_S2_pct')}；仅采用高效档位而不转移（S0e）即下降 {R(isl,'Gansu','red_S0_S0e_pct')}、{R(isl,'Jiangsu','red_S0_S0e_pct')}、{R(isl,'Guizhou','red_S0_S0e_pct')}。留给时间转移的价值为甘肃 {R(isl,'Gansu','gap_S0e_S2_pct')}、贵州 {R(isl,'Guizhou','gap_S0e_S2_pct')}、江苏 {R(isl,'Jiangsu','gap_S0e_S2_pct')}。转移价值在容量紧缺时最大：江苏算力负荷占峰荷 20%、松弛 6 h 时，刚性运行需新增燃气机组 {js.loc[(1.0,'S0'),'new_ocgt']/1000:.1f} GW 与储能 {js.loc[(1.0,'S0'),'new_batt_mw']/1000:.2f} GW，仅高效档位仍需燃气机组 {js.loc[(1.0,'S0e'),'new_ocgt']/1000:.1f} GW，协调运行只需 {js.loc[(1.0,'S2'),'new_ocgt']/1000:.1f} GW；松弛放宽到 24 h 后，高效档位本身即可避免全部新增燃气机组（图 2）。有省间交换时总降幅为 {f1(exc.red_S0_S2_pct.min())}%～{f1(exc.red_S0_S2_pct.max())}%，几乎全部来自档位效应，转移价值低于 {f1(exc.gap_S0e_S2_pct.max()+0.05)}%。
 
 ### 2.2 现行分时电价形状使时间转移多为负价值
 
-企业按官方分时电价形状优化（S1）时，因档位效应由按电费优化的企业在所检验的两种电价形状下均能获得，其对总协调价值的兑现份额达 {pc(isl.share_S1.min())}～{pc(isl.share_S1.max())}；但转移价值的兑现份额在 18 组孤岛设定中有 {neg1} 组为负，即转移使系统成本高于不转移：甘肃 {RR(isl,'Gansu','timing_share_S1')}，江苏 {RR(isl,'Jiangsu','timing_share_S1')}，贵州 {RR(isl,'Guizhou','timing_share_S1')}（图 1）。原因是电价低谷（如贵州 0:00–8:00，甘肃 2:00–4:00 与 11:00–17:00）与模型系统的富余时段不重合，负荷被引导到对企业便宜、对系统并不便宜的小时。十个气象年下，该份额在江苏 {mwneg_txt['Jiangsu']}，在甘肃 {mwneg_txt['Gansu']}，在贵州 {mwneg_txt['Guizhou']}。
+企业按官方分时电价形状优化（S1）时，因档位效应由按电费优化的企业在所检验的两种电价形状下均能获得，其对总协调价值的兑现份额达 {pc(isl.share_S1.min())}～{pc(isl.share_S1.max())}；但转移价值的兑现份额在 18 组孤岛设定中有 {neg1} 组为负，即转移使系统成本高于不转移：甘肃 {RR(isl,'Gansu','timing_share_S1')}，江苏 {RR(isl,'Jiangsu','timing_share_S1')}，贵州 {RR(isl,'Guizhou','timing_share_S1')}（图 1）。原因是电价低谷（如贵州 0:00–8:00，甘肃 2:00–4:00 与 11:00–17:00）与模型系统的富余时段不重合，负荷被引导到对企业便宜、对系统并不便宜的小时。十个气象年下，该份额在江苏{mwneg_txt['Jiangsu']}，在甘肃{mwneg_txt['Gansu']}，在贵州{mwneg_txt['Guizhou']}。
 
 ### 2.3 事件型合同无法弥补，且暴露于基线操纵
 
@@ -85,15 +85,15 @@ S0：全速最早期限调度（刚性）；S0e：平价下能耗最小且尽早
 
 ### 2.5 稳健性
 
-十个气象年下，孤岛、AI 占峰荷 10% 的总降幅为甘肃 {f1(mwr('Gansu',IDLE,'red_S0_S2_pct')[0])}%～{f1(mwr('Gansu',IDLE,'red_S0_S2_pct')[2])}%、江苏 {f1(mwr('Jiangsu',IDLE,'red_S0_S2_pct')[0])}%～{f1(mwr('Jiangsu',IDLE,'red_S0_S2_pct')[2])}%、贵州 {f1(mwr('Guizhou',IDLE,'red_S0_S2_pct')[0])}%～{f1(mwr('Guizhou',IDLE,'red_S0_S2_pct')[2])}%，转移价值为 {f1(mwr('Gansu',IDLE,'gap_S0e_S2_pct')[0])}%～{f1(mwr('Gansu',IDLE,'gap_S0e_S2_pct')[2])}%、{f1(mwr('Jiangsu',IDLE,'gap_S0e_S2_pct')[0])}%～{f1(mwr('Jiangsu',IDLE,'gap_S0e_S2_pct')[2])}% 与 {f1(mwr('Guizhou',IDLE,'gap_S0e_S2_pct')[0])}%～{f1(mwr('Guizhou',IDLE,'gap_S0e_S2_pct')[2])}%（图 3）。燃料价格、投资成本、空闲功率与利用率的蒙特卡洛抽样（每省 {len(mc[mc.province=='Gansu'])} 次）给出总降幅第 10～90 百分位甘肃 {f1(mc[mc.province=='Gansu'].red_S0_S2_pct.quantile(.1))}%～{f1(mc[mc.province=='Gansu'].red_S0_S2_pct.quantile(.9))}%、江苏 {f1(mc[mc.province=='Jiangsu'].red_S0_S2_pct.quantile(.1))}%～{f1(mc[mc.province=='Jiangsu'].red_S0_S2_pct.quantile(.9))}%、贵州 {f1(mc[mc.province=='Guizhou'].red_S0_S2_pct.quantile(.1))}%～{f1(mc[mc.province=='Guizhou'].red_S0_S2_pct.quantile(.9))}%。峰荷修正与空闲功率 25% 的敏感性均不改变上述定性结论。
+十个气象年下，孤岛、算力负荷占峰荷 10% 的总降幅为甘肃 {f1(mwr('Gansu',IDLE,'red_S0_S2_pct')[0])}%～{f1(mwr('Gansu',IDLE,'red_S0_S2_pct')[2])}%、江苏 {f1(mwr('Jiangsu',IDLE,'red_S0_S2_pct')[0])}%～{f1(mwr('Jiangsu',IDLE,'red_S0_S2_pct')[2])}%、贵州 {f1(mwr('Guizhou',IDLE,'red_S0_S2_pct')[0])}%～{f1(mwr('Guizhou',IDLE,'red_S0_S2_pct')[2])}%，转移价值为 {f1(mwr('Gansu',IDLE,'gap_S0e_S2_pct')[0])}%～{f1(mwr('Gansu',IDLE,'gap_S0e_S2_pct')[2])}%、{f1(mwr('Jiangsu',IDLE,'gap_S0e_S2_pct')[0])}%～{f1(mwr('Jiangsu',IDLE,'gap_S0e_S2_pct')[2])}% 与 {f1(mwr('Guizhou',IDLE,'gap_S0e_S2_pct')[0])}%～{f1(mwr('Guizhou',IDLE,'gap_S0e_S2_pct')[2])}%（图 3）。燃料价格、投资成本、空闲功率与利用率的蒙特卡洛抽样（每省 {len(mc[mc.province=='Gansu'])} 次）给出总降幅第 10～90 百分位甘肃 {f1(mc[mc.province=='Gansu'].red_S0_S2_pct.quantile(.1))}%～{f1(mc[mc.province=='Gansu'].red_S0_S2_pct.quantile(.9))}%、江苏 {f1(mc[mc.province=='Jiangsu'].red_S0_S2_pct.quantile(.1))}%～{f1(mc[mc.province=='Jiangsu'].red_S0_S2_pct.quantile(.9))}%、贵州 {f1(mc[mc.province=='Guizhou'].red_S0_S2_pct.quantile(.1))}%～{f1(mc[mc.province=='Guizhou'].red_S0_S2_pct.quantile(.9))}%。峰荷修正与空闲功率 25% 的敏感性均不改变上述定性结论。
 
 ## 3 对中国省级市场设计的含义
 
-（1）近期最大且无需新机制的收益来自高效档位运行：只要期限允许延长运行时间，企业在本文检验的两种电价形状下都会采用，政策上应确保算力项目的电力接入与电价不惩罚这种运行方式。（2）时间转移的价值取决于本省是否存在零边际成本或容量紧缺小时，省间交换充分时价值很小；把算力负荷当作大规模转移资源的预期应以本省系统结构为前提。（3）现行分时电价的峰谷时段来源于传统负荷曲线，与高比例新能源系统的富余时段错位，会把算力负荷引导到错误的小时；在现货市场省份，让参与市场的算力用户直接面对逐时出清价格形状，比在目录电价上叠加需求响应合同更有效。（4）事件型需求响应合同依赖基线，对可自由调度的算力负荷尤其容易被操纵；按计量电量的连续价格结算不存在这一问题。（5）实时推理受秒级服务约束[22]，本文未将其视为可转移负荷，其响应需要另行研究。
+（1）近期最大且无需新机制的收益来自高效档位运行：只要期限允许延长运行时间，企业在本文检验的两种电价形状下都会采用，政策上应确保算力项目的电力接入与电价不惩罚这种运行方式。（2）时间转移的价值取决于本省是否存在零边际成本或容量紧缺小时，省间交换充分时价值很小；把算力负荷当作大规模转移资源的预期应以本省系统结构为前提。（3）现行分时电价的峰谷时段来源于传统负荷曲线，与高比例新能源系统的富余时段错位，会把算力负荷引导到错误的小时；在现货市场省份，若逐时出清价格能反映系统边际成本形状，本文构造的 S1rt 情景（取协调解事后对偶价格，见 2.4 节）显示其回收转移价值的效果优于在目录电价上叠加事件型合同；但 S1rt 的近最优性由构造保证，模型未刻画预测博弈与大负荷对价格的反馈，这一结论能否推广到真实现货市场机制设计仍有待检验。（4）事件型需求响应合同依赖基线；本文结果显示，可自由调度的算力负荷存在可观的基线操纵空间（江苏、贵州事件小时的虚增分别达 {mjs.inflated_minus_own_event_power_mw:,.0f} MW 与 {mgz.inflated_minus_own_event_power_mw:,.0f} MW），但本文未与其他可调度负荷类型的基线操纵风险作比较；按计量电量的连续价格结算不存在这一问题。（5）实时推理受秒级服务约束[22]，本文未将其视为可转移负荷，其响应需要另行研究。
 
 ## 4 局限
 
-省级逐时负荷为重构曲线并经年度锚定与峰荷校核，甘肃与贵州峰值偏高，会高估稀缺；孤岛情景是边界假设；省间交换为固定价格代理或邻省聚合节点，联络容量清单存在已知的内部不一致；水电按归档的径流式曲线处理，未区分贵州占 {pc(gz_dam_share)} 的大型水库；煤电承诺为启发式并在各情景固定；未建模切换、检查点与冷却开销、任务迁移与非预见控制；只检验了一种事件规则；电价水平为假设。这些因素影响数值大小，不改变档位效应占主导、现行电价形状使转移多为负价值、边际成本形状价格回收大部分转移价值的定性结论。
+省级逐时负荷为重构曲线并经年度锚定与峰荷校核，甘肃与贵州峰值偏高，会高估稀缺；孤岛情景是边界假设；省间交换为固定价格代理或邻省聚合节点，联络容量清单存在已知的内部不一致；水电按归档的径流式曲线处理，未区分贵州占 {pc(gz_dam_share)} 的大型水库；这一简化可能高估水电的小时可调度性，并可能影响贵州的稀缺程度与转移价值结果，第 2、3 节涉及贵州的结论应据此审慎解读；煤电承诺为启发式并在各情景固定；未建模切换、检查点与冷却开销、任务迁移与非预见控制；贵州分时电价形状取自 2023 年文件（未获得 2020 年官方文件），存在年份错配；只检验了一种事件规则；电价水平为假设。这些因素影响数值大小，不改变档位效应占主导、现行电价形状使转移多为负价值、边际成本形状价格回收大部分转移价值的定性结论。
 
 ## 5 结论
 
@@ -105,27 +105,48 @@ S0：全速最早期限调度（刚性）；S0e：平价下能耗最小且尽早
 
 ## 参考文献
 
-[1] 国家发展改革委高技术司. "东数西算"全面启动 八枢纽激发数据新活力[EB/OL]. (2022-03-21). https://www.ndrc.gov.cn/fzggw/jgsj/gjss/sjdt/202203/t20220321_1319862.html.
-[2] Colangelo P, et al. AI data centres as grid-interactive assets[J]. Nature Energy, 2026, 11: 254-261.
+[1] 国家发展改革委高技术司. "东数西算"全面启动 八枢纽激发数据新活力[EB/OL]. (2022-03-21)[2026-09-17]. https://www.ndrc.gov.cn/fzggw/jgsj/gjss/sjdt/202203/t20220321_1319862.html.
+
+[2] Colangelo P, Coskun A K, Megrue J, et al. AI data centres as grid-interactive assets[J]. Nature Energy, 2026, 11: 254-261.
+
 [3] Zhang W, Zavala V M. Remunerating space–time, load-shifting flexibility from data centers in electricity markets[J]. Applied Energy, 2022, 326: 119930.
+
 [4] Zheng J, Chien A A, Suh S. Mitigating curtailment and carbon emissions through load migration between data centers[J]. Joule, 2020, 4(10): 2208-2222.
+
 [5] Fridgen G, Keller R, Thimmel M, et al. Shifting load through space: the economics of spatial demand side management using distributed data centers[J]. Energy Policy, 2017, 109: 400-413.
+
 [6] Senga J R L, Wang S, Knittel C R. Flexible data centers reduce power system costs but can increase emissions[J]. iScience, 2026, 29(7): 116497.
+
 [7] Zhang Y, Li H, Wang S. Decarbonizing data centers through regional bits migration: a comprehensive assessment of China's "Eastern Data, Western Computing" initiative and its global implications[J]. Applied Energy, 2025, 392: 126020.
-[8] Dunlap C. Quantifying AI data center flexibility as a resource adequacy asset[EB/OL]. Research Square, 2026. https://www.researchsquare.com/article/rs-9829457/v1.
+
+[8] Dunlap C. Quantifying AI data center flexibility as a resource adequacy asset[EB/OL]. Research Square, 2026[2026-09-17]. https://www.researchsquare.com/article/rs-9829457/v1.
+
 [9] Birahim S A. A net-grid-benefit test for interconnecting AI data centres[J]. npj Environmental Social Sciences, 2026, 1: 8.
+
 [10] Chen Y, Zheng X. To defer or to shift? The role of AI data center flexibility on grid interconnection[C]//Proceedings of the 2026 ACM Sustainability Week. New York: ACM, 2026: 322-327.
-[11] Wei W, Liu L. Efficient modes, not load shifting, deliver most of the grid value of flexible AI computing[J]. 投稿中, 2026.
-[12] MLCommons. MLPerf Training v4.0 results, including power submissions[EB/OL]. 2024. https://github.com/mlcommons/training_results_v4.0.
+
+[11] Wei W, Liu L. Efficient modes, not load shifting, deliver most of the grid value of flexible AI computing. 待发表, 2026.
+
+[12] MLCommons. MLPerf Training v4.0 results, including power submissions[EB/OL]. 2024[2026-09-17]. https://github.com/mlcommons/training_results_v4.0.
+
 [13] Hu Q, Sun P, Yan S, et al. Characterization and prediction of deep learning workloads in large-scale GPU datacenters[C]//Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis. New York: ACM, 2021: 1-15.
+
 [14] Weng Q, Xiao W, Yu Y, et al. MLaaS in the wild: workload analysis and scheduling in large-scale heterogeneous GPU clusters[C]//Proceedings of the 19th USENIX Symposium on Networked Systems Design and Implementation. Berkeley: USENIX, 2022: 945-960.
+
 [15] Jeon M, Venkataraman S, Phanishayee A, et al. Analysis of large-scale multi-tenant GPU clusters for DNN training workloads[C]//Proceedings of the USENIX Annual Technical Conference. Berkeley: USENIX, 2019: 947-960.
-[16] Zhou X. PyPSA-China: V3.0[DS/OL]. Zenodo, 2024. https://doi.org/10.5281/zenodo.13987282.
-[17] Wu H, Kan X. Hourly electric power load and transmission data at the provincial level in China[DS/OL]. Zenodo, 2023. https://doi.org/10.5281/zenodo.8322210.
+
+[16] Zhou X. PyPSA-China: V3.0[DS/OL]. Zenodo, 2024[2026-09-17]. https://doi.org/10.5281/zenodo.13987282.
+
+[17] Wu H, Kan X. Hourly electric power load and transmission data at the provincial level in China[DS/OL]. Zenodo, 2023[2026-09-17]. https://doi.org/10.5281/zenodo.8322210.
+
 [18] 国家统计局. 中国统计年鉴 2021: 表 9-14 分地区用电量[M]. 北京: 中国统计出版社, 2021.
-[19] Potsdam Institute for Climate Impact Research. Data bundle PyPSA-China-PIK: rasters and basic cutout, v1.1 (含 Global Energy Monitor 全球一体化电厂追踪库 2025 年 7 月中国子集)[DS/OL]. Zenodo, 2025. https://doi.org/10.5281/zenodo.16810831.
+
+[19] Potsdam Institute for Climate Impact Research. Data bundle PyPSA-China-PIK: rasters and basic cutout, v1.1 (含 Global Energy Monitor 全球一体化电厂追踪库 2025 年 7 月中国子集)[DS/OL]. Zenodo, 2025[2026-09-17]. https://doi.org/10.5281/zenodo.16810831.
+
 [20] Hersbach H, Bell B, Berrisford P, et al. The ERA5 global reanalysis[J]. Quarterly Journal of the Royal Meteorological Society, 2020, 146(730): 1999-2049.
-[21] Zippenfenig P. Open-Meteo.com weather API[DS/OL]. Zenodo, 2024. https://doi.org/10.5281/zenodo.7970649.
+
+[21] Zippenfenig P. Open-Meteo.com weather API[DS/OL]. Zenodo, 2024[2026-09-17]. https://doi.org/10.5281/zenodo.7970649.
+
 [22] Stojkovic J, Zhang C, Goiri Í, et al. DynamoLLM: designing LLM inference clusters for performance and energy efficiency[C]//Proceedings of the IEEE International Symposium on High-Performance Computer Architecture. Piscataway: IEEE, 2025: 1348-1362.
 
 ![](../figures/submission_zh/zh_fig1_realised_share.png)
@@ -136,13 +157,13 @@ Fig. 1 Share of shifting value realised, (S0e − X)/(S0e − S2), for X = S1, S
 
 ![](../figures/submission_zh/zh_fig2_cost_by_scenario.png)
 
-**图 2** 各情景相对刚性运行的增量系统成本降幅（孤岛，松弛 6 h，空闲功率 {pc(IDLE)}，AI 负荷占 2030 年峰荷 5%、10%、20%）。
+**图 2** 各情景相对刚性运行的增量系统成本降幅（孤岛，松弛 6 h，空闲功率 {pc(IDLE)}，算力负荷占 2030 年峰荷 5%、10%、20%）。
 
 Fig. 2 Reduction of incremental system cost relative to rigid operation by scenario, islanded provinces
 
 ![](../figures/submission_zh/zh_fig3_robustness.png)
 
-**图 3** 稳健性：(a) 十个气象年（2015—2024 年）与 (b) 成本参数蒙特卡洛下刚性到协调的总降幅，(c) 十个气象年下 S1rt 与协调最优的差距（孤岛，AI 占峰荷 10%）。箱线图中线为中位数，箱为四分位距，须为 1.5 倍四分位距，点为离群值。
+**图 3** 稳健性：(a) 十个气象年（2015—2024 年）与 (b) 成本参数蒙特卡洛下刚性到协调的总降幅，(c) 十个气象年下 S1rt 与协调最优的差距（孤岛，算力负荷占峰荷 10%）。箱线图中线为中位数，箱为四分位距，须为 1.5 倍四分位距，点为离群值。
 
 Fig. 3 Robustness across ten weather years and a cost-parameter Monte Carlo, and the S1rt gap to the coordinated optimum
 

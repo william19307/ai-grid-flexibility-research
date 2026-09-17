@@ -23,7 +23,7 @@ for k,c in enumerate(['S1','S3','S1rt']):
     for xi,v in zip(x+(k-1)*w,d[c]):
         if v<-0.6:ax.text(xi,-0.63,f'{v:.1f}',ha='center',va='top',fontsize=5,rotation=90)
 ax.axhline(1,color='k',lw=.6,ls='--');ax.axhline(0,color='k',lw=.6);ax.set_xticks(x);ax.set_xticklabels([f"{ZH[r.province]}\n{int(r.ai*100)}%" for _,r in d.iterrows()],fontsize=7)
-ax.set_ylabel('时间转移价值兑现份额\n(S0e − X)/(S0e − S2)');ax.grid(axis='y',alpha=.25,linewidth=.5);ax.set_ylim(-0.95,1.25);ax.set_xlabel('省份与 AI 负荷占 2030 年峰荷比例')
+ax.set_ylabel('时间转移价值兑现份额\n(S0e − X)/(S0e − S2)');ax.grid(axis='y',alpha=.25,linewidth=.5);ax.set_ylim(-0.95,1.25);ax.set_xlabel('省份与 算力负荷占 2030 年峰荷比例')
 h,l=ax.get_legend_handles_labels();fig.legend(h,l,loc='upper center',ncol=3,fontsize=6.5,frameon=False,bbox_to_anchor=(0.5,1.0))
 fig.tight_layout(rect=[0,0,1,0.9]);[fig.savefig(F/f'zh_fig1_realised_share.{e}',dpi=300) for e in ['pdf','png','svg']]
 # 图2 降幅
@@ -31,7 +31,7 @@ fig,ax=plt.subplots(1,3,figsize=(7.2,2.9),sharey=True)
 for j,p in enumerate(P):
     s=g[g.province==p].sort_values('ai_share');x=np.arange(3);w=0.16
     for k,c in enumerate(['S0e','S1','S3','S1rt','S2']):ax[j].bar(x+(k-2)*w,(1-s[f'cost_{c}']/s['cost_S0'])*100,w,color=C[c],label=L[c] if j==0 else None,linewidth=0)
-    ax[j].set_xticks(x);ax[j].set_xticklabels([f'{int(a*100)}%' for a in s.ai_share]);ax[j].set_title(ZH[p],fontsize=9);ax[j].set_xlabel('AI 负荷占 2030 年峰荷比例');ax[j].grid(axis='y',alpha=.25,linewidth=.5);ax[j].axhline(0,color='k',lw=.5)
+    ax[j].set_xticks(x);ax[j].set_xticklabels([f'{int(a*100)}%' for a in s.ai_share]);ax[j].set_title(ZH[p],fontsize=9);ax[j].set_xlabel('算力负荷占 2030 年峰荷比例');ax[j].grid(axis='y',alpha=.25,linewidth=.5);ax[j].axhline(0,color='k',lw=.5)
 ax[0].set_ylabel('相对刚性运行的\n增量系统成本降幅 (%)')
 h,l=ax[0].get_legend_handles_labels();fig.legend(h,l,loc='upper center',ncol=3,fontsize=6.5,frameon=False,bbox_to_anchor=(0.5,1.0))
 fig.tight_layout(rect=[0,0,1,0.88]);[fig.savefig(F/f'zh_fig2_cost_by_scenario.{e}',dpi=300) for e in ['pdf','png','svg']]
