@@ -166,7 +166,7 @@ All inputs are public. The Supplementary Information lists every dataset with it
 
 ## Code availability
 
-Model, audit and figure code, with the run order and independent verification records, is available at https://github.com/william19307/ai-grid-flexibility-research; the repository will be made public and archived with a DOI on Zenodo upon publication.
+Model, audit and figure code, with the run order and independent verification records, is available at https://github.com/william19307/ai-grid-flexibility-research (public) and archived on Zenodo at https://doi.org/10.5281/zenodo.22803801 (release v1.0.1; concept DOI 10.5281/zenodo.22803800 resolves to the latest version).
 
 ## Author contributions
 

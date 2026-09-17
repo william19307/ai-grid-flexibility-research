@@ -9,8 +9,13 @@ authors:
   - family-names: Liu
     given-names: Lanlan
     affiliation: "Spatial Computing (Fujian) Technology Co., Ltd."
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-09-17
+doi: 10.5281/zenodo.22803801
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22803800
+    description: "Concept DOI (all versions)"
 repository-code: "https://github.com/william19307/ai-grid-flexibility-research"
 license: MIT
 keywords:
