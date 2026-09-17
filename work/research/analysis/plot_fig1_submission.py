@@ -21,6 +21,6 @@ for name,x,w,col in [('Helios run',hel.duration/3600,hel.gh,'#1f77b4'),('Alibaba
 ax[1].set_xscale('log');ax[1].set_xlabel('Hours');ax[1].set_ylabel('GPU-hour-weighted CDF');ax[1].set_title('b  Production traces:\nwait (solid), run (dashed)',fontsize=8,loc='left');ax[1].legend(fontsize=5.2,frameon=True,facecolor='white',framealpha=0.85,edgecolor='none',ncol=1,loc='center left',bbox_to_anchor=(0.02,0.55));ax[1].axvline(24,color='gray',lw=.5,ls=':')
 ml=json.load(open(T/'mlperf_v40_power_by_benchmark.json'));bm=list(ml);x=np.arange(len(bm))
 ax[2].bar(x-0.27,[ml[b]['idle_w']/1000 for b in bm],0.26,color='#9ecae1',label='Idle (median of lowest 5%)');ax[2].bar(x,[ml[b]['active_w']/1000 for b in bm],0.26,color='#3182bd',label='Active (median of central 60%)');ax[2].bar(x+0.27,[ml[b]['max_w']/1000 for b in bm],0.26,color='#08519c',label='Peak (maximum reading)')
-ax[2].set_xticks(x);ax[2].set_xticklabels(['Llama2-70B\nLoRA','ResNet-50','SSD'],fontsize=7);ax[2].set_ylabel('Node AC power (kW), 8×H100');ax[2].set_title('c  MLPerf Training v4.0\nnode power',fontsize=8,loc='left');ax[2].legend(fontsize=5.5,frameon=False,loc='upper center',bbox_to_anchor=(0.5,1.0))
-ax[2].set_ylim(0,7.6)
+ax[2].set_xticks(x);ax[2].set_xticklabels(['Llama2-70B\nLoRA','ResNet-50','SSD'],fontsize=7);ax[2].set_ylabel('Node AC power (kW), 8×H100');ax[2].set_title('c  MLPerf Training v4.0\nnode power',fontsize=8,loc='left');ax[2].legend(fontsize=5.5,frameon=False,loc='upper center',bbox_to_anchor=(0.5,1.0),ncol=1)
+ax[2].set_ylim(0,9.2)
 [fig.savefig(F/f'fig1_constraints_and_power.{e}',dpi=300) for e in ['pdf','png','svg']];print('fig1 saved')
