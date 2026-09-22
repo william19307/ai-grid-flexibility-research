@@ -1,0 +1,15 @@
+{
+  "cases": 64,
+  "feasible": 36,
+  "infeasible": 28,
+  "independent_interval_lp_edf_agreement": true,
+  "threshold_cross_checks": 16,
+  "maximum_fixed_work_error": 2.842170943040401e-14,
+  "invalid_success_claims": "No infeasible case is silently repaired or excluded from the result table.",
+  "limitations": [
+    "Deadlines remain assumptions; no empirical SLA.",
+    "Full-tail finite cohort has no arrivals after 168h; not an equilibrium load estimate.",
+    "Historical clipping retained only as a paired diagnostic.",
+    "Per-job GPU parallelism, gang scheduling, checkpoint costs and mixed workload types remain unresolved."
+  ]
+}

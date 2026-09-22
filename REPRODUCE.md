@@ -64,3 +64,18 @@ work/figure-env/bin/python work/research/analysis/audit_counterfactual_revision.
 ```
 
 27 组分别比较历史规则、只修正 NOAI、全煤电调度放宽；运行入口拒绝覆盖已有输出，sweep 不自动复用既有运行。每次保存实际煤电约束、源码及输入哈希。独立审计跨 AI 规模比较 NOAI，并核验只改参考不会改变 AI 场景。调度放宽不是机组组合或停运验证。
+
+### 阶段 04：严格服务与原始时序
+
+需要原 prepared Helios 表，以及 `work/research/sources/helios_sensetime/data/` 下四集群原始作业与容量文件。
+
+```sh
+work/figure-env/bin/python work/research/analysis/validate_strict_service_revision.py
+work/figure-env/bin/python work/research/analysis/audit_strict_service_revision.py
+work/figure-env/bin/python work/research/analysis/audit_chronological_helios.py
+work/figure-env/bin/python work/research/analysis/verify_service_results.py
+```
+
+两个 audit 入口拒绝覆盖已有结果；重新求解应在单独检出中准备输入并归档旧 `revision/service/`。`cases/*.json` 的 `source_meta` 是 u=1 的规范化形态，实际 u 和任务量分别位于 `parameters`、`jobs`；不依据可行性改变窗口或工作形态。28 个不可行结果是研究发现，不是需要删除的运行错误。完整尾部仅是有限批次诊断；真实时序是分配的 GPU 时间，不是电功率或 SLA。
+
+严格案例有运行前源码与输入哈希；原始时序审计的源码哈希和快照在独立核验时补充，明确记录为运行后收集。新机器可用对应来源重新取得原始文件，再核验哈希；尚未完成自动下载与全新机器端到端验证。

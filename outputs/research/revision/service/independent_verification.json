@@ -1,0 +1,33 @@
+{
+  "strict_cases": 64,
+  "strict_infeasible": 28,
+  "all_witnesses_recomputed": true,
+  "fixed_windows_and_work_shape_identical_across_utilization": true,
+  "max_edf_work_accounting_error": 2.842170943040401e-14,
+  "chronological_raw_row_sample_checks": 64,
+  "max_sampled_gpu_hour_error": 2.2737367544323206e-13,
+  "duplicate_gpu_job_ids": {
+    "Venus": 0,
+    "Saturn": 0,
+    "Earth": 0,
+    "Uranus": 0
+  },
+  "chronological_input_sha256": {
+    "work/research/sources/helios_sensetime/data/Venus/cluster_log.csv": "41153105b5a1beedfc9f3d5151126d8a2b446ba5699a60a41522a6795e726cac",
+    "work/research/sources/helios_sensetime/data/Venus/cluster_gpu_number.csv": "08c05fc4d2ac94aceb43f2bfd28d731a089df8e9bb7c3412d2bd211cab2ed57c",
+    "work/research/sources/helios_sensetime/data/Saturn/cluster_log.csv": "f991918de22dd88fd87ed4f4d8b3b8beb34a19a57007037298c08e48d56c2377",
+    "work/research/sources/helios_sensetime/data/Saturn/cluster_gpu_number.csv": "d8760e0e69a43ef2c86eb4316436cdebdf513fc5c2742d43875ddcf546bfae5a",
+    "work/research/sources/helios_sensetime/data/Earth/cluster_log.csv": "bb62d7842ee50a093c1f872afa293a8e27500f38dfc5cd1dab3b10c53746b3db",
+    "work/research/sources/helios_sensetime/data/Earth/cluster_gpu_number.csv": "cd85b21f9b2651a64ed7ecb86f2c5dea771a3bd55d41537eea976b61aa00642f",
+    "work/research/sources/helios_sensetime/data/Uranus/cluster_log.csv": "785e4154cefb45dba55bdfb8c3d313f101cd75dbe78b158a09f387ef8f4418af",
+    "work/research/sources/helios_sensetime/data/Uranus/cluster_gpu_number.csv": "b824e9d839423571f7570a72b3712b0a547926f70ab3d73b9d18b0df3be17e49"
+  },
+  "source_sha256_post_run": {
+    "work/research/analysis/audit_chronological_helios.py": "563282d46290a26d2c2ff801f38a7db4a6b720638de8996e16cbf414f547c56c",
+    "work/research/models/trace_occupancy.py": "9ec8c11d4048dd829513e23d3362517da06f76f008d96626d61e9f6af43b3e0d",
+    "work/research/analysis/verify_service_results.py": "6ddb7e3761c048f319ae41437b2a7d7ebe2dc6bc75272c28e4f24f4f32f09b05",
+    "work/research/analysis/validate_strict_service_revision.py": "6a226c0461755f1f181f1b1642e257267c49e66653dc63b1a75c0f771040ad2e"
+  },
+  "provenance_note": "Chronological source hashes verified after run; not represented as a pre-run code snapshot.",
+  "scope": "Strict-case checks cover all 64 cases; raw chronological hour checks sample 8 hours per cluster and 2 state groups."
+}

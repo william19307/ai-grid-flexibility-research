@@ -1,0 +1,17 @@
+season,slack_base_h,boundary,maximum_feasible_arrival_utilization,service_horizon,threshold_lp_and_edf_agree
+winter,6.0,historical_clip,0.2837250131440463,168,True
+winter,6.0,full_tail,0.318087582762899,175,True
+winter,24.0,historical_clip,0.2837250131440463,168,True
+winter,24.0,full_tail,0.5089401324206385,193,True
+spring,6.0,historical_clip,0.586825143639074,168,True
+spring,6.0,full_tail,0.6437395800514905,187,True
+spring,24.0,historical_clip,0.5868251436390742,168,True
+spring,24.0,full_tail,0.8822263387877375,205,True
+summer,6.0,historical_clip,0.7059744079765711,168,True
+summer,6.0,full_tail,0.7159561926280487,198,True
+summer,24.0,historical_clip,0.8454407202286166,168,True
+summer,24.0,full_tail,0.9604575680360171,216,True
+autumn,6.0,historical_clip,0.6826787450838465,168,True
+autumn,6.0,full_tail,0.8644189238550486,192,True
+autumn,24.0,historical_clip,0.6826787450838464,168,True
+autumn,24.0,full_tail,1.0082351948620942,210,True

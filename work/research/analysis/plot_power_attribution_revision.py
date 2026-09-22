@@ -55,7 +55,7 @@ from matplotlib.lines import Line2D
 fig.legend([Line2D([],[],color=colors['legacy'],marker='s',ls=''),Line2D([],[],color=colors['component'],marker='o',ls='')],
            ['Direct GPU-ratio mapping (historical)','Component mapping (assumed I=0.41, g=0.10, d=0)'],
            loc='lower left',bbox_to_anchor=(.028,.082),ncol=2,frameon=False,fontsize=10)
-fig.text(.035,.057,'All values are conditional simulations, not calibrated whole-node estimates or firm-capacity credits. No confidence intervals are available.',fontsize=9,color='#465560')
+fig.text(.035,.057,'Historically altered task windows. Uncalibrated node mapping; no annual reliability or firm-capacity validation. Conditional results only.',fontsize=9,color='#465560')
 fig.text(.035,.035,'* The 32- and 48-GPU configurations have identical normalized curves; these are not independent workload replications.',fontsize=9,color='#465560')
 folder=OUT/'figures';folder.mkdir(exist_ok=True)
 for ext in ['png','pdf','svg']:fig.savefig(folder/f'power_boundary_diagnostic.{ext}',dpi=190)

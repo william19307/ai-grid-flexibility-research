@@ -1,0 +1,31 @@
+{
+  "started_unix": 1790066371.855223,
+  "source_sha256": {
+    "work/research/models/strict_workload.py": "260f1ed0904363108698d86c4408eded9b8e8d23dbc222d8acdabf0bc3578188",
+    "work/research/models/sequential_tasks.py": "e305155f4b5bc78dfa8c330b880093076a33b7ea5f005ee88ffb4962ecbe71e5",
+    "work/research/analysis/audit_strict_service_revision.py": "7edfc24ba05c01d34c37bd6cac46dada1265b37099e4d2bcf673dd8511b4df0e",
+    "work/research/analysis/run_regional_2030_s0_s3.py": "6f0de9ca21189da391f9954f50918312163c0cf4743ac50525372fb179ca3db5"
+  },
+  "input_sha256": {
+    "work/research/prepared/helios_completed_gpu_jobs_sample.csv.gz": "b69130a5edf2b189f633c9e84190f5c82dd4f941dabc378afa357a75aa5760ed"
+  },
+  "parameters": {
+    "utilizations": [
+      0.3,
+      0.5,
+      0.7,
+      0.9
+    ],
+    "slack_base_h": [
+      6.0,
+      24.0
+    ],
+    "slack_multiplier": 1.0,
+    "seeds": {
+      "winter": 288,
+      "spring": 2472,
+      "summer": 4656,
+      "autumn": 6840
+    }
+  }
+}
