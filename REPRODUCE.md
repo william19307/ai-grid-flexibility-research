@@ -212,3 +212,19 @@ python work/research/analysis/verify_weather_site_technology.py
 机组来源需要固定 GEM July-2025 工作簿，路径为 `work/research/sources/zenodo_16810831/Global-integrated-Plant-Tracker-July-2025_china.xlsx`，SHA256 `4ed14c94a305ec43af9ac33a49134fcee5c1271e2d93d248ab608c7781ea71d0`。120 行回查表与汇总在 `revision/weather_site_technology/`，2,902 行候选清单重建到排除的 prepared 目录，不覆盖原清单。
 
 官方网页按 `weather_site_technology/official_2020_wind_audit.json` 所列两个 URL 获取到 `work/research/sources/renewable_observations_20260923/wind_2020_q1.html`、`wind_2020_h1_nea.html`；各有同名 `.html.meta.json`，包含 url、sha256、bytes、retrieved_utc。该记录绑定本次网页快照，网页改变时须新建版本并复核表格。18 个值与人工转录交叉核对，周期诊断不是同机组校准或独立重复实验。
+
+### 阶段 16：技术分离候选与八请求网格配对试验
+
+计划及采集器在新结果前冻结于 `ed4e1a2`，计划 SHA256 为 `679acfd3aa2d5acdd38e860f3b1000a8a07edbe6a511f3153f64c51e58539583`。库存构建器使用 Python 3.14.6、Shapely 2.1.2；两个独立核验器仅使用标准库。阶段 15 的 2,902 条候选 CSV 是输入，SHA256 `dce044cf7c2cd0d0a81774fc9b10e85ed566fd8e79378949e72459f36432c25a`。
+
+地理文件保存在排除目录 `work/research/sources/weather_fleet_revision_v2/`。`province_boundaries.geojson` 来自 https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09/releaseData/gbOpen/CHN/ADM1/geoBoundaries-CHN-ADM1.geojson ，SHA256 `3a00467a0db9b4136facb5f2f3d0edbfd96adb15651cfdf63991da9281030e85`。`geoboundaries_metadata.json` 是 https://www.geoboundaries.org/api/current/gbOpen/CHN/ADM1/ 当次快照，SHA256 `b5816c51ebefc26b1154872e663cd5a8eda830008f738a965d5dd610e72b09d0`；动态元数据以后改变须另留新版本，不得伪称原快照。初次下载所得 LFS 指针另存，真实边界与其对象 SHA 一致。
+
+```bash
+work/figure-env/bin/python work/research/analysis/prepare_weather_fleet_v2.py
+work/figure-env/bin/python work/research/analysis/verify_weather_fleet_v2.py
+work/figure-env/bin/python work/research/analysis/analyze_weather_grid_pilot_v2.py
+```
+
+最后一项需要 `pilot_plan.json`、`pilot_acquisition.json` 以及 `work/research/sources/weather_fleet_revision_v2/pilot/{id}.json` 与 `{id}.meta.json` 八组缓存。每项 URL、参数、获取时间与响应哈希见 `pilot_acquisition.json`；原始文件不进入 Git。已完整缓存无需再次下载。缺缓存时，仅可按冻结八请求入口 `acquire_weather_grid_pilot_v2.py` 获取，需保留新获取记录；API 动态响应不能保证逐字节重现旧快照，不得覆盖旧证据。新机器完整复现尚未执行。
+
+采集器共用阶段 13 的锁和额度台账；首次干净环境需要先建立该台账目录与空 `call_ledger.jsonl`，已有台账绝不能清空。旧计划暂停标记不因新试验而解除。正式 421 格点的多年采集不在此试验内。报告及逐变量差值表只说明这四场址两种选择的数值关系，不生成省级风电容量因子。

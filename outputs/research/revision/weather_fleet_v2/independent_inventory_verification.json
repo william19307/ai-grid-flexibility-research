@@ -1,0 +1,18 @@
+{
+  "source_units": 2902,
+  "candidate_units": 2891,
+  "held_units": 11,
+  "unique_candidate_grid_points": 421,
+  "independent_coordinate_rounding_checks": 5782,
+  "pilot_pair_checks": 4,
+  "source_mw": "117450.2",
+  "candidate_mw": "116763.2",
+  "held_mw": "687.0",
+  "capacity_conservation_exact": true,
+  "input_sha256": "dce044cf7c2cd0d0a81774fc9b10e85ed566fd8e79378949e72459f36432c25a",
+  "grid_sha256": "72e9cb9bd51fc69e76c2b23cb83e792cae2942e501d405a95c753613ac81298a",
+  "held_sha256": "c7afcfb407031409bc03f628c8d6cb82cbd1e0e34fa2580beb7ca3612fea92bf",
+  "plan_sha256": "679acfd3aa2d5acdd38e860f3b1000a8a07edbe6a511f3153f64c51e58539583",
+  "verifier_sha256": "e4e73408ad4da53cb7ee6203753104ddd3ba3bbee2e69714956d5c859050492c",
+  "scope": "Exact bookkeeping, technology separation and arithmetic grid mapping; no geographic truth or generation calibration claim"
+}

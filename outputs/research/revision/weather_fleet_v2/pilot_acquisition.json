@@ -1,0 +1,425 @@
+{
+  "plan_sha256": "679acfd3aa2d5acdd38e860f3b1000a8a07edbe6a511f3153f64c51e58539583",
+  "acquirer_sha256": "e05de929f12997397b1cc0b76b7229bfa3400e6f25f1cae144e3f8a6d7e3da8f",
+  "completed": 8,
+  "pending": 0,
+  "stop_reason": "complete",
+  "records": [
+    {
+      "request": {
+        "id": "06c4168f09b88559c29c123b",
+        "province": "Gansu",
+        "technology_group": "wind_onshore",
+        "unit_id": "G100001000856",
+        "name": "Gansu Guazhou Baofeng wind farm",
+        "mw": 1750.0,
+        "parameters": {
+          "latitude": "40.997000",
+          "longitude": "95.563000",
+          "start_date": "2020-01-01",
+          "end_date": "2021-01-01",
+          "hourly": "wind_speed_100m,wind_speed_10m,shortwave_radiation,direct_radiation,diffuse_radiation,temperature_2m,surface_pressure",
+          "timezone": "Asia/Shanghai",
+          "models": "era5",
+          "wind_speed_unit": "ms",
+          "cell_selection": "nearest",
+          "elevation": "nan"
+        },
+        "expected_hours": 8808,
+        "conservative_call_equivalents": 27,
+        "purpose": "Paired grid-selection diagnostic; not empirical generation validation"
+      },
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=40.997000&longitude=95.563000&start_date=2020-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cwind_speed_10m%2Cshortwave_radiation%2Cdirect_radiation%2Cdiffuse_radiation%2Ctemperature_2m%2Csurface_pressure&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=nearest&elevation=nan",
+      "retrieved_utc": "2026-09-22T23:50:30.241795+00:00",
+      "validation": {
+        "raw_sha256": "cc24e7fa721164667a05f07435ff38466c2320cb20fd37330b189ef37783e70d",
+        "scientific_content_sha256": "cc5e05b58b800d6c0f0a4063f4a2b6f2e8d90e9916e59bae00817d804c0cfdc2",
+        "bytes": 481485,
+        "hours": 8808,
+        "returned_metadata": {
+          "latitude": 41.0,
+          "longitude": 95.5,
+          "generationtime_ms": 173.3865737915039,
+          "utc_offset_seconds": 28800,
+          "timezone": "Asia/Shanghai",
+          "timezone_abbreviation": "GMT+8",
+          "elevation": 1651.0,
+          "hourly_units": {
+            "time": "iso8601",
+            "wind_speed_100m": "m/s",
+            "wind_speed_10m": "m/s",
+            "shortwave_radiation": "W/m\u00b2",
+            "direct_radiation": "W/m\u00b2",
+            "diffuse_radiation": "W/m\u00b2",
+            "temperature_2m": "\u00b0C",
+            "surface_pressure": "hPa"
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "id": "f51a9cad958fb258e97b05a7",
+        "province": "Gansu",
+        "technology_group": "wind_onshore",
+        "unit_id": "G100001000856",
+        "name": "Gansu Guazhou Baofeng wind farm",
+        "mw": 1750.0,
+        "parameters": {
+          "latitude": "40.997000",
+          "longitude": "95.563000",
+          "start_date": "2020-01-01",
+          "end_date": "2021-01-01",
+          "hourly": "wind_speed_100m,wind_speed_10m,shortwave_radiation,direct_radiation,diffuse_radiation,temperature_2m,surface_pressure",
+          "timezone": "Asia/Shanghai",
+          "models": "era5",
+          "wind_speed_unit": "ms",
+          "cell_selection": "land",
+          "elevation": "nan"
+        },
+        "expected_hours": 8808,
+        "conservative_call_equivalents": 27,
+        "purpose": "Paired grid-selection diagnostic; not empirical generation validation"
+      },
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=40.997000&longitude=95.563000&start_date=2020-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cwind_speed_10m%2Cshortwave_radiation%2Cdirect_radiation%2Cdiffuse_radiation%2Ctemperature_2m%2Csurface_pressure&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land&elevation=nan",
+      "retrieved_utc": "2026-09-22T23:50:35.897382+00:00",
+      "validation": {
+        "raw_sha256": "f78bd9057c6b2dde864de5ec9ec75147b2857f97caddb4de6b830aaf6a89dc10",
+        "scientific_content_sha256": "cc5e05b58b800d6c0f0a4063f4a2b6f2e8d90e9916e59bae00817d804c0cfdc2",
+        "bytes": 481486,
+        "hours": 8808,
+        "returned_metadata": {
+          "latitude": 41.0,
+          "longitude": 95.5,
+          "generationtime_ms": 1.1935234069824219,
+          "utc_offset_seconds": 28800,
+          "timezone": "Asia/Shanghai",
+          "timezone_abbreviation": "GMT+8",
+          "elevation": 1651.0,
+          "hourly_units": {
+            "time": "iso8601",
+            "wind_speed_100m": "m/s",
+            "wind_speed_10m": "m/s",
+            "shortwave_radiation": "W/m\u00b2",
+            "direct_radiation": "W/m\u00b2",
+            "diffuse_radiation": "W/m\u00b2",
+            "temperature_2m": "\u00b0C",
+            "surface_pressure": "hPa"
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "id": "f8e6cfb07fb3307088d9c37f",
+        "province": "Guizhou",
+        "technology_group": "wind_onshore",
+        "unit_id": "G100000904160",
+        "name": "Guizhou Duyun Qingfeng wind farm",
+        "mw": 150.0,
+        "parameters": {
+          "latitude": "26.184300",
+          "longitude": "107.341700",
+          "start_date": "2020-01-01",
+          "end_date": "2021-01-01",
+          "hourly": "wind_speed_100m,wind_speed_10m,shortwave_radiation,direct_radiation,diffuse_radiation,temperature_2m,surface_pressure",
+          "timezone": "Asia/Shanghai",
+          "models": "era5",
+          "wind_speed_unit": "ms",
+          "cell_selection": "nearest",
+          "elevation": "nan"
+        },
+        "expected_hours": 8808,
+        "conservative_call_equivalents": 27,
+        "purpose": "Paired grid-selection diagnostic; not empirical generation validation"
+      },
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=26.184300&longitude=107.341700&start_date=2020-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cwind_speed_10m%2Cshortwave_radiation%2Cdirect_radiation%2Cdiffuse_radiation%2Ctemperature_2m%2Csurface_pressure&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=nearest&elevation=nan",
+      "retrieved_utc": "2026-09-22T23:50:41.827400+00:00",
+      "validation": {
+        "raw_sha256": "59bb27b7f7dd689a9c296788501a8c4ca4783a125f98ead6d495c633b6f2a10e",
+        "scientific_content_sha256": "de0ae29d06b1bf2c93a78d68dd75d83b74c178bbb95eb29438a88d1e9c6fe9ea",
+        "bytes": 474544,
+        "hours": 8808,
+        "returned_metadata": {
+          "latitude": 26.25,
+          "longitude": 107.25,
+          "generationtime_ms": 33.03718566894531,
+          "utc_offset_seconds": 28800,
+          "timezone": "Asia/Shanghai",
+          "timezone_abbreviation": "GMT+8",
+          "elevation": 1152.0,
+          "hourly_units": {
+            "time": "iso8601",
+            "wind_speed_100m": "m/s",
+            "wind_speed_10m": "m/s",
+            "shortwave_radiation": "W/m\u00b2",
+            "direct_radiation": "W/m\u00b2",
+            "diffuse_radiation": "W/m\u00b2",
+            "temperature_2m": "\u00b0C",
+            "surface_pressure": "hPa"
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "id": "0f0c13d8db871be23fd4cba9",
+        "province": "Guizhou",
+        "technology_group": "wind_onshore",
+        "unit_id": "G100000904160",
+        "name": "Guizhou Duyun Qingfeng wind farm",
+        "mw": 150.0,
+        "parameters": {
+          "latitude": "26.184300",
+          "longitude": "107.341700",
+          "start_date": "2020-01-01",
+          "end_date": "2021-01-01",
+          "hourly": "wind_speed_100m,wind_speed_10m,shortwave_radiation,direct_radiation,diffuse_radiation,temperature_2m,surface_pressure",
+          "timezone": "Asia/Shanghai",
+          "models": "era5",
+          "wind_speed_unit": "ms",
+          "cell_selection": "land",
+          "elevation": "nan"
+        },
+        "expected_hours": 8808,
+        "conservative_call_equivalents": 27,
+        "purpose": "Paired grid-selection diagnostic; not empirical generation validation"
+      },
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=26.184300&longitude=107.341700&start_date=2020-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cwind_speed_10m%2Cshortwave_radiation%2Cdirect_radiation%2Cdiffuse_radiation%2Ctemperature_2m%2Csurface_pressure&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land&elevation=nan",
+      "retrieved_utc": "2026-09-22T23:50:48.072567+00:00",
+      "validation": {
+        "raw_sha256": "f13e4b9c658d06accd3aef26577a236eabe9203e95df5fb5752ad123051c902d",
+        "scientific_content_sha256": "de0ae29d06b1bf2c93a78d68dd75d83b74c178bbb95eb29438a88d1e9c6fe9ea",
+        "bytes": 474545,
+        "hours": 8808,
+        "returned_metadata": {
+          "latitude": 26.25,
+          "longitude": 107.25,
+          "generationtime_ms": 0.8863210678100586,
+          "utc_offset_seconds": 28800,
+          "timezone": "Asia/Shanghai",
+          "timezone_abbreviation": "GMT+8",
+          "elevation": 1152.0,
+          "hourly_units": {
+            "time": "iso8601",
+            "wind_speed_100m": "m/s",
+            "wind_speed_10m": "m/s",
+            "shortwave_radiation": "W/m\u00b2",
+            "direct_radiation": "W/m\u00b2",
+            "diffuse_radiation": "W/m\u00b2",
+            "temperature_2m": "\u00b0C",
+            "surface_pressure": "hPa"
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "id": "3ce1d00bfceefdf468c1b3b7",
+        "province": "Jiangsu",
+        "technology_group": "wind_onshore",
+        "unit_id": "G100000903041",
+        "name": "Jiangsu Xiangshui (Three Gorges) wind farm",
+        "mw": 201.0,
+        "parameters": {
+          "latitude": "34.246400",
+          "longitude": "119.793300",
+          "start_date": "2020-01-01",
+          "end_date": "2021-01-01",
+          "hourly": "wind_speed_100m,wind_speed_10m,shortwave_radiation,direct_radiation,diffuse_radiation,temperature_2m,surface_pressure",
+          "timezone": "Asia/Shanghai",
+          "models": "era5",
+          "wind_speed_unit": "ms",
+          "cell_selection": "nearest",
+          "elevation": "nan"
+        },
+        "expected_hours": 8808,
+        "conservative_call_equivalents": 27,
+        "purpose": "Paired grid-selection diagnostic; not empirical generation validation"
+      },
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=34.246400&longitude=119.793300&start_date=2020-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cwind_speed_10m%2Cshortwave_radiation%2Cdirect_radiation%2Cdiffuse_radiation%2Ctemperature_2m%2Csurface_pressure&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=nearest&elevation=nan",
+      "retrieved_utc": "2026-09-22T23:50:53.957354+00:00",
+      "validation": {
+        "raw_sha256": "2c8cf3925a42dc4afaae8d279609d10b1342d160225fd2296423938c12180b13",
+        "scientific_content_sha256": "f9ab68635381a4a287f19ad6ef4760784e8d2c60e20e6fe5dbb7ea1318861d64",
+        "bytes": 485721,
+        "hours": 8808,
+        "returned_metadata": {
+          "latitude": 34.25,
+          "longitude": 119.75,
+          "generationtime_ms": 76.30026340484619,
+          "utc_offset_seconds": 28800,
+          "timezone": "Asia/Shanghai",
+          "timezone_abbreviation": "GMT+8",
+          "elevation": 0.0,
+          "hourly_units": {
+            "time": "iso8601",
+            "wind_speed_100m": "m/s",
+            "wind_speed_10m": "m/s",
+            "shortwave_radiation": "W/m\u00b2",
+            "direct_radiation": "W/m\u00b2",
+            "diffuse_radiation": "W/m\u00b2",
+            "temperature_2m": "\u00b0C",
+            "surface_pressure": "hPa"
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "id": "be1d7593123eb23836e8da67",
+        "province": "Jiangsu",
+        "technology_group": "wind_onshore",
+        "unit_id": "G100000903041",
+        "name": "Jiangsu Xiangshui (Three Gorges) wind farm",
+        "mw": 201.0,
+        "parameters": {
+          "latitude": "34.246400",
+          "longitude": "119.793300",
+          "start_date": "2020-01-01",
+          "end_date": "2021-01-01",
+          "hourly": "wind_speed_100m,wind_speed_10m,shortwave_radiation,direct_radiation,diffuse_radiation,temperature_2m,surface_pressure",
+          "timezone": "Asia/Shanghai",
+          "models": "era5",
+          "wind_speed_unit": "ms",
+          "cell_selection": "land",
+          "elevation": "nan"
+        },
+        "expected_hours": 8808,
+        "conservative_call_equivalents": 27,
+        "purpose": "Paired grid-selection diagnostic; not empirical generation validation"
+      },
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=34.246400&longitude=119.793300&start_date=2020-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cwind_speed_10m%2Cshortwave_radiation%2Cdirect_radiation%2Cdiffuse_radiation%2Ctemperature_2m%2Csurface_pressure&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land&elevation=nan",
+      "retrieved_utc": "2026-09-22T23:51:00.182069+00:00",
+      "validation": {
+        "raw_sha256": "25c7d84447f002c43641fb650066e021e7b6cc77e62fa198f7068ad880172803",
+        "scientific_content_sha256": "f9ab68635381a4a287f19ad6ef4760784e8d2c60e20e6fe5dbb7ea1318861d64",
+        "bytes": 485721,
+        "hours": 8808,
+        "returned_metadata": {
+          "latitude": 34.25,
+          "longitude": 119.75,
+          "generationtime_ms": 1.306295394897461,
+          "utc_offset_seconds": 28800,
+          "timezone": "Asia/Shanghai",
+          "timezone_abbreviation": "GMT+8",
+          "elevation": 0.0,
+          "hourly_units": {
+            "time": "iso8601",
+            "wind_speed_100m": "m/s",
+            "wind_speed_10m": "m/s",
+            "shortwave_radiation": "W/m\u00b2",
+            "direct_radiation": "W/m\u00b2",
+            "diffuse_radiation": "W/m\u00b2",
+            "temperature_2m": "\u00b0C",
+            "surface_pressure": "hPa"
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "id": "d6f74024cbd302263e869f15",
+        "province": "Jiangsu",
+        "technology_group": "wind_offshore",
+        "unit_id": "G100000903073",
+        "name": "Jiangsu Rudong H3 (Huaneng) Offshore wind farm",
+        "mw": 400.0,
+        "parameters": {
+          "latitude": "32.825400",
+          "longitude": "121.403200",
+          "start_date": "2020-01-01",
+          "end_date": "2021-01-01",
+          "hourly": "wind_speed_100m,wind_speed_10m,shortwave_radiation,direct_radiation,diffuse_radiation,temperature_2m,surface_pressure",
+          "timezone": "Asia/Shanghai",
+          "models": "era5",
+          "wind_speed_unit": "ms",
+          "cell_selection": "nearest",
+          "elevation": "nan"
+        },
+        "expected_hours": 8808,
+        "conservative_call_equivalents": 27,
+        "purpose": "Paired grid-selection diagnostic; not empirical generation validation"
+      },
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.825400&longitude=121.403200&start_date=2020-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cwind_speed_10m%2Cshortwave_radiation%2Cdirect_radiation%2Cdiffuse_radiation%2Ctemperature_2m%2Csurface_pressure&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=nearest&elevation=nan",
+      "retrieved_utc": "2026-09-22T23:51:06.050556+00:00",
+      "validation": {
+        "raw_sha256": "adc29aeaf3b0aec3c245d21c44506107956c2385f35e45722211131dbbead161",
+        "scientific_content_sha256": "68061b5017274ad684eaec732fe7ee4fd079b70257d7e0c6800ee36e118bbde0",
+        "bytes": 487646,
+        "hours": 8808,
+        "returned_metadata": {
+          "latitude": 32.75,
+          "longitude": 121.5,
+          "generationtime_ms": 27.988910675048828,
+          "utc_offset_seconds": 28800,
+          "timezone": "Asia/Shanghai",
+          "timezone_abbreviation": "GMT+8",
+          "elevation": 0.0,
+          "hourly_units": {
+            "time": "iso8601",
+            "wind_speed_100m": "m/s",
+            "wind_speed_10m": "m/s",
+            "shortwave_radiation": "W/m\u00b2",
+            "direct_radiation": "W/m\u00b2",
+            "diffuse_radiation": "W/m\u00b2",
+            "temperature_2m": "\u00b0C",
+            "surface_pressure": "hPa"
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "id": "ed41e6b5705428df772bad43",
+        "province": "Jiangsu",
+        "technology_group": "wind_offshore",
+        "unit_id": "G100000903073",
+        "name": "Jiangsu Rudong H3 (Huaneng) Offshore wind farm",
+        "mw": 400.0,
+        "parameters": {
+          "latitude": "32.825400",
+          "longitude": "121.403200",
+          "start_date": "2020-01-01",
+          "end_date": "2021-01-01",
+          "hourly": "wind_speed_100m,wind_speed_10m,shortwave_radiation,direct_radiation,diffuse_radiation,temperature_2m,surface_pressure",
+          "timezone": "Asia/Shanghai",
+          "models": "era5",
+          "wind_speed_unit": "ms",
+          "cell_selection": "sea",
+          "elevation": "nan"
+        },
+        "expected_hours": 8808,
+        "conservative_call_equivalents": 27,
+        "purpose": "Paired grid-selection diagnostic; not empirical generation validation"
+      },
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.825400&longitude=121.403200&start_date=2020-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cwind_speed_10m%2Cshortwave_radiation%2Cdirect_radiation%2Cdiffuse_radiation%2Ctemperature_2m%2Csurface_pressure&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=sea&elevation=nan",
+      "retrieved_utc": "2026-09-22T23:51:12.218249+00:00",
+      "validation": {
+        "raw_sha256": "7b142b48f1a4e1b8ca50e92decbd10fa707a849e7d99ecc38493422aecf85024",
+        "scientific_content_sha256": "68061b5017274ad684eaec732fe7ee4fd079b70257d7e0c6800ee36e118bbde0",
+        "bytes": 487646,
+        "hours": 8808,
+        "returned_metadata": {
+          "latitude": 32.75,
+          "longitude": 121.5,
+          "generationtime_ms": 1.3486146926879883,
+          "utc_offset_seconds": 28800,
+          "timezone": "Asia/Shanghai",
+          "timezone_abbreviation": "GMT+8",
+          "elevation": 0.0,
+          "hourly_units": {
+            "time": "iso8601",
+            "wind_speed_100m": "m/s",
+            "wind_speed_10m": "m/s",
+            "shortwave_radiation": "W/m\u00b2",
+            "direct_radiation": "W/m\u00b2",
+            "diffuse_radiation": "W/m\u00b2",
+            "temperature_2m": "\u00b0C",
+            "surface_pressure": "hPa"
+          }
+        }
+      }
+    }
+  ]
+}

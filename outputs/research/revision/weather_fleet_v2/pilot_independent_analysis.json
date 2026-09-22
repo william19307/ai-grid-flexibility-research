@@ -1,0 +1,208 @@
+{
+  "status": "PASS",
+  "plan_sha256": "679acfd3aa2d5acdd38e860f3b1000a8a07edbe6a511f3153f64c51e58539583",
+  "acquisition_sha256": "81651c3960ec69bb6a01aec78a48c67c06657a5105869640d96499ca0445ba50",
+  "analyzer_sha256": "9044bcdd10914d6d34b0036681541ccc4f82a32cf374270c3a017faae4178641",
+  "responses_checked": 8,
+  "scalar_values_checked": 493248,
+  "independent_hourly_pair_comparisons": 246624,
+  "response_checks": [
+    {
+      "id": "06c4168f09b88559c29c123b",
+      "raw_sha256": "cc24e7fa721164667a05f07435ff38466c2320cb20fd37330b189ef37783e70d",
+      "meta_sha256": "a9f695f1b1973a235b47e6c6b311d7acc9276ad494801807d28935aba187957b",
+      "scientific_content_sha256": "cc5e05b58b800d6c0f0a4063f4a2b6f2e8d90e9916e59bae00817d804c0cfdc2",
+      "hours": 8808,
+      "returned_grid": [
+        41.0,
+        95.5
+      ],
+      "expected_nearest_grid": [
+        41.0,
+        95.5
+      ],
+      "nearest_grid_matches": true
+    },
+    {
+      "id": "f51a9cad958fb258e97b05a7",
+      "raw_sha256": "f78bd9057c6b2dde864de5ec9ec75147b2857f97caddb4de6b830aaf6a89dc10",
+      "meta_sha256": "fbd593c0fe24649220cfdd696da95ef9c85a0cb4796411bd927bab39d9eb0881",
+      "scientific_content_sha256": "cc5e05b58b800d6c0f0a4063f4a2b6f2e8d90e9916e59bae00817d804c0cfdc2",
+      "hours": 8808,
+      "returned_grid": [
+        41.0,
+        95.5
+      ],
+      "expected_nearest_grid": [
+        41.0,
+        95.5
+      ],
+      "nearest_grid_matches": true
+    },
+    {
+      "id": "f8e6cfb07fb3307088d9c37f",
+      "raw_sha256": "59bb27b7f7dd689a9c296788501a8c4ca4783a125f98ead6d495c633b6f2a10e",
+      "meta_sha256": "45a3ab9715ee28520497aea8581fdcc712bb0b51247dd48a15c4b276dd420101",
+      "scientific_content_sha256": "de0ae29d06b1bf2c93a78d68dd75d83b74c178bbb95eb29438a88d1e9c6fe9ea",
+      "hours": 8808,
+      "returned_grid": [
+        26.25,
+        107.25
+      ],
+      "expected_nearest_grid": [
+        26.25,
+        107.25
+      ],
+      "nearest_grid_matches": true
+    },
+    {
+      "id": "0f0c13d8db871be23fd4cba9",
+      "raw_sha256": "f13e4b9c658d06accd3aef26577a236eabe9203e95df5fb5752ad123051c902d",
+      "meta_sha256": "4e17f476d32a36b97a4c1a2c072950c9ae819632ef118cab026deb8393eb30eb",
+      "scientific_content_sha256": "de0ae29d06b1bf2c93a78d68dd75d83b74c178bbb95eb29438a88d1e9c6fe9ea",
+      "hours": 8808,
+      "returned_grid": [
+        26.25,
+        107.25
+      ],
+      "expected_nearest_grid": [
+        26.25,
+        107.25
+      ],
+      "nearest_grid_matches": true
+    },
+    {
+      "id": "3ce1d00bfceefdf468c1b3b7",
+      "raw_sha256": "2c8cf3925a42dc4afaae8d279609d10b1342d160225fd2296423938c12180b13",
+      "meta_sha256": "073dbddc82fce4b27d8227f5aa7e2e34d592a14dc080d2e5bf9c15bf410dfcce",
+      "scientific_content_sha256": "f9ab68635381a4a287f19ad6ef4760784e8d2c60e20e6fe5dbb7ea1318861d64",
+      "hours": 8808,
+      "returned_grid": [
+        34.25,
+        119.75
+      ],
+      "expected_nearest_grid": [
+        34.25,
+        119.75
+      ],
+      "nearest_grid_matches": true
+    },
+    {
+      "id": "be1d7593123eb23836e8da67",
+      "raw_sha256": "25c7d84447f002c43641fb650066e021e7b6cc77e62fa198f7068ad880172803",
+      "meta_sha256": "873f3d5417794c30e709d485b9d8a05732318161519cf3d67d978cacd99dbfde",
+      "scientific_content_sha256": "f9ab68635381a4a287f19ad6ef4760784e8d2c60e20e6fe5dbb7ea1318861d64",
+      "hours": 8808,
+      "returned_grid": [
+        34.25,
+        119.75
+      ],
+      "expected_nearest_grid": [
+        34.25,
+        119.75
+      ],
+      "nearest_grid_matches": true
+    },
+    {
+      "id": "d6f74024cbd302263e869f15",
+      "raw_sha256": "adc29aeaf3b0aec3c245d21c44506107956c2385f35e45722211131dbbead161",
+      "meta_sha256": "97e31c4ea152d639876ef895d6d6d373467ab561400e186eba6b9081a4755979",
+      "scientific_content_sha256": "68061b5017274ad684eaec732fe7ee4fd079b70257d7e0c6800ee36e118bbde0",
+      "hours": 8808,
+      "returned_grid": [
+        32.75,
+        121.5
+      ],
+      "expected_nearest_grid": [
+        32.75,
+        121.5
+      ],
+      "nearest_grid_matches": true
+    },
+    {
+      "id": "ed41e6b5705428df772bad43",
+      "raw_sha256": "7b142b48f1a4e1b8ca50e92decbd10fa707a849e7d99ecc38493422aecf85024",
+      "meta_sha256": "e1a211a4c2edc1ba17bd2921b21512cb22cae5792bf83420e8b18e5fbd080d44",
+      "scientific_content_sha256": "68061b5017274ad684eaec732fe7ee4fd079b70257d7e0c6800ee36e118bbde0",
+      "hours": 8808,
+      "returned_grid": [
+        32.75,
+        121.5
+      ],
+      "expected_nearest_grid": [
+        32.75,
+        121.5
+      ],
+      "nearest_grid_matches": true
+    }
+  ],
+  "pair_results": [
+    {
+      "province": "Gansu",
+      "technology": "wind_onshore",
+      "unit_id": "G100001000856",
+      "nearest_request": "06c4168f09b88559c29c123b",
+      "preference_request": "f51a9cad958fb258e97b05a7",
+      "same_returned_coordinates": true,
+      "same_returned_elevation": true,
+      "all_seven_hourly_arrays_identical": true,
+      "returned_latitude": 41.0,
+      "returned_longitude": 95.5,
+      "returned_elevation_m": 1651.0,
+      "year2020_mean_100m_wind_ms": 5.9285234517304195,
+      "year2020_fraction_100m_wind_below_3ms": 0.20810564663023678
+    },
+    {
+      "province": "Guizhou",
+      "technology": "wind_onshore",
+      "unit_id": "G100000904160",
+      "nearest_request": "f8e6cfb07fb3307088d9c37f",
+      "preference_request": "0f0c13d8db871be23fd4cba9",
+      "same_returned_coordinates": true,
+      "same_returned_elevation": true,
+      "all_seven_hourly_arrays_identical": true,
+      "returned_latitude": 26.25,
+      "returned_longitude": 107.25,
+      "returned_elevation_m": 1152.0,
+      "year2020_mean_100m_wind_ms": 4.68281762295082,
+      "year2020_fraction_100m_wind_below_3ms": 0.2391848816029144
+    },
+    {
+      "province": "Jiangsu",
+      "technology": "wind_onshore",
+      "unit_id": "G100000903041",
+      "nearest_request": "3ce1d00bfceefdf468c1b3b7",
+      "preference_request": "be1d7593123eb23836e8da67",
+      "same_returned_coordinates": true,
+      "same_returned_elevation": true,
+      "all_seven_hourly_arrays_identical": true,
+      "returned_latitude": 34.25,
+      "returned_longitude": 119.75,
+      "returned_elevation_m": 0.0,
+      "year2020_mean_100m_wind_ms": 5.153482468123862,
+      "year2020_fraction_100m_wind_below_3ms": 0.18567850637522768
+    },
+    {
+      "province": "Jiangsu",
+      "technology": "wind_offshore",
+      "unit_id": "G100000903073",
+      "nearest_request": "d6f74024cbd302263e869f15",
+      "preference_request": "ed41e6b5705428df772bad43",
+      "same_returned_coordinates": true,
+      "same_returned_elevation": true,
+      "all_seven_hourly_arrays_identical": true,
+      "returned_latitude": 32.75,
+      "returned_longitude": 121.5,
+      "returned_elevation_m": 0.0,
+      "year2020_mean_100m_wind_ms": 6.9058299180327865,
+      "year2020_fraction_100m_wind_below_3ms": 0.114867941712204
+    }
+  ],
+  "limits": [
+    "Frozen largest-unit selection is a four-location methodological pilot, not a representative sample.",
+    "Equality concerns these requests with elevation=nan; it does not establish equality for other sites or old elevation settings.",
+    "Checking all returned numbers is not independent validation of ERA5 or the API implementation.",
+    "No turbine conversion, generated electricity, uncertainty interval or calibrated regional profile is inferred.",
+    "Full-grid acquisition gate remains closed pending coordinates and technology-specific physical conversion."
+  ]
+}
