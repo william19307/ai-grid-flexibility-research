@@ -1,0 +1,63 @@
+{
+  "source_doi": "10.1007/978-3-031-48803-0_1",
+  "configurations": 68,
+  "independent_extraction_equal_numeric_cells": 544,
+  "common_horizon_algebra_checks": 140,
+  "reported_replicates_per_configuration": 10,
+  "individual_replicates_available": false,
+  "raw_meter_series_available": false,
+  "sd_units_resolved": false,
+  "idle_calibrated": false,
+  "curve_transfer_to_helios_validated": false,
+  "uncertainty_intervals_estimated": false,
+  "idle_screen_definition": "One common hypothetical idle range, 0 to the smallest measured active power across all 68 points; not an empirical idle bound or estimate",
+  "measured_quantity": "Whole-machine AC input including unused GPUs; fixed five-epoch XCeption training",
+  "selection": "Exploratory discrete minimum of reported means; not an independently tested optimum",
+  "summaries": [
+    {
+      "active_gpus": 1,
+      "energy_min_cap_w": 200,
+      "active_energy_reduction_pct": 2.790792422081889,
+      "runtime_extension_pct": 6.120425029515952,
+      "whole_node_power_reduction_pct": 8.39587970391844,
+      "max_abs_energy_vs_mean_power_time_relative_error": 2.5808738664398562e-05,
+      "mean_runtime_nonmonotonic_caps_w": [],
+      "hypothetical_idle_upper_screen_w": 433.58
+    },
+    {
+      "active_gpus": 2,
+      "energy_min_cap_w": 180,
+      "active_energy_reduction_pct": 5.429417571569594,
+      "runtime_extension_pct": 9.827956047804577,
+      "whole_node_power_reduction_pct": 13.890733247309672,
+      "max_abs_energy_vs_mean_power_time_relative_error": 3.0732849717133925e-05,
+      "mean_runtime_nonmonotonic_caps_w": [],
+      "hypothetical_idle_upper_screen_w": 433.58
+    },
+    {
+      "active_gpus": 4,
+      "energy_min_cap_w": 150,
+      "active_energy_reduction_pct": 11.557853085710635,
+      "runtime_extension_pct": 20.241621200311766,
+      "whole_node_power_reduction_pct": 26.445590763940054,
+      "max_abs_energy_vs_mean_power_time_relative_error": 0.0001233494440002028,
+      "mean_runtime_nonmonotonic_caps_w": [
+        220
+      ],
+      "hypothetical_idle_upper_screen_w": 433.58
+    },
+    {
+      "active_gpus": 8,
+      "energy_min_cap_w": 160,
+      "active_energy_reduction_pct": 25.396649284367022,
+      "runtime_extension_pct": 11.991584852734904,
+      "whole_node_power_reduction_pct": 33.38238086197076,
+      "max_abs_energy_vs_mean_power_time_relative_error": 4.727221597294216e-05,
+      "mean_runtime_nonmonotonic_caps_w": [
+        220,
+        250
+      ],
+      "hypothetical_idle_upper_screen_w": 433.58
+    }
+  ]
+}

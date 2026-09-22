@@ -150,3 +150,13 @@ work/figure-env/bin/python work/research/analysis/validate_reservoir_coupling.py
 第一项需要原始输入及已认证的 Earth–Dolly–6h–江苏价形案例；只使用完整轨迹及其核验证据，不重新生成任务。文件篡改检查在临时复制件中运行，原始数据不变。整机功率和同步副本都是显式假设，解析发电机案例不构成省级结果。
 
 阶段 07 完成状态：原构造进程已退出，108 组全部核验完成。已有输出可运行无 `--available` 的核验与汇总入口重建表图；无需也不应再次启动已有目录的构造。最终报告见 `阶段07_固定服务下的政策归因.md`。
+
+### 阶段 10：外部整机功率来源重分析
+
+下载 `whole_node_power/source_snapshot.json` 中的作者补充 PDF 为 `work/research/sources/whole_node_power_20260922/supplementary.pdf`；从出版方下载主文 PDF 为同目录 `main.pdf`，并核对快照哈希。需要 Poppler、numpy、matplotlib，以及独立环境中的 pdfplumber。
+
+```bash
+work/figure-env/bin/python work/research/analysis/audit_whole_node_power_source.py --pdf-python /path/to/python-with-pdfplumber
+```
+
+输出位于 `outputs/research/revision/whole_node_power/`。两种 PDF 提取核对全部 544 个表值，140 个假设条件核对统一时长能量表达。原表标准差单位保留未解，不生成置信区间；此入口不修改电网或任务模型。

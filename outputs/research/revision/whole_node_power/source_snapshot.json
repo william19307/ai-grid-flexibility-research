@@ -1,0 +1,18 @@
+{
+  "accessed": "2026-09-22",
+  "supplementary_url": "https://cdn.files.pg.edu.pl/eti/KASK/RAW2023-paper-supplementary-data/Supplementary_data_Performance_and_power_analysis_of_training_and_performance_quality.pdf",
+  "main_url": "https://link.springer.com/chapter/10.1007/978-3-031-48803-0_1",
+  "correction_url": "https://link.springer.com/chapter/10.1007/978-3-031-48803-0_41",
+  "correction_scope": "Open-access status; no numerical correction identified in official notice",
+  "source_hashes": {
+    "work/research/sources/whole_node_power_20260922/supplementary.pdf": "b8f2b792a349a6a0193d34d9b9648d536d65c49237c072eb3e1172d95655a492",
+    "work/research/sources/whole_node_power_20260922/main.pdf": "e3a5dd1c251cb21d15516c6586e2e2291723b0aa6dcee38c4eb8dc6526d7fa8e"
+  },
+  "script_sha256": "1d2bf2795ad09512d972153e5c1030eeaea2399517eebfd56d7028c318085a98",
+  "independent_pdfplumber_version": "0.11.9",
+  "numpy_version": "2.5.3",
+  "matplotlib_version": "3.11.2",
+  "pdftotext_version": "pdftotext version 26.06.0",
+  "visual_review": "Supplement page 2 table inspected, including units and endpoints. SD [-] unresolved.",
+  "scope": "Independent measured active-state example, not calibration of original GPU-only curves."
+}
