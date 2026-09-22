@@ -1,0 +1,107 @@
+{
+  "sources": [
+    {
+      "url": "https://www.nea.gov.cn/2020-05/11/c_139047892.htm",
+      "sha256": "9ba9ffd8e95d3773266c6c41aac7b96e025bb56370be884ad406a9262f155c6c",
+      "bytes": 70352,
+      "retrieved_utc": "2026-09-22T23:37:49.664511+00:00"
+    },
+    {
+      "url": "https://www.nea.gov.cn/2020-07/31/c_139254298.htm",
+      "sha256": "9c1daf250a0f42497113638e1acf2d82081985d3f4308b356c20bf7b76c18068",
+      "bytes": 66463,
+      "retrieved_utc": "2026-09-22T23:38:36.285059+00:00"
+    }
+  ],
+  "profile_sha256": "80f21a48664e788e52518fc73929c32636c3923a4feb0448eb6a6827284045d9",
+  "code_sha256": "8078757864c7e3519cb45b787de9bdc538441791143077eba37028b8f66b1d8d",
+  "checks": {
+    "official_table_cells_against_manual_transcription": 18,
+    "calendar_hours": [
+      2184,
+      4368
+    ]
+  },
+  "observations": [
+    {
+      "province": "Jiangsu",
+      "period": "2020Q1",
+      "official_period_end_capacity_mw": 10440.0,
+      "official_generation_mwh": 6430000.0,
+      "official_utilization_hours": 617.0,
+      "period_hours": 2184,
+      "generation_divided_by_end_capacity_hours": 615.9003831417624,
+      "generic_fixed_site_equivalent_hours": 431.14509690935915,
+      "comparable_calibration_pair": false,
+      "source_url": "https://www.nea.gov.cn/2020-05/11/c_139047892.htm"
+    },
+    {
+      "province": "Guizhou",
+      "period": "2020Q1",
+      "official_period_end_capacity_mw": 4580.0,
+      "official_generation_mwh": 2760000.0,
+      "official_utilization_hours": 622.0,
+      "period_hours": 2184,
+      "generation_divided_by_end_capacity_hours": 602.6200873362445,
+      "generic_fixed_site_equivalent_hours": 57.657872631559925,
+      "comparable_calibration_pair": false,
+      "source_url": "https://www.nea.gov.cn/2020-05/11/c_139047892.htm"
+    },
+    {
+      "province": "Gansu",
+      "period": "2020Q1",
+      "official_period_end_capacity_mw": 12970.0,
+      "official_generation_mwh": 5410000.0,
+      "official_utilization_hours": 419.0,
+      "period_hours": 2184,
+      "generation_divided_by_end_capacity_hours": 417.1164225134927,
+      "generic_fixed_site_equivalent_hours": 146.70135164227156,
+      "comparable_calibration_pair": false,
+      "source_url": "https://www.nea.gov.cn/2020-05/11/c_139047892.htm"
+    },
+    {
+      "province": "Jiangsu",
+      "period": "2020H1",
+      "official_period_end_capacity_mw": 11100.0,
+      "official_generation_mwh": 12670000.0,
+      "official_utilization_hours": 1188.0,
+      "period_hours": 4368,
+      "generation_divided_by_end_capacity_hours": 1141.4414414414414,
+      "generic_fixed_site_equivalent_hours": 814.0494639396734,
+      "comparable_calibration_pair": false,
+      "source_url": "https://www.nea.gov.cn/2020-07/31/c_139254298.htm"
+    },
+    {
+      "province": "Guizhou",
+      "period": "2020H1",
+      "official_period_end_capacity_mw": 4710.0,
+      "official_generation_mwh": 5100000.0,
+      "official_utilization_hours": 1130.0,
+      "period_hours": 4368,
+      "generation_divided_by_end_capacity_hours": 1082.8025477707006,
+      "generic_fixed_site_equivalent_hours": 112.96548411086121,
+      "comparable_calibration_pair": false,
+      "source_url": "https://www.nea.gov.cn/2020-07/31/c_139254298.htm"
+    },
+    {
+      "province": "Gansu",
+      "period": "2020H1",
+      "official_period_end_capacity_mw": 13120.0,
+      "official_generation_mwh": 13010000.0,
+      "official_utilization_hours": 1007.0,
+      "period_hours": 4368,
+      "generation_divided_by_end_capacity_hours": 991.6158536585366,
+      "generic_fixed_site_equivalent_hours": 382.7171031541636,
+      "comparable_calibration_pair": false,
+      "source_url": "https://www.nea.gov.cn/2020-07/31/c_139254298.htm"
+    }
+  ],
+  "scope": "Independent published aggregate observations; not matched-fleet validation or a fitted generation calibration",
+  "limitations": [
+    "Official wind combines technologies, including Jiangsu offshore and onshore.",
+    "Published utilization hours do not generally equal generation divided by period-end capacity.",
+    "Fixed 2025 sample sites are not the historical operating fleet; no fitted scale is justified by these pairs.",
+    "Q1 is contained in H1: these are correlated aggregates, not independent replications.",
+    "Observed generation reflects curtailment/outages; modeled weather availability is a different quantity."
+  ]
+}

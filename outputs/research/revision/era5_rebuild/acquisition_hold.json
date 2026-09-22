@@ -1,0 +1,14 @@
+{
+  "hold_network_acquisition": true,
+  "decision_date_local": "2026-09-23",
+  "reason": "The archived Jiangsu wind sample contains 20 offshore units, but its curve is assigned to onshore wind in the old regional model. Vintage and cell-selection scope also require redesign.",
+  "existing_plan_immutable": true,
+  "completed_annual_requests": 230,
+  "completed_years": [2015, 2020],
+  "remaining_annual_requests_not_cancelled_or_successful": 920,
+  "process_65930_terminal": "exit_code_0_bounded_batch_complete",
+  "evidence": "outputs/research/revision/weather_site_technology/audit.json",
+  "current_profile_admission": "NOT_ADMITTED_AS_PROVINCIAL_GENERATION_INPUT",
+  "next_action": "Define and review technology-separated fleet, geographic and historical-vs-fixed-vintage boundaries; create a distinct versioned request plan with correct cell-selection semantics. Reuse only exactly matching cached requests.",
+  "scope": "Research decision; not a provider quota failure or a statement that all weather reconstruction is complete. Read-only validation of existing data remains available."
+}

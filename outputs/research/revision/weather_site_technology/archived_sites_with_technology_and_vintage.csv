@@ -1,0 +1,121 @@
+site_csv_row,source_excel_row,unit_id,province,source_type,technology,technology_group,name,phase,mw,lat,lon,start_year,reported_start_year,status_at_source_release,known_start_after_2020,by2020_vintage_candidate,coordinate_available
+2,52848,G100000831440,Gansu,solar,PV,solar,Gansu Akesai (Huidong New Energy) solar farm,PV,640,38.927,94.623,2024,2024,operating,True,False,True
+3,53017,G100000811657,Gansu,solar,PV,solar,Gansu Jinta Huisheng solar farm,2,500,39.9849,98.971,2024,2024,operating,True,False,True
+4,53224,G100000830194,Gansu,solar,PV,solar,Gansu Wuwei (Yili) solar farm,--,500,37.9275,102.6386,2022,2022,operating,True,False,True
+5,53268,G100000831529,Gansu,solar,PV,solar,Gansu Yumen (China Nuclear Xin'ao) solar and wind complex with storage,Photovoltaic,400,40.225,97.772,2023,2023,operating,True,False,True
+6,53097,G100000802323,Gansu,solar,PV,solar,Gansu Province Gulang Malutan Grid-Connected solar farm,3,350,37.7575,103.1271,,,operating,False,False,True
+7,53203,G100000811669,Gansu,solar,PV,solar,Gansu Shandan Dongletan Photovoltaic Base China Power Construction solar power plant,--,300,38.8249,100.829,2023,2023,operating,True,False,True
+8,53007,G100000831472,Gansu,solar,PV,solar,Gansu Jinta (China Power Construction) solar farm,--,300,39.965,98.984,2023,2023,operating,True,False,True
+9,53226,G100000811677,Gansu,solar,PV,solar,Gansu Wuwei Gulang Jiayu solar power plant,1,300,37.739,103.103,2023,2023,operating,True,False,True
+10,52962,G100000831468,Gansu,solar,PV,solar,Gansu Jinchuan Dongdatan solar farm,--,300,38.4659,102.3421,2023,2023,operating,True,False,True
+11,53248,G100000831521,Gansu,solar,PV,solar,Gansu Yongchang (China Nuclear) solar farm,--,300,38.411,102.053,2023,2023,operating,True,False,True
+12,53254,G100000831522,Gansu,solar,PV,solar,Gansu Yongchang Heqingtan (China Academy of Sciences) solar farm,--,300,38.1694,102.2907,2023,2023,operating,True,False,True
+13,53255,G100000831523,Gansu,solar,PV,solar,Gansu Yongchang Heqingtan (Gansu Power Investment) solar farm,--,300,38.406,102.064,2023,2023,operating,True,False,True
+14,52918,G100000811624,Gansu,solar,PV,solar,"Gansu Gulang Wuwei ""Solid-State"" Desert Control Demonstration solar power plant",--,300,37.6394,103.2446,2023,2023,operating,True,False,True
+15,52893,G100000811620,Gansu,solar,PV,solar,Gansu Ganzhou Nantan solar power plant,--,300,38.8442,100.6765,2023,2023,operating,True,False,True
+16,53276,G100000831531,Gansu,solar,PV,solar,Gansu Yumen 300 MW (PetroChina) solar farm,--,300,39.766,97.906,2023,2023,operating,True,False,True
+17,53259,G100000831525,Gansu,solar,PV,solar,Gansu Yongdeng (China Resources) Pastoral solar farm,1,300,36.653,103.539,2023,2023,operating,True,False,True
+18,53009,G100000811653,Gansu,solar,PV,solar,Gansu Jinta Baishuiquan Jiuquan Steel solar power plant,1,200,39.9865,98.9029,2022,2022,operating,True,False,True
+19,53233,G100000811683,Gansu,solar,PV,solar,Gansu Wuwei Liangzhou Jiuduntan (Three Gorges) Desert Control solar power plant,--,200,38.104,101.858,2023,2023,operating,True,False,True
+20,53077,G100000831498,Gansu,solar,PV,solar,Gansu Minqin Hongshagang solar farm,--,200,38.949,102.441,2022,2022,operating,True,False,True
+21,52946,G100000811634,Gansu,solar,PV,solar,Gansu Jinchang Heqingtan (China Nuclear) solar power plant,--,200,38.266,102.282,2023,2023,operating,True,False,True
+22,43952,G100001000856,Gansu,wind,Onshore,wind_onshore,Gansu Guazhou Baofeng wind farm,--,1750,40.997,95.563,2024,2024,operating,True,False,True
+23,20689,G100000904432,Gansu,wind,Onshore,wind_onshore,Gansu Guazhou Beidaqiao 6 Areas A And B wind farm,--,402,38.0001,102.0001,2015,2015,operating,False,True,True
+24,20668,G100000904412,Gansu,wind,Onshore,wind_onshore,Gansu Guazhou Anbei 3 Area AB wind farm,--,401,38.0001,102.0001,2015,2015,operating,False,True,True
+25,39472,G100000923556,Gansu,wind,Onshore,wind_onshore,Gansu Guazhou Solar Thermal/Photovoltaic/Wind complex wind farm,"Component of Jiuquan ""Solar Thermal Plus"" national wind/solar base",400,41.551,95.249,2023,2023,operating,True,False,True
+26,20745,G100000904493,Gansu,wind,Onshore,wind_onshore,Gansu Huanxian Maojing wind farm,--,400,36.509,106.5757,2015,2015,operating,False,True,True
+27,20736,G100000904477,Gansu,wind,Onshore,wind_onshore,Gansu Yumen Mahuangtan 1 Area AB wind farm,--,400,40.5136,97.2734,2014,2014,operating,False,True,True
+28,20665,G100000904409,Gansu,wind,Onshore,wind_onshore,Gansu Guazhou Anbei 2 Area AB wind farm,--,400,40.8356,96.3062,2015,2015,operating,False,True,True
+29,20750,G100000904498,Gansu,wind,Onshore,wind_onshore,Gansu Minqin Hongshagang 1 wind farm,--,400,39.0309,102.1608,2015,2015,operating,False,True,True
+30,39468,G100000923552,Gansu,wind,Onshore,wind_onshore,Gansu Gaotai Beibutan 400 MW (Shanghai Electric) wind farm,--,400,39.844,99.394,,,operating,False,False,True
+31,37536,G100000921545,Gansu,wind,Onshore,wind_onshore,Gansu Qingyang Huanxian (Huaneng) Wind/Solar Demonstration Project wind farm,Area B1,380,36.4635,106.6114,2023,2023,operating,True,False,True
+32,37538,G100000921548,Gansu,wind,Onshore,wind_onshore,Gansu Qingyang Huanxian (Huaneng) Wind/Solar Demonstration Project wind farm,Area C1,380,36.6247,106.8226,2023,2023,operating,True,False,True
+33,37539,G100000921547,Gansu,wind,Onshore,wind_onshore,Gansu Qingyang Huanxian (Huaneng) Wind/Solar Demonstration Project wind farm,Area C2,380,36.3749,106.5927,2023,2023,operating,True,False,True
+34,37537,G100000921546,Gansu,wind,Onshore,wind_onshore,Gansu Qingyang Huanxian (Huaneng) Wind/Solar Demonstration Project wind farm,Area B2,380,36.9099,106.7063,2023,2023,operating,True,False,True
+35,37534,G100000921543,Gansu,wind,Onshore,wind_onshore,Gansu Qingyang Huanxian (Huaneng) Wind/Solar Demonstration Project wind farm,Area A1,376,38.0001,102.0001,2023,2023,operating,True,False,True
+36,37535,G100000921544,Gansu,wind,Onshore,wind_onshore,Gansu Qingyang Huanxian (Huaneng) Wind/Solar Demonstration Project wind farm,Area A2,373,38.0001,102.0001,2023,2023,operating,True,False,True
+37,20752,G100000904500,Gansu,wind,Onshore,wind_onshore,Gansu Minqin Hongshagang 3 wind farm,--,300,38.9753,102.4011,2016,2016,operating,False,True,True
+38,39482,G100000923564,Gansu,wind,Onshore,wind_onshore,Gansu Linze Pingchuan Beitan (Huaneng) wind farm,--,300,39.3392,100.1008,2023,2023,operating,True,False,True
+39,20660,G100000904404,Gansu,wind,Onshore,wind_onshore,Gansu Guazhou Localization Demonstration wind farm,--,300,38.0001,102.0001,2010,2010,operating,False,True,True
+40,39485,G100000923567,Gansu,wind,Onshore,wind_onshore,Gansu Longnan Wudu Maying wind farm,--,300,33.579,104.8687,2024,2024,operating,True,False,True
+41,39487,G100000923569,Gansu,wind,Onshore,wind_onshore,Gansu Minqin Hongshagang (Yuanjing) 300 MW wind farm,--,300,39.1459,102.2668,2023,2023,operating,True,False,True
+42,54197,G100000812145,Guizhou,solar,PV,solar,Guizhou Guanling Gangwu (Beipanjiang) solar farm,--,300,25.9451,105.2843,2020,2020,operating,False,True,True
+43,54559,G100000812359,Guizhou,solar,PV,solar,Guizhou Zhijin Hongjiadu solar farm,--,300,26.871,105.7728,2020,2020,operating,False,True,True
+44,54206,G100000812150,Guizhou,solar,PV,solar,Guizhou Guanling Mamaya (Beipanjiang) solar farm,--,300,25.8665,105.4223,2020,2020,operating,False,True,True
+45,54212,G100000831710,Guizhou,solar,PV,solar,Guizhou Guanling Panjiang solar farm,2,280,25.8949,105.4977,2024,2024,operating,True,False,True
+46,54527,G100000831807,Guizhou,solar,PV,solar,Guizhou Xixiu District Rooftop solar project,--,250,26.244,105.965,2022,2022,operating,True,False,True
+47,54382,G100000812249,Guizhou,solar,PV,solar,Guizhou Qianxi Dingxin Agriculture solar farm,1,200,27.2069,106.1203,2022,2022,operating,True,False,True
+48,54226,G100000831731,Guizhou,solar,PV,solar,Guizhou Guanling Yujiazhai solar farm,--,200,25.9305,105.4905,2024,2024,operating,True,False,True
+49,54345,G100000812228,Guizhou,solar,PV,solar,Guizhou Pingtang (Datang) Tangzhou Agricultural solar power plant,--,200,25.9438,106.946,2024,2024,operating,True,False,True
+50,54195,G100000802207,Guizhou,solar,PV,solar,Guizhou Guanling County Gangwu Zhuoyang solar farm,--,200,25.9171,105.358,2019,2019,operating,False,True,True
+51,54264,G100000812179,Guizhou,solar,PV,solar,Guizhou Libo Jialiang (CECEP) solar farm,--,200,25.5704,107.7251,2023,2023,operating,True,False,True
+52,54192,G100000831723,Guizhou,solar,PV,solar,Guizhou Guanling Baiyan Agriculture solar farm,--,200,25.9383,105.3569,2024,2024,operating,True,False,True
+53,54187,G100000812140,Guizhou,solar,PV,solar,Guizhou Fuquan Daopingzhen Agriculture solar farm,--,200,26.9355,107.3638,2024,2024,operating,True,False,True
+54,54207,G100000831729,Guizhou,solar,PV,solar,Guizhou Guanling Mati Well Agriculture solar farm,--,200,25.9449,105.4033,2024,2024,operating,True,False,True
+55,54177,G100000812130,Guizhou,solar,PV,solar,Guizhou Dushan Jichang Agriculture solar farm,--,200,25.2667,107.4819,2022,2022,operating,True,False,True
+56,54167,G100000812127,Guizhou,solar,PV,solar,Guizhou Dafang Lihua Agriculture solar farm,1,200,27.0351,105.6534,2022,2022,operating,True,False,True
+57,54453,G100000812283,Guizhou,solar,PV,solar,Guizhou Weining Haila Haiyuan Agriculture solar farm,--,200,26.9513,104.3813,2023,2023,operating,True,False,True
+58,54205,G100000831728,Guizhou,solar,PV,solar,Guizhou Guanling Laoying Cliff solar farm,--,200,25.9304,105.4338,2024,2024,operating,True,False,True
+59,54280,G100000831751,Guizhou,solar,PV,solar,Guizhou Longli County Distributed solar project,1,200,26.4541,106.9929,2023,2023,operating,True,False,True
+60,54547,G100000812354,Guizhou,solar,PV,solar,Guizhou Zhenning Biandanshan Agriculture solar farm,1,200,26.0917,105.6098,2023,2023,operating,True,False,True
+61,54229,G100000831732,Guizhou,solar,PV,solar,Guizhou Guanling Zuanziyan Agriculture solar farm,--,200,25.9209,105.4472,2024,2024,operating,True,False,True
+62,20405,G100000904160,Guizhou,wind,Onshore,wind_onshore,Guizhou Duyun Qingfeng wind farm,--,150,26.1843,107.3417,2016,2016,operating,False,True,True
+63,47581,G100001048281,Guizhou,wind,Onshore,wind_onshore,Guizhou Luodian Dating wind farm,--,100,25.3086,106.9372,2024,2024,operating,True,False,True
+64,37972,G100000922001,Guizhou,wind,Onshore,wind_onshore,Guizhou Ziyun Mazongling wind farm,--,100,25.9533,106.093,2023,2023,operating,True,False,True
+65,37853,G100000921881,Guizhou,wind,Onshore,wind_onshore,Guizhou Puding Maodonglai wind farm,--,100,26.53,105.94,2024,2024,operating,True,False,True
+66,37854,G100000921882,Guizhou,wind,Onshore,wind_onshore,Guizhou Qianxi Chongxin wind farm,--,100,27.2655,106.2007,2024,2024,operating,True,False,True
+67,37900,G100000921927,Guizhou,wind,Onshore,wind_onshore,Guizhou Wanshan District Yutang wind farm,--,100,27.6109,109.1054,2024,2024,operating,True,False,True
+68,20411,G100000904166,Guizhou,wind,Onshore,wind_onshore,Guizhou Sandu County Jiuqian wind farm,1,99,25.6361,108.1484,2016,2016,operating,False,True,True
+69,37777,G100000921804,Guizhou,wind,Onshore,wind_onshore,Guizhou Bozhou Fengle wind farm,--,98,27.6838,106.6134,,,operating,False,False,True
+70,20413,G100000904167,Guizhou,wind,Onshore,wind_onshore,Guizhou Weng'An Huazhushan wind farm,--,96,26.9856,107.4883,2016,2016,operating,False,True,True
+71,37815,G100000921842,Guizhou,wind,Onshore,wind_onshore,Guizhou Jianhe Jiuyang wind farm,--,87.5,26.5901,108.5065,2020,2020,operating,False,True,True
+72,20383,G100000904140,Guizhou,wind,Onshore,wind_onshore,Guizhou Nayong Zonglingbei wind farm,--,81,27.0001,107.0001,2020,2020,operating,False,True,True
+73,37829,G100000921857,Guizhou,wind,Onshore,wind_onshore,Guizhou Liping Jiuchao wind farm,--,80,26.0915,108.7682,2019,2019,operating,False,True,True
+74,45070,G100001004584,Guizhou,wind,Onshore,wind_onshore,Guizhou Shiqian (Dongrun Qingneng) wind farm,1,80,27.6639,108.3451,,,operating,False,False,True
+75,37899,G100000921926,Guizhou,wind,Onshore,wind_onshore,Guizhou Wangmo Xintun wind farm,--,80,25.2356,106.1038,2023,2023,operating,True,False,True
+76,37839,G100000921866,Guizhou,wind,Onshore,wind_onshore,Guizhou Nayong Longchang wind farm,--,80,26.849,105.252,2019,2019,operating,False,True,True
+77,37875,G100000921904,Guizhou,wind,Onshore,wind_onshore,Guizhou Sinan Dabachang wind farm,--,80,27.704,108.4017,2024,2024,operating,True,False,True
+78,37897,G100000921924,Guizhou,wind,Onshore,wind_onshore,Guizhou Wangmo Shitun wind farm,--,70.4,25.323,105.9911,2024,2024,operating,True,False,True
+79,37827,G100000921855,Guizhou,wind,Onshore,wind_onshore,Guizhou Liping Dajia wind farm,--,70,26.3611,108.8561,2018,2018,operating,False,True,True
+80,37850,G100000921878,Guizhou,wind,Onshore,wind_onshore,Guizhou Pingtang Gudong wind farm,--,65,25.9515,107.1876,2023,2023,operating,True,False,True
+81,37888,G100000921916,Guizhou,wind,Onshore,wind_onshore,Guizhou Tongzi Jigongshan wind farm,--,63,28.1416,106.8538,2024,2024,operating,True,False,True
+82,56895,G100000832185,Jiangsu,solar,PV,solar,Jiangsu Sihong Dongci Eco-solar farm,--,700,33.595,118.198,,,operating,False,False,True
+83,56757,G100000813138,Jiangsu,solar,PV,solar,Jiangsu Guanyun (Yunlong) solar farm,--,500,34.4667,119.6167,,,operating,False,False,True
+84,56800,G100000832166,Jiangsu,solar,PV,solar,Jiangsu Lianyun Dongxin Farm solar farm,--,400,34.5456,119.396,,,operating,False,False,True
+85,56874,G100001050362,Jiangsu,solar,PV,solar,Jiangsu Rudong Hydrogen Storage solar farm,--,400,32.6434,120.9973,,,operating,False,False,True
+86,56822,G100000832173,Jiangsu,solar,PV,solar,Jiangsu Pei County Shanghai Energy solar farm,1,263,34.819,116.9926,,,operating,False,False,True
+87,56760,G100000813121,Jiangsu,solar,PV,solar,Jiangsu Guanyun Yangqiao Fishery solar farm,1,200,34.4809,119.5839,2021,2021,operating,True,False,True
+88,56881,G100000813163,Jiangsu,solar,PV,solar,Jiangsu Rudong Wainong (China Resources) Fishery solar farm,--,200,32.5262,121.1235,2023,2023,operating,True,False,True
+89,56714,G100000813124,Jiangsu,solar,PV,solar,Jiangsu Dantu Baoyanzhen (Huarun) Agriculture solar farm,--,130,32.1339,119.4284,2024,2024,operating,True,False,True
+90,56893,G100000830450,Jiangsu,solar,PV,solar,Jiangsu Shuyang (Tongkun) Distributed solar farm,--,124,34.1139,118.8011,2022,2022,operating,True,False,True
+91,56838,G100000802028,Jiangsu,solar,PV,solar,Jiangsu Province Baoying Liubao Modern Fishery Estate solar farm,--,108,33.178,119.5537,2015,2015,operating,False,True,True
+92,56835,G100000802030,Jiangsu,solar,PV,solar,"Jiangsu Province Baoying ""Front Runner"" Sheyanghu 1 solar farm",1,100,33.282,119.6859,2018,2018,operating,False,True,True
+93,56845,G100000802004,Jiangsu,solar,PV,solar,Jiangsu Province Jintan Tianhuang Lake Fishery-Solar Hybrid Project,--,100,31.8218,119.5174,2015,2015,operating,False,True,True
+94,56798,G100000830445,Jiangsu,solar,PV,solar,Jiangsu Jintan District Zhixi solar farm,--,100,31.7956,119.4545,2016,2016,operating,False,True,True
+95,56852,G100000802017,Jiangsu,solar,PV,solar,Jiangsu Province Sihong Shuanggou Town Fishing and Light Complementary solar farm,2-A3,100,33.2402,118.1798,2020,2020,operating,False,True,True
+96,56833,G100000802032,Jiangsu,solar,PV,solar,"Jiangsu Province Baoying ""Front Runner"" Liubao 1 solar farm",1,100,33.1477,119.5892,2018,2018,operating,False,True,True
+97,56851,G100000802016,Jiangsu,solar,PV,solar,Jiangsu Province Sihong Shuanggou Town Farming and Light Complementary solar farm,2-A2,100,33.2402,118.1798,2020,2020,operating,False,True,True
+98,56850,G100000802762,Jiangsu,solar,PV,solar,Jiangsu Province Qidong Lvsi Port solar farm,--,100,32.0454,121.7093,2021,2021,operating,True,False,True
+99,56842,G100000802008,Jiangsu,solar,PV,solar,Jiangsu Province Huai'an Jinhu Zhenghui solar farm,--,100,33.0815,119.2817,2014,2014,operating,False,True,True
+100,56843,G100000802007,Jiangsu,solar,PV,solar,Jiangsu Province Huai'an Jinhu Zhenhe solar farm,1,100,32.9558,119.2339,2015,2015,operating,False,True,True
+101,56841,G100000802034,Jiangsu,solar,PV,solar,Jiangsu Province Gaoyou Linze Fishpond Water Surface solar farm,--,100,33.0379,119.604,2015,2015,operating,False,True,True
+102,19234,G100000903073,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Rudong H3 (Huaneng) Offshore wind farm,1,400,32.8254,121.4032,2021,2021,operating,True,False,True
+103,19236,G100000903074,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Rudong H4 (State Power Investment Corporation) Offshore wind farm,--,400,32.6645,121.6009,2021,2021,operating,True,False,True
+104,19273,G100000903114,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Sheyang Southern Area H5 Offshore wind farm,--,400,33.5901,121.2103,2024,2024,operating,True,False,True
+105,19238,G100000903076,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Rudong H6 (Three Gorges) Offshore wind farm,--,400,32.6639,121.8069,2021,2021,operating,True,False,True
+106,19239,G100000903077,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Rudong H7 (State Power Investment Corporation) Offshore wind farm,--,400,32.8321,121.849,2021,2021,operating,True,False,True
+107,19241,G100000903079,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Rudong H10 (Three Gorges) Offshore wind farm,--,400,32.3452,121.8094,2021,2021,operating,True,False,True
+108,19247,G100000903085,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Binhai North Area H2 Offshore wind farm,--,400,34.3618,120.21,2018,2018,operating,False,True,True
+109,19233,G100000903072,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Rudong H2 (Guoxin) Offshore wind farm,--,350,32.8226,121.6717,2021,2021,operating,True,False,True
+110,19250,G100000903090,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Dafeng H4 Offshore (Longyuan) wind farm,--,303,33.2358,121.2404,2021,2021,operating,True,False,True
+111,19220,G100000903057,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Guanyun (Huaneng) Offshore wind farm,1,303,34.525,119.7402,2021,2021,operating,True,False,True
+112,19252,G100000903092,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Dafeng H6 Offshore (Longyuan) wind farm,--,303,33.4333,121.3783,2021,2021,operating,True,False,True
+113,19224,G100000903060,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Jiangjiasha H2 wind farm,--,302,31.7732,121.1048,2020,2020,operating,False,True,True
+114,19260,G100000903100,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Dafeng (Huaneng) Offshore wind farm,1,302,33.212,120.7683,2019,2019,operating,False,True,True
+115,19249,G100000903089,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Dafeng H3 Offshore (Shanghai Power) wind farm,--,302,33.5083,121.0667,2019,2019,operating,False,True,True
+116,19266,G100000903106,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Dongtai H2 Offshore wind farm,--,302,32.8505,120.9298,2019,2019,operating,False,True,True
+117,19245,G100000903083,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Binhai (Datang) Offshore wind farm,--,302,34.2399,120.3287,2019,2019,operating,False,True,True
+118,19268,G100000903108,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Dongtai Zhugensha H2 Offshore wind farm,--,302,32.9193,121.3079,2021,2021,operating,True,False,True
+119,19230,G100000903069,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Rudong Baxianjiao Offshore wind farm,--,302,32.6583,121.2583,2017,2017,operating,False,True,True
+120,19269,G100000903109,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Sheyang Southern Area H1 Offshore wind farm,--,302,33.6602,121.1002,2020,2020,operating,False,True,True
+121,19270,G100000903110,Jiangsu,wind,Offshore hard mount,wind_offshore,Jiangsu Sheyang Souithern Area H2 Offshore wind farm,--,302,33.5943,121.162,2021,2021,operating,True,False,True

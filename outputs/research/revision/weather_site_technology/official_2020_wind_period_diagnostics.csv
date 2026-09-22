@@ -1,0 +1,7 @@
+province,period,official_period_end_capacity_mw,official_generation_mwh,official_utilization_hours,period_hours,generation_divided_by_end_capacity_hours,generic_fixed_site_equivalent_hours,comparable_calibration_pair,source_url
+Jiangsu,2020Q1,10440.0,6430000.0,617.0,2184,615.9003831417624,431.14509690935915,False,https://www.nea.gov.cn/2020-05/11/c_139047892.htm
+Guizhou,2020Q1,4580.0,2760000.0,622.0,2184,602.6200873362445,57.657872631559925,False,https://www.nea.gov.cn/2020-05/11/c_139047892.htm
+Gansu,2020Q1,12970.0,5410000.0,419.0,2184,417.1164225134927,146.70135164227156,False,https://www.nea.gov.cn/2020-05/11/c_139047892.htm
+Jiangsu,2020H1,11100.0,12670000.0,1188.0,4368,1141.4414414414414,814.0494639396734,False,https://www.nea.gov.cn/2020-07/31/c_139254298.htm
+Guizhou,2020H1,4710.0,5100000.0,1130.0,4368,1082.8025477707006,112.96548411086121,False,https://www.nea.gov.cn/2020-07/31/c_139254298.htm
+Gansu,2020H1,13120.0,13010000.0,1007.0,4368,991.6158536585366,382.7171031541636,False,https://www.nea.gov.cn/2020-07/31/c_139254298.htm

@@ -1,0 +1,112 @@
+{
+  "source_workbook_sha256": "4ed14c94a305ec43af9ac33a49134fcee5c1271e2d93d248ab608c7781ea71d0",
+  "archived_sites_sha256": "28240ccf75ff85eb0d552be2aee517f4da2d28a1ce3519ad21769701607ea77a",
+  "code_sha256": "29ba9437827a0de07407c9b7cb354bf7290a4b9a1f32b3d29d6e1b7864f3e521",
+  "source_rows_matched": 120,
+  "unique_unit_ids": 120,
+  "summaries": [
+    {
+      "province": "Gansu",
+      "original_group": "solar",
+      "rows": 20,
+      "mw": 6490.0,
+      "technologies": {
+        "solar": {
+          "rows": 20,
+          "mw": 6490.0
+        }
+      },
+      "known_post2020_rows": 19,
+      "known_post2020_capacity_fraction": 0.9460708782742681,
+      "unknown_start_rows": 1
+    },
+    {
+      "province": "Gansu",
+      "original_group": "wind",
+      "rows": 20,
+      "mw": 8722.0,
+      "technologies": {
+        "wind_onshore": {
+          "rows": 20,
+          "mw": 8722.0
+        }
+      },
+      "known_post2020_rows": 11,
+      "known_post2020_capacity_fraction": 0.609837193304288,
+      "unknown_start_rows": 1
+    },
+    {
+      "province": "Guizhou",
+      "original_group": "solar",
+      "rows": 20,
+      "mw": 4430.0,
+      "technologies": {
+        "solar": {
+          "rows": 20,
+          "mw": 4430.0
+        }
+      },
+      "known_post2020_rows": 16,
+      "known_post2020_capacity_fraction": 0.7516930022573364,
+      "unknown_start_rows": 0
+    },
+    {
+      "province": "Guizhou",
+      "original_group": "wind",
+      "rows": 20,
+      "mw": 1779.9,
+      "technologies": {
+        "wind_onshore": {
+          "rows": 20,
+          "mw": 1779.9
+        }
+      },
+      "known_post2020_rows": 10,
+      "known_post2020_capacity_fraction": 0.48227428507219505,
+      "unknown_start_rows": 2
+    },
+    {
+      "province": "Jiangsu",
+      "original_group": "solar",
+      "rows": 20,
+      "mw": 4025.0,
+      "technologies": {
+        "solar": {
+          "rows": 20,
+          "mw": 4025.0
+        }
+      },
+      "known_post2020_rows": 5,
+      "known_post2020_capacity_fraction": 0.18732919254658384,
+      "unknown_start_rows": 5
+    },
+    {
+      "province": "Jiangsu",
+      "original_group": "wind",
+      "rows": 20,
+      "mw": 6777.0,
+      "technologies": {
+        "wind_offshore": {
+          "rows": 20,
+          "mw": 6777.0
+        }
+      },
+      "known_post2020_rows": 12,
+      "known_post2020_capacity_fraction": 0.6290393979637008,
+      "unknown_start_rows": 0
+    }
+  ],
+  "candidate_rows": 2902,
+  "candidate_file": "work/research/prepared/technology_separated_operating_2025_candidate_inventory.csv",
+  "candidate_sha256": "dce044cf7c2cd0d0a81774fc9b10e85ed566fd8e79378949e72459f36432c25a",
+  "original_selection": "largest 20 operating July-2025 units by province and Type; no technology or start-year filter",
+  "finding": "All 20 Jiangsu wind rows are offshore; the old regional runner assigns this series to onwind_pu while keeping offshore on the archive profile.",
+  "existing_explicit_request_scope": "Frozen source-repair plan also uses cell_selection=land at offshore locations. Request setting is not evidence of actual returned cell land/sea mask.",
+  "current_admission": "NOT_ADMITTED_AS_PROVINCIAL_GENERATION_INPUT",
+  "candidate_limitations": [
+    "Operating-in-2025 inventory is not a full 2020 fleet: retired/surviving units and commissioning within 2020 need separate treatment.",
+    "Fixed modern geography under historical weather is a scenario, not historical generation reconstruction.",
+    "Start-year and technology unknowns retained; no imputation.",
+    "Correct labels do not validate coordinates, turbine parameters, grid cells, observed generation or complete capacity coverage."
+  ]
+}

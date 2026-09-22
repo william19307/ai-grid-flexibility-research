@@ -1,0 +1,13 @@
+{
+  "verified_annual_cache_pairs": 230,
+  "full_years": [
+    2015,
+    2020
+  ],
+  "incomplete_main_requests": 920,
+  "research_hold_before_network": true,
+  "plan_sha256": "9a1b7684d2c338ac33c02c599ad20feb2b83192e5dae569ec21ed1b38761a64d",
+  "hold_sha256": "625010d3ca9ac541c28f67b423e02e63be03da6065718f7e16c782caa427eae1",
+  "acquirer_sha256": "f13d196bcb84cdf5e229cd7a8886a706bf55843153e35cee1110f894c85d023f",
+  "scope": "Integrity and acquisition-state checkpoint; not provincial input admission"
+}

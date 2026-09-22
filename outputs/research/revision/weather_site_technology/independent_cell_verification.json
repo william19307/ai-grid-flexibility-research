@@ -1,0 +1,9 @@
+{
+  "method": "Independent OOXML cell extraction without openpyxl; recovered IDs, technology, year, capacity and coordinates",
+  "source_rows": 120,
+  "cell_checks": 720,
+  "passed": true,
+  "source_sha256": "4ed14c94a305ec43af9ac33a49134fcee5c1271e2d93d248ab608c7781ea71d0",
+  "table_sha256": "14dfc82156d837450d5237e38d318f627641504ef8f0254bc4da8720a535c0c6",
+  "verifier_sha256": "059fb7d92437b483b6f59dc54901b9b430d301a4c14293334e18721d2705ce96"
+}

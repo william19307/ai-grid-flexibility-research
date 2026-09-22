@@ -25,6 +25,12 @@ def save(path,obj):
     tmp.write_text(json.dumps(obj,indent=2)+'\n');tmp.replace(path)
 
 
+def ensure_acquisition_allowed():
+    hold=OUT/'acquisition_hold.json'
+    if hold.exists() and json.loads(hold.read_text()).get('hold_network_acquisition') is True:
+        raise RuntimeError('Frozen-site acquisition on research hold: inspect acquisition_hold.json and the technology/vintage audit before defining a replacement plan')
+
+
 def plan():
     sites=list(csv.DictReader(SITES.open()))
     points=sorted({(f'{float(r["lat"]):.3f}',f'{float(r["lon"]):.3f}') for r in sites})
@@ -102,6 +108,7 @@ def main():
     p=plan()
     if args.plan_only:
         print(json.dumps({k:v for k,v in p.items() if k!='requests'},indent=2));print('requests',len(p['requests']));return
+    ensure_acquisition_allowed()
     with (SRC/'acquire.lock').open('a') as lock:
         fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
         records=[]

@@ -1,0 +1,2575 @@
+{
+  "year": 2020,
+  "hours": 8784,
+  "independent_sample_hours": 61,
+  "sample_value_checks": 366,
+  "source_hash_checks": 230,
+  "maximum_absolute_error": 3.3306690738754696e-16,
+  "scope": "Stratified scalar re-computation using raw timestamp keys; not all-hour independent recomputation or physical calibration",
+  "profile_sha256": "80f21a48664e788e52518fc73929c32636c3923a4feb0448eb6a6827284045d9",
+  "verifier_sha256": "92e7eb59e7bb20a2d0bb142c7966414cc7aabcf6eaba48117b510897ae77d430",
+  "checks": [
+    {
+      "group": "Gansu|solar",
+      "time": "2020-01-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-01-15T12:00:00+08:00",
+      "independent_value": 0.3700669491525424,
+      "stored_value": 0.3700669491525424,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-01-16T02:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-01-22T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-01-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-02-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-02-15T12:00:00+08:00",
+      "independent_value": 0.5695026194144839,
+      "stored_value": 0.5695026194144838,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-02-17T06:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-02-29T12:00:00+08:00",
+      "independent_value": 0.5522485362095532,
+      "stored_value": 0.5522485362095532,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-02-29T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-03-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-03-05T15:00:00+08:00",
+      "independent_value": 0.5437891371340524,
+      "stored_value": 0.5437891371340524,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-03-15T12:00:00+08:00",
+      "independent_value": 0.5920911402157165,
+      "stored_value": 0.5920911402157165,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-03-19T22:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-03-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-04-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-04-07T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-04-12T10:00:00+08:00",
+      "independent_value": 0.5494902927580892,
+      "stored_value": 0.5494902927580892,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-04-15T12:00:00+08:00",
+      "independent_value": 0.7637335130970723,
+      "stored_value": 0.7637335130970725,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-04-19T17:00:00+08:00",
+      "independent_value": 0.29099075500770416,
+      "stored_value": 0.2909907550077041,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-04-30T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-05-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-05-13T06:00:00+08:00",
+      "independent_value": 0.018080508474576273,
+      "stored_value": 0.0180805084745762,
+      "absolute_error": 7.28583859910259e-17
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-05-15T12:00:00+08:00",
+      "independent_value": 0.7544963129429892,
+      "stored_value": 0.7544963129429889,
+      "absolute_error": 3.3306690738754696e-16
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-05-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-06-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-06-15T12:00:00+08:00",
+      "independent_value": 0.4765411369799692,
+      "stored_value": 0.4765411369799692,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-06-30T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-07-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-07-08T13:00:00+08:00",
+      "independent_value": 0.7119806514637905,
+      "stored_value": 0.7119806514637905,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-07-15T12:00:00+08:00",
+      "independent_value": 0.6429618210323574,
+      "stored_value": 0.6429618210323577,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-07-22T01:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-07-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-08-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-08-15T12:00:00+08:00",
+      "independent_value": 0.6123960764252696,
+      "stored_value": 0.6123960764252696,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-08-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-09-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-09-15T12:00:00+08:00",
+      "independent_value": 0.6925234206471494,
+      "stored_value": 0.6925234206471494,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-09-15T14:00:00+08:00",
+      "independent_value": 0.6671871340523883,
+      "stored_value": 0.6671871340523882,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-09-30T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-10-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-10-04T12:00:00+08:00",
+      "independent_value": 0.60871656394453,
+      "stored_value": 0.60871656394453,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-10-15T12:00:00+08:00",
+      "independent_value": 0.5409916024653313,
+      "stored_value": 0.5409916024653311,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-10-26T18:00:00+08:00",
+      "independent_value": 0.005499460708782742,
+      "stored_value": 0.0054994607087827,
+      "absolute_error": 4.163336342344337e-17
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-10-28T08:00:00+08:00",
+      "independent_value": 0.08118744221879816,
+      "stored_value": 0.0811874422187981,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-10-29T04:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-10-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-11-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-11-07T08:00:00+08:00",
+      "independent_value": 0.06346055469953775,
+      "stored_value": 0.0634605546995377,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-11-15T12:00:00+08:00",
+      "independent_value": 0.4720197996918336,
+      "stored_value": 0.4720197996918336,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-11-16T20:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-11-30T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-12-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-12-01T06:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-12-15T12:00:00+08:00",
+      "independent_value": 0.4024743451463791,
+      "stored_value": 0.402474345146379,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-12-16T09:00:00+08:00",
+      "independent_value": 0.10144075500770415,
+      "stored_value": 0.1014407550077041,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-12-23T01:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-12-24T06:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-12-27T08:00:00+08:00",
+      "independent_value": 0.006214560862865947,
+      "stored_value": 0.0062145608628659,
+      "absolute_error": 4.683753385137379e-17
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-12-28T11:00:00+08:00",
+      "independent_value": 0.2691343605546995,
+      "stored_value": 0.2691343605546995,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|solar",
+      "time": "2020-12-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-01-01T00:00:00+08:00",
+      "independent_value": 0.03884245672277095,
+      "stored_value": 0.0388424567227709,
+      "absolute_error": 4.85722573273506e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-01-15T12:00:00+08:00",
+      "independent_value": 4.4303333276714764e-05,
+      "stored_value": 4.430333327671477e-05,
+      "absolute_error": 6.776263578034403e-21
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-01-16T02:00:00+08:00",
+      "independent_value": 0.007317369939754699,
+      "stored_value": 0.0073173699397546,
+      "absolute_error": 9.8879238130678e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-01-22T23:00:00+08:00",
+      "independent_value": 0.002227715663825987,
+      "stored_value": 0.0022277156638259,
+      "absolute_error": 8.716985466783456e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-01-31T23:00:00+08:00",
+      "independent_value": 0.010450041552367931,
+      "stored_value": 0.0104500415523679,
+      "absolute_error": 3.122502256758253e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-02-01T00:00:00+08:00",
+      "independent_value": 0.008730820284089962,
+      "stored_value": 0.0087308202840899,
+      "absolute_error": 6.245004513516506e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-02-15T12:00:00+08:00",
+      "independent_value": 0.14727080024323969,
+      "stored_value": 0.1472708002432397,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-02-17T06:00:00+08:00",
+      "independent_value": 0.0059127644393865185,
+      "stored_value": 0.0059127644393865,
+      "absolute_error": 1.8214596497756474e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-02-29T12:00:00+08:00",
+      "independent_value": 0.18062867950171885,
+      "stored_value": 0.1806286795017188,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-02-29T23:00:00+08:00",
+      "independent_value": 0.08307679490465904,
+      "stored_value": 0.083076794904659,
+      "absolute_error": 4.163336342344337e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-03-01T00:00:00+08:00",
+      "independent_value": 0.0993788991675183,
+      "stored_value": 0.0993788991675182,
+      "absolute_error": 9.71445146547012e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-03-05T15:00:00+08:00",
+      "independent_value": 0.11595960023088582,
+      "stored_value": 0.1159596002308858,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-03-15T12:00:00+08:00",
+      "independent_value": 0.0253650576523299,
+      "stored_value": 0.0253650576523298,
+      "absolute_error": 9.71445146547012e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-03-19T22:00:00+08:00",
+      "independent_value": 0.034754222659168166,
+      "stored_value": 0.0347542226591681,
+      "absolute_error": 6.245004513516506e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-03-31T23:00:00+08:00",
+      "independent_value": 0.2845394656628823,
+      "stored_value": 0.2845394656628823,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-04-01T00:00:00+08:00",
+      "independent_value": 0.28237419204452485,
+      "stored_value": 0.2823741920445249,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-04-07T23:00:00+08:00",
+      "independent_value": 0.001185407404576479,
+      "stored_value": 0.0011854074045764,
+      "absolute_error": 7.892991815694472e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-04-12T10:00:00+08:00",
+      "independent_value": 0.04759929827794622,
+      "stored_value": 0.0475992982779462,
+      "absolute_error": 2.0816681711721685e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-04-15T12:00:00+08:00",
+      "independent_value": 0.03005607672252561,
+      "stored_value": 0.0300560767225256,
+      "absolute_error": 1.0408340855860843e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-04-19T17:00:00+08:00",
+      "independent_value": 0.2082981979642007,
+      "stored_value": 0.2082981979642007,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-04-30T23:00:00+08:00",
+      "independent_value": 0.03248881482531284,
+      "stored_value": 0.0324888148253128,
+      "absolute_error": 3.469446951953614e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-05-01T00:00:00+08:00",
+      "independent_value": 0.033715000047378735,
+      "stored_value": 0.0337150000473787,
+      "absolute_error": 3.469446951953614e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-05-13T06:00:00+08:00",
+      "independent_value": 0.13759465021725015,
+      "stored_value": 0.1375946502172501,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-05-15T12:00:00+08:00",
+      "independent_value": 0.2206863454144149,
+      "stored_value": 0.2206863454144149,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-05-31T23:00:00+08:00",
+      "independent_value": 0.1379952954956704,
+      "stored_value": 0.1379952954956704,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-06-01T00:00:00+08:00",
+      "independent_value": 0.15111917126871832,
+      "stored_value": 0.1511191712687183,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-06-15T12:00:00+08:00",
+      "independent_value": 0.04972612339856736,
+      "stored_value": 0.0497261233985673,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-06-30T23:00:00+08:00",
+      "independent_value": 0.013767478194223082,
+      "stored_value": 0.013767478194223,
+      "absolute_error": 8.153200337090993e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-07-01T00:00:00+08:00",
+      "independent_value": 0.011684913144205295,
+      "stored_value": 0.0116849131442052,
+      "absolute_error": 9.540979117872439e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-07-08T13:00:00+08:00",
+      "independent_value": 0.1089470087195742,
+      "stored_value": 0.1089470087195741,
+      "absolute_error": 9.71445146547012e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-07-15T12:00:00+08:00",
+      "independent_value": 0.01879847100044068,
+      "stored_value": 0.0187984710004406,
+      "absolute_error": 7.979727989493313e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-07-22T01:00:00+08:00",
+      "independent_value": 0.05731975413748058,
+      "stored_value": 0.0573197541374805,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-07-31T23:00:00+08:00",
+      "independent_value": 0.06998671080284662,
+      "stored_value": 0.0699867108028466,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-08-01T00:00:00+08:00",
+      "independent_value": 0.08379812878550184,
+      "stored_value": 0.0837981287855018,
+      "absolute_error": 4.163336342344337e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-08-15T12:00:00+08:00",
+      "independent_value": 0.043594429415556385,
+      "stored_value": 0.0435944294155563,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-08-31T23:00:00+08:00",
+      "independent_value": 0.036409883006298195,
+      "stored_value": 0.0364098830062981,
+      "absolute_error": 9.71445146547012e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-09-01T00:00:00+08:00",
+      "independent_value": 0.044885160202280845,
+      "stored_value": 0.0448851602022808,
+      "absolute_error": 4.85722573273506e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-09-15T12:00:00+08:00",
+      "independent_value": 0.005106969366129954,
+      "stored_value": 0.0051069693661299,
+      "absolute_error": 5.377642775528102e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-09-15T14:00:00+08:00",
+      "independent_value": 0.008829429948549449,
+      "stored_value": 0.0088294299485494,
+      "absolute_error": 4.85722573273506e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-09-30T23:00:00+08:00",
+      "independent_value": 0.11314029871363393,
+      "stored_value": 0.1131402987136339,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-10-01T00:00:00+08:00",
+      "independent_value": 0.11274721585644705,
+      "stored_value": 0.112747215856447,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-10-04T12:00:00+08:00",
+      "independent_value": 0.08382849309976914,
+      "stored_value": 0.0838284930997691,
+      "absolute_error": 4.163336342344337e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-10-15T12:00:00+08:00",
+      "independent_value": 0.04039650583078471,
+      "stored_value": 0.0403965058307847,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-10-26T18:00:00+08:00",
+      "independent_value": 0.01043873500611323,
+      "stored_value": 0.0104387350061132,
+      "absolute_error": 3.122502256758253e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-10-28T08:00:00+08:00",
+      "independent_value": 0.03608018464594835,
+      "stored_value": 0.0360801846459483,
+      "absolute_error": 4.85722573273506e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-10-29T04:00:00+08:00",
+      "independent_value": 0.028286967041544504,
+      "stored_value": 0.0282869670415445,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-10-31T23:00:00+08:00",
+      "independent_value": 0.07790971423212324,
+      "stored_value": 0.0779097142321232,
+      "absolute_error": 4.163336342344337e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-11-01T00:00:00+08:00",
+      "independent_value": 0.08235826887120502,
+      "stored_value": 0.082358268871205,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-11-07T08:00:00+08:00",
+      "independent_value": 0.01693818696119961,
+      "stored_value": 0.0169381869611996,
+      "absolute_error": 1.0408340855860843e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-11-15T12:00:00+08:00",
+      "independent_value": 0.2913740953245958,
+      "stored_value": 0.2913740953245958,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-11-16T20:00:00+08:00",
+      "independent_value": 0.1077965750426448,
+      "stored_value": 0.1077965750426447,
+      "absolute_error": 9.71445146547012e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-11-30T23:00:00+08:00",
+      "independent_value": 0.007425736193561902,
+      "stored_value": 0.0074257361935619,
+      "absolute_error": 2.6020852139652106e-18
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-12-01T00:00:00+08:00",
+      "independent_value": 0.0077545275775289055,
+      "stored_value": 0.0077545275775289,
+      "absolute_error": 5.204170427930421e-18
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-12-01T06:00:00+08:00",
+      "independent_value": 0.0036704809617701976,
+      "stored_value": 0.0036704809617701,
+      "absolute_error": 9.75781955236954e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-12-15T12:00:00+08:00",
+      "independent_value": 0.0012161953052826067,
+      "stored_value": 0.0012161953052826,
+      "absolute_error": 6.7220534694101275e-18
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-12-16T09:00:00+08:00",
+      "independent_value": 4.6885849729913646e-05,
+      "stored_value": 4.6885849729913646e-05,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-12-23T01:00:00+08:00",
+      "independent_value": 0.02012564559708842,
+      "stored_value": 0.0201256455970884,
+      "absolute_error": 2.0816681711721685e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-12-24T06:00:00+08:00",
+      "independent_value": 0.003992899938513806,
+      "stored_value": 0.0039928999385138,
+      "absolute_error": 6.071532165918825e-18
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-12-27T08:00:00+08:00",
+      "independent_value": 0.009567862716247547,
+      "stored_value": 0.0095678627162475,
+      "absolute_error": 4.683753385137379e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-12-28T11:00:00+08:00",
+      "independent_value": 0.03372897885705353,
+      "stored_value": 0.0337289788570535,
+      "absolute_error": 3.469446951953614e-17
+    },
+    {
+      "group": "Gansu|wind",
+      "time": "2020-12-31T23:00:00+08:00",
+      "independent_value": 0.13141264497035232,
+      "stored_value": 0.1314126449703523,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-01-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-01-15T12:00:00+08:00",
+      "independent_value": 0.1593241534988713,
+      "stored_value": 0.1593241534988713,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-01-16T02:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-01-22T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-01-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-02-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-02-15T12:00:00+08:00",
+      "independent_value": 0.19330112866817153,
+      "stored_value": 0.1933011286681715,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-02-17T06:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-02-29T12:00:00+08:00",
+      "independent_value": 0.5474920993227991,
+      "stored_value": 0.5474920993227993,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-02-29T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-03-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-03-05T15:00:00+08:00",
+      "independent_value": 0.2444872460496614,
+      "stored_value": 0.2444872460496614,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-03-15T12:00:00+08:00",
+      "independent_value": 0.25634887133182843,
+      "stored_value": 0.2563488713318285,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-03-19T22:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-03-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-04-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-04-07T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-04-12T10:00:00+08:00",
+      "independent_value": 0.21205293453724605,
+      "stored_value": 0.2120529345372459,
+      "absolute_error": 1.3877787807814457e-16
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-04-15T12:00:00+08:00",
+      "independent_value": 0.8365994564334086,
+      "stored_value": 0.8365994564334084,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-04-19T17:00:00+08:00",
+      "independent_value": 0.14574718984198645,
+      "stored_value": 0.1457471898419864,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-04-30T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-05-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-05-13T06:00:00+08:00",
+      "independent_value": 0.007834198645598194,
+      "stored_value": 0.0078341986455981,
+      "absolute_error": 9.367506770274758e-17
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-05-15T12:00:00+08:00",
+      "independent_value": 0.602491508577878,
+      "stored_value": 0.602491508577878,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-05-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-06-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-06-15T12:00:00+08:00",
+      "independent_value": 0.4346747268623025,
+      "stored_value": 0.4346747268623025,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-06-30T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-07-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-07-08T13:00:00+08:00",
+      "independent_value": 0.4900255786907449,
+      "stored_value": 0.4900255786907449,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-07-15T12:00:00+08:00",
+      "independent_value": 0.7046456360270881,
+      "stored_value": 0.7046456360270882,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-07-22T01:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-07-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-08-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-08-15T12:00:00+08:00",
+      "independent_value": 0.4832596293453725,
+      "stored_value": 0.4832596293453725,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-08-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-09-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-09-15T12:00:00+08:00",
+      "independent_value": 0.164082618510158,
+      "stored_value": 0.164082618510158,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-09-15T14:00:00+08:00",
+      "independent_value": 0.23238061354401807,
+      "stored_value": 0.232380613544018,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-09-30T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-10-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-10-04T12:00:00+08:00",
+      "independent_value": 0.13514521083521444,
+      "stored_value": 0.1351452108352144,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-10-15T12:00:00+08:00",
+      "independent_value": 0.04318498871331828,
+      "stored_value": 0.0431849887133182,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-10-26T18:00:00+08:00",
+      "independent_value": 0.0006197516930022573,
+      "stored_value": 0.0006197516930022,
+      "absolute_error": 5.735429492448318e-17
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-10-28T08:00:00+08:00",
+      "independent_value": 0.028671670428893906,
+      "stored_value": 0.0286716704288939,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-10-29T04:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-10-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-11-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-11-07T08:00:00+08:00",
+      "independent_value": 0.10139751693002257,
+      "stored_value": 0.1013975169300225,
+      "absolute_error": 6.938893903907228e-17
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-11-15T12:00:00+08:00",
+      "independent_value": 0.5685886004514672,
+      "stored_value": 0.5685886004514671,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-11-16T20:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-11-30T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-12-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-12-01T06:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-12-15T12:00:00+08:00",
+      "independent_value": 0.12735033860045147,
+      "stored_value": 0.1273503386004514,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-12-16T09:00:00+08:00",
+      "independent_value": 0.05648374717832957,
+      "stored_value": 0.0564837471783295,
+      "absolute_error": 6.938893903907228e-17
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-12-23T01:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-12-24T06:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-12-27T08:00:00+08:00",
+      "independent_value": 0.029264559819413092,
+      "stored_value": 0.0292645598194131,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-12-28T11:00:00+08:00",
+      "independent_value": 0.14419492099322798,
+      "stored_value": 0.1441949209932279,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "group": "Guizhou|solar",
+      "time": "2020-12-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-01-01T00:00:00+08:00",
+      "independent_value": 0.02395026979252236,
+      "stored_value": 0.0239502697925223,
+      "absolute_error": 5.898059818321144e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-01-15T12:00:00+08:00",
+      "independent_value": 8.176130966652383e-05,
+      "stored_value": 8.176130966652383e-05,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-01-16T02:00:00+08:00",
+      "independent_value": 0.02622594118082496,
+      "stored_value": 0.0262259411808249,
+      "absolute_error": 5.898059818321144e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-01-22T23:00:00+08:00",
+      "independent_value": 0.003922297090845488,
+      "stored_value": 0.0039222970908454,
+      "absolute_error": 8.847089727481716e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-01-31T23:00:00+08:00",
+      "independent_value": 0.0031886894491806876,
+      "stored_value": 0.0031886894491806,
+      "absolute_error": 8.760353553682876e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-02-01T00:00:00+08:00",
+      "independent_value": 0.003312736791708755,
+      "stored_value": 0.0033127367917087,
+      "absolute_error": 5.5077470362263625e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-02-15T12:00:00+08:00",
+      "independent_value": 0.2812289114528675,
+      "stored_value": 0.2812289114528675,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-02-17T06:00:00+08:00",
+      "independent_value": 0.0036130256510534375,
+      "stored_value": 0.0036130256510534,
+      "absolute_error": 3.729655473350135e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-02-29T12:00:00+08:00",
+      "independent_value": 0.01893851893567486,
+      "stored_value": 0.0189385189356748,
+      "absolute_error": 5.898059818321144e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-02-29T23:00:00+08:00",
+      "independent_value": 0.0001710869473562846,
+      "stored_value": 0.0001710869473562,
+      "absolute_error": 8.459487450818148e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-03-01T00:00:00+08:00",
+      "independent_value": 8.780852406051383e-05,
+      "stored_value": 8.78085240605138e-05,
+      "absolute_error": 2.710505431213761e-20
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-03-05T15:00:00+08:00",
+      "independent_value": 0.037304427329767055,
+      "stored_value": 0.037304427329767,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-03-15T12:00:00+08:00",
+      "independent_value": 0.006855706954221545,
+      "stored_value": 0.0068557069542215,
+      "absolute_error": 4.5102810375396984e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-03-19T22:00:00+08:00",
+      "independent_value": 0.0015746139617012743,
+      "stored_value": 0.0015746139617012,
+      "absolute_error": 7.43762690325056e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-03-31T23:00:00+08:00",
+      "independent_value": 0.008874391306076673,
+      "stored_value": 0.0088743913060766,
+      "absolute_error": 7.28583859910259e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-04-01T00:00:00+08:00",
+      "independent_value": 0.005815985335264516,
+      "stored_value": 0.0058159853352645,
+      "absolute_error": 1.5612511283791264e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-04-07T23:00:00+08:00",
+      "independent_value": 2.602512567751877e-05,
+      "stored_value": 2.602512567751877e-05,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-04-12T10:00:00+08:00",
+      "independent_value": 0.0016019746614207681,
+      "stored_value": 0.0016019746614207,
+      "absolute_error": 6.808789643208968e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-04-15T12:00:00+08:00",
+      "independent_value": 0.05776293613505437,
+      "stored_value": 0.0577629361350543,
+      "absolute_error": 6.938893903907228e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-04-19T17:00:00+08:00",
+      "independent_value": 0.010814145643048332,
+      "stored_value": 0.0108141456430483,
+      "absolute_error": 3.2959746043559335e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-04-30T23:00:00+08:00",
+      "independent_value": 0.0011031937960768437,
+      "stored_value": 0.0011031937960768,
+      "absolute_error": 4.380176776841438e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-05-01T00:00:00+08:00",
+      "independent_value": 0.0012169521226628305,
+      "stored_value": 0.0012169521226628,
+      "absolute_error": 3.0574501264091225e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-05-13T06:00:00+08:00",
+      "independent_value": 0.06702383026840028,
+      "stored_value": 0.0670238302684002,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-05-15T12:00:00+08:00",
+      "independent_value": 0.00020050000818852738,
+      "stored_value": 0.0002005000081885,
+      "absolute_error": 2.7376104855258987e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-05-31T23:00:00+08:00",
+      "independent_value": 0.0004842600102454853,
+      "stored_value": 0.0004842600102454,
+      "absolute_error": 8.53267109746092e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-06-01T00:00:00+08:00",
+      "independent_value": 0.00011598645224516316,
+      "stored_value": 0.0001159864522451,
+      "absolute_error": 6.31683290744367e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-06-15T12:00:00+08:00",
+      "independent_value": 0.018959506686391188,
+      "stored_value": 0.0189595066863911,
+      "absolute_error": 8.673617379884035e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-06-30T23:00:00+08:00",
+      "independent_value": 0.0006419686222180297,
+      "stored_value": 0.000641968622218,
+      "absolute_error": 2.970713952610282e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-07-01T00:00:00+08:00",
+      "independent_value": 0.0010431688238523287,
+      "stored_value": 0.0010431688238523,
+      "absolute_error": 2.862293735361732e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-07-08T13:00:00+08:00",
+      "independent_value": 0.006774404804602083,
+      "stored_value": 0.006774404804602,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-07-15T12:00:00+08:00",
+      "independent_value": 0.07669408629535296,
+      "stored_value": 0.0766940862953529,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-07-22T01:00:00+08:00",
+      "independent_value": 0.25211168266835937,
+      "stored_value": 0.2521116826683593,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-07-31T23:00:00+08:00",
+      "independent_value": 2.9531398744600475e-05,
+      "stored_value": 2.9531398744600475e-05,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-08-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-08-15T12:00:00+08:00",
+      "independent_value": 0.22293363796519025,
+      "stored_value": 0.2229336379651902,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-08-31T23:00:00+08:00",
+      "independent_value": 0.0002047995991879601,
+      "stored_value": 0.0002047995991879,
+      "absolute_error": 6.009190541000908e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-09-01T00:00:00+08:00",
+      "independent_value": 7.814338963109704e-05,
+      "stored_value": 7.814338963109703e-05,
+      "absolute_error": 1.3552527156068805e-20
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-09-15T12:00:00+08:00",
+      "independent_value": 0.0005383402257151204,
+      "stored_value": 0.0005383402257151,
+      "absolute_error": 2.0383000842727483e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-09-15T14:00:00+08:00",
+      "independent_value": 0.00028901005603573066,
+      "stored_value": 0.0002890100560357,
+      "absolute_error": 3.0682921481339775e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-09-30T23:00:00+08:00",
+      "independent_value": 0.0033439531989628737,
+      "stored_value": 0.0033439531989628,
+      "absolute_error": 7.37257477290143e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-10-01T00:00:00+08:00",
+      "independent_value": 0.0014946736881651537,
+      "stored_value": 0.0014946736881651,
+      "absolute_error": 5.377642775528102e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-10-04T12:00:00+08:00",
+      "independent_value": 0.01653212728970879,
+      "stored_value": 0.0165321272897087,
+      "absolute_error": 9.020562075079397e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-10-15T12:00:00+08:00",
+      "independent_value": 0.014986016737775838,
+      "stored_value": 0.0149860167377758,
+      "absolute_error": 3.8163916471489756e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-10-26T18:00:00+08:00",
+      "independent_value": 0.00011183267104523603,
+      "stored_value": 0.0001118326710452,
+      "absolute_error": 3.6036169707986954e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-10-28T08:00:00+08:00",
+      "independent_value": 0.02625621392233083,
+      "stored_value": 0.0262562139223308,
+      "absolute_error": 3.122502256758253e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-10-29T04:00:00+08:00",
+      "independent_value": 0.011543237560513217,
+      "stored_value": 0.0115432375605132,
+      "absolute_error": 1.734723475976807e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-10-31T23:00:00+08:00",
+      "independent_value": 2.279862249316421e-05,
+      "stored_value": 2.2798622493164218e-05,
+      "absolute_error": 6.776263578034403e-21
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-11-01T00:00:00+08:00",
+      "independent_value": 1.8198317617911516e-05,
+      "stored_value": 1.8198317617911516e-05,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-11-07T08:00:00+08:00",
+      "independent_value": 0.005351722179445355,
+      "stored_value": 0.0053517221794453,
+      "absolute_error": 5.4643789493269423e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-11-15T12:00:00+08:00",
+      "independent_value": 0.006055367867956392,
+      "stored_value": 0.0060553678679563,
+      "absolute_error": 9.280770596475918e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-11-16T20:00:00+08:00",
+      "independent_value": 0.2346548523700219,
+      "stored_value": 0.2346548523700219,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-11-30T23:00:00+08:00",
+      "independent_value": 0.010312247053079999,
+      "stored_value": 0.0103122470530799,
+      "absolute_error": 9.8879238130678e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-12-01T00:00:00+08:00",
+      "independent_value": 0.008044298645519303,
+      "stored_value": 0.0080442986455193,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-12-01T06:00:00+08:00",
+      "independent_value": 0.0007617504677286858,
+      "stored_value": 0.0007617504677286,
+      "absolute_error": 8.57603918436034e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-12-15T12:00:00+08:00",
+      "independent_value": 0.0014029950447945205,
+      "stored_value": 0.0014029950447945,
+      "absolute_error": 2.0599841277224584e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-12-16T09:00:00+08:00",
+      "independent_value": 0.004373594900741945,
+      "stored_value": 0.0043735949007419,
+      "absolute_error": 4.5102810375396984e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-12-23T01:00:00+08:00",
+      "independent_value": 9.416810522716286e-05,
+      "stored_value": 9.416810522716284e-05,
+      "absolute_error": 2.710505431213761e-20
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-12-24T06:00:00+08:00",
+      "independent_value": 0.000243805021336027,
+      "stored_value": 0.000243805021336,
+      "absolute_error": 2.699663409488906e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-12-27T08:00:00+08:00",
+      "independent_value": 3.859849095265982e-06,
+      "stored_value": 3.859849095265982e-06,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-12-28T11:00:00+08:00",
+      "independent_value": 0.005228906216598997,
+      "stored_value": 0.0052289062165989,
+      "absolute_error": 9.71445146547012e-17
+    },
+    {
+      "group": "Guizhou|wind",
+      "time": "2020-12-31T23:00:00+08:00",
+      "independent_value": 0.0003270873924191267,
+      "stored_value": 0.0003270873924191,
+      "absolute_error": 2.6725583551767684e-17
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-01-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-01-15T12:00:00+08:00",
+      "independent_value": 0.25262485714285715,
+      "stored_value": 0.2526248571428571,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-01-16T02:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-01-22T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-01-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-02-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-02-15T12:00:00+08:00",
+      "independent_value": 0.09277987577639751,
+      "stored_value": 0.0927798757763975,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-02-17T06:00:00+08:00",
+      "independent_value": 0.0012459627329192546,
+      "stored_value": 0.0012459627329192,
+      "absolute_error": 5.4643789493269423e-17
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-02-29T12:00:00+08:00",
+      "independent_value": 0.3627024968944099,
+      "stored_value": 0.3627024968944098,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-02-29T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-03-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-03-05T15:00:00+08:00",
+      "independent_value": 0.38868314285714284,
+      "stored_value": 0.3886831428571427,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-03-15T12:00:00+08:00",
+      "independent_value": 0.7272608447204968,
+      "stored_value": 0.7272608447204967,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-03-19T22:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-03-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-04-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-04-07T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-04-12T10:00:00+08:00",
+      "independent_value": 0.7264254161490683,
+      "stored_value": 0.7264254161490683,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-04-15T12:00:00+08:00",
+      "independent_value": 0.7746684596273291,
+      "stored_value": 0.7746684596273291,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-04-19T17:00:00+08:00",
+      "independent_value": 0.07400363975155279,
+      "stored_value": 0.0740036397515527,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-04-30T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-05-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-05-13T06:00:00+08:00",
+      "independent_value": 0.16912212422360248,
+      "stored_value": 0.1691221242236025,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-05-15T12:00:00+08:00",
+      "independent_value": 0.5440944177888198,
+      "stored_value": 0.5440944177888197,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-05-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-06-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-06-15T12:00:00+08:00",
+      "independent_value": 0.3538281381416149,
+      "stored_value": 0.3538281381416149,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-06-30T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-07-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-07-08T13:00:00+08:00",
+      "independent_value": 0.6380561938782608,
+      "stored_value": 0.6380561938782608,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-07-15T12:00:00+08:00",
+      "independent_value": 0.5589066795527949,
+      "stored_value": 0.5589066795527948,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-07-22T01:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-07-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-08-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-08-15T12:00:00+08:00",
+      "independent_value": 0.6624438160049688,
+      "stored_value": 0.6624438160049687,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-08-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-09-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-09-15T12:00:00+08:00",
+      "independent_value": 0.22759105433043478,
+      "stored_value": 0.2275910543304348,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-09-15T14:00:00+08:00",
+      "independent_value": 0.29304787772919255,
+      "stored_value": 0.2930478777291925,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-09-30T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-10-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-10-04T12:00:00+08:00",
+      "independent_value": 0.4335808819875776,
+      "stored_value": 0.4335808819875776,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-10-15T12:00:00+08:00",
+      "independent_value": 0.17495006211180122,
+      "stored_value": 0.1749500621118012,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-10-26T18:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-10-28T08:00:00+08:00",
+      "independent_value": 0.11739207453416148,
+      "stored_value": 0.1173920745341614,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-10-29T04:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-10-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-11-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-11-07T08:00:00+08:00",
+      "independent_value": 0.2573352298136646,
+      "stored_value": 0.2573352298136645,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-11-15T12:00:00+08:00",
+      "independent_value": 0.4422006211180124,
+      "stored_value": 0.4422006211180124,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-11-16T20:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-11-30T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-12-01T00:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-12-01T06:00:00+08:00",
+      "independent_value": 0.0005148571428571429,
+      "stored_value": 0.0005148571428571,
+      "absolute_error": 4.2825985813177425e-17
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-12-15T12:00:00+08:00",
+      "independent_value": 0.44622085714285714,
+      "stored_value": 0.446220857142857,
+      "absolute_error": 1.6653345369377348e-16
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-12-16T09:00:00+08:00",
+      "independent_value": 0.3009473043478261,
+      "stored_value": 0.3009473043478259,
+      "absolute_error": 1.6653345369377348e-16
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-12-23T01:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-12-24T06:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-12-27T08:00:00+08:00",
+      "independent_value": 0.11575817391304348,
+      "stored_value": 0.1157581739130434,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-12-28T11:00:00+08:00",
+      "independent_value": 0.39626007453416145,
+      "stored_value": 0.3962600745341615,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Jiangsu|solar",
+      "time": "2020-12-31T23:00:00+08:00",
+      "independent_value": 0.0,
+      "stored_value": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-01-01T00:00:00+08:00",
+      "independent_value": 7.202374862689159e-06,
+      "stored_value": 7.202374862689159e-06,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-01-15T12:00:00+08:00",
+      "independent_value": 0.018763848434190888,
+      "stored_value": 0.0187638484341908,
+      "absolute_error": 8.673617379884035e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-01-16T02:00:00+08:00",
+      "independent_value": 0.16321050717150706,
+      "stored_value": 0.163210507171507,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-01-22T23:00:00+08:00",
+      "independent_value": 0.09972451848522691,
+      "stored_value": 0.0997245184852269,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-01-31T23:00:00+08:00",
+      "independent_value": 0.0021849524557766495,
+      "stored_value": 0.0021849524557766,
+      "absolute_error": 4.9439619065339e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-02-01T00:00:00+08:00",
+      "independent_value": 0.0022234307951448785,
+      "stored_value": 0.0022234307951448,
+      "absolute_error": 7.849623728795052e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-02-15T12:00:00+08:00",
+      "independent_value": 0.8157261731549846,
+      "stored_value": 0.8157261731549845,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-02-17T06:00:00+08:00",
+      "independent_value": 0.5891187319340784,
+      "stored_value": 0.5891187319340785,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-02-29T12:00:00+08:00",
+      "independent_value": 0.08975883229810523,
+      "stored_value": 0.0897588322981052,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-02-29T23:00:00+08:00",
+      "independent_value": 0.05159207440957605,
+      "stored_value": 0.051592074409576,
+      "absolute_error": 4.85722573273506e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-03-01T00:00:00+08:00",
+      "independent_value": 0.06810496450643092,
+      "stored_value": 0.0681049645064309,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-03-05T15:00:00+08:00",
+      "independent_value": 0.00012165104926025709,
+      "stored_value": 0.0001216510492602,
+      "absolute_error": 5.709679690851788e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-03-15T12:00:00+08:00",
+      "independent_value": 0.0983004639539085,
+      "stored_value": 0.0983004639539085,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-03-19T22:00:00+08:00",
+      "independent_value": 0.01114093753018207,
+      "stored_value": 0.011140937530182,
+      "absolute_error": 6.938893903907228e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-03-31T23:00:00+08:00",
+      "independent_value": 0.011199391575556234,
+      "stored_value": 0.0111993915755562,
+      "absolute_error": 3.469446951953614e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-04-01T00:00:00+08:00",
+      "independent_value": 0.01946641592186353,
+      "stored_value": 0.0194664159218635,
+      "absolute_error": 3.122502256758253e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-04-07T23:00:00+08:00",
+      "independent_value": 0.02934103364063939,
+      "stored_value": 0.0293410336406393,
+      "absolute_error": 9.020562075079397e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-04-12T10:00:00+08:00",
+      "independent_value": 0.16222034835578175,
+      "stored_value": 0.1622203483557817,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-04-15T12:00:00+08:00",
+      "independent_value": 0.00043904137698051965,
+      "stored_value": 0.0004390413769805,
+      "absolute_error": 1.962405932198763e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-04-19T17:00:00+08:00",
+      "independent_value": 0.42861851666125717,
+      "stored_value": 0.4286185166612571,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-04-30T23:00:00+08:00",
+      "independent_value": 0.5374004492911755,
+      "stored_value": 0.5374004492911754,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-05-01T00:00:00+08:00",
+      "independent_value": 0.514319381480181,
+      "stored_value": 0.514319381480181,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-05-13T06:00:00+08:00",
+      "independent_value": 0.10147065731136827,
+      "stored_value": 0.1014706573113682,
+      "absolute_error": 6.938893903907228e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-05-15T12:00:00+08:00",
+      "independent_value": 0.00039127280182728937,
+      "stored_value": 0.0003912728018272,
+      "absolute_error": 8.939246912142984e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-05-31T23:00:00+08:00",
+      "independent_value": 0.0037251393407723567,
+      "stored_value": 0.0037251393407723,
+      "absolute_error": 5.681219383824043e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-06-01T00:00:00+08:00",
+      "independent_value": 0.0020714901073650826,
+      "stored_value": 0.002071490107365,
+      "absolute_error": 8.239936510889834e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-06-15T12:00:00+08:00",
+      "independent_value": 0.030885196794137277,
+      "stored_value": 0.0308851967941372,
+      "absolute_error": 7.632783294297951e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-06-30T23:00:00+08:00",
+      "independent_value": 0.0004285071491962345,
+      "stored_value": 0.0004285071491962,
+      "absolute_error": 3.447762908503904e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-07-01T00:00:00+08:00",
+      "independent_value": 0.00023000444540994682,
+      "stored_value": 0.0002300044454099,
+      "absolute_error": 4.6810428797061654e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-07-08T13:00:00+08:00",
+      "independent_value": 0.03740067126660254,
+      "stored_value": 0.0374006712666025,
+      "absolute_error": 4.163336342344337e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-07-15T12:00:00+08:00",
+      "independent_value": 0.00019288242300826675,
+      "stored_value": 0.0001928824230082,
+      "absolute_error": 6.675974877079494e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-07-22T01:00:00+08:00",
+      "independent_value": 0.001119399103914576,
+      "stored_value": 0.0011193991039145,
+      "absolute_error": 7.611099250848241e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-07-31T23:00:00+08:00",
+      "independent_value": 0.5106081735923753,
+      "stored_value": 0.5106081735923753,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-08-01T00:00:00+08:00",
+      "independent_value": 0.47649357014749005,
+      "stored_value": 0.47649357014749,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-08-15T12:00:00+08:00",
+      "independent_value": 0.15241927298529298,
+      "stored_value": 0.1524192729852929,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-08-31T23:00:00+08:00",
+      "independent_value": 0.01330231622761102,
+      "stored_value": 0.013302316227611,
+      "absolute_error": 2.0816681711721685e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-09-01T00:00:00+08:00",
+      "independent_value": 0.012042055094664779,
+      "stored_value": 0.0120420550946647,
+      "absolute_error": 7.806255641895632e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-09-15T12:00:00+08:00",
+      "independent_value": 0.0011983797465525796,
+      "stored_value": 0.0011983797465525,
+      "absolute_error": 7.958043946043603e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-09-15T14:00:00+08:00",
+      "independent_value": 0.0009837513225915623,
+      "stored_value": 0.0009837513225915,
+      "absolute_error": 6.245004513516506e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-09-30T23:00:00+08:00",
+      "independent_value": 0.002778845419207183,
+      "stored_value": 0.0027788454192071,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-10-01T00:00:00+08:00",
+      "independent_value": 0.0013090788662046423,
+      "stored_value": 0.0013090788662046,
+      "absolute_error": 4.228388472693467e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-10-04T12:00:00+08:00",
+      "independent_value": 0.5511407548776798,
+      "stored_value": 0.5511407548776798,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-10-15T12:00:00+08:00",
+      "independent_value": 0.044730873035673184,
+      "stored_value": 0.0447308730356731,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-10-26T18:00:00+08:00",
+      "independent_value": 0.0031761544156959517,
+      "stored_value": 0.0031761544156959,
+      "absolute_error": 5.160802341031001e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-10-28T08:00:00+08:00",
+      "independent_value": 0.08228291578548376,
+      "stored_value": 0.0822829157854837,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-10-29T04:00:00+08:00",
+      "independent_value": 0.11984158091935972,
+      "stored_value": 0.1198415809193596,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-10-31T23:00:00+08:00",
+      "independent_value": 0.019812295697715157,
+      "stored_value": 0.0198122956977151,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-11-01T00:00:00+08:00",
+      "independent_value": 0.012176957074101602,
+      "stored_value": 0.0121769570741016,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-11-07T08:00:00+08:00",
+      "independent_value": 0.006380063483398114,
+      "stored_value": 0.0063800634833981,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-11-15T12:00:00+08:00",
+      "independent_value": 0.003644156772422579,
+      "stored_value": 0.0036441567724225,
+      "absolute_error": 7.892991815694472e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-11-16T20:00:00+08:00",
+      "independent_value": 0.09257488466146589,
+      "stored_value": 0.0925748846614658,
+      "absolute_error": 9.71445146547012e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-11-30T23:00:00+08:00",
+      "independent_value": 0.028553277903758636,
+      "stored_value": 0.0285532779037586,
+      "absolute_error": 3.469446951953614e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-12-01T00:00:00+08:00",
+      "independent_value": 0.02498029381876042,
+      "stored_value": 0.0249802938187604,
+      "absolute_error": 2.0816681711721685e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-12-01T06:00:00+08:00",
+      "independent_value": 0.020837409963387822,
+      "stored_value": 0.0208374099633878,
+      "absolute_error": 2.0816681711721685e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-12-15T12:00:00+08:00",
+      "independent_value": 0.07349379668046808,
+      "stored_value": 0.073493796680468,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-12-16T09:00:00+08:00",
+      "independent_value": 0.10718628980487639,
+      "stored_value": 0.1071862898048764,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-12-23T01:00:00+08:00",
+      "independent_value": 0.04002049543486876,
+      "stored_value": 0.0400204954348687,
+      "absolute_error": 6.245004513516506e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-12-24T06:00:00+08:00",
+      "independent_value": 0.11501813858292885,
+      "stored_value": 0.1150181385829288,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-12-27T08:00:00+08:00",
+      "independent_value": 0.0005890514350665214,
+      "stored_value": 0.0005890514350665,
+      "absolute_error": 2.1358782797964437e-17
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-12-28T11:00:00+08:00",
+      "independent_value": 9.89285756936692e-08,
+      "stored_value": 9.89285756936692e-08,
+      "absolute_error": 0.0
+    },
+    {
+      "group": "Jiangsu|wind",
+      "time": "2020-12-31T23:00:00+08:00",
+      "independent_value": 0.11354769578756051,
+      "stored_value": 0.1135476957875605,
+      "absolute_error": 1.3877787807814457e-17
+    }
+  ]
+}

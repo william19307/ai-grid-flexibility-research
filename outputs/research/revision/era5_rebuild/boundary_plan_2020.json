@@ -1,0 +1,2187 @@
+[
+  {
+    "id": "a02642820c99b5afae34497a",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.236",
+      "longitude": "106.104",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.236&longitude=106.104&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "dc3605dc89c391fceab4b302",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.267",
+      "longitude": "107.482",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.267&longitude=107.482&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "453936845e570ca8fda586da",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.309",
+      "longitude": "106.937",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.309&longitude=106.937&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "b0d749f31d02b826de9d1ec3",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.323",
+      "longitude": "105.991",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.323&longitude=105.991&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "9a0fa3540340ccc2400857a3",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.570",
+      "longitude": "107.725",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.570&longitude=107.725&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "fa9dc439462e3d61d2b19228",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.636",
+      "longitude": "108.148",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.636&longitude=108.148&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "1354c208aa62c8fcf6bff310",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.866",
+      "longitude": "105.422",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.866&longitude=105.422&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "31088aa91fc0d7d885af848e",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.895",
+      "longitude": "105.498",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.895&longitude=105.498&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "88b5318ade0ae210e43556da",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.917",
+      "longitude": "105.358",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.917&longitude=105.358&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "deb02ef4c87e04e14423f29f",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.921",
+      "longitude": "105.447",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.921&longitude=105.447&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "7abb53f79ccb77a21837a1d0",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.930",
+      "longitude": "105.434",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.930&longitude=105.434&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "1a35147f7dc2b11b760adaf1",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.930",
+      "longitude": "105.490",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.930&longitude=105.490&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "b944b2881a807b759ac913aa",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.938",
+      "longitude": "105.357",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.938&longitude=105.357&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "83b15da85a79cd02c6004ffd",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.944",
+      "longitude": "106.946",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.944&longitude=106.946&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "0f2f50bc1890487779acb8f0",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.945",
+      "longitude": "105.284",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.945&longitude=105.284&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "03a9e367afcc060e2f14b0f0",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.945",
+      "longitude": "105.403",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.945&longitude=105.403&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "5aa523b99c4e15fc68802393",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.951",
+      "longitude": "107.188",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.951&longitude=107.188&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "711228cc3a4c11272b443352",
+    "year": 2020,
+    "parameters": {
+      "latitude": "25.953",
+      "longitude": "106.093",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=25.953&longitude=106.093&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "a58b4890bffa2b3594a766c9",
+    "year": 2020,
+    "parameters": {
+      "latitude": "26.091",
+      "longitude": "108.768",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=26.091&longitude=108.768&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "6fde68a14f8ea2206886c9c8",
+    "year": 2020,
+    "parameters": {
+      "latitude": "26.092",
+      "longitude": "105.610",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=26.092&longitude=105.610&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "4beeb95acb2fc8ca8d968844",
+    "year": 2020,
+    "parameters": {
+      "latitude": "26.184",
+      "longitude": "107.342",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=26.184&longitude=107.342&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "ae36729e6bcf2b7387d22986",
+    "year": 2020,
+    "parameters": {
+      "latitude": "26.244",
+      "longitude": "105.965",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=26.244&longitude=105.965&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "704a275c31d3497874c12f8a",
+    "year": 2020,
+    "parameters": {
+      "latitude": "26.361",
+      "longitude": "108.856",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=26.361&longitude=108.856&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "881de0a90d1b11a772ede008",
+    "year": 2020,
+    "parameters": {
+      "latitude": "26.454",
+      "longitude": "106.993",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=26.454&longitude=106.993&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "353784c04ecdfec1048acfb4",
+    "year": 2020,
+    "parameters": {
+      "latitude": "26.530",
+      "longitude": "105.940",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=26.530&longitude=105.940&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "c913c87d5eebcbf7b5168d4f",
+    "year": 2020,
+    "parameters": {
+      "latitude": "26.590",
+      "longitude": "108.507",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=26.590&longitude=108.507&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "ceec80b044eda3d4abc3b51e",
+    "year": 2020,
+    "parameters": {
+      "latitude": "26.849",
+      "longitude": "105.252",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=26.849&longitude=105.252&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "77183b18133c12c2f8d22ae6",
+    "year": 2020,
+    "parameters": {
+      "latitude": "26.871",
+      "longitude": "105.773",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=26.871&longitude=105.773&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "61e3a3e4cd978bb75eb208b9",
+    "year": 2020,
+    "parameters": {
+      "latitude": "26.936",
+      "longitude": "107.364",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=26.936&longitude=107.364&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "c232fff4a0ffb9348b62bed9",
+    "year": 2020,
+    "parameters": {
+      "latitude": "26.951",
+      "longitude": "104.381",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=26.951&longitude=104.381&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "58a73d9e51928321c0994763",
+    "year": 2020,
+    "parameters": {
+      "latitude": "26.986",
+      "longitude": "107.488",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=26.986&longitude=107.488&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "de679f25ec6688d06872d38f",
+    "year": 2020,
+    "parameters": {
+      "latitude": "27.000",
+      "longitude": "107.000",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=27.000&longitude=107.000&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "70683263737789e83adc0e09",
+    "year": 2020,
+    "parameters": {
+      "latitude": "27.035",
+      "longitude": "105.653",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=27.035&longitude=105.653&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "0eec0a3a6efec763ccef6272",
+    "year": 2020,
+    "parameters": {
+      "latitude": "27.207",
+      "longitude": "106.120",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=27.207&longitude=106.120&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "7359f4d0af618872a061fc2f",
+    "year": 2020,
+    "parameters": {
+      "latitude": "27.265",
+      "longitude": "106.201",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=27.265&longitude=106.201&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "3ad9f11e92d771a8f2327ff2",
+    "year": 2020,
+    "parameters": {
+      "latitude": "27.611",
+      "longitude": "109.105",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=27.611&longitude=109.105&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "44d82e81f58393b95ea08f04",
+    "year": 2020,
+    "parameters": {
+      "latitude": "27.664",
+      "longitude": "108.345",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=27.664&longitude=108.345&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "5a9fc5cf6ea89c3b678aa431",
+    "year": 2020,
+    "parameters": {
+      "latitude": "27.684",
+      "longitude": "106.613",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=27.684&longitude=106.613&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "0fcdb3cd101a5d83cc3e739c",
+    "year": 2020,
+    "parameters": {
+      "latitude": "27.704",
+      "longitude": "108.402",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=27.704&longitude=108.402&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "552339a6d94ca15805611d03",
+    "year": 2020,
+    "parameters": {
+      "latitude": "28.142",
+      "longitude": "106.854",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=28.142&longitude=106.854&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "5c9c5591756fb191665efde4",
+    "year": 2020,
+    "parameters": {
+      "latitude": "31.773",
+      "longitude": "121.105",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.773&longitude=121.105&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "3f6412a3cb8864be1f4666e8",
+    "year": 2020,
+    "parameters": {
+      "latitude": "31.796",
+      "longitude": "119.454",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.796&longitude=119.454&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "63c28d6e96401aa44eafc45c",
+    "year": 2020,
+    "parameters": {
+      "latitude": "31.822",
+      "longitude": "119.517",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.822&longitude=119.517&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "78fa12ccaf2f0a0c43d68c51",
+    "year": 2020,
+    "parameters": {
+      "latitude": "32.045",
+      "longitude": "121.709",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.045&longitude=121.709&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "08b091259638219c7a483415",
+    "year": 2020,
+    "parameters": {
+      "latitude": "32.134",
+      "longitude": "119.428",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.134&longitude=119.428&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "9b8bf0fa115876596f7684d4",
+    "year": 2020,
+    "parameters": {
+      "latitude": "32.345",
+      "longitude": "121.809",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.345&longitude=121.809&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "4a23332f3abbda1af695b220",
+    "year": 2020,
+    "parameters": {
+      "latitude": "32.526",
+      "longitude": "121.124",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.526&longitude=121.124&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "15b927b2df27837d6002c152",
+    "year": 2020,
+    "parameters": {
+      "latitude": "32.643",
+      "longitude": "120.997",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.643&longitude=120.997&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "892b10592cae7841bb46273e",
+    "year": 2020,
+    "parameters": {
+      "latitude": "32.658",
+      "longitude": "121.258",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.658&longitude=121.258&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "8fcfe51c89c94a73f052a67a",
+    "year": 2020,
+    "parameters": {
+      "latitude": "32.664",
+      "longitude": "121.601",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.664&longitude=121.601&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "ed1c433a3df7c89e99c8ba51",
+    "year": 2020,
+    "parameters": {
+      "latitude": "32.664",
+      "longitude": "121.807",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.664&longitude=121.807&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "ab503f64523b1da9e9ead2de",
+    "year": 2020,
+    "parameters": {
+      "latitude": "32.823",
+      "longitude": "121.672",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.823&longitude=121.672&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "bdf54d7e2c3b46d891c8bcfb",
+    "year": 2020,
+    "parameters": {
+      "latitude": "32.825",
+      "longitude": "121.403",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.825&longitude=121.403&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "a1bd480199f11392699a5768",
+    "year": 2020,
+    "parameters": {
+      "latitude": "32.832",
+      "longitude": "121.849",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.832&longitude=121.849&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "712df2e9286df469a3b56d4c",
+    "year": 2020,
+    "parameters": {
+      "latitude": "32.850",
+      "longitude": "120.930",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.850&longitude=120.930&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "c819e9dfbcd860ad01a5cd0e",
+    "year": 2020,
+    "parameters": {
+      "latitude": "32.919",
+      "longitude": "121.308",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.919&longitude=121.308&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "9b58310d1f6e60fa6e0d261f",
+    "year": 2020,
+    "parameters": {
+      "latitude": "32.956",
+      "longitude": "119.234",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.956&longitude=119.234&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "ffd93db3739a3bf0f7449747",
+    "year": 2020,
+    "parameters": {
+      "latitude": "33.038",
+      "longitude": "119.604",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=33.038&longitude=119.604&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "2cf18c7c38b3f389924bc4f5",
+    "year": 2020,
+    "parameters": {
+      "latitude": "33.081",
+      "longitude": "119.282",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=33.081&longitude=119.282&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "e0e59b1a5dfad7234bd942f1",
+    "year": 2020,
+    "parameters": {
+      "latitude": "33.148",
+      "longitude": "119.589",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=33.148&longitude=119.589&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "1fd6775ce639218dae8fc2a4",
+    "year": 2020,
+    "parameters": {
+      "latitude": "33.178",
+      "longitude": "119.554",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=33.178&longitude=119.554&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "d1e19738645a0e40d1dcfe47",
+    "year": 2020,
+    "parameters": {
+      "latitude": "33.212",
+      "longitude": "120.768",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=33.212&longitude=120.768&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "66c0f3a73e883d8a1bebf1d5",
+    "year": 2020,
+    "parameters": {
+      "latitude": "33.236",
+      "longitude": "121.240",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=33.236&longitude=121.240&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "d4c4fddff328b63263abe8bf",
+    "year": 2020,
+    "parameters": {
+      "latitude": "33.240",
+      "longitude": "118.180",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=33.240&longitude=118.180&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "d9c675afb10d2aa965594b60",
+    "year": 2020,
+    "parameters": {
+      "latitude": "33.282",
+      "longitude": "119.686",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=33.282&longitude=119.686&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "bef605e192294700efb0f577",
+    "year": 2020,
+    "parameters": {
+      "latitude": "33.433",
+      "longitude": "121.378",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=33.433&longitude=121.378&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "556e906d4fd7ebb1692d6a25",
+    "year": 2020,
+    "parameters": {
+      "latitude": "33.508",
+      "longitude": "121.067",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=33.508&longitude=121.067&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "d9e0449edb00f725570b74e9",
+    "year": 2020,
+    "parameters": {
+      "latitude": "33.579",
+      "longitude": "104.869",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=33.579&longitude=104.869&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "b2f91a0ec8c2f87bf9cbd887",
+    "year": 2020,
+    "parameters": {
+      "latitude": "33.590",
+      "longitude": "121.210",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=33.590&longitude=121.210&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "a8c9a56b031bf102534e1cdf",
+    "year": 2020,
+    "parameters": {
+      "latitude": "33.594",
+      "longitude": "121.162",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=33.594&longitude=121.162&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "bf07ed0f0d016c8ba8019daa",
+    "year": 2020,
+    "parameters": {
+      "latitude": "33.595",
+      "longitude": "118.198",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=33.595&longitude=118.198&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "3af784ba49f9c9ffc8c6c2da",
+    "year": 2020,
+    "parameters": {
+      "latitude": "33.660",
+      "longitude": "121.100",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=33.660&longitude=121.100&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "380082660fb7974277942d4b",
+    "year": 2020,
+    "parameters": {
+      "latitude": "34.114",
+      "longitude": "118.801",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=34.114&longitude=118.801&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "15659ca1744bbe2e9119f10a",
+    "year": 2020,
+    "parameters": {
+      "latitude": "34.240",
+      "longitude": "120.329",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=34.240&longitude=120.329&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "b3d2e52f36d13f5ddfddc0aa",
+    "year": 2020,
+    "parameters": {
+      "latitude": "34.362",
+      "longitude": "120.210",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=34.362&longitude=120.210&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "7f9284c75921092ee79ead36",
+    "year": 2020,
+    "parameters": {
+      "latitude": "34.467",
+      "longitude": "119.617",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=34.467&longitude=119.617&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "039d7caf55d353a4e21763db",
+    "year": 2020,
+    "parameters": {
+      "latitude": "34.481",
+      "longitude": "119.584",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=34.481&longitude=119.584&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "16f000717e852909fc616eda",
+    "year": 2020,
+    "parameters": {
+      "latitude": "34.525",
+      "longitude": "119.740",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=34.525&longitude=119.740&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "e15436295d8503423671919e",
+    "year": 2020,
+    "parameters": {
+      "latitude": "34.546",
+      "longitude": "119.396",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=34.546&longitude=119.396&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "2a4a17d3dcd6a1a02bf8561f",
+    "year": 2020,
+    "parameters": {
+      "latitude": "34.819",
+      "longitude": "116.993",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=34.819&longitude=116.993&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "6e5eabc1f4ff2505cf542fdb",
+    "year": 2020,
+    "parameters": {
+      "latitude": "36.375",
+      "longitude": "106.593",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=36.375&longitude=106.593&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "7cbb81b421d0e3a1ec8bf159",
+    "year": 2020,
+    "parameters": {
+      "latitude": "36.464",
+      "longitude": "106.611",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=36.464&longitude=106.611&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "53ec63060412c5bc8e028492",
+    "year": 2020,
+    "parameters": {
+      "latitude": "36.509",
+      "longitude": "106.576",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=36.509&longitude=106.576&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "3ebff46135bdf8b1d7fc3cc7",
+    "year": 2020,
+    "parameters": {
+      "latitude": "36.625",
+      "longitude": "106.823",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=36.625&longitude=106.823&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "b17806aa2aedc7f204709002",
+    "year": 2020,
+    "parameters": {
+      "latitude": "36.653",
+      "longitude": "103.539",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=36.653&longitude=103.539&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "a1c3cd0eb465669171f0ef85",
+    "year": 2020,
+    "parameters": {
+      "latitude": "36.910",
+      "longitude": "106.706",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=36.910&longitude=106.706&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "834bb6669434b5a864dd53e5",
+    "year": 2020,
+    "parameters": {
+      "latitude": "37.639",
+      "longitude": "103.245",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=37.639&longitude=103.245&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "75f503615a92242db77adf14",
+    "year": 2020,
+    "parameters": {
+      "latitude": "37.739",
+      "longitude": "103.103",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=37.739&longitude=103.103&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "6ec8a96bce2e2fa6b333d4d8",
+    "year": 2020,
+    "parameters": {
+      "latitude": "37.758",
+      "longitude": "103.127",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=37.758&longitude=103.127&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "9fcbd4defb9b22d672d23ecc",
+    "year": 2020,
+    "parameters": {
+      "latitude": "37.928",
+      "longitude": "102.639",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=37.928&longitude=102.639&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "09f6b5230d83dcf804b0c93a",
+    "year": 2020,
+    "parameters": {
+      "latitude": "38.000",
+      "longitude": "102.000",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=38.000&longitude=102.000&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "4bb53d4eba20236e6b678785",
+    "year": 2020,
+    "parameters": {
+      "latitude": "38.104",
+      "longitude": "101.858",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=38.104&longitude=101.858&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "4f68a9c027f5a4b900670cb9",
+    "year": 2020,
+    "parameters": {
+      "latitude": "38.169",
+      "longitude": "102.291",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=38.169&longitude=102.291&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "02ff282bef7363db8660a8e3",
+    "year": 2020,
+    "parameters": {
+      "latitude": "38.266",
+      "longitude": "102.282",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=38.266&longitude=102.282&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "d8cb36a7064ee1a33efd3de8",
+    "year": 2020,
+    "parameters": {
+      "latitude": "38.406",
+      "longitude": "102.064",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=38.406&longitude=102.064&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "8b04f817d56e088c42ce86fb",
+    "year": 2020,
+    "parameters": {
+      "latitude": "38.411",
+      "longitude": "102.053",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=38.411&longitude=102.053&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "1dc455ad998139f261fc77cb",
+    "year": 2020,
+    "parameters": {
+      "latitude": "38.466",
+      "longitude": "102.342",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=38.466&longitude=102.342&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "39a1774c5686ced55232ce80",
+    "year": 2020,
+    "parameters": {
+      "latitude": "38.825",
+      "longitude": "100.829",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=38.825&longitude=100.829&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "db72c742c257655842de2d4a",
+    "year": 2020,
+    "parameters": {
+      "latitude": "38.844",
+      "longitude": "100.677",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=38.844&longitude=100.677&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "ad97bd1b0cba71fb755f5ea5",
+    "year": 2020,
+    "parameters": {
+      "latitude": "38.927",
+      "longitude": "94.623",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=38.927&longitude=94.623&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "cdb13b7bea3e698f69347870",
+    "year": 2020,
+    "parameters": {
+      "latitude": "38.949",
+      "longitude": "102.441",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=38.949&longitude=102.441&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "b435df1f2c9e04e1eca60408",
+    "year": 2020,
+    "parameters": {
+      "latitude": "38.975",
+      "longitude": "102.401",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=38.975&longitude=102.401&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "0ecd8218aa176abc2b9cb9e6",
+    "year": 2020,
+    "parameters": {
+      "latitude": "39.031",
+      "longitude": "102.161",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=39.031&longitude=102.161&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "dc1a45eebf2ad699596f2e22",
+    "year": 2020,
+    "parameters": {
+      "latitude": "39.146",
+      "longitude": "102.267",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=39.146&longitude=102.267&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "d9f449c61bcc5b1a4e89280d",
+    "year": 2020,
+    "parameters": {
+      "latitude": "39.339",
+      "longitude": "100.101",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=39.339&longitude=100.101&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "fc1584e5064abb3b83764b7c",
+    "year": 2020,
+    "parameters": {
+      "latitude": "39.766",
+      "longitude": "97.906",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=39.766&longitude=97.906&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "685ef255eea0280a43b97c74",
+    "year": 2020,
+    "parameters": {
+      "latitude": "39.844",
+      "longitude": "99.394",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=39.844&longitude=99.394&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "ab228bdd73ac62ba2a19d1fc",
+    "year": 2020,
+    "parameters": {
+      "latitude": "39.965",
+      "longitude": "98.984",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=39.965&longitude=98.984&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "ab6d636d1e61754299482f6b",
+    "year": 2020,
+    "parameters": {
+      "latitude": "39.985",
+      "longitude": "98.971",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=39.985&longitude=98.971&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "b2a28757deb61504b2a6c712",
+    "year": 2020,
+    "parameters": {
+      "latitude": "39.986",
+      "longitude": "98.903",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=39.986&longitude=98.903&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "883f1dfb2de15aed1126ae1e",
+    "year": 2020,
+    "parameters": {
+      "latitude": "40.225",
+      "longitude": "97.772",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=40.225&longitude=97.772&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "2b547da4af0372c8fef7771b",
+    "year": 2020,
+    "parameters": {
+      "latitude": "40.514",
+      "longitude": "97.273",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=40.514&longitude=97.273&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "366eac493cc049a38766def8",
+    "year": 2020,
+    "parameters": {
+      "latitude": "40.836",
+      "longitude": "96.306",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=40.836&longitude=96.306&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "3832af4b2c2cdedb36c3808c",
+    "year": 2020,
+    "parameters": {
+      "latitude": "40.997",
+      "longitude": "95.563",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=40.997&longitude=95.563&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  },
+  {
+    "id": "73b53c0f3886898b6fc809fb",
+    "year": 2020,
+    "parameters": {
+      "latitude": "41.551",
+      "longitude": "95.249",
+      "start_date": "2021-01-01",
+      "end_date": "2021-01-01",
+      "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+      "timezone": "Asia/Shanghai",
+      "models": "era5",
+      "wind_speed_unit": "ms",
+      "cell_selection": "land"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=41.551&longitude=95.249&start_date=2021-01-01&end_date=2021-01-01&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+    "expected_hours": 24,
+    "conservative_call_equivalents": 1,
+    "purpose": "next_year_endpoint_for_hour_beginning_dispatch_intervals"
+  }
+]

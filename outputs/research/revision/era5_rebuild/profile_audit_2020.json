@@ -1,0 +1,1226 @@
+{
+  "year": 2020,
+  "hours": 8784,
+  "source_sites": 120,
+  "source_coordinates": 115,
+  "complete_year_and_boundary_verified": true,
+  "interpolation_or_day_padding": false,
+  "generic_conversion_not_generation_calibration": true,
+  "wind_rule": "Mean of endpoint generic power factors; assumes linear power interpolation within hour",
+  "solar_rule": "Preceding-hour GHI at interval right endpoint; average endpoint air-temperature derating",
+  "calibration": "None; no archive-level scaling applied to exported aligned profile",
+  "comparison_scope": "Exploratory compound source refresh, API/unit rounding and grid-selection differences; not isolated causal model effect",
+  "summaries": [
+    {
+      "group": "Gansu|solar",
+      "aligned_unscaled_mean": 0.1806734882170903,
+      "same_conversion_fixed_legacy_scale_mean": 0.17248036478740802,
+      "old_profile_mean": 0.15938027781236944,
+      "source_refresh_diagnostic_rmse": 0.028439619573510204,
+      "source_refresh_diagnostic_correlation": 0.996045012297265,
+      "interval_rule_change_unscaled_rmse": 0.0769419880904019
+    },
+    {
+      "group": "Gansu|wind",
+      "aligned_unscaled_mean": 0.08031307847559029,
+      "same_conversion_fixed_legacy_scale_mean": 0.09318716399653373,
+      "old_profile_mean": 0.12417993243964788,
+      "source_refresh_diagnostic_rmse": 0.0603461138671113,
+      "source_refresh_diagnostic_correlation": 0.9132676364278012,
+      "interval_rule_change_unscaled_rmse": 0.01095266780576292
+    },
+    {
+      "group": "Guizhou|solar",
+      "aligned_unscaled_mean": 0.11461312094626695,
+      "same_conversion_fixed_legacy_scale_mean": 0.08141821446521294,
+      "old_profile_mean": 0.09364933094002481,
+      "source_refresh_diagnostic_rmse": 0.0340066308136396,
+      "source_refresh_diagnostic_correlation": 0.972826732704924,
+      "interval_rule_change_unscaled_rmse": 0.05900772629521252
+    },
+    {
+      "group": "Guizhou|wind",
+      "aligned_unscaled_mean": 0.024611879565093295,
+      "same_conversion_fixed_legacy_scale_mean": 0.05848828115159141,
+      "old_profile_mean": 0.10889663444957785,
+      "source_refresh_diagnostic_rmse": 0.08201378586755938,
+      "source_refresh_diagnostic_correlation": 0.944979241286918,
+      "interval_rule_change_unscaled_rmse": 0.005368822141036327
+    },
+    {
+      "group": "Jiangsu|solar",
+      "aligned_unscaled_mean": 0.1413406937762801,
+      "same_conversion_fixed_legacy_scale_mean": 0.1374669720605539,
+      "old_profile_mean": 0.1308054162046592,
+      "source_refresh_diagnostic_rmse": 0.02782683353741777,
+      "source_refresh_diagnostic_correlation": 0.9919020947920824,
+      "interval_rule_change_unscaled_rmse": 0.0661685354987014
+    },
+    {
+      "group": "Jiangsu|wind",
+      "aligned_unscaled_mean": 0.15309392601683908,
+      "same_conversion_fixed_legacy_scale_mean": 0.13794587725696592,
+      "old_profile_mean": 0.1472870462682458,
+      "source_refresh_diagnostic_rmse": 0.04228381062602531,
+      "source_refresh_diagnostic_correlation": 0.9774319491344594,
+      "interval_rule_change_unscaled_rmse": 0.019342479839526635
+    }
+  ],
+  "sources": [
+    {
+      "point": [
+        "25.236",
+        "106.104"
+      ],
+      "year_request": "063faa1e744aa584180ed6d0",
+      "boundary_request": "a02642820c99b5afae34497a",
+      "year_raw_sha256": "c494a358e0d349cc9b423b86a2b3b1b9a638fe4598889525acda78cf4172b4ec",
+      "boundary_raw_sha256": "f8972ef9caaa84fde8b000aa08e4964822a46df21a9ea6bda6888a5c2bad368b"
+    },
+    {
+      "point": [
+        "25.267",
+        "107.482"
+      ],
+      "year_request": "14926335565fc11fba8bf329",
+      "boundary_request": "dc3605dc89c391fceab4b302",
+      "year_raw_sha256": "f2fa8e08c00d6e7d26738a9d8f9676cb12fab5f6e87b225c463f4da3763e3100",
+      "boundary_raw_sha256": "fcf1f27998c5644357c828dad6371b4324c4f6e13741204e51dcda8c2d553b84"
+    },
+    {
+      "point": [
+        "25.309",
+        "106.937"
+      ],
+      "year_request": "9186c025f61ffb9ea781f5b6",
+      "boundary_request": "453936845e570ca8fda586da",
+      "year_raw_sha256": "7d3faa7c94dc39e85ee62a9983d2b714ddeaa98662440152f419897fe643d088",
+      "boundary_raw_sha256": "3f0ed25029cfc46f805c48b432e4c9331bb3842820204a2dc16bb27effcfaee6"
+    },
+    {
+      "point": [
+        "25.323",
+        "105.991"
+      ],
+      "year_request": "0a84bdcd0a01b9da80d27247",
+      "boundary_request": "b0d749f31d02b826de9d1ec3",
+      "year_raw_sha256": "0244ef1b9a3c73105bf0b7ef88f83068bff0bab9590abedc0a1fac49124e7378",
+      "boundary_raw_sha256": "1c3cc50d2b6c4e80ee7a54481a9f74c397ff71f4305280577fa36433bba8d000"
+    },
+    {
+      "point": [
+        "25.570",
+        "107.725"
+      ],
+      "year_request": "7a82a0907c1da0a64fb02d3b",
+      "boundary_request": "9a0fa3540340ccc2400857a3",
+      "year_raw_sha256": "604f060408c81692259f8e69f054bbf01d04d97982fab2df771e8370e7554aed",
+      "boundary_raw_sha256": "2fa6990b8ba8e2d535dc26b1ebc45af4e181dd5760613c05acfc22b7e404c72d"
+    },
+    {
+      "point": [
+        "25.636",
+        "108.148"
+      ],
+      "year_request": "5c2a23ce862c162a44982955",
+      "boundary_request": "fa9dc439462e3d61d2b19228",
+      "year_raw_sha256": "d94b3000f72d4b3ef230667c16972279dfed0e0abee98bd49b2f4ff8c1048f1e",
+      "boundary_raw_sha256": "6b755bae3ed85a0f46e20c513e2e2d59a8e9bf2b68df204772f8819c87f4540c"
+    },
+    {
+      "point": [
+        "25.866",
+        "105.422"
+      ],
+      "year_request": "d3980e6263654f2e342b943a",
+      "boundary_request": "1354c208aa62c8fcf6bff310",
+      "year_raw_sha256": "eb856bdf4b04323350b2cc9575ab0060a5124f401aa19c0e6207fcc0e093643f",
+      "boundary_raw_sha256": "0269286970edd8c40109627e25ad566666757d2cd9c5c5eccd25627a45331daa"
+    },
+    {
+      "point": [
+        "25.895",
+        "105.498"
+      ],
+      "year_request": "77c47dd3b028c8a014a880ad",
+      "boundary_request": "31088aa91fc0d7d885af848e",
+      "year_raw_sha256": "29fb4805e304f14def07fccc2736fa281437f485d634a340978c260e93a31a93",
+      "boundary_raw_sha256": "5b4f2c3d310eeb10d15de662051b27cfcfdd2a75786a700fc8900cd3d73a691f"
+    },
+    {
+      "point": [
+        "25.917",
+        "105.358"
+      ],
+      "year_request": "85ff40d6b68c4fec7bcae21c",
+      "boundary_request": "88b5318ade0ae210e43556da",
+      "year_raw_sha256": "9dd831d0e41ba8526d5e3a993b3a0e23447c9e9c030999e6a5f65d9698e99195",
+      "boundary_raw_sha256": "7209edf80af6ff2358a0f08d6e57410ee5b2aebcdd100e72b40eaaf974efabe3"
+    },
+    {
+      "point": [
+        "25.921",
+        "105.447"
+      ],
+      "year_request": "d1476da52a8c4689260cfea7",
+      "boundary_request": "deb02ef4c87e04e14423f29f",
+      "year_raw_sha256": "b66f47dc068b3bbd6be7ba93a54f4e39b8ed96cf956d9c5e528ea18e2d708b80",
+      "boundary_raw_sha256": "97c48df39e7a62de48ad805879948c8c37096db4336e995b28d799b2ae8ae159"
+    },
+    {
+      "point": [
+        "25.930",
+        "105.434"
+      ],
+      "year_request": "abb99c5d0c93ebd8025f2250",
+      "boundary_request": "7abb53f79ccb77a21837a1d0",
+      "year_raw_sha256": "abb6680b6fb092208722e44b0d458381ec3014d8cf11b5df2d71bc53cc7706ec",
+      "boundary_raw_sha256": "e28846733dd683b36973092635392891c66c06a5c4d282f5f5f75a916833ac75"
+    },
+    {
+      "point": [
+        "25.930",
+        "105.490"
+      ],
+      "year_request": "bbcb020f2974de9c47c9aabe",
+      "boundary_request": "1a35147f7dc2b11b760adaf1",
+      "year_raw_sha256": "f3c41a0f7c719f586f842cadbb4bfcf307593008f5e642cabb1db0caee8fab04",
+      "boundary_raw_sha256": "7da6c5cad14635c8a73ae5864f320789649e1d350d626900c67f54f126ba5834"
+    },
+    {
+      "point": [
+        "25.938",
+        "105.357"
+      ],
+      "year_request": "7ffa347be2cc732177fffa5c",
+      "boundary_request": "b944b2881a807b759ac913aa",
+      "year_raw_sha256": "a4aa08b2bf4c31830972289698ffcf1fc9f982236929c3ea0d36c48d44cfd875",
+      "boundary_raw_sha256": "a4ba0c53ced27264221bafee68b4e94c827300c57fa73ff1588edfeca323dc0e"
+    },
+    {
+      "point": [
+        "25.944",
+        "106.946"
+      ],
+      "year_request": "219e42e3dd602ca67699a6ba",
+      "boundary_request": "83b15da85a79cd02c6004ffd",
+      "year_raw_sha256": "25a43422d99b1db3312009d95c0f618b17bee9a978419ccc615513dcc8ce974f",
+      "boundary_raw_sha256": "24b38b4097c1ac33ade698aec928af9f0dda8e9244b3bad2a4fd5e05a7923e15"
+    },
+    {
+      "point": [
+        "25.945",
+        "105.284"
+      ],
+      "year_request": "78fb23afa91a07fe4dc87b58",
+      "boundary_request": "0f2f50bc1890487779acb8f0",
+      "year_raw_sha256": "638071f64c2d1392aae2eb0f47c8a037a25740849e6518b364dd75be9ad91f96",
+      "boundary_raw_sha256": "d3515a5c75a48ddfd6674f7a8c70988d9bd6f6437146a547854c863bc840abf2"
+    },
+    {
+      "point": [
+        "25.945",
+        "105.403"
+      ],
+      "year_request": "7bfb6c93c1973a0eacbe3a8d",
+      "boundary_request": "03a9e367afcc060e2f14b0f0",
+      "year_raw_sha256": "d0850a57f8ee5a1f5e2dcadc4fb7e0fb0922ba9918741aa9d0d115767237a30d",
+      "boundary_raw_sha256": "b4c63021850ced70cac45f2631859fd3be78cf72122d4c4a37ab7f669fa66be6"
+    },
+    {
+      "point": [
+        "25.951",
+        "107.188"
+      ],
+      "year_request": "127d0dcfb890ea91b9dcb79e",
+      "boundary_request": "5aa523b99c4e15fc68802393",
+      "year_raw_sha256": "3a0ab62fb1e56cec9af9613b1bb4e596ef6ccc63c76cb21e23d7e4ad4b6b2891",
+      "boundary_raw_sha256": "cb1de73769a7de3521bde637700d4c4b3254c28e7191c96ca9d3d4390c46f9f3"
+    },
+    {
+      "point": [
+        "25.953",
+        "106.093"
+      ],
+      "year_request": "14332ca4c5bcdef9649b76d6",
+      "boundary_request": "711228cc3a4c11272b443352",
+      "year_raw_sha256": "f86d260337e1768f83d77a7c7102c50463bef762e752ae6ec510640e94e0fa75",
+      "boundary_raw_sha256": "0ae942a67fb2547d9f729b1e3607323d0cb39244720eb75be51ddad1099543ed"
+    },
+    {
+      "point": [
+        "26.091",
+        "108.768"
+      ],
+      "year_request": "a63105355f378f11189f2be2",
+      "boundary_request": "a58b4890bffa2b3594a766c9",
+      "year_raw_sha256": "613bed49d0560be220fd9ebd91751389d57e6828c1f07c731526d43ed0cebfc2",
+      "boundary_raw_sha256": "52513e220a74d5e9c8e875156234e31ad56206398427d523960a6b5659cbe3c1"
+    },
+    {
+      "point": [
+        "26.092",
+        "105.610"
+      ],
+      "year_request": "bc6f30b6f2070aac67683490",
+      "boundary_request": "6fde68a14f8ea2206886c9c8",
+      "year_raw_sha256": "7caa296a27e192f1b477b212a16d77d00b90bfc972075c5e484bcee762eab832",
+      "boundary_raw_sha256": "e4c972c2dbafb460d85e146443ca74713c0b92c7ec9090df8356082a38374dc0"
+    },
+    {
+      "point": [
+        "26.184",
+        "107.342"
+      ],
+      "year_request": "febc91b9ce89fc9bf9b696aa",
+      "boundary_request": "4beeb95acb2fc8ca8d968844",
+      "year_raw_sha256": "bdf8884e65e034d08c7d2e75ea935546535790b8bf1c88622fa2e57bd1f0aebc",
+      "boundary_raw_sha256": "eae6d58f1e77ac26a203b46896a16a2f00c1455111a24d4ac6b2e662f9bd70d9"
+    },
+    {
+      "point": [
+        "26.244",
+        "105.965"
+      ],
+      "year_request": "c86d37b17e3bd2fc9b7f1e5a",
+      "boundary_request": "ae36729e6bcf2b7387d22986",
+      "year_raw_sha256": "cc084f55fd602abe8735eb76acd3879a20f4bceaba95ac02206a203ff9872e0b",
+      "boundary_raw_sha256": "e1688a01881a6298e22b3d1da50fe57a4430682acc7dc086ea5816735086e366"
+    },
+    {
+      "point": [
+        "26.361",
+        "108.856"
+      ],
+      "year_request": "1df0f8ae77f51b0309c54311",
+      "boundary_request": "704a275c31d3497874c12f8a",
+      "year_raw_sha256": "b144ff3e1bb98928faca33c0edec8864b12db593e2d256b93d37916305571a54",
+      "boundary_raw_sha256": "7e8edc15d55748ac6de54678c19be93a77381eedf39b1106169a3ce17043163d"
+    },
+    {
+      "point": [
+        "26.454",
+        "106.993"
+      ],
+      "year_request": "51fd9ede5123590a97025f9a",
+      "boundary_request": "881de0a90d1b11a772ede008",
+      "year_raw_sha256": "49a23811628eaece438a48daa2c17632aee8292305f5e1ed4bce7528dcecb00f",
+      "boundary_raw_sha256": "730a5462492594a7ecf5dac5fb69edbb039b15de66b4a200a9379af2512bc9a2"
+    },
+    {
+      "point": [
+        "26.530",
+        "105.940"
+      ],
+      "year_request": "8d27629f17ff7ac6a6f5d581",
+      "boundary_request": "353784c04ecdfec1048acfb4",
+      "year_raw_sha256": "f34301d0459f1e4c0216d471bb242f82487660acf6a5fcfe8e5fea295df0704e",
+      "boundary_raw_sha256": "0b2a454de270de2c1ba375b7dd49ae1b454d6e1715de6876f0a05ff176c9cb71"
+    },
+    {
+      "point": [
+        "26.590",
+        "108.507"
+      ],
+      "year_request": "8ee29eb2593a809e979d64a8",
+      "boundary_request": "c913c87d5eebcbf7b5168d4f",
+      "year_raw_sha256": "5752dce004d8f20285e91924208213fe01b1e581125fb2be0ac652651ed004f4",
+      "boundary_raw_sha256": "097c5c198dcf2c0094d295c3129b7252725194758d17b804dabeb0e0b1e702cf"
+    },
+    {
+      "point": [
+        "26.849",
+        "105.252"
+      ],
+      "year_request": "1dc683231adc00428fd8d73c",
+      "boundary_request": "ceec80b044eda3d4abc3b51e",
+      "year_raw_sha256": "c14b060befac556d0f46a5816f011d39aecf4203b7c7e1c0b950f72c44d3c210",
+      "boundary_raw_sha256": "f2562b612b99ff5735178ebc768a603c35d6cd0b89a863a7fc169cf5158ce29b"
+    },
+    {
+      "point": [
+        "26.871",
+        "105.773"
+      ],
+      "year_request": "afd36e5bfe74557fee4a8d7c",
+      "boundary_request": "77183b18133c12c2f8d22ae6",
+      "year_raw_sha256": "0cc5d2441b8f37d22199c209dcd1ff9232fca0d37f006d7682be6354bf1d3673",
+      "boundary_raw_sha256": "ba15b502c17c122305698e85e2453c8bce1d079c8dc0a89b9f115bf0413262f7"
+    },
+    {
+      "point": [
+        "26.936",
+        "107.364"
+      ],
+      "year_request": "3f688a6ffc2ea45248585921",
+      "boundary_request": "61e3a3e4cd978bb75eb208b9",
+      "year_raw_sha256": "31320b3dc888a263517a2997a328d8e9a98f3df77a5b2427e135b96a12b6a94f",
+      "boundary_raw_sha256": "1f9692adb62ea4e94f144331e0b374abfa2abe0db48e5bae79a9701d02386dec"
+    },
+    {
+      "point": [
+        "26.951",
+        "104.381"
+      ],
+      "year_request": "d892108769aed685331d7953",
+      "boundary_request": "c232fff4a0ffb9348b62bed9",
+      "year_raw_sha256": "1e4c2bf2dbee609f12a6b30699de9a5fbfb5905e540753cf475cef4df2a2b0a3",
+      "boundary_raw_sha256": "5807875ed83d1480d1b4ebbe8aaa609da3929d4643291a995c2563b092dfa8c7"
+    },
+    {
+      "point": [
+        "26.986",
+        "107.488"
+      ],
+      "year_request": "e422cc463c620393f3c0fbce",
+      "boundary_request": "58a73d9e51928321c0994763",
+      "year_raw_sha256": "880eeb09b33d8782b7076854955d585bc0a6c80c35489c1026d37fcb16005b10",
+      "boundary_raw_sha256": "98d6b634c61a136bdfe0f71bcbb8725565f5e03cd4f9f034cc007df0c4fa2286"
+    },
+    {
+      "point": [
+        "27.000",
+        "107.000"
+      ],
+      "year_request": "7630ae6954aaf82106e5f805",
+      "boundary_request": "de679f25ec6688d06872d38f",
+      "year_raw_sha256": "e6a10a6fa1a7d60f0f1bf732ced9aab43fff29fdab2156b3fce34fbb8d7c3954",
+      "boundary_raw_sha256": "86604fcac53ff5faa17580dbebf892bb8348aceee0c0d1c19dd1cb9aa547a3ff"
+    },
+    {
+      "point": [
+        "27.035",
+        "105.653"
+      ],
+      "year_request": "a819f5f04469fb488d4dfec4",
+      "boundary_request": "70683263737789e83adc0e09",
+      "year_raw_sha256": "06fbe3c701a32546f65949090aff7807c76ea155122c90f1e34cfc551eca245b",
+      "boundary_raw_sha256": "2442a56c943f1c8bbf49298e6b9ac644152d9972d9677084cf9169918bfd410c"
+    },
+    {
+      "point": [
+        "27.207",
+        "106.120"
+      ],
+      "year_request": "22167b34662c1a5ea212c452",
+      "boundary_request": "0eec0a3a6efec763ccef6272",
+      "year_raw_sha256": "9c5040408cb8a5f6a645cb7b631c3970234728a034dbbb416fe9a977f515e161",
+      "boundary_raw_sha256": "703d720d4eb8a9ef661ed58931cf39cde526c1bdec2690ba5fb8b1f7743291be"
+    },
+    {
+      "point": [
+        "27.265",
+        "106.201"
+      ],
+      "year_request": "7610517132f33e14348ed8e5",
+      "boundary_request": "7359f4d0af618872a061fc2f",
+      "year_raw_sha256": "dbc4992e3003f6a437c8223a8dcdacd56c8fd19eba6d3bb5252c695feba4cfc2",
+      "boundary_raw_sha256": "1e065b54cf82e8b1adb30c70507502544d3ad71d882464a27d8e4356663bd8e5"
+    },
+    {
+      "point": [
+        "27.611",
+        "109.105"
+      ],
+      "year_request": "2bfd08a19a79d5f1b3e3ba9f",
+      "boundary_request": "3ad9f11e92d771a8f2327ff2",
+      "year_raw_sha256": "679f321f701dff72e6e5f2c8850ba4d2aaae109fad3397bf1010f8720a21c02f",
+      "boundary_raw_sha256": "fab426e55c54f6163df77442b44a4faba2bc19d953d6110b9d386b8f47d2b28c"
+    },
+    {
+      "point": [
+        "27.664",
+        "108.345"
+      ],
+      "year_request": "f2da4543c40bac0a2d24c990",
+      "boundary_request": "44d82e81f58393b95ea08f04",
+      "year_raw_sha256": "3a4aaea1a3ffab7607edcf2f72f2f6c4d6280b33b59422548ee8367ac45a5408",
+      "boundary_raw_sha256": "ba8273c807561fbf531a936c9191f07397129f3346b43efb939addeb36a72261"
+    },
+    {
+      "point": [
+        "27.684",
+        "106.613"
+      ],
+      "year_request": "71a465e4ea117e2d278bd8d2",
+      "boundary_request": "5a9fc5cf6ea89c3b678aa431",
+      "year_raw_sha256": "6f5679cbc13686eee980874e4d87b497c59e872fc1e9a29314d12ff8b3b54de0",
+      "boundary_raw_sha256": "64c624465668af9f4644850592c849d349b27cc17ed581c1153fde96bb178a70"
+    },
+    {
+      "point": [
+        "27.704",
+        "108.402"
+      ],
+      "year_request": "c4fb6dd2461e568119af908b",
+      "boundary_request": "0fcdb3cd101a5d83cc3e739c",
+      "year_raw_sha256": "ead0ca0870a27f6ad5c9997c7541a1d87dc9726bb31f396c456c1be62352127e",
+      "boundary_raw_sha256": "d2cfe1ad207286e6a57cf985b4470b214f163e70589b1563a74d48e1091886c9"
+    },
+    {
+      "point": [
+        "28.142",
+        "106.854"
+      ],
+      "year_request": "96371c1cc712ffecedb32258",
+      "boundary_request": "552339a6d94ca15805611d03",
+      "year_raw_sha256": "c2c852ef5d73bd32b62c99c88f2a25d52ab36ecc6329acdca2f6bc5dd942b249",
+      "boundary_raw_sha256": "039236b1de0ae6ec6c21c7448968f14d19378dd850178e788f6c912d9751c5d7"
+    },
+    {
+      "point": [
+        "31.773",
+        "121.105"
+      ],
+      "year_request": "2a00326c3bdde4a1f7ac2bfa",
+      "boundary_request": "5c9c5591756fb191665efde4",
+      "year_raw_sha256": "652b04cc0262c31e125ab9f49f9f3b207caaaef035043c7a7380c12e19c05ba7",
+      "boundary_raw_sha256": "622710dcedd34c2ccbceebfff37df9d2b4a350e3dc7a1e3b85e7640627dec345"
+    },
+    {
+      "point": [
+        "31.796",
+        "119.454"
+      ],
+      "year_request": "2ed759749441a0d8acbbfcb5",
+      "boundary_request": "3f6412a3cb8864be1f4666e8",
+      "year_raw_sha256": "bf6da2aea98f13ec00d9ca5fbc3e786e947c1c9f498298c023ea54d7f3aa3cef",
+      "boundary_raw_sha256": "3ed736267ac506df4a66c9ceba0098ba7a8b7cff13fcf5795ee7bc6b0f62c535"
+    },
+    {
+      "point": [
+        "31.822",
+        "119.517"
+      ],
+      "year_request": "cc9120fb885bbf534508ddbb",
+      "boundary_request": "63c28d6e96401aa44eafc45c",
+      "year_raw_sha256": "36b72604f7b5d09f97dc604f1c72cc3144ea0236c5e0b7c9b62bbed78f0c3ba8",
+      "boundary_raw_sha256": "4c342bd43c5ef21eb7ca0fa17d486a0d1242150e149ace6323d459518382d265"
+    },
+    {
+      "point": [
+        "32.045",
+        "121.709"
+      ],
+      "year_request": "565e0fc20da99ba4f7189d9f",
+      "boundary_request": "78fa12ccaf2f0a0c43d68c51",
+      "year_raw_sha256": "8f4d89d4bb63c9ab74a8e42943d150a2f34fdf5a88f18f288279818efb0b1f47",
+      "boundary_raw_sha256": "5859c7d9610d9a24d7ecb8b09bfea3667ea233806abc124286c344e5a3a4623f"
+    },
+    {
+      "point": [
+        "32.134",
+        "119.428"
+      ],
+      "year_request": "05cdba45d7b8c20979f159ba",
+      "boundary_request": "08b091259638219c7a483415",
+      "year_raw_sha256": "11ba1c77b1658aaa9e5c3d923be831eb19ad2d93ce60a53fe1a6107f2b4017cf",
+      "boundary_raw_sha256": "54d6f995455782aab060862bea2ba41320d0bd24a748a19e53b20f570bdade2d"
+    },
+    {
+      "point": [
+        "32.345",
+        "121.809"
+      ],
+      "year_request": "126b85e985a65dd359f352a0",
+      "boundary_request": "9b8bf0fa115876596f7684d4",
+      "year_raw_sha256": "ae128764e3490b39ebb0b83848194f4debda1fdcb8e654f35e5dc08213028d04",
+      "boundary_raw_sha256": "d88cf45529b90da682e91039693f68a436854e0499d5205c1eb001c2cb9d5b65"
+    },
+    {
+      "point": [
+        "32.526",
+        "121.124"
+      ],
+      "year_request": "a0cd5f42cc30ef7d6731fe3b",
+      "boundary_request": "4a23332f3abbda1af695b220",
+      "year_raw_sha256": "cd2afa3b212aa4ed377e6540780e7fb7a6838cbb102ef8dc83d5a5cfe1a29533",
+      "boundary_raw_sha256": "066f5014aac7cc049915a35b5fba03dc826e7d6d90ee30449ece732b5f3a240a"
+    },
+    {
+      "point": [
+        "32.643",
+        "120.997"
+      ],
+      "year_request": "381c3a2fc6328f8b589eae12",
+      "boundary_request": "15b927b2df27837d6002c152",
+      "year_raw_sha256": "ffc272328c0c87e9320a40d640225e9c461b44567b51ada56e52e4072826159a",
+      "boundary_raw_sha256": "b810111cc568fbc102711324aa6053917abb2d4c8291dae521ea679063b82e4a"
+    },
+    {
+      "point": [
+        "32.658",
+        "121.258"
+      ],
+      "year_request": "7e8291532ad3b6c41183b58a",
+      "boundary_request": "892b10592cae7841bb46273e",
+      "year_raw_sha256": "93e226848ca92bce4f85d3e8fe79f2c188f16728965da7e0c2824c88e08621de",
+      "boundary_raw_sha256": "ef179f988cce048e69047e9c06f40a28f1707db3f110c04a03f323660829acbb"
+    },
+    {
+      "point": [
+        "32.664",
+        "121.601"
+      ],
+      "year_request": "30e1867eac3522ca14eb9817",
+      "boundary_request": "8fcfe51c89c94a73f052a67a",
+      "year_raw_sha256": "7cbeadbaae60ed4b18c952e2b36cfc3f3cec3056660cf1b18876649869040592",
+      "boundary_raw_sha256": "90c2b8388a58484c920f1f5c5d6732be0a1d1fb1ae71f89bc884b573a9e5f6eb"
+    },
+    {
+      "point": [
+        "32.664",
+        "121.807"
+      ],
+      "year_request": "925d5d54aa4488332aa7ec2f",
+      "boundary_request": "ed1c433a3df7c89e99c8ba51",
+      "year_raw_sha256": "c215eae891d242cf44e5e4f3f5f2548fa55a3e5dd739c3e80a28880a68972c33",
+      "boundary_raw_sha256": "30dce6653a2af86096f9bb5db17baa3a5e870dc22d1ffc3566c1aebc88739299"
+    },
+    {
+      "point": [
+        "32.823",
+        "121.672"
+      ],
+      "year_request": "d184a1344f97e0fea80b2817",
+      "boundary_request": "ab503f64523b1da9e9ead2de",
+      "year_raw_sha256": "889fc068571cf92302153184a2961c88702d952556fa2a3f6f703d404302305e",
+      "boundary_raw_sha256": "5b8ee77fff0e1a236b288b0de64f991c69be274897e728ba4553857d9bbe4365"
+    },
+    {
+      "point": [
+        "32.825",
+        "121.403"
+      ],
+      "year_request": "a2c207e454eb88cf408152b4",
+      "boundary_request": "bdf54d7e2c3b46d891c8bcfb",
+      "year_raw_sha256": "0a9ffb2c35b39ad30e69dedf08757297846625f9693676353fef13536345c2d8",
+      "boundary_raw_sha256": "a3745ab0280b149926c5771b04524cfb5eb4c48b4ec4e5de58f3ee90f3ca94af"
+    },
+    {
+      "point": [
+        "32.832",
+        "121.849"
+      ],
+      "year_request": "fd46aa6ffb7735edb5ca44d8",
+      "boundary_request": "a1bd480199f11392699a5768",
+      "year_raw_sha256": "be5c92d55f84a380c2b6bf4b6a015de3e5c45f795e7352dae39068c9f0695af7",
+      "boundary_raw_sha256": "15e287fbb35b0248d2522a3897bcc5d8f87eb317d755352a32be5570729c1431"
+    },
+    {
+      "point": [
+        "32.850",
+        "120.930"
+      ],
+      "year_request": "72c578cec344c7f7fb5164ad",
+      "boundary_request": "712df2e9286df469a3b56d4c",
+      "year_raw_sha256": "5107961e1b98cc5909ac3ed9379f9f733b5499890b66cd48feedddea0a49ed24",
+      "boundary_raw_sha256": "eee7db2a5b25e464a27d1e101da52bc0d5f36cb562771f5713f0dd135972d705"
+    },
+    {
+      "point": [
+        "32.919",
+        "121.308"
+      ],
+      "year_request": "8715b667322210fbf0c90bd9",
+      "boundary_request": "c819e9dfbcd860ad01a5cd0e",
+      "year_raw_sha256": "0064ba6c4962437b4a0ce7eaab812637c771eaa24f6e12cdcced4bdfcec69948",
+      "boundary_raw_sha256": "d646ced553649c89bcaf080956d84fc36efbcf3dce2808cce9f62eb890135746"
+    },
+    {
+      "point": [
+        "32.956",
+        "119.234"
+      ],
+      "year_request": "6386024fdfef2715d4f48da1",
+      "boundary_request": "9b58310d1f6e60fa6e0d261f",
+      "year_raw_sha256": "3a636c9e8a14711c9ef2d173c0032258d70b88bb067aa5da042a6ed2ca6a290d",
+      "boundary_raw_sha256": "6648504e3ce2cda80b21b6b884138826d5c6336fe4c4ddd314f8b5798fbbe020"
+    },
+    {
+      "point": [
+        "33.038",
+        "119.604"
+      ],
+      "year_request": "e67fc2fe95c910f909c84c9a",
+      "boundary_request": "ffd93db3739a3bf0f7449747",
+      "year_raw_sha256": "bfed4020d9235c19e9db70ca2ecef2b14717569ddeb5708da71d3f23a4f37cf0",
+      "boundary_raw_sha256": "af08dd0830fc082aea09ac88ded796ca23b7448853d304c30e50430fa4ffe808"
+    },
+    {
+      "point": [
+        "33.081",
+        "119.282"
+      ],
+      "year_request": "74d37cc585f7b7de79d24e7a",
+      "boundary_request": "2cf18c7c38b3f389924bc4f5",
+      "year_raw_sha256": "8696d4f48103b5c71d92bb1f400453007fbb68b70f59535d8211494d1e298ff4",
+      "boundary_raw_sha256": "c3a4be216b63f40b1284b9890a82e9d3419e002f4ad8d7234297e688b7ca57a6"
+    },
+    {
+      "point": [
+        "33.148",
+        "119.589"
+      ],
+      "year_request": "8b83a22b680d2eaaf1ef14ad",
+      "boundary_request": "e0e59b1a5dfad7234bd942f1",
+      "year_raw_sha256": "8e9b9b4eb201cdc85999c0bdcd61589a6fa8f176602ba413615959ed3572b65b",
+      "boundary_raw_sha256": "0952b9be7eedb4bd7ac6a825cd4f236d2d3a75bc152bb5f59f2154d8e85bd717"
+    },
+    {
+      "point": [
+        "33.178",
+        "119.554"
+      ],
+      "year_request": "e05e53fbc599dd4a11627173",
+      "boundary_request": "1fd6775ce639218dae8fc2a4",
+      "year_raw_sha256": "de689a437328f599fe48c405d77ba8ebcbc93b730c6a658ad44576d1eb2a015b",
+      "boundary_raw_sha256": "8eaa83165bf9fddf4f0a909453505159b1d11878aebda6e2a4d5af7178d507dc"
+    },
+    {
+      "point": [
+        "33.212",
+        "120.768"
+      ],
+      "year_request": "7049d4fd82a8932385be7621",
+      "boundary_request": "d1e19738645a0e40d1dcfe47",
+      "year_raw_sha256": "743dd1037980affe8caca83761d918552ade2e5ac7a8c5c00803e7001c33fe52",
+      "boundary_raw_sha256": "34f81f0c65670411539ed6ae866d78f48203fcd74db5d41eddd916aca83b2147"
+    },
+    {
+      "point": [
+        "33.236",
+        "121.240"
+      ],
+      "year_request": "1616321e028aa257dfda35ca",
+      "boundary_request": "66c0f3a73e883d8a1bebf1d5",
+      "year_raw_sha256": "4ed1f7ecc15ec2eadebf0779358d5b8172cc9532b60c1f80360736d439079bed",
+      "boundary_raw_sha256": "5eef92eef375179a6eb668418834f1c3bc5b42a974ad915671a606efa1a56c80"
+    },
+    {
+      "point": [
+        "33.240",
+        "118.180"
+      ],
+      "year_request": "826debf57881f0fe6f18f494",
+      "boundary_request": "d4c4fddff328b63263abe8bf",
+      "year_raw_sha256": "e53d507d12a08a86657db5fe24f4f4fb5d3c988d67dfece132855eb1341de938",
+      "boundary_raw_sha256": "bbfec7e0358ac21888cf56cb406ba9834f1f4ea00baeda5e437e69f74e141490"
+    },
+    {
+      "point": [
+        "33.282",
+        "119.686"
+      ],
+      "year_request": "b680a499db6b5c75f2591e7a",
+      "boundary_request": "d9c675afb10d2aa965594b60",
+      "year_raw_sha256": "b5c3af93819d34a56b8cf1a3169060a90cb0781d0ddac384eb79f95ecdffb12c",
+      "boundary_raw_sha256": "70f1875619113cd389d3633cd5dfb3455049b989c39072d9cc257db756d45619"
+    },
+    {
+      "point": [
+        "33.433",
+        "121.378"
+      ],
+      "year_request": "d9fcb9eb70640a3b59d50cb4",
+      "boundary_request": "bef605e192294700efb0f577",
+      "year_raw_sha256": "951be5acd121de802f44cbff28d70973f60de047521a999d690bd3a5ba6886e7",
+      "boundary_raw_sha256": "1682909df31fbe67367d9c3cf2a194b4e1e937223f78614499ccbc88f1edb9a0"
+    },
+    {
+      "point": [
+        "33.508",
+        "121.067"
+      ],
+      "year_request": "2603721254f3e6f582c0ebcd",
+      "boundary_request": "556e906d4fd7ebb1692d6a25",
+      "year_raw_sha256": "22299d3ee718c7c10aee62cda6004d83e4a97f61729de938dbb1a498117f04b7",
+      "boundary_raw_sha256": "be9f312c301337fadae630e806f789512048833eb18e29ed6eb5afd066755c70"
+    },
+    {
+      "point": [
+        "33.579",
+        "104.869"
+      ],
+      "year_request": "63c7ca10724d2ee5c9ea8ef0",
+      "boundary_request": "d9e0449edb00f725570b74e9",
+      "year_raw_sha256": "585643267e4c0fe752f0389e6a1a121b332f789baa5da183fd32281be95a0362",
+      "boundary_raw_sha256": "61854de2753032f088ab432ccf72189f464d8cc5f9eaa048e2674ea2276d4ab6"
+    },
+    {
+      "point": [
+        "33.590",
+        "121.210"
+      ],
+      "year_request": "d8d18a3b2ffa4ffa4fdd2c98",
+      "boundary_request": "b2f91a0ec8c2f87bf9cbd887",
+      "year_raw_sha256": "def0b69bef1049531df8d228c45a47c49f65cd6602df4f9552cd4f678bfe807b",
+      "boundary_raw_sha256": "812abfa6f68eefa675205a504477ce71220f0dc4a5d9d250f8a2ce5d20b206f2"
+    },
+    {
+      "point": [
+        "33.594",
+        "121.162"
+      ],
+      "year_request": "e7c5d838551ce323f50574c7",
+      "boundary_request": "a8c9a56b031bf102534e1cdf",
+      "year_raw_sha256": "f999288eba12dbc00b7d89e7acd852f64f5133336d74ed67788d65ab9d37495e",
+      "boundary_raw_sha256": "dc8539c18efcea4f9ee90defd99b777cde7970a54d846d22b378fc396ea4697d"
+    },
+    {
+      "point": [
+        "33.595",
+        "118.198"
+      ],
+      "year_request": "34356c668479831d539515c1",
+      "boundary_request": "bf07ed0f0d016c8ba8019daa",
+      "year_raw_sha256": "5ed6746403efe54aca8c0bd1a410967b89ef5ffc1cadd50f7e9331b561e83344",
+      "boundary_raw_sha256": "104e34818c7018715a2bdcdfcbc1144476c7260788d6072815f22043f70d21a6"
+    },
+    {
+      "point": [
+        "33.660",
+        "121.100"
+      ],
+      "year_request": "c10d6e6601278f5b611202fe",
+      "boundary_request": "3af784ba49f9c9ffc8c6c2da",
+      "year_raw_sha256": "7d333de8b09ba5dedf4bedf0a07e0f116c23d72b6608a6935cfb61c61a3d0f19",
+      "boundary_raw_sha256": "d69482146b1b6bda96131d89342fd61c3329d9f65b4cc27e176593b0919120a0"
+    },
+    {
+      "point": [
+        "34.114",
+        "118.801"
+      ],
+      "year_request": "86a3c2e40daae5726628bc55",
+      "boundary_request": "380082660fb7974277942d4b",
+      "year_raw_sha256": "6673721dff08e5f686c73a9c28756fd0d3128a4bc3ce554dd524f6d9bf409f64",
+      "boundary_raw_sha256": "c3a4ec9d535a710d730902e54194a32b653dc1db52f77356dff2148ee684841a"
+    },
+    {
+      "point": [
+        "34.240",
+        "120.329"
+      ],
+      "year_request": "fe315d43cedf0d18b1ab1c94",
+      "boundary_request": "15659ca1744bbe2e9119f10a",
+      "year_raw_sha256": "3c0b08395f35feeac477d680e98d3f598b46e0cb64eb42f7c8d188e649c354e0",
+      "boundary_raw_sha256": "9e769b3aff7e599c796744c516e6acfccbeb22f94324591e3950b34f9f09389a"
+    },
+    {
+      "point": [
+        "34.362",
+        "120.210"
+      ],
+      "year_request": "d03617b78bbd0d1198310d13",
+      "boundary_request": "b3d2e52f36d13f5ddfddc0aa",
+      "year_raw_sha256": "150972904d0e21c12e945adce115b17aa03445d3b0b28fe498f71408295ae694",
+      "boundary_raw_sha256": "bfadb9a1561ff2c6923ae22250fbea2166bdcf6b5397ca397323ce1f5013cb31"
+    },
+    {
+      "point": [
+        "34.467",
+        "119.617"
+      ],
+      "year_request": "e49409ab67a957b49b7ad4ca",
+      "boundary_request": "7f9284c75921092ee79ead36",
+      "year_raw_sha256": "9014b9b05137ec3d4942cb07790b9d9b379b13d85aee1affc716f734df94ce2e",
+      "boundary_raw_sha256": "477250cf168f68473fe4c5c9fccb50ddfe4ced6b888c4a42d20de18a2f661c6e"
+    },
+    {
+      "point": [
+        "34.481",
+        "119.584"
+      ],
+      "year_request": "5411dfc004edf90dc1890c24",
+      "boundary_request": "039d7caf55d353a4e21763db",
+      "year_raw_sha256": "aedd7f53e2bdf3e64aca78a99c3854bf7a8ca369c5291c06fd7e826e050dfee9",
+      "boundary_raw_sha256": "fa3d58949d67568a8d96cd47c4986b8855ff1f5e16315f5928730798bdfec3ec"
+    },
+    {
+      "point": [
+        "34.525",
+        "119.740"
+      ],
+      "year_request": "405525b00ba79b8d59aabe64",
+      "boundary_request": "16f000717e852909fc616eda",
+      "year_raw_sha256": "e0b3deb29e6ef3915670d4c6f318d269c0b9a9b79bcdf83855502e1df8262e8d",
+      "boundary_raw_sha256": "670366ab7b85090cdd719f0f69124f24a5bfa55bf06a2c160a13cf1fe12863ee"
+    },
+    {
+      "point": [
+        "34.546",
+        "119.396"
+      ],
+      "year_request": "b2f6d483b2e4afd8999bba08",
+      "boundary_request": "e15436295d8503423671919e",
+      "year_raw_sha256": "58dc2d4794880bb192859d0a4e9e2947a1b9e8f3ccc066f55e1ba2466afd0441",
+      "boundary_raw_sha256": "7267eab613722cc13c8e4f7dc50be001b845e2a4338d6fb7cbe9f0fa61d88316"
+    },
+    {
+      "point": [
+        "34.819",
+        "116.993"
+      ],
+      "year_request": "d311196142cf6f0a93b5cc86",
+      "boundary_request": "2a4a17d3dcd6a1a02bf8561f",
+      "year_raw_sha256": "0d6e23205a7c3b467c27617228877cfea2b5f69c802aefbd463aea76032af942",
+      "boundary_raw_sha256": "16816369f69ebb6bd152fa8fadc34b2547e18bdf24feb9594788a600bf4186ca"
+    },
+    {
+      "point": [
+        "36.375",
+        "106.593"
+      ],
+      "year_request": "5ab2c17d33142e77829f9a3d",
+      "boundary_request": "6e5eabc1f4ff2505cf542fdb",
+      "year_raw_sha256": "141f984ebc69407abda37e22fd5f94f5f2dff1a10efe21944b0185bf0d72decc",
+      "boundary_raw_sha256": "f5345daf5961ea2de693be77902780d4ff8707921c3bb42f24384eb22a956dc0"
+    },
+    {
+      "point": [
+        "36.464",
+        "106.611"
+      ],
+      "year_request": "c5c4bb20e6ec2793ccc1c846",
+      "boundary_request": "7cbb81b421d0e3a1ec8bf159",
+      "year_raw_sha256": "bb2dab8e065146cef6f70623e5bb87ed7b4ad6018fce9d7a1f3bd4af219853c5",
+      "boundary_raw_sha256": "c6e39d001714808a570648b7b14f47c3fc56f7e5d1ef448dd7a87039c1b9cc83"
+    },
+    {
+      "point": [
+        "36.509",
+        "106.576"
+      ],
+      "year_request": "b503f3c8b824b547bc6ff7f8",
+      "boundary_request": "53ec63060412c5bc8e028492",
+      "year_raw_sha256": "6e4c33073368e0f24532bcf44e0fa2d1016d97a3de1f28011ff2e3f4284b53ec",
+      "boundary_raw_sha256": "ebec0ce3b6a433ae5dc7242c258d4382456bcdc4248b9855aaa77385a125dcc5"
+    },
+    {
+      "point": [
+        "36.625",
+        "106.823"
+      ],
+      "year_request": "804c6635dd012c0f764873fb",
+      "boundary_request": "3ebff46135bdf8b1d7fc3cc7",
+      "year_raw_sha256": "7e6ea1959f4e0be480eb78e0d50039eb0333f585c625800d963eb45011fc5d2a",
+      "boundary_raw_sha256": "d123ed1590d84976bb0089b8bca7e4307c31f5879ba1400815e63838e36e7259"
+    },
+    {
+      "point": [
+        "36.653",
+        "103.539"
+      ],
+      "year_request": "ecb14cc13d4448ba060c7505",
+      "boundary_request": "b17806aa2aedc7f204709002",
+      "year_raw_sha256": "5f4988405abf4d8b1e53a1a2dd1cdc2c29b71b1bb1b66f8d0360885faf3fc393",
+      "boundary_raw_sha256": "cb827e0b3c6241417bec157b45269b8cd86b72b1da10ad02f1147c4a4462de84"
+    },
+    {
+      "point": [
+        "36.910",
+        "106.706"
+      ],
+      "year_request": "5aa8614ff70263b67204f525",
+      "boundary_request": "a1c3cd0eb465669171f0ef85",
+      "year_raw_sha256": "ae64755db33aea89170cd80ef2acc6aa8baf43082c131c08c6c55ad7f8d9d06f",
+      "boundary_raw_sha256": "eb11ba11805de6fd2793ac70e65c14847cc16fc36055a772a50d5064638328fa"
+    },
+    {
+      "point": [
+        "37.639",
+        "103.245"
+      ],
+      "year_request": "44454277372727834028dd1e",
+      "boundary_request": "834bb6669434b5a864dd53e5",
+      "year_raw_sha256": "36f4dfab64c1a6079dc0c5c9061352da19cf7a9a26da3379a9d88f82068543ad",
+      "boundary_raw_sha256": "43313836d4fc4154b44bddf435411dffdeb9758264bb2d840163228331a8bfdf"
+    },
+    {
+      "point": [
+        "37.739",
+        "103.103"
+      ],
+      "year_request": "77666f017ecaa7bc9f015d70",
+      "boundary_request": "75f503615a92242db77adf14",
+      "year_raw_sha256": "8d1285fac6ee6de96d85238d3cdde9da2d1238968aba38336ebd794a0747a992",
+      "boundary_raw_sha256": "7c0ded03aa7d3174f7382faef34d917958c550d4a4b7ccb2ef956e8558c6d438"
+    },
+    {
+      "point": [
+        "37.758",
+        "103.127"
+      ],
+      "year_request": "1884d5a5e57d52af02cfc3a5",
+      "boundary_request": "6ec8a96bce2e2fa6b333d4d8",
+      "year_raw_sha256": "fec5bda93151f101873613df415a2ff46c05d302b1d777c12a1ff811f5338ed7",
+      "boundary_raw_sha256": "f603e822bd2a5d92bbba2d5b9d09d774f2e0b5ac84075caea04b3241f3df5a35"
+    },
+    {
+      "point": [
+        "37.928",
+        "102.639"
+      ],
+      "year_request": "ae089fd81538a26c301a5513",
+      "boundary_request": "9fcbd4defb9b22d672d23ecc",
+      "year_raw_sha256": "ba61bcd2351301eb99095265989405a3a3cd8c169a37418f8d9d8d69a12e2031",
+      "boundary_raw_sha256": "0cab6d80c99c3150447c6000cb52ee54130e2fee76e8109972159f71741b54b3"
+    },
+    {
+      "point": [
+        "38.000",
+        "102.000"
+      ],
+      "year_request": "3cfca71f09b492cfeff16831",
+      "boundary_request": "09f6b5230d83dcf804b0c93a",
+      "year_raw_sha256": "34fd64e4eba9ecbb54d7375656b08cd3418a2edc6be209c01061ecb0053cf2c9",
+      "boundary_raw_sha256": "4e28f836b351e46103077dcf960930b42333ed4294427645449ea0e8cb1e3804"
+    },
+    {
+      "point": [
+        "38.104",
+        "101.858"
+      ],
+      "year_request": "dad98ae7b5c6167653c4244e",
+      "boundary_request": "4bb53d4eba20236e6b678785",
+      "year_raw_sha256": "b07ec9324d7cbbf12aa518ac1ea26bc4d4b039a5ca2b7849bf268ff5f4679e19",
+      "boundary_raw_sha256": "b591a3d5b399fd1e03afd66b1a6eba74558c00f16e9a35e51fd20661ddca3b96"
+    },
+    {
+      "point": [
+        "38.169",
+        "102.291"
+      ],
+      "year_request": "524806009ca4aa7951ea6a6c",
+      "boundary_request": "4f68a9c027f5a4b900670cb9",
+      "year_raw_sha256": "254baa465ad4577365e336f548c7ac47241206f58273b77a9a4f08d59a1ee15f",
+      "boundary_raw_sha256": "a55ed34561d1ddc22fe102a6f709b25b8a3084905e7b6726c0c9ba4c3ef94806"
+    },
+    {
+      "point": [
+        "38.266",
+        "102.282"
+      ],
+      "year_request": "64df118a36c5ac83944c1c5e",
+      "boundary_request": "02ff282bef7363db8660a8e3",
+      "year_raw_sha256": "edbe332f774b2b880a7f7a45e683bb71547d4412cf7c74f310cbc41b9a6aa018",
+      "boundary_raw_sha256": "e419e504279eb1dbdfc62dd01822277e8de5807f5fda3265ec6daa577a559bc2"
+    },
+    {
+      "point": [
+        "38.406",
+        "102.064"
+      ],
+      "year_request": "eab605f934a5a92dda78ba20",
+      "boundary_request": "d8cb36a7064ee1a33efd3de8",
+      "year_raw_sha256": "98dfb68e51acb7bad3f49ffe34edabfadb8663bb78cff966120e08e571abfad4",
+      "boundary_raw_sha256": "f47ba07ba0d3a34782ed7a331eec55b2ce7da2f962083a9cb482461cb099003a"
+    },
+    {
+      "point": [
+        "38.411",
+        "102.053"
+      ],
+      "year_request": "eee0c01eb80aa1f3a7dd7176",
+      "boundary_request": "8b04f817d56e088c42ce86fb",
+      "year_raw_sha256": "1b2cca06d5eb1ac3e2677cf6ea98e6754441bc1e86ba69005080cd348acdc072",
+      "boundary_raw_sha256": "d60f5907f68c04c604fcdb166d7dee190ce1c9ec584c37588c02e7de56d7aa58"
+    },
+    {
+      "point": [
+        "38.466",
+        "102.342"
+      ],
+      "year_request": "698820cda29d85317d047c0e",
+      "boundary_request": "1dc455ad998139f261fc77cb",
+      "year_raw_sha256": "ac8f3f9f082c64887c25968eba485c9709f04fdaf88e5eff16146012aa13a2cc",
+      "boundary_raw_sha256": "ba7f7e0113cbb16cac4bb82bbdecdba42201bfdc07c2d23b9145a119fe000c5d"
+    },
+    {
+      "point": [
+        "38.825",
+        "100.829"
+      ],
+      "year_request": "477bd06fedb82faa67d78bf7",
+      "boundary_request": "39a1774c5686ced55232ce80",
+      "year_raw_sha256": "ff014b928a089211ba0dbf21e840c8e1b6d649b9a4eaf3641adf0b1344a98e5b",
+      "boundary_raw_sha256": "b585e5006e4b3f09c65cc1b338acb78e221c1cf1e64f958d323c1b9cb8ccbf22"
+    },
+    {
+      "point": [
+        "38.844",
+        "100.677"
+      ],
+      "year_request": "ea93725804a2ce77fbc6e5c6",
+      "boundary_request": "db72c742c257655842de2d4a",
+      "year_raw_sha256": "145e92010628ee77dcdfc78e4911d95ea466ca0b0a1ddcfde2dff95ec7bc96f1",
+      "boundary_raw_sha256": "35b4e0293cbc026e85d6498b3583e755ef389587042366cc5b4b32b641d6e870"
+    },
+    {
+      "point": [
+        "38.927",
+        "94.623"
+      ],
+      "year_request": "f4009a48c3415b714277b5e8",
+      "boundary_request": "ad97bd1b0cba71fb755f5ea5",
+      "year_raw_sha256": "40adf860c7abaf61850067e5f93fc3d7ac016d58801d1dda895ccde987510987",
+      "boundary_raw_sha256": "fc4f8c2fee0c0b05f9bf9d45afc488f4a1c688d8293114551d7ab0fde9e25777"
+    },
+    {
+      "point": [
+        "38.949",
+        "102.441"
+      ],
+      "year_request": "26dd2fa53666693e25428509",
+      "boundary_request": "cdb13b7bea3e698f69347870",
+      "year_raw_sha256": "f68928c56bade26802aa42de8cab4aac0a0092fcf2ad7983d068748bcce78b82",
+      "boundary_raw_sha256": "8e667fa11162254bd551d6f58eb4588042d0682953d01a19ebb58995781107c9"
+    },
+    {
+      "point": [
+        "38.975",
+        "102.401"
+      ],
+      "year_request": "81867fe3e42ae269a5a12fe9",
+      "boundary_request": "b435df1f2c9e04e1eca60408",
+      "year_raw_sha256": "a8d9612b66cacfe60c131e6a7e8510ca07fd0fb042df6ee916c065172f920572",
+      "boundary_raw_sha256": "ab09af06c3f87eaa7961e93e7076bd17ca22ee72cea40ae277323672b90733e4"
+    },
+    {
+      "point": [
+        "39.031",
+        "102.161"
+      ],
+      "year_request": "a2efcccb176fd8d2472715fa",
+      "boundary_request": "0ecd8218aa176abc2b9cb9e6",
+      "year_raw_sha256": "5dbf84ca468060d13cb81cc1a449cf52c5bc6349c493a370271474dac2d760f6",
+      "boundary_raw_sha256": "b257a05a09fdd2afb7f3fe5ff230b23607cab9274dea51420d93624e9577e294"
+    },
+    {
+      "point": [
+        "39.146",
+        "102.267"
+      ],
+      "year_request": "f622b2d305957bd368858ce1",
+      "boundary_request": "dc1a45eebf2ad699596f2e22",
+      "year_raw_sha256": "e671786e66d709b0c52a9e220655a48842f2f381c0e4c74c53937ebf49bcd91a",
+      "boundary_raw_sha256": "677cd39b2d5fa39894721660504f242852a83695360663e36af984f7088dd0cf"
+    },
+    {
+      "point": [
+        "39.339",
+        "100.101"
+      ],
+      "year_request": "65c8827dbdade5448228c88b",
+      "boundary_request": "d9f449c61bcc5b1a4e89280d",
+      "year_raw_sha256": "dee846be26046509d8255d04abb402bd52d54ddd58900e82f0e20c0a04589317",
+      "boundary_raw_sha256": "41e0e9ed9671181478c6e71d9fe47d6d8009cdadaaa8fe99cc94ff9a6b0623e8"
+    },
+    {
+      "point": [
+        "39.766",
+        "97.906"
+      ],
+      "year_request": "4b8febe87992a4ba71a273c2",
+      "boundary_request": "fc1584e5064abb3b83764b7c",
+      "year_raw_sha256": "d1d32c9463a708d752b0f16043369f14748175c78220b6b224d52a5072adac53",
+      "boundary_raw_sha256": "acfdec2bbf2360a3dc8ee559db5e5e8296efefce279c18230205ecddcde508a1"
+    },
+    {
+      "point": [
+        "39.844",
+        "99.394"
+      ],
+      "year_request": "daf00d307bee3b524f6ff103",
+      "boundary_request": "685ef255eea0280a43b97c74",
+      "year_raw_sha256": "e5851699417d528292008c620e8cce7c6139a2f9891f404ef714026fcedac92b",
+      "boundary_raw_sha256": "a5d9bc2ab649864e5bb81d88a86a4ed0c6c3d8d7a0368e22665f27217319dadc"
+    },
+    {
+      "point": [
+        "39.965",
+        "98.984"
+      ],
+      "year_request": "c0a5eb3451832e6761f835ce",
+      "boundary_request": "ab228bdd73ac62ba2a19d1fc",
+      "year_raw_sha256": "9cc9aad08d20e97969526256805adc183227d75cc0585ed59dd2287eb47fc85e",
+      "boundary_raw_sha256": "a1d7bcb73f0de85eed30b201a36e9cc5775a99352061623b4e8ee140292db80d"
+    },
+    {
+      "point": [
+        "39.985",
+        "98.971"
+      ],
+      "year_request": "2489be3c585d6cc30f76625c",
+      "boundary_request": "ab6d636d1e61754299482f6b",
+      "year_raw_sha256": "a3d93474e212a14800a6b4e973697491408382f3f099ba81a18efb482762c271",
+      "boundary_raw_sha256": "853b5844461a6e18f3abae35e939dde30f2c76c7e7f44fdc37764b8f30672671"
+    },
+    {
+      "point": [
+        "39.986",
+        "98.903"
+      ],
+      "year_request": "00547d074e1386cd87f5e1b5",
+      "boundary_request": "b2a28757deb61504b2a6c712",
+      "year_raw_sha256": "96ae69c926a3168db85b6de813a7d5ffe22cfdc0d95a0e208c0f022a559266f6",
+      "boundary_raw_sha256": "03c6b0d2b775b846ade6db98d5a5fddade79d4eeefcdfb78adeb8062883e5b84"
+    },
+    {
+      "point": [
+        "40.225",
+        "97.772"
+      ],
+      "year_request": "9a61a9aade996c2891efe4cd",
+      "boundary_request": "883f1dfb2de15aed1126ae1e",
+      "year_raw_sha256": "784e9c760bbea4160d95856eca5bdc90f19170c59e9ea8cbd0afb78c0850f6ab",
+      "boundary_raw_sha256": "808cd295888748b2e968b38bcb1463f1819cf8e33cfd8f9f4aca21660e5a4e46"
+    },
+    {
+      "point": [
+        "40.514",
+        "97.273"
+      ],
+      "year_request": "271cd5d0582278b13e283ed0",
+      "boundary_request": "2b547da4af0372c8fef7771b",
+      "year_raw_sha256": "9fb7f33630d2c1d4d3c1639d4377567cfcd3444d1e5bc5400b9b5aa74ccba6d4",
+      "boundary_raw_sha256": "4bed2d18cac0ccd4a890d2a4941deeef48dc0eacd8b9c16d8acf4bf350c1bc6b"
+    },
+    {
+      "point": [
+        "40.836",
+        "96.306"
+      ],
+      "year_request": "abdbbd174e1e5e9fbbb5d4db",
+      "boundary_request": "366eac493cc049a38766def8",
+      "year_raw_sha256": "60445439eb83e11105bf379e3bbd4fd54c403fb22fb17211d7833bee2e6f3ade",
+      "boundary_raw_sha256": "95c900486839855aaddd8b567255f434ba88ab788ea8d71f7bfdfc58e4df7081"
+    },
+    {
+      "point": [
+        "40.997",
+        "95.563"
+      ],
+      "year_request": "ac664bb3b3d94f4533e19742",
+      "boundary_request": "3832af4b2c2cdedb36c3808c",
+      "year_raw_sha256": "d46663336f23116f44f751647f060651fe3de96d531f26cd4a38319278611e05",
+      "boundary_raw_sha256": "b7cb8cc44710fafa18bb74ef7a15bdbcf7a58fe82578fcba143de933747f0fd2"
+    },
+    {
+      "point": [
+        "41.551",
+        "95.249"
+      ],
+      "year_request": "76320c11c3b105d46da112cd",
+      "boundary_request": "73b53c0f3886898b6fc809fb",
+      "year_raw_sha256": "698dd2d75d4e0976743f1e942c579cc657b44e88df130043f4e1fe76b31b194a",
+      "boundary_raw_sha256": "99883fac42481b2784aee167f9b22e555ac68f6bed7295186bb7c42af451c996"
+    }
+  ],
+  "output_sha256": "80f21a48664e788e52518fc73929c32636c3923a4feb0448eb6a6827284045d9",
+  "diagnostic_sha256": "f4f8572f22a8d6b31a654ec2bb79ec6b6e6520498a9608150cf693b154e2b89c",
+  "builder_sha256": "0e256f06cb6574cae08d9a9b3bedbf2e1d3768c23088b4b501a5a1c34c7330e6",
+  "plan_sha256": "9a1b7684d2c338ac33c02c599ad20feb2b83192e5dae569ec21ed1b38761a64d",
+  "boundary_plan_sha256": "51d1a0128bdcc3ed65df3c7507a882b5e6cd678e7b11395d51496e840a5d33db"
+}

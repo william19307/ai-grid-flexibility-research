@@ -176,3 +176,39 @@ work/figure-env/bin/python work/research/analysis/audit_weather_revision_inputs.
 ```
 
 入口只读既有缓存、站点表、归档输入与旧结果；不导入求解入口，不改旧表。输出到 `outputs/research/revision/weather_input_audit/`。需要本地 `openmeteo_cache` 和归档 NPZ；逐站哈希在 `cache_manifest.json`。显式 ERA5 接入试验按 `explicit_era5_pilot_manifest.json` 的 URL 下载，保存为 `work/research/sources/weather_revision_era5/gansu_solar_largest_site_2020_era5.json`。原始响应哈希绑定本次下载；以后即使只有服务耗时变化也需保留新响应与新清单，不能覆盖原记录。该试验存在时会额外校验日历与单位。
+
+### 阶段 13：显式来源与小时区间的审计重建
+
+**2026-09-23：旧站点请求已因阶段 15 的技术错配进入研究暂停。不要删除暂停标记后续传；先定义新技术/年代清单。现有 2020 曲线只用于审计，不是准入的省级发电输入。**
+
+```bash
+work/figure-env/bin/python work/research/analysis/rebuild_explicit_era5.py --plan-only
+work/figure-env/bin/python work/research/analysis/build_explicit_era5_year.py --year 2020
+work/figure-env/bin/python work/research/analysis/verify_explicit_era5_year.py --year 2020
+```
+
+后两项需要 `era5_rebuild/request_plan.json` 和 `boundary_plan_2020.json` 的所有 2020 年/下一年边界原始响应，以及配套 meta，保存在 `work/research/sources/era5_revision_2015_2024/{request_id}.json` 与 `.meta.json`。现有原始响应哈希在年度审计及状态记录中；配对缺失或哈希变化会拒绝复用，不能静默覆盖。旧站点表、旧六条曲线及旧缩放审计也是对照输入，不能把这些依赖隐去。服务响应可能随版本变化；以后下载的数据必须保留新来源记录，不能声称逐字节重建本次快照。
+
+2020 原始和边界各 115 份完整，2015 年度 115 份完整但缺下一年边界。其余 920 年度请求未取得。年度和边界采集器共用缓存锁、计量台账，尊重滚动额度；当前二者均在网络前检查 `acquisition_hold.json`。2020 独立验证为 61 个分层小时×6 曲线，不是全部小时的独立物理校准。
+
+### 阶段 14：固定投资完整年份诊断
+
+```bash
+work/figure-env/bin/python work/research/analysis/validate_fixed_fleet_annual.py
+```
+
+入口检查固定发电/线路/储能功率和能量，分别求最小未供电量及该水平下的经济运行；23 项核验结果在 `revision/fixed_fleet_annual/validation.json`，绑定四份源码哈希。无需原始外部观测即可运行数学检查，但这不生成省级结果。真实应用需另行绑定规划来源、测试年份使用历史以及同边界物理输入。
+
+### 阶段 15：恢复技术/年份并对照官方风电统计
+
+使用带 openpyxl、pandas 的 Python 运行前两项来源分析；独立 OOXML 核验仅用标准库。下方 `python` 表示该环境的解释器。
+
+```bash
+python work/research/analysis/audit_weather_site_technology.py
+python work/research/analysis/audit_official_wind_2020.py
+python work/research/analysis/verify_weather_site_technology.py
+```
+
+机组来源需要固定 GEM July-2025 工作簿，路径为 `work/research/sources/zenodo_16810831/Global-integrated-Plant-Tracker-July-2025_china.xlsx`，SHA256 `4ed14c94a305ec43af9ac33a49134fcee5c1271e2d93d248ab608c7781ea71d0`。120 行回查表与汇总在 `revision/weather_site_technology/`，2,902 行候选清单重建到排除的 prepared 目录，不覆盖原清单。
+
+官方网页按 `weather_site_technology/official_2020_wind_audit.json` 所列两个 URL 获取到 `work/research/sources/renewable_observations_20260923/wind_2020_q1.html`、`wind_2020_h1_nea.html`；各有同名 `.html.meta.json`，包含 url、sha256、bytes、retrieved_utc。该记录绑定本次网页快照，网页改变时须新建版本并复核表格。18 个值与人工转录交叉核对，周期诊断不是同机组校准或独立重复实验。

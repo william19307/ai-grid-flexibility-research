@@ -1,0 +1,62 @@
+{
+  "checks": [
+    "freeze_existing_plus_new_without_mutating_planning_asset",
+    "8760_hour_deficit_equals_independent_capacity_formula",
+    "high_operating_cost_does_not_create_economic_shedding",
+    "no_test_year_investment",
+    "reoptimizing_capacity_masks_six_MWh_test_deficit",
+    "explicit_annual_carbon_constraint_retained_in_both_phases",
+    "missing_hour",
+    "duplicate_hour",
+    "naive_time",
+    "padded_nonleap",
+    "missing_availability",
+    "nonfinite_availability",
+    "mandatory_AI_infeasibility_preserved_not_relabelled_as_zero_EUE",
+    "changed_frozen_capacity",
+    "unresolved_solution",
+    "nonoptimal_solution",
+    "excess_investment",
+    "unknown_asset",
+    "bad_residual",
+    "line_and_storage_power_energy_investments_frozen",
+    "8784_hour_leap_calendar",
+    "energy_carries_across_midnight_without_daily_reset",
+    "full_year_binary_commitment_and_costs_preserved"
+  ],
+  "count": 23,
+  "examples": {
+    "annual_capacity_formula": {
+      "hours": 8760,
+      "expected_eue_mwh": 36.0,
+      "actual_eue_mwh": 36.0,
+      "shortage_hours": 22
+    },
+    "forbidden_refit_comparison": {
+      "frozen_total_capacity_mw": 4,
+      "frozen_eue_mwh": 6,
+      "refitted_total_capacity_mw": 7,
+      "refitted_eue_mwh": 0
+    },
+    "leap_storage": {
+      "hours": 8784,
+      "eue_mwh": 0.0,
+      "soc_h24": 4.0,
+      "soc_h25": 4.0,
+      "soc_h26": 0.0
+    },
+    "annual_commitment": {
+      "hours": 8760,
+      "minimum_eue_mwh": 0.0,
+      "cost": 43800.0,
+      "solver_type": "MILP"
+    }
+  },
+  "scope": "Synthetic analytical checks only; no provincial empirical adequacy claim",
+  "source_sha256": {
+    "work/research/analysis/validate_fixed_fleet_annual.py": "da4bdf4de68ec226da41e765b98326e753379fbac233c6d1155fcac0e5898c84",
+    "work/research/models/fixed_fleet_validation.py": "845f8d8d25f4295799bff564678cd0d7a91a007bc3adfb6584acdf87be59c354",
+    "work/research/models/coupled_grid_compute.py": "3ac3731ef17e63befba2598fa81a538d5e138e2bd6a321614da9af030bb6fbe2",
+    "work/research/models/thermal_commitment.py": "bc8a21824dbb43c0e8108fc52b2e45566e771d85d81275fe1e3df7df75a98d0b"
+  }
+}

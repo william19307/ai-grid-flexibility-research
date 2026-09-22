@@ -1,0 +1,1 @@
+{"year": 2020, "status": "failed_reader_check", "verifier_sha256": "9fcbe37e2192fa2667abbfcb7171a37e82bb3d7e4aafc51b603db6795c6c1477", "reason": "CSV reads a fixed UTC+08:00 offset; named Asia/Shanghai index equality differs despite identical instants. Correct reader by timezone conversion, not data modification."}
