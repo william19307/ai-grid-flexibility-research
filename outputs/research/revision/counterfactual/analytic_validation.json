@@ -1,0 +1,29 @@
+{
+  "passed": 23,
+  "checks": [
+    "native-only analytic commitment 60.0",
+    "analytic independent operating cost 60.0",
+    "no mutation of input 60.0",
+    "AI-side unchanged 60.0",
+    "full available dispatch relaxation 60.0",
+    "other assets unchanged 60.0",
+    "legacy reference unchanged 60.0",
+    "native-only analytic commitment 90.0",
+    "analytic independent operating cost 90.0",
+    "no mutation of input 90.0",
+    "AI-side unchanged 90.0",
+    "full available dispatch relaxation 90.0",
+    "other assets unchanged 90.0",
+    "legacy reference unchanged 90.0",
+    "native-only analytic commitment 100.0",
+    "analytic independent operating cost 100.0",
+    "no mutation of input 100.0",
+    "AI-side unchanged 100.0",
+    "full available dispatch relaxation 100.0",
+    "other assets unchanged 100.0",
+    "legacy reference unchanged 100.0",
+    "zero coal does not divide by zero",
+    "invalid policy rejected"
+  ],
+  "scope": "Reference independence and dispatch-boundary identities; not thermal commitment validation"
+}

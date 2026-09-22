@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Gansu_ai0.01_legacy",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Gansu_ai0.01_legacy.txt"
+  },
+  {
+    "name": "Gansu_ai0.01_independent_reference",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Gansu_ai0.01_independent_reference.txt"
+  },
+  {
+    "name": "Gansu_ai0.01_dispatch_relaxation",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Gansu_ai0.01_dispatch_relaxation.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_legacy",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Gansu_ai0.1_legacy.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_independent_reference",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Gansu_ai0.1_independent_reference.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_dispatch_relaxation",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Gansu_ai0.1_dispatch_relaxation.txt"
+  },
+  {
+    "name": "Gansu_ai0.2_legacy",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Gansu_ai0.2_legacy.txt"
+  },
+  {
+    "name": "Gansu_ai0.2_independent_reference",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Gansu_ai0.2_independent_reference.txt"
+  },
+  {
+    "name": "Gansu_ai0.2_dispatch_relaxation",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Gansu_ai0.2_dispatch_relaxation.txt"
+  },
+  {
+    "name": "Guizhou_ai0.01_legacy",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Guizhou_ai0.01_legacy.txt"
+  },
+  {
+    "name": "Guizhou_ai0.01_independent_reference",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Guizhou_ai0.01_independent_reference.txt"
+  },
+  {
+    "name": "Guizhou_ai0.01_dispatch_relaxation",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Guizhou_ai0.01_dispatch_relaxation.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_legacy",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Guizhou_ai0.1_legacy.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_independent_reference",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Guizhou_ai0.1_independent_reference.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_dispatch_relaxation",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Guizhou_ai0.1_dispatch_relaxation.txt"
+  },
+  {
+    "name": "Guizhou_ai0.2_legacy",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Guizhou_ai0.2_legacy.txt"
+  },
+  {
+    "name": "Guizhou_ai0.2_independent_reference",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Guizhou_ai0.2_independent_reference.txt"
+  },
+  {
+    "name": "Guizhou_ai0.2_dispatch_relaxation",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Guizhou_ai0.2_dispatch_relaxation.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.01_legacy",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Jiangsu_ai0.01_legacy.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.01_independent_reference",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Jiangsu_ai0.01_independent_reference.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.01_dispatch_relaxation",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Jiangsu_ai0.01_dispatch_relaxation.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.1_legacy",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Jiangsu_ai0.1_legacy.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.1_independent_reference",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Jiangsu_ai0.1_independent_reference.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.1_dispatch_relaxation",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Jiangsu_ai0.1_dispatch_relaxation.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_legacy",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Jiangsu_ai0.2_legacy.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_independent_reference",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Jiangsu_ai0.2_independent_reference.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_dispatch_relaxation",
+    "exit_code": 0,
+    "log": "outputs/research/revision/counterfactual/logs/Jiangsu_ai0.2_dispatch_relaxation.txt"
+  }
+]

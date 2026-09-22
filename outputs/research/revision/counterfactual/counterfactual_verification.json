@@ -1,0 +1,26 @@
+{
+  "completed_configurations": 27,
+  "completed_scenario_solves": 189,
+  "failed_configurations": [],
+  "legacy_noai_cost_drift_eur_per_week": {
+    "Gansu": 155748.79070740938,
+    "Guizhou": 5041826.8446498215,
+    "Jiangsu": 0.0
+  },
+  "corrected_noai_cost_drift_eur_per_week": {
+    "Gansu/independent_reference": 0.0,
+    "Gansu/dispatch_relaxation": 0.0,
+    "Guizhou/independent_reference": 0.0,
+    "Guizhou/dispatch_relaxation": 0.0,
+    "Jiangsu/independent_reference": 0.0,
+    "Jiangsu/dispatch_relaxation": 0.0
+  },
+  "ai_scenarios_unchanged_by_reference_only_correction": true,
+  "paired_predecessor_reproduced": true,
+  "archived_sources_and_input_hashes_verified": true,
+  "max_storage_conservation_error_mwh": 2.9103830456733704e-11,
+  "limitations": [
+    "Independent reference corrects NOAI dependence only; endogenous thermal commitment remains unresolved.",
+    "Dispatch relaxation is a bounding sensitivity, not calibrated thermal operation."
+  ]
+}

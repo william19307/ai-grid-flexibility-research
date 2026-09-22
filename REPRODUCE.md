@@ -52,3 +52,15 @@ work/figure-env/bin/python work/research/analysis/plot_power_attribution_revisio
 sweep 共定义 60 组配置，最多三个本地子进程并发；已完成结果只在源码和输入哈希均与当前一致时复用，失败输出保留并返回失败状态。单次入口 `run_power_attribution_revision.py` 拒绝覆盖目录。每组保留源码文本、运行前源码和输入哈希，独立审计不要求后续修订代码与历史代码仍相同，但会记录差异。真正重新求解须在另一检出目录准备输入并移走该检出中的旧 `power_attribution/runs/`，不可把复用计为新的独立求解。
 
 配图读取 `factorial_results.csv`，输出 PNG/PDF/SVG 和源表哈希。分量模型、八配置的相关性及未关闭的实证缺口见阶段 02 报告。已有任务与成本回归输出单独保存在 `power_attribution/regression/`，没有覆盖冻结稿验证结果。
+
+### 阶段 03：无 AI 反事实
+
+在阶段 02 的输入清单和三地区中心配置已存在时运行：
+
+```sh
+work/figure-env/bin/python work/research/analysis/validate_counterfactual_revision.py
+work/figure-env/bin/python work/research/analysis/sweep_counterfactual_revision.py
+work/figure-env/bin/python work/research/analysis/audit_counterfactual_revision.py
+```
+
+27 组分别比较历史规则、只修正 NOAI、全煤电调度放宽；运行入口拒绝覆盖已有输出，sweep 不自动复用既有运行。每次保存实际煤电约束、源码及输入哈希。独立审计跨 AI 规模比较 NOAI，并核验只改参考不会改变 AI 场景。调度放宽不是机组组合或停运验证。
