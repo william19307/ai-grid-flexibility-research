@@ -1,0 +1,40 @@
+{
+  "run": "Earth_ft_llama_8b_dolly_24_Gansu",
+  "cluster": "Earth",
+  "start": "2020-04-06",
+  "workload": "ft_llama_8b_dolly",
+  "slack": 24,
+  "tariff": "Gansu",
+  "status": "constructed_pending_independent_verification",
+  "jobs": 774,
+  "runtime_s": 0.7155358791351318,
+  "total_saving": 11520.602106174985,
+  "mode_shapley": 9007.715418066462,
+  "start_shapley": 2512.8866881085232,
+  "interaction_saving": -1796.6658737829348,
+  "mode_share_pct": 78.18788753444034,
+  "mode_first": 9906.04835495793,
+  "mode_last": 8109.382481174991,
+  "start_first": 3411.2196249999943,
+  "start_last": 1614.5537512170558,
+  "optimal_mode_share_lower_pct": 77.83472303061193,
+  "optimal_mode_share_upper_pct": 78.18788753444032,
+  "upper_incremental_bill": {
+    "C00": 28317.544374999998,
+    "C10": 18411.49602004207,
+    "C01": 24906.324750000003,
+    "C11": 16796.942268825012
+  },
+  "lower_incremental_bill": {
+    "C00": 28317.544374999998,
+    "C10": 18411.49602004207,
+    "C01": 24862.555375000004,
+    "C11": 16729.39358243917
+  },
+  "global_optimum_mode_share_bracket": {
+    "lower_pct": 77.83472303061193,
+    "upper_pct": 78.18788753444032,
+    "reason": "Certified interval for globally optimal capability allocation, conditional on cost bounds and this policy matrix; not a confidence interval"
+  },
+  "seed_C11": "C10"
+}

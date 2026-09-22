@@ -1,0 +1,40 @@
+{
+  "run": "Venus_infer_llama_8b_32g_24_Guizhou",
+  "cluster": "Venus",
+  "start": "2020-04-06",
+  "workload": "infer_llama_8b_32g",
+  "slack": 24,
+  "tariff": "Guizhou",
+  "status": "constructed_pending_independent_verification",
+  "jobs": 2332,
+  "runtime_s": 2.8796238899230957,
+  "total_saving": 20365.028322092025,
+  "mode_shapley": 14273.536202085299,
+  "start_shapley": 6091.492120006726,
+  "interaction_saving": -4915.440159986436,
+  "mode_share_pct": 70.08846723086232,
+  "mode_first": 16731.256282078517,
+  "mode_last": 11815.816122092081,
+  "start_first": 8549.212199999944,
+  "start_last": 3633.7720400135076,
+  "optimal_mode_share_lower_pct": 69.90365752752756,
+  "optimal_mode_share_upper_pct": 70.08846723086234,
+  "upper_incremental_bill": {
+    "C00": 42020.82574999999,
+    "C10": 25289.569467921472,
+    "C01": 33471.613550000046,
+    "C11": 21655.797427907964
+  },
+  "lower_incremental_bill": {
+    "C00": 42020.82574999999,
+    "C10": 25289.569467921472,
+    "C01": 33430.46435000005,
+    "C11": 21570.07474903598
+  },
+  "global_optimum_mode_share_bracket": {
+    "lower_pct": 69.90365752752756,
+    "upper_pct": 70.08846723086234,
+    "reason": "Certified interval for globally optimal capability allocation, conditional on cost bounds and this policy matrix; not a confidence interval"
+  },
+  "seed_C11": "C10"
+}

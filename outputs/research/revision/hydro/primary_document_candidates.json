@@ -1,0 +1,54 @@
+{
+  "audit_date": "2026-09-22",
+  "applied_to_frozen_model": false,
+  "evidence_acquisition": "Manual visual reading in normal browser PDF viewer; original PDF bytes not archived",
+  "candidates": [
+    {
+      "gem_id": "G100001051222",
+      "name": "云贵桥",
+      "province": "Yunnan",
+      "inventory_capacity_mw": 45,
+      "document_capacity_mw": 56,
+      "document_technology": "diversion",
+      "model_classification": null,
+      "usable_storage_m3": null,
+      "regulation_period": null,
+      "capacity_conflict": true,
+      "status": "hold_pending_capacity_and_storage_evidence",
+      "source_project": "https://cdm.unfccc.int/Projects/DB/KFQ1354508365.83/view",
+      "source_document": "https://cdm.unfccc.int/UserManagement/FileStorage/JMVITSYWK62G0EPOBLDCRH5A3ZQN97",
+      "document_pages": [
+        1,
+        2,
+        3
+      ],
+      "document_version": "02",
+      "document_date": "2023-08-18",
+      "monitoring_period": [
+        "2013-04-01",
+        "2020-03-31"
+      ]
+    },
+    {
+      "gem_id": "G100000601204",
+      "name": "塔勒德萨依",
+      "province": "Xinjiang",
+      "inventory_capacity_mw": 80,
+      "document_capacity_mw": 80,
+      "document_technology": "run-of-river with a new reservoir",
+      "model_classification": "run-of-river",
+      "usable_storage_m3": null,
+      "regulation_period": null,
+      "capacity_conflict": false,
+      "status": "design_evidence_candidate_current_operation_unverified",
+      "source_project": "https://cdm.unfccc.int/Projects/DB/JCI1340759707.31/view",
+      "source_document": "https://cdm.unfccc.int/UserManagement/FileStorage/5BGX7NIYFCH24TES1MJR3UZDK80OQV",
+      "document_pages": [
+        2,
+        5
+      ],
+      "document_version": "04.1",
+      "document_date_as_printed": "06/05/2012"
+    }
+  ]
+}

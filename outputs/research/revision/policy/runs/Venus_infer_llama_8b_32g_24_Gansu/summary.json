@@ -1,0 +1,40 @@
+{
+  "run": "Venus_infer_llama_8b_32g_24_Gansu",
+  "cluster": "Venus",
+  "start": "2020-04-06",
+  "workload": "infer_llama_8b_32g",
+  "slack": 24,
+  "tariff": "Gansu",
+  "status": "constructed_pending_independent_verification",
+  "jobs": 2332,
+  "runtime_s": 2.438326120376587,
+  "total_saving": 17934.6917843373,
+  "mode_shapley": 14372.641341484632,
+  "start_shapley": 3562.050442852669,
+  "interaction_saving": -2704.369614294672,
+  "mode_share_pct": 80.13876967786268,
+  "mode_first": 15724.826148631968,
+  "mode_last": 13020.456534337296,
+  "start_first": 4914.235250000005,
+  "start_last": 2209.8656357053333,
+  "optimal_mode_share_lower_pct": 79.6018057478781,
+  "optimal_mode_share_upper_pct": 80.13876967786268,
+  "upper_incremental_bill": {
+    "C00": 40624.12775000001,
+    "C10": 24899.30160136804,
+    "C01": 35709.8925,
+    "C11": 22689.435965662706
+  },
+  "lower_incremental_bill": {
+    "C00": 40624.12775000001,
+    "C10": 24899.30160136804,
+    "C01": 35655.55649999999,
+    "C11": 22455.88661254343
+  },
+  "global_optimum_mode_share_bracket": {
+    "lower_pct": 79.6018057478781,
+    "upper_pct": 80.13876967786268,
+    "reason": "Certified interval for globally optimal capability allocation, conditional on cost bounds and this policy matrix; not a confidence interval"
+  },
+  "seed_C11": "C10"
+}

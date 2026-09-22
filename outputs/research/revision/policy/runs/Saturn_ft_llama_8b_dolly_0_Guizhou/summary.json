@@ -1,0 +1,40 @@
+{
+  "run": "Saturn_ft_llama_8b_dolly_0_Guizhou",
+  "cluster": "Saturn",
+  "start": "2020-04-06",
+  "workload": "ft_llama_8b_dolly",
+  "slack": 0,
+  "tariff": "Guizhou",
+  "status": "constructed_pending_independent_verification",
+  "jobs": 14089,
+  "runtime_s": 4.938591003417969,
+  "total_saving": 9035.920028311768,
+  "mode_shapley": 2858.5839641558923,
+  "start_shapley": 6177.336064155876,
+  "interaction_saving": 5717.167928311785,
+  "mode_share_pct": 31.635782025507567,
+  "mode_first": 0.0,
+  "mode_last": 5717.167928311785,
+  "start_first": 3318.7520999999833,
+  "start_last": 9035.920028311768,
+  "optimal_mode_share_lower_pct": 30.715661000315375,
+  "optimal_mode_share_upper_pct": 32.3253363111057,
+  "upper_incremental_bill": {
+    "C00": 117980.54735,
+    "C10": 117980.54735,
+    "C01": 114661.79525000001,
+    "C11": 108944.62732168823
+  },
+  "lower_incremental_bill": {
+    "C00": 117980.54735,
+    "C10": 117980.54734999986,
+    "C01": 114495.51244999992,
+    "C11": 108592.10251615242
+  },
+  "global_optimum_mode_share_bracket": {
+    "lower_pct": 30.715661000315375,
+    "upper_pct": 32.3253363111057,
+    "reason": "Certified interval for globally optimal capability allocation, conditional on cost bounds and this policy matrix; not a confidence interval"
+  },
+  "seed_C11": "C01"
+}

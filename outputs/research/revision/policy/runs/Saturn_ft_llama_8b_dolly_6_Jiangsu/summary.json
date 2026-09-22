@@ -1,0 +1,40 @@
+{
+  "run": "Saturn_ft_llama_8b_dolly_6_Jiangsu",
+  "cluster": "Saturn",
+  "start": "2020-04-06",
+  "workload": "ft_llama_8b_dolly",
+  "slack": 6,
+  "tariff": "Jiangsu",
+  "status": "constructed_pending_independent_verification",
+  "jobs": 14089,
+  "runtime_s": 36.015456676483154,
+  "total_saving": 34233.93847126863,
+  "mode_shapley": 26785.75269414771,
+  "start_shapley": 7448.185777120918,
+  "interaction_saving": -7366.704071087355,
+  "mode_share_pct": 78.24326937032991,
+  "mode_first": 30469.10472969139,
+  "mode_last": 23102.400658604034,
+  "start_first": 11131.537812664596,
+  "start_last": 3764.8337415772403,
+  "optimal_mode_share_lower_pct": 66.96678658180168,
+  "optimal_mode_share_upper_pct": 83.53645302174368,
+  "upper_incremental_bill": {
+    "C00": 123306.67642356147,
+    "C10": 92837.57169387008,
+    "C01": 112175.13861089687,
+    "C11": 89072.73795229284
+  },
+  "lower_incremental_bill": {
+    "C00": 123306.67642356147,
+    "C10": 89213.44122507758,
+    "C01": 107386.21972762309,
+    "C11": 80432.77109207798
+  },
+  "global_optimum_mode_share_bracket": {
+    "lower_pct": 66.96678658180168,
+    "upper_pct": 83.53645302174368,
+    "reason": "Certified interval for globally optimal capability allocation, conditional on cost bounds and this policy matrix; not a confidence interval"
+  },
+  "seed_C11": "C10"
+}

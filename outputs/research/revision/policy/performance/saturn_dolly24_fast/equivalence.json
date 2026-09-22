@@ -1,0 +1,12 @@
+{
+  "case": "Saturn_ft_llama_8b_dolly_24_Jiangsu",
+  "reference_runtime_s": 141.36206102371216,
+  "batched_runtime_s": 54.52252006530762,
+  "schedule_arrays_identical": {
+    "C00": true,
+    "C10": true,
+    "C01": true,
+    "C11": true
+  },
+  "all_costs_and_bounds_bitwise_identical": true
+}

@@ -1,6 +1,6 @@
 """Raw-event schedule audit, independent hourly bills and cost-bracket vertices."""
 from pathlib import Path
-import json,hashlib,itertools,time
+import json,hashlib,itertools,time,argparse
 import numpy as np,pandas as pd
 ROOT=Path(__file__).resolve().parents[3];OUT=ROOT/'outputs/research/revision/policy'
 
@@ -42,6 +42,11 @@ def share_vertices(lower,upper):
     return min(ratios),max(ratios)
 
 def main():
+    ap=argparse.ArgumentParser();ap.add_argument('--available',action='store_true',help='Audit completed cases without treating unfinished cases as failures');args=ap.parse_args()
+    audit_dir=OUT/'case_verification';audit_dir.mkdir(exist_ok=True)
+    verifier_hash=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+    manifest_hash=hashlib.sha256((OUT/'manifest.json').read_bytes()).hexdigest()
+    pending=[];newly_verified=0;reused=0
     spec=json.loads((OUT/'manifest.json').read_text());snap=json.loads((OUT/'source_snapshot.json').read_text())
     for path,h in spec['input_sha256'].items():assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==h
     for path,h in spec['source_sha256'].items():assert hashlib.sha256(snap[path].encode()).hexdigest()==h
@@ -49,8 +54,22 @@ def main():
     cv=pd.read_csv(ROOT/'outputs/research/tables/dvfs_measured_and_derived.csv');cache=None;rows=[];cellrows=[];failures=[];max_work=max_window=max_peak=0.
     for case in spec['cases']:
         name='_'.join(str(case[k]) for k in ['cluster','workload','slack','tariff']);folder=OUT/'runs'/name
-        sm=json.loads((folder/'summary.json').read_text())
+        try:sm=json.loads((folder/'summary.json').read_text())
+        except (FileNotFoundError,json.JSONDecodeError):
+            if not args.available:raise
+            pending.append(name);continue
         if sm['status']=='error':failures.append(sm);continue
+        inputs=[folder/'summary.json']+[folder/f'{cell}.csv.gz' for cell in ['C00','C10','C01','C11']]
+        cache_key=hashlib.sha256((verifier_hash+manifest_hash+''.join(hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs)).encode()).hexdigest()
+        cache_file=audit_dir/f'{name}.json'
+        if cache_file.exists():
+            saved=json.loads(cache_file.read_text())
+            profile=folder/'verified_hourly_profiles.csv.gz'
+            if saved['input_key']==cache_key and profile.exists() and hashlib.sha256(profile.read_bytes()).hexdigest()==saved['profile_sha256']:
+                assert len(saved['cells'])==4 and saved['row']['run']==name
+                rows.append(saved['row']);cellrows.extend(saved['cells']);reused+=1
+                max_work=max(max_work,max(x['max_work_error_gpu_h'] for x in saved['cells']));max_window=max(max_window,max(x['max_window_violation_s'] for x in saved['cells']));max_peak=max(max_peak,max(x['capacity_excess_gpus'] for x in saved['cells']))
+                continue
         cluster=case['cluster'];src=ROOT/'work/research/sources/helios_sensetime/data'/cluster
         if cache!=cluster:
             raw=pd.read_csv(src/'cluster_log.csv',parse_dates=['submit_time','start_time','end_time']);raw=raw[raw.gpu_num>0]
@@ -98,11 +117,15 @@ def main():
             assert hi is None or hi<=50+1e-5
         pd.DataFrame(dict(hour=np.arange(192),relative_price=prices,**profiles)).to_csv(folder/'verified_hourly_profiles.csv.gz',index=False,compression={'method':'gzip','mtime':0})
         rows.append(dict(run=name,**case,jobs=len(co),constructed_total_bill_saving_pct=100*total/float(profiles['C00']@prices),constructed_all_gpu_energy_saving_pct=100*(profiles['C00'].sum()-profiles['C11'].sum())/profiles['C00'].sum(),mode_share_pct=share,optimal_mode_share_lower_pct=lo,optimal_mode_share_upper_pct=hi,interaction=upper['C10']+upper['C01']-upper['C00']-upper['C11'],mode_first=upper['C00']-upper['C10']))
+        payload=dict(input_key=cache_key,verified_utc_unix=time.time(),row=rows[-1],cells=cellrows[-4:],profile_sha256=hashlib.sha256((folder/'verified_hourly_profiles.csv.gz').read_bytes()).hexdigest())
+        temporary=cache_file.with_suffix('.tmp');temporary.write_text(json.dumps(payload,indent=2)+'\n');temporary.replace(cache_file)
+        newly_verified+=1
         print(name,flush=True)
     pd.DataFrame(rows).to_csv(OUT/'certified_factorials.csv',index=False);pd.DataFrame(cellrows).to_csv(OUT/'certified_cells.csv',index=False)
     (OUT/'failed_cases.json').write_text(json.dumps(failures,indent=2)+'\n')
-    assert len(rows)+len(failures)==len(spec['cases'])
-    report=dict(verified_factorials=len(rows),verified_schedules=len(cellrows),failed_factorials=len(failures),all_declared_cases_accounted_for=True,max_work_error_gpu_h=max_work,max_service_window_violation_s=max_window,max_aggregate_gpu_excess=max_peak,
+    assert len(rows)+len(failures)+len(pending)==len(spec['cases'])
+    if not args.available:assert not pending
+    report=dict(verified_factorials=len(rows),verified_schedules=len(cellrows),failed_factorials=len(failures),pending_factorials=len(pending),newly_verified=newly_verified,reused_unchanged_verifications=reused,all_declared_cases_accounted_for=not pending,max_work_error_gpu_h=max_work,max_service_window_violation_s=max_window,max_aggregate_gpu_excess=max_peak,
         all_four_policies_same_cohort_and_background=True,independent_hourly_power_and_price_integration=True,independent_per_job_bound_and_fractional_share_vertex_check=True,zero_allowance_fixed_start_no_slowdown_verified=True,
         scope='Retrospective, aggregate fixed-size gangs; normalized conditional GPU bill and policy-specific attribution, not actual node power, system cost, global schedule optimality or online operation.')
     (OUT/'independent_verification.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))

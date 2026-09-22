@@ -1,0 +1,17 @@
+{
+  "verified_factorials": 71,
+  "verified_schedules": 284,
+  "failed_factorials": 0,
+  "pending_factorials": 37,
+  "newly_verified": 0,
+  "reused_unchanged_verifications": 71,
+  "all_declared_cases_accounted_for": false,
+  "max_work_error_gpu_h": 1.0605916145323135e-10,
+  "max_service_window_violation_s": 0.0,
+  "max_aggregate_gpu_excess": 0.0,
+  "all_four_policies_same_cohort_and_background": true,
+  "independent_hourly_power_and_price_integration": true,
+  "independent_per_job_bound_and_fractional_share_vertex_check": true,
+  "zero_allowance_fixed_start_no_slowdown_verified": true,
+  "scope": "Retrospective, aggregate fixed-size gangs; normalized conditional GPU bill and policy-specific attribution, not actual node power, system cost, global schedule optimality or online operation."
+}

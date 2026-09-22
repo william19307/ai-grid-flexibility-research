@@ -121,3 +121,7 @@ work/figure-env/bin/python work/research/analysis/summarize_gang_policy_revision
 ```
 
 已完成的方法检查入口为 `validate_gang_policy.py`（241 项）和 `validate_policy_attribution.py`（201 项）。可行策略份额与全局最优份额界不能混称，详见 `policy_attribution_methods_draft.md`。新增整机功率候选核查入口为 `audit_tokenpowerbench_source.py`，固定上游提交且只读取文本/结果，不执行下载代码；其结果尚不能作为整机校准。
+
+阶段 07 的构造仍在运行时，可执行 `verify_gang_policy_revision.py --available` 检查已完成案例；它明确记录 pending，并不会使汇总入口接受不完整实验。逐案核验缓存绑定核验器源码、冻结清单、案例结果及四份排程的哈希，且校验导出的小时轨迹哈希；源码或数据变化会重新核验。最终仍须无 `--available` 执行完整核验。2026-09-22 检查点为 71 组/284 份排程，第二次同输入检查确认 71 个案例复用成功。
+
+另有独立性能原型 `gang_policy_fast.py`，检查入口 `validate_fast_gang_policy.py`，大案例对照入口 `benchmark_fast_gang_policy.py`。它未替换当前冻结的 108 组实验。性能记录存于 `policy/performance/`，不作为新增独立研究样本。
