@@ -1,0 +1,18 @@
+{
+  "parameters": {
+    "province": "Jiangsu",
+    "ai_share": 0.2,
+    "treatment": "legacy",
+    "duration": 8.0,
+    "efficiency": 0.75,
+    "neighbours": true
+  },
+  "started_unix": 1790063644.608026,
+  "evidence_tier": "paired structural-correction diagnostic; other manuscript assumptions retained",
+  "sha256": {
+    "work/research/analysis/run_regional_2030_s0_s3.py": "6f0de9ca21189da391f9954f50918312163c0cf4743ac50525372fb179ca3db5",
+    "work/research/models/coupled_grid_compute.py": "8f74933f54b6cc196923437d520fea48bee56c022abda59a3eec167c9467740c",
+    "work/research/models/hydro_fleet.py": "f13720783d8e24ba52659aba7a965b98fd4cc69844b8b3b581f5d4b67e1109c8",
+    "outputs/research/revision/hydro/hydro_2030_by_technology.csv": "9589e848ab44e811b402ef2800bdc867f6c9994d1e8341543b11be8f2965f770"
+  }
+}

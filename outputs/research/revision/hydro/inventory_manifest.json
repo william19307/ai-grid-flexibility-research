@@ -1,0 +1,14 @@
+{
+  "source": "work/research/sources/zenodo_16810831/Global-integrated-Plant-Tracker-July-2025_china.xlsx",
+  "sha256": "4ed14c94a305ec43af9ac33a49134fcee5c1271e2d93d248ab608c7781ea71d0",
+  "source_doi": "10.5281/zenodo.16810831",
+  "licence": "CC-BY-4.0",
+  "technology_field": "Technology (source workbook, not inferred from plant name)",
+  "included_records": 814,
+  "unknown_start_records": 326,
+  "limitations": [
+    "Original vintage selection retained; missing start years remain excluded.",
+    "Storage duration and efficiency are not supplied by this workbook.",
+    "Conventional reservoir and mixed hydro require separate hydrology calibration."
+  ]
+}

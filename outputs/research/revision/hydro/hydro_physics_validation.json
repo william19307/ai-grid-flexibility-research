@@ -1,0 +1,32 @@
+{
+  "passed": 26,
+  "checks": [
+    "Jiangsu has no non-pumped hydro in selected GEM inventory",
+    "inconsistent capacity rejected",
+    "no free energy eta=0.6",
+    "feasible transfer eta=0.6",
+    "analytic charge eta=0.6",
+    "analytic discharge eta=0.6",
+    "analytic cost eta=0.6",
+    "no simultaneous operation eta=0.6",
+    "no free energy eta=0.75",
+    "feasible transfer eta=0.75",
+    "analytic charge eta=0.75",
+    "analytic discharge eta=0.75",
+    "analytic cost eta=0.75",
+    "no simultaneous operation eta=0.75",
+    "no free energy eta=0.9",
+    "feasible transfer eta=0.9",
+    "analytic charge eta=0.9",
+    "analytic discharge eta=0.9",
+    "analytic cost eta=0.9",
+    "no simultaneous operation eta=0.9",
+    "no free energy eta=1.0",
+    "feasible transfer eta=1.0",
+    "analytic charge eta=1.0",
+    "analytic discharge eta=1.0",
+    "analytic cost eta=1.0",
+    "no simultaneous operation eta=1.0"
+  ],
+  "scope": "analytic storage tests and inventory consistency; not provincial empirical validation"
+}

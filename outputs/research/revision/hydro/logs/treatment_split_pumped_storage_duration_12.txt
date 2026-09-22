@@ -1,0 +1,10 @@
+== Jiangsu 2030 ai=0.2 export=False runtime 3s ratio 1.18 peak 129876 committed {'winter': 92481, 'spring': 92481, 'summer': 92481, 'autumn': 92481}
+case   total_cost   investment    new_ocgt  new_onwind    new_solar  new_batt_mw  emissions_t       curtail       ai_mwh  import_mwh  export_mwh
+NOAI 5.107221e+08 0.000000e+00    0.000000         0.0     0.000000    -0.000000 1.742012e+07  0.000000e+00 0.000000e+00         0.0         0.0
+  S0 6.544112e+08 1.891788e+07 9379.635965         0.0 15221.650340  1008.425203 2.018927e+07  3.800083e-17 3.584059e+06         0.0         0.0
+ S0e 6.302029e+08 1.158816e+07 6168.849343         0.0  8616.239086   950.866717 1.996361e+07 -4.090642e-17 3.109500e+06         0.0         0.0
+  S1 6.315724e+08 2.529910e+07 5533.033769         0.0 27279.668751  1586.682291 1.973509e+07  3.458692e-18 3.127586e+06         0.0         0.0
+  S2 6.255446e+08 1.830470e+07    0.000000         0.0 24954.381810    -0.000000 1.976430e+07  1.202010e-18 3.116387e+06         0.0         0.0
+S1rt 6.267807e+08 1.656248e+07 1629.341746         0.0 20489.277144   434.808865 1.982138e+07  7.036292e-17 3.115094e+06         0.0         0.0
+  S3 6.318504e+08 1.437947e+07 3583.947575         0.0 11774.402835  5058.241823 1.994642e+07  1.206881e-18 3.137077e+06         0.0         0.0
+S3: {'winter': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}, 'spring': {'commitment_mw': -0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'event_mc_mean': 53.5}, 'summer': {'commitment_mw': 9437.1, 'opportunity_cost': 4503238.7, 'compensation_floor': 4503238.7, 'event_mc_mean': 475.7}, 'autumn': {'commitment_mw': -0.0, 'opportunity_cost': -0.0, 'compensation_floor': 0.0, 'event_mc_mean': 53.5}}

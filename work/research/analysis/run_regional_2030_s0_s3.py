@@ -19,6 +19,7 @@ sys.path.insert(0,str(ROOT/'work/research/models'));sys.path.insert(0,str(ROOT/'
 from coupled_grid_compute import Generator,Line,Storage,Batch,ComputePool,Scenario,solve
 from sequential_tasks import Job,schedule,baseline_asap
 from response_cost import cost_at_max_response
+from hydro_fleet import split_hydro, pumped_storage
 import run_regional_smoke_s0_s1_s2 as base
 SRC=base.SRC;OUT=base.OUT;CODE=base.CODE;WEEK_STARTS=base.WEEK_STARTS;WEEK=168
 
@@ -99,7 +100,15 @@ def re_profiles_year(prov,year):
         return np.concatenate([a,a[-24*(8784-len(a))//24 - 0:][:8784-len(a)]]) if 8784-len(a)<=24 else np.resize(a,8784)
     return np.clip(fit(w),0,1),np.clip(fit(sv),0,1)
 
-def run(prov,ai_share=0.10,u=0.7,idle_frac=0.41,slack_mult=1.0,slack_base_h=6.0,export=True,ext_load_frac=0.6,coal_min=0.4,event_q=0.05,allow_new_coal=False,tag='',ext_mode='price',rt_price=True,peak_target_2020=None,weather_year=None):
+def run(prov,ai_share=0.10,u=0.7,idle_frac=0.41,slack_mult=1.0,slack_base_h=6.0,export=True,ext_load_frac=0.6,coal_min=0.4,event_q=0.05,allow_new_coal=False,tag='',ext_mode='price',rt_price=True,peak_target_2020=None,weather_year=None,hydro_treatment='legacy',phs_duration_h=8.,phs_roundtrip_efficiency=0.75,results_dir=None):
+    # Legacy remains solely for frozen-manuscript reproduction. Revision runs
+    # must use the separate runner/output directory and explicit treatment.
+    if hydro_treatment not in {'legacy','split_pumped_storage','remove_pumped_storage'}:
+        raise ValueError('Unknown hydro treatment')
+    if hydro_treatment != 'legacy' and results_dir is None:
+        raise ValueError('Revision hydro runs require a separate results_dir')
+    result_out=Path(results_dir) if results_dir is not None else OUT
+    result_out.mkdir(parents=True,exist_ok=True)
     t0=time.time();c=costs_2030();p=base.province_inputs(prov);fleet=gem_fleet(prov);ratio=load_ratio(prov)
     if weather_year is not None:
         wpu,spu=re_profiles_year(prov,weather_year);p=dict(p);p['onwind_pu']=wpu;p['solar_pu']=spu  # offshore and hydro stay archive 2020
@@ -127,6 +136,10 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.41,slack_mult=1.0,slack_base_h=6.0,
         if not r['feasible']:raise RuntimeError(('S1 infeasible',name))
         fixed_S1[name]=np.array(r['slot_average_power']);meta_jobs[name]['s1_bill']=r['energy_cost']
     cap=p['cap'];nodes=[prov,'EXT'];hydro_mw=fleet['hydro_gem']  # GEM 2030 hydro units (operating+construction); archive other-hydro profile applied
+    hydro_classification={};phs_mw={prov:0.,'EXT':0.}
+    if hydro_treatment != 'legacy':
+        hs=split_hydro(prov,hydro_mw);hydro_classification[prov]=hs
+        hydro_mw=hs['non_pumped_mw'];phs_mw[prov]=hs['pumped_mw']
     nb={}
     if ext_mode=='neighbours':
         # EXT = aggregate of directly connected provinces: anchored load x their 2030 ratio, GEM 2030 fleets, archive RE capacities and profiles
@@ -135,6 +148,9 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.41,slack_mult=1.0,slack_base_h=6.0,
             try:pn=base.province_inputs(n_)
             except Exception as ex:print('skip neighbour',n_,ex);continue
             fn=gem_fleet_any(n_);rn=load_ratio(n_)
+            if hydro_treatment != 'legacy':
+                hs=split_hydro(n_,fn['hydro_gem']);hydro_classification[n_]=hs
+                fn['hydro_gem']=hs['non_pumped_mw'];phs_mw['EXT']+=hs['pumped_mw']
             agg['load']+=pn['load']*rn;agg['solar']+=pn['solar_pu']*pn['cap'].get('solar PV',0);agg['onwind']+=pn['onwind_pu']*pn['cap'].get('onshore wind',0);agg['offwind']+=pn['offwind_pu']*pn['cap'].get('offshore wind',0)
             agg['hydro']+=pn['hydro_pu']*fn['hydro_gem'];agg['coal']+=fn['coal'];agg['gas']+=fn['gas'];agg['nuclear']+=fn['nuclear'];agg['hydro_mw']+=fn['hydro_gem']
             agg['solar_mw']+=pn['cap'].get('solar PV',0);agg['onwind_mw']+=pn['cap'].get('onshore wind',0);agg['offwind_mw']+=pn['cap'].get('offshore wind',0)
@@ -169,6 +185,10 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.41,slack_mult=1.0,slack_base_h=6.0,
     lines=[Line('interconnection',prov,'EXT',p['interconnection_mw'] if export else 0.,0,0,0.03)]
     stor=[Storage('battery',prov,0,0,1e6,4e6,c['batt_power_inv_yr']*wk,c['batt_energy_inv_yr']*wk,0.95,0.95,0.5)]
     if ext_mode=='neighbours':stor.append(Storage('nb_battery','EXT',0,0,1e6,4e6,c['batt_power_inv_yr']*wk,c['batt_energy_inv_yr']*wk,0.95,0.95,0.5))
+    if hydro_treatment=='split_pumped_storage':
+        for node,power in phs_mw.items():
+            if power>0:
+                stor.append(pumped_storage('phs_'+node,node,power,phs_duration_h,phs_roundtrip_efficiency))
     ext_load=ext_load_frac*p['interconnection_mw']
     if ext_mode=='neighbours':scenarios=[Scenario(s['name'],0.25,{prov:s['load'],'EXT':nb['agg']['load'][WEEK_STARTS[s['name']]:WEEK_STARTS[s['name']]+WEEK]}) for s in scen]
     else:scenarios=[Scenario(s['name'],0.25,{prov:s['load'],'EXT':np.full(WEEK,ext_load)}) for s in scen]
@@ -186,6 +206,19 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.41,slack_mult=1.0,slack_base_h=6.0,
             if 'ai' in rr['compute_power_mw']:ai+=np.sum(rr['compute_power_mw']['ai'])*0.25
             mc[s['name']]=rr['nodal_balance_marginal_cost'][prov]
         d.update(curtail_rate=curt/avail if avail else None,import_mwh=imp,export_mwh=exp,ai_mwh=ai,marginal_cost=mc)
+        d['pumped_storage_audit']={}
+        for b in stor:
+            if not b.name.startswith('phs_'):continue
+            charge=discharge=max_balance=max_cyclic=0.;simultaneous=0
+            for sc in scenarios:
+                rr=r['scenarios'][sc.name];cc=np.array(rr['charge'][b.name]);dd=np.array(rr['discharge'][b.name]);ee=np.array(rr['soc'][b.name])
+                charge+=sc.probability*cc.sum();discharge+=sc.probability*dd.sum()
+                max_balance=max(max_balance,float(np.max(np.abs(np.diff(ee)-b.charge_efficiency*cc+dd/b.discharge_efficiency))))
+                max_cyclic=max(max_cyclic,float(abs(ee[-1]-ee[0])))
+                simultaneous+=int(np.sum((cc>1e-7)&(dd>1e-7)))
+            energy_error=abs(discharge-charge*b.charge_efficiency*b.discharge_efficiency)
+            if max(max_balance,max_cyclic,energy_error)>1e-5:raise AssertionError('Pumped storage energy conservation failed')
+            d['pumped_storage_audit'][b.name]=dict(charge_mwh=charge,discharge_mwh=discharge,roundtrip_balance_error_mwh=energy_error,max_transition_error_mwh=max_balance,max_cyclic_error_mwh=max_cyclic,simultaneous_slots=simultaneous)
         return d
     res={}
     r=solve(nodes,scenarios,gens(),lines,stor,[],expected_unserved_limit_mwh=0.);res['NOAI']=summarize(r,'NOAI')
@@ -220,13 +253,14 @@ def run(prov,ai_share=0.10,u=0.7,idle_frac=0.41,slack_mult=1.0,slack_base_h=6.0,
     meta=dict(province=prov,evidence_tier='public-data 2030 scenario; hourly load shape unvalidated; documented assumptions',load_ratio_2030_2020=ratio,peak_2030_mw=peak30,fleet_2030_gem=fleet,hydro_mw_gem_2030=hydro_mw,committed_coal_mw=comm,
         neighbours=(nb.get('names'),nb.get('links_mw')) if nb else None,exchange='islanded (interconnection = 0)' if not export else ('fixed-price external market' if ext_mode=='price' else 'neighbour aggregate node'),ai_work_pool_hours={s['name']:float(sum(j.work for j in jobs_by[s['name']])) for s in scen},assumptions=dict(modes_kept=int(len(q)),weather_year=weather_year,peak_target_2020=peak_target_2020,ext_mode=ext_mode,ai_share_of_peak=ai_share,ai_nameplate_mw=P_full,idle_fraction=idle_frac,utilization=u,slack='job observed queue x %.1f + %.1f h'%(slack_mult,slack_base_h),dvfs_config=cfg,tariff='official shape, level 1.5x coal marginal',coal_min_of_committed=coal_min,allow_new_coal=allow_new_coal,export=export,event_top_share=event_q,external_market='EXT load %.2f x interconnection at 1.1x coal marginal, 3%% loss'%ext_load_frac),
         job_meta=meta_jobs,s3=s3meta,costs=c,runtime_s=time.time()-t0)
+    meta['hydro_revision']=dict(treatment=hydro_treatment,classified_fleets=hydro_classification,pumped_capacity_mw=phs_mw,ac_deliverable_duration_h=phs_duration_h,roundtrip_efficiency=phs_roundtrip_efficiency,parameters_evidence='duration and efficiency are sensitivity assumptions, not plant-calibrated',remaining_limitation='non-pumped hydro still uses historical other-hydro profile; reservoir hydrology unresolved')
     out=dict(meta=meta,results=res);name=f"{CODE[prov]}_2030_ai{int(ai_share*100)}{'' if export else '_noexport'}_sm{slack_mult:g}_sb{int(slack_base_h)}{'_nb' if ext_mode=='neighbours' else ''}{'' if peak_target_2020 is None else '_pk'}{'' if weather_year is None else f'_wy{weather_year}'}{tag}"
-    json.dump(out,open(OUT/f'regional_2030_{name}.json','w'),ensure_ascii=False,indent=1,default=float)
+    json.dump(out,open(result_out/f'regional_2030_{name}.json','w'),ensure_ascii=False,indent=1,default=float)
     rows=[]
     for k_,d in res.items():
         if d['feasible']:rows.append(dict(case=k_,total_cost=d['total_cost'],investment=d['cost_investment'],new_ocgt=d['new_mw']['ocgt'],new_onwind=d['new_mw']['onwind'],new_solar=d['new_mw']['solar'],new_batt_mw=d['new_batt_mw'],emissions_t=d['emissions_t'],curtail=d['curtail_rate'],ai_mwh=d['ai_mwh'],import_mwh=d['import_mwh'],export_mwh=d['export_mwh']))
         else:rows.append(dict(case=k_,note=d.get('message')))
-    df=pd.DataFrame(rows);df.to_csv(OUT/f'regional_2030_{name}.csv',index=False)
+    df=pd.DataFrame(rows);df.to_csv(result_out/f'regional_2030_{name}.csv',index=False)
     print(f'== {prov} 2030 ai={ai_share} export={export} runtime {time.time()-t0:.0f}s ratio {ratio:.2f} peak {peak30:.0f} committed {({k:round(v) for k,v in comm.items()})}');pd.set_option('display.width',250);print(df.to_string(index=False))
     print('S3:',{k:{kk:(round(vv,1) if isinstance(vv,float) else vv) for kk,vv in v.items() if kk!='events'} for k,v in s3meta.items()})
     return out

@@ -1,0 +1,13 @@
+{
+  "finished_unix": 1790063640.677304,
+  "scenario_feasibility": {
+    "NOAI": true,
+    "S0": true,
+    "S0e": true,
+    "S1": true,
+    "S2": true,
+    "S1rt": true,
+    "S3": true
+  },
+  "all_feasible": true
+}

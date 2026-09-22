@@ -16,3 +16,23 @@
 | 8 文稿 | `drafts/update_manuscript_v05.py` … `v07.py` | 工作稿、阶段报告、英文稿 |
 
 所有脚本路径相对 `work/research/`。每个脚本头部写明证据层级；`tables/*_NOT_*`、`*_UNVERIFIED*`、`*_UNVALIDATED*` 命名的文件不得作为实证结果引用。
+
+## 2026-09-22 起的实质修订实验
+
+上表是冻结稿历史流程。审读后新实验位于 `outputs/research/revision/`，状态及未解决要求见 `REVISION_STATUS.md`，不能由旧版 READY 推断新版完成。
+
+在仓库根目录、原始与 prepared 输入齐全时依次运行：
+
+```sh
+work/figure-env/bin/python work/research/analysis/build_hydro_revision_inventory.py
+work/figure-env/bin/python work/research/analysis/validate_hydro_revision.py
+work/figure-env/bin/python work/research/analysis/run_hydro_revision.py --treatment legacy
+work/figure-env/bin/python work/research/analysis/run_hydro_revision.py --treatment split_pumped_storage --duration 8
+work/figure-env/bin/python work/research/analysis/run_hydro_revision.py --treatment remove_pumped_storage
+work/figure-env/bin/python work/research/analysis/sweep_hydro_revision.py
+work/figure-env/bin/python work/research/analysis/audit_hydro_revision_results.py
+```
+
+运行入口拒绝覆盖已完成配置。重现时应使用新检出目录，或先归档既有 `revision/hydro/runs/`；发生错误应先检查具体进程与日志，不能仅凭等候超时重启。第三至五条运行的默认省份为江苏、AI20%、孤岛；sweep 补充另外十组。抽蓄时长/效率是显式敏感性参数，常规水库、整机功率、任务期限等旧假设仍保留，结果仅供隔离本次修正影响。资产分类按原始 Technology 字段进行，未知类型会拒绝静默归类。
+
+汇总审计核对运行前代码哈希、原结果复现、储能守恒、31 省总容量与未决技术类型，并输出 `paired_results.csv`。当前 prepared 数据的完整下载重建入口与锁定环境仍是开放工作，以上命令不应被表述为已经通过全新机器端到端复现。

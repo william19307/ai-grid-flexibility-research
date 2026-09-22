@@ -1,0 +1,360 @@
+{
+ "meta": {
+  "province": "Jiangsu",
+  "evidence_tier": "public-data 2030 scenario; hourly load shape unvalidated; documented assumptions",
+  "load_ratio_2030_2020": 1.182536592912859,
+  "peak_2030_mw": 129875.60860937074,
+  "fleet_2030_gem": {
+   "coal": 92481.0,
+   "gas": 24779.0,
+   "nuclear": 9138.0,
+   "hydro_gem": 3950.0
+  },
+  "hydro_mw_gem_2030": 3950.0,
+  "committed_coal_mw": {
+   "winter": 92481.0,
+   "spring": 92481.0,
+   "summer": 92481.0,
+   "autumn": 92481.0
+  },
+  "neighbours": null,
+  "exchange": "islanded (interconnection = 0)",
+  "ai_work_pool_hours": {
+   "winter": 116.45479266576069,
+   "spring": 117.0511172031409,
+   "summer": 117.59999999999998,
+   "autumn": 117.37164765218196
+  },
+  "assumptions": {
+   "modes_kept": 5,
+   "weather_year": null,
+   "peak_target_2020": null,
+   "ext_mode": "price",
+   "ai_share_of_peak": 0.2,
+   "ai_nameplate_mw": 25975.12172187415,
+   "idle_fraction": 0.41,
+   "utilization": 0.7,
+   "slack": "job observed queue x 1.0 + 6.0 h",
+   "dvfs_config": "ft_llama_8b_dolly",
+   "tariff": "official shape, level 1.5x coal marginal",
+   "coal_min_of_committed": 0.4,
+   "allow_new_coal": false,
+   "export": false,
+   "event_top_share": 0.05,
+   "external_market": "EXT load 0.60 x interconnection at 1.1x coal marginal, 3% loss"
+  },
+  "job_meta": {
+   "winter": {
+    "extended": 27,
+    "dropped_share": 0.009738157604075095,
+    "n": 177,
+    "realised_utilisation": 0.6931832896771469,
+    "guard_iterations": 4,
+    "s1_bill": 140565625.66239518
+   },
+   "spring": {
+    "extended": 5,
+    "dropped_share": 0.004667370721590574,
+    "n": 175,
+    "realised_utilisation": 0.6967328404948864,
+    "guard_iterations": 5,
+    "s1_bill": 148201539.2169798
+   },
+   "summer": {
+    "extended": 1,
+    "dropped_share": 0.0,
+    "n": 197,
+    "realised_utilisation": 0.6999999999999998,
+    "guard_iterations": 1,
+    "s1_bill": 116592123.85088786
+   },
+   "autumn": {
+    "extended": 0,
+    "dropped_share": 0.0019417716651195464,
+    "n": 190,
+    "realised_utilisation": 0.6986407598344164,
+    "guard_iterations": 1,
+    "s1_bill": 136507809.7371379
+   }
+  },
+  "s3": {
+   "winter": {
+    "commitment_mw": 0.0,
+    "opportunity_cost": 0.0,
+    "compensation_floor": 0.0,
+    "events": [],
+    "reason": "no scarcity hours (marginal cost flat)"
+   },
+   "spring": {
+    "commitment_mw": -8.639924929428453e-11,
+    "opportunity_cost": 0.0,
+    "compensation_floor": 0.0,
+    "events": [
+     115,
+     116,
+     117,
+     118,
+     136,
+     137,
+     138,
+     167
+    ],
+    "event_mc_mean": 53.524390243902445
+   },
+   "summer": {
+    "commitment_mw": 10449.707087574754,
+    "opportunity_cost": 5768043.461831048,
+    "compensation_floor": 5768043.461831048,
+    "events": [
+     109,
+     110,
+     111,
+     112
+    ],
+    "event_mc_mean": 792.3737661248232
+   },
+   "autumn": {
+    "commitment_mw": 1.0816148333559179e-11,
+    "opportunity_cost": -5.960464477539063e-08,
+    "compensation_floor": 0.0,
+    "events": [
+     84,
+     92,
+     95,
+     108,
+     118,
+     119,
+     140,
+     167
+    ],
+    "event_mc_mean": 53.524390243902445
+   }
+  },
+  "costs": {
+   "coal_mc": 28.196969696969695,
+   "coal_co2": 1.0303030303030303,
+   "gas_mc": 53.524390243902445,
+   "gas_co2": 0.48780487804878053,
+   "nuclear_mc": 11.378787878787879,
+   "wind_mc": 1.35,
+   "solar_mc": 0.01,
+   "ocgt_inv_yr": 38628.61951491669,
+   "onwind_inv_yr": 79998.4961117312,
+   "solar_inv_yr": 38275.41089141747,
+   "batt_power_inv_yr": 21264.731994473055,
+   "batt_energy_inv_yr": 10075.248936490603,
+   "source": "PyPSA-China V3.0 archive costs_2030.csv; 5% discount; EUR"
+  },
+  "runtime_s": 3.049085855484009,
+  "hydro_revision": {
+   "treatment": "legacy",
+   "classified_fleets": {},
+   "pumped_capacity_mw": {
+    "Jiangsu": 0.0,
+    "EXT": 0.0
+   },
+   "ac_deliverable_duration_h": 8.0,
+   "roundtrip_efficiency": 0.75,
+   "parameters_evidence": "duration and efficiency are sensitivity assumptions, not plant-calibrated",
+   "remaining_limitation": "non-pumped hydro still uses historical other-hydro profile; reservoir hydrology unresolved"
+  }
+ },
+ "results": {
+  "NOAI": {
+   "tag": "NOAI",
+   "feasible": true,
+   "total_cost": 499516889.4513456,
+   "cost_investment": 0.0,
+   "cost_operating": 499516889.4513397,
+   "cost_service_delay": 0.0,
+   "cost_unserved_penalty": 0.0,
+   "new_mw": {
+    "coal": 0.0,
+    "ocgt": 0.0,
+    "nuclear": 0.0,
+    "hydro": 0.0,
+    "onwind": 0.0,
+    "offwind": 0.0,
+    "solar": 0.0,
+    "ext_supply": 0.0
+   },
+   "new_batt_mw": 0.0,
+   "new_batt_mwh": 0.0,
+   "emissions_t": 17056695.702871963,
+   "unserved_mwh": 0.0,
+   "curtail_rate": 0.0,
+   "import_mwh": 0.0,
+   "export_mwh": 0.0,
+   "ai_mwh": 0.0,
+   "pumped_storage_audit": {}
+  },
+  "S0": {
+   "tag": "S0",
+   "feasible": true,
+   "total_cost": 639522292.42668,
+   "cost_investment": 20479876.288167633,
+   "cost_operating": 619042416.1385024,
+   "cost_service_delay": 0.0,
+   "cost_unserved_penalty": 0.0,
+   "new_mw": {
+    "coal": 0.0,
+    "ocgt": 9498.09364586254,
+    "nuclear": 0.0,
+    "hydro": 0.0,
+    "onwind": 0.0,
+    "offwind": 0.0,
+    "solar": 17279.9669595515,
+    "ext_supply": 0.0
+   },
+   "new_batt_mw": 969.7220332094547,
+   "new_batt_mwh": 1957.5679534623043,
+   "emissions_t": 19867400.192547612,
+   "unserved_mwh": 0.0,
+   "curtail_rate": -3.898433439122593e-18,
+   "import_mwh": 0.0,
+   "export_mwh": 0.0,
+   "ai_mwh": 3584058.717337718,
+   "pumped_storage_audit": {}
+  },
+  "S0e": {
+   "tag": "S0e",
+   "feasible": true,
+   "total_cost": 615875407.4125874,
+   "cost_investment": 12727685.703048965,
+   "cost_operating": 603147721.7095293,
+   "cost_service_delay": 0.0,
+   "cost_unserved_penalty": 0.0,
+   "new_mw": {
+    "coal": 0.0,
+    "ocgt": 6262.020875405248,
+    "nuclear": 0.0,
+    "hydro": 0.0,
+    "onwind": 0.0,
+    "offwind": 0.0,
+    "solar": 9932.724463812063,
+    "ext_supply": 0.0
+   },
+   "new_batt_mw": 1038.388216424788,
+   "new_batt_mwh": 1982.8056922855149,
+   "emissions_t": 19639551.84118699,
+   "unserved_mwh": 0.0,
+   "curtail_rate": -3.9777134687457285e-17,
+   "import_mwh": 0.0,
+   "export_mwh": 0.0,
+   "ai_mwh": 3109499.591262012,
+   "pumped_storage_audit": {}
+  },
+  "S1": {
+   "tag": "S1",
+   "feasible": true,
+   "total_cost": 617864832.122206,
+   "cost_investment": 24438355.440786056,
+   "cost_operating": 593426476.6814115,
+   "cost_service_delay": 0.0,
+   "cost_unserved_penalty": 0.0,
+   "new_mw": {
+    "coal": 0.0,
+    "ocgt": 6323.388286081767,
+    "nuclear": 0.0,
+    "hydro": 0.0,
+    "onwind": 0.0,
+    "offwind": 0.0,
+    "solar": 25543.188726999695,
+    "ext_supply": 0.0
+   },
+   "new_batt_mw": 1345.1320735300262,
+   "new_batt_mwh": 2446.560860554464,
+   "emissions_t": 19436768.169077948,
+   "unserved_mwh": 0.0,
+   "curtail_rate": 4.193314138259349e-19,
+   "import_mwh": 0.0,
+   "export_mwh": 0.0,
+   "ai_mwh": 3127585.532576969,
+   "pumped_storage_audit": {}
+  },
+  "S2": {
+   "tag": "S2",
+   "feasible": true,
+   "total_cost": 610998688.8391584,
+   "cost_investment": 13498110.972814891,
+   "cost_operating": 597500577.8663359,
+   "cost_service_delay": 0.0,
+   "cost_unserved_penalty": 0.0,
+   "new_mw": {
+    "coal": 0.0,
+    "ocgt": 591.0605497209971,
+    "nuclear": 0.0,
+    "hydro": 0.0,
+    "onwind": 0.0,
+    "offwind": 0.0,
+    "solar": 17805.153794674075,
+    "ext_supply": 0.0
+   },
+   "new_batt_mw": -0.0,
+   "new_batt_mwh": -0.0,
+   "emissions_t": 19551520.828037616,
+   "unserved_mwh": 0.0,
+   "curtail_rate": -6.206702825151031e-17,
+   "import_mwh": 0.0,
+   "export_mwh": 0.0,
+   "ai_mwh": 3118654.3171867896,
+   "pumped_storage_audit": {}
+  },
+  "S1rt": {
+   "tag": "S1rt_firm_under_S2_realtime_price",
+   "feasible": true,
+   "total_cost": 612619073.0267574,
+   "cost_investment": 15680313.827662922,
+   "cost_operating": 596938759.1990844,
+   "cost_service_delay": 0.0,
+   "cost_unserved_penalty": 0.0,
+   "new_mw": {
+    "coal": 0.0,
+    "ocgt": 1464.7194867716428,
+    "nuclear": 0.0,
+    "hydro": 0.0,
+    "onwind": 0.0,
+    "offwind": 0.0,
+    "solar": 18973.99657972099,
+    "ext_supply": 0.0
+   },
+   "new_batt_mw": 1110.1626266741143,
+   "new_batt_mwh": 1168.5922386043308,
+   "emissions_t": 19528474.581355505,
+   "unserved_mwh": 0.0,
+   "curtail_rate": -6.849351381156176e-17,
+   "import_mwh": 0.0,
+   "export_mwh": 0.0,
+   "ai_mwh": 3116678.117171004,
+   "pumped_storage_audit": {}
+  },
+  "S3": {
+   "tag": "S3",
+   "feasible": true,
+   "total_cost": 618367508.8108552,
+   "cost_investment": 9577810.281290565,
+   "cost_operating": 608789698.5295558,
+   "cost_service_delay": 0.0,
+   "cost_unserved_penalty": 0.0,
+   "new_mw": {
+    "coal": 0.0,
+    "ocgt": 5776.623214976631,
+    "nuclear": 0.0,
+    "hydro": 0.0,
+    "onwind": 0.0,
+    "offwind": 0.0,
+    "solar": 3502.3367478665546,
+    "ext_supply": 0.0
+   },
+   "new_batt_mw": 3404.8066412511416,
+   "new_batt_mwh": 6964.7392182357335,
+   "emissions_t": 19761431.50179748,
+   "unserved_mwh": 0.0,
+   "curtail_rate": -3.515475079033626e-17,
+   "import_mwh": 0.0,
+   "export_mwh": 0.0,
+   "ai_mwh": 3144553.4857855337,
+   "pumped_storage_audit": {}
+  }
+ }
+}

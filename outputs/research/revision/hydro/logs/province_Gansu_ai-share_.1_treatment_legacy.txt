@@ -1,0 +1,10 @@
+== Gansu 2030 ai=0.1 export=False runtime 3s ratio 1.27 peak 24972 committed {'winter': 25013, 'spring': 22486, 'summer': 17965, 'autumn': 22843}
+case   total_cost  investment  new_ocgt  new_onwind  new_solar  new_batt_mw  emissions_t  curtail        ai_mwh  import_mwh  export_mwh
+NOAI 1.511034e+08         0.0       0.0         0.0        0.0          0.0 5.204471e+06 0.024615      0.000000         0.0         0.0
+  S0 1.604949e+08         0.0       0.0         0.0        0.0         -0.0 5.547044e+06 0.001277 344563.590593         0.0         0.0
+ S0e 1.592169e+08         0.0       0.0         0.0        0.0         -0.0 5.500363e+06 0.001885 298940.510916         0.0         0.0
+  S1 1.592607e+08         0.0       0.0         0.0        0.0         -0.0 5.501954e+06 0.001596 300634.576352         0.0         0.0
+  S2 1.592103e+08         0.0       0.0         0.0        0.0         -0.0 5.500075e+06 0.000090 299589.540072         0.0         0.0
+S1rt 1.592142e+08         0.0       0.0         0.0        0.0         -0.0 5.500219e+06 0.000224 299660.369268         0.0         0.0
+  S3 1.592607e+08         0.0       0.0         0.0        0.0         -0.0 5.501954e+06 0.001596 300634.576352         0.0         0.0
+S3: {'winter': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}, 'spring': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}, 'summer': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}, 'autumn': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}}

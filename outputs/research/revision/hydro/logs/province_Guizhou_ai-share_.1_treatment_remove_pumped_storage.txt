@@ -1,0 +1,10 @@
+== Guizhou 2030 ai=0.1 export=False runtime 3s ratio 1.34 peak 41946 committed {'winter': 38801, 'spring': 27930, 'summer': 18183, 'autumn': 29144}
+case   total_cost  investment  new_ocgt  new_onwind  new_solar  new_batt_mw  emissions_t  curtail        ai_mwh  import_mwh  export_mwh
+NOAI 1.064715e+08         0.0       0.0         0.0        0.0          0.0 3.765619e+06 0.266607      0.000000         0.0         0.0
+  S0 1.196417e+08         0.0       0.0         0.0        0.0         -0.0 4.244989e+06 0.086187 578778.989054         0.0         0.0
+ S0e 1.178504e+08         0.0       0.0         0.0        0.0         -0.0 4.179805e+06 0.108895 502143.846358         0.0         0.0
+  S1 1.178117e+08         0.0       0.0         0.0        0.0         -0.0 4.178325e+06 0.102943 505167.710018         0.0         0.0
+  S2 1.177082e+08         0.0       0.0         0.0        0.0         -0.0 4.174289e+06 0.075138 514702.046413         0.0         0.0
+S1rt 1.177284e+08         0.0       0.0         0.0        0.0         -0.0 4.175041e+06 0.076192 515910.103762         0.0         0.0
+  S3 1.178117e+08         0.0       0.0         0.0        0.0         -0.0 4.178325e+06 0.102943 505167.710018         0.0         0.0
+S3: {'winter': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}, 'spring': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}, 'summer': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}, 'autumn': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}}

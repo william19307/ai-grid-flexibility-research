@@ -1,0 +1,112 @@
+[
+  {
+    "arguments": [
+      "--province",
+      "Gansu",
+      "--ai-share",
+      ".1",
+      "--treatment",
+      "legacy"
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/hydro/logs/province_Gansu_ai-share_.1_treatment_legacy.txt"
+  },
+  {
+    "arguments": [
+      "--province",
+      "Gansu",
+      "--ai-share",
+      ".1",
+      "--treatment",
+      "split_pumped_storage"
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/hydro/logs/province_Gansu_ai-share_.1_treatment_split_pumped_storage.txt"
+  },
+  {
+    "arguments": [
+      "--province",
+      "Gansu",
+      "--ai-share",
+      ".1",
+      "--treatment",
+      "remove_pumped_storage"
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/hydro/logs/province_Gansu_ai-share_.1_treatment_remove_pumped_storage.txt"
+  },
+  {
+    "arguments": [
+      "--province",
+      "Guizhou",
+      "--ai-share",
+      ".1",
+      "--treatment",
+      "legacy"
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/hydro/logs/province_Guizhou_ai-share_.1_treatment_legacy.txt"
+  },
+  {
+    "arguments": [
+      "--province",
+      "Guizhou",
+      "--ai-share",
+      ".1",
+      "--treatment",
+      "split_pumped_storage"
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/hydro/logs/province_Guizhou_ai-share_.1_treatment_split_pumped_storage.txt"
+  },
+  {
+    "arguments": [
+      "--province",
+      "Guizhou",
+      "--ai-share",
+      ".1",
+      "--treatment",
+      "remove_pumped_storage"
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/hydro/logs/province_Guizhou_ai-share_.1_treatment_remove_pumped_storage.txt"
+  },
+  {
+    "arguments": [
+      "--treatment",
+      "split_pumped_storage",
+      "--duration",
+      "4"
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/hydro/logs/treatment_split_pumped_storage_duration_4.txt"
+  },
+  {
+    "arguments": [
+      "--treatment",
+      "split_pumped_storage",
+      "--duration",
+      "12"
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/hydro/logs/treatment_split_pumped_storage_duration_12.txt"
+  },
+  {
+    "arguments": [
+      "--treatment",
+      "legacy",
+      "--neighbours"
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/hydro/logs/treatment_legacy_neighbours.txt"
+  },
+  {
+    "arguments": [
+      "--treatment",
+      "split_pumped_storage",
+      "--neighbours"
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/hydro/logs/treatment_split_pumped_storage_neighbours.txt"
+  }
+]

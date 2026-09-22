@@ -1,0 +1,1166 @@
+GEM unit/phase ID,Plant / Project name,province,technology,capacity_mw,Status,start,retired,included_2030,selection_reason
+G100000600580,A’letai Hua’ning hydroelectric plant,Xinjiang,conventional storage,100.0,operating,2017.0,,True,operating_or_construction_start_by_2030
+G100000600581,Ahai hydroelectric plant,Yunnan,conventional storage,2000.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000600582,Ajiutian hydroelectric plant,Yunnan,run-of-river,105.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100000600583,Altash hydroelectric plant,Xinjiang,conventional storage,755.0,operating,2021.0,,True,operating_or_construction_start_by_2030
+G100000600584,Amojiang Sanjiangkou hydroelectric plant,Yunnan,conventional storage,99.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000600585,Anfeng hydroelectric plant,Fujian,run-of-river,81.0,shelved,,,False,unknown_start_year_not_imputed
+G100000600586,Angu hydroelectric plant,Sichuan,conventional storage,772.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000600587,Anhua hydroelectric plant,Hunan,pumped storage,2400.0,construction,2028.0,,True,operating_or_construction_start_by_2030
+G100000600588,Anjiang hydroelectric plant,Hunan,conventional storage,140.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100001027825,Ankang Hanbin Pumped Storage hydroelectric plant,Shaanxi,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000600590,Ankang hydroelectric plant,Shaanxi,pumped storage,600.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600589,Ankang hydroelectric plant,Shaanxi,conventional storage,853.0,operating,1992.0,,True,operating_or_construction_start_by_2030
+G100000600591,Anning hydroelectric plant,Sichuan,conventional storage,400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600592,Anren hydroelectric plant,Hunan,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600593,Ansha hydroelectric plant,Fujian,conventional storage,128.0,operating,1975.0,,True,operating_or_construction_start_by_2030
+G100000600594,Anyuan hydroelectric plant,Jiangxi,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600595,Badi hydroelectric plant,Sichuan,conventional storage,720.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604185,Baihe Pumped Storage hydroelectric plant,Hebei,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600596,Baihetan hydroelectric plant,Sichuan,conventional storage,16000.0,operating,2022.0,,True,operating_or_construction_start_by_2030
+G100000600597,Baihuatan hydroelectric plant,Sichuan,conventional storage,120.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100001048085,Bailianhe hydroelectric plant,Hubei,conventional storage,45.0,operating,1964.0,,True,operating_or_construction_start_by_2030
+G100000600598,Bailianhe Pumped Storage hydroelectric plant,Hubei,pumped storage,1200.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100001031116,Bailianya hydroelectric plant,Anhui,run-of-river,50.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100001051044,Bailong River Zhaohua hydroelectric plant,Sichuan,conventional storage,60.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100000600599,Bailongtan hydroelectric plant,Guangxi,conventional storage,192.0,operating,1999.0,,True,operating_or_construction_start_by_2030
+G100000600600,Baise hydroelectric plant,Guangxi,conventional storage,540.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000600601,Baise Tiandong hydroelectric plant,Guangxi,pumped storage,1200.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100000600602,Baishan hydroelectric plant,Jilin,conventional storage,1500.0,operating,1994.0,,True,operating_or_construction_start_by_2030
+G100000604990,Baishan hydroelectric plant,Jilin,pumped storage,300.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000600603,Baishi hydroelectric plant,Guizhou,conventional storage,420.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100001031313,Baishiyao hydroelectric plant,Guangdong,conventional storage,92.0,operating,1997.0,,True,operating_or_construction_start_by_2030
+G100001051166,Baishuijiang Stage 3 hydroelectric plant,Yunnan,run-of-river,48.0,operating,2017.0,,True,operating_or_construction_start_by_2030
+G100001048083,Baishuiyu hydroelectric plant,Hubei,conventional storage,45.0,operating,1997.0,,True,operating_or_construction_start_by_2030
+G100000600604,Baiyantan Dam hydroelectric plant,Sichuan,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000604160,Baiyenzhai Pumped Storage hydroelectric plant,Sichuan,pumped storage,1400.0,announced,,,False,unknown_start_year_not_imputed
+G100000600605,Baiyin District hydroelectric plant,Gansu,pumped storage,1000.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001048091,Baiyun hydroelectric plant,Hunan,conventional storage,54.0,operating,1999.0,,True,operating_or_construction_start_by_2030
+G100000600606,Bajiangkou hydroelectric plant,Guangxi,conventional storage,90.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000600607,Bala hydroelectric plant,Sichuan,conventional storage,746.0,construction,2025.0,,True,operating_or_construction_start_by_2030
+G100000600608,Balangkou hydroelectric plant,Sichuan,run-of-river,96.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000604186,Banchahe Pumped Storage hydroelectric plant,Jilin,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000600609,Banda hydroelectric plant,Tibet,unknown,1500.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600610,Banduo hydroelectric plant,Qinghai,conventional storage,360.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000600611,Bangduo hydroelectric plant,Tibet,unknown,720.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600612,Banqiaoyu hydroelectric plant,Beijing,pumped storage,1000.0,shelved,,,False,unknown_start_year_not_imputed
+G100001031155,Banzhu hydroelectric plant,Fujian,run-of-river,45.0,operating,1997.0,,True,operating_or_construction_start_by_2030
+G100000600613,Baoning hydroelectric plant,Sichuan,conventional storage,120.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000600614,Baoqing County hydroelectric plant,Heilongjiang,pumped storage,1000.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600615,Baoquan hydroelectric plant,Henan,pumped storage,1200.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000600616,Baoxing hydroelectric plant,Sichuan,conventional storage,195.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600617,Baozhusi hydroelectric plant,Sichuan,conventional storage,700.0,operating,1996.0,,True,operating_or_construction_start_by_2030
+G100000600618,Bapanxia hydroelectric plant,Gansu,run-of-river,220.0,operating,1980.0,,True,operating_or_construction_start_by_2030
+G100000600619,Bashan hydroelectric plant,Chongqing,conventional storage,140.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600620,Batang hydroelectric plant,Sichuan,conventional storage,750.0,construction,,,False,unknown_start_year_not_imputed
+G100000600621,Bayu hydroelectric plant,Tibet,conventional storage,800.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001031156,Beijin hydroelectric plant,Fujian,run-of-river,50.0,operating,,,False,unknown_start_year_not_imputed
+G100000604249,Benzilan hydroelectric plant,Yunnan,conventional storage,2200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600623,Biedieli hydroelectric plant,Xinjiang,conventional storage,248.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000600624,Bikou hydroelectric plant,Gansu,conventional storage,300.0,operating,1977.0,,True,operating_or_construction_start_by_2030
+G100000600625,Bindong hydroelectric plant,Sichuan,run-of-river,100.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000600626,Binggou hydroelectric plant,Hebei,pumped storage,1000.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600627,Bingling hydroelectric plant,Gansu,conventional storage,240.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600628,Bobona hydroelectric plant,Xinjiang,conventional storage,150.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000600629,Boli hydroelectric plant,Heilongjiang,pumped storage,1200.0,pre-construction,2030.0,,False,excluded_status_or_vintage
+G100000600630,Boluo hydroelectric plant,Tibet,conventional storage,920.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604270,Bowa hydroelectric plant,Sichuan,conventional storage,168.0,operating,2021.0,,True,operating_or_construction_start_by_2030
+G100000604276,Buowa hydroelectric plant,Sichuan,run-of-river,168.0,operating,2021.0,,True,operating_or_construction_start_by_2030
+G100000600632,Burkin Shankou hydroelectric plant,Xinjiang,conventional storage,220.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000604278,Burqin hydroelectric plant,Xinjiang,pumped storage,1400.0,construction,2028.0,,True,operating_or_construction_start_by_2030
+G100000600634,Busigou hydroelectric plant,Sichuan,conventional storage,360.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604283,Caiziba hydroelectric plant,Chongqing,pumped storage,1200.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100000600636,Caojie hydroelectric plant,Chongqing,conventional storage,500.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000604289,Caoping hydroelectric plant,Shaanxi,pumped storage,1400.0,construction,,,False,unknown_start_year_not_imputed
+G100000600638,Caoyutan hydroelectric plant,Sichuan,conventional storage,75.0,operating,1994.0,,True,operating_or_construction_start_by_2030
+G100000600639,Cege hydroelectric plant,Tibet,unknown,129.0,announced,,,False,unknown_start_year_not_imputed
+G100000600640,Centian hydroelectric plant,Guangdong,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600641,Chahan Wusu hydroelectric plant,Xinjiang,conventional storage,309.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000604166,Chaigoutan Pumped Storage hydroelectric plant,Guangdong,pumped storage,200.0,announced,,,False,unknown_start_year_not_imputed
+G100000600642,Chaijiaxia hydroelectric plant,Gansu,run-of-river,96.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100001051180,Chaishitan hydroelectric plant,Yunnan,conventional storage,60.0,operating,2001.0,,True,operating_or_construction_start_by_2030
+G100001027152,Chalinhe hydroelectric plant,Hunan,conventional storage,54.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600643,Chang'an hydroelectric plant,Zhejiang,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600645,Changdian hydroelectric plant,Liaoning,conventional storage,150.0,operating,1989.0,,True,operating_or_construction_start_by_2030
+G100000600646,Changheba hydroelectric plant,Sichuan,conventional storage,2600.0,operating,2017.0,,True,operating_or_construction_start_by_2030
+G100000600647,Changhu hydroelectric plant,Guangdong,conventional storage,132.0,operating,1973.0,,True,operating_or_construction_start_by_2030
+G100000600648,Changlongshan hydroelectric plant,Zhejiang,pumped storage,2100.0,operating,2022.0,,True,operating_or_construction_start_by_2030
+G100000600649,Changning hydroelectric plant,Hunan,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600650,Changtan hydroelectric plant,Hunan,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604165,Changtan Pumped Storage hydroelectric plant,Guangdong,pumped storage,800.0,announced,,,False,unknown_start_year_not_imputed
+G100000600651,Changyang Qingjiang hydroelectric plant,Hubei,pumped storage,1200.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100001051252,Changyukou Pumped Storage hydroelectric plant,Hebei,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600652,Changzhou hydroelectric plant,Guangxi,conventional storage,630.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000600653,Chencun hydroelectric plant,Anhui,conventional storage,180.0,operating,1978.0,,True,operating_or_construction_start_by_2030
+G100000600654,Chengde Xinglong hydroelectric plant,Hebei,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600655,Chengdong hydroelectric plant,Sichuan,unknown,84.0,operating,,,False,unknown_start_year_not_imputed
+G100001031212,Chengguan hydroelectric plant,Fujian,conventional storage,48.0,operating,1999.0,,True,operating_or_construction_start_by_2030
+G100000600656,Chengzigou hydroelectric plant,Gansu,run-of-river,115.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000604303,Chenjiaping hydroelectric plant,Hubei,pumped storage,1800.0,announced,,,False,unknown_start_year_not_imputed
+G100000604304,Chenxi hydroelectric plant,Hunan,pumped storage,1200.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100000600658,Cheping hydroelectric plant,Hunan,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600660,Chienzhong Baixing hydroelectric plant,Guizhou,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600661,Chitan hydroelectric plant,Fujian,conventional storage,100.0,operating,1980.0,,True,operating_or_construction_start_by_2030
+G100000600662,Chonghu'er hydroelectric plant,Xinjiang,conventional storage,110.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100001051181,Chongjianghe hydroelectric plant,Yunnan,run-of-river,48.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000600663,Chongqing Fuling Shiban hydroelectric plant,Chongqing,conventional storage,115.0,operating,1997.0,,True,operating_or_construction_start_by_2030
+G100001028204,Chongqing Shizitan hydroelectric plant,Chongqing,conventional storage,48.0,operating,1957.0,,True,operating_or_construction_start_by_2030
+G100000600664,Chongyi hydroelectric plant,Guizhou,pumped storage,800.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600665,Chongzuo hydroelectric plant,Guangxi,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001051048,Chuntangba hydroelectric plant,Sichuan,run-of-river,54.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000600666,Chuosijia hydroelectric plant,Sichuan,conventional storage,392.0,construction,,,False,unknown_start_year_not_imputed
+G100000604314,Cihaxia hydroelectric plant,Qinghai,conventional storage,2000.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600668,Cuijiaying hydroelectric plant,Hubei,conventional storage,90.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600669,Cuolonggongma hydroelectric plant,Gansu,pumped storage,3000.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001051059,Cuowa hydroelectric plant,Sichuan,run-of-river,57.0,construction,,,False,unknown_start_year_not_imputed
+G100000600670,Da'Aguo hydroelectric plant,Sichuan,conventional storage,220.0,operating,2018.0,,True,operating_or_construction_start_by_2030
+G100001051272,Dabancheng Pumped Storage hydroelectric plant,Xinjiang,pumped storage,1400.0,pre-construction,2030.0,,False,excluded_status_or_vintage
+G100000600671,Dachaoshan hydroelectric plant,Yunnan,conventional storage,1350.0,operating,2003.0,,True,operating_or_construction_start_by_2030
+G100000600672,Daduhe Danba hydroelectric plant,Sichuan,conventional storage,1130.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604328,Dafa hydroelectric plant,Sichuan,run-of-river,240.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600674,Dafutan hydroelectric plant,Hunan,conventional storage,200.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000600675,Dagangshan hydroelectric plant,Sichuan,conventional storage,2600.0,operating,2017.0,,True,operating_or_construction_start_by_2030
+G100000600676,Dagu hydroelectric plant,Tibet,conventional storage,330.0,operating,2021.0,,True,operating_or_construction_start_by_2030
+G100000600677,Daguangba hydroelectric plant,Hainan,conventional storage,240.0,operating,1993.0,,True,operating_or_construction_start_by_2030
+G100000600678,Daguling hydroelectric plant,Anhui,pumped storage,100.0,announced,,,False,unknown_start_year_not_imputed
+G100001027154,Dagushan hydroelectric plant,Gansu,run-of-river,65.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600679,Dahejia hydroelectric plant,Qinghai,conventional storage,142.0,operating,2018.0,,True,operating_or_construction_start_by_2030
+G100000604330,Dahekou hydroelectric plant,Chongqing,conventional storage,75.0,operating,1997.0,,True,operating_or_construction_start_by_2030
+G100000600680,Dahetian Luosheng hydroelectric plant,Guizhou,run-of-river,80.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000600681,Dahua hydroelectric plant,Guangxi,conventional storage,566.0,operating,1986.0,,True,operating_or_construction_start_by_2030
+G100000600682,Dahuaqiao hydroelectric plant,Yunnan,conventional storage,920.0,operating,2019.0,,True,operating_or_construction_start_by_2030
+G100000600683,Dahuashui hydroelectric plant,Guizhou,conventional storage,200.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100001031187,Daixi hydroelectric plant,Fujian,conventional storage,50.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000600684,Dajinping hydroelectric plant,Sichuan,conventional storage,129.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100001051218,Dakai hydroelectric plant,Yunnan,conventional and run-of-river,60.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000604332,Dakequke hydroelectric plant,Xinjiang,conventional storage,75.0,operating,2019.0,,True,operating_or_construction_start_by_2030
+G100001027155,Dala River hydroelectric plant,Gansu,conventional storage,52.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000604170,Dalianggang Pumped Storage hydroelectric plant,Guizhou,pumped storage,1600.0,announced,,,False,unknown_start_year_not_imputed
+G100000600685,Dalongtan hydroelectric plant,Hubei,pumped storage,500.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600686,Damushan hydroelectric plant,Hubei,pumped storage,1200.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100000604334,Dandahe hydroelectric plant,Yunnan,conventional storage,100.0,cancelled - inferred 4 y,,,False,unknown_start_year_not_imputed
+G100000600689,Dangshan hydroelectric plant,Guangdong,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600690,Danjiangkou hydroelectric plant,Hubei,conventional storage,1050.0,operating,1973.0,,True,operating_or_construction_start_by_2030
+G100000604336,Daofu hydroelectric plant,Sichuan,pumped storage,2100.0,construction,,,False,unknown_start_year_not_imputed
+G100000600692,Daolinshan hydroelectric plant,Zhejiang,pumped storage,298.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600693,Dapu hydroelectric plant,Guangxi,conventional storage,90.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100001048077,Daqikong hydroelectric plant,Guizhou,run-of-river,48.0,operating,2002.0,,True,operating_or_construction_start_by_2030
+G100000600694,Daren hydroelectric plant,Shaanxi,pumped storage,1600.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600695,Dashankou hydroelectric plant,Xinjiang,conventional storage,80.0,operating,1991.0,,True,operating_or_construction_start_by_2030
+G100001051156,Dashankou Stage 2 hydroelectric plant,Xinjiang,run-of-river,50.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100001051253,Dashizhuzi Pumped Storage hydroelectric plant,Hebei,pumped storage,1000.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604340,Datengxia hydroelectric plant,Guangxi,conventional storage,1600.0,operating,2023.0,,True,operating_or_construction_start_by_2030
+G100000604341,Dawangmiao Pumped Storage hydroelectric plant,Hunan,pumped storage,1200.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100000600697,Dawei hydroelectric plant,Sichuan,conventional storage,270.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604342,Dawu County hydroelectric plant,Hubei,pumped storage,1200.0,cancelled,,,False,unknown_start_year_not_imputed
+G100000604343,Dawu Heigou hydroelectric plant,Hubei,pumped storage,300.0,construction,2026.0,,True,operating_or_construction_start_by_2030
+G100000600700,Daxia hydroelectric plant,Gansu,conventional storage,325.0,operating,1996.0,,True,operating_or_construction_start_by_2030
+G100000604344,Daxiongshan hydroelectric plant,Henan,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600702,Dayahe hydroelectric plant,Liaoning,pumped storage,1600.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100000600703,Dayakou hydroelectric plant,Yunnan,conventional storage,102.0,operating,2017.0,,True,operating_or_construction_start_by_2030
+G100000604175,Dayang Pumped Storage hydroelectric plant,Guangdong,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604158,Daye Pumped Storage hydroelectric plant,Hubei,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000600704,Dayingjiang I hydroelectric plant,Sichuan,conventional storage,108.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000600705,Dayingjiang III hydroelectric plant,Yunnan,run-of-river,196.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000600706,Dayingjiang IV hydroelectric plant,Yunnan,run-of-river,700.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600707,Dayingjiang Meng’e hydroelectric plant,Yunnan,run-of-river,99.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000600708,Dayuandu hydroelectric plant,Hunan,conventional storage,120.0,operating,1998.0,,True,operating_or_construction_start_by_2030
+G100000600709,Dayugou hydroelectric plant,Henan,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001051183,Dazhai hydroelectric plant,Yunnan,run-of-river,60.0,operating,1977.0,,True,operating_or_construction_start_by_2030
+G100001051251,Dazhuangli Pumped Storage hydroelectric plant,Shaanxi,pumped storage,2100.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600710,Dehua hydroelectric plant,Fujian,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001051267,Delingha Pumped Storage hydroelectric plant,Qinghai,pumped storage,600.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600711,Dengke hydroelectric plant,Yunnan,conventional storage,120.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000600712,Dianbai hydroelectric plant,Guangdong,pumped storage,1200.0,construction,2028.0,,True,operating_or_construction_start_by_2030
+G100000600713,Diluo hydroelectric plant,Sichuan,conventional storage,100.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000604167,Dong'an Pumped Storage hydroelectric plant,Hunan,pumped storage,300.0,announced,,,False,unknown_start_year_not_imputed
+G100000600714,Dongfeng hydroelectric plant,Guizhou,conventional storage,695.0,operating,1995.0,,True,operating_or_construction_start_by_2030
+G100000600715,Dongjiang hydroelectric plant,Hunan,conventional storage,500.0,operating,1987.0,,True,operating_or_construction_start_by_2030
+G100001048111,Dongjin hydroelectric plant,Jiangxi,conventional storage,60.0,operating,1995.0,,True,operating_or_construction_start_by_2030
+G100000600716,Donglong hydroelectric plant,Guangxi,pumped storage,600.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600717,Dongping hydroelectric plant,Hubei,conventional storage,110.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000600718,Dongqing hydroelectric plant,Guizhou,conventional storage,880.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000600719,Dongshan hydroelectric plant,Guangdong,run-of-river,75.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600720,Dongsong hydroelectric plant,Sichuan,conventional storage,180.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000604352,Dongtian Pumped Storage hydroelectric plant,Fujian,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600721,Dongxi hydroelectric plant,Guizhou,pumped storage,800.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600722,Dongxiguan hydroelectric plant,Sichuan,conventional storage,210.0,operating,1995.0,,True,operating_or_construction_start_by_2030
+G100001048084,Doulingzi hydroelectric plant,Hubei,conventional storage,71.0,operating,2003.0,,True,operating_or_construction_start_by_2030
+G100001051189,Duduluo River Stage 2 hydroelectric plant,Yunnan,run-of-river,60.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100001027153,Dukou hydroelectric plant,Hubei,run-of-river,48.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000600723,Dukouba hydroelectric plant,Chongqing,conventional storage,129.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100000600724,Dunhua hydroelectric plant,Jilin,pumped storage,1400.0,operating,2022.0,,True,operating_or_construction_start_by_2030
+G100000600725,Duobu hydroelectric plant,Tibet,conventional storage,120.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000600726,Duonuo hydroelectric plant,Sichuan,conventional storage,100.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100000600727,Egongbao hydroelectric plant,Sichuan,conventional storage,132.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000600728,Emin hydroelectric plant,Xinjiang,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600730,Eping hydroelectric plant,Hubei,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100001027156,Erlongshan hydroelectric plant,Gansu,run-of-river,51.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000600731,Ertan hydroelectric plant,Sichuan,conventional storage,3300.0,operating,2000.0,,True,operating_or_construction_start_by_2030
+G100000600732,Fangxian hydroelectric plant,Hubei,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600733,Fanshi County hydroelectric plant,Shanxi,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600734,Feilaixia hydroelectric plant,Guangdong,conventional storage,140.0,operating,1999.0,,True,operating_or_construction_start_by_2030
+G100000600735,Feixianguan hydroelectric plant,Sichuan,run-of-river,100.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000600736,Fenghua hydroelectric plant,Zhejiang,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600737,Fenghuanggu hydroelectric plant,Yunnan,conventional storage,100.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600738,Fenghuangsi hydroelectric plant,Hunan,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600739,Fengman hydroelectric plant,Jilin,conventional storage,1480.0,operating,2020.0,,True,operating_or_construction_start_by_2030
+G100000600740,Fengning hydroelectric plant,Hebei,pumped storage,3600.0,operating,2021.0,,True,operating_or_construction_start_by_2030
+G100000600742,Fengshuba hydroelectric plant,Guangdong,conventional storage,200.0,operating,1973.0,,True,operating_or_construction_start_by_2030
+G100000600743,Fengtan hydroelectric plant,Hunan,conventional storage,860.0,operating,1979.0,,True,operating_or_construction_start_by_2030
+G100000600744,Fengxin hydroelectric plant,Jiangxi,pumped storage,1200.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100000600745,Fengyi hydroelectric plant,Sichuan,run-of-river,84.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000600746,Fengyuan hydroelectric plant,Fujian,run-of-river,80.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000604377,Foping hydroelectric plant,Shaanxi,pumped storage,1400.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100000600748,Foziling hydroelectric plant,Anhui,pumped storage,160.0,shelved,,,False,unknown_start_year_not_imputed
+G100000600749,Fuchunjiang hydroelectric plant,Zhejiang,conventional storage,297.0,operating,1977.0,,True,operating_or_construction_start_by_2030
+G100001031190,Fujian Baisha hydroelectric plant,Fujian,run-of-river,70.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100001027157,Fujian Pingnan Jinzaoqiao hydroelectric plant,Fujian,conventional and run-of-river,66.0,operating,,,False,unknown_start_year_not_imputed
+G100001027158,Fujian Zhaokou hydroelectric plant,Fujian,run-of-river,60.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000600750,Fujiang Gucheng hydroelectric plant,Sichuan,conventional storage,100.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100000600751,Fukang hydroelectric plant,Xinjiang,pumped storage,1200.0,operating,2024.0,,True,operating_or_construction_start_by_2030
+G100000604380,Fuling Taihe hydroelectric plant,Chongqing,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000600752,Fumin hydroelectric plant,Yunnan,pumped storage,1400.0,construction,,,False,unknown_start_year_not_imputed
+G100000600753,Funing hydroelectric plant,Hebei,pumped storage,1200.0,construction,2027.0,,True,operating_or_construction_start_by_2030
+G100000600754,Funing II hydroelectric plant,Hebei,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600757,Fuquan hydroelectric plant,Guizhou,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001046516,Fushi hydroelectric plant,Guangxi,conventional storage,54.0,operating,2000.0,,True,operating_or_construction_start_by_2030
+G100000600758,Futang hydroelectric plant,Sichuan,run-of-river,360.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100000600759,Gaixiaba hydroelectric plant,Chongqing,conventional storage,132.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100001031145,Gangkouwan hydroelectric plant,Anhui,conventional storage,60.0,operating,2001.0,,True,operating_or_construction_start_by_2030
+G100001051184,Gangqu River Stage 1 hydroelectric plant,Yunnan,conventional and run-of-river,60.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100000600760,Gangtuo hydroelectric plant,Tibet,conventional storage,1100.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604385,Ganlanba hydroelectric plant,Yunnan,conventional storage,195.0,announced,2028.0,,False,excluded_status_or_vintage
+G100001027160,Gansu Bazang hydroelectric plant,Gansu,run-of-river,51.0,construction,,,False,unknown_start_year_not_imputed
+G100001027947,Gansu Qingshui Pumped Storage hydroelectric plant,Gansu,pumped storage,2100.0,construction,2031.0,,False,excluded_status_or_vintage
+G100001027159,Gansu Suoertou hydroelectric plant,Gansu,run-of-river,66.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100001027161,Gansu Tanchang County Shawan hydroelectric plant,Gansu,conventional storage,51.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100001027162,Gansu Taolai River Dongshuixia hydroelectric plant,Gansu,run-of-river,53.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000600762,Ganxian hydroelectric plant,Jiangxi,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600763,Ganxipo hydroelectric plant,Sichuan,run-of-river,75.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000600764,Gaobazhou hydroelectric plant,Hubei,conventional storage,270.0,operating,2000.0,,True,operating_or_construction_start_by_2030
+G100000600765,Gaofengshan hydroelectric plant,Sichuan,conventional storage,75.0,operating,2003.0,,True,operating_or_construction_start_by_2030
+G100000600766,Gaoqiao hydroelectric plant,Yunnan,conventional storage,90.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100001031185,Gaosha hydroelectric plant,Fujian,run-of-river,50.0,operating,1996.0,,True,operating_or_construction_start_by_2030
+G100000600767,Gaosheng hydroelectric plant,Guizhou,conventional storage,106.0,operating,2019.0,,True,operating_or_construction_start_by_2030
+G100001048092,Gaotan hydroelectric plant,Hubei,conventional storage,57.0,operating,1996.0,,True,operating_or_construction_start_by_2030
+G100001048093,Gaotan hydroelectric plant,Hubei,conventional storage,45.0,announced,,,False,unknown_start_year_not_imputed
+G100001051133,Geda hydroelectric plant,Sichuan,run-of-river,60.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000600768,Geheyan hydroelectric plant,Hubei,conventional storage,1200.0,operating,1994.0,,True,operating_or_construction_start_by_2030
+G100000600769,Gelantan hydroelectric plant,Yunnan,conventional storage,450.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000600770,Geliqiao hydroelectric plant,Guizhou,conventional storage,150.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000600771,Gengda hydroelectric plant,Sichuan,conventional storage,160.0,operating,1986.0,,True,operating_or_construction_start_by_2030
+G100000600772,Gezhen hydroelectric plant,Hainan,run-of-river,82.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600773,Gezhouba hydroelectric plant,Hubei,conventional storage,2735.0,operating,1988.0,,True,operating_or_construction_start_by_2030
+G100000604398,Go Habuqile hydroelectric plant,Xinjiang,conventional storage,257.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100000600775,Gongboxia hydroelectric plant,Qinghai,conventional storage,1500.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100000600776,Gongguoqiao hydroelectric plant,Yunnan,conventional storage,900.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000600777,Gonghe hydroelectric plant,Qinghai,pumped storage,4000.0,pre-construction,2029.0,,False,excluded_status_or_vintage
+G100000604400,Gongjiagou hydroelectric plant,Hubei,pumped storage,1800.0,announced,,,False,unknown_start_year_not_imputed
+G100000600778,Gongshang hydroelectric plant,Henan,pumped storage,1200.0,construction,2028.0,,True,operating_or_construction_start_by_2030
+G100000600779,Gongzui hydroelectric plant,Sichuan,conventional storage,770.0,operating,1978.0,,True,operating_or_construction_start_by_2030
+G100000600780,Goupitan hydroelectric plant,Guizhou,conventional storage,3000.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600781,Guandi hydroelectric plant,Sichuan,conventional storage,2400.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100001031306,Guangdong Changtan hydroelectric plant,Guangdong,conventional storage,65.0,operating,1987.0,,True,operating_or_construction_start_by_2030
+G100000600782,Guanghanping hydroelectric plant,Hunan,pumped storage,1800.0,construction,,,False,unknown_start_year_not_imputed
+G100000600783,Guangshui hydroelectric plant,Hubei,pumped storage,360.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001027163,Guangxi Baise Tianlin Dongba hydroelectric plant,Guangxi,conventional storage,72.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100001027164,Guangxi Nabi hydroelectric plant,Guangxi,conventional storage,48.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100001027165,Guangxi Xiafu hydroelectric plant,Guangxi,conventional storage,50.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100001027166,Guangxi Youjiang Naji Dam hydroelectric plant,Guangxi,run-of-river,66.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100001027944,Guangxi Yulin Pumped Storage hydroelectric plant,Guangxi,pumped storage,1200.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100000600784,Guangzhao hydroelectric plant,Guizhou,conventional storage,1040.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000600785,Guangzhou hydroelectric plant,Guangdong,pumped storage,2400.0,operating,1994.0,,True,operating_or_construction_start_by_2030
+G100000600786,Guanling Guangma hydroelectric plant,Guizhou,pumped storage,800.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600787,Guanmaozhou hydroelectric plant,Sichuan,conventional storage,110.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000604184,Guanting Pumped Storage hydroelectric plant,Hebei,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600788,Guanyang hydroelectric plant,Guangxi,pumped storage,1200.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100000600789,Guanyinyan hydroelectric plant,Yunnan,conventional storage,3000.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000600790,Guanzhou hydroelectric plant,Sichuan,run-of-river,240.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000600791,Guazhi hydroelectric plant,Guizhou,conventional storage,150.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000600792,Gucheng hydroelectric plant,Sichuan,run-of-river,168.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100000600793,Gudi hydroelectric plant,Sichuan,conventional storage,138.0,operating,2018.0,,True,operating_or_construction_start_by_2030
+G100000600794,Guding hydroelectric plant,Guangxi,conventional storage,80.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100001051130,Guidufu hydroelectric plant,Sichuan,conventional storage,63.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000600795,Guigang hydroelectric plant,Guangxi,pumped storage,1200.0,construction,,,False,unknown_start_year_not_imputed
+G100000600796,Guigang Multi-Purpose Navigation hydroelectric plant,Guangxi,conventional storage,120.0,operating,1999.0,,True,operating_or_construction_start_by_2030
+G100001046512,Guiping hydroelectric plant,Guangxi,conventional storage,47.0,operating,1992.0,,True,operating_or_construction_start_by_2030
+G100000604409,Guiyang hydroelectric plant,Guizhou,pumped storage,1500.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100001027167,Guizhou Huidong hydroelectric plant,Guizhou,conventional storage,50.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100000604410,Guizhou Jiayan hydroelectric plant,Guizhou,conventional storage,90.0,construction,,,False,unknown_start_year_not_imputed
+G100000600798,Guoduo hydroelectric plant,Tibet,conventional storage,160.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100001051084,Guojundu hydroelectric plant,Sichuan,conventional storage,45.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000604411,Guolangqiao hydroelectric plant,Sichuan,conventional storage,220.0,operating,2022.0,,True,operating_or_construction_start_by_2030
+G100000600800,Guotong hydroelectric plant,Sichuan,conventional storage,140.0,announced,,,False,unknown_start_year_not_imputed
+G100000600801,Gushui hydroelectric plant,Yunnan,conventional storage,1800.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600802,Gutianxi I Pumped Storage hydroelectric plant,Fujian,pumped storage,250.0,construction,,,False,unknown_start_year_not_imputed
+G100001031188,Gutianxi Stage 1 hydroelectric plant,Fujian,run-of-river,62.0,operating,1956.0,,True,operating_or_construction_start_by_2030
+G100000600803,Guwa hydroelectric plant,Sichuan,conventional storage,205.0,operating,2021.0,,True,operating_or_construction_start_by_2030
+G100001027168,Guxian Dam hydroelectric plant,Henan,conventional storage,60.0,operating,1993.0,,True,operating_or_construction_start_by_2030
+G100000600804,Guxue hydroelectric plant,Tibet,conventional storage,2200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604412,Guyuan hydroelectric plant,Ningxia,pumped storage,1000.0,announced,,,False,unknown_start_year_not_imputed
+G100000600805,Guzeng hydroelectric plant,Sichuan,conventional storage,172.0,operating,2023.0,,True,operating_or_construction_start_by_2030
+G100000600806,Hadebute hydroelectric plant,Xinjiang,run-of-river,200.0,operating,2019.0,,True,operating_or_construction_start_by_2030
+G100000600807,Haibowan hydroelectric plant,InnerMongolia,conventional storage,90.0,operating,2019.0,,True,operating_or_construction_start_by_2030
+G100001031245,Haidianxia hydroelectric plant,Gansu,conventional and run-of-river,60.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000600808,Hailanghe hydroelectric plant,Heilongjiang,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600809,Hainan Qiongzhong hydroelectric plant,Hainan,pumped storage,600.0,operating,2018.0,,True,operating_or_construction_start_by_2030
+G100000604417,Hami Erdaogou hydroelectric plant,Xinjiang,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000600810,Hami hydroelectric plant,Xinjiang,pumped storage,1200.0,construction,2028.0,,True,operating_or_construction_start_by_2030
+G100000604418,Hami West hydroelectric plant,Xinjiang,pumped storage,1400.0,announced,,,False,unknown_start_year_not_imputed
+G100000604419,Hanchuantsao hydroelectric plant,Shaanxi,pumped storage,1400.0,announced,,,False,unknown_start_year_not_imputed
+G100000600812,Hanjiang Baihe Jiahe hydroelectric plant,Hubei,conventional storage,180.0,operating,2020.0,,True,operating_or_construction_start_by_2030
+G100001051128,Hanniuhe hydroelectric plant,Sichuan,run-of-river,60.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100001027169,Hanpingzui hydroelectric plant,Gansu,conventional storage,72.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000600813,Haokou hydroelectric plant,Chongqing,conventional storage,135.0,operating,2017.0,,True,operating_or_construction_start_by_2030
+G100000604381,Hebei Fuping hydroelectric plant,Hebei,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001027847,Hebei Xingtai Lincheng Pumped Storage hydroelectric plant,Hebei,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600814,Heihe Baoping hydroelectric plant,Gansu,run-of-river,123.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000600815,Heimifeng hydroelectric plant,Hunan,pumped storage,1200.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600816,Heishanxia Daliushu hydroelectric plant,Ningxia,conventional storage,2000.0,announced,,,False,unknown_start_year_not_imputed
+G100000600817,Hejin hydroelectric plant,Shanxi,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604423,Hejing hydroelectric plant,Xinjiang,pumped storage,2100.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100001031242,Hekou hydroelectric plant,Gansu,run-of-river,74.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100001051250,Helong Pumped Storage hydroelectric plant,Jilin,pumped storage,1800.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001031347,Hemianshi hydroelectric plant,Guangxi,conventional storage,80.0,operating,1976.0,,True,operating_or_construction_start_by_2030
+G100001027898,Henan Ruyang Pumped Storage hydroelectric plant,Henan,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001027170,Hengjiang Yanzipo hydroelectric plant,Yunnan,conventional storage,64.0,operating,2022.0,,True,operating_or_construction_start_by_2030
+G100000600819,Hezhou hydroelectric plant,Guangxi,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604425,Hhaq Zaq Holteil Pumped Storage hydroelectric plant,Yunnan,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600820,Hohhot hydroelectric plant,InnerMongolia,pumped storage,1200.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000600821,Honghua hydroelectric plant,Guangxi,conventional storage,231.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000600822,Hongjiadu hydroelectric plant,Guizhou,conventional storage,600.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100000600823,Hongjiang hydroelectric plant,Hunan,conventional storage,270.0,operating,2003.0,,True,operating_or_construction_start_by_2030
+G100000600824,Hongkou hydroelectric plant,Fujian,conventional storage,200.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000600825,Honglin hydroelectric plant,Guizhou,conventional storage,135.0,operating,1979.0,,True,operating_or_construction_start_by_2030
+G100000604431,Hongping hydroelectric plant,Jiangxi,pumped storage,1800.0,construction,,,False,unknown_start_year_not_imputed
+G100000600827,Hongping hydroelectric plant,Jiangxi,pumped storage,1200.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000600828,Hongshi hydroelectric plant,Jilin,conventional storage,200.0,operating,1985.0,,True,operating_or_construction_start_by_2030
+G100000604432,Hongshiyan hydroelectric plant,Yunnan,run-of-river,80.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000600829,Hongweiqiao hydroelectric plant,Sichuan,run-of-river,111.0,operating,2022.0,,True,operating_or_construction_start_by_2030
+G100001051274,Hongxing Pumped Storage hydroelectric plant,Xinjiang,pumped storage,1600.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600830,Hongyanping hydroelectric plant,Shaanxi,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600831,Hongyanzi hydroelectric plant,Sichuan,conventional storage,90.0,operating,2001.0,,True,operating_or_construction_start_by_2030
+G100000600832,Hongye II hydroelectric plant,Sichuan,run-of-river,90.0,operating,2002.0,,True,operating_or_construction_start_by_2030
+G100000600833,Hongyi hydroelectric plant,Sichuan,run-of-river,80.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000600834,Hosihe hydroelectric plant,Henan,pumped storage,1200.0,pre-construction,2028.0,,False,excluded_status_or_vintage
+G100000600835,Houma hydroelectric plant,Shanxi,pumped storage,900.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001051167,Houqiao hydroelectric plant,Yunnan,run-of-river,48.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000600836,Houziyan hydroelectric plant,Sichuan,conventional storage,1700.0,operating,2017.0,,True,operating_or_construction_start_by_2030
+G100001031186,Hua'an hydroelectric plant,Fujian,run-of-river,60.0,operating,1980.0,,True,operating_or_construction_start_by_2030
+G100000600837,Hua'an Pumped Storage hydroelectric plant,Fujian,pumped storage,1400.0,construction,,,False,unknown_start_year_not_imputed
+G100001051224,Huaguangtan Stage 1 hydroelectric plant,Zhejiang,run-of-river,60.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000600838,Huaguoshan hydroelectric plant,Hebei,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000600839,Huairen hydroelectric plant,Shanxi,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001048094,Huamuqiao hydroelectric plant,Hunan,run-of-river,110.0,operating,1973.0,,True,operating_or_construction_start_by_2030
+G100000604162,Huancuiyu Pumped Storage hydroelectric plant,Henan,pumped storage,1800.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604434,Huangcaoyuan hydroelectric plant,Shanxi,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600840,Huangcheng hydroelectric plant,Gansu,pumped storage,1400.0,construction,,,False,unknown_start_year_not_imputed
+G100001051060,Huangdan hydroelectric plant,Sichuan,conventional storage,48.0,operating,1995.0,,True,operating_or_construction_start_by_2030
+G100000600841,Huangdeng hydroelectric plant,Yunnan,conventional storage,1900.0,operating,2019.0,,True,operating_or_construction_start_by_2030
+G100000600842,Huangfeng hydroelectric plant,Qinghai,conventional storage,225.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000600843,Huanggou hydroelectric plant,Heilongjiang,pumped storage,1200.0,operating,2021.0,,True,operating_or_construction_start_by_2030
+G100001048078,Huanghuazhai hydroelectric plant,Guizhou,conventional storage,60.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000600844,Huanghuazhai Pumped Storage hydroelectric plant,Guizhou,pumped storage,1000.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600845,Huangjiaoshu hydroelectric plant,Yunnan,run-of-river,240.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000600846,Huangjinping hydroelectric plant,Sichuan,conventional storage,850.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000600848,Huanglongtan hydroelectric plant,Hubei,pumped storage,500.0,pre-construction,2028.0,,False,excluded_status_or_vintage
+G100000600847,Huanglongtan hydroelectric plant,Hubei,conventional storage,510.0,operating,1974.0,,True,operating_or_construction_start_by_2030
+G100000600849,Huangmeijian hydroelectric plant,Anhui,pumped storage,100.0,announced,,,False,unknown_start_year_not_imputed
+G100000600850,Huangtankou hydroelectric plant,Zhejiang,conventional storage,85.0,operating,1995.0,,True,operating_or_construction_start_by_2030
+G100000604435,Huangyang hydroelectric plant,Gansu,pumped storage,1400.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100000604436,Huangyangping Pumped Storage hydroelectric plant,Hunan,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000600852,Huanren hydroelectric plant,Liaoning,conventional storage,223.0,operating,1968.0,,True,operating_or_construction_start_by_2030
+G100001051062,Huashangou hydroelectric plant,Sichuan,conventional storage,72.0,operating,2022.0,,True,operating_or_construction_start_by_2030
+G100000600853,Huayuan hydroelectric plant,Hubei,pumped storage,1200.0,pre-construction,2030.0,,False,excluded_status_or_vintage
+G100001027171,Hubei Baokang Siping hydroelectric plant,Hubei,run-of-river,60.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100001028003,Hubei Eping hydroelectric plant,Hubei,conventional storage,114.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100001027172,Hubei Fang County Sanliping hydroelectric plant,Hubei,conventional storage,70.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100001027173,Hubei Shiyan Zhuxi Baishahe hydroelectric plant,Hubei,conventional storage,45.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100000600854,Huilong hydroelectric plant,Henan,pumped storage,120.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000600855,Huizhou hydroelectric plant,Guangdong,pumped storage,2400.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000604437,Huizhou Zhongdong hydroelectric plant,Guangdong,pumped storage,1200.0,construction,2025.0,,True,operating_or_construction_start_by_2030
+G100001027174,Hunan Dongping hydroelectric plant,Hunan,conventional storage,72.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100001027175,Hunan Shuangpai Wulipai hydroelectric plant,Hunan,run-of-river,45.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100001027176,Hunan Taojiang Baizhuzhou hydroelectric plant,Hunan,conventional storage,45.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100001027177,Hunan Taoshui hydroelectric plant,Hunan,run-of-river,69.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000600857,Hunanzhen hydroelectric plant,Zhejiang,conventional storage,270.0,operating,1996.0,,True,operating_or_construction_start_by_2030
+G100000600858,Hunyuan hydroelectric plant,Shanxi,pumped storage,1500.0,construction,2027.0,,True,operating_or_construction_start_by_2030
+G100000604438,Huoshan hydroelectric plant,Anhui,pumped storage,1200.0,construction,,,False,unknown_start_year_not_imputed
+G100001051186,Husong River hydroelectric plant,Yunnan,conventional storage,63.0,operating,1997.0,,True,operating_or_construction_start_by_2030
+G100001051070,Huzhu hydroelectric plant,Sichuan,run-of-river,45.0,operating,,,False,unknown_start_year_not_imputed
+G100000600860,Jiacha hydroelectric plant,Tibet,conventional storage,360.0,operating,2020.0,,True,operating_or_construction_start_by_2030
+G100000604459,Jiande hydroelectric plant,Zhejiang,pumped storage,2400.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100000600862,Jiangbian hydroelectric plant,Sichuan,run-of-river,330.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000600863,Jiangkou hydroelectric plant,Chongqing,conventional storage,400.0,operating,2003.0,,True,operating_or_construction_start_by_2030
+G100000600864,Jiangpinghe hydroelectric plant,Hubei,conventional storage,450.0,operating,2020.0,,True,operating_or_construction_start_by_2030
+G100000600865,Jiangseba hydroelectric plant,Sichuan,conventional storage,128.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000600866,Jiangshan hydroelectric plant,Zhejiang,pumped storage,1200.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100000600867,Jiangsu Liyang hydroelectric plant,Jiangsu,pumped storage,1500.0,operating,2017.0,,True,operating_or_construction_start_by_2030
+G100000600868,Jiangsu Shahe hydroelectric plant,Jiangsu,pumped storage,100.0,operating,2002.0,,True,operating_or_construction_start_by_2030
+G100000604157,Jiangxian Pumped Storage hydroelectric plant,Shanxi,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600869,Jiangya hydroelectric plant,Hunan,conventional storage,300.0,operating,2001.0,,True,operating_or_construction_start_by_2030
+G100001051061,Jiangyou Longfeng hydroelectric plant,Sichuan,conventional and run-of-river,53.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000600870,Jianke hydroelectric plant,Sichuan,conventional storage,246.0,construction,,,False,unknown_start_year_not_imputed
+G100000604460,Jiannan hydroelectric plant,Hubei,pumped storage,1600.0,announced,,,False,unknown_start_year_not_imputed
+G100000600872,Jianquan hydroelectric plant,Chongqing,pumped storage,1200.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100001031262,Jiantan hydroelectric plant,Guangdong,run-of-river,46.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000600873,Jiantang hydroelectric plant,Heilongjiang,pumped storage,1800.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604461,Jiaohe hydroelectric plant,Jilin,pumped storage,1200.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100001027178,Jiaojiping hydroelectric plant,Sichuan,run-of-river,72.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000604193,Jiapeng Pumped Storage hydroelectric plant,Anhui,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604462,Jiasa River hydroelectric plant,Yunnan,conventional storage,270.0,shelved,,,False,unknown_start_year_not_imputed
+G100000600875,Jiaxian hydroelectric plant,Henan,pumped storage,600.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604463,Jiayan hydroelectric plant,Yunnan,conventional storage,240.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000604464,Jiayan Yanjiawan hydroelectric plant,Guizhou,pumped storage,1400.0,announced,,,False,unknown_start_year_not_imputed
+G100000600878,Jiemian hydroelectric plant,Fujian,conventional storage,300.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600879,Jiexu hydroelectric plant,Tibet,conventional storage,510.0,construction,,,False,unknown_start_year_not_imputed
+G100000600880,Jilebulake hydroelectric plant,Xinjiang,run-of-river,160.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100001027948,Jilin Dunhua City Yanminghu Pumped Storage hydroelectric plant,Jilin,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600881,Jilintai I hydroelectric plant,Xinjiang,conventional storage,460.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100001051144,Jilintai Stage 2 hydroelectric plant,Xinjiang,run-of-river,50.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600882,Jin'anqiao hydroelectric plant,Yunnan,conventional storage,2400.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000600883,Jinchuan hydroelectric plant,Sichuan,conventional storage,860.0,construction,2025.0,,True,operating_or_construction_start_by_2030
+G100000604466,Jinchuanxia hydroelectric plant,Gansu,pumped storage,1200.0,construction,,,False,unknown_start_year_not_imputed
+G100000604467,Jinding hydroelectric plant,Sichuan,run-of-river,220.0,announced,,,False,unknown_start_year_not_imputed
+G100000600885,Jinggangshan hydroelectric plant,Jiangxi,conventional storage,133.0,operating,2020.0,,True,operating_or_construction_start_by_2030
+G100000600886,Jinghong hydroelectric plant,Yunnan,conventional storage,1750.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000604174,Jingmen Pumped Storage hydroelectric plant,Hubei,pumped storage,200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001031349,Jingnan hydroelectric plant,Guangxi,conventional storage,69.0,operating,1997.0,,True,operating_or_construction_start_by_2030
+G100000600887,Jingning hydroelectric plant,Zhejiang,pumped storage,1400.0,construction,,,False,unknown_start_year_not_imputed
+G100001048081,Jingpohu hydroelectric plant,Heilongjiang,run-of-river,96.0,operating,1942.0,,True,operating_or_construction_start_by_2030
+G100000604178,Jingshantun Pumped Storage hydroelectric plant,Jilin,pumped storage,1800.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604468,Jingyang County hydroelectric plant,Shaanxi,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100001027179,Jinhanlazha hydroelectric plant,Yunnan,run-of-river,58.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000600889,Jiniu hydroelectric plant,Sichuan,conventional storage,240.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100001031350,Jinjitan hydroelectric plant,Guangxi,conventional storage,72.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000600890,Jinkang hydroelectric plant,Sichuan,conventional storage,150.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000600891,Jinlongtan hydroelectric plant,Sichuan,run-of-river,180.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100001031319,Jinniuping hydroelectric plant,Guangxi,conventional storage,60.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000600892,Jinping hydroelectric plant,Sichuan,conventional storage,81.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000600893,Jinping Stage 1 hydroelectric plant,Sichuan,conventional storage,3600.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000600894,Jinping Stage 2 hydroelectric plant,Sichuan,conventional and run-of-river,4800.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100001051143,Jinqiao hydroelectric plant,Tibet,run-of-river,66.0,operating,2019.0,,True,operating_or_construction_start_by_2030
+G100000600895,Jinsha hydroelectric plant,Sichuan,conventional storage,560.0,operating,2021.0,,True,operating_or_construction_start_by_2030
+G100000604469,Jinshajiang Changbo hydroelectric plant,Sichuan,conventional storage,826.0,construction,,,False,unknown_start_year_not_imputed
+G100001048118,Jinshaxia hydroelectric plant,Qinghai,run-of-river,70.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000600897,Jinshuihe hydroelectric plant,Shaanxi,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604470,Jinshuitan hydroelectric plant,Zhejiang,pumped storage,297.0,construction,2027.0,,True,operating_or_construction_start_by_2030
+G100000600898,Jinshuitan hydroelectric plant,Zhejiang,conventional storage,300.0,operating,1988.0,,True,operating_or_construction_start_by_2030
+G100001048095,Jinweizhou hydroelectric plant,Hunan,conventional and run-of-river,63.0,operating,2002.0,,True,operating_or_construction_start_by_2030
+G100000600900,Jinwuo hydroelectric plant,Sichuan,run-of-river,240.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600901,Jinxi hydroelectric plant,Sichuan,run-of-river,150.0,operating,1997.0,,True,operating_or_construction_start_by_2030
+G100000600902,Jinyuan hydroelectric plant,Sichuan,run-of-river,100.0,operating,,,False,unknown_start_year_not_imputed
+G100000600903,Jinyun hydroelectric plant,Zhejiang,pumped storage,1500.0,construction,2025.0,,True,operating_or_construction_start_by_2030
+G100001051226,Jinyun hydroelectric plant,Zhejiang,pumped storage,300.0,operating,2024.0,,True,operating_or_construction_start_by_2030
+G100000600904,Jinzhai hydroelectric plant,Anhui,pumped storage,1200.0,operating,2022.0,,True,operating_or_construction_start_by_2030
+G100000600905,Jinzixian hydroelectric plant,Hunan,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600906,Jisha hydroelectric plant,Yunnan,conventional storage,120.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000600907,Jishixia hydroelectric plant,Qinghai,conventional storage,1020.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000600908,Jiudianxia hydroelectric plant,Gansu,conventional storage,300.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000600909,Jiufengshan hydroelectric plant,Henan,pumped storage,2100.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100000604182,Jiugongshan Pumped Storage hydroelectric plant,Hebei,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604471,Jiulongxia hydroelectric plant,Gansu,conventional storage,81.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000600910,Jiulongzhang hydroelectric plant,Guangdong,pumped storage,1800.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600911,Jixi hydroelectric plant,Anhui,pumped storage,1800.0,operating,2020.0,,True,operating_or_construction_start_by_2030
+G100000600912,Jiyu hydroelectric plant,Sichuan,conventional storage,102.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000600913,Jufudu hydroelectric plant,Yunnan,conventional storage,285.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100001048110,Julongtan hydroelectric plant,Jiangxi,conventional storage,60.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100001027878,Jurong hydroelectric plant,Jiangsu,pumped storage,675.0,operating,2024.0,,True,operating_or_construction_start_by_2030
+G100000600914,Jurong hydroelectric plant,Jiangsu,pumped storage,675.0,construction,2025.0,,True,operating_or_construction_start_by_2030
+G100000600915,Kagong hydroelectric plant,Tibet,conventional storage,240.0,announced,,,False,unknown_start_year_not_imputed
+G100001051057,Kaijianqiao hydroelectric plant,Sichuan,run-of-river,48.0,operating,,,False,unknown_start_year_not_imputed
+G100001051225,Kaitan hydroelectric plant,Zhejiang,conventional storage,48.0,operating,,,False,unknown_start_year_not_imputed
+G100000600916,Kajiwa hydroelectric plant,Sichuan,conventional storage,452.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000600917,Kala hydroelectric plant,Sichuan,conventional storage,1020.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100000600918,Kalasuke hydroelectric plant,Xinjiang,conventional storage,140.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000600919,Kangyang hydroelectric plant,Qinghai,conventional storage,285.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000600920,Kecheng hydroelectric plant,Zhejiang,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001051069,Kehe hydroelectric plant,Sichuan,conventional storage,72.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000600921,Kesaiyi hydroelectric plant,Xinjiang,conventional storage,100.0,operating,2017.0,,True,operating_or_construction_start_by_2030
+G100000600922,Ketian hydroelectric plant,Yunnan,conventional storage,99.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600923,Koktokay hydroelectric plant,Xinjiang,conventional storage,65.0,operating,1976.0,,True,operating_or_construction_start_by_2030
+G100000600924,Kushitayi hydroelectric plant,Xinjiang,conventional storage,100.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000604536,Laibin hydroelectric plant,Guangxi,pumped storage,1200.0,construction,,,False,unknown_start_year_not_imputed
+G100001031352,Lalang hydroelectric plant,Guangxi,conventional and run-of-river,51.0,operating,1971.0,,True,operating_or_construction_start_by_2030
+G100000600926,Lalashan hydroelectric plant,Sichuan,conventional storage,96.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000600927,Lanfu County hydroelectric plant,Shaanxi,pumped storage,800.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600928,Langjiang hydroelectric plant,Guangdong,pumped storage,1200.0,construction,2025.0,,True,operating_or_construction_start_by_2030
+G100001051221,Langwai River hydroelectric plant,Yunnan,run-of-river,45.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000600929,Langyashan hydroelectric plant,Anhui,pumped storage,600.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000600930,Langzhen hydroelectric plant,Tibet,run-of-river,340.0,announced,,,False,unknown_start_year_not_imputed
+G100000600931,Laodukou hydroelectric plant,Hubei,conventional storage,90.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600932,Laohuzui hydroelectric plant,Tibet,conventional storage,102.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000600933,Laojiangdi hydroelectric plant,Guizhou,conventional storage,100.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000600934,Laoyingyan Stage 1 hydroelectric plant,Sichuan,conventional storage,300.0,pre-construction,2030.0,,False,excluded_status_or_vintage
+G100000600935,Laoyingyan Stage 2 hydroelectric plant,Sichuan,conventional storage,420.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100001051197,Laqi hydroelectric plant,Yunnan,conventional storage,50.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000600936,Lawa hydroelectric plant,Sichuan,conventional storage,2000.0,construction,,,False,unknown_start_year_not_imputed
+G100000600937,Laxiwa hydroelectric plant,Qinghai,conventional storage,4200.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000600938,Lazhai hydroelectric plant,Yunnan,conventional storage,120.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100001051187,Lazhuang hydroelectric plant,Yunnan,conventional storage,60.0,operating,1992.0,,True,operating_or_construction_start_by_2030
+G100000600939,Lechangxia hydroelectric plant,Guangdong,conventional storage,132.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100000600940,Leidatan hydroelectric plant,Yunnan,conventional storage,108.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000600941,Lengda hydroelectric plant,Tibet,conventional storage,320.0,pre-construction,2025.0,,False,excluded_status_or_vintage
+G100000600942,Lenggu hydroelectric plant,Sichuan,conventional storage,2575.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600943,Lengzhuquan hydroelectric plant,Sichuan,run-of-river,180.0,operating,2001.0,,True,operating_or_construction_start_by_2030
+G100000600944,Letan hydroelectric plant,Guangxi,conventional storage,600.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000600945,Leyuan hydroelectric plant,Sichuan,pumped storage,298.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600946,Lianbu hydroelectric plant,Sichuan,conventional storage,130.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600947,Liancheng County hydroelectric plant,Fujian,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001027180,Liangfengke hydroelectric plant,Gansu,run-of-river,52.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000600949,Lianghekou hydroelectric plant,Sichuan,pumped storage,1200.0,construction,,,False,unknown_start_year_not_imputed
+G100000600948,Lianghekou hydroelectric plant,Sichuan,conventional storage,3000.0,operating,2023.0,,True,operating_or_construction_start_by_2030
+G100001048115,Liangjiang hydroelectric plant,Jilin,conventional storage,60.0,operating,1999.0,,True,operating_or_construction_start_by_2030
+G100000600950,Liangjiaren hydroelectric plant,Yunnan,run-of-river,3000.0,shelved - inferred 2 y,,,False,unknown_start_year_not_imputed
+G100000600951,Lianhua hydroelectric plant,Hebei,conventional storage,550.0,operating,1996.0,,True,operating_or_construction_start_by_2030
+G100001031246,Lianlu Stage 1 hydroelectric plant,Gansu,run-of-river,66.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000600952,Lianyungang hydroelectric plant,Jiangsu,pumped storage,1200.0,pre-construction,2030.0,,False,excluded_status_or_vintage
+G100001048114,Liaofang hydroelectric plant,Jiangxi,conventional storage,50.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100001027908,Liaoning Chaoyang Pumped Storage hydroelectric plant,Liaoning,pumped storage,1300.0,construction,,,False,unknown_start_year_not_imputed
+G100000600953,Liaoning Qingyuan hydroelectric plant,Liaoning,pumped storage,1800.0,operating,2023.0,,True,operating_or_construction_start_by_2030
+G100000600954,Lidi hydroelectric plant,Yunnan,conventional storage,420.0,operating,2019.0,,True,operating_or_construction_start_by_2030
+G100000600955,Lijiagou hydroelectric plant,Hubei,pumped storage,2200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600956,Lijiang hydroelectric plant,Sichuan,pumped storage,298.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600957,Lijiaxia hydroelectric plant,Qinghai,conventional storage,2000.0,operating,2023.0,,True,operating_or_construction_start_by_2030
+G100001031263,Likou hydroelectric plant,Guangdong,conventional storage,68.0,operating,,,False,unknown_start_year_not_imputed
+G100000600959,Linfen Daning hydroelectric plant,Shanxi,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000604557,Lingbao Pumped Storage hydroelectric plant,Henan,pumped storage,1200.0,construction,,,False,unknown_start_year_not_imputed
+G100000600960,Lingguan hydroelectric plant,Sichuan,run-of-river,76.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000600961,Lingjintan hydroelectric plant,Hunan,conventional storage,270.0,operating,2000.0,,True,operating_or_construction_start_by_2030
+G100000600962,Lingshan hydroelectric plant,Guangxi,pumped storage,1200.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100000600963,Lingshou hydroelectric plant,Hebei,pumped storage,1200.0,construction,2027.0,,True,operating_or_construction_start_by_2030
+G100000600964,Lingxi hydroelectric plant,Guangdong,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001051042,Linhekou hydroelectric plant,Shaanxi,run-of-river,72.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100000600965,Linxia Shenghe hydroelectric plant,Gansu,pumped storage,1000.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600966,Liuhong hydroelectric plant,Sichuan,conventional storage,180.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000600967,Liujiaxia hydroelectric plant,Gansu,conventional storage,1225.0,operating,1974.0,,True,operating_or_construction_start_by_2030
+G100000600968,Liuku hydroelectric plant,Yunnan,run-of-river,180.0,shelved,,,False,unknown_start_year_not_imputed
+G100000600969,Liulang hydroelectric plant,Hubei,pumped storage,2200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600970,Liuping hydroelectric plant,Sichuan,conventional storage,120.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100001051081,Liushu hydroelectric plant,Sichuan,conventional storage,48.0,operating,2018.0,,True,operating_or_construction_start_by_2030
+G100000600971,Liushugou hydroelectric plant,Xinjiang,run-of-river,180.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100000600972,Liuyang Fengdongkou hydroelectric plant,Hunan,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600973,Liuzhou hydroelectric plant,Guangxi,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100001028097,Liuzhou Rongshui Pumped Storage hydroelectric plant,Guangxi,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000604154,Liyuan Ahai Pumped Storage hydroelectric plant,Yunnan,pumped storage,600.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600974,Liyuan hydroelectric plant,Yunnan,conventional storage,2400.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000600975,Lizhou hydroelectric plant,Sichuan,conventional storage,355.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000604559,Liziwan hydroelectric plant,Chongqing,pumped storage,1400.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100000600977,Longbeiwan hydroelectric plant,Hubei,conventional storage,180.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000600978,Longdong hydroelectric plant,Sichuan,run-of-river,165.0,operating,2017.0,,True,operating_or_construction_start_by_2030
+G100000600979,Longhu hydroelectric plant,Guangdong,run-of-river,100.0,operating,2021.0,,True,operating_or_construction_start_by_2030
+G100000604563,Longhua hydroelectric plant,Hebei,pumped storage,2800.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100000600981,Longjiang hydroelectric plant,Yunnan,conventional storage,240.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000600982,Longkaikou hydroelectric plant,Yunnan,conventional storage,1800.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000600983,Longkou hydroelectric plant,InnerMongolia,conventional storage,420.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600984,Longma hydroelectric plant,Yunnan,conventional storage,240.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000600985,Longpan hydroelectric plant,Yunnan,conventional storage,4200.0,announced,,,False,unknown_start_year_not_imputed
+G100001048082,Longqiao hydroelectric plant,Hubei,conventional storage,60.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000600986,Longquan hydroelectric plant,Zhejiang,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600987,Longsheng hydroelectric plant,Guangxi,pumped storage,1600.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600988,Longshou 2 hydroelectric plant,Gansu,conventional storage,157.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100001031247,Longshou Stage 1 hydroelectric plant,Gansu,run-of-river,59.0,operating,2001.0,,True,operating_or_construction_start_by_2030
+G100000600990,Longtan hydroelectric plant,Guangxi,conventional storage,1400.0,pre-construction,2025.0,,False,excluded_status_or_vintage
+G100000600989,Longtan hydroelectric plant,Guangxi,conventional storage,4900.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600991,Longtangou hydroelectric plant,Tianjin,pumped storage,1800.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600992,Longting hydroelectric plant,Fujian,run-of-river,130.0,operating,1969.0,,True,operating_or_construction_start_by_2030
+G100000604564,Longtoushan hydroelectric plant,Jiangxi,conventional storage,240.0,operating,2022.0,,True,operating_or_construction_start_by_2030
+G100000600993,Longtoushi hydroelectric plant,Sichuan,conventional storage,700.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000600994,Longwangjian hydroelectric plant,Anhui,pumped storage,100.0,announced,,,False,unknown_start_year_not_imputed
+G100000600995,Longwangshan hydroelectric plant,Zhejiang,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000600996,Longxikou hydroelectric plant,Sichuan,run-of-river,480.0,construction,,,False,unknown_start_year_not_imputed
+G100001031192,Longyan Wan'anxi hydroelectric plant,Fujian,conventional storage,47.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000600997,Longyangxia hydroelectric plant,Qinghai,conventional storage,1280.0,operating,1987.0,,True,operating_or_construction_start_by_2030
+G100000600998,Longyungu hydroelectric plant,Hebei,pumped storage,1000.0,announced,,,False,unknown_start_year_not_imputed
+G100000600999,Luanping hydroelectric plant,Hebei,pumped storage,1200.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100000601000,Luanping II hydroelectric plant,Hebei,pumped storage,1800.0,announced,2029.0,,False,excluded_status_or_vintage
+G100001027182,Lubasi hydroelectric plant,Gansu,conventional and run-of-river,45.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601001,Lubuge hydroelectric plant,Yunnan,conventional storage,600.0,operating,1991.0,,True,operating_or_construction_start_by_2030
+G100000601002,Ludila hydroelectric plant,Yunnan,conventional storage,2160.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000601003,Luding hydroelectric plant,Sichuan,conventional storage,920.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000604577,Lufeng Pumped Storage hydroelectric plant,Yunnan,pumped storage,1200.0,construction,,,False,unknown_start_year_not_imputed
+G100000601004,Luhe hydroelectric plant,Guangdong,pumped storage,1400.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100000601005,Lujichang hydroelectric plant,Yunnan,run-of-river,96.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000604153,Luocheng hydroelectric plant,Guangxi,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601006,Luogu hydroelectric plant,Sichuan,conventional storage,110.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000601007,Luoning hydroelectric plant,Henan,pumped storage,1400.0,construction,2026.0,,True,operating_or_construction_start_by_2030
+G100001030690,Luoyuan Huokou hydroelectric plant,Fujian,conventional storage,60.0,operating,2024.0,,True,operating_or_construction_start_by_2030
+G100001051188,Luozha River Stage 2 hydroelectric plant,Yunnan,conventional and run-of-river,50.0,operating,,,False,unknown_start_year_not_imputed
+G100000601009,Lushan hydroelectric plant,Henan,pumped storage,1300.0,construction,2027.0,,True,operating_or_construction_start_by_2030
+G100000604163,Lushan Pumped Storage hydroelectric plant,Sichuan,pumped storage,1500.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601010,Lutiankuang hydroelectric plant,Liaoning,pumped storage,1200.0,pre-construction,2031.0,,False,excluded_status_or_vintage
+G100000604188,Luxi Pumped Storage hydroelectric plant,Yunnan,pumped storage,2100.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001051073,Lüye hydroelectric plant,Sichuan,run-of-river,50.0,operating,,,False,unknown_start_year_not_imputed
+G100000601011,Luyutan hydroelectric plant,Fujian,conventional storage,100.0,operating,2018.0,,True,operating_or_construction_start_by_2030
+G100000601012,Madushan hydroelectric plant,Yunnan,conventional storage,300.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601013,Maerdang hydroelectric plant,Qinghai,conventional storage,2320.0,operating,2024.0,,True,operating_or_construction_start_by_2030
+G100000604589,Maji hydroelectric plant,Yunnan,conventional storage,4200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001048100,Majitang hydroelectric plant,Hunan,run-of-river,56.0,operating,1983.0,,True,operating_or_construction_start_by_2030
+G100000601015,Malutang I hydroelectric plant,Yunnan,conventional storage,100.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100000601016,Malutang II hydroelectric plant,Yunnan,conventional storage,300.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000601017,Mamaya Stage 1 hydroelectric plant,Guizhou,conventional storage,558.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100001027183,Manas River Stage 1 hydroelectric plant,Xinjiang,run-of-river,50.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100001048101,Mangtangxi hydroelectric plant,Hunan,conventional storage,60.0,operating,2000.0,,True,operating_or_construction_start_by_2030
+G100000601018,Mantan hydroelectric plant,Sichuan,conventional storage,75.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601019,Manwan hydroelectric plant,Yunnan,conventional storage,1670.0,operating,1995.0,,True,operating_or_construction_start_by_2030
+G100000601020,Maoergai hydroelectric plant,Sichuan,conventional storage,426.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601021,Maojiahe hydroelectric plant,Guizhou,conventional storage,180.0,operating,2019.0,,True,operating_or_construction_start_by_2030
+G100000601022,Maoping hydroelectric plant,Guangdong,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000601023,Maotan hydroelectric plant,Sichuan,conventional storage,105.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100000601024,Maqin hydroelectric plant,Qinghai,pumped storage,1800.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601025,Mashi hydroelectric plant,Guangxi,run-of-river,100.0,operating,1972.0,,True,operating_or_construction_start_by_2030
+G100000601026,Meidai hydroelectric plant,InnerMongolia,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601027,Meilie hydroelectric plant,Fujian,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001031147,Meishan hydroelectric plant,Anhui,conventional storage,50.0,operating,1958.0,,True,operating_or_construction_start_by_2030
+G100000601028,Meizhou hydroelectric plant,Guangdong,pumped storage,1200.0,operating,2021.0,,True,operating_or_construction_start_by_2030
+G100000601029,Meizhou II hydroelectric plant,Guangdong,pumped storage,1200.0,construction,2025.0,,True,operating_or_construction_start_by_2030
+G100000601030,Mengdigou hydroelectric plant,Sichuan,conventional storage,2400.0,construction,2032.0,,False,excluded_status_or_vintage
+G100001031302,Mengli hydroelectric plant,Guangdong,conventional storage,50.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100000601031,Mengsong hydroelectric plant,Yunnan,unknown,600.0,shelved,,,False,unknown_start_year_not_imputed
+G100001031303,Mengzhouba hydroelectric plant,Guangdong,conventional storage,46.0,operating,1996.0,,True,operating_or_construction_start_by_2030
+G100000601032,Mianhuatan hydroelectric plant,Fujian,conventional storage,600.0,operating,2001.0,,True,operating_or_construction_start_by_2030
+G100000601033,Miaojiaba hydroelectric plant,Gansu,conventional storage,240.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000601034,Miaowei hydroelectric plant,Yunnan,conventional storage,1400.0,operating,2018.0,,True,operating_or_construction_start_by_2030
+G100000601035,Mienhuatan hydroelectric plant,Fujian,conventional storage,600.0,operating,2001.0,,True,operating_or_construction_start_by_2030
+G100000604624,Miluo Yuchi hydroelectric plant,Hunan,pumped storage,1200.0,construction,,,False,unknown_start_year_not_imputed
+G100001051075,Mingtai hydroelectric plant,Sichuan,conventional storage,45.0,operating,1998.0,,True,operating_or_construction_start_by_2030
+G100000604177,Minxian Pumped Storage hydroelectric plant,Gansu,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000601036,Minzhi hydroelectric plant,Sichuan,conventional storage,105.0,operating,2017.0,,True,operating_or_construction_start_by_2030
+G100000601037,Miyun hydroelectric plant,Beijing,conventional and pumped storage,92.0,operating,1960.0,,True,operating_or_construction_start_by_2030
+G100001027185,Moduo hydroelectric plant,Qinghai,conventional and run-of-river,48.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000601038,Motuo hydroelectric plant,Tibet,unknown,60000.0,pre-construction,2045.0,,False,excluded_status_or_vintage
+G100001051216,Mujiajia Stage 1 hydroelectric plant,Yunnan,run-of-river,60.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000601039,Mulan hydroelectric plant,Fujian,pumped storage,1400.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100000601040,Mulihe Shawan hydroelectric plant,Sichuan,conventional storage,280.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000601041,Muwangxi hydroelectric plant,Hunan,pumped storage,1200.0,construction,,,False,unknown_start_year_not_imputed
+G100000601042,Muxingtu hydroelectric plant,Yunnan,conventional storage,120.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000601043,Muzuo hydroelectric plant,Sichuan,conventional storage,100.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000601044,Nabang hydroelectric plant,Yunnan,conventional storage,180.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000601045,Nalan hydroelectric plant,Yunnan,conventional storage,150.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000604190,Nan'an Pumped Storage hydroelectric plant,Fujian,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001031305,Nangao hydroelectric plant,Guangdong,conventional and run-of-river,52.0,operating,1985.0,,True,operating_or_construction_start_by_2030
+G100001048102,Nanjindu hydroelectric plant,Hunan,conventional storage,60.0,operating,1991.0,,True,operating_or_construction_start_by_2030
+G100000601046,Nanning hydroelectric plant,Guangxi,pumped storage,1200.0,construction,2025.0,,True,operating_or_construction_start_by_2030
+G100000601047,Nansha hydroelectric plant,Yunnan,conventional storage,150.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000601048,Nanshankou hydroelectric plant,Qinghai,pumped storage,2400.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100000601049,Nanshui hydroelectric plant,Guangdong,conventional storage,75.0,operating,1970.0,,True,operating_or_construction_start_by_2030
+G100000601050,Nanyahe hydroelectric plant,Sichuan,run-of-river,120.0,operating,1983.0,,True,operating_or_construction_start_by_2030
+G100000601051,Nazixia hydroelectric plant,Qinghai,conventional storage,87.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000604668,Niangyong hydroelectric plant,Sichuan,conventional storage,93.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000601052,Nierji hydroelectric plant,InnerMongolia,conventional storage,250.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000601053,Nileke I hydroelectric plant,Xinjiang,run-of-river,220.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100000601054,Nina hydroelectric plant,Qinghai,conventional storage,160.0,operating,2003.0,,True,operating_or_construction_start_by_2030
+G100000601055,Ningguo Longtan hydroelectric plant,Anhui,pumped storage,1200.0,construction,2031.0,,False,excluded_status_or_vintage
+G100000601056,Ninghai hydroelectric plant,Zhejiang,pumped storage,700.0,construction,2025.0,,True,operating_or_construction_start_by_2030
+G100001051242,Ninghai hydroelectric plant,Zhejiang,pumped storage,700.0,operating,2024.0,,True,operating_or_construction_start_by_2030
+G100000601057,Ninglang hydroelectric plant,Sichuan,run-of-river,114.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000601058,Ningmute hydroelectric plant,Henan,conventional storage,1600.0,announced,,,False,unknown_start_year_not_imputed
+G100000601059,Niululing hydroelectric plant,Hainan,conventional storage,80.0,operating,1982.0,,True,operating_or_construction_start_by_2030
+G100000604670,Niushoushan hydroelectric plant,Ningxia,pumped storage,1000.0,construction,2028.0,,True,operating_or_construction_start_by_2030
+G100000604671,Niushoushan II hydroelectric plant,Ningxia,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601061,Niutoushan hydroelectric plant,Fujian,run-of-river,100.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000601062,Nizhuhe hydroelectric plant,Guizhou,conventional storage,102.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000601063,Nongling hydroelectric plant,Yunnan,conventional storage,180.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000601064,Nuozhadu hydroelectric plant,Yunnan,conventional storage,5850.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000601065,Nuozu hydroelectric plant,Yunnan,conventional storage,75.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000601066,Nyingchi hydroelectric plant,Tibet,conventional storage,3600.0,announced,,,False,unknown_start_year_not_imputed
+G100000601067,Pan'an hydroelectric plant,Zhejiang,pumped storage,1200.0,construction,2028.0,,True,operating_or_construction_start_by_2030
+G100000601068,Pandaoshan hydroelectric plant,Gansu,pumped storage,1400.0,construction,,,False,unknown_start_year_not_imputed
+G100000601069,Pangduo hydroelectric plant,Tibet,conventional storage,160.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100000604994,Panjiakou hydroelectric plant,Hebei,pumped storage,270.0,operating,1993.0,,True,operating_or_construction_start_by_2030
+G100000601070,Panjiakou hydroelectric plant,Hebei,conventional storage,150.0,operating,1981.0,,True,operating_or_construction_start_by_2030
+G100000601072,Pankou hydroelectric plant,Hubei,pumped storage,300.0,construction,2026.0,,True,operating_or_construction_start_by_2030
+G100000601071,Pankou hydroelectric plant,Hubei,conventional storage,513.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000604706,Panlong hydroelectric plant,Chongqing,pumped storage,1200.0,operating,2024.0,,True,operating_or_construction_start_by_2030
+G100000601074,Panxitsao hydroelectric plant,Hubei,pumped storage,2200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604759,Panzhihua Renhe hydroelectric plant,Sichuan,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601075,Paomaping hydroelectric plant,Sichuan,run-of-river,120.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000601076,Pengshui hydroelectric plant,Chongqing,conventional storage,1750.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000601077,Pianqiao hydroelectric plant,Sichuan,run-of-river,228.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000601078,Pingban hydroelectric plant,Guangxi,conventional storage,405.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000604731,Pingchuan District hydroelectric plant,Gansu,pumped storage,1180.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100000601080,Pingjiang hydroelectric plant,Hunan,pumped storage,1400.0,construction,2027.0,,True,operating_or_construction_start_by_2030
+G100000601081,Pingshunxian hydroelectric plant,Shanxi,pumped storage,2000.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601082,Pingtanyuan hydroelectric plant,Hubei,pumped storage,1400.0,construction,2027.0,,True,operating_or_construction_start_by_2030
+G100000601083,Pingtou hydroelectric plant,Sichuan,conventional storage,180.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601084,Pingyuan hydroelectric plant,Guangdong,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000601085,Pubugou hydroelectric plant,Sichuan,conventional storage,3600.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000601086,Puding hydroelectric plant,Guizhou,conventional storage,75.0,operating,1995.0,,True,operating_or_construction_start_by_2030
+G100000601087,Pushihe hydroelectric plant,Liaoning,pumped storage,1200.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601088,Puxian hydroelectric plant,Shanxi,pumped storage,1200.0,construction,,,False,unknown_start_year_not_imputed
+G100000601089,Puxiqiao hydroelectric plant,Yunnan,conventional storage,190.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000601090,Qiafuqihai hydroelectric plant,Xinjiang,conventional storage,320.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000601091,Qiamusa hydroelectric plant,Xinjiang,run-of-river,203.0,operating,2019.0,,True,operating_or_construction_start_by_2030
+G100000601092,Qianchang hydroelectric plant,Yunnan,run-of-river,114.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601093,Qianfoyan hydroelectric plant,Sichuan,conventional storage,102.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000604747,Qiannan Pumped Storage hydroelectric plant,Guizhou,pumped storage,1500.0,construction,,,False,unknown_start_year_not_imputed
+G100000601094,Qianwei hydroelectric plant,Sichuan,run-of-river,500.0,operating,2020.0,,True,operating_or_construction_start_by_2030
+G100000601095,Qianxi hydroelectric plant,Hebei,pumped storage,1000.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100000601096,Qiaogong hydroelectric plant,Guangxi,conventional storage,480.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000601097,Qiaoqi hydroelectric plant,Sichuan,conventional storage,240.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000601098,Qilinsi hydroelectric plant,Gansu,conventional storage,111.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100001027184,Qinghai Maqin Gequ Level 2 hydroelectric plant,Qinghai,conventional and run-of-river,48.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000601099,Qingju hydroelectric plant,Sichuan,run-of-river,136.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100000601100,Qinglang hydroelectric plant,Sichuan,run-of-river,180.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601101,Qinglong hydroelectric plant,Sichuan,run-of-river,102.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000601102,Qingmayuan hydroelectric plant,Guangdong,pumped storage,2400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601103,Qingshuitang hydroelectric plant,Hunan,conventional storage,128.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000601104,Qingtian hydroelectric plant,Zhejiang,pumped storage,1200.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100000601105,Qingtongxia hydroelectric plant,Ningxia,conventional storage,272.0,operating,1967.0,,True,operating_or_construction_start_by_2030
+G100000601106,Qingxi hydroelectric plant,Guangdong,conventional storage,144.0,operating,1992.0,,True,operating_or_construction_start_by_2030
+G100000601107,Qingyuan hydroelectric plant,Guangdong,pumped storage,1280.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100001031193,Qinshan hydroelectric plant,Fujian,run-of-river,70.0,operating,1999.0,,True,operating_or_construction_start_by_2030
+G100000604749,Qinshui hydroelectric plant,Shanxi,pumped storage,1200.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100000604750,Qinyuan hydroelectric plant,Shanxi,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601110,Qirehazier hydroelectric plant,Xinjiang,conventional storage,210.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000604751,Quanzhou hydroelectric plant,Guangxi,pumped storage,2000.0,announced,,,False,unknown_start_year_not_imputed
+G100000604752,Queruduo hydroelectric plant,Sichuan,run-of-river,151.0,construction,,,False,unknown_start_year_not_imputed
+G100000604753,Qujiang hydroelectric plant,Zhejiang,pumped storage,1200.0,construction,2027.0,,True,operating_or_construction_start_by_2030
+G100000601113,Quxue hydroelectric plant,Sichuan,conventional storage,246.0,operating,2017.0,,True,operating_or_construction_start_by_2030
+G100000604180,Reba Pumped Storage hydroelectric plant,Tibet,pumped storage,3600.0,announced,,,False,unknown_start_year_not_imputed
+G100000601114,Renhe hydroelectric plant,Chongqing,conventional storage,173.0,shelved,,,False,unknown_start_year_not_imputed
+G100000601116,Renzhonghai hydroelectric plant,Sichuan,conventional storage,240.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601117,Rongge hydroelectric plant,Guizhou,conventional storage,90.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000601118,Rumei hydroelectric plant,Tibet,conventional storage,2600.0,pre-construction,2035.0,,False,excluded_status_or_vintage
+G100000604767,Ruoqiang hydroelectric plant,Xinjiang,pumped storage,2100.0,construction,,,False,unknown_start_year_not_imputed
+G100000601120,Saduo hydroelectric plant,Sichuan,run-of-river,210.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000601121,Saizhu hydroelectric plant,Yunnan,conventional storage,102.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000601122,Salikete hydroelectric plant,Xinjiang,conventional storage,80.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000601123,Sanbanxi hydroelectric plant,Guizhou,conventional storage,1000.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100001051168,Sanchahe hydroelectric plant,Yunnan,run-of-river,72.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000604179,Sandaochong Pumped Storage hydroelectric plant,Ningxia,pumped storage,1600.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601124,Sandaowan hydroelectric plant,Gansu,run-of-river,112.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100001027197,Sangping hydroelectric plant,Sichuan,run-of-river,72.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100001051078,Sanjiang hydroelectric plant,Sichuan,conventional storage,45.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100001051079,Sankeshu hydroelectric plant,Sichuan,conventional storage,52.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000601125,Sanmenxia hydroelectric plant,Henan,conventional storage,400.0,operating,1973.0,,True,operating_or_construction_start_by_2030
+G100000601126,Sanxikou hydroelectric plant,Zhejiang,conventional storage,100.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000601127,Se'ergu hydroelectric plant,Sichuan,conventional storage,150.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100001051160,Sha'erbulake hydroelectric plant,Xinjiang,conventional storage,50.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100001027186,Shaanxi Baituling hydroelectric plant,Shaanxi,run-of-river,49.0,operating,2017.0,,True,operating_or_construction_start_by_2030
+G100000600756,Shaanxi Fuping hydroelectric plant,Shaanxi,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001027830,Shaanxi Ningshan Pumped Storage Hydroelectric plant,Shaanxi,pumped storage,1800.0,announced,,,False,unknown_start_year_not_imputed
+G100000601128,Shaanxi Shahe hydroelectric plant,Shaanxi,pumped storage,1400.0,construction,,,False,unknown_start_year_not_imputed
+G100001027832,Shaanxi Shiquan Chengguan Pumped Storage hydroelectric plant,Shaanxi,pumped storage,1000.0,announced,,,False,unknown_start_year_not_imputed
+G100001027831,Shaanxi Shiquan Pumped Storage hydroelectric plant,Shaanxi,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100001027834,Shaanxi Shiquan Xihe hydroelectric plant,Shaanxi,run-of-river,180.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100001027187,Shaanxi Wenjing hydroelectric plant,Shaanxi,run-of-river,48.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100001027827,Shaanxi Xunyang City Pumped Storage hydroelectric plant,Shaanxi,pumped storage,1400.0,announced,,,False,unknown_start_year_not_imputed
+G100001027879,Shaanxi Yang hydroelectric plant,Shaanxi,conventional storage,135.0,operating,2024.0,,True,operating_or_construction_start_by_2030
+G100001027833,Shaanxi Ziyang Pumped Storage hydroelectric plant,Shaanxi,pumped storage,1000.0,announced,,,False,unknown_start_year_not_imputed
+G100000601129,Shaila hydroelectric plant,Sichuan,conventional storage,380.0,announced,,,False,unknown_start_year_not_imputed
+G100001027188,Shangjianpo hydroelectric plant,Guizhou,conventional and run-of-river,60.0,operating,2017.0,,True,operating_or_construction_start_by_2030
+G100000601130,Shangli County hydroelectric plant,Jiangxi,pumped storage,300.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001031194,Shangpei hydroelectric plant,Fujian,conventional storage,51.0,operating,1979.0,,True,operating_or_construction_start_by_2030
+G100000601131,Shangshe hydroelectric plant,Shanxi,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601132,Shangtongba hydroelectric plant,Sichuan,conventional storage,240.0,operating,2017.0,,True,operating_or_construction_start_by_2030
+G100000604798,Shangyi hydroelectric plant,Hebei,pumped storage,1400.0,construction,2026.0,,True,operating_or_construction_start_by_2030
+G100001048109,Shangyoujiang hydroelectric plant,Jiangxi,conventional storage,72.0,operating,1957.0,,True,operating_or_construction_start_by_2030
+G100000601133,Shangzhi hydroelectric plant,Heilongjiang,pumped storage,1200.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100000601134,Shankou hydroelectric plant,Xinjiang,conventional storage,141.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100001031195,Shanmei hydroelectric plant,Fujian,conventional storage,63.0,operating,1995.0,,True,operating_or_construction_start_by_2030
+G100000601135,Shanmen Dam hydroelectric plant,Hunan,pumped storage,450.0,announced,,,False,unknown_start_year_not_imputed
+G100000601136,Shannipo hydroelectric plant,Guizhou,conventional storage,186.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000601137,Shanping hydroelectric plant,Qinghai,conventional storage,180.0,shelved,,,False,unknown_start_year_not_imputed
+G100001051249,Shanshan Pumped Storage hydroelectric plant,Xinjiang,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601138,Shanxi hydroelectric plant,Zhejiang,conventional storage,200.0,operating,2001.0,,True,operating_or_construction_start_by_2030
+G100000601139,Shanxiu hydroelectric plant,Guangxi,run-of-river,78.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000601140,Shanyang hydroelectric plant,Shaanxi,pumped storage,1200.0,construction,,,False,unknown_start_year_not_imputed
+G100000601141,Shaoguan Shankou hydroelectric plant,Guangdong,pumped storage,1000.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604799,Shaoguan Xinfeng hydroelectric plant,Guangdong,pumped storage,1200.0,pre-construction,2027.0,,False,excluded_status_or_vintage
+G100000601142,Shaping hydroelectric plant,Sichuan,run-of-river,162.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000601143,Shaping Stage 1 hydroelectric plant,Sichuan,conventional storage,360.0,construction,2025.0,,True,operating_or_construction_start_by_2030
+G100000601144,Shaping Stage 2 hydroelectric plant,Sichuan,conventional storage,348.0,operating,2018.0,,True,operating_or_construction_start_by_2030
+G100000601145,Shapotou hydroelectric plant,Ningxia,run-of-river,153.0,operating,2003.0,,True,operating_or_construction_start_by_2030
+G100001027189,Shaqian hydroelectric plant,Guizhou,run-of-river,50.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000601146,Shatuo hydroelectric plant,Guizhou,conventional storage,1120.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100000601147,Shawan hydroelectric plant,Sichuan,conventional storage,480.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000601148,Shaxi hydroelectric plant,Sichuan,run-of-river,87.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000601149,Shaxikou hydroelectric plant,Fujian,run-of-river,300.0,operating,1990.0,,True,operating_or_construction_start_by_2030
+G100000604169,Shenneng Pumped Storage hydroelectric plant,Xinjiang,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601150,Shenxigou hydroelectric plant,Sichuan,conventional storage,660.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601151,Shenzhen hydroelectric plant,Guangdong,pumped storage,1200.0,operating,2018.0,,True,operating_or_construction_start_by_2030
+G100000601152,Shidi hydroelectric plant,Chongqing,conventional storage,120.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000601153,Shihu Dam hydroelectric plant,Hebei,pumped storage,3000.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601154,Shihutang hydroelectric plant,Jiangxi,run-of-river,120.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100001027190,Shijiazhou hydroelectric plant,Hunan,conventional storage,45.0,operating,,,False,unknown_start_year_not_imputed
+G100001027191,Shilong hydroelectric plant,Jilin,conventional and run-of-river,70.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100001030625,Shimen Sanjiangkou hydroelectric plant,Hunan,conventional storage,113.0,operating,1989.0,,True,operating_or_construction_start_by_2030
+G100000601155,Shimenkan hydroelectric plant,Yunnan,conventional storage,130.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000601156,Shiquan hydroelectric plant,Shaanxi,conventional storage,225.0,operating,1975.0,,True,operating_or_construction_start_by_2030
+G100000601157,Shisanling hydroelectric plant,Beijing,pumped storage,800.0,operating,1997.0,,True,operating_or_construction_start_by_2030
+G100000604805,Shitai hydroelectric plant,Anhui,pumped storage,1200.0,construction,2027.0,,True,operating_or_construction_start_by_2030
+G100000601159,Shitang hydroelectric plant,Zhejiang,run-of-river,78.0,operating,1989.0,,True,operating_or_construction_start_by_2030
+G100000601160,Shiti hydroelectric plant,Chongqing,conventional storage,120.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000601161,Shiyazi hydroelectric plant,Guizhou,conventional storage,140.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000601162,Shiziping hydroelectric plant,Sichuan,conventional storage,195.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000601163,Shizitan Pumped Storage hydroelectric plant,Chongqing,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601164,Shuanggou hydroelectric plant,Jilin,conventional storage,280.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000601165,Shuanghe hydroelectric plant,Sichuan,conventional storage,81.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000601166,Shuanghekou hydroelectric plant,Guizhou,conventional storage,120.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000601167,Shuangjiangkou hydroelectric plant,Sichuan,conventional storage,2000.0,construction,2025.0,,True,operating_or_construction_start_by_2030
+G100001048116,Shuangling hydroelectric plant,Liaoning,conventional storage,50.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100000601168,Shuangpai hydroelectric plant,Hunan,conventional storage,135.0,operating,1963.0,,True,operating_or_construction_start_by_2030
+G100000601170,Shuhe hydroelectric plant,Shaanxi,conventional storage,276.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100001031248,Shuiboxia hydroelectric plant,Gansu,run-of-river,57.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000601171,Shuibuya hydroelectric plant,Hubei,conventional storage,1840.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000601172,Shuicheng hydroelectric plant,Guizhou,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601173,Shuidong hydroelectric plant,Fujian,conventional storage,80.0,operating,1994.0,,True,operating_or_construction_start_by_2030
+G100000604115,Shuifeng hydroelectric plant,Liaoning,conventional storage,630.0,operating,1941.0,,True,operating_or_construction_start_by_2030
+G100000601174,Shuikou hydroelectric plant,Fujian,conventional storage,1400.0,operating,1996.0,,True,operating_or_construction_start_by_2030
+G100001051049,Shuiniujia hydroelectric plant,Sichuan,conventional and run-of-river,70.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000604183,Shuiyu Pumped Storage hydroelectric plant,Hebei,pumped storage,1200.0,pre-construction,2029.0,,False,excluded_status_or_vintage
+G100000604808,Shuiyuan hydroelectric plant,Hunan,pumped storage,1400.0,construction,,,False,unknown_start_year_not_imputed
+G100000601176,Shuiyuanshan hydroelectric plant,Guangdong,pumped storage,1200.0,construction,2028.0,,True,operating_or_construction_start_by_2030
+G100001027192,Shunchang Dam hydroelectric plant,Fujian,conventional storage,48.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000601177,Shuozhong hydroelectric plant,Sichuan,conventional storage,120.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100001027193,Sichuan Guoru hydroelectric plant,Sichuan,unknown,48.0,operating,,,False,unknown_start_year_not_imputed
+G100001027194,Sichuan Jialingjiang River Cangxi hydroelectric plant,Sichuan,conventional storage,66.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100001027195,Sichuan Leshan Ebian Jinyan hydroelectric plant,Sichuan,run-of-river,46.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100001027871,Sichuan Mianzhu City Pumped Storage hydroelectric plant,Sichuan,pumped storage,1200.0,pre-construction,2032.0,,False,excluded_status_or_vintage
+G100001027848,Sichuan Peng'an Pumped Storage hydroelectric plant,Sichuan,pumped storage,290.0,announced,,,False,unknown_start_year_not_imputed
+G100000601178,Sichuan Pingwu Xiannvbao hydroelectric plant,Sichuan,conventional storage,76.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100001027198,Sichuan Xiaohe hydroelectric plant,Sichuan,unknown,48.0,operating,,,False,unknown_start_year_not_imputed
+G100001027199,Sichuan Xiaojin Mupo hydroelectric plant,Sichuan,conventional and run-of-river,45.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100001027200,Sichuan Xiaolongmen hydroelectric plant,Sichuan,conventional storage,52.0,operating,2018.0,,True,operating_or_construction_start_by_2030
+G100001027910,Sichuan Xuanhan Pumped Storage hydroelectric plant,Sichuan,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100001027201,Sichuan Yaan Shuijinguan hydroelectric plant,Sichuan,conventional storage,63.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100001027875,Sichuan Yajiang hydroelectric plant,Sichuan,conventional storage,3000.0,operating,2022.0,,True,operating_or_construction_start_by_2030
+G100001027876,Sichuan Yajiang hydroelectric plant,Sichuan,pumped storage,1200.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100001027202,Sichuan Zhaojue Subagu hydroelectric plant,Sichuan,run-of-river,52.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601179,Silin hydroelectric plant,Guizhou,conventional storage,1050.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000601180,Simutasi hydroelectric plant,Xinjiang,conventional storage,110.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000604837,Sinan Pumped Storage hydroelectric plant,Guizhou,pumped storage,1800.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601181,Sinanjiang hydroelectric plant,Yunnan,conventional storage,201.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000604822,Sizhoushan hydroelectric plant,Hunan,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001030273,Solun Pumped Storage hydroelectric plant,InnerMongolia,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000601183,Songshanhekou hydroelectric plant,Yunnan,conventional storage,168.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100001048088,Songshuling hydroelectric plant,Hubei,conventional storage,50.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000601184,Songxian Longtangou hydroelectric plant,Henan,pumped storage,1800.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100000604826,Songyang hydroelectric plant,Zhejiang,pumped storage,1400.0,construction,,,False,unknown_start_year_not_imputed
+G100000601186,Songzi hydroelectric plant,Hubei,pumped storage,1200.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100000601187,Suichang hydroelectric plant,Zhejiang,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601188,Suichuan hydroelectric plant,Jiangxi,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601189,Sujiahekou hydroelectric plant,Yunnan,conventional storage,315.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000601190,Suofengying hydroelectric plant,Guizhou,conventional storage,600.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100001030656,Suojinshan hydroelectric plant,Hubei,run-of-river,45.0,operating,1994.0,,True,operating_or_construction_start_by_2030
+G100000601191,Suwalong hydroelectric plant,Sichuan,conventional storage,1200.0,operating,2023.0,,True,operating_or_construction_start_by_2030
+G100000601192,Suzhi hydroelectric plant,Qinghai,conventional storage,225.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100001051163,Tagake hydroelectric plant,Xinjiang,run-of-river,100.0,announced,,,False,unknown_start_year_not_imputed
+G100001051161,Tagake hydroelectric plant,Xinjiang,run-of-river,50.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000601193,Tai'an hydroelectric plant,Shandong,pumped storage,1000.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000601194,Tai'an II hydroelectric plant,Shandong,pumped storage,1800.0,construction,2028.0,,True,operating_or_construction_start_by_2030
+G100000604155,Taihangshan Pumped Storage hydroelectric plant,Hebei,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000601195,Taihe hydroelectric plant,Jiangxi,run-of-river,138.0,shelved,,,False,unknown_start_year_not_imputed
+G100000601196,Taipingling hydroelectric plant,Guangdong,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000601197,Taipingshao hydroelectric plant,Liaoning,run-of-river,161.0,operating,1979.0,,True,operating_or_construction_start_by_2030
+G100000604116,Taipingwan hydroelectric plant,Liaoning,conventional storage,192.0,operating,1985.0,,True,operating_or_construction_start_by_2030
+G100000601198,Taipingyi hydroelectric plant,Sichuan,run-of-river,280.0,operating,1994.0,,True,operating_or_construction_start_by_2030
+G100000601199,Taishun hydroelectric plant,Zhejiang,pumped storage,1200.0,construction,2028.0,,True,operating_or_construction_start_by_2030
+G100000601200,Taiyanggou hydroelectric plant,InnerMongolia,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601201,Taiyuan Gujiao hydroelectric plant,Shanxi,pumped storage,1500.0,announced,,,False,unknown_start_year_not_imputed
+G100000601202,Taka hydroelectric plant,Sichuan,run-of-river,110.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000604854,Takeng hydroelectric plant,Sichuan,unknown,200.0,announced,,,False,unknown_start_year_not_imputed
+G100000601203,Talahe hydroelectric plant,Jilin,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601204,Taleidesai hydroelectric plant,Xinjiang,unknown,80.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000601205,Tangwan hydroelectric plant,Anhui,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000601206,Tankeng hydroelectric plant,Zhejiang,conventional storage,600.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000601207,Taoyuan hydroelectric plant,Hunan,run-of-river,180.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100001051164,Tarileiga hydroelectric plant,Xinjiang,conventional storage,50.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100001031153,Tengzigou hydroelectric plant,Chongqing,conventional and run-of-river,70.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000601208,Three Gorges Dam hydroelectric plant,Hubei,conventional storage,22500.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000601210,Tianchi hydroelectric plant,Henan,pumped storage,1200.0,operating,2023.0,,True,operating_or_construction_start_by_2030
+G100000601211,Tianhe hydroelectric plant,Zhejiang,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001046518,Tianhu hydroelectric plant,Guangxi,run-of-river,60.0,operating,1992.0,,True,operating_or_construction_start_by_2030
+G100000601212,Tianhuaban hydroelectric plant,Yunnan,conventional storage,180.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601213,Tianhuangping hydroelectric plant,Zhejiang,pumped storage,1800.0,operating,2000.0,,True,operating_or_construction_start_by_2030
+G100000601214,Tianlonghu hydroelectric plant,Sichuan,conventional storage,180.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100000601215,Tianqiao hydroelectric plant,Shaanxi,run-of-river,128.0,operating,1977.0,,True,operating_or_construction_start_by_2030
+G100000601216,Tianshengqiao Stage 1 hydroelectric plant,Guizhou,conventional storage,1200.0,operating,2000.0,,True,operating_or_construction_start_by_2030
+G100000601217,Tianshengqiao Stage 2 hydroelectric plant,Guangxi,conventional storage,1320.0,operating,2000.0,,True,operating_or_construction_start_by_2030
+G100000601218,Tiantai hydroelectric plant,Zhejiang,pumped storage,1700.0,construction,2026.0,,True,operating_or_construction_start_by_2030
+G100000601219,Tiantang hydroelectric plant,Guangdong,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001031221,Tianwanggou hydroelectric plant,Gansu,run-of-river,51.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601220,Tianzhushan hydroelectric plant,Anhui,pumped storage,1200.0,shelved,,,False,unknown_start_year_not_imputed
+G100000601221,Tianzishan hydroelectric plant,Hunan,pumped storage,1400.0,construction,,,False,unknown_start_year_not_imputed
+G100001031222,Tiecheng hydroelectric plant,Gansu,conventional and run-of-river,52.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000601222,Tielishi hydroelectric plant,Heilongjiang,pumped storage,3000.0,announced,,,False,unknown_start_year_not_imputed
+G100000601223,Tienlin hydroelectric plant,Guangxi,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601224,Tingzikou hydroelectric plant,Sichuan,conventional storage,1100.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100001027203,Tong Zhang hydroelectric plant,Sichuan,unknown,50.0,operating,,,False,unknown_start_year_not_imputed
+G100000601225,Tongbai hydroelectric plant,Zhejiang,pumped storage,1200.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000601226,Tongcheng hydroelectric plant,Anhui,pumped storage,1280.0,construction,2027.0,,True,operating_or_construction_start_by_2030
+G100000604888,Tongde hydroelectric plant,Qinghai,pumped storage,2400.0,construction,2028.0,,True,operating_or_construction_start_by_2030
+G100000601228,Tongjiezi hydroelectric plant,Sichuan,conventional storage,700.0,operating,1994.0,,True,operating_or_construction_start_by_2030
+G100001051085,Tongkou hydroelectric plant,Sichuan,conventional storage,45.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100000601229,Tongkuang hydroelectric plant,Jiangsu,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000601230,Tonglu hydroelectric plant,Zhejiang,pumped storage,1400.0,construction,2028.0,,True,operating_or_construction_start_by_2030
+G100000601231,Tongtou hydroelectric plant,Sichuan,conventional storage,80.0,operating,1995.0,,True,operating_or_construction_start_by_2030
+G100000601232,Tongwan hydroelectric plant,Hunan,conventional storage,180.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100001051086,Tongzhong hydroelectric plant,Sichuan,run-of-river,51.0,operating,2001.0,,True,operating_or_construction_start_by_2030
+G100000601233,Tongzihao hydroelectric plant,Sichuan,conventional storage,108.0,operating,2003.0,,True,operating_or_construction_start_by_2030
+G100000601234,Tongzilin hydroelectric plant,Sichuan,conventional storage,600.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000601235,Tuanpo hydroelectric plant,Guizhou,run-of-river,80.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000601236,Tugutang hydroelectric plant,Hunan,run-of-river,90.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000601237,Tukahe hydroelectric plant,Yunnan,conventional storage,165.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000601238,Tuoba hydroelectric plant,Yunnan,conventional storage,1400.0,operating,2024.0,,True,operating_or_construction_start_by_2030
+G100000601239,Tuokou hydroelectric plant,Hunan,conventional storage,830.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000604159,Ulan Maodu Pumped Storage hydroelectric plant,InnerMongolia,pumped storage,2100.0,announced,,,False,unknown_start_year_not_imputed
+G100000604151,Urad Pumped Storage hydroelectric plant,InnerMongolia,pumped storage,1400.0,announced,,,False,unknown_start_year_not_imputed
+G100000601240,Wachun hydroelectric plant,Guangxi,conventional storage,230.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100001027204,Waixiong hydroelectric plant,Zhejiang,conventional storage,48.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000601241,Wan’an hydroelectric plant,Jiangxi,conventional storage,500.0,operating,1990.0,,True,operating_or_construction_start_by_2030
+G100001051082,Wanba hydroelectric plant,Sichuan,conventional storage,69.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100001051071,Wandong hydroelectric plant,Sichuan,run-of-river,60.0,operating,2019.0,,True,operating_or_construction_start_by_2030
+G100001046520,Wangcun hydroelectric plant,Guangxi,conventional storage,60.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100000601242,Wangfuzhou hydroelectric plant,Hubei,run-of-river,109.0,operating,1999.0,,True,operating_or_construction_start_by_2030
+G100000601243,Wangqing I hydroelectric plant,Jilin,pumped storage,1800.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601244,Wanjiakouzi hydroelectric plant,Guizhou,conventional storage,180.0,operating,2018.0,,True,operating_or_construction_start_by_2030
+G100000601245,Wanjiazhai hydroelectric plant,Shaanxi,conventional storage,1080.0,operating,1998.0,,True,operating_or_construction_start_by_2030
+G100001030274,Wanjiazhai Pumped Storage hydroelectric plant,Shanxi,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000601247,Wanmipo hydroelectric plant,Hunan,conventional storage,240.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100000604941,Warang hydroelectric plant,Qinghai,pumped storage,2800.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100001051142,Watuo hydroelectric plant,Tibet,conventional storage,50.0,operating,2019.0,,True,operating_or_construction_start_by_2030
+G100000601249,Wawushan hydroelectric plant,Sichuan,conventional storage,240.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000601250,Weifang hydroelectric plant,Shandong,pumped storage,1200.0,construction,2026.0,,True,operating_or_construction_start_by_2030
+G100000604946,Weijiachong hydroelectric plant,Hubei,pumped storage,298.0,construction,2025.0,,True,operating_or_construction_start_by_2030
+G100000604117,Weiyuan hydroelectric plant,Jilin,conventional storage,390.0,operating,1987.0,,True,operating_or_construction_start_by_2030
+G100001027205,Weiyuan River Jinggu County Simao District hydroelectric plant,Yunnan,conventional storage,72.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000601252,Wencheng hydroelectric plant,Zhejiang,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601253,Wendeng hydroelectric plant,Shandong,pumped storage,1800.0,operating,2023.0,,True,operating_or_construction_start_by_2030
+G100000601254,Wenquan hydroelectric plant,Xinjiang,conventional storage,135.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601255,Woluoqiao hydroelectric plant,Sichuan,conventional storage,100.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000601256,Wudongde hydroelectric plant,Yunnan,conventional storage,10200.0,operating,2021.0,,True,operating_or_construction_start_by_2030
+G100000601257,Wudu Dam hydroelectric plant,Sichuan,conventional storage,150.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601258,Wufeng Taiping hydroelectric plant,Hubei,pumped storage,2400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601259,Wuhai hydroelectric plant,InnerMongolia,pumped storage,1200.0,construction,2028.0,,True,operating_or_construction_start_by_2030
+G100000601260,Wuhu Xixingchong hydroelectric plant,Anhui,pumped storage,1200.0,pre-construction,2029.0,,False,excluded_status_or_vintage
+G100000601261,Wujiangdu hydroelectric plant,Guizhou,conventional storage,1280.0,operating,1982.0,,True,operating_or_construction_start_by_2030
+G100000601262,Wujinxia hydroelectric plant,Gansu,run-of-river,140.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000601263,Wulong Baima hydroelectric plant,Chongqing,conventional storage,525.0,construction,,,False,unknown_start_year_not_imputed
+G100001027206,Wuluwati Dam hydroelectric plant,Xinjiang,conventional storage,60.0,operating,2001.0,,True,operating_or_construction_start_by_2030
+G100000601264,Wunonglong hydroelectric plant,Yunnan,conventional storage,990.0,operating,2019.0,,True,operating_or_construction_start_by_2030
+G100000604951,Wuqiangxi Expansion hydroelectric plant,Hunan,conventional storage,500.0,operating,2024.0,,True,operating_or_construction_start_by_2030
+G100000601266,Wuqiangxi hydroelectric plant,Hunan,conventional storage,1700.0,operating,2024.0,,True,operating_or_construction_start_by_2030
+G100001028008,Wushan Daxi Pumped Storage hydroelectric plant,Chongqing,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601267,Wuxi hydroelectric plant,Hunan,run-of-river,100.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000604952,Wuxijiang hydroelectric plant,Zhejiang,pumped storage,298.0,construction,2028.0,,True,operating_or_construction_start_by_2030
+G100000601269,Wuxing Pumped Storage hydroelectric plant,Heilongjiang,pumped storage,1800.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601270,Wuyiqiao hydroelectric plant,Sichuan,conventional storage,132.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000601271,Wuyue hydroelectric plant,Henan,pumped storage,750.0,construction,2026.0,,True,operating_or_construction_start_by_2030
+G100001051244,Wuyue hydroelectric plant,Henan,pumped storage,250.0,operating,2024.0,,True,operating_or_construction_start_by_2030
+G100000601272,Xi'erhe I hydroelectric plant,Yunnan,run-of-river,105.0,operating,1979.0,,True,operating_or_construction_start_by_2030
+G100001051194,Xi'erhe II hydroelectric plant,Yunnan,run-of-river,50.0,operating,1978.0,,True,operating_or_construction_start_by_2030
+G100001051196,Xi'erhe III hydroelectric plant,Yunnan,run-of-river,50.0,operating,1987.0,,True,operating_or_construction_start_by_2030
+G100001051195,Xi'erhe IV hydroelectric plant,Yunnan,run-of-river,50.0,operating,1971.0,,True,operating_or_construction_start_by_2030
+G100000601273,Xiabandi hydroelectric plant,Xinjiang,conventional storage,150.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000601274,Xiajiang hydroelectric plant,Jiangxi,conventional storage,360.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000604956,Xiamen hydroelectric plant,Fujian,pumped storage,1400.0,operating,2024.0,,True,operating_or_construction_start_by_2030
+G100000601276,Xiangbiling hydroelectric plant,Guizhou,conventional storage,240.0,operating,2017.0,,True,operating_or_construction_start_by_2030
+G100001031151,Xianghongdian hydroelectric plant,Anhui,conventional storage,51.0,operating,1959.0,,True,operating_or_construction_start_by_2030
+G100000601277,Xianghongdian Pumped Storage hydroelectric plant,Anhui,pumped storage,80.0,operating,1959.0,,True,operating_or_construction_start_by_2030
+G100000601278,Xiangjiaba hydroelectric plant,Yunnan,conventional storage,7750.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000601279,Xiangqi hydroelectric plant,Hunan,run-of-river,80.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601280,Xiangshui hydroelectric plant,Guizhou,conventional storage,230.0,operating,2003.0,,True,operating_or_construction_start_by_2030
+G100000601281,Xiangshuijian hydroelectric plant,Anhui,pumped storage,1000.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000601282,Xiangxiang hydroelectric plant,Hunan,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000601283,Xiangyuan County hydroelectric plant,Shanxi,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000601284,Xianju hydroelectric plant,Zhejiang,pumped storage,1500.0,operating,2016.0,,True,operating_or_construction_start_by_2030
+G100000601285,Xianyou hydroelectric plant,Fujian,pumped storage,1200.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100000601286,Xiaofenghe hydroelectric plant,Hubei,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100001051121,Xiaogoutou hydroelectric plant,Sichuan,run-of-river,60.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100000601287,Xiaoguanzi hydroelectric plant,Sichuan,conventional storage,160.0,operating,2001.0,,True,operating_or_construction_start_by_2030
+G100000601288,Xiaogushan hydroelectric plant,Gansu,run-of-river,102.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000601289,Xiaojin Yangjiawan hydroelectric plant,Sichuan,conventional storage,60.0,operating,2018.0,,True,operating_or_construction_start_by_2030
+G100000601290,Xiaolangdi hydroelectric plant,Henan,conventional storage,1800.0,operating,2000.0,,True,operating_or_construction_start_by_2030
+G100000601291,Xiaolonghe hydroelectric plant,Hubei,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000601292,Xiaoshan hydroelectric plant,Jilin,conventional storage,160.0,operating,1997.0,,True,operating_or_construction_start_by_2030
+G100001051157,Xiaoshankou hydroelectric plant,Xinjiang,conventional storage,50.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100001051158,Xiaoshankou Stage 2 hydroelectric plant,Xinjiang,run-of-river,50.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100001051159,Xiaoshankou Stage 3 hydroelectric plant,Xinjiang,run-of-river,50.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000601293,Xiaoshixia hydroelectric plant,Xinjiang,conventional storage,138.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000601294,Xiaotiandu hydroelectric plant,Sichuan,conventional storage,240.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000601295,Xiaowan hydroelectric plant,Yunnan,conventional storage,4200.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000601296,Xiaoxi hydroelectric plant,Hunan,conventional storage,135.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000601297,Xiaoxia hydroelectric plant,Gansu,run-of-river,230.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100001048104,Xiaoxiang hydroelectric plant,Hunan,conventional storage,52.0,operating,2002.0,,True,operating_or_construction_start_by_2030
+G100000601298,Xiaoyantou hydroelectric plant,Yunnan,conventional storage,130.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601299,Xiaping hydroelectric plant,Guangdong,pumped storage,2400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001046513,Xiaqiao hydroelectric plant,Guangxi,conventional storage,50.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000601300,Xichouxian hydroelectric plant,Yunnan,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601301,Xieka hydroelectric plant,Sichuan,conventional storage,135.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000601302,Xigu hydroelectric plant,Sichuan,conventional storage,249.0,operating,,,False,unknown_start_year_not_imputed
+G100000601303,Xihe hydroelectric plant,Shaanxi,conventional storage,180.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000601304,Xijin hydroelectric plant,Guangxi,run-of-river,234.0,operating,1964.0,,True,operating_or_construction_start_by_2030
+G100000601305,Xikou hydroelectric plant,Zhejiang,pumped storage,80.0,operating,1998.0,,True,operating_or_construction_start_by_2030
+G100000601306,Xilongchi hydroelectric plant,Shanxi,pumped storage,1200.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000604957,Xilongchi II hydroelectric plant,Shanxi,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601308,Xiluodu hydroelectric plant,Yunnan,conventional storage,13860.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000601309,Xin’anjiang hydroelectric plant,Zhejiang,conventional storage,663.0,operating,1977.0,,True,operating_or_construction_start_by_2030
+G100000601310,Xinfengjiang hydroelectric plant,Guangdong,conventional storage,293.0,operating,1960.0,,True,operating_or_construction_start_by_2030
+G100000601311,Xingan hydroelectric plant,Jiangxi,conventional storage,112.0,operating,2018.0,,True,operating_or_construction_start_by_2030
+G100000601312,Xingcheng hydroelectric plant,Liaoning,pumped storage,1200.0,construction,,,False,unknown_start_year_not_imputed
+G100000601313,Xingshan County hydroelectric plant,Hubei,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000601314,Xingtai hydroelectric plant,Hebei,pumped storage,1200.0,construction,,,False,unknown_start_year_not_imputed
+G100000601315,Xingyuezhai hydroelectric plant,Shaanxi,pumped storage,120.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604958,Xinji hydroelectric plant,Hubei,conventional storage,120.0,operating,2023.0,,True,operating_or_construction_start_by_2030
+G100001027207,Xinjiang Aksu Tumuxiuke hydroelectric plant,Xinjiang,run-of-river,48.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000601317,Xinjiang Bulunkou - Kongur hydroelectric plant,Xinjiang,conventional storage,200.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000601318,Xinma hydroelectric plant,Sichuan,run-of-river,120.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000601320,Xinzang hydroelectric plant,Sichuan,conventional storage,186.0,operating,2020.0,,True,operating_or_construction_start_by_2030
+G100000601321,Xinzheng hydroelectric plant,Sichuan,run-of-river,108.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000601322,Xipuozhandian hydroelectric plant,Henan,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601323,Xirong hydroelectric plant,Sichuan,conventional storage,320.0,announced,,,False,unknown_start_year_not_imputed
+G100001051217,Xishuangbanna Tianshengqiao hydroelectric plant,Yunnan,run-of-river,50.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000601324,Xiuguan hydroelectric plant,Sichuan,conventional storage,108.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100001048105,Xiushan hydroelectric plant,Hunan,conventional storage,65.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000601325,Xixian hydroelectric plant,Shanxi,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000601326,Xixiayuan hydroelectric plant,Henan,conventional storage,140.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100001051045,Xuanhan Jiangkou hydroelectric plant,Sichuan,conventional storage,51.0,operating,1992.0,,True,operating_or_construction_start_by_2030
+G100000601327,Xuanwei hydroelectric plant,Yunnan,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601328,Xucun hydroelectric plant,Yunnan,conventional storage,84.0,operating,1999.0,,True,operating_or_construction_start_by_2030
+G100000601329,Xuecheng hydroelectric plant,Sichuan,run-of-river,138.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000604959,Xulong hydroelectric plant,Yunnan,conventional storage,2400.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100000601331,Xunwu hydroelectric plant,Jiangxi,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604960,Xunyang hydroelectric plant,Shaanxi,conventional storage,320.0,operating,2022.0,,True,operating_or_construction_start_by_2030
+G100000601333,Xushui hydroelectric plant,Hebei,pumped storage,600.0,announced,,,False,unknown_start_year_not_imputed
+G100000601334,Ya'an Daxing hydroelectric plant,Sichuan,conventional storage,75.0,operating,2002.0,,True,operating_or_construction_start_by_2030
+G100001051132,Ya'an Shaping hydroelectric plant,Sichuan,run-of-river,56.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000604172,Yabuli Pumped Storage hydroelectric plant,Heilongjiang,pumped storage,1200.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100000601336,Yagen Stage 1 hydroelectric plant,Sichuan,conventional storage,300.0,pre-construction,2028.0,,False,excluded_status_or_vintage
+G100000601337,Yagen Stage 2 hydroelectric plant,Sichuan,conventional storage,2200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601339,Yamadu hydroelectric plant,Xinjiang,conventional storage,132.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601340,Yamdrok hydroelectric plant,Tibet,pumped storage,113.0,operating,1997.0,,True,operating_or_construction_start_by_2030
+G100001051220,Yamu River Stage 3 hydroelectric plant,Yunnan,unknown,50.0,operating,,,False,unknown_start_year_not_imputed
+G100000601341,Yanbi hydroelectric plant,Sichuan,conventional storage,300.0,announced,,,False,unknown_start_year_not_imputed
+G100000601342,Yangang hydroelectric plant,Sichuan,run-of-river,120.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100001051135,Yangcun hydroelectric plant,Sichuan,conventional and run-of-river,66.0,operating,,,False,unknown_start_year_not_imputed
+G100001051182,Yanger hydroelectric plant,Yunnan,run-of-river,50.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000601343,Yangfanggou hydroelectric plant,Sichuan,conventional storage,1500.0,operating,2021.0,,True,operating_or_construction_start_by_2030
+G100000601344,Yangjiang hydroelectric plant,Guangdong,pumped storage,2400.0,operating,2021.0,,True,operating_or_construction_start_by_2030
+G100000601345,Yanglin hydroelectric plant,Hainan,pumped storage,2400.0,announced,,,False,unknown_start_year_not_imputed
+G100001051138,Yangliutan hydroelectric plant,Sichuan,conventional storage,54.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000601346,Yangqu hydroelectric plant,Qinghai,conventional storage,1200.0,operating,2024.0,,True,operating_or_construction_start_by_2030
+G100000601347,Yanguoxia hydroelectric plant,Gansu,conventional storage,471.0,operating,1975.0,,True,operating_or_construction_start_by_2030
+G100001031251,Yangxishui Stage 1 hydroelectric plant,Guangdong,conventional and run-of-river,50.0,operating,2003.0,,True,operating_or_construction_start_by_2030
+G100000604305,Yanshan hydroelectric plant,Jiangxi,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601348,Yanshanhu hydroelectric plant,Liaoning,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601349,Yanshuigou III hydroelectric plant,Yunnan,conventional storage,144.0,operating,1966.0,,True,operating_or_construction_start_by_2030
+G100000601350,Yantan hydroelectric plant,Guangxi,conventional storage,1810.0,operating,1995.0,,True,operating_or_construction_start_by_2030
+G100001051139,Yanyuan Changbo hydroelectric plant,Sichuan,run-of-river,50.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000601351,Yaoheba hydroelectric plant,Sichuan,conventional storage,132.0,operating,2001.0,,True,operating_or_construction_start_by_2030
+G100000604965,Yaojiaping hydroelectric plant,Hubei,run-of-river,184.0,construction,,,False,unknown_start_year_not_imputed
+G100001048099,Yaotian hydroelectric plant,Hunan,run-of-river,50.0,operating,1988.0,,True,operating_or_construction_start_by_2030
+G100000601352,Yayangshan hydroelectric plant,Yunnan,conventional storage,120.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000601353,Yebatan hydroelectric plant,Sichuan,conventional storage,2440.0,construction,2026.0,,True,operating_or_construction_start_by_2030
+G100000604194,Yebatan Pumped Storage hydroelectric plant,Sichuan,pumped storage,4500.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601354,Yele hydroelectric plant,Sichuan,conventional storage,240.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000601355,Yenling Luopingjiang hydroelectric plant,Hunan,pumped storage,1200.0,construction,,,False,unknown_start_year_not_imputed
+G100001027208,Yesanhe Jianshi County hydroelectric plant,Hubei,run-of-river,50.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000604967,Yeshan hydroelectric plant,Jiangsu,pumped storage,1050.0,announced,,,False,unknown_start_year_not_imputed
+G100001030624,Yichongqiao hydroelectric plant,Hunan,conventional storage,70.0,announced,,,False,unknown_start_year_not_imputed
+G100000601357,Yidaoqiao hydroelectric plant,Sichuan,run-of-river,80.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100001051165,Yili Tuohai hydroelectric plant,Xinjiang,run-of-river,50.0,operating,1988.0,,True,operating_or_construction_start_by_2030
+G100000601358,Yimeng hydroelectric plant,Shandong,pumped storage,1200.0,operating,2021.0,,True,operating_or_construction_start_by_2030
+G100001051246,Yingliangbao hydroelectric plant,Sichuan,run-of-river,576.0,operating,2024.0,,True,operating_or_construction_start_by_2030
+G100000601359,Yingliangbao hydroelectric plant,Sichuan,run-of-river,540.0,construction,2025.0,,True,operating_or_construction_start_by_2030
+G100001027196,Yingxiongpo Stage 2 hydroelectric plant,Sichuan,run-of-river,56.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000601360,Yingxiuwan hydroelectric plant,Sichuan,run-of-river,135.0,operating,1971.0,,True,operating_or_construction_start_by_2030
+G100000601361,Yinjiang hydroelectric plant,Sichuan,conventional storage,325.0,construction,2026.0,,True,operating_or_construction_start_by_2030
+G100001051247,Yinjiang hydroelectric plant,Sichuan,conventional storage,65.0,operating,2024.0,,True,operating_or_construction_start_by_2030
+G100000601362,Yinpan hydroelectric plant,Chongqing,conventional storage,600.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100000601363,Yinping hydroelectric plant,Sichuan,conventional storage,100.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000601364,Yinzidu hydroelectric plant,Guizhou,conventional storage,360.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100000601365,Yixian hydroelectric plant,Hebei,pumped storage,1200.0,construction,2027.0,,True,operating_or_construction_start_by_2030
+G100000601366,Yixing hydroelectric plant,Jiangsu,pumped storage,1000.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000604968,Yong'an hydroelectric plant,Fujian,pumped storage,1200.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100000604969,Yongjia hydroelectric plant,Zhejiang,pumped storage,1200.0,construction,2027.0,,True,operating_or_construction_start_by_2030
+G100001031216,Yongkou hydroelectric plant,Fujian,conventional storage,50.0,operating,1998.0,,True,operating_or_construction_start_by_2030
+G100001051140,Yongle hydroelectric plant,Sichuan,run-of-river,58.0,operating,2003.0,,True,operating_or_construction_start_by_2030
+G100000601369,Yongtai hydroelectric plant,Fujian,pumped storage,1200.0,operating,2023.0,,True,operating_or_construction_start_by_2030
+G100000601370,Yongxin hydroelectric plant,Jiangxi,pumped storage,1200.0,pre-construction,2031.0,,False,excluded_status_or_vintage
+G100000601371,Youchou hydroelectric plant,Chongqing,conventional storage,120.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000601372,Yuan'an hydroelectric plant,Hubei,pumped storage,1200.0,construction,,,False,unknown_start_year_not_imputed
+G100000604970,Yuanqu hydroelectric plant,Shanxi,pumped storage,1200.0,construction,2028.0,,True,operating_or_construction_start_by_2030
+G100000604971,Yuanqu II hydroelectric plant,Shanxi,pumped storage,1200.0,construction,,,False,unknown_start_year_not_imputed
+G100001051141,Yucheng hydroelectric plant,Sichuan,conventional storage,60.0,operating,1995.0,,True,operating_or_construction_start_by_2030
+G100000604171,Yuejin Pumped Storage hydroelectric plant,Ningxia,pumped storage,800.0,announced,,,False,unknown_start_year_not_imputed
+G100000601374,Yuelong hydroelectric plant,Tibet,unknown,129.0,announced,,,False,unknown_start_year_not_imputed
+G100000601375,Yuexi hydroelectric plant,Anhui,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001031150,Yujiankou hydroelectric plant,Chongqing,conventional and run-of-river,60.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100001027209,Yuliang hydroelectric plant,Guangxi,run-of-river,60.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000604187,Yulinhe Pumped Storage hydroelectric plant,Jilin,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100001051083,Yulong hydroelectric plant,Sichuan,run-of-river,66.0,operating,2001.0,,True,operating_or_construction_start_by_2030
+G100000601376,Yumen hydroelectric plant,Gansu,pumped storage,1200.0,construction,,,False,unknown_start_year_not_imputed
+G100000604118,Yunfeng hydroelectric plant,Jilin,conventional storage,400.0,operating,1967.0,,True,operating_or_construction_start_by_2030
+G100001051222,Yunguiqiao hydroelectric plant,Yunnan,unknown,45.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000604972,Yunhe hydroelectric plant,Zhejiang,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100001027210,Yunnan Dayingjiang Stage 2 hydroelectric plant,Yunnan,run-of-river,70.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100001027211,Yunnan Diqing Luoma hydroelectric plant,Yunnan,run-of-river,60.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100001027212,Yunnan Lishe River Dawan hydroelectric plant,Yunnan,conventional and run-of-river,50.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100001027213,Yunnan Miaolin hydroelectric plant,Yunnan,run-of-river,65.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100001027214,Yunnan Pu'er Mengyejiang hydroelectric plant,Yunnan,conventional and run-of-river,68.0,operating,2013.0,,True,operating_or_construction_start_by_2030
+G100001027215,Yunnan Sayutuo hydroelectric plant,Yunnan,conventional storage,60.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100001027216,Yunnan Yanjin Hengjiang Wannianqiao hydroelectric plant,Yunnan,conventional storage,64.0,operating,2022.0,,True,operating_or_construction_start_by_2030
+G100001027217,Yunnan Yongde Damengtong hydroelectric plant,Yunnan,conventional storage,50.0,operating,2011.0,,True,operating_or_construction_start_by_2030
+G100001027218,Yunnan Youfanggou hydroelectric plant,Yunnan,run-of-river,68.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100000601378,Yunpeng hydroelectric plant,Yunnan,conventional storage,210.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000604161,Yuntai Pumped Storage hydroelectric plant,Gansu,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000601379,Yunxiao hydroelectric plant,Fujian,pumped storage,1800.0,construction,2027.0,,True,operating_or_construction_start_by_2030
+G100000604973,Yuquan hydroelectric plant,Henan,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000604974,Yushugou East hydroelectric plant,Xinjiang,pumped storage,1400.0,announced,,,False,unknown_start_year_not_imputed
+G100000604975,Yushugou hydroelectric plant,Xinjiang,pumped storage,1400.0,announced,,,False,unknown_start_year_not_imputed
+G100001030622,Yutan hydroelectric plant,Hunan,conventional storage,70.0,operating,1997.0,,True,operating_or_construction_start_by_2030
+G100000604977,Yutang hydroelectric plant,Guizhou,conventional storage,75.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000601380,Yutian hydroelectric plant,Sichuan,conventional storage,93.0,operating,2012.0,,True,operating_or_construction_start_by_2030
+G100001031152,Yutiao hydroelectric plant,Chongqing,conventional storage,48.0,operating,2001.0,,True,operating_or_construction_start_by_2030
+G100000601381,Yuzixi hydroelectric plant,Sichuan,conventional storage,160.0,operating,1972.0,,True,operating_or_construction_start_by_2030
+G100000604978,Zangao hydroelectric plant,Xinjiang,conventional storage,180.0,operating,2023.0,,True,operating_or_construction_start_by_2030
+G100000601383,Zangmu hydroelectric plant,Tibet,conventional storage,510.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000601384,Zaoshi hydroelectric plant,Hunan,conventional storage,120.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100001048079,Zhaixiangkou hydroelectric plant,Guizhou,conventional storage,45.0,operating,1970.0,,True,operating_or_construction_start_by_2030
+G100000601385,Zhala hydroelectric plant,Tibet,conventional storage,1000.0,construction,,,False,unknown_start_year_not_imputed
+G100000601386,Zhanghewan hydroelectric plant,Hebei,pumped storage,1000.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000601387,Zhangjiaping hydroelectric plant,Hubei,pumped storage,1800.0,construction,2028.0,,True,operating_or_construction_start_by_2030
+G100000604980,Zhangping Pumped Storage hydroelectric plant,Fujian,pumped storage,1200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001051223,Zhangwo hydroelectric plant,Yunnan,conventional storage,60.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000604176,Zhangxian Pumped Storage hydroelectric plant,Gansu,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604981,Zhangye hydroelectric plant,Gansu,pumped storage,1400.0,construction,,,False,unknown_start_year_not_imputed
+G100000601389,Zhangzi hydroelectric plant,Shanxi,pumped storage,900.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100001031318,Zhaoping hydroelectric plant,Guangxi,conventional storage,63.0,operating,1994.0,,True,operating_or_construction_start_by_2030
+G100000604982,Zhaosu hydroelectric plant,Xinjiang,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000604748,Zhejiang Qingyuan hydroelectric plant,Zhejiang,pumped storage,1200.0,construction,2030.0,,True,operating_or_construction_start_by_2030
+G100000601391,Zhelin hydroelectric plant,Jiangxi,conventional storage,420.0,operating,2001.0,,True,operating_or_construction_start_by_2030
+G100000601392,Zhen’an hydroelectric plant,Shaanxi,pumped storage,1400.0,operating,2024.0,,True,operating_or_construction_start_by_2030
+G100000601393,Zhentouba Stage 1 hydroelectric plant,Sichuan,conventional storage,720.0,operating,2015.0,,True,operating_or_construction_start_by_2030
+G100000601394,Zhentouba Stage 2 hydroelectric plant,Sichuan,conventional storage,300.0,construction,2026.0,,True,operating_or_construction_start_by_2030
+G100000601395,Zhexi hydroelectric plant,Hunan,conventional storage,1050.0,operating,1962.0,,True,operating_or_construction_start_by_2030
+G100000601396,Zhiganglaka hydroelectric plant,Qinghai,conventional storage,190.0,operating,2014.0,,True,operating_or_construction_start_by_2030
+G100000601397,Zhikong hydroelectric plant,Tibet,conventional storage,100.0,operating,2007.0,,True,operating_or_construction_start_by_2030
+G100000601398,Zhirui hydroelectric plant,InnerMongolia,pumped storage,1200.0,construction,2027.0,,True,operating_or_construction_start_by_2030
+G100000601399,Zhongda hydroelectric plant,Tibet,conventional storage,320.0,announced,,,False,unknown_start_year_not_imputed
+G100000601400,Zhongdong hydroelectric plant,Guangdong,pumped storage,1200.0,construction,2025.0,,True,operating_or_construction_start_by_2030
+G100001031154,Zhongliang Stage 1 hydroelectric plant,Chongqing,conventional storage,72.0,operating,2009.0,,True,operating_or_construction_start_by_2030
+G100000604173,Zhongning Pumped Storage hydroelectric plant,Ningxia,pumped storage,1000.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000604983,Zhongwei Huangcaochong hydroelectric plant,Ningxia,pumped storage,1000.0,announced,,,False,unknown_start_year_not_imputed
+G100000601401,Zhongxiang hydroelectric plant,Hubei,pumped storage,200.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601402,Zhouba hydroelectric plant,Sichuan,conventional storage,102.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100001048090,Zhoujiayuan hydroelectric plant,Hubei,run-of-river,70.0,operating,2010.0,,True,operating_or_construction_start_by_2030
+G100000604995,Zhouning hydroelectric plant,Fujian,pumped storage,1200.0,operating,2022.0,,True,operating_or_construction_start_by_2030
+G100000601403,Zhouning hydroelectric plant,Fujian,conventional storage,250.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000601405,Zhuanghe hydroelectric plant,Liaoning,pumped storage,1000.0,construction,,,False,unknown_start_year_not_imputed
+G100000601406,Zhuangli hydroelectric plant,Shandong,pumped storage,1200.0,pre-construction,2030.0,,False,excluded_status_or_vintage
+G100000601407,Zhuji hydroelectric plant,Zhejiang,pumped storage,1400.0,pre-construction,,,False,unknown_start_year_not_imputed
+G100000601408,Zhumadian Xiangshuitan hydroelectric plant,Henan,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100001048107,Zhuxikou hydroelectric plant,Hunan,conventional storage,74.0,operating,2008.0,,True,operating_or_construction_start_by_2030
+G100000601409,Zhuzhou Hangdian hydroelectric plant,Hunan,run-of-river,140.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100001031217,Zhuzhou hydroelectric plant,Fujian,run-of-river,54.0,operating,2000.0,,True,operating_or_construction_start_by_2030
+G100000601410,Zilanba hydroelectric plant,Sichuan,conventional storage,102.0,operating,2006.0,,True,operating_or_construction_start_by_2030
+G100000601411,Zipingpu hydroelectric plant,Sichuan,conventional storage,760.0,operating,2005.0,,True,operating_or_construction_start_by_2030
+G100000601412,Ziyili hydroelectric plant,Sichuan,conventional storage,130.0,operating,2004.0,,True,operating_or_construction_start_by_2030
+G100000601413,Ziyuan County hydroelectric plant,Guangxi,pumped storage,1200.0,announced,,,False,unknown_start_year_not_imputed
+G100000604985,Ziyunshan hydroelectric plant,Hubei,pumped storage,1400.0,construction,2029.0,,True,operating_or_construction_start_by_2030
+G100001046521,Zuojiang hydroelectric plant,Guangxi,conventional storage,72.0,operating,1999.0,,True,operating_or_construction_start_by_2030
+G100001027181,Liuxihe hydroelectric plant,Guangdong,conventional storage,42.0,operating,1958.0,,True,operating_or_construction_start_by_2030
+G100001048103,Ouyanghai hydroelectric plant,Hunan,conventional storage,43.0,operating,1975.0,,True,operating_or_construction_start_by_2030
