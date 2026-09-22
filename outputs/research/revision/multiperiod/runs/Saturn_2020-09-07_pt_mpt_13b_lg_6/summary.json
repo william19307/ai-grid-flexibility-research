@@ -1,0 +1,20 @@
+{
+  "incremental_energy": 89599.16471884327,
+  "individual_lower_bound": 85429.47551937588,
+  "max_capacity_excess_gpus": 0.0,
+  "scope": "Non-preemptive, fixed-size gangs in one aggregate GPU pool; node placement and quality effects unverified",
+  "run": "Saturn_2020-09-07_pt_mpt_13b_lg_6",
+  "cluster": "Saturn",
+  "start": "2020-09-07",
+  "workload": "pt_mpt_13b_lg",
+  "slack": 6,
+  "status": "constructed_pending_independent_verification",
+  "cohort_jobs": 14586,
+  "cohort_work_gpu_h": 116611.55166666668,
+  "week_allocation_gpu_h": 303440.65027777775,
+  "cohort_share_of_week_gpu_h": 0.3842977253044947,
+  "cohort_incremental_gpu_energy_saving_pct": 14.62713080951223,
+  "all_gpu_energy_saving_pct": 4.357523853680315,
+  "individual_upper_bound_on_cohort_saving_pct": 18.600140286867937,
+  "runtime_s": 0.9252419471740723
+}

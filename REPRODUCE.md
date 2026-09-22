@@ -97,3 +97,16 @@ work/figure-env/bin/python work/research/analysis/plot_chronological_replay.py
 pilot 在求解前写入四集群、第一完整周、三种宽限的清单。LP 的时间和变量数限制是运行预算，不是不可行证明。当前历史目录还保留时间转换错误的原始尝试和修正后的 `pilot_process_results_corrected.json`；`retry_replay_time_conversion.py` 仅用于重放这次已确认终止的历史错误，修正后的代码在全新运行中不需要调用它。独立核验优先读取存在的 corrected 清单，否则读取正常清单。
 
 所有入口拒绝覆盖既有运行。整组排程以规范秒坐标保存，并由原始作业及全状态背景独立核验；与 LP 共用同一任务群及完成基准，但不宣称全局最优。图的两个面板分母不同，已明确标注。真实 SLA、逐任务曲线、节点放置、整机能耗和省级电网收益不由这组回放认证。
+
+### 阶段 06：固定算法的时间扩展与多曲线验证
+
+预设清单和代码快照在结果前已提交为 `6c6cd63`。288 个条件及运行前数据哈希见 `outputs/research/revision/multiperiod/manifest.json`；回放算法未因结果改变。以下入口的 `freeze` 只可用于不存在该输出目录的干净副本，`run` 只可在尚无 `runs` 子目录时启动，防止覆盖证据；不要删除现有记录后重跑。
+
+```bash
+work/figure-env/bin/python work/research/analysis/run_gang_multiperiod_revision.py freeze
+work/figure-env/bin/python work/research/analysis/run_gang_multiperiod_revision.py run
+work/figure-env/bin/python work/research/analysis/verify_gang_multiperiod_revision.py
+work/figure-env/bin/python work/research/analysis/summarize_gang_multiperiod_revision.py
+```
+
+现有完整输出只需运行后两项便可独立核对及重建描述性表图。原始轨迹按既有来源步骤准备，不包含于此输出包。`failed_cases.csv` 为无失败时的空表；`complete.json` 和 `independent_verification.json` 记录全部案例数量。288 个条件仅对应 12 个集群—周，不能当作独立统计重复，详细证据边界见阶段 06 报告。

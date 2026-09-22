@@ -1,0 +1,7 @@
+{
+  "source": "outputs/research/revision/multiperiod/certified_results.csv",
+  "sha256": "7bb411e0da2c25cf6fd5b9161a1305dad83c6566643f72234e978732fcb93468",
+  "cells": 288,
+  "quantity": "all_gpu_energy_saving_pct",
+  "scope": "Descriptive conditional range over fixed scenarios, not confidence interval, independent experiments, actual heterogeneous workload mix, or annual generalization."
+}

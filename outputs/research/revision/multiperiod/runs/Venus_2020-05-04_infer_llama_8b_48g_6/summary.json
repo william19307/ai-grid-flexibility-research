@@ -1,0 +1,20 @@
+{
+  "incremental_energy": 21139.812930740423,
+  "individual_lower_bound": 20139.628249547102,
+  "max_capacity_excess_gpus": 0.0,
+  "scope": "Non-preemptive, fixed-size gangs in one aggregate GPU pool; node placement and quality effects unverified",
+  "run": "Venus_2020-05-04_infer_llama_8b_48g_6",
+  "cluster": "Venus",
+  "start": "2020-05-04",
+  "workload": "infer_llama_8b_48g",
+  "slack": 6,
+  "status": "constructed_pending_independent_verification",
+  "cohort_jobs": 3781,
+  "cohort_work_gpu_h": 34227.01166666667,
+  "week_allocation_gpu_h": 108488.35416666667,
+  "cohort_share_of_week_gpu_h": 0.3154901918235848,
+  "cohort_incremental_gpu_energy_saving_pct": 31.373848050452487,
+  "all_gpu_energy_saving_pct": 7.546001595614976,
+  "individual_upper_bound_on_cohort_saving_pct": 34.620746503814466,
+  "runtime_s": 0.09920310974121094
+}

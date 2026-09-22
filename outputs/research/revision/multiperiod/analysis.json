@@ -1,0 +1,51 @@
+{
+  "planned_arms": 288,
+  "verified_arms": 288,
+  "failed_arms": 0,
+  "distinct_cluster_weeks": 12,
+  "distinct_job_executions": 118703,
+  "coverage_min_pct": 26.61933730517373,
+  "coverage_max_pct": 40.59126744453213,
+  "normalized_curve_equivalence_groups": [
+    [
+      "ft_llama_8b_dolly"
+    ],
+    [
+      "ft_llama_8b_p3"
+    ],
+    [
+      "infer_llama_8b_48g",
+      "infer_llama_8b_32g"
+    ],
+    [
+      "infer_llama_8b"
+    ],
+    [
+      "pt_mpt_13b_lg"
+    ],
+    [
+      "pt_mpt_13b_sm"
+    ],
+    [
+      "pt_mpt_7b_fast"
+    ]
+  ],
+  "curve_equivalence_tolerance_decimal_places": 12,
+  "by_slack": {
+    "0": {
+      "min_pct": 0.2496644398068376,
+      "max_pct": 2.699240206468163
+    },
+    "6": {
+      "min_pct": 2.808084296420762,
+      "max_pct": 9.249082629283183
+    },
+    "24": {
+      "min_pct": 4.549945463162287,
+      "max_pct": 11.96026660748776
+    }
+  },
+  "nonmonotone_greedy_pairs": [],
+  "maximum_cohort_bound_gap_pp": 6.519820791690371,
+  "inference": "Descriptive conditional range over fixed scenarios, not confidence interval, independent experiments, actual heterogeneous workload mix, or annual generalization."
+}

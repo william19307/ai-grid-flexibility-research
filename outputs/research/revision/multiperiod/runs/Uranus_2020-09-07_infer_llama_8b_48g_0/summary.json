@@ -1,0 +1,20 @@
+{
+  "incremental_energy": 93742.55661956774,
+  "individual_lower_bound": 92879.8849722593,
+  "max_capacity_excess_gpus": 0.0,
+  "scope": "Non-preemptive, fixed-size gangs in one aggregate GPU pool; node placement and quality effects unverified",
+  "run": "Uranus_2020-09-07_infer_llama_8b_48g_0",
+  "cluster": "Uranus",
+  "start": "2020-09-07",
+  "workload": "infer_llama_8b_48g",
+  "slack": 0,
+  "status": "constructed_pending_independent_verification",
+  "cohort_jobs": 9705,
+  "cohort_work_gpu_h": 110580.72027777779,
+  "week_allocation_gpu_h": 299088.70472222223,
+  "cohort_share_of_week_gpu_h": 0.36972549792704246,
+  "cohort_incremental_gpu_energy_saving_pct": 5.807815338587791,
+  "all_gpu_energy_saving_pct": 1.6656565149611073,
+  "individual_upper_bound_on_cohort_saving_pct": 6.674624715626688,
+  "runtime_s": 0.24389004707336426
+}
