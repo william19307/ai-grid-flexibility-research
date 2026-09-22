@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/apple/Documents/Codex/2026-09-14/ni-k/work/research/analysis/run_gang_replay_revision.py", line 66, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/apple/Documents/Codex/2026-09-14/ni-k/work/research/analysis/run_gang_replay_revision.py", line 59, in main
+    (folder/'summary.json').write_text(json.dumps(dict(**row,**result),indent=2)+'\n');rows.append(row)
+                                                  ~~~~^^^^^^^^^^^^^^^^
+TypeError: dict() got multiple values for keyword argument 'max_capacity_excess_gpus'

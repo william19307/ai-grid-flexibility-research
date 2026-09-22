@@ -1,0 +1,23 @@
+{
+  "original_lp_pilot": "12 cases: 5 clock-conversion process errors, 4 unresolved solvers, 2 variable-limit cases, 1 optimum; all original logs kept.",
+  "after_clock_fix": {
+    "optimal": 1,
+    "solver_unresolved": 4,
+    "resource_limit": 7
+  },
+  "gang_attempts": [
+    {
+      "folder": "gang_export_error_attempt",
+      "state": "terminal export error after first schedule; duplicate output key, no completed sweep"
+    },
+    {
+      "folder": "gang_time_conversion_error_attempt",
+      "state": "terminal independent peak check failure at Saturn; binary hour-to-second boundary mismatch"
+    },
+    {
+      "folder": "gang",
+      "state": "12 completed cases with canonical seconds, independent raw-row and event-sum verification"
+    }
+  ],
+  "no_infeasibility_inference_from_solver_limits": true
+}

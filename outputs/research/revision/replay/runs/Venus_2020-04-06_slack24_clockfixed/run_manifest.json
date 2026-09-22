@@ -1,0 +1,28 @@
+{
+  "parameters": {
+    "cluster": "Venus",
+    "start": "2020-04-06",
+    "slack": 24.0,
+    "max_variables": 5000000,
+    "time_limit": 120.0,
+    "run_label": "clockfixed"
+  },
+  "started_unix": 1790068813.6825721,
+  "input_sha256": {
+    "work/research/sources/helios_sensetime/data/Venus/cluster_log.csv": "41153105b5a1beedfc9f3d5151126d8a2b446ba5699a60a41522a6795e726cac",
+    "work/research/sources/helios_sensetime/data/Venus/cluster_gpu_number.csv": "08c05fc4d2ac94aceb43f2bfd28d731a089df8e9bb7c3412d2bd211cab2ed57c",
+    "outputs/research/tables/dvfs_measured_and_derived.csv": "26a173f809ba03262a9d19f2b73079fa6b172f6c5fe68bf8abd5ffbd7af6e742"
+  },
+  "source_sha256": {
+    "work/research/analysis/run_chronological_replay_revision.py": "4fc0ecbb477061db903059a7c4eaba527cdb3163c214dbcacb456d6616d97624",
+    "work/research/models/chronological_replay.py": "cefd66c99e38bec0617b8151abdcfbed9dd68973550d5e4585aadfca4ea43356",
+    "work/research/models/trace_occupancy.py": "9ec8c11d4048dd829513e23d3362517da06f76f008d96626d61e9f6af43b3e0d"
+  },
+  "assumptions": [
+    "Cohort COMPLETED, submitted and finished within a prespecified seven-day window.",
+    "All other GPU allocation intervals remain immutable background, including tail-window arrivals.",
+    "Deadline = observed completion + specified extra slack; retrospective benchmark, not contractual SLA.",
+    "Work = recorded GPU count times duration; homogeneous counterfactual DVFS curve, not measured useful work.",
+    "Fractional preemptive resource relaxation; gang scheduling, checkpoints and hardware locality not represented."
+  ]
+}

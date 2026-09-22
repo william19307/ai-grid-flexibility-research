@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "cluster": "Earth",
+    "start": "2020-04-06",
+    "slack": 0.0,
+    "max_variables": 5000000,
+    "time_limit": 120.0,
+    "run_label": "reduced"
+  },
+  "cohort_jobs": 774,
+  "background_jobs": 1766,
+  "cohort_gpu_hours": 31102.748333333333,
+  "observed_all_state_gpu_hours_192h": 106610.21805555555,
+  "cohort_share_of_observed_192h": 0.29174265751079703,
+  "baseline_incremental_gpu_energy": 27992.4735,
+  "gpu_idle_assumption": 0.1,
+  "normalized_gpu_energy_saving_pct": 4.535985583839818,
+  "execution_status": "optimal",
+  "runtime_s": 5.891423940658569,
+  "evidence": "Retrospective homogeneous-curve fractional replay; not calibrated node energy, realized service or grid benefit"
+}

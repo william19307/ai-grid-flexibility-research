@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Earth_2020-04-06_slack0_pilot",
+    "exit_code": 0,
+    "status": "optimal",
+    "feasible": true,
+    "log": "outputs/research/revision/replay/logs/Earth_2020-04-06_slack0_pilot.txt"
+  },
+  {
+    "name": "Earth_2020-04-06_slack6_pilot",
+    "exit_code": 0,
+    "status": "solver_unresolved",
+    "feasible": null,
+    "log": "outputs/research/revision/replay/logs/Earth_2020-04-06_slack6_pilot.txt"
+  },
+  {
+    "name": "Earth_2020-04-06_slack24_pilot",
+    "exit_code": 0,
+    "status": "solver_unresolved",
+    "feasible": null,
+    "log": "outputs/research/revision/replay/logs/Earth_2020-04-06_slack24_pilot.txt"
+  },
+  {
+    "name": "Venus_2020-04-06_slack0_pilot",
+    "exit_code": 0,
+    "status": "solver_unresolved",
+    "feasible": null,
+    "log": "outputs/research/revision/replay/logs/Venus_2020-04-06_slack0_pilot.txt"
+  },
+  {
+    "name": "Venus_2020-04-06_slack6_pilot",
+    "exit_code": 0,
+    "status": "resource_limit",
+    "feasible": null,
+    "log": "outputs/research/revision/replay/logs/Venus_2020-04-06_slack6_pilot.txt"
+  },
+  {
+    "name": "Venus_2020-04-06_slack24_pilot",
+    "exit_code": 1,
+    "status": "process_error",
+    "feasible": null,
+    "log": "outputs/research/revision/replay/logs/Venus_2020-04-06_slack24_pilot.txt"
+  },
+  {
+    "name": "Saturn_2020-04-06_slack0_pilot",
+    "exit_code": 0,
+    "status": "resource_limit",
+    "feasible": null,
+    "log": "outputs/research/revision/replay/logs/Saturn_2020-04-06_slack0_pilot.txt"
+  },
+  {
+    "name": "Saturn_2020-04-06_slack6_pilot",
+    "exit_code": 1,
+    "status": "process_error",
+    "feasible": null,
+    "log": "outputs/research/revision/replay/logs/Saturn_2020-04-06_slack6_pilot.txt"
+  },
+  {
+    "name": "Saturn_2020-04-06_slack24_pilot",
+    "exit_code": 1,
+    "status": "process_error",
+    "feasible": null,
+    "log": "outputs/research/revision/replay/logs/Saturn_2020-04-06_slack24_pilot.txt"
+  },
+  {
+    "name": "Uranus_2020-04-06_slack0_pilot",
+    "exit_code": 0,
+    "status": "solver_unresolved",
+    "feasible": null,
+    "log": "outputs/research/revision/replay/logs/Uranus_2020-04-06_slack0_pilot.txt"
+  },
+  {
+    "name": "Uranus_2020-04-06_slack6_pilot",
+    "exit_code": 1,
+    "status": "process_error",
+    "feasible": null,
+    "log": "outputs/research/revision/replay/logs/Uranus_2020-04-06_slack6_pilot.txt"
+  },
+  {
+    "name": "Uranus_2020-04-06_slack24_pilot",
+    "exit_code": 1,
+    "status": "process_error",
+    "feasible": null,
+    "log": "outputs/research/revision/replay/logs/Uranus_2020-04-06_slack24_pilot.txt"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "parameters": {
+    "cluster": "Saturn",
+    "start": "2020-04-06",
+    "slack": 6.0,
+    "max_variables": 5000000,
+    "time_limit": 120.0,
+    "run_label": "pilot"
+  },
+  "started_unix": 1790068460.941837,
+  "input_sha256": {
+    "work/research/sources/helios_sensetime/data/Saturn/cluster_log.csv": "f991918de22dd88fd87ed4f4d8b3b8beb34a19a57007037298c08e48d56c2377",
+    "work/research/sources/helios_sensetime/data/Saturn/cluster_gpu_number.csv": "d8760e0e69a43ef2c86eb4316436cdebdf513fc5c2742d43875ddcf546bfae5a",
+    "outputs/research/tables/dvfs_measured_and_derived.csv": "26a173f809ba03262a9d19f2b73079fa6b172f6c5fe68bf8abd5ffbd7af6e742"
+  },
+  "source_sha256": {
+    "work/research/analysis/run_chronological_replay_revision.py": "9336ba2407d58602ad4486dd459dad8b9b204c985262f4b24d4c58581106a5f4",
+    "work/research/models/chronological_replay.py": "cefd66c99e38bec0617b8151abdcfbed9dd68973550d5e4585aadfca4ea43356",
+    "work/research/models/trace_occupancy.py": "9ec8c11d4048dd829513e23d3362517da06f76f008d96626d61e9f6af43b3e0d"
+  },
+  "assumptions": [
+    "Cohort COMPLETED, submitted and finished within a prespecified seven-day window.",
+    "All other GPU allocation intervals remain immutable background, including tail-window arrivals.",
+    "Deadline = observed completion + specified extra slack; retrospective benchmark, not contractual SLA.",
+    "Work = recorded GPU count times duration; homogeneous counterfactual DVFS curve, not measured useful work.",
+    "Fractional preemptive resource relaxation; gang scheduling, checkpoints and hardware locality not represented."
+  ]
+}

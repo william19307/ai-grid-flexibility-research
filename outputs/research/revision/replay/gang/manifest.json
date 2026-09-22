@@ -1,0 +1,71 @@
+{
+  "source_sha256": {
+    "work/research/analysis/run_gang_replay_revision.py": "e11c7544613e353a0fb7cc1d42ea24c5819b0f55b4c3fd3c819a2cccb1f086d1",
+    "work/research/models/gang_replay.py": "220b5aef2afc0917a77e9d31338e6cfc79c61884a786eec3f3cbb394657f37e7",
+    "work/research/models/trace_occupancy.py": "9ec8c11d4048dd829513e23d3362517da06f76f008d96626d61e9f6af43b3e0d"
+  },
+  "curve_sha256": "26a173f809ba03262a9d19f2b73079fa6b172f6c5fe68bf8abd5ffbd7af6e742",
+  "cases": [
+    {
+      "cluster": "Earth",
+      "start": "2020-04-06",
+      "slack": 0
+    },
+    {
+      "cluster": "Earth",
+      "start": "2020-04-06",
+      "slack": 6
+    },
+    {
+      "cluster": "Earth",
+      "start": "2020-04-06",
+      "slack": 24
+    },
+    {
+      "cluster": "Venus",
+      "start": "2020-04-06",
+      "slack": 0
+    },
+    {
+      "cluster": "Venus",
+      "start": "2020-04-06",
+      "slack": 6
+    },
+    {
+      "cluster": "Venus",
+      "start": "2020-04-06",
+      "slack": 24
+    },
+    {
+      "cluster": "Saturn",
+      "start": "2020-04-06",
+      "slack": 0
+    },
+    {
+      "cluster": "Saturn",
+      "start": "2020-04-06",
+      "slack": 6
+    },
+    {
+      "cluster": "Saturn",
+      "start": "2020-04-06",
+      "slack": 24
+    },
+    {
+      "cluster": "Uranus",
+      "start": "2020-04-06",
+      "slack": 0
+    },
+    {
+      "cluster": "Uranus",
+      "start": "2020-04-06",
+      "slack": 6
+    },
+    {
+      "cluster": "Uranus",
+      "start": "2020-04-06",
+      "slack": 24
+    }
+  ],
+  "criterion": "Construct feasibility; no global optimality claim; identical fixed cohort/background as LP"
+}

@@ -1,0 +1,6 @@
+{
+  "cases": 12,
+  "all_fixed_size_nonpreemptive": true,
+  "all_feasible": true,
+  "limitations": "Aggregate GPU gang feasibility only; hardware placement, quality, actual node energy and nonanticipative decisions unverified"
+}

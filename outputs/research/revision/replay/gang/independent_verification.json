@@ -1,0 +1,11 @@
+{
+  "cases": 12,
+  "all_declared_cases_present": true,
+  "all_jobs_exact_gpu_counts_nonpreemptive": true,
+  "all_background_states_and_boundaries_preserved": true,
+  "maximum_work_error_gpu_h": 7.452172212651931e-11,
+  "maximum_aggregate_gpu_excess": 0.0,
+  "maximum_service_window_violation_s": 0.0,
+  "independent_lower_bound_pair_enumeration": true,
+  "scope": "Certified schedules and energy brackets within the aggregate, retrospective, homogeneous-workload model; no whole-node or grid benefit certification."
+}

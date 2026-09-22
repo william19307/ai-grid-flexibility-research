@@ -1,0 +1,24 @@
+{
+  "parameters": {
+    "cluster": "Venus",
+    "start": "2020-04-06",
+    "slack": 6.0,
+    "max_variables": 5000000,
+    "time_limit": 120.0,
+    "run_label": "pilot"
+  },
+  "cohort_jobs": 2332,
+  "background_jobs": 2533,
+  "cohort_gpu_hours": 45150.48222222222,
+  "observed_all_state_gpu_hours_192h": 121058.21638888889,
+  "cohort_share_of_observed_192h": 0.3729650375582956,
+  "baseline_incremental_gpu_energy": 40635.434,
+  "gpu_idle_assumption": 0.1,
+  "cohort_incremental_gpu_energy_saving_pct": null,
+  "all_gpu_energy_saving_pct": null,
+  "baseline_all_gpu_normalized_energy": 127537.99475000001,
+  "metric_scope": "Both energy metrics are assumed GPU-only normalized energy; the first excludes idle/background, the second includes them; neither is node or site energy.",
+  "execution_status": "resource_limit",
+  "runtime_s": 0.44986510276794434,
+  "evidence": "Retrospective homogeneous-curve fractional replay; not calibrated node energy, realized service or grid benefit"
+}

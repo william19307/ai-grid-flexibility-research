@@ -1,0 +1,21 @@
+{
+  "planned_cases": 12,
+  "terminal_cases": 12,
+  "optimal_cases": 1,
+  "status_counts": {
+    "optimal": 1,
+    "solver_unresolved": 4,
+    "resource_limit": 7
+  },
+  "same_cohort_work_and_resources_across_slack": true,
+  "all_background_intervals_and_raw_job_fields_verified": true,
+  "maximum_work_error_gpu_h": 6.252776074688882e-13,
+  "maximum_pool_excess_gpu_h": 0.0,
+  "maximum_job_excess_gpu_h": 0.0,
+  "limitations": [
+    "Fractional allocations do not certify feasible gang packing.",
+    "Actual deadlines and node power remain unmeasured.",
+    "One week and a single hypothetical common DVFS curve do not establish generality.",
+    "Non-optimal terminal statuses are unresolved, not discarded or labelled infeasible."
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "written_unix": 1790068077.8729868,
+  "cases": [
+    {
+      "cluster": "Earth",
+      "start": "2020-04-06",
+      "slack": 0
+    },
+    {
+      "cluster": "Earth",
+      "start": "2020-04-06",
+      "slack": 6
+    },
+    {
+      "cluster": "Earth",
+      "start": "2020-04-06",
+      "slack": 24
+    },
+    {
+      "cluster": "Venus",
+      "start": "2020-04-06",
+      "slack": 0
+    },
+    {
+      "cluster": "Venus",
+      "start": "2020-04-06",
+      "slack": 6
+    },
+    {
+      "cluster": "Venus",
+      "start": "2020-04-06",
+      "slack": 24
+    },
+    {
+      "cluster": "Saturn",
+      "start": "2020-04-06",
+      "slack": 0
+    },
+    {
+      "cluster": "Saturn",
+      "start": "2020-04-06",
+      "slack": 6
+    },
+    {
+      "cluster": "Saturn",
+      "start": "2020-04-06",
+      "slack": 24
+    },
+    {
+      "cluster": "Uranus",
+      "start": "2020-04-06",
+      "slack": 0
+    },
+    {
+      "cluster": "Uranus",
+      "start": "2020-04-06",
+      "slack": 6
+    },
+    {
+      "cluster": "Uranus",
+      "start": "2020-04-06",
+      "slack": 24
+    }
+  ],
+  "max_variables": 5000000,
+  "time_limit_seconds": 120,
+  "inclusion": "First complete Monday-start week in public capacity calendar; four clusters; no selection on savings or feasibility.",
+  "future_scope": "Pilot only; other weeks, workload curves and deployable gang scheduling remain required."
+}

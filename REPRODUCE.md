@@ -79,3 +79,21 @@ work/figure-env/bin/python work/research/analysis/verify_service_results.py
 两个 audit 入口拒绝覆盖已有结果；重新求解应在单独检出中准备输入并归档旧 `revision/service/`。`cases/*.json` 的 `source_meta` 是 u=1 的规范化形态，实际 u 和任务量分别位于 `parameters`、`jobs`；不依据可行性改变窗口或工作形态。28 个不可行结果是研究发现，不是需要删除的运行错误。完整尾部仅是有限批次诊断；真实时序是分配的 GPU 时间，不是电功率或 SLA。
 
 严格案例有运行前源码与输入哈希；原始时序审计的源码哈希和快照在独立核验时补充，明确记录为运行后收集。新机器可用对应来源重新取得原始文件，再核验哈希；尚未完成自动下载与全新机器端到端验证。
+
+### 阶段 05：事件级回放与整组构造
+
+原始 Helios 文件与 DVFS 曲线齐全时，在没有既有 `revision/replay/` 结果的新检出中运行：
+
+```sh
+work/figure-env/bin/python work/research/analysis/validate_chronological_replay.py
+work/figure-env/bin/python work/research/analysis/validate_gang_replay.py
+work/figure-env/bin/python work/research/analysis/sweep_chronological_replay.py
+work/figure-env/bin/python work/research/analysis/verify_chronological_replay.py
+work/figure-env/bin/python work/research/analysis/run_gang_replay_revision.py
+work/figure-env/bin/python work/research/analysis/verify_gang_replay.py
+work/figure-env/bin/python work/research/analysis/plot_chronological_replay.py
+```
+
+pilot 在求解前写入四集群、第一完整周、三种宽限的清单。LP 的时间和变量数限制是运行预算，不是不可行证明。当前历史目录还保留时间转换错误的原始尝试和修正后的 `pilot_process_results_corrected.json`；`retry_replay_time_conversion.py` 仅用于重放这次已确认终止的历史错误，修正后的代码在全新运行中不需要调用它。独立核验优先读取存在的 corrected 清单，否则读取正常清单。
+
+所有入口拒绝覆盖既有运行。整组排程以规范秒坐标保存，并由原始作业及全状态背景独立核验；与 LP 共用同一任务群及完成基准，但不宣称全局最优。图的两个面板分母不同，已明确标注。真实 SLA、逐任务曲线、节点放置、整机能耗和省级电网收益不由这组回放认证。

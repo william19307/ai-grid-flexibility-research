@@ -1,0 +1,7 @@
+{
+  "source": "outputs/research/revision/replay/gang/certified_results.csv",
+  "sha256": "adfd383dc1974cfcedabfb7fabb5672641d604934d7f9560d6c3f89a938c7265",
+  "panel_a": "all_gpu_energy_saving_pct, 4 clusters x 3 slack scenarios",
+  "panel_b": "24h slack, cohort_incremental_gpu_energy_saving_pct and upper_bound_on_cohort_saving_pct",
+  "scope": "Single prespecified week; modeled GPU-only energy; distinct denominators labelled per panel"
+}

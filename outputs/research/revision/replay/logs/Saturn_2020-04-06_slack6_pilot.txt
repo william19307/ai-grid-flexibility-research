@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/apple/Documents/Codex/2026-09-14/ni-k/work/research/analysis/run_chronological_replay_revision.py", line 91, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/apple/Documents/Codex/2026-09-14/ni-k/work/research/analysis/run_chronological_replay_revision.py", line 53, in main
+    background=integrate_occupancy(hours(bg.start_time)*3600,hours(bg.end_time)*3600,bg.gpu_num.to_numpy(),edges*3600)
+  File "/Users/apple/Documents/Codex/2026-09-14/ni-k/work/research/models/trace_occupancy.py", line 8, in integrate_occupancy
+    if len(edges)<2 or np.any(np.diff(edges)<=0) or not all(np.isfinite(x).all() for x in [starts,ends,resources,edges]):raise ValueError('Invalid time data')
+                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid time data
