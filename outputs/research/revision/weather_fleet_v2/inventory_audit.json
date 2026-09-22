@@ -1,0 +1,101 @@
+{
+  "input_sha256": "dce044cf7c2cd0d0a81774fc9b10e85ed566fd8e79378949e72459f36432c25a",
+  "boundary_sha256": "3a00467a0db9b4136facb5f2f3d0edbfd96adb15651cfdf63991da9281030e85",
+  "boundary_metadata_sha256": "b5816c51ebefc26b1154872e663cd5a8eda830008f738a965d5dd610e72b09d0",
+  "enriched_candidate_sha256": "9fef4e471d8513cd41421715c9700dc36c57b8e2c62be2e16a8754931cdd4b48",
+  "grid_weights_sha256": "72e9cb9bd51fc69e76c2b23cb83e792cae2942e501d405a95c753613ac81298a",
+  "builder_sha256": "115c4cdb710c2d3d3ef352ccc002a5f97469dae04d0609fd159672d853de981a",
+  "python": "3.14.6",
+  "shapely": "2.1.2",
+  "source_unit_count": 2902,
+  "held_count": 11,
+  "summary": [
+    {
+      "province": "Gansu",
+      "technology_group": "solar_pv",
+      "source_mw": 25141.1,
+      "candidate_mw": 25061.1,
+      "held_mw": 80.0,
+      "rows": 437,
+      "candidate_units": 435,
+      "candidate_grid_cells": 100
+    },
+    {
+      "province": "Gansu",
+      "technology_group": "solar_thermal",
+      "source_mw": 410.0,
+      "candidate_mw": 0.0,
+      "held_mw": 410.0,
+      "rows": 5,
+      "candidate_units": 0,
+      "candidate_grid_cells": 0
+    },
+    {
+      "province": "Gansu",
+      "technology_group": "wind_onshore",
+      "source_mw": 28770.7,
+      "candidate_mw": 28720.7,
+      "held_mw": 50.0,
+      "rows": 217,
+      "candidate_units": 216,
+      "candidate_grid_cells": 81
+    },
+    {
+      "province": "Guizhou",
+      "technology_group": "solar_pv",
+      "source_mw": 19507.1,
+      "candidate_mw": 19507.1,
+      "held_mw": 0.0,
+      "rows": 227,
+      "candidate_units": 227,
+      "candidate_grid_cells": 85
+    },
+    {
+      "province": "Guizhou",
+      "technology_group": "wind_onshore",
+      "source_mw": 6686.1,
+      "candidate_mw": 6636.1,
+      "held_mw": 50.0,
+      "rows": 125,
+      "candidate_units": 124,
+      "candidate_grid_cells": 73
+    },
+    {
+      "province": "Jiangsu",
+      "technology_group": "solar_pv",
+      "source_mw": 14696.0,
+      "candidate_mw": 14696.0,
+      "held_mw": 0.0,
+      "rows": 1704,
+      "candidate_units": 1704,
+      "candidate_grid_cells": 106
+    },
+    {
+      "province": "Jiangsu",
+      "technology_group": "wind_offshore",
+      "source_mw": 12646.0,
+      "candidate_mw": 12646.0,
+      "held_mw": 0.0,
+      "rows": 52,
+      "candidate_units": 52,
+      "candidate_grid_cells": 24
+    },
+    {
+      "province": "Jiangsu",
+      "technology_group": "wind_onshore",
+      "source_mw": 9593.2,
+      "candidate_mw": 9496.2,
+      "held_mw": 97.0,
+      "rows": 135,
+      "candidate_units": 133,
+      "candidate_grid_cells": 53
+    }
+  ],
+  "limits": [
+    "Coarse 2019 administrative polygons screen gross anomalies only; 50 km is an analyst review threshold, not location accuracy.",
+    "Near-boundary and offshore sites still require geographic checking; no coordinates are repaired by inference.",
+    "Solar thermal is explicitly held out of PV conversion; no energy profile is imputed.",
+    "2025 operating status and start-year labels do not prove a full historical or 2030 fleet.",
+    "Gridding preserves candidate inventory weights, not observed regional generation or turbine physics."
+  ]
+}
