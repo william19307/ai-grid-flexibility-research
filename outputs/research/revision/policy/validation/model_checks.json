@@ -1,0 +1,7 @@
+{
+  "checks": 241,
+  "random_interval_oracles": 120,
+  "exact_three_job_factorial_oracles": 120,
+  "max_constructive_gap_to_brute_optimum": 2.4000000000000004,
+  "limitation": "Positive gaps are retained and prove that feasible coordinate policies must not be labelled globally optimal."
+}
