@@ -110,3 +110,14 @@ work/figure-env/bin/python work/research/analysis/summarize_gang_multiperiod_rev
 ```
 
 现有完整输出只需运行后两项便可独立核对及重建描述性表图。原始轨迹按既有来源步骤准备，不包含于此输出包。`failed_cases.csv` 为无失败时的空表；`complete.json` 和 `independent_verification.json` 记录全部案例数量。288 个条件仅对应 12 个集群—周，不能当作独立统计重复，详细证据边界见阶段 06 报告。
+
+### 阶段 07（运行中）：固定服务的四组政策与确定性归因界
+
+冻结清单提交为 `091ea10`；108 个四格实验还在运行时，不得再次启动 `run_gang_policy_revision.py run`。先根据 `outputs/research/revision/policy/RUN_STATE_NOTE.json` 的历史句柄重新核验当前进程；观察超时不是终止证据。原构造结束且 `complete.json` 覆盖全部案例后，运行以下独立核验与汇总入口：
+
+```bash
+work/figure-env/bin/python work/research/analysis/verify_gang_policy_revision.py
+work/figure-env/bin/python work/research/analysis/summarize_gang_policy_revision.py
+```
+
+已完成的方法检查入口为 `validate_gang_policy.py`（241 项）和 `validate_policy_attribution.py`（201 项）。可行策略份额与全局最优份额界不能混称，详见 `policy_attribution_methods_draft.md`。新增整机功率候选核查入口为 `audit_tokenpowerbench_source.py`，固定上游提交且只读取文本/结果，不执行下载代码；其结果尚不能作为整机校准。

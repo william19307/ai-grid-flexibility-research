@@ -1,0 +1,12 @@
+{
+  "last_observed_utc": "2026-09-22T10:02:35.990267+00:00",
+  "observed_status": "running",
+  "exec_session_id": 85550,
+  "pid": 88756,
+  "command": "work/figure-env/bin/python work/research/analysis/run_gang_policy_revision.py run",
+  "log": "/tmp/gang_policy_20260922.log",
+  "constructed_factorials_at_observation": 66,
+  "planned_factorials": 108,
+  "independent_full_verification": "pending",
+  "instruction": "This is a historical observation, not evidence of current liveness. Poll the same exec session or inspect PID/command before acting; do not restart because a wait expires."
+}

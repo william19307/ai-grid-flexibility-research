@@ -1,0 +1,13 @@
+{
+  "commit": "9a50272213885bd9bba8427e34ebdf345c2204fe",
+  "downloaded_files": 186,
+  "result_files": 182,
+  "download_errors": [],
+  "records": 185,
+  "positive_reported_total_average_power": 9,
+  "total_energy_equals_gpu_energy": 176,
+  "zero_cpu_and_dram": 176,
+  "positive_explicit_system_energy_j": 0,
+  "power_control_fields": [],
+  "scope": "Audit of existing public result fields and current collection code. A label total_energy is not certification of AC/node measurement, DVFS control or fixed useful work."
+}

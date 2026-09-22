@@ -1,0 +1,6 @@
+{
+  "checks": 201,
+  "random_fractional_lp_vs_vertex_oracles": 100,
+  "zero_allowance_mode_share_upper_limit_oracles": 100,
+  "pure_interaction_share_oracle": true
+}

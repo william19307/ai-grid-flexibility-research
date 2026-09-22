@@ -1,0 +1,1852 @@
+[
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_1000_20250610_095633.json",
+    "duration": 7.623700141906738,
+    "gpu_energy": 3690.5537917166257,
+    "total_energy": 3690.5537917166257,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_1000_20250610_101107.json",
+    "duration": 9.415993928909302,
+    "gpu_energy": 4990.746097185323,
+    "total_energy": 4990.746097185323,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_1000_20250610_100350.json",
+    "duration": 8.298568487167358,
+    "gpu_energy": 4259.900557088883,
+    "total_energy": 4259.900557088883,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/deepspeed_models--models--meta-llama--Llama-3.1-8B_256_500_20250418_232621.json",
+    "duration": 11184.960287332535,
+    "gpu_energy": 6354254.912402131,
+    "total_energy": 11547215.331659894,
+    "total_avg_power": 1032.3876915984788,
+    "cpu_energy": 2000204.595134908,
+    "dram_energy": 220977.7539521157,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/deepspeed_models--models--meta-llama--Llama-3.1-8B_512_500_20250419_023120.json",
+    "duration": 11069.318028211594,
+    "gpu_energy": 6227092.161962308,
+    "total_energy": 11348652.878975749,
+    "total_avg_power": 1025.23505513639,
+    "cpu_energy": 1978776.2750118775,
+    "dram_energy": 218509.18577930558,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_128_20250610_094043.json",
+    "duration": 1.0050084590911865,
+    "gpu_energy": 346.5594538435042,
+    "total_energy": 346.5594538435042,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_1000_20250610_102746.json",
+    "duration": 38.64121222496033,
+    "gpu_energy": 22283.71942437968,
+    "total_energy": 22283.71942437968,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_128_20250610_094733.json",
+    "duration": 1.3815231323242188,
+    "gpu_energy": 500.5396460723877,
+    "total_energy": 500.5396460723877,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_1000_20250610_101852.json",
+    "duration": 19.12459659576416,
+    "gpu_energy": 10924.95226963692,
+    "total_energy": 10924.95226963692,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_2000_20250610_095810.json",
+    "duration": 15.203397035598755,
+    "gpu_energy": 8142.542288199978,
+    "total_energy": 8142.542288199978,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_2000_20250610_102050.json",
+    "duration": 36.618170738220215,
+    "gpu_energy": 21222.96368641899,
+    "total_energy": 21222.96368641899,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_2000_20250610_101246.json",
+    "duration": 18.55703330039978,
+    "gpu_energy": 10627.007663268201,
+    "total_energy": 10627.007663268201,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_2000_20250610_100526.json",
+    "duration": 15.860821962356567,
+    "gpu_energy": 8630.615615316186,
+    "total_energy": 8630.615615316186,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_256_20250610_094204.json",
+    "duration": 2.0792627334594727,
+    "gpu_energy": 800.6954781841745,
+    "total_energy": 800.6954781841745,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_256_20250610_095220.json",
+    "duration": 1.9858698844909668,
+    "gpu_energy": 778.9728940554756,
+    "total_energy": 778.9728940554756,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_256_20250610_095932.json",
+    "duration": 2.2888312339782715,
+    "gpu_energy": 916.0295738804763,
+    "total_energy": 916.0295738804763,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_2000_20250610_103022.json",
+    "duration": 73.39650702476501,
+    "gpu_energy": 42526.63432626092,
+    "total_energy": 42526.63432626092,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_256_20250610_100652.json",
+    "duration": 2.674501657485962,
+    "gpu_energy": 1118.8660978565651,
+    "total_energy": 1118.8660978565651,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_256_20250610_101414.json",
+    "duration": 5.287122011184692,
+    "gpu_energy": 2560.456611921342,
+    "total_energy": 2560.456611921342,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_256_20250610_102223.json",
+    "duration": 10.72555685043335,
+    "gpu_energy": 5722.755242466897,
+    "total_energy": 5722.755242466897,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_32_20250610_093755.json",
+    "duration": 0.28098034858703613,
+    "gpu_energy": 84.68048466745785,
+    "total_energy": 84.68048466745785,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_32_20250610_094447.json",
+    "duration": 0.3427896499633789,
+    "gpu_energy": 104.84257627481884,
+    "total_energy": 104.84257627481884,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_500_20250610_095337.json",
+    "duration": 3.871091365814209,
+    "gpu_energy": 1675.2569536743606,
+    "total_energy": 1675.2569536743606,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_500_20250610_100057.json",
+    "duration": 4.077959299087524,
+    "gpu_energy": 1825.6569560086764,
+    "total_energy": 1825.6569560086764,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_500_20250610_100812.json",
+    "duration": 4.9630138874053955,
+    "gpu_energy": 2367.472669711513,
+    "total_energy": 2367.472669711513,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_500_20250610_102401.json",
+    "duration": 20.29261016845703,
+    "gpu_energy": 11585.336282361151,
+    "total_energy": 11585.336282361151,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_500_20250610_101544.json",
+    "duration": 10.07692003250122,
+    "gpu_energy": 5378.159468566246,
+    "total_energy": 5378.159468566246,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_512_20250610_094330.json",
+    "duration": 3.9360339641571045,
+    "gpu_energy": 1729.5899411843457,
+    "total_energy": 1729.5899411843457,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_512_20250610_095501.json",
+    "duration": 4.0579705238342285,
+    "gpu_energy": 1772.714122334884,
+    "total_energy": 1772.714122334884,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_512_20250610_100937.json",
+    "duration": 5.3494017124176025,
+    "gpu_energy": 2578.118977448937,
+    "total_energy": 2578.118977448937,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_512_20250610_101716.json",
+    "duration": 10.20364499092102,
+    "gpu_energy": 5455.333146510438,
+    "total_energy": 5455.333146510438,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_512_20250610_100220.json",
+    "duration": 4.524102687835693,
+    "gpu_energy": 2055.8759201593402,
+    "total_energy": 2055.8759201593402,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_512_20250610_102542.json",
+    "duration": 20.493186950683594,
+    "gpu_energy": 11667.834990161155,
+    "total_energy": 11667.834990161155,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_64_20250610_093914.json",
+    "duration": 0.6394474506378174,
+    "gpu_energy": 204.73084092104745,
+    "total_energy": 204.73084092104745,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_128_64_20250610_094607.json",
+    "duration": 0.8345730304718018,
+    "gpu_energy": 278.62514809294345,
+    "total_energy": 278.62514809294345,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_1000_20250610_103613.json",
+    "duration": 7.542793035507202,
+    "gpu_energy": 3696.0997838518592,
+    "total_energy": 3696.0997838518592,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_1000_20250610_104324.json",
+    "duration": 8.432974815368652,
+    "gpu_energy": 4351.070171205596,
+    "total_energy": 4351.070171205596,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_1000_20250610_105055.json",
+    "duration": 9.38638973236084,
+    "gpu_energy": 4982.028903477543,
+    "total_energy": 4982.028903477543,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_1000_20250610_105833.json",
+    "duration": 13.060822248458862,
+    "gpu_energy": 7222.89134378821,
+    "total_energy": 7222.89134378821,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_2000_20250610_103746.json",
+    "duration": 15.53105354309082,
+    "gpu_energy": 8352.388502615668,
+    "total_energy": 8352.388502615668,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_1000_20250610_110629.json",
+    "duration": 25.390047073364258,
+    "gpu_energy": 14561.448156328983,
+    "total_energy": 14561.448156328983,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_2000_20250610_105235.json",
+    "duration": 18.495044708251953,
+    "gpu_energy": 10578.565557084055,
+    "total_energy": 10578.565557084055,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_2000_20250610_104501.json",
+    "duration": 16.09179663658142,
+    "gpu_energy": 8886.794059396318,
+    "total_energy": 8886.794059396318,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_2000_20250610_110015.json",
+    "duration": 24.19373846054077,
+    "gpu_energy": 13944.440553808356,
+    "total_energy": 13944.440553808356,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_256_20250610_103911.json",
+    "duration": 2.2044501304626465,
+    "gpu_energy": 880.9480486168194,
+    "total_energy": 880.9480486168194,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_256_20250610_103145.json",
+    "duration": 2.105656385421753,
+    "gpu_energy": 832.0954137979817,
+    "total_energy": 832.0954137979817,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_2000_20250610_110834.json",
+    "duration": 47.13652563095093,
+    "gpu_energy": 27272.874838218766,
+    "total_energy": 27272.874838218766,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_256_20250610_104625.json",
+    "duration": 2.6758410930633545,
+    "gpu_energy": 1124.8931882386855,
+    "total_energy": 1124.8931882386855,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_500_20250610_103314.json",
+    "duration": 3.963548421859741,
+    "gpu_energy": 1732.4117113083184,
+    "total_energy": 1732.4117113083184,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_256_20250610_110140.json",
+    "duration": 7.782936096191406,
+    "gpu_energy": 3909.3653150101504,
+    "total_energy": 3909.3653150101504,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_256_20250610_105400.json",
+    "duration": 4.264566421508789,
+    "gpu_energy": 1955.3356238952983,
+    "total_energy": 1955.3356238952983,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_500_20250610_104033.json",
+    "duration": 4.229782342910767,
+    "gpu_energy": 1903.2478882131081,
+    "total_energy": 1903.2478882131081,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_500_20250610_104750.json",
+    "duration": 5.163494348526001,
+    "gpu_energy": 2490.8734225673065,
+    "total_energy": 2490.8734225673065,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_500_20250610_110313.json",
+    "duration": 14.236968994140625,
+    "gpu_energy": 7839.771667166518,
+    "total_energy": 7839.771667166518,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_500_20250610_105531.json",
+    "duration": 7.001317024230957,
+    "gpu_energy": 3522.7498950187082,
+    "total_energy": 3522.7498950187082,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_512_20250610_103443.json",
+    "duration": 4.076426029205322,
+    "gpu_energy": 1796.0050753675607,
+    "total_energy": 1796.0050753675607,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_512_20250610_104159.json",
+    "duration": 4.20916748046875,
+    "gpu_energy": 1901.3857974631571,
+    "total_energy": 1901.3857974631571,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_512_20250610_104920.json",
+    "duration": 5.322526216506958,
+    "gpu_energy": 2597.938280666557,
+    "total_energy": 2597.938280666557,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_512_20250610_105658.json",
+    "duration": 7.150576114654541,
+    "gpu_energy": 3621.5950275586692,
+    "total_energy": 3621.5950275586692,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_32-64_200_20250529_045506.json",
+    "duration": 23.84668231010437,
+    "gpu_energy": 8951.85175203486,
+    "total_energy": 8951.85175203486,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_32-64_200_20250529_045506.json",
+    "duration": 13.17956829071045,
+    "gpu_energy": 4926.2249407316085,
+    "total_energy": 4926.2249407316085,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_512_1000_20250610_111405.json",
+    "duration": 7.678346395492554,
+    "gpu_energy": 3772.571786884667,
+    "total_energy": 3772.571786884667,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_256_512_20250610_110446.json",
+    "duration": 14.7950119972229,
+    "gpu_energy": 8141.89882549354,
+    "total_energy": 8141.89882549354,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_32-64_200_20250529_062731.json",
+    "duration": 23.749998807907104,
+    "gpu_energy": 8859.40946603051,
+    "total_energy": 8859.40946603051,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_32-64_200_20250529_062731.json",
+    "duration": 13.105295896530151,
+    "gpu_energy": 4899.934586776234,
+    "total_energy": 4899.934586776234,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_512_1000_20250610_112109.json",
+    "duration": 8.205173015594482,
+    "gpu_energy": 4191.8592925644425,
+    "total_energy": 4191.8592925644425,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_512_2000_20250610_111539.json",
+    "duration": 15.235098838806152,
+    "gpu_energy": 8159.182113284371,
+    "total_energy": 8159.182113284371,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_512_2000_20250610_112244.json",
+    "duration": 16.259899854660034,
+    "gpu_energy": 9015.88503523926,
+    "total_energy": 9015.88503523926,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_512_256_20250610_110955.json",
+    "duration": 1.9832196235656738,
+    "gpu_energy": 776.6147980997266,
+    "total_energy": 776.6147980997266,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_512_256_20250610_111659.json",
+    "duration": 2.2418222427368164,
+    "gpu_energy": 898.5091676992528,
+    "total_energy": 898.5091676992528,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_512_256_20250610_112405.json",
+    "duration": 2.7882254123687744,
+    "gpu_energy": 1175.4335314152709,
+    "total_energy": 1175.4335314152709,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_512_500_20250610_111116.json",
+    "duration": 3.8497369289398193,
+    "gpu_energy": 1669.114567518946,
+    "total_energy": 1669.114567518946,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_512_500_20250610_111821.json",
+    "duration": 4.319349050521851,
+    "gpu_energy": 1962.4632743081736,
+    "total_energy": 1962.4632743081736,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_512_500_20250610_112529.json",
+    "duration": 4.909065008163452,
+    "gpu_energy": 2319.6001275857675,
+    "total_energy": 2319.6001275857675,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_512_512_20250610_111943.json",
+    "duration": 4.223618268966675,
+    "gpu_energy": 1926.2406261833146,
+    "total_energy": 1926.2406261833146,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_512_512_20250610_111239.json",
+    "duration": 3.9551422595977783,
+    "gpu_energy": 1750.9510571840963,
+    "total_energy": 1750.9510571840963,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.1-8B_512_512_20250610_112653.json",
+    "duration": 5.140857696533203,
+    "gpu_energy": 2481.1517409139065,
+    "total_energy": 2481.1517409139065,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250603_100822.json",
+    "duration": 0.7820234298706055,
+    "gpu_energy": 244.16585774917604,
+    "total_energy": 244.16585774917604,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250603_100932.json",
+    "duration": 1.0138213634490967,
+    "gpu_energy": 334.88423084333533,
+    "total_energy": 334.88423084333533,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250603_101148.json",
+    "duration": 3.9065780639648438,
+    "gpu_energy": 1576.724416305894,
+    "total_energy": 1576.724416305894,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250603_101039.json",
+    "duration": 1.9508881568908691,
+    "gpu_energy": 702.629683836639,
+    "total_energy": 702.629683836639,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250603_101716.json",
+    "duration": 0.7418599128723145,
+    "gpu_energy": 230.01084691839222,
+    "total_energy": 230.01084691839222,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250603_101825.json",
+    "duration": 0.9149610996246338,
+    "gpu_energy": 291.3070332400683,
+    "total_energy": 291.3070332400683,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250603_102036.json",
+    "duration": 3.58120059967041,
+    "gpu_energy": 1410.6722877712714,
+    "total_energy": 1410.6722877712714,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250603_101930.json",
+    "duration": 1.7959530353546143,
+    "gpu_energy": 626.2554460049719,
+    "total_energy": 626.2554460049719,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_055926.json",
+    "duration": 0.7655093669891357,
+    "gpu_energy": 243.89505445637104,
+    "total_energy": 243.89505445637104,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_060037.json",
+    "duration": 1.0313224792480469,
+    "gpu_energy": 341.36396750008186,
+    "total_energy": 341.36396750008186,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_060144.json",
+    "duration": 1.9771268367767334,
+    "gpu_energy": 722.8550773361076,
+    "total_energy": 722.8550773361076,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_060253.json",
+    "duration": 3.8922932147979736,
+    "gpu_energy": 1587.1005826455298,
+    "total_energy": 1587.1005826455298,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_060824.json",
+    "duration": 0.7641055583953857,
+    "gpu_energy": 241.03616236651536,
+    "total_energy": 241.03616236651536,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_060934.json",
+    "duration": 1.0111994743347168,
+    "gpu_energy": 335.3571767068147,
+    "total_energy": 335.3571767068147,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_061149.json",
+    "duration": 3.782503128051758,
+    "gpu_energy": 1534.81376472795,
+    "total_energy": 1534.81376472795,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_061723.json",
+    "duration": 0.7316312789916992,
+    "gpu_energy": 229.09676325602533,
+    "total_energy": 229.09676325602533,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_061040.json",
+    "duration": 1.918292760848999,
+    "gpu_energy": 701.6862800708496,
+    "total_energy": 701.6862800708496,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_061829.json",
+    "duration": 0.9458088874816895,
+    "gpu_energy": 309.7730056387783,
+    "total_energy": 309.7730056387783,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_062043.json",
+    "duration": 3.60726261138916,
+    "gpu_energy": 1451.3940971133634,
+    "total_energy": 1451.3940971133634,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_065324.json",
+    "duration": 0.7733147144317627,
+    "gpu_energy": 244.1859527969599,
+    "total_energy": 244.1859527969599,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_065429.json",
+    "duration": 1.0188579559326172,
+    "gpu_energy": 340.9638715267182,
+    "total_energy": 340.9638715267182,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_061936.json",
+    "duration": 1.8489346504211426,
+    "gpu_energy": 664.4936048184024,
+    "total_energy": 664.4936048184024,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_065539.json",
+    "duration": 1.9831924438476562,
+    "gpu_energy": 725.5862398805618,
+    "total_energy": 725.5862398805618,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_065647.json",
+    "duration": 4.00671648979187,
+    "gpu_energy": 1660.93523856622,
+    "total_energy": 1660.93523856622,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_070222.json",
+    "duration": 0.7831311225891113,
+    "gpu_energy": 248.26901161432266,
+    "total_energy": 248.26901161432266,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_070433.json",
+    "duration": 1.9743127822875977,
+    "gpu_energy": 730.4568190319935,
+    "total_energy": 730.4568190319935,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_070542.json",
+    "duration": 3.8981869220733643,
+    "gpu_energy": 1602.7565850887079,
+    "total_energy": 1602.7565850887079,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_071117.json",
+    "duration": 0.7386698722839355,
+    "gpu_energy": 229.83794329800605,
+    "total_energy": 229.83794329800605,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_070328.json",
+    "duration": 1.0441854000091553,
+    "gpu_energy": 346.9992097742034,
+    "total_energy": 346.9992097742034,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_071222.json",
+    "duration": 0.9188897609710693,
+    "gpu_energy": 296.53612500802484,
+    "total_energy": 296.53612500802484,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_071328.json",
+    "duration": 1.8243136405944824,
+    "gpu_energy": 646.8429728725652,
+    "total_energy": 646.8429728725652,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_071441.json",
+    "duration": 3.659464120864868,
+    "gpu_energy": 1467.265159770837,
+    "total_energy": 1467.265159770837,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_072133.json",
+    "duration": 0.7786283493041992,
+    "gpu_energy": 245.88483727197644,
+    "total_energy": 245.88483727197644,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_072348.json",
+    "duration": 1.9594731330871582,
+    "gpu_energy": 716.921661055267,
+    "total_energy": 716.921661055267,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_072455.json",
+    "duration": 3.918638229370117,
+    "gpu_energy": 1613.6688775483644,
+    "total_energy": 1613.6688775483644,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_095617.json",
+    "duration": 0.767338752746582,
+    "gpu_energy": 241.9621281171322,
+    "total_energy": 241.9621281171322,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_072243.json",
+    "duration": 1.0121972560882568,
+    "gpu_energy": 336.66515800231696,
+    "total_energy": 336.66515800231696,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_100536.json",
+    "duration": 0.7808411121368408,
+    "gpu_energy": 246.68923901769514,
+    "total_energy": 246.68923901769514,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_095839.json",
+    "duration": 1.9737226963043213,
+    "gpu_energy": 722.9157820483895,
+    "total_energy": 722.9157820483895,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_095729.json",
+    "duration": 0.9884903430938721,
+    "gpu_energy": 325.8286334042013,
+    "total_energy": 325.8286334042013,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_095953.json",
+    "duration": 3.9204599857330322,
+    "gpu_energy": 1609.8147557340221,
+    "total_energy": 1609.8147557340221,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_100647.json",
+    "duration": 1.0260281562805176,
+    "gpu_energy": 339.92287166869636,
+    "total_energy": 339.92287166869636,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_100906.json",
+    "duration": 3.9167816638946533,
+    "gpu_energy": 1609.9791833044455,
+    "total_energy": 1609.9791833044455,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_100758.json",
+    "duration": 2.00141978263855,
+    "gpu_energy": 733.3016118332843,
+    "total_energy": 733.3016118332843,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_101447.json",
+    "duration": 0.792884111404419,
+    "gpu_energy": 251.56890720606447,
+    "total_energy": 251.56890720606447,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_101555.json",
+    "duration": 1.0224623680114746,
+    "gpu_energy": 337.58737263250356,
+    "total_energy": 337.58737263250356,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_101702.json",
+    "duration": 2.006204605102539,
+    "gpu_energy": 735.937498147289,
+    "total_energy": 735.937498147289,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_128_128_20250605_101814.json",
+    "duration": 4.006915330886841,
+    "gpu_energy": 1642.6545362173508,
+    "total_energy": 1642.6545362173508,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_1_5_20250603_052030.json",
+    "duration": 0.025168657302856445,
+    "gpu_energy": 6.942740558783213,
+    "total_energy": 6.942740558783213,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250603_101254.json",
+    "duration": 0.7794110774993896,
+    "gpu_energy": 243.08750074335933,
+    "total_energy": 243.08750074335933,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250603_101359.json",
+    "duration": 0.9871938228607178,
+    "gpu_energy": 324.18213618451955,
+    "total_energy": 324.18213618451955,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250603_101503.json",
+    "duration": 1.4721364974975586,
+    "gpu_energy": 516.4907480401992,
+    "total_energy": 516.4907480401992,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250603_101610.json",
+    "duration": 2.939763307571411,
+    "gpu_energy": 1137.2546799507227,
+    "total_energy": 1137.2546799507227,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250603_102142.json",
+    "duration": 0.7293624877929688,
+    "gpu_energy": 223.19927147159578,
+    "total_energy": 223.19927147159578,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250603_102352.json",
+    "duration": 1.2522358894348145,
+    "gpu_energy": 418.0977418786204,
+    "total_energy": 418.0977418786204,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250603_102247.json",
+    "duration": 0.9133501052856445,
+    "gpu_energy": 290.99347720499725,
+    "total_energy": 290.99347720499725,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250603_102459.json",
+    "duration": 2.592937707901001,
+    "gpu_energy": 986.4859359781037,
+    "total_energy": 986.4859359781037,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_060505.json",
+    "duration": 1.009204387664795,
+    "gpu_energy": 334.2930243381857,
+    "total_energy": 334.2930243381857,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_060359.json",
+    "duration": 0.7654294967651367,
+    "gpu_energy": 241.38768313064577,
+    "total_energy": 241.38768313064577,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_060612.json",
+    "duration": 1.5212419033050537,
+    "gpu_energy": 543.6012578345405,
+    "total_energy": 543.6012578345405,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_060720.json",
+    "duration": 2.970170259475708,
+    "gpu_energy": 1176.9790261652852,
+    "total_energy": 1176.9790261652852,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_061510.json",
+    "duration": 1.422398567199707,
+    "gpu_energy": 504.6272168098147,
+    "total_energy": 504.6272168098147,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_061254.json",
+    "duration": 0.765761137008667,
+    "gpu_energy": 241.8856414898634,
+    "total_energy": 241.8856414898634,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_061618.json",
+    "duration": 2.761333465576172,
+    "gpu_energy": 1082.5025802706311,
+    "total_energy": 1082.5025802706311,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_061400.json",
+    "duration": 0.9766004085540771,
+    "gpu_energy": 321.12044828353515,
+    "total_energy": 321.12044828353515,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_062257.json",
+    "duration": 0.9341301918029785,
+    "gpu_energy": 303.5979871768832,
+    "total_energy": 303.5979871768832,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_062148.json",
+    "duration": 0.7407336235046387,
+    "gpu_energy": 232.2502314188838,
+    "total_energy": 232.2502314188838,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_062510.json",
+    "duration": 2.644395589828491,
+    "gpu_energy": 1026.4747476242064,
+    "total_energy": 1026.4747476242064,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_062403.json",
+    "duration": 1.328613042831421,
+    "gpu_energy": 457.7379929214174,
+    "total_energy": 457.7379929214174,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_065753.json",
+    "duration": 0.7729711532592773,
+    "gpu_energy": 244.84595602083206,
+    "total_energy": 244.84595602083206,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_065859.json",
+    "duration": 1.0093674659729004,
+    "gpu_energy": 339.3234265504003,
+    "total_energy": 339.3234265504003,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_070005.json",
+    "duration": 1.4902558326721191,
+    "gpu_energy": 524.3606887144936,
+    "total_energy": 524.3606887144936,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_070112.json",
+    "duration": 2.9831790924072266,
+    "gpu_energy": 1178.7149482262137,
+    "total_energy": 1178.7149482262137,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_070648.json",
+    "duration": 0.7782235145568848,
+    "gpu_energy": 246.7750461221576,
+    "total_energy": 246.7750461221576,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_070753.json",
+    "duration": 1.0262479782104492,
+    "gpu_energy": 342.3946302367926,
+    "total_energy": 342.3946302367926,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_070900.json",
+    "duration": 1.5136809349060059,
+    "gpu_energy": 532.103889036613,
+    "total_energy": 532.103889036613,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_071011.json",
+    "duration": 2.9460740089416504,
+    "gpu_energy": 1165.8926382400734,
+    "total_energy": 1165.8926382400734,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_071550.json",
+    "duration": 0.7429594993591309,
+    "gpu_energy": 232.60213813179732,
+    "total_energy": 232.60213813179732,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_071656.json",
+    "duration": 0.9441626071929932,
+    "gpu_energy": 313.17002690586446,
+    "total_energy": 313.17002690586446,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_071910.json",
+    "duration": 2.6628055572509766,
+    "gpu_energy": 1021.9153946844967,
+    "total_energy": 1021.9153946844967,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_071802.json",
+    "duration": 1.3594787120819092,
+    "gpu_energy": 474.1845063230233,
+    "total_energy": 474.1845063230233,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_072706.json",
+    "duration": 0.9981546401977539,
+    "gpu_energy": 332.5424550030232,
+    "total_energy": 332.5424550030232,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_072600.json",
+    "duration": 0.7778487205505371,
+    "gpu_energy": 245.69522500913143,
+    "total_energy": 245.69522500913143,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_072813.json",
+    "duration": 1.485461950302124,
+    "gpu_energy": 516.2593608034027,
+    "total_energy": 516.2593608034027,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_072924.json",
+    "duration": 2.998058795928955,
+    "gpu_energy": 1174.0718394707783,
+    "total_energy": 1174.0718394707783,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_100104.json",
+    "duration": 0.7702326774597168,
+    "gpu_energy": 244.13579930853848,
+    "total_energy": 244.13579930853848,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_100209.json",
+    "duration": 0.979362964630127,
+    "gpu_energy": 327.2519310644865,
+    "total_energy": 327.2519310644865,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_100318.json",
+    "duration": 1.5144882202148438,
+    "gpu_energy": 533.7802962453206,
+    "total_energy": 533.7802962453206,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_100426.json",
+    "duration": 2.9809787273406982,
+    "gpu_energy": 1166.8998110447142,
+    "total_energy": 1166.8998110447142,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_101014.json",
+    "duration": 0.7799777984619141,
+    "gpu_energy": 250.11298470382687,
+    "total_energy": 250.11298470382687,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_101120.json",
+    "duration": 1.014878749847412,
+    "gpu_energy": 338.7497558277249,
+    "total_energy": 338.7497558277249,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_101338.json",
+    "duration": 2.9699888229370117,
+    "gpu_energy": 1164.4591632857494,
+    "total_energy": 1164.4591632857494,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_101231.json",
+    "duration": 1.556467056274414,
+    "gpu_energy": 545.4184378005732,
+    "total_energy": 545.4184378005732,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_101920.json",
+    "duration": 0.7881379127502441,
+    "gpu_energy": 249.71897561359404,
+    "total_energy": 249.71897561359404,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_102025.json",
+    "duration": 1.0066611766815186,
+    "gpu_energy": 332.5546470275641,
+    "total_energy": 332.5546470275641,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_102239.json",
+    "duration": 2.9499735832214355,
+    "gpu_energy": 1174.1950003558316,
+    "total_energy": 1174.1950003558316,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_256_128_20250605_102131.json",
+    "duration": 1.4746387004852295,
+    "gpu_energy": 520.2553189598455,
+    "total_energy": 520.2553189598455,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_32-64_200_20250529_040524.json",
+    "duration": 14.845922470092773,
+    "gpu_energy": 4245.088191058776,
+    "total_energy": 4245.088191058776,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_32-64_200_20250529_040524.json",
+    "duration": 8.432823657989502,
+    "gpu_energy": 2379.6929072891176,
+    "total_energy": 2379.6929072891176,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_32-64_200_20250529_063021.json",
+    "duration": 14.982294082641602,
+    "gpu_energy": 4301.94110998702,
+    "total_energy": 4301.94110998702,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--Llama-3.2-3B_32-64_200_20250529_063021.json",
+    "duration": 8.473865985870361,
+    "gpu_energy": 2399.703369381735,
+    "total_energy": 2399.703369381735,
+    "total_avg_power": 0,
+    "cpu_energy": 0.0,
+    "dram_energy": 0.0,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--models--meta-llama--Llama-3.1-8B_256_500_20250418_181529.json",
+    "duration": 1114.4351580142975,
+    "gpu_energy": 844834.6477272566,
+    "total_energy": 1491561.054586716,
+    "total_avg_power": 1338.4009324009323,
+    "cpu_energy": 210812.34315765114,
+    "dram_energy": 22600.595720031844,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--models--meta-llama--Llama-3.1-8B_512_2000_20250418_190538.json",
+    "duration": 2905.2242691516876,
+    "gpu_energy": 2234739.7128615673,
+    "total_energy": 3944298.704654598,
+    "total_avg_power": 1357.6572199730094,
+    "cpu_energy": 551318.0672963787,
+    "dram_energy": 59431.464456372996,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--models--meta-llama--Llama-3.2-1B_512_2000_20250421_180641.json",
+    "duration": 1772.046912431717,
+    "gpu_energy": 1129432.1851440265,
+    "total_energy": 2044627.4619489599,
+    "total_avg_power": 1153.8224228743416,
+    "cpu_energy": 338643.5560588713,
+    "dram_energy": 36351.21044054032,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--models--meta-llama--Llama-3.1-8B_512_500_20250418_192331.json",
+    "duration": 969.0938668251038,
+    "gpu_energy": 718222.2790181116,
+    "total_energy": 1289908.949300869,
+    "total_avg_power": 1331.0464480874316,
+    "cpu_energy": 184810.49075032954,
+    "dram_energy": 19732.999121078512,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--models--meta-llama--Llama-3.2-1B_512_500_20250421_173543.json",
+    "duration": 540.4201533794403,
+    "gpu_energy": 292371.82562896755,
+    "total_energy": 542349.6725905515,
+    "total_avg_power": 1003.5704057279236,
+    "cpu_energy": 103286.70312995676,
+    "dram_energy": 11029.598942948767,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--models--meta-llama--Llama-3.2-3B_256_500_20250421_190616.json",
+    "duration": 881.8690626621246,
+    "gpu_energy": 582123.4870353701,
+    "total_energy": 1031349.7593821607,
+    "total_avg_power": 1169.504411764706,
+    "cpu_energy": 169016.44560022274,
+    "dram_energy": 17953.88961188687,
+    "system_energy_j": null
+  },
+  {
+    "path": "results/vllm_models--models--meta-llama--Llama-3.2-3B_512_2000_20250421_185000.json",
+    "duration": 2502.169989824295,
+    "gpu_energy": 1856149.48351723,
+    "total_energy": 3260246.9519551042,
+    "total_avg_power": 1302.9678100263852,
+    "cpu_energy": 473451.2586220973,
+    "dram_energy": 50879.859538606055,
+    "system_energy_j": null
+  }
+]
