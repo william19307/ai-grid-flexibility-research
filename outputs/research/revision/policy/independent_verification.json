@@ -1,9 +1,9 @@
 {
-  "verified_factorials": 71,
-  "verified_schedules": 284,
+  "verified_factorials": 80,
+  "verified_schedules": 320,
   "failed_factorials": 0,
-  "pending_factorials": 37,
-  "newly_verified": 0,
+  "pending_factorials": 28,
+  "newly_verified": 9,
   "reused_unchanged_verifications": 71,
   "all_declared_cases_accounted_for": false,
   "max_work_error_gpu_h": 1.0605916145323135e-10,

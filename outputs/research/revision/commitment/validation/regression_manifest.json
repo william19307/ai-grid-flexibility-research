@@ -1,0 +1,15 @@
+{
+  "source_sha256": {
+    "work/research/models/coupled_grid_compute.py": "140b7707a1461e7f501c33710444b9f1b8555cf5661c1c1b14b24cce79b06125",
+    "work/research/models/thermal_commitment.py": "bc8a21824dbb43c0e8108fc52b2e45566e771d85d81275fe1e3df7df75a98d0b",
+    "work/research/analysis/validate_thermal_commitment.py": "8648d57e81d3672f860ce0f5282448bfca713ce805af30929c15725abfaf5622",
+    "work/research/analysis/validate_coupled_grid_compute.py": "89380ed7182ba4ab0750cf964a4e1ea5e76c0fa435427c0cec568f5730a35110",
+    "work/research/analysis/validate_reservoir_coupling.py": "27377a1e47ea90c118426c71611e6494210d3fd0d16e0abe6f08668b5ebf12f9"
+  },
+  "checks": {
+    "thermal": 75,
+    "coupled_lp": 118,
+    "reservoir": 74
+  },
+  "historical_publication_tables_overwritten": false
+}

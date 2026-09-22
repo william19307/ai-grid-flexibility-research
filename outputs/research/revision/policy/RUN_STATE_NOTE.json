@@ -1,14 +1,14 @@
 {
-  "last_observed_utc": "2026-09-22T10:23:44.906762+00:00",
+  "last_observed_utc": "2026-09-22T10:38:17.125442+00:00",
   "observed_status": "running",
   "exec_session_id": 85550,
   "pid": 88756,
   "command": "work/figure-env/bin/python work/research/analysis/run_gang_policy_revision.py run",
   "log": "/tmp/gang_policy_20260922.log",
-  "constructed_factorials_at_observation": 73,
+  "constructed_factorials_at_observation": 84,
   "planned_factorials": 108,
   "independent_full_verification": "pending",
   "instruction": "This is a historical observation, not evidence of current liveness. Poll the same exec session or inspect PID/command before acting; do not restart because a wait expires.",
-  "independently_verified_factorials": 71,
-  "independently_verified_schedules": 284
+  "independently_verified_factorials": 80,
+  "independently_verified_schedules": 320
 }

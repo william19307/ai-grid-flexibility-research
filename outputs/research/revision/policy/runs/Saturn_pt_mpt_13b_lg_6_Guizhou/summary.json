@@ -1,0 +1,40 @@
+{
+  "run": "Saturn_pt_mpt_13b_lg_6_Guizhou",
+  "cluster": "Saturn",
+  "start": "2020-04-06",
+  "workload": "pt_mpt_13b_lg",
+  "slack": 6,
+  "tariff": "Guizhou",
+  "status": "constructed_pending_independent_verification",
+  "jobs": 14089,
+  "runtime_s": 56.25477075576782,
+  "total_saving": 16008.866982379099,
+  "mode_shapley": 9613.873751772648,
+  "start_shapley": 6394.993230606451,
+  "interaction_saving": -8276.480038786991,
+  "mode_share_pct": 60.053430154392586,
+  "mode_first": 13752.113771166143,
+  "mode_last": 5475.633732379152,
+  "start_first": 10533.233249999947,
+  "start_last": 2256.7532112129556,
+  "optimal_mode_share_lower_pct": 45.33624887233625,
+  "optimal_mode_share_upper_pct": 69.83668950334678,
+  "upper_incremental_bill": {
+    "C00": 117980.54735,
+    "C10": 104228.43357883385,
+    "C01": 107447.31410000005,
+    "C11": 101971.6803676209
+  },
+  "lower_incremental_bill": {
+    "C00": 117980.54735,
+    "C10": 100520.20716093376,
+    "C01": 102735.20615000007,
+    "C11": 92293.9613005966
+  },
+  "global_optimum_mode_share_bracket": {
+    "lower_pct": 45.33624887233625,
+    "upper_pct": 69.83668950334678,
+    "reason": "Certified interval for globally optimal capability allocation, conditional on cost bounds and this policy matrix; not a confidence interval"
+  },
+  "seed_C11": "C10"
+}

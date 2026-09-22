@@ -1,0 +1,40 @@
+{
+  "run": "Saturn_pt_mpt_13b_lg_24_Gansu",
+  "cluster": "Saturn",
+  "start": "2020-04-06",
+  "workload": "pt_mpt_13b_lg",
+  "slack": 24,
+  "tariff": "Gansu",
+  "status": "constructed_pending_independent_verification",
+  "jobs": 14089,
+  "runtime_s": 196.67399406433105,
+  "total_saving": 18295.831153206265,
+  "mode_shapley": 13105.64932377921,
+  "start_shapley": 5190.181829427056,
+  "interaction_saving": -5903.052591145941,
+  "mode_share_pct": 71.63188823746059,
+  "mode_first": 16057.175619352172,
+  "mode_last": 10154.123028206246,
+  "start_first": 8141.708125000019,
+  "start_last": 2238.655533854093,
+  "optimal_mode_share_lower_pct": 44.478738110529115,
+  "optimal_mode_share_upper_pct": 86.43372742356861,
+  "upper_incremental_bill": {
+    "C00": 117740.05137500001,
+    "C10": 101682.87575564784,
+    "C01": 109598.34324999999,
+    "C11": 99444.22022179374
+  },
+  "lower_incremental_bill": {
+    "C00": 117740.05137500001,
+    "C10": 87732.88441321944,
+    "C01": 99662.55424999999,
+    "C11": 78024.24985645835
+  },
+  "global_optimum_mode_share_bracket": {
+    "lower_pct": 44.478738110529115,
+    "upper_pct": 86.43372742356861,
+    "reason": "Certified interval for globally optimal capability allocation, conditional on cost bounds and this policy matrix; not a confidence interval"
+  },
+  "seed_C11": "C10"
+}

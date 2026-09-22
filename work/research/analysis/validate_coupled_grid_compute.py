@@ -3,14 +3,15 @@
 All cases are mathematical validation cases, not estimates for China's grid.
 """
 from pathlib import Path
-import sys,json,hashlib,itertools
+import sys,json,hashlib,itertools,argparse
 import numpy as np
 
 ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT/'work/research/models'))
 from coupled_grid_compute import Generator,Line,Storage,Batch,ComputePool,Scenario,solve
 
-OUT=ROOT/'outputs/research/tables'
+parser=argparse.ArgumentParser();parser.add_argument('--output-dir',type=Path,default=ROOT/'outputs/research/tables');args=parser.parse_args()
+OUT=args.output_dir;OUT.mkdir(parents=True,exist_ok=True)
 checks=[];results={};max_errors=[]
 
 def equal(a,b):
@@ -177,7 +178,7 @@ summary={'status':'joint_LP_mathematical_validation_passed_NOT_calibrated_region
          'model_sha256':hashlib.sha256((ROOT/'work/research/models/coupled_grid_compute.py').read_bytes()).hexdigest(),
          'limitations':['transport network rather than AC security constraints','perfect foresight scenario dispatch',
                         'continuous time-sharing rather than validated subhour service execution',
-                        'no task migration, checkpoint overhead, unit commitment, outage chronology or calibrated base year',
+                        'this LP validation does not validate task migration, checkpoint overhead, optional unit commitment, outage chronology or calibrated base year',
                         'expected unserved bound is not a complete equal-reliability validation']}
 (OUT/'coupled_grid_compute_validation.json').write_text(json.dumps(summary,indent=2))
 (OUT/'coupled_grid_compute_analytic_examples.json').write_text(json.dumps(results,indent=2))

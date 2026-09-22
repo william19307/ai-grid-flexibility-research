@@ -3,7 +3,8 @@
 Investments are shared across supplied scenarios; dispatch/tasks have perfect
 foresight within each scenario. Monetary capacity costs apply to the modeled
 study horizon (caller must annualize consistently). MW, MWh, hours, currency.
-This module does not implement AC power flow, unit commitment, task migration,
+Optional fixed-capacity thermal unit commitment uses a MILP.
+This module does not implement AC power flow, task migration,
 checkpoint overhead or stochastic/nonanticipative real-time control.
 Reservoir cascades conserve water volume with fixed specific water consumption,
 zero routing delay and no evaporation; inflows must be local incremental inflows.
@@ -11,8 +12,9 @@ zero routing delay and no evaporation; inflows must be local incremental inflows
 from dataclasses import dataclass,field
 from typing import Mapping,Sequence
 import numpy as np
-from scipy.optimize import linprog
-from scipy.sparse import coo_matrix
+from scipy.optimize import linprog, milp, Bounds, LinearConstraint
+from scipy.sparse import coo_matrix, vstack
+import thermal_commitment as thermal
 
 
 @dataclass
@@ -99,9 +101,9 @@ class Scenario:
 
 
 class Matrix:
-    def __init__(self):self.cost=[];self.bounds=[];self.vars=[];self.eq=[];self.ub=[];self.beq=[];self.bub=[];self.eq_names=[]
-    def var(self,name,cost=0.,lower=0.,upper=None):
-        i=len(self.cost);self.vars.append(name);self.cost.append(cost);self.bounds.append((lower,upper));return i
+    def __init__(self):self.cost=[];self.bounds=[];self.vars=[];self.eq=[];self.ub=[];self.beq=[];self.bub=[];self.eq_names=[];self.integrality=[]
+    def var(self,name,cost=0.,lower=0.,upper=None,binary=False):
+        i=len(self.cost);self.vars.append(name);self.cost.append(cost);self.bounds.append((lower,upper));self.integrality.append(int(binary));return i
     def equal(self,row,rhs,name):self.eq.append(row);self.beq.append(rhs);self.eq_names.append(name)
     def upper(self,row,rhs):self.ub.append(row);self.bub.append(rhs)
     def sparse(self,rows):
@@ -114,7 +116,7 @@ class Matrix:
 
 def solve(nodes,scenarios,generators,lines=(),storage=(),pools=(),dt=1.,
           fixed_compute=None,expected_unserved_limit_mwh=0.,unserved_cost=10000.,
-          emissions_limit_t=None,reservoirs=()):
+          emissions_limit_t=None,reservoirs=(),commitments=(),milp_time_limit_s=120.):
     """Optimize shared investment and scenario dispatch.
 
 fixed_compute[scenario][pool] can fix a *verified* task-feasible power sequence.
@@ -123,6 +125,13 @@ so an infeasible externally supplied power trajectory is rejected.
     """
     nodes=list(nodes);scenarios=list(scenarios);generators=list(generators);lines=list(lines);storage=list(storage);pools=list(pools)
     reservoirs=list(reservoirs)
+    commitments=list(commitments)
+    controls={c.generator:c for c in commitments}
+    if len(controls)!=len(commitments):raise ValueError("Duplicate commitment controls")
+    gen_by_name={g.name:g for g in generators}
+    if not set(controls)<=set(gen_by_name):raise ValueError("Unknown committable generator")
+    for name,control in controls.items():thermal.validate(control,gen_by_name[name])
+    if not np.isfinite(milp_time_limit_s) or milp_time_limit_s<=0:raise ValueError("Invalid MILP time limit")
     if not nodes or len(set(nodes))!=len(nodes) or not scenarios or not np.isfinite(dt) or dt<=0:raise ValueError('Invalid nodes/scenarios/time')
     if len({s.name for s in scenarios})!=len(scenarios):raise ValueError('Scenario names must be unique')
     if not np.isclose(sum(s.probability for s in scenarios),1) or any(s.probability<=0 for s in scenarios):raise ValueError('Probabilities must be positive and sum to one')
@@ -192,7 +201,7 @@ so an infeasible externally supplied power trajectory is rejected.
     for s in scenarios:
         probability=s.probability;balances={(n,t):{} for n in nodes for t in range(T)}
         rhs={(n,t):float(s.load_mw[n][t]) for n in nodes for t in range(T)}
-        ix={'generation':{},'unserved':{},'line_forward':{},'line_reverse':{},'charge':{},'discharge':{},'soc':{},'compute':{},'tasks':{},'balance_rows':{}}
+        ix={'generation':{},'unserved':{},'line_forward':{},'line_reverse':{},'charge':{},'discharge':{},'soc':{},'compute':{},'tasks':{},'balance_rows':{},'commitment':{}}
         ix.update({'hydro_generation':{},'hydro_spillage_hm3_per_hour':{},'hydro_volume_hm3':{}})
         for n in nodes:
             arr=[]
@@ -208,9 +217,13 @@ so an infeasible externally supplied power trajectory is rejected.
                 v=m.var(('generation',s.name,g.name,t),probability*dt*g.marginal_cost)
                 arr.append(v);balances[g.node,t][v]=1
                 m.upper({v:1,gen_new[g.name]:-a},a*g.existing_mw)
-                if g.min_output_fraction>0:m.upper({v:-1,gen_new[g.name]:g.min_output_fraction*a},-g.min_output_fraction*a*g.existing_mw)
+                if g.name not in controls and g.min_output_fraction>0:m.upper({v:-1,gen_new[g.name]:g.min_output_fraction*a},-g.min_output_fraction*a*g.existing_mw)
                 co2_row[v]=probability*dt*g.emissions_t_per_mwh;op_indices.append(v)
             ix['generation'][g.name]=arr
+            if g.name in controls:
+                unit=thermal.add_constraints(m,g,arr,controls[g.name],s.name,dt,probability,availability)
+                ix['commitment'][g.name]=unit
+                for ids in unit.values():op_indices.extend(ids)
         for l in lines:
             fw=[];rv=[];eff=1-l.loss_fraction
             for t in range(T):
@@ -287,8 +300,17 @@ so an infeasible externally supplied power trajectory is rejected.
     m.upper(eens_row,expected_unserved_limit_mwh)
     if emissions_limit_t is not None:m.upper(co2_row,emissions_limit_t)
     ae=m.sparse(m.eq);au=m.sparse(m.ub)
-    fit=linprog(m.cost,A_eq=ae,b_eq=m.beq,A_ub=au,b_ub=m.bub,bounds=m.bounds,method='highs')
-    if not fit.success:return {'feasible':False,'solver_status':int(fit.status),'message':fit.message}
+    if controls:
+        lower=np.array([a for a,b in m.bounds]);upper=np.array([np.inf if b is None else b for a,b in m.bounds])
+        constraints=LinearConstraint(vstack([ae,au]).tocsc(),np.r_[m.beq,np.full(len(m.bub),-np.inf)],np.r_[m.beq,m.bub])
+        fit=milp(m.cost,integrality=m.integrality,bounds=Bounds(lower,upper),constraints=constraints,
+                 options={'time_limit':milp_time_limit_s,'mip_rel_gap':0.})
+    else:
+        fit=linprog(m.cost,A_eq=ae,b_eq=m.beq,A_ub=au,b_ub=m.bub,bounds=m.bounds,method='highs')
+    if not fit.success:return {'feasible':False if int(fit.status)==2 else None,'solver_status':int(fit.status),'message':fit.message,
+                               'proven_infeasible':int(fit.status)==2,'accepted_optimal_solution':False,
+                               'incumbent_available':getattr(fit,'x',None) is not None}
+    if controls and np.max(np.abs(fit.x[np.array(m.integrality,dtype=bool)]-np.rint(fit.x[np.array(m.integrality,dtype=bool)])))>1e-6:raise RuntimeError('Nonintegral commitment solution')
     x=fit.x;eq_error=float(np.max(np.abs(ae@x-np.array(m.beq))))
     ub_error=float(np.max(np.maximum(au@x-np.array(m.bub),0)))
     if eq_error>1e-6 or ub_error>1e-6:raise RuntimeError(('Constraint residual',eq_error,ub_error))
@@ -302,6 +324,8 @@ so an infeasible externally supplied power trajectory is rejected.
          'expected_unserved_mwh':float(sum(v*x[i] for i,v in eens_row.items())),
          'expected_emissions_t':float(sum(v*x[i] for i,v in co2_row.items())),
          'max_equality_residual':eq_error,'max_inequality_violation':ub_error,
+         'solver_type':'MILP' if controls else 'LP','solver_status':int(fit.status),
+         'mip_gap':float(fit.mip_gap) if controls else None,'mip_dual_bound':float(fit.mip_dual_bound) if controls else None,
          'variables':len(x),'equalities':ae.shape[0],'inequalities':au.shape[0], 'scenarios':{}}
     for s in scenarios:
         ix=result_indices[s.name];r={}
@@ -315,7 +339,10 @@ so an infeasible externally supplied power trajectory is rejected.
                 r['completed_work'][p.name][name]+=float(x[v]*q*dt)
                 if x[v]>1e-9:alloc.append({'batch':name,'slot':t,'mode':mode,'pool_fraction':float(x[v])})
             r['task_allocations'][p.name]=alloc
-        r['nodal_balance_marginal_cost']={n:(fit.eqlin.marginals[ids]/(s.probability*dt)).tolist() for n,ids in ix['balance_rows'].items()}
+        r['unit_commitment']={name:{key:x[ids].tolist() for key,ids in unit.items()} for name,unit in ix['commitment'].items()}
+        r['terminal_unit_state']={name:thermal.terminal_state(controls[name],r['generation'][name],unit['on']) for name,unit in r['unit_commitment'].items()}
+        # MILP commitment changes are discrete: LP balance duals are not available.
+        r['nodal_balance_marginal_cost']=None if controls else {n:(fit.eqlin.marginals[ids]/(s.probability*dt)).tolist() for n,ids in ix['balance_rows'].items()}
         r['simultaneous_storage_slots']={b.name:int(np.sum((x[ix['charge'][b.name]]>1e-7)&(x[ix['discharge'][b.name]]>1e-7))) for b in storage}
         out['scenarios'][s.name]=r
     return out

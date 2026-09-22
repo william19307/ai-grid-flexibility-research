@@ -1,10 +1,12 @@
 """Independent water/electricity checks and dynamic-programming hydro oracles."""
 from pathlib import Path
-import sys,json,hashlib
+import sys,json,hashlib,argparse
 import numpy as np
 ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT/'work/research/models'))
 from coupled_grid_compute import Generator,Reservoir,Scenario,ComputePool,Batch,solve
+parser=argparse.ArgumentParser();parser.add_argument('--output-dir',type=Path,default=ROOT/'outputs/research/tables');args=parser.parse_args()
+OUT=args.output_dir;OUT.mkdir(parents=True,exist_ok=True)
 checks=[];water_errors=[];power_errors=[]
 
 def close(x,y):assert np.allclose(x,y,rtol=1e-8,atol=1e-8),(x,y)
@@ -116,5 +118,5 @@ result={'status':'water_conserving_reservoir_extension_mathematically_verified_N
         'limitations':['zero travel-time routing','fixed specific-water consumption; no head-dependent efficiency or evaporation',
                        'inflows must be incremental, not catchment totals','fixed cyclic initial usable storage must be justified',
                        'no empirical dam calibration or matched 2020 hydro-meteorology yet']}
-(ROOT/'outputs/research/tables/reservoir_coupling_validation.json').write_text(json.dumps(result,indent=2))
+(OUT/'reservoir_coupling_validation.json').write_text(json.dumps(result,indent=2))
 print(json.dumps({k:v for k,v in result.items() if k!='checks'},indent=2))

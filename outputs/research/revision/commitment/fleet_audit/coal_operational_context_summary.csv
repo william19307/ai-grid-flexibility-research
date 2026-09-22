@@ -1,0 +1,4 @@
+province,units,capacity_mw,chp_yes_units,chp_yes_mw,chp_yes_capacity_pct,chp_unknown_units,chp_unknown_mw,chp_unknown_capacity_pct,captive_documented_units,captive_documented_mw,captive_documented_capacity_pct,chp_or_captive_documented_units,chp_or_captive_documented_mw,chp_or_captive_documented_capacity_pct
+Gansu,75,33650.0,52,17470.0,51.916790490341754,23,16180.0,48.083209509658246,17,5470.0,16.2555720653789,57,19690.0,58.51411589895988
+Jiangsu,221,92481.0,149,35371.0,38.246775013245966,72,57110.0,61.753224986754034,64,4039.0,4.367383570679383,149,35371.0,38.246775013245966
+Guizhou,95,41890.0,25,5540.0,13.225113392217713,70,36350.0,86.77488660778229,8,1400.0,3.34208641680592,25,5540.0,13.225113392217713

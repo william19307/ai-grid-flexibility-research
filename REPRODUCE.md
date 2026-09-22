@@ -125,3 +125,15 @@ work/figure-env/bin/python work/research/analysis/summarize_gang_policy_revision
 阶段 07 的构造仍在运行时，可执行 `verify_gang_policy_revision.py --available` 检查已完成案例；它明确记录 pending，并不会使汇总入口接受不完整实验。逐案核验缓存绑定核验器源码、冻结清单、案例结果及四份排程的哈希，且校验导出的小时轨迹哈希；源码或数据变化会重新核验。最终仍须无 `--available` 执行完整核验。2026-09-22 检查点为 71 组/284 份排程，第二次同输入检查确认 71 个案例复用成功。
 
 另有独立性能原型 `gang_policy_fast.py`，检查入口 `validate_fast_gang_policy.py`，大案例对照入口 `benchmark_fast_gang_policy.py`。它未替换当前冻结的 108 组实验。性能记录存于 `policy/performance/`，不作为新增独立研究样本。
+
+### 阶段 08：可调整机组承诺的数学核验
+
+```bash
+work/figure-env/bin/python work/research/analysis/validate_thermal_commitment.py
+work/figure-env/bin/python work/research/analysis/validate_coupled_grid_compute.py --output-dir outputs/research/revision/commitment/validation
+work/figure-env/bin/python work/research/analysis/validate_reservoir_coupling.py --output-dir outputs/research/revision/commitment/validation
+```
+
+新增承诺配置由 `thermal_commitment.py` 定义，只有显式传入时才启用 MILP。75+118+74 项数学检查不能作为真实省级启停或全年可靠性的证据；参数、模型边界与后续门槛详见阶段 08 报告。省级旧冻结结果应使用其冻结版本/源代码快照复现。
+
+煤电来源字段恢复入口：`work/figure-env/bin/python work/research/analysis/audit_coal_operational_fields.py`。需要原始 GEM XLSX 和既有逐机组选择 JSON；它只生成候选字段表与审计摘要，不覆写冻结容量或赋予缺失运行参数默认值。
