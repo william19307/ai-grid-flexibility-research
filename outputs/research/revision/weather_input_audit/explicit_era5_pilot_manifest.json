@@ -1,0 +1,41 @@
+{
+  "retrieved": "2026-09-22",
+  "url": "https://archive-api.open-meteo.com/v1/archive?latitude=38.927&longitude=94.623&start_date=2020-01-01&end_date=2020-12-31&hourly=wind_speed_100m%2Cshortwave_radiation%2Ctemperature_2m&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=land",
+  "explicit_parameters": {
+    "latitude": "38.927",
+    "longitude": "94.623",
+    "start_date": "2020-01-01",
+    "end_date": "2020-12-31",
+    "hourly": "wind_speed_100m,shortwave_radiation,temperature_2m",
+    "timezone": "Asia/Shanghai",
+    "models": "era5",
+    "wind_speed_unit": "ms",
+    "cell_selection": "land"
+  },
+  "site": {
+    "province": "Gansu",
+    "tech": "solar",
+    "name": "Gansu Akesai (Huidong New Energy) solar farm",
+    "mw": 640.0,
+    "lat": 38.927,
+    "lon": 94.623
+  },
+  "sha256": "40adf860c7abaf61850067e5f93fc3d7ac016d58801d1dda895ccde987510987",
+  "bytes": 297553,
+  "returned_metadata": {
+    "latitude": 39.0,
+    "longitude": 94.5,
+    "generationtime_ms": 135.7583999633789,
+    "utc_offset_seconds": 28800,
+    "timezone": "Asia/Shanghai",
+    "timezone_abbreviation": "GMT+8",
+    "elevation": 3039.0,
+    "hourly_units": {
+      "time": "iso8601",
+      "wind_speed_100m": "m/s",
+      "shortwave_radiation": "W/m\u00b2",
+      "temperature_2m": "\u00b0C"
+    }
+  },
+  "scope": "Single-site ingestion pilot, not province or multi-year reconstruction; current download not an isolation of historical model differences."
+}

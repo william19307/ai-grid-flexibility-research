@@ -160,3 +160,19 @@ work/figure-env/bin/python work/research/analysis/audit_whole_node_power_source.
 ```
 
 输出位于 `outputs/research/revision/whole_node_power/`。两种 PDF 提取核对全部 544 个表值，140 个假设条件核对统一时长能量表达。原表标准差单位保留未解，不生成置信区间；此入口不修改电网或任务模型。
+
+### 阶段 11：共同观察窗口的条件准入预算
+
+```bash
+work/figure-env/bin/python work/research/analysis/derive_power_admission_margins.py
+```
+
+需要阶段 10 的原始 PDF、固定哈希表及提取实现。全部结果写入 `outputs/research/revision/power_admission/`；用精确十进制枚举表格舍入端点，并检查同时使用能量和时间预算的情况。其边界不包含运行波动、仪器误差或质量不确定性；补测空表位于 `revision/measurement/`，不是可分析的测量数据。
+
+### 阶段 12：天气来源、日历与旧验证范围
+
+```bash
+work/figure-env/bin/python work/research/analysis/audit_weather_revision_inputs.py
+```
+
+入口只读既有缓存、站点表、归档输入与旧结果；不导入求解入口，不改旧表。输出到 `outputs/research/revision/weather_input_audit/`。需要本地 `openmeteo_cache` 和归档 NPZ；逐站哈希在 `cache_manifest.json`。显式 ERA5 接入试验按 `explicit_era5_pilot_manifest.json` 的 URL 下载，保存为 `work/research/sources/weather_revision_era5/gansu_solar_largest_site_2020_era5.json`。原始响应哈希绑定本次下载；以后即使只有服务耗时变化也需保留新响应与新清单，不能覆盖原记录。该试验存在时会额外校验日历与单位。

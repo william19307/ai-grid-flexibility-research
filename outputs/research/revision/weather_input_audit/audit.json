@@ -1,0 +1,129 @@
+{
+  "status": "audit_only_no_frozen_inputs_modified",
+  "site_rows": 120,
+  "unique_used_cache_files": 115,
+  "all_cache_files": 119,
+  "expected_hours_2015_2024": 87672,
+  "missing_values_across_site_variable_records": 0,
+  "source_model_identifiers_present": 0,
+  "explicit_models_parameter_in_source_request": false,
+  "source_request_expression": "url=f'https://archive-api.open-meteo.com/v1/archive?latitude={lat:.3f}&longitude={lon:.3f}&start_date={YEARS[0]}-01-01&end_date={YEARS[1]}-12-31&hourly=wind_speed_100m,shortwave_radiation,temperature_2m&timezone=Asia%2FShanghai'",
+  "reproduction": [
+    {
+      "group": "Gansu|solar",
+      "max_abs_capacity_factor_error": 9.974659986866641e-17,
+      "selected_capacity_mw": 6490.0,
+      "selected_share": 0.2540008062275205,
+      "scale": 0.9549324945030683,
+      "clipped_fraction_all_years": 0.0,
+      "archive_2020_mean_target": 0.1593802778123695,
+      "post_clip_2020_mean": 0.15938027781236946,
+      "post_clip_mean_relative_difference_pct": -2.220446049250313e-14
+    },
+    {
+      "group": "Gansu|wind",
+      "max_abs_capacity_factor_error": 9.996344030316351e-17,
+      "selected_capacity_mw": 8722.0,
+      "selected_share": 0.3031556409819713,
+      "scale": 1.1603690547574852,
+      "clipped_fraction_all_years": 0.0,
+      "archive_2020_mean_target": 0.12417993243964792,
+      "post_clip_2020_mean": 0.12417993243964792,
+      "post_clip_mean_relative_difference_pct": 0.0
+    },
+    {
+      "group": "Guizhou|solar",
+      "max_abs_capacity_factor_error": 9.974659986866641e-17,
+      "selected_capacity_mw": 4430.0,
+      "selected_share": 0.2270968006520703,
+      "scale": 0.7106679930241653,
+      "clipped_fraction_all_years": 0.0,
+      "archive_2020_mean_target": 0.09364933094002481,
+      "post_clip_2020_mean": 0.09364933094002481,
+      "post_clip_mean_relative_difference_pct": 0.0
+    },
+    {
+      "group": "Guizhou|wind",
+      "max_abs_capacity_factor_error": 1.1102230246251565e-16,
+      "selected_capacity_mw": 1779.9,
+      "selected_share": 0.2662090007627765,
+      "scale": 2.3908258966249476,
+      "clipped_fraction_all_years": 0.004402773975727713,
+      "archive_2020_mean_target": 0.10988000230066293,
+      "post_clip_2020_mean": 0.10889663444957788,
+      "post_clip_mean_relative_difference_pct": -0.8949470608803578
+    },
+    {
+      "group": "Jiangsu|solar",
+      "max_abs_capacity_factor_error": 9.996344030316351e-17,
+      "selected_capacity_mw": 4025.0,
+      "selected_share": 0.2738840500816549,
+      "scale": 0.972886465483691,
+      "clipped_fraction_all_years": 0.0,
+      "archive_2020_mean_target": 0.1308054162046592,
+      "post_clip_2020_mean": 0.1308054162046592,
+      "post_clip_mean_relative_difference_pct": 0.0
+    },
+    {
+      "group": "Jiangsu|wind",
+      "max_abs_capacity_factor_error": 9.996344030316351e-17,
+      "selected_capacity_mw": 6777.0,
+      "selected_share": 0.30473218461095725,
+      "scale": 0.9010898346050138,
+      "clipped_fraction_all_years": 0.0,
+      "archive_2020_mean_target": 0.14728704626824582,
+      "post_clip_2020_mean": 0.14728704626824585,
+      "post_clip_mean_relative_difference_pct": 2.220446049250313e-14
+    }
+  ],
+  "calendar_season_records": 40,
+  "month_day_mismatches": 21,
+  "regional_dispatch_hours_per_weather_case": 672,
+  "fixed_investment_out_of_sample_year_validation": false,
+  "jointly_varied_load_hydro_weather": false,
+  "legacy_result_rows": 60,
+  "legacy_missing_configuration_keys": [],
+  "legacy_duplicate_configuration_rows": 0,
+  "explicit_era5_pilot": {
+    "explicit_model": "era5",
+    "hours": 8784,
+    "all_values_finite": true,
+    "ranges": {
+      "wind_speed_100m": {
+        "min": 0.1,
+        "max": 12.36,
+        "mean": 3.067186930783242
+      },
+      "shortwave_radiation": {
+        "min": 0.0,
+        "max": 1047.0,
+        "mean": 228.86259107468123
+      },
+      "temperature_2m": {
+        "min": -26.2,
+        "max": 25.0,
+        "mean": 1.0882285974499086
+      }
+    },
+    "manifest_sha256": "dedd1bf05114bf2d0fcbaf2c30ee9d4da2252e9be5b858d992f4eb1b5b813abe",
+    "raw_sha256": "40adf860c7abaf61850067e5f93fc3d7ac016d58801d1dda895ccde987510987",
+    "scientific_content_sha256": "15a4812ce3e62f0b2ff876e5c1cfd97015cc88ed7063191d13dffb375e22002e",
+    "scope": "Single-site request/units/calendar ingestion check; no provincial reconstruction or historical-model difference attribution"
+  },
+  "official_documentation_url": "https://open-meteo.com/en/docs/historical-weather-api",
+  "official_documentation_checked": "2026-09-22",
+  "documentation_finding": "Default Best Match combines models; explicit ERA5 or ERA5-Land is advised for long-period consistency. This does not retrospectively identify each cached hour.",
+  "errors": [],
+  "source_hashes": {
+    "work/research/analysis/build_multiyear_re_profiles.py": "5ecea85f4d2909add585b19b0bde105bc03ac796ed5af9959daede0866ad7348",
+    "work/research/analysis/run_regional_2030_s0_s3.py": "6f0de9ca21189da391f9954f50918312163c0cf4743ac50525372fb179ca3db5",
+    "work/research/analysis/run_2030_multiweather.py": "a3115eba88cf0e0301e8c85b7b12e91e9de903397e69b45218ecdfe6dc991096",
+    "work/research/analysis/run_regional_smoke_s0_s1_s2.py": "4be16907f88d9ecf89aab6a3a5cc9b3a0de31ebddea5d96e11ff233d3148f7c2",
+    "outputs/research/tables/multiyear_re_profiles_audit.json": "8ead6cbce30a5118c8a5e5870a3169117be6353eabde7e0f19ba750e19ad198c",
+    "work/research/prepared/openmeteo_sites_three_provinces.csv": "28240ccf75ff85eb0d552be2aee517f4da2d28a1ce3519ad21769701607ea77a",
+    "work/research/prepared/re_profiles_2015_2024_three_provinces.csv.gz": "ad37a2cbc10385f03173bdbae083b9c33cecdc4fedcf3d21fc6ae89212255161",
+    "outputs/research/tables/regional_2030_multiweather.csv": "76f0ba76d05e94f559d614f2d8663fe35bb1e14708eb52fabc23c79cedc9d8ab",
+    "work/research/prepared/archive_2020_source_inputs_NOT_calibrated.npz": "73d9f238a258689cb51d0befebd0f48eeef578b9b430a1360af6cd02d2d4b03f"
+  },
+  "audit_script_sha256": "775c605cbd585f51dd871d056a4a26125edc9edb35344a6b34cbda7c63365935"
+}

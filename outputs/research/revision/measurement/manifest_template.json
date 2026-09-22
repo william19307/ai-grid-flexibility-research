@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "status": "template_no_measurements",
+  "experiment_id": null,
+  "protocol_freeze_commit": null,
+  "hardware": {
+    "hardware_id": null,
+    "cpu_model": null,
+    "gpu_model": null,
+    "installed_gpu_ids": [],
+    "topology_evidence": null,
+    "software_versions": null
+  },
+  "measurement": {
+    "ac_boundary_evidence": null,
+    "meter_calibration_evidence": null,
+    "input_channels": [],
+    "facility_cooling_in_boundary": null,
+    "clock_alignment_method": null,
+    "clock_alignment_uncertainty_s": null,
+    "maximum_accepted_sample_gap_s": null,
+    "integration_rule": null
+  },
+  "protocol": {
+    "useful_work_definition": null,
+    "workload_manifest_sha256": null,
+    "control_settings": [],
+    "control_application_scope": null,
+    "common_terminal_state": null,
+    "observation_horizon_rule": null,
+    "randomization_seed": null,
+    "pilot_confirmation_split": null,
+    "sample_size_and_stopping_rule": null,
+    "quality_metric_and_noninferiority_margin": null,
+    "service_contract_or_analyst_assumption": null,
+    "service_metric_and_threshold": null,
+    "failure_and_missing_data_rule": null,
+    "primary_estimator_and_uncertainty_method": null
+  },
+  "raw_file_manifest": [],
+  "independent_review_evidence": null
+}

@@ -1,0 +1,21 @@
+{
+  "configurations": 68,
+  "candidate_deadline_conditions": 476,
+  "selection_conditions": 28,
+  "endpoint_energy_checks": 28672,
+  "joint_overhead_corner_checks": 6496,
+  "checked_with_exact_decimal_arithmetic": true,
+  "statistical_confidence_claim": false,
+  "instrumental_uncertainty_covered": false,
+  "runtime_tail_or_quality_certified": false,
+  "assumptions": [
+    "Fixed identical useful work and quality must be established separately",
+    "Common nonnegative constant idle power after completion",
+    "One job in a common observation horizon; no subsequent work or shutdown",
+    "Overhead is additional total AC energy and elapsed time not already included in the measured mode",
+    "Printed rounding intervals only, assuming conventional rounding to nearest 0.01"
+  ],
+  "input_sha256": "68d99747f08a65aefab568252a9d11457a8282f75c1e45984d09ad2d7321e0b2",
+  "source_snapshot_sha256": "4db8dfb9a61ab7512547a0bf0a75124947a2223cabbf4fa96e9d6230e201da8e",
+  "script_sha256": "85c15b1eeb76a88a0e6975832ea13d312308d569c09df9f70607f9bcb374379f"
+}
