@@ -1,0 +1,15 @@
+{
+  "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+  "packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.5"
+  },
+  "validation_sources": {
+    "validate_sequential_tasks.py": "2859b3fbd8c28fdf11257f6df86a899fa5043c10b1e0cb779bdde4ded5f9dbe3",
+    "validate_response_cost.py": "1da28608a928c6fed404099400e408b0ee01d9c436bc18e7386c6c3baa68da18"
+  },
+  "redirected_outputs_only": true,
+  "limits": "Local regression, not clean-machine rebuild"
+}

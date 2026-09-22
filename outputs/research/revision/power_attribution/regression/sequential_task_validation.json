@@ -1,0 +1,30 @@
+{
+  "status": "verified_deterministic_component_NOT_grid_research",
+  "checks": [
+    "analytic_two_slot_recovery_bound",
+    "same_total_work_different_deadline_feasibility",
+    "reject_anticipatory_service_under_power_caps",
+    "event_reduction_constrained_in_every_slot",
+    "no_dropped_or_terminal_spilled_work",
+    "idle_accounting_and_timestep_units",
+    "120_independent_exhaustive_assignment_oracles"
+  ],
+  "enumerated_oracle_cases": 120,
+  "measured_mode_scenario_cases": 256,
+  "maximum_work_error": 1.8207657603852567e-14,
+  "positive_relaxation_gap_cases": 224,
+  "assumptions": [
+    "uniform_synthetic_arrivals",
+    "analyst_deadline_windows",
+    "idle_power_zero_or_20pct_scenario_not_measured",
+    "perfect_foresight",
+    "fractional_preemptive_time_sharing",
+    "one_homogeneous_pool",
+    "no_switching_or_checkpoint_cost",
+    "hourly_average_response_not_instantaneous_firm",
+    "ASAP_EDF_baseline_not_a_settlement_baseline",
+    "no_grid_or_network_model",
+    "max_response_objective_energy_is_not_lexicographically_minimized"
+  ],
+  "model_sha256": "e305155f4b5bc78dfa8c330b880093076a33b7ea5f005ee88ffb4962ecbe71e5"
+}

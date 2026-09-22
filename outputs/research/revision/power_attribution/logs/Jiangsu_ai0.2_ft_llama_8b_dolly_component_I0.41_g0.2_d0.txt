@@ -1,0 +1,59 @@
+== Jiangsu 2030 ai=0.2 export=False runtime 2s ratio 1.18 peak 129876 committed {'winter': 92481, 'spring': 92481, 'summer': 92481, 'autumn': 92481}
+case   total_cost   investment    new_ocgt  new_onwind    new_solar  new_batt_mw  emissions_t       curtail       ai_mwh  import_mwh  export_mwh
+NOAI 5.107814e+08 0.000000e+00    0.000000         0.0     0.000000     0.000000 1.741682e+07  0.000000e+00 0.000000e+00         0.0         0.0
+  S0 6.544741e+08 1.891788e+07 9379.635965         0.0 15221.650340  1008.425203 2.018577e+07  3.793565e-17 3.584059e+06         0.0         0.0
+ S0e 6.544741e+08 1.891788e+07 9379.635965         0.0 15221.650340  1008.425203 2.018577e+07  3.845710e-17 3.584059e+06         0.0         0.0
+  S1 6.544310e+08 2.021272e+07 9954.975640         0.0 16802.466090   848.168772 2.016522e+07  2.433215e-18 3.584059e+06         0.0         0.0
+  S2 6.504417e+08 2.551174e+07 5217.918215         0.0 29513.503713    -0.000000 2.000153e+07  7.872154e-19 3.584059e+06         0.0         0.0
+S1rt 6.546037e+08 1.899779e+07 8295.829664         0.0 15221.650340  2092.231504 2.018631e+07 -3.382922e-17 3.584059e+06         0.0         0.0
+  S3 6.535935e+08 2.362841e+07 8374.775070         0.0 22606.939754  1096.826100 2.009480e+07  6.599471e-17 3.584059e+06         0.0         0.0
+S3: {'winter': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}, 'spring': {'commitment_mw': -0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'event_mc_mean': 53.5}, 'summer': {'commitment_mw': 10715.0, 'opportunity_cost': 2373621.7, 'compensation_floor': 2373621.7, 'event_mc_mean': 387.3}, 'autumn': {'commitment_mw': 3843.4, 'opportunity_cost': 608148.0, 'compensation_floor': 608148.0, 'event_mc_mean': 53.5}}
+== Jiangsu 2030 ai=0.2 export=False runtime 5s ratio 1.18 peak 129876 committed {'winter': 92481, 'spring': 92481, 'summer': 92481, 'autumn': 92481}
+case   total_cost   investment    new_ocgt  new_onwind    new_solar  new_batt_mw  emissions_t       curtail       ai_mwh  import_mwh  export_mwh
+NOAI 5.107814e+08 0.000000e+00    0.000000         0.0     0.000000     0.000000 1.741682e+07  0.000000e+00 0.000000e+00         0.0         0.0
+  S0 6.544741e+08 1.891788e+07 9379.635965         0.0 15221.650340  1008.425203 2.018577e+07  3.410624e-17 3.584059e+06         0.0         0.0
+ S0e 6.372903e+08 1.501651e+07 6728.540047         0.0 12798.321313   884.943963 2.000591e+07  3.748834e-18 3.258258e+06         0.0         0.0
+  S1 6.395080e+08 2.012267e+07 7459.536344         0.0 18518.024571  1465.139405 1.995506e+07 -3.196775e-18 3.290130e+06         0.0         0.0
+  S2 6.336200e+08 2.003415e+07 1956.171058         0.0 25337.877984    -0.000000 1.985464e+07  7.600706e-19 3.266135e+06         0.0         0.0
+S1rt 6.350747e+08 1.749951e+07 3421.149999         0.0 19622.705885   938.269563 1.993042e+07  7.144500e-17 3.267218e+06         0.0         0.0
+  S3 6.397461e+08 1.685333e+07 4009.273535         0.0 15071.865588  4632.915863 2.001805e+07  4.025509e-17 3.313097e+06         0.0         0.0
+S3: {'winter': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}, 'spring': {'commitment_mw': -0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'event_mc_mean': 53.5}, 'summer': {'commitment_mw': 7408.7, 'opportunity_cost': 3557067.6, 'compensation_floor': 3557067.6, 'event_mc_mean': 546.1}, 'autumn': {'commitment_mw': 6159.1, 'opportunity_cost': 5284671.8, 'compensation_floor': 5284671.8, 'event_mc_mean': 53.5}}
+{
+  "parameters": {
+    "province": "Jiangsu",
+    "ai_share": 0.2,
+    "workload": "ft_llama_8b_dolly",
+    "mapping": "component",
+    "node_idle": 0.41,
+    "gpu_idle": 0.2,
+    "active_overhead": 0.0
+  },
+  "power_mapping": {
+    "node_idle_ratio": 0.41,
+    "gpu_idle_ratio": 0.2,
+    "non_gpu_active_overhead": 0.0,
+    "gpu_share_of_full_node_power": 0.7375,
+    "non_gpu_active_share": 0.26249999999999996,
+    "non_gpu_idle_share": 0.26249999999999996,
+    "evidence": "component-consistent sensitivity, not calibrated measurements"
+  },
+  "cells": {
+    "C00": 143692753.7428711,
+    "C10": 126508924.26346081,
+    "C01": 139660352.74738568,
+    "C11": 122838594.38658792
+  },
+  "total_saving": 20854159.356283188,
+  "total_reduction_pct": 14.513020881763014,
+  "energy_policy_first_value": 17183829.47941029,
+  "mode_added_after_grid_value": 16821758.360797763,
+  "grid_coordination_at_full_speed_value": 4032400.995485425,
+  "grid_coordination_after_energy_policy_value": 3670329.876872897,
+  "interaction_saving": -362071.11861252785,
+  "mode_shapley_value": 17002793.920104027,
+  "grid_shapley_value": 3851365.436179161,
+  "original_order_mode_share_pct": 82.40001040479699,
+  "symmetric_mode_share_pct": 81.5319075183974,
+  "conditional_interpretation": "Shapley allocation over the specified policy matrix; not an invariant physical decomposition",
+  "finished_unix": 1790065069.883423
+}

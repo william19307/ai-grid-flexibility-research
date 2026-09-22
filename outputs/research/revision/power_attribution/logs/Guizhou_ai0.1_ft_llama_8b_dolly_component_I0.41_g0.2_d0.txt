@@ -1,0 +1,59 @@
+== Guizhou 2030 ai=0.1 export=False runtime 2s ratio 1.34 peak 41946 committed {'winter': 38801, 'spring': 27930, 'summer': 18183, 'autumn': 29144}
+case   total_cost  investment  new_ocgt  new_onwind  new_solar  new_batt_mw  emissions_t  curtail        ai_mwh  import_mwh  export_mwh
+NOAI 1.056077e+08         0.0       0.0         0.0        0.0         -0.0 3.733960e+06 0.243851      0.000000         0.0         0.0
+  S0 1.192119e+08         0.0       0.0         0.0        0.0         -0.0 4.228689e+06 0.037695 578778.989054         0.0         0.0
+ S0e 1.192119e+08         0.0       0.0         0.0        0.0         -0.0 4.228689e+06 0.037695 578778.989054         0.0         0.0
+  S1 1.191029e+08         0.0       0.0         0.0        0.0         -0.0 4.224639e+06 0.030688 578778.989054         0.0         0.0
+  S2 1.190564e+08         0.0       0.0         0.0        0.0         -0.0 4.222905e+06 0.028232 578778.989054         0.0         0.0
+S1rt 1.191155e+08         0.0       0.0         0.0        0.0         -0.0 4.225087e+06 0.030055 578778.989054         0.0         0.0
+  S3 1.191029e+08         0.0       0.0         0.0        0.0         -0.0 4.224639e+06 0.030688 578778.989054         0.0         0.0
+S3: {'winter': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}, 'spring': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}, 'summer': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}, 'autumn': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}}
+== Guizhou 2030 ai=0.1 export=False runtime 4s ratio 1.34 peak 41946 committed {'winter': 38801, 'spring': 27930, 'summer': 18183, 'autumn': 29144}
+case   total_cost  investment  new_ocgt  new_onwind  new_solar  new_batt_mw  emissions_t  curtail        ai_mwh  import_mwh  export_mwh
+NOAI 1.056077e+08         0.0       0.0         0.0        0.0         -0.0 3.733960e+06 0.243851      0.000000         0.0         0.0
+  S0 1.192119e+08         0.0       0.0         0.0        0.0         -0.0 4.228689e+06 0.037695 578778.989054         0.0         0.0
+ S0e 1.179331e+08         0.0       0.0         0.0        0.0         -0.0 4.182232e+06 0.056795 526166.356050         0.0         0.0
+  S1 1.179346e+08         0.0       0.0         0.0        0.0         -0.0 4.182172e+06 0.047200 531272.226562         0.0         0.0
+  S2 1.178029e+08         0.0       0.0         0.0        0.0         -0.0 4.177205e+06 0.035099 530708.909949         0.0         0.0
+S1rt 1.178186e+08         0.0       0.0         0.0        0.0         -0.0 4.177763e+06 0.034226 531464.354248         0.0         0.0
+  S3 1.179346e+08         0.0       0.0         0.0        0.0         -0.0 4.182172e+06 0.047200 531272.226562         0.0         0.0
+S3: {'winter': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}, 'spring': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}, 'summer': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}, 'autumn': {'commitment_mw': 0.0, 'opportunity_cost': 0.0, 'compensation_floor': 0.0, 'reason': 'no scarcity hours (marginal cost flat)'}}
+{
+  "parameters": {
+    "province": "Guizhou",
+    "ai_share": 0.1,
+    "workload": "ft_llama_8b_dolly",
+    "mapping": "component",
+    "node_idle": 0.41,
+    "gpu_idle": 0.2,
+    "active_overhead": 0.0
+  },
+  "power_mapping": {
+    "node_idle_ratio": 0.41,
+    "gpu_idle_ratio": 0.2,
+    "non_gpu_active_overhead": 0.0,
+    "gpu_share_of_full_node_power": 0.7375,
+    "non_gpu_active_share": 0.26249999999999996,
+    "non_gpu_idle_share": 0.26249999999999996,
+    "evidence": "component-consistent sensitivity, not calibrated measurements"
+  },
+  "cells": {
+    "C00": 13604233.053009003,
+    "C10": 12325450.375155702,
+    "C01": 13448696.69516559,
+    "C11": 12195248.739419773
+  },
+  "total_saving": 1408984.3135892302,
+  "total_reduction_pct": 10.356955133737502,
+  "energy_policy_first_value": 1278782.6778533012,
+  "mode_added_after_grid_value": 1253447.9557458162,
+  "grid_coordination_at_full_speed_value": 155536.35784341395,
+  "grid_coordination_after_energy_policy_value": 130201.63573592901,
+  "interaction_saving": -25334.722107484937,
+  "mode_shapley_value": 1266115.3167995587,
+  "grid_shapley_value": 142868.99678967148,
+  "original_order_mode_share_pct": 90.759184862445,
+  "symmetric_mode_share_pct": 89.86014284107048,
+  "conditional_interpretation": "Shapley allocation over the specified policy matrix; not an invariant physical decomposition",
+  "finished_unix": 1790065145.983111
+}

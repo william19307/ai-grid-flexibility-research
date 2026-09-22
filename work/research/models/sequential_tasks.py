@@ -23,7 +23,7 @@ class Job:
 def schedule(jobs: Sequence[Job], q, power, horizon: int, idle_power: float,
              dt: float = 1., prices=None, power_caps=None,
              event_slots=None, baseline_power=None, relax_windows=False,
-             service_cost_per_work=None):
+             service_cost_per_work=None, energy_limit=None):
     """Minimize energy cost, or maximize minimum per-slot event reduction.
 
 No work dropping or spilling outside horizon. Infeasibility is returned, never
@@ -71,6 +71,11 @@ comparison in which all releases/deadlines become 0/horizon.
     finite = np.flatnonzero(np.isfinite(caps))
     au = vstack([resources, pm[finite]], format='csr')
     bu = np.r_[np.ones(horizon), caps[finite]-idle_power]
+    if energy_limit is not None:
+        if not np.isfinite(energy_limit):raise ValueError('Nonfinite energy limit')
+        energy_row=csr_matrix((power[mi]-idle_power)*dt).reshape((1,n))
+        au=vstack([au,energy_row],format='csr')
+        bu=np.r_[bu,float(energy_limit)-horizon*idle_power*dt]
     c = prices[ti]*(power[mi]-idle_power)*dt + service_cost[ji,ti]*q[mi]*dt
     bounds = [(0,1)]*n
     if event:

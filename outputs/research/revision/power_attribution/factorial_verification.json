@@ -1,0 +1,13 @@
+{
+  "planned_configurations": 60,
+  "completed_configurations": 60,
+  "failed_configurations": [],
+  "completed_scenario_solves": 840,
+  "archived_implementations_verified": true,
+  "current_source_changed_since_runs": [],
+  "current_inputs_match": true,
+  "max_storage_conservation_error_mwh": 2.9103830456733704e-11,
+  "max_idle_fraction_with_unfinished_work": 1.0436096431476471e-14,
+  "max_lexicographic_energy_gap_normalized": 1.0000064776249928e-08,
+  "evidence": "conditional policy diagnostics, not whole-node measured calibration or annual reliability validation"
+}

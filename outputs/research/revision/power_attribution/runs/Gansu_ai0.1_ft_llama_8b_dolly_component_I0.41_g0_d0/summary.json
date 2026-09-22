@@ -1,0 +1,145 @@
+{
+  "parameters": {
+    "province": "Gansu",
+    "ai_share": 0.1,
+    "workload": "ft_llama_8b_dolly",
+    "mapping": "component",
+    "node_idle": 0.41,
+    "gpu_idle": 0.0,
+    "active_overhead": 0.0
+  },
+  "power_mapping": {
+    "node_idle_ratio": 0.41,
+    "gpu_idle_ratio": 0.0,
+    "non_gpu_active_overhead": 0.0,
+    "gpu_share_of_full_node_power": 0.5900000000000001,
+    "non_gpu_active_share": 0.4099999999999999,
+    "non_gpu_idle_share": 0.4099999999999999,
+    "evidence": "component-consistent sensitivity, not calibrated measurements"
+  },
+  "mapped_modes": [
+    {
+      "throughput": 0.2408450704225352,
+      "gpu_power_ratio": 0.2888861421110347,
+      "node_power_ratio": 0.5804428238455104
+    },
+    {
+      "throughput": 0.8070422535211268,
+      "gpu_power_ratio": 0.5673948393512408,
+      "node_power_ratio": 0.744762955217232
+    },
+    {
+      "throughput": 0.9042253521126762,
+      "gpu_power_ratio": 0.7062712470738415,
+      "node_power_ratio": 0.8267000357735664
+    },
+    {
+      "throughput": 0.9507042253521129,
+      "gpu_power_ratio": 0.8340971398064302,
+      "node_power_ratio": 0.9021173124857937
+    },
+    {
+      "throughput": 0.9802816901408452,
+      "gpu_power_ratio": 0.9275837555435325,
+      "node_power_ratio": 0.9572744157706842
+    },
+    {
+      "throughput": 1.0,
+      "gpu_power_ratio": 1.0,
+      "node_power_ratio": 1.0
+    }
+  ],
+  "cells": {
+    "C00": 9663509.31826803,
+    "C10": 9071677.349792033,
+    "C01": 9662349.185284168,
+    "C11": 9070887.038128018
+  },
+  "total_saving": 592622.2801400125,
+  "total_reduction_pct": 6.132578348320224,
+  "energy_policy_first_value": 591831.9684759974,
+  "mode_added_after_grid_value": 591462.1471561491,
+  "grid_coordination_at_full_speed_value": 1160.1329838633537,
+  "grid_coordination_after_energy_policy_value": 790.3116640150547,
+  "interaction_saving": -369.821319848299,
+  "mode_shapley_value": 591647.0578160733,
+  "grid_shapley_value": 975.2223239392042,
+  "original_order_mode_share_pct": 99.86664158765203,
+  "symmetric_mode_share_pct": 99.83543947694494,
+  "baseline_audits": [
+    {
+      "energy_optimum_normalized": 137.58832767279884,
+      "energy_excess_normalized": 0.0,
+      "max_idle_fraction_with_released_unfinished_work": 2.220446049250313e-16,
+      "max_overdue_work": 3.5882755100580255e-15,
+      "max_remaining_work": 2.886579864025407e-15,
+      "max_pool_fraction": 1.0000000000000024,
+      "policy": "lexicographic minimum-energy then earliest-work; EDF relabelled"
+    },
+    {
+      "energy_optimum_normalized": 137.94015914985317,
+      "energy_excess_normalized": -2.842170943040401e-14,
+      "max_idle_fraction_with_released_unfinished_work": 2.220446049250313e-16,
+      "max_overdue_work": 4.653395724307785e-16,
+      "max_remaining_work": 4.440892098500626e-16,
+      "max_pool_fraction": 1.000000000000002,
+      "policy": "lexicographic minimum-energy then earliest-work; EDF relabelled"
+    },
+    {
+      "energy_optimum_normalized": 138.264,
+      "energy_excess_normalized": 0.0,
+      "max_idle_fraction_with_released_unfinished_work": 2.220446049250313e-16,
+      "max_overdue_work": 6.936725499562257e-16,
+      "max_remaining_work": 3.0531133177191805e-16,
+      "max_pool_fraction": 1.0000000000000002,
+      "policy": "lexicographic minimum-energy then earliest-work; EDF relabelled"
+    },
+    {
+      "energy_optimum_normalized": 138.12927211478734,
+      "energy_excess_normalized": 0.0,
+      "max_idle_fraction_with_released_unfinished_work": 1.1102230246251565e-16,
+      "max_overdue_work": 3.635058833800775e-16,
+      "max_remaining_work": 3.3306690738754696e-16,
+      "max_pool_fraction": 1.0,
+      "policy": "lexicographic minimum-energy then earliest-work; EDF relabelled"
+    },
+    {
+      "energy_optimum_normalized": 130.54017632234542,
+      "energy_excess_normalized": 1.0000007932831068e-08,
+      "max_idle_fraction_with_released_unfinished_work": 1.1102230246251565e-16,
+      "max_overdue_work": 5.833875049710002e-15,
+      "max_remaining_work": 5.329070518200751e-15,
+      "max_pool_fraction": 1.0000000000000002,
+      "policy": "lexicographic minimum-energy then earliest-work; EDF relabelled"
+    },
+    {
+      "energy_optimum_normalized": 133.18141307373227,
+      "energy_excess_normalized": 1.0000036354540498e-08,
+      "max_idle_fraction_with_released_unfinished_work": 2.220446049250313e-16,
+      "max_overdue_work": 1.1594458032559984e-15,
+      "max_remaining_work": 8.795048023202412e-16,
+      "max_pool_fraction": 1.0000000000002252,
+      "policy": "lexicographic minimum-energy then earliest-work; EDF relabelled"
+    },
+    {
+      "energy_optimum_normalized": 123.47367645021961,
+      "energy_excess_normalized": 1.0000007932831068e-08,
+      "max_idle_fraction_with_released_unfinished_work": 1.1102230246251565e-16,
+      "max_overdue_work": 5.480994347620283e-15,
+      "max_remaining_work": 5.329070518200751e-15,
+      "max_pool_fraction": 1.0000000000000002,
+      "policy": "lexicographic minimum-energy then earliest-work; EDF relabelled"
+    },
+    {
+      "energy_optimum_normalized": 131.12700586359892,
+      "energy_excess_normalized": 1.0000007932831068e-08,
+      "max_idle_fraction_with_released_unfinished_work": 2.220446049250313e-16,
+      "max_overdue_work": 4.245844127670484e-15,
+      "max_remaining_work": 3.3306690738754696e-15,
+      "max_pool_fraction": 1.0000000000000058,
+      "policy": "lexicographic minimum-energy then earliest-work; EDF relabelled"
+    }
+  ],
+  "conditional_interpretation": "Shapley allocation over the specified policy matrix; not an invariant physical decomposition",
+  "finished_unix": 1790065107.408374
+}

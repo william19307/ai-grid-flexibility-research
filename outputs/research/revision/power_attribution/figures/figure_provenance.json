@@ -1,0 +1,11 @@
+{
+  "source": "outputs/research/revision/power_attribution/factorial_results.csv",
+  "sha256": "68559a74bb47efd5e0054f2569942401f4241739ad8f631a34c182e289b30cd8",
+  "panels": {
+    "a": "Jiangsu ai_share=0.2, 8 configurations, central paired mappings, total_reduction_pct",
+    "b": "same rows as a; symmetric_mode_share_pct",
+    "c": "ft_llama_8b_dolly, 3 provinces, central paired mappings",
+    "d": "Jiangsu ft_llama_8b_dolly, new_gas_S0/S0e/S2_MW divided by 1000"
+  },
+  "intervals": "not estimated; displayed pairs are alternative assumptions, not confidence bounds"
+}

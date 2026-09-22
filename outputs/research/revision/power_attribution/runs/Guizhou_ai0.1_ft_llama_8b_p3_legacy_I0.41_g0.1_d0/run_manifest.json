@@ -1,0 +1,44 @@
+{
+  "parameters": {
+    "province": "Guizhou",
+    "ai_share": 0.1,
+    "workload": "ft_llama_8b_p3",
+    "mapping": "legacy",
+    "node_idle": 0.41,
+    "gpu_idle": 0.1,
+    "active_overhead": 0.0
+  },
+  "started_unix": 1790065113.434287,
+  "source_sha256": {
+    "work/research/analysis/run_power_attribution_revision.py": "508738ab2a9f0e83e29d1484f2e67b76f1571c0a7b7bacab7608e33d9ef60528",
+    "work/research/models/energy_dispatch.py": "f598afdd941cab18ff38dfa953cdc6a2bce9382c7b3059adab5321dea918cfa3",
+    "work/research/models/node_power_mapping.py": "7391aa57403d31d5dc8ebaa0debe7e9415cbab9b99aa207046398100784c3024",
+    "work/research/models/sequential_tasks.py": "e305155f4b5bc78dfa8c330b880093076a33b7ea5f005ee88ffb4962ecbe71e5",
+    "work/research/models/coupled_grid_compute.py": "8f74933f54b6cc196923437d520fea48bee56c022abda59a3eec167c9467740c",
+    "work/research/models/response_cost.py": "d75a47d0f6bb53640be0a385e8eb48e4898fd6c5391e57226b4300e3331339ac",
+    "work/research/models/hydro_fleet.py": "f13720783d8e24ba52659aba7a965b98fd4cc69844b8b3b581f5d4b67e1109c8",
+    "work/research/analysis/run_regional_smoke_s0_s1_s2.py": "4be16907f88d9ecf89aab6a3a5cc9b3a0de31ebddea5d96e11ff233d3148f7c2",
+    "work/research/analysis/run_regional_2030_s0_s3.py": "6f0de9ca21189da391f9954f50918312163c0cf4743ac50525372fb179ca3db5"
+  },
+  "input_sha256": {
+    "work/research/prepared/load_2020_annual_anchored_hourly_shape_UNVALIDATED.npz": "86bc5a2ad0c1028cfd9420431e4d75283d2842be958f1c4d3bc092cbc85908f6",
+    "work/research/prepared/archive_2020_source_inputs_NOT_calibrated.npz": "73d9f238a258689cb51d0befebd0f48eeef578b9b430a1360af6cd02d2d4b03f",
+    "work/research/prepared/helios_completed_gpu_jobs_sample.csv.gz": "b69130a5edf2b189f633c9e84190f5c82dd4f941dabc378afa357a75aa5760ed",
+    "work/research/prepared/HVDC_source_list_rebuilt_UNVERIFIED_GW.csv": "52772f2f5bb6c9d0556e0e9cbe0e4ec8f5fa5147a074cd6a81a73b8786cdb120",
+    "work/research/prepared/HVAC_source_list_rebuilt_UNVERIFIED_GW.csv": "88a029db45b88ffa2d7c03cc011379bddef371836d2d0150dfb8488f90015ff9",
+    "outputs/research/tables/dvfs_measured_and_derived.csv": "26a173f809ba03262a9d19f2b73079fa6b172f6c5fe68bf8abd5ffbd7af6e742",
+    "outputs/research/tables/gem_fleet_three_provinces_2020_2030.csv": "fb70c60e2cfb51045d531e24b3355a9233848917b175876e1ad8187bdeb40cb8",
+    "outputs/research/tables/gem_fleet_all_provinces_2020_2030.csv": "255776b8ddad06467ab90bfc2241d9f1d0e8a2cc90c02dba6309f409714bd315",
+    "work/research/sources/zenodo_13987282/selected/data/load/Province_Load_2020_2060.csv": "1eaf85b782768bc83403e333ae0d009f8cbfbb7c5ca451e3b9650803eaa43888",
+    "work/research/sources/zenodo_13987282/selected/data/costs/costs_2030.csv": "365d17789eb723e3f687378bcb9ee21a837c752adfd526d49172a065c58d9ac0",
+    "work/research/sources/zenodo_13987282/selected/data/existing_infrastructure/China_current_capacity.csv": "8bf6aa522556595d8b91bab0f421c175db7fd717810587a02f809a70aca39290",
+    "work/research/sources/zenodo_13987282/selected/data/hydro/dams_large.csv": "dae5126eb859ffcb83a3fa4c5a8a63a82906f2e515137b86d7fe3e1c9ff0ef1f",
+    "outputs/research/revision/hydro/hydro_2030_by_technology.csv": "9589e848ab44e811b402ef2800bdc867f6c9994d1e8341543b11be8f2965f770"
+  },
+  "limitations": [
+    "Power component assumptions are not measured calibration.",
+    "Other original service, NOAI, representative-week and reservoir assumptions remain.",
+    "EDF baseline has full workload foresight; no grid price signal.",
+    "Four cells compare operational policies, not a causal claim of unchanged execution timing."
+  ]
+}

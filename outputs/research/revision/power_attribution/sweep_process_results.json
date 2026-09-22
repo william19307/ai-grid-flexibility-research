@@ -1,0 +1,842 @@
+[
+  {
+    "name": "Jiangsu_ai0.2_ft_llama_8b_dolly_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "ft_llama_8b_dolly",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "resumed_verified": true
+  },
+  {
+    "name": "Jiangsu_ai0.2_ft_llama_8b_dolly_component_I0.41_g0.1_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "ft_llama_8b_dolly",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "resumed_verified": true
+  },
+  {
+    "name": "Jiangsu_ai0.2_ft_llama_8b_p3_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "ft_llama_8b_p3",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_ft_llama_8b_p3_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_ft_llama_8b_p3_component_I0.41_g0.1_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "ft_llama_8b_p3",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_ft_llama_8b_p3_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_infer_llama_8b_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "infer_llama_8b",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_infer_llama_8b_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_infer_llama_8b_component_I0.41_g0.1_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "infer_llama_8b",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_infer_llama_8b_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_infer_llama_8b_32g_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "infer_llama_8b_32g",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_infer_llama_8b_32g_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_infer_llama_8b_32g_component_I0.41_g0.1_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "infer_llama_8b_32g",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_infer_llama_8b_32g_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_infer_llama_8b_48g_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "infer_llama_8b_48g",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_infer_llama_8b_48g_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_infer_llama_8b_48g_component_I0.41_g0.1_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "infer_llama_8b_48g",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_infer_llama_8b_48g_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_pt_mpt_13b_lg_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "pt_mpt_13b_lg",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_pt_mpt_13b_lg_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_pt_mpt_13b_lg_component_I0.41_g0.1_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "pt_mpt_13b_lg",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_pt_mpt_13b_lg_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_pt_mpt_13b_sm_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "pt_mpt_13b_sm",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_pt_mpt_13b_sm_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_pt_mpt_13b_sm_component_I0.41_g0.1_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "pt_mpt_13b_sm",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_pt_mpt_13b_sm_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_pt_mpt_7b_fast_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "pt_mpt_7b_fast",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_pt_mpt_7b_fast_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_pt_mpt_7b_fast_component_I0.41_g0.1_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "pt_mpt_7b_fast",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_pt_mpt_7b_fast_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_ft_llama_8b_dolly_component_I0.41_g0_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "ft_llama_8b_dolly",
+      "component",
+      0.41,
+      0.0,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_ft_llama_8b_dolly_component_I0.41_g0_d0.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_ft_llama_8b_dolly_component_I0.41_g0.2_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "ft_llama_8b_dolly",
+      "component",
+      0.41,
+      0.2,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_ft_llama_8b_dolly_component_I0.41_g0.2_d0.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_ft_llama_8b_dolly_component_I0.41_g0.1_d0.1",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "ft_llama_8b_dolly",
+      "component",
+      0.41,
+      0.1,
+      0.1
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_ft_llama_8b_dolly_component_I0.41_g0.1_d0.1.txt"
+  },
+  {
+    "name": "Jiangsu_ai0.2_ft_llama_8b_dolly_component_I0.25_g0.1_d0",
+    "case": [
+      "Jiangsu",
+      0.2,
+      "ft_llama_8b_dolly",
+      "component",
+      0.25,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Jiangsu_ai0.2_ft_llama_8b_dolly_component_I0.25_g0.1_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_ft_llama_8b_dolly_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "ft_llama_8b_dolly",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_ft_llama_8b_dolly_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_ft_llama_8b_dolly_component_I0.41_g0.1_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "ft_llama_8b_dolly",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_ft_llama_8b_dolly_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_ft_llama_8b_p3_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "ft_llama_8b_p3",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_ft_llama_8b_p3_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_ft_llama_8b_p3_component_I0.41_g0.1_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "ft_llama_8b_p3",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_ft_llama_8b_p3_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_infer_llama_8b_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "infer_llama_8b",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_infer_llama_8b_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_infer_llama_8b_component_I0.41_g0.1_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "infer_llama_8b",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_infer_llama_8b_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_infer_llama_8b_32g_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "infer_llama_8b_32g",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_infer_llama_8b_32g_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_infer_llama_8b_32g_component_I0.41_g0.1_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "infer_llama_8b_32g",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_infer_llama_8b_32g_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_infer_llama_8b_48g_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "infer_llama_8b_48g",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_infer_llama_8b_48g_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_infer_llama_8b_48g_component_I0.41_g0.1_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "infer_llama_8b_48g",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_infer_llama_8b_48g_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_pt_mpt_13b_lg_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "pt_mpt_13b_lg",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_pt_mpt_13b_lg_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_pt_mpt_13b_lg_component_I0.41_g0.1_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "pt_mpt_13b_lg",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_pt_mpt_13b_lg_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_pt_mpt_13b_sm_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "pt_mpt_13b_sm",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_pt_mpt_13b_sm_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_pt_mpt_13b_sm_component_I0.41_g0.1_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "pt_mpt_13b_sm",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_pt_mpt_13b_sm_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_pt_mpt_7b_fast_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "pt_mpt_7b_fast",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_pt_mpt_7b_fast_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_pt_mpt_7b_fast_component_I0.41_g0.1_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "pt_mpt_7b_fast",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_pt_mpt_7b_fast_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_ft_llama_8b_dolly_component_I0.41_g0_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "ft_llama_8b_dolly",
+      "component",
+      0.41,
+      0.0,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_ft_llama_8b_dolly_component_I0.41_g0_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_ft_llama_8b_dolly_component_I0.41_g0.2_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "ft_llama_8b_dolly",
+      "component",
+      0.41,
+      0.2,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_ft_llama_8b_dolly_component_I0.41_g0.2_d0.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_ft_llama_8b_dolly_component_I0.41_g0.1_d0.1",
+    "case": [
+      "Gansu",
+      0.1,
+      "ft_llama_8b_dolly",
+      "component",
+      0.41,
+      0.1,
+      0.1
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_ft_llama_8b_dolly_component_I0.41_g0.1_d0.1.txt"
+  },
+  {
+    "name": "Gansu_ai0.1_ft_llama_8b_dolly_component_I0.25_g0.1_d0",
+    "case": [
+      "Gansu",
+      0.1,
+      "ft_llama_8b_dolly",
+      "component",
+      0.25,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Gansu_ai0.1_ft_llama_8b_dolly_component_I0.25_g0.1_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_ft_llama_8b_dolly_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "ft_llama_8b_dolly",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_ft_llama_8b_dolly_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_ft_llama_8b_dolly_component_I0.41_g0.1_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "ft_llama_8b_dolly",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_ft_llama_8b_dolly_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_ft_llama_8b_p3_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "ft_llama_8b_p3",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_ft_llama_8b_p3_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_ft_llama_8b_p3_component_I0.41_g0.1_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "ft_llama_8b_p3",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_ft_llama_8b_p3_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_infer_llama_8b_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "infer_llama_8b",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_infer_llama_8b_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_infer_llama_8b_component_I0.41_g0.1_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "infer_llama_8b",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_infer_llama_8b_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_infer_llama_8b_32g_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "infer_llama_8b_32g",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_infer_llama_8b_32g_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_infer_llama_8b_32g_component_I0.41_g0.1_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "infer_llama_8b_32g",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_infer_llama_8b_32g_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_infer_llama_8b_48g_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "infer_llama_8b_48g",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_infer_llama_8b_48g_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_infer_llama_8b_48g_component_I0.41_g0.1_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "infer_llama_8b_48g",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_infer_llama_8b_48g_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_pt_mpt_13b_lg_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "pt_mpt_13b_lg",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_pt_mpt_13b_lg_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_pt_mpt_13b_lg_component_I0.41_g0.1_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "pt_mpt_13b_lg",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_pt_mpt_13b_lg_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_pt_mpt_13b_sm_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "pt_mpt_13b_sm",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_pt_mpt_13b_sm_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_pt_mpt_13b_sm_component_I0.41_g0.1_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "pt_mpt_13b_sm",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_pt_mpt_13b_sm_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_pt_mpt_7b_fast_legacy_I0.41_g0.1_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "pt_mpt_7b_fast",
+      "legacy",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_pt_mpt_7b_fast_legacy_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_pt_mpt_7b_fast_component_I0.41_g0.1_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "pt_mpt_7b_fast",
+      "component",
+      0.41,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_pt_mpt_7b_fast_component_I0.41_g0.1_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_ft_llama_8b_dolly_component_I0.41_g0_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "ft_llama_8b_dolly",
+      "component",
+      0.41,
+      0.0,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_ft_llama_8b_dolly_component_I0.41_g0_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_ft_llama_8b_dolly_component_I0.41_g0.2_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "ft_llama_8b_dolly",
+      "component",
+      0.41,
+      0.2,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_ft_llama_8b_dolly_component_I0.41_g0.2_d0.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_ft_llama_8b_dolly_component_I0.41_g0.1_d0.1",
+    "case": [
+      "Guizhou",
+      0.1,
+      "ft_llama_8b_dolly",
+      "component",
+      0.41,
+      0.1,
+      0.1
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_ft_llama_8b_dolly_component_I0.41_g0.1_d0.1.txt"
+  },
+  {
+    "name": "Guizhou_ai0.1_ft_llama_8b_dolly_component_I0.25_g0.1_d0",
+    "case": [
+      "Guizhou",
+      0.1,
+      "ft_llama_8b_dolly",
+      "component",
+      0.25,
+      0.1,
+      0.0
+    ],
+    "exit_code": 0,
+    "log": "outputs/research/revision/power_attribution/logs/Guizhou_ai0.1_ft_llama_8b_dolly_component_I0.25_g0.1_d0.txt"
+  }
+]
