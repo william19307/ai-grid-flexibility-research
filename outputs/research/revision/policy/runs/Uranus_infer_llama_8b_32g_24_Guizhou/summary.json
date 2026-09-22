@@ -1,0 +1,40 @@
+{
+  "run": "Uranus_infer_llama_8b_32g_24_Guizhou",
+  "cluster": "Uranus",
+  "start": "2020-04-06",
+  "workload": "infer_llama_8b_32g",
+  "slack": 24,
+  "tariff": "Guizhou",
+  "status": "constructed_pending_independent_verification",
+  "jobs": 11521,
+  "runtime_s": 24.951035976409912,
+  "total_saving": 41639.94445725292,
+  "mode_shapley": 30516.822365808897,
+  "start_shapley": 11123.12209144402,
+  "interaction_saving": -10938.17541711175,
+  "mode_share_pct": 73.2873752920999,
+  "mode_first": 35985.91007436477,
+  "mode_last": 25047.734657253022,
+  "start_first": 16592.209799999895,
+  "start_last": 5654.034382888145,
+  "optimal_mode_share_lower_pct": 67.67174368200298,
+  "optimal_mode_share_upper_pct": 74.0730746903362,
+  "upper_incremental_bill": {
+    "C00": 94009.06945,
+    "C10": 58023.15937563522,
+    "C01": 77416.8596500001,
+    "C11": 52369.12499274708
+  },
+  "lower_incremental_bill": {
+    "C00": 94009.06945,
+    "C10": 57368.829789582094,
+    "C01": 74391.2449000001,
+    "C11": 47697.60800368484
+  },
+  "global_optimum_mode_share_bracket": {
+    "lower_pct": 67.67174368200298,
+    "upper_pct": 74.0730746903362,
+    "reason": "Certified interval for globally optimal capability allocation, conditional on cost bounds and this policy matrix; not a confidence interval"
+  },
+  "seed_C11": "C10"
+}

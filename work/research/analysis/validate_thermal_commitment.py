@@ -7,13 +7,14 @@ using the MILP's matrix construction. These are mathematical tests, not fleet da
 """
 from pathlib import Path
 from dataclasses import replace
-import itertools, json, hashlib, sys
+import itertools, json, hashlib, sys, argparse
 import numpy as np
 ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT/'work/research/models'))
 from coupled_grid_compute import Generator, Scenario, Storage, ComputePool, Batch, Reservoir, Line, solve
 from thermal_commitment import ThermalCommitment
-OUT=ROOT/'outputs/research/revision/commitment/validation'
+parser=argparse.ArgumentParser();parser.add_argument('--output-dir',type=Path,default=ROOT/'outputs/research/revision/commitment/validation');args=parser.parse_args()
+OUT=args.output_dir
 OUT.mkdir(parents=True,exist_ok=True)
 checks=[]; errors=[]
 

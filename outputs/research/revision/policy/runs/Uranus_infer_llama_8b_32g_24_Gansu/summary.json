@@ -1,0 +1,40 @@
+{
+  "run": "Uranus_infer_llama_8b_32g_24_Gansu",
+  "cluster": "Uranus",
+  "start": "2020-04-06",
+  "workload": "infer_llama_8b_32g",
+  "slack": 24,
+  "tariff": "Gansu",
+  "status": "constructed_pending_independent_verification",
+  "jobs": 11521,
+  "runtime_s": 23.369588136672974,
+  "total_saving": 41065.88591103791,
+  "mode_shapley": 33155.55362497724,
+  "start_shapley": 7910.332286060671,
+  "interaction_saving": -7334.487927878654,
+  "mode_share_pct": 80.73746100791048,
+  "mode_first": 36822.79758891656,
+  "mode_last": 29488.309661037914,
+  "start_first": 11577.576249999998,
+  "start_last": 4243.088322121352,
+  "optimal_mode_share_lower_pct": 73.8648995483208,
+  "optimal_mode_share_upper_pct": 81.47214533155018,
+  "upper_incremental_bill": {
+    "C00": 95265.06,
+    "C10": 58442.26241108344,
+    "C01": 83687.48375,
+    "C11": 54199.174088962085
+  },
+  "lower_incremental_bill": {
+    "C00": 95265.06,
+    "C10": 57838.85315877911,
+    "C01": 79955.01299999999,
+    "C11": 50193.11124664721
+  },
+  "global_optimum_mode_share_bracket": {
+    "lower_pct": 73.8648995483208,
+    "upper_pct": 81.47214533155018,
+    "reason": "Certified interval for globally optimal capability allocation, conditional on cost bounds and this policy matrix; not a confidence interval"
+  },
+  "seed_C11": "C10"
+}

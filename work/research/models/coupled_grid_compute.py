@@ -116,12 +116,15 @@ class Matrix:
 
 def solve(nodes,scenarios,generators,lines=(),storage=(),pools=(),dt=1.,
           fixed_compute=None,expected_unserved_limit_mwh=0.,unserved_cost=10000.,
-          emissions_limit_t=None,reservoirs=(),commitments=(),milp_time_limit_s=120.):
+          emissions_limit_t=None,reservoirs=(),commitments=(),milp_time_limit_s=120.,external_fixed_load=None):
     """Optimize shared investment and scenario dispatch.
 
 fixed_compute[scenario][pool] can fix a *verified* task-feasible power sequence.
 The task variables and exact per-batch work constraints remain in that solve,
 so an infeasible externally supplied power trajectory is rejected.
+external_fixed_load adds separately verified mandatory power at each node. It
+does not create fluid task variables and cannot be shed as non-compute load; the
+caller must supply its scheduling certificate and power-boundary assumptions.
     """
     nodes=list(nodes);scenarios=list(scenarios);generators=list(generators);lines=list(lines);storage=list(storage);pools=list(pools)
     reservoirs=list(reservoirs)
@@ -142,6 +145,13 @@ so an infeasible externally supplied power trajectory is rejected.
         for a in s.load_mw.values():
             a=np.asarray(a,float)
             if a.shape!=(T,) or not np.isfinite(a).all() or (a<0).any():raise ValueError('Invalid non-compute load')
+    if external_fixed_load is not None:
+        if set(external_fixed_load)!={s.name for s in scenarios}:raise ValueError('External power must cover exactly all scenarios')
+        for name,node_power in external_fixed_load.items():
+            if set(node_power)!=set(nodes):raise ValueError('External power must cover exactly all nodes')
+            for values in node_power.values():
+                a=np.asarray(values,float)
+                if a.shape!=(T,) or not np.isfinite(a).all() or (a<0).any():raise ValueError('Invalid external fixed power')
     for collection in [generators,lines,storage,pools,reservoirs]:
         if len({a.name for a in collection})!=len(collection):raise ValueError('Asset names must be unique within type')
     scenario_names={s.name for s in scenarios}
@@ -200,7 +210,8 @@ so an infeasible externally supplied power trajectory is rejected.
     result_indices={};eens_row={};co2_row={};service_indices=[];op_indices=[]
     for s in scenarios:
         probability=s.probability;balances={(n,t):{} for n in nodes for t in range(T)}
-        rhs={(n,t):float(s.load_mw[n][t]) for n in nodes for t in range(T)}
+        external={n:np.zeros(T) if external_fixed_load is None else np.asarray(external_fixed_load[s.name][n],float) for n in nodes}
+        rhs={(n,t):float(s.load_mw[n][t]+external[n][t]) for n in nodes for t in range(T)}
         ix={'generation':{},'unserved':{},'line_forward':{},'line_reverse':{},'charge':{},'discharge':{},'soc':{},'compute':{},'tasks':{},'balance_rows':{},'commitment':{}}
         ix.update({'hydro_generation':{},'hydro_spillage_hm3_per_hour':{},'hydro_volume_hm3':{}})
         for n in nodes:
@@ -329,6 +340,7 @@ so an infeasible externally supplied power trajectory is rejected.
          'variables':len(x),'equalities':ae.shape[0],'inequalities':au.shape[0], 'scenarios':{}}
     for s in scenarios:
         ix=result_indices[s.name];r={}
+        r['external_fixed_load_mw']={n:np.zeros(T).tolist() if external_fixed_load is None else list(map(float,external_fixed_load[s.name][n])) for n in nodes}
         for key in ['generation','unserved','line_forward','line_reverse','charge','discharge','soc','hydro_generation','hydro_spillage_hm3_per_hour','hydro_volume_hm3']:
             r[key]={name:x[ids].tolist() for name,ids in ix[key].items()}
         r['compute_power_mw']={};r['completed_work']={};r['task_allocations']={}

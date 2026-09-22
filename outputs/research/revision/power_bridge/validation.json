@@ -1,0 +1,54 @@
+{
+  "checks": [
+    "idle_active_endpoints_and_variable_capacity",
+    "GPU_identity",
+    "node_boundary_savings_and_replica_scaling",
+    "explicit_unchanged_trace_clock",
+    "invalid_boundary_and_replication_inputs_rejected",
+    "invalid_resource_capacity_and_power_bound_rejected",
+    "external_AI_cannot_be_shed_as_nonAI",
+    "mandatory_power_capacity_energy_and_no_surrogate_tasks",
+    "missing_misaligned_nonfinite_external_input_rejected",
+    "reject_modified_verified_hourly_profiles.csv.gz",
+    "reject_modified_C11.csv.gz",
+    "four_certified_real_trajectories_joint_MILP_analytic_cost"
+  ],
+  "number_of_checks": 12,
+  "certified_case": "Earth_ft_llama_8b_dolly_6_Jiangsu",
+  "upstream_proof": {
+    "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+    "case_certificate_sha256": "d817a6b8ef356eec7a4f2b9b1b08e2258e8f855e550544a2e614046ddc18e0c6",
+    "profile_sha256": "5a424856de5b80aa22462090eda25dc86784d7d3d63d1e216ca0da7c99e36f0b",
+    "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+    "upstream_inputs_verified": 13
+  },
+  "assumptions": {
+    "replicas": 1,
+    "full_active_kw_per_gpu": 0.5,
+    "node_idle_ratio": 0.41,
+    "gpu_idle_ratio": 0.1,
+    "non_gpu_active_overhead": 0.0,
+    "time_zone_assumption": "Asia/Shanghai",
+    "mapping": {
+      "node_idle_ratio": 0.41,
+      "gpu_idle_ratio": 0.1,
+      "non_gpu_active_overhead": 0.0,
+      "gpu_share_of_full_node_power": 0.6555555555555557,
+      "non_gpu_active_share": 0.34444444444444433,
+      "non_gpu_idle_share": 0.34444444444444433,
+      "evidence": "component-consistent sensitivity, not calibrated measurements"
+    },
+    "evidence": "Assumed homogeneous power boundary and synchronous replicas; not measured facility load",
+    "service_scope": "Original verified gangs per independent replica; same jobs, background and 192-hour tail",
+    "geography": "Province pairing is a scenario, not the observed cluster location"
+  },
+  "maximum_independent_power_balance_error_mw": 0,
+  "evidence": "Bridge and analytic integration validation, not measured facility power or provincial grid benefits",
+  "source_sha256": {
+    "work/research/analysis/validate_verified_power_bridge.py": "8a614ee6671a0c9c12e7d1bebb4299eec79f07daad793e50ba3dbf8b1668b467",
+    "work/research/models/verified_power_bridge.py": "f90f3388b8ada6ea6bb7358ff63a1391d5eeeb0b5a3abec58b1098b2de3debb1",
+    "work/research/models/node_power_mapping.py": "7391aa57403d31d5dc8ebaa0debe7e9415cbab9b99aa207046398100784c3024",
+    "work/research/models/coupled_grid_compute.py": "3ac3731ef17e63befba2598fa81a538d5e138e2bd6a321614da9af030bb6fbe2",
+    "work/research/models/thermal_commitment.py": "bc8a21824dbb43c0e8108fc52b2e45566e771d85d81275fe1e3df7df75a98d0b"
+  }
+}

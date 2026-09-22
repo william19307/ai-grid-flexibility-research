@@ -1,0 +1,189 @@
+{
+  "two_hour_task_case": {
+    "rigid": {
+      "feasible": true,
+      "total_cost": 13.0,
+      "cost_components": {
+        "investment": 10.0,
+        "operating": 3.0,
+        "service_delay": 0.0,
+        "unserved_penalty": 0.0
+      },
+      "new_generator_mw": {
+        "solar": 0.0,
+        "firm": 1.0
+      },
+      "new_line_mw": {},
+      "new_storage_power_mw": {},
+      "new_storage_energy_mwh": {},
+      "expected_unserved_mwh": 0.0,
+      "expected_emissions_t": 1.0,
+      "max_equality_residual": 0.0,
+      "max_inequality_violation": 0.0,
+      "solver_type": "LP",
+      "solver_status": 0,
+      "mip_gap": null,
+      "mip_dual_bound": null,
+      "variables": 10,
+      "equalities": 5,
+      "inequalities": 7,
+      "scenarios": {
+        "s": {
+          "external_fixed_load_mw": {
+            "A": [
+              0.0,
+              0.0
+            ]
+          },
+          "generation": {
+            "solar": [
+              0.0,
+              -0.0
+            ],
+            "firm": [
+              0.0,
+              1.0
+            ]
+          },
+          "unserved": {
+            "A": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_forward": {},
+          "line_reverse": {},
+          "charge": {},
+          "discharge": {},
+          "soc": {},
+          "hydro_generation": {},
+          "hydro_spillage_hm3_per_hour": {},
+          "hydro_volume_hm3": {},
+          "compute_power_mw": {
+            "p": [
+              0.0,
+              1.0
+            ]
+          },
+          "completed_work": {
+            "p": {
+              "j": 1.0
+            }
+          },
+          "task_allocations": {
+            "p": [
+              {
+                "batch": "j",
+                "slot": 1,
+                "mode": 0,
+                "pool_fraction": 1.0
+              }
+            ]
+          },
+          "unit_commitment": {},
+          "terminal_unit_state": {},
+          "nodal_balance_marginal_cost": {
+            "A": [
+              -0.0,
+              13.0
+            ]
+          },
+          "simultaneous_storage_slots": {}
+        }
+      }
+    },
+    "coordinated": {
+      "feasible": true,
+      "total_cost": 0.0,
+      "cost_components": {
+        "investment": 0.0,
+        "operating": 0.0,
+        "service_delay": 0.0,
+        "unserved_penalty": 0.0
+      },
+      "new_generator_mw": {
+        "solar": 0.0,
+        "firm": 0.0
+      },
+      "new_line_mw": {},
+      "new_storage_power_mw": {},
+      "new_storage_energy_mwh": {},
+      "expected_unserved_mwh": 0.0,
+      "expected_emissions_t": 0.0,
+      "max_equality_residual": 0.0,
+      "max_inequality_violation": 0.0,
+      "solver_type": "LP",
+      "solver_status": 0,
+      "mip_gap": null,
+      "mip_dual_bound": null,
+      "variables": 10,
+      "equalities": 3,
+      "inequalities": 7,
+      "scenarios": {
+        "s": {
+          "external_fixed_load_mw": {
+            "A": [
+              0.0,
+              0.0
+            ]
+          },
+          "generation": {
+            "solar": [
+              1.0,
+              0.0
+            ],
+            "firm": [
+              0.0,
+              0.0
+            ]
+          },
+          "unserved": {
+            "A": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_forward": {},
+          "line_reverse": {},
+          "charge": {},
+          "discharge": {},
+          "soc": {},
+          "hydro_generation": {},
+          "hydro_spillage_hm3_per_hour": {},
+          "hydro_volume_hm3": {},
+          "compute_power_mw": {
+            "p": [
+              1.0,
+              0.0
+            ]
+          },
+          "completed_work": {
+            "p": {
+              "j": 1.0
+            }
+          },
+          "task_allocations": {
+            "p": [
+              {
+                "batch": "j",
+                "slot": 0,
+                "mode": 0,
+                "pool_fraction": 1.0
+              }
+            ]
+          },
+          "unit_commitment": {},
+          "terminal_unit_state": {},
+          "nodal_balance_marginal_cost": {
+            "A": [
+              -0.0,
+              -0.0
+            ]
+          },
+          "simultaneous_storage_slots": {}
+        }
+      }
+    },
+    "status": "analytic_example_not_empirical_result"
+  }
+}

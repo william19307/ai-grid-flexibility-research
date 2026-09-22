@@ -1,0 +1,31 @@
+{
+  "verified_factorials": 108,
+  "verified_schedules": 432,
+  "failed_factorials": 0,
+  "zero_allowance_fixed_start_value_max_abs": 0.0,
+  "zero_allowance_mode_share_ceiling_pct": 50.0,
+  "majority_identification": [
+    {
+      "slack": 0,
+      "mode_majority": 0,
+      "start_majority": 36,
+      "not_identified": 0
+    },
+    {
+      "slack": 6,
+      "mode_majority": 34,
+      "start_majority": 0,
+      "not_identified": 2
+    },
+    {
+      "slack": 24,
+      "mode_majority": 33,
+      "start_majority": 0,
+      "not_identified": 3
+    }
+  ],
+  "peak_increase_cases": 57,
+  "max_hourly_gpu_peak_increase_pct": 11.369847627900903,
+  "energy_increase_cases": 0,
+  "scope": "Conditional GPU-bill factorial over chosen operational rights. Constructed-policy Shapley shares and intervals for optimal capability shares are different estimands; neither is a physical universal split or system-capacity value."
+}

@@ -111,9 +111,9 @@ work/figure-env/bin/python work/research/analysis/summarize_gang_multiperiod_rev
 
 现有完整输出只需运行后两项便可独立核对及重建描述性表图。原始轨迹按既有来源步骤准备，不包含于此输出包。`failed_cases.csv` 为无失败时的空表；`complete.json` 和 `independent_verification.json` 记录全部案例数量。288 个条件仅对应 12 个集群—周，不能当作独立统计重复，详细证据边界见阶段 06 报告。
 
-### 阶段 07（运行中）：固定服务的四组政策与确定性归因界
+### 阶段 07（已完成）：固定服务的四组政策与确定性归因界
 
-冻结清单提交为 `091ea10`；108 个四格实验还在运行时，不得再次启动 `run_gang_policy_revision.py run`。先根据 `outputs/research/revision/policy/RUN_STATE_NOTE.json` 的历史句柄重新核验当前进程；观察超时不是终止证据。原构造结束且 `complete.json` 覆盖全部案例后，运行以下独立核验与汇总入口：
+冻结清单提交为 `091ea10`；108 个四格实验和独立核验均已完成，原进程以 0 退出。不要再次向既有输出目录启动构造；运行以下入口可核验现有记录并重建表图：
 
 ```bash
 work/figure-env/bin/python work/research/analysis/verify_gang_policy_revision.py
@@ -137,3 +137,16 @@ work/figure-env/bin/python work/research/analysis/validate_reservoir_coupling.py
 新增承诺配置由 `thermal_commitment.py` 定义，只有显式传入时才启用 MILP。75+118+74 项数学检查不能作为真实省级启停或全年可靠性的证据；参数、模型边界与后续门槛详见阶段 08 报告。省级旧冻结结果应使用其冻结版本/源代码快照复现。
 
 煤电来源字段恢复入口：`work/figure-env/bin/python work/research/analysis/audit_coal_operational_fields.py`。需要原始 GEM XLSX 和既有逐机组选择 JSON；它只生成候选字段表与审计摘要，不覆写冻结容量或赋予缺失运行参数默认值。
+
+### 阶段 09：已认证真实轨迹的强制功率接入
+
+```bash
+work/figure-env/bin/python work/research/analysis/validate_verified_power_bridge.py
+work/figure-env/bin/python work/research/analysis/validate_thermal_commitment.py --output-dir outputs/research/revision/power_bridge/regression
+work/figure-env/bin/python work/research/analysis/validate_coupled_grid_compute.py --output-dir outputs/research/revision/power_bridge/regression
+work/figure-env/bin/python work/research/analysis/validate_reservoir_coupling.py --output-dir outputs/research/revision/power_bridge/regression
+```
+
+第一项需要原始输入及已认证的 Earth–Dolly–6h–江苏价形案例；只使用完整轨迹及其核验证据，不重新生成任务。文件篡改检查在临时复制件中运行，原始数据不变。整机功率和同步副本都是显式假设，解析发电机案例不构成省级结果。
+
+阶段 07 完成状态：原构造进程已退出，108 组全部核验完成。已有输出可运行无 `--available` 的核验与汇总入口重建表图；无需也不应再次启动已有目录的构造。最终报告见 `阶段07_固定服务下的政策归因.md`。
