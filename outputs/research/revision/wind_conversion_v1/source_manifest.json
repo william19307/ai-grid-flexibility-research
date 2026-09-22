@@ -1,0 +1,44 @@
+{
+  "NREL_ReferenceTurbine_5MW_offshore.yaml": {
+    "url": "https://raw.githubusercontent.com/PyPSA/atlite/67d44b31648c8d3551cbc5bfd83bfc8b3f7495a4/atlite/resources/windturbine/NREL_ReferenceTurbine_5MW_offshore.yaml",
+    "sha256": "204f56852ed370f536948433e7071bcef06628ede2d962ef6e28d78404feed2c",
+    "bytes": 725,
+    "content_type": "text/plain; charset=utf-8",
+    "retrieved_utc": "2026-09-22T23:57:47.626569+00:00"
+  },
+  "Vestas_V112_3MW.yaml": {
+    "url": "https://raw.githubusercontent.com/PyPSA/atlite/67d44b31648c8d3551cbc5bfd83bfc8b3f7495a4/atlite/resources/windturbine/Vestas_V112_3MW.yaml",
+    "sha256": "8276d84cfdf16ede759c7ba9334353836665ea0c7dc5b9c7639f7da8afe175a6",
+    "bytes": 757,
+    "content_type": "text/plain; charset=utf-8",
+    "retrieved_utc": "2026-09-22T23:57:47.628850+00:00"
+  },
+  "atlite_LICENSE": {
+    "url": "https://raw.githubusercontent.com/PyPSA/atlite/67d44b31648c8d3551cbc5bfd83bfc8b3f7495a4/LICENSE",
+    "sha256": "55fff4b9d15fa731a2ae2456b05622292781e336fae827976927f0a8e4894380",
+    "bytes": 1074,
+    "content_type": "text/plain; charset=utf-8",
+    "retrieved_utc": "2026-09-22T23:57:48.340768+00:00"
+  },
+  "atlite_convert.py": {
+    "url": "https://raw.githubusercontent.com/PyPSA/atlite/67d44b31648c8d3551cbc5bfd83bfc8b3f7495a4/atlite/convert.py",
+    "sha256": "13c560b00aa3e728cddd3993af66e58ffd7d6080fa0025ec6a6012ce31ae46f9",
+    "bytes": 41911,
+    "content_type": "text/plain; charset=utf-8",
+    "retrieved_utc": "2026-09-22T23:57:47.671945+00:00"
+  },
+  "atlite_wind.py": {
+    "url": "https://raw.githubusercontent.com/PyPSA/atlite/67d44b31648c8d3551cbc5bfd83bfc8b3f7495a4/atlite/wind.py",
+    "sha256": "e6996d518982518167b5862bc9aa074e3a67879c51d0239fff8ca78ef71007db",
+    "bytes": 4268,
+    "content_type": "text/plain; charset=utf-8",
+    "retrieved_utc": "2026-09-22T23:57:47.631888+00:00"
+  },
+  "rudong_msa.pdf": {
+    "url": "https://www.js.msa.gov.cn/module/download/downfile.jsp?classid=0&filename=359ffa2635cd44b5bb4bcb6ac78537f9.pdf",
+    "sha256": "e1347f1303849f26c69cbf74f1ab532b914862496bce95fa1c5b1359cf0326cd",
+    "bytes": 4469451,
+    "content_type": "application/pdf;charset=UTF-8",
+    "retrieved_utc": "2026-09-22T23:58:05.696233+00:00"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "scope": "Exploratory conversion-shape diagnostic; weather already examined, curve outputs not yet computed; not preregistered or generation calibration",
+  "weather_plan_sha256": "679acfd3aa2d5acdd38e860f3b1000a8a07edbe6a511f3153f64c51e58539583",
+  "curve_library_commit": "67d44b31648c8d3551cbc5bfd83bfc8b3f7495a4",
+  "curves": [
+    "Vestas_V112_3MW.yaml",
+    "NREL_ReferenceTurbine_5MW_offshore.yaml"
+  ],
+  "selection_reason": "These are both named reference models in the preexisting PyPSA-China default configuration; neither selected by pilot output fit. All four pilot sites receive both reference curves.",
+  "wind_input": "Each of the four frozen nearest responses, 100 m instantaneous speed unchanged, first 8785 endpoints for 8784 intervals",
+  "height_scope": "100 m held fixed across all curves to isolate shape; library hub heights 80/90 m are metadata only and not applied; no claim of actual site turbines",
+  "common_multiplier": 0.85,
+  "multiplier_scope": "Retains legacy assumption equally in all curves; not measured availability, wake or electrical losses",
+  "reference_normalization": "Divide each published power vector by its own maximum; V112 denominator 3.060 MW, not label 3 MW; matches atlite conversion convention",
+  "interpolation": "Piecewise linear; repeated speed knots encode jumps, exact knot chooses last entry; below first/at or beyond cutout output zero",
+  "generic_curve": "zero below 3 or at/above25; ((v-3)/9)^3 between3 and12; one between12 and25, times common0.85",
+  "interval_rule": "Arithmetic mean of endpoint power; assumed linear power between hourly samples, not measured hourly energy",
+  "metrics": [
+    "all 12 uncalibrated means and equivalent hours",
+    "pairwise annual differences on same weather and multiplier",
+    "max-hourly difference",
+    "source and per-value independent reconstruction"
+  ],
+  "tuning": "No observed-generation scaling, no adjustment to desired utilization hours, no optimal curve selection",
+  "admission": "Not admitted as provincial generation input; manufacturer curves, actual hub height, air density, losses and same-scope observations still required"
+}
