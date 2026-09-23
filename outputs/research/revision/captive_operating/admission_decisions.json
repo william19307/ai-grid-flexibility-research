@@ -1,0 +1,75 @@
+[
+  {
+    "item": "annual_energy_table",
+    "status": "admitted_as_annual_disclosure_only",
+    "scope": "steel_business",
+    "source": "sustainability_2025.pdf",
+    "pdf_page": 66,
+    "printed_page": 126,
+    "reason": "Footnote 22 narrows the general consolidated report scope; no hourly or unit meter boundary."
+  },
+  {
+    "item": "self_generation_ratio_2025",
+    "value": 60.9,
+    "unit": "percent",
+    "status": "reported_actual_ratio_not_dispatch_input",
+    "source": "sustainability_2025.pdf",
+    "pdf_page": 33,
+    "printed_page": 60,
+    "reason": "Denominator and gross/net meter mapping not specified; do not multiply by annual electricity total to fabricate captive output."
+  },
+  {
+    "item": "self_generation_target_2025",
+    "value": 56.4,
+    "unit": "percent",
+    "status": "target_not_observation",
+    "source": "sustainability_2025.pdf",
+    "pdf_page": 33,
+    "printed_page": 60
+  },
+  {
+    "item": "pv_year_end_2025",
+    "value": 55,
+    "unit": "MW",
+    "status": "reported_capacity_not_hourly_generation",
+    "source": "sustainability_2025.pdf",
+    "pdf_page": 33,
+    "printed_page": 59
+  },
+  {
+    "item": "pv_year_end_2026",
+    "value": 60.5,
+    "unit": "MW",
+    "status": "forecast_not_commissioned_capacity_evidence",
+    "source": "sustainability_2025.pdf",
+    "pdf_page": 33,
+    "printed_page": 59
+  },
+  {
+    "item": "csm_pv_capacity_unit",
+    "reported_value": "55MWh",
+    "status": "unit_inconsistent_with_capacity_do_not_silently_correct",
+    "source": "csm_grid_202608.html",
+    "reason": "Issuer reports 55 MW separately; preserve the article spelling and distinct evidence."
+  },
+  {
+    "item": "csm_annual_peak_shift",
+    "reported_value": "8000千瓦时",
+    "status": "scale_requires_clarification_not_admitted",
+    "source": "csm_grid_202608.html",
+    "reason": "No interval, before/after dispatch or denominator; do not add a presumed missing unit multiplier."
+  },
+  {
+    "item": "csm_storage",
+    "reported_value": "61MW/123MWh",
+    "status": "reported_nameplate_context_only",
+    "source": "csm_grid_202608.html",
+    "reason": "No commissioned asset register, operational SoC/efficiency or contract availability."
+  },
+  {
+    "item": "unit5_control_case",
+    "status": "retrieval_not_admitted",
+    "source_url": "https://source.kongzhi.net/uploads/files/2021/05/16217613931.pdf",
+    "reason": "Local retrieval failed certificate verification; web extraction timed out. Search snippets/reposts not used for machine identity, heat rate or ramp limits."
+  }
+]

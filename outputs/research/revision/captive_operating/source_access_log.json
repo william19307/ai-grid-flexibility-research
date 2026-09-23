@@ -1,0 +1,40 @@
+[
+  {
+    "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0316/2026031601636_c.pdf",
+    "retrieved_utc": "2026-09-23T02:18:51.776926+00:00",
+    "final_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0316/2026031601636_c.pdf",
+    "content_type": "application/pdf",
+    "path": "work/research/sources/nangang_operating_20260923/sustainability_2025.pdf",
+    "bytes": 24834770,
+    "sha256": "21b440dae39a31b438b22ca01fe85e7f8b624b7283ec39aace6a78b00c2dd951"
+  },
+  {
+    "url": "https://www.csm.org.cn/col/col6317/art/2026/art_087a4fb0d35947aa98aba39726cc6bb3.html",
+    "retrieved_utc": "2026-09-23T02:19:34.707989+00:00",
+    "final_url": "https://www.csm.org.cn/col/col6317/art/2026/art_087a4fb0d35947aa98aba39726cc6bb3.html",
+    "content_type": "text/html; charset=utf-8",
+    "path": "work/research/sources/nangang_operating_20260923/csm_grid_202608.html",
+    "bytes": 24853,
+    "sha256": "b6392e2e074e924732fad5896661bd06b0a8f8d001f48c5720b3cc347bdda39a"
+  },
+  {
+    "url": "https://source.kongzhi.net/uploads/files/2021/05/16217613931.pdf",
+    "retrieved_utc": "2026-09-23T02:19:38.202345+00:00",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)>"
+  },
+  {
+    "url": "https://www.600282.net/SocialResponsibility/Details/93a9f490-40b8-4b57-af99-87c899063882",
+    "path": "work/research/sources/nangang_operating_20260923/issuer_page.html",
+    "sha256": "529a809a034cf77cc9bbda73a75ef52689489bf1e1c745dd2b47ae04744aae83",
+    "bytes": 25933,
+    "retrieved_utc": "2026-09-23T02:20:51.966885+00:00"
+  },
+  {
+    "url": "https://www.600282.net/Upload/files/%e5%8d%97%e4%ba%ac%e9%92%a2%e9%93%81%e8%82%a1%e4%bb%bd%e6%9c%89%e9%99%90%e5%85%ac%e5%8f%b82025%e5%b9%b4%e5%ba%a6%e5%8f%af%e6%8c%81%e7%bb%ad%e5%8f%91%e5%b1%95%e6%8a%a5%e5%91%8a(1).pdf",
+    "retrieved_utc": "2026-09-23T02:20:51.967169+00:00",
+    "final_url": "https://www.600282.net/Upload/files/%e5%8d%97%e4%ba%ac%e9%92%a2%e9%93%81%e8%82%a1%e4%bb%bd%e6%9c%89%e9%99%90%e5%85%ac%e5%8f%b82025%e5%b9%b4%e5%ba%a6%e5%8f%af%e6%8c%81%e7%bb%ad%e5%8f%91%e5%b1%95%e6%8a%a5%e5%91%8a(1).pdf",
+    "path": "work/research/sources/nangang_operating_20260923/issuer_sustainability_2025.pdf",
+    "bytes": 24714439,
+    "sha256": "0e2d069526583bc28fb5974791f2a37a1c60384a61cebff3c4208698780f434e"
+  }
+]

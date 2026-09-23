@@ -1,0 +1,31 @@
+{
+  "source": "sustainability_2025.pdf",
+  "exchange_pdf_pages": [
+    72,
+    73
+  ],
+  "issuer_pdf_pages": [
+    71,
+    72
+  ],
+  "printed_pages": [
+    138,
+    139
+  ],
+  "method": "Full-page human visual review; embedded scanned assurance text",
+  "issuer": "SGS-CSTC",
+  "assurance_standard": "ISAE 3000",
+  "assurance_level": "limited",
+  "signature_date": "2026-03-11",
+  "observed_limitations": [
+    "No trace-through of all original data at subsidiary entities",
+    "Audited financial statement data and intensities calculated from financial data excluded",
+    "GHG values directly use a separate third-party verification and were not reverified in this assurance"
+  ],
+  "not_proven": [
+    "Independent validation of every annual energy cell",
+    "Unit-level gross/net meter identity",
+    "Hourly electricity and gas dispatch",
+    "Measured flexibility or ramp rates"
+  ]
+}

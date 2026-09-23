@@ -1,0 +1,17 @@
+{
+  "sources": {
+    "sustainability_2025.pdf": "21b440dae39a31b438b22ca01fe85e7f8b624b7283ec39aace6a78b00c2dd951",
+    "csm_grid_202608.html": "b6392e2e074e924732fad5896661bd06b0a8f8d001f48c5720b3cc347bdda39a",
+    "issuer_sustainability_2025.pdf": "0e2d069526583bc28fb5974791f2a37a1c60384a61cebff3c4208698780f434e"
+  },
+  "auditor_sha256": "e8f71ab878204ca1efd7bfdc14662cb29749472135902bffcc3fb970a982eab4",
+  "visual_review_pdf_pages": [
+    4,
+    33,
+    66,
+    72,
+    73
+  ],
+  "assurance_review": "Human full-page visual reading; assurance body is an image, not double-engine text",
+  "boundary": "Annual steel-business metrics; no gross/net unit meter or hourly interface identified"
+}

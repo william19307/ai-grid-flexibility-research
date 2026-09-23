@@ -396,3 +396,11 @@ python work/research/analysis/compare_industrial_regression.py --scratch work/tm
 ```
 
 只使用明确标记的合成数据；47 项检查、19 次求解（14 可行/5 证明不可行）。第二条从固定历史提交提取旧源、分别运行三个检查套件（各 267 项），要求全新 scratch，避免覆盖；仅排除指定源哈希字段比较。已实际验证此完整入口。解释器需 NumPy/SciPy，不使用 `-O`。详细边界及现场参数准入见 `outputs/research/revision/industrial_coupling/RUNBOOK.md`；没有实测参数、省级新结果或第二机器复现声明。
+
+### 阶段 32：工业年度电量与统计范围
+
+```bash
+python work/research/analysis/audit_captive_operating_scope.py --output-dir work/tmp/captive-operating-replay
+```
+
+恢复 captive_operating/source_access_log.json 的成功原件并核对哈希。需要 pypdf/pdfplumber；输出 24 个年度能源数值、38 项来源/读取/版本/算术检查和准入限制。PDF 双页排版及两个版本页码映射见 RUNBOOK；鉴证页为人工视觉读取。没有现场小时数据或新省级求解。

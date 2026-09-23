@@ -1,0 +1,399 @@
+{
+  "exchange_pages": 75,
+  "issuer_pages": 73,
+  "page_pairs": [
+    {
+      "issuer_page": 1,
+      "exchange_page": 2,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 2,
+      "exchange_page": 3,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 3,
+      "exchange_page": 4,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 4,
+      "exchange_page": 5,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 5,
+      "exchange_page": 6,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 6,
+      "exchange_page": 7,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 7,
+      "exchange_page": 8,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 8,
+      "exchange_page": 9,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 9,
+      "exchange_page": 10,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 10,
+      "exchange_page": 11,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 11,
+      "exchange_page": 12,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 12,
+      "exchange_page": 13,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 13,
+      "exchange_page": 14,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 14,
+      "exchange_page": 15,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 15,
+      "exchange_page": 16,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 16,
+      "exchange_page": 17,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 17,
+      "exchange_page": 18,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 18,
+      "exchange_page": 19,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 19,
+      "exchange_page": 20,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 20,
+      "exchange_page": 21,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 21,
+      "exchange_page": 22,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 22,
+      "exchange_page": 23,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 23,
+      "exchange_page": 24,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 24,
+      "exchange_page": 25,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 25,
+      "exchange_page": 26,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 26,
+      "exchange_page": 27,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 27,
+      "exchange_page": 28,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 28,
+      "exchange_page": 29,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 29,
+      "exchange_page": 30,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 30,
+      "exchange_page": 31,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 31,
+      "exchange_page": 32,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 32,
+      "exchange_page": 33,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 33,
+      "exchange_page": 34,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 34,
+      "exchange_page": 35,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 35,
+      "exchange_page": 36,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 36,
+      "exchange_page": 37,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 37,
+      "exchange_page": 38,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 38,
+      "exchange_page": 39,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 39,
+      "exchange_page": 40,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 40,
+      "exchange_page": 41,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 41,
+      "exchange_page": 42,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 42,
+      "exchange_page": 43,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 43,
+      "exchange_page": 44,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 44,
+      "exchange_page": 45,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 45,
+      "exchange_page": 46,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 46,
+      "exchange_page": 47,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 47,
+      "exchange_page": 48,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 48,
+      "exchange_page": 49,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 49,
+      "exchange_page": 50,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 50,
+      "exchange_page": 51,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 51,
+      "exchange_page": 52,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 52,
+      "exchange_page": 53,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 53,
+      "exchange_page": 54,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 54,
+      "exchange_page": 55,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 55,
+      "exchange_page": 56,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 56,
+      "exchange_page": 57,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 57,
+      "exchange_page": 58,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 58,
+      "exchange_page": 59,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 59,
+      "exchange_page": 60,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 60,
+      "exchange_page": 61,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 61,
+      "exchange_page": 62,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 62,
+      "exchange_page": 63,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 63,
+      "exchange_page": 64,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 64,
+      "exchange_page": 65,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 65,
+      "exchange_page": 66,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 66,
+      "exchange_page": 67,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 67,
+      "exchange_page": 68,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 68,
+      "exchange_page": 69,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 69,
+      "exchange_page": 70,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 70,
+      "exchange_page": 71,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 71,
+      "exchange_page": 72,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 72,
+      "exchange_page": 73,
+      "normalized_text_equal": true
+    },
+    {
+      "issuer_page": 73,
+      "exchange_page": 74,
+      "normalized_text_equal": true
+    }
+  ],
+  "reviewed_page_images": [
+    {
+      "exchange_page": 4,
+      "issuer_page": 3,
+      "image_payload_hashes_equal": true
+    },
+    {
+      "exchange_page": 33,
+      "issuer_page": 32,
+      "image_payload_hashes_equal": true
+    },
+    {
+      "exchange_page": 66,
+      "issuer_page": 65,
+      "image_payload_hashes_equal": true
+    },
+    {
+      "exchange_page": 72,
+      "issuer_page": 71,
+      "image_payload_hashes_equal": true
+    },
+    {
+      "exchange_page": 73,
+      "issuer_page": 72,
+      "image_payload_hashes_equal": true
+    }
+  ],
+  "scope": "Whitespace-normalized text and selected embedded image payloads; not whole-document byte or pixel equality"
+}
