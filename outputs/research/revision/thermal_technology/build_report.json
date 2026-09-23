@@ -1,0 +1,12 @@
+{
+  "source_units": 109,
+  "source_capacity_mw": "24959.0",
+  "preserved_units": 109,
+  "prospective_options": 3,
+  "dispatch_admission": "REJECTED",
+  "reason": "109 units have unresolved operating evidence; no partial fleet emitted",
+  "implementation_sha256": {
+    "work/research/analysis/build_thermal_technology_staging.py": "25469f842137df452bce146714f14874ee5f215013420a11c7e74c872de1a0f8",
+    "work/research/inputs/thermal_technology.py": "386252acc7775178b9587a9dfb3c55ff8b9a4d844130701fd6e06fb846618ea9"
+  }
+}

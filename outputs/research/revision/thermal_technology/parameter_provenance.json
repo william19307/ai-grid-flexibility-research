@@ -1,0 +1,128 @@
+[
+  {
+    "technology": "gas",
+    "year": "2030",
+    "parameter": "fuel",
+    "value": "20.1",
+    "unit": "EUR/MWh_th",
+    "source": "BP 2019",
+    "further description": ""
+  },
+  {
+    "technology": "gas",
+    "year": "2030",
+    "parameter": "CO2 intensity",
+    "value": "0.2",
+    "unit": "tCO2/MWh_th",
+    "source": "Stoichiometric calculation with 50 GJ/t CH4",
+    "further description": ""
+  },
+  {
+    "technology": "OCGT",
+    "year": "2030",
+    "parameter": "efficiency",
+    "value": "0.41",
+    "unit": "per unit",
+    "source": "Danish Energy Agency, technology_data_for_el_and_dh.xlsx",
+    "further description": "52 OCGT - Natural gas:  Electricity efficiency, annual average"
+  },
+  {
+    "technology": "OCGT",
+    "year": "2030",
+    "parameter": "VOM",
+    "value": "4.5",
+    "unit": "EUR/MWh",
+    "source": "Danish Energy Agency, technology_data_for_el_and_dh.xlsx",
+    "further description": "52 OCGT - Natural gas:  Variable O&M"
+  },
+  {
+    "technology": "OCGT",
+    "year": "2030",
+    "parameter": "investment",
+    "value": "435.24",
+    "unit": "EUR/kW",
+    "source": "Danish Energy Agency, technology_data_for_el_and_dh.xlsx",
+    "further description": "52 OCGT - Natural gas:  Specific investment"
+  },
+  {
+    "technology": "OCGT",
+    "year": "2030",
+    "parameter": "FOM",
+    "value": "1.78",
+    "unit": "%/year",
+    "source": "Danish Energy Agency, technology_data_for_el_and_dh.xlsx",
+    "further description": "52 OCGT - Natural gas:  Fixed O&M"
+  },
+  {
+    "technology": "OCGT",
+    "year": "2030",
+    "parameter": "lifetime",
+    "value": "25",
+    "unit": "years",
+    "source": "Danish Energy Agency, technology_data_for_el_and_dh.xlsx",
+    "further description": "52 OCGT - Natural gas:  Technical lifetime"
+  },
+  {
+    "technology": "CCGT",
+    "year": "2030",
+    "parameter": "efficiency",
+    "value": "0.58",
+    "unit": "per unit",
+    "source": "Danish Energy Agency, technology_data_for_el_and_dh.xlsx",
+    "further description": "05 Gas turb. CC, steam extract.:  Electricity efficiency, annual average"
+  },
+  {
+    "technology": "CCGT",
+    "year": "2030",
+    "parameter": "VOM",
+    "value": "4.2",
+    "unit": "EUR/MWh",
+    "source": "Danish Energy Agency, technology_data_for_el_and_dh.xlsx",
+    "further description": "05 Gas turb. CC, steam extract.:  Variable O&M"
+  },
+  {
+    "technology": "CCGT",
+    "year": "2030",
+    "parameter": "investment",
+    "value": "830",
+    "unit": "EUR/kW",
+    "source": "Danish Energy Agency, technology_data_for_el_and_dh.xlsx",
+    "further description": "05 Gas turb. CC, steam extract.:  Nominal investment"
+  },
+  {
+    "technology": "CCGT",
+    "year": "2030",
+    "parameter": "FOM",
+    "value": "3.35",
+    "unit": "%/year",
+    "source": "Danish Energy Agency, technology_data_for_el_and_dh.xlsx",
+    "further description": "05 Gas turb. CC, steam extract.:  Fixed O&M"
+  },
+  {
+    "technology": "CCGT",
+    "year": "2030",
+    "parameter": "lifetime",
+    "value": "25",
+    "unit": "years",
+    "source": "Danish Energy Agency, technology_data_for_el_and_dh.xlsx",
+    "further description": "05 Gas turb. CC, steam extract.:  Technical lifetime"
+  },
+  {
+    "technology": "CCGT",
+    "year": "2030",
+    "parameter": "c_b",
+    "value": "2",
+    "unit": "50oC/100oC",
+    "source": "Danish Energy Agency, technology_data_for_el_and_dh.xlsx",
+    "further description": "05 Gas turb. CC, steam extract.:  Cb coefficient"
+  },
+  {
+    "technology": "CCGT",
+    "year": "2030",
+    "parameter": "c_v",
+    "value": "0.15",
+    "unit": "50oC/100oC",
+    "source": "Danish Energy Agency, technology_data_for_el_and_dh.xlsx",
+    "further description": "05 Gas turb. CC, steam extract.:  Cv coefficient"
+  }
+]

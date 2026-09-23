@@ -404,3 +404,13 @@ python work/research/analysis/audit_captive_operating_scope.py --output-dir work
 ```
 
 恢复 captive_operating/source_access_log.json 的成功原件并核对哈希。需要 pypdf/pdfplumber；输出 24 个年度能源数值、38 项来源/读取/版本/算术检查和准入限制。PDF 双页排版及两个版本页码映射见 RUNBOOK；鉴证页为人工视觉读取。没有现场小时数据或新省级求解。
+
+### 阶段 33：燃气技术、用途和存量/新增分离
+
+```bash
+python work/research/analysis/build_thermal_technology_staging.py --output-dir work/tmp/thermal-stage33-replay
+python work/research/analysis/audit_thermal_unit_labels.py --output-dir work/tmp/thermal-stage33-replay
+python work/research/analysis/validate_thermal_technology_staging.py --input-dir work/tmp/thermal-stage33-replay
+```
+
+均为标准库入口；恢复阶段 23 的 GEM 原工作簿和归档成本 CSV，并保留原哈希。输出 109 台完整待核实清单、三个权限未知的 OCGT 选项、19 个日期格式名称原值及 36 项检查。无旧省级程序导入/执行、无新实证准入或调度重算。详见 `revision/thermal_technology/RUNBOOK.md`。

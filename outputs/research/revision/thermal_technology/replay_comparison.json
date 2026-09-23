@@ -1,0 +1,40 @@
+{
+  "scope": "Same-machine separate-output replay; no new scientific samples",
+  "files": [
+    {
+      "file": "build_report.json",
+      "sha256": "25b93a5b36ce375f69e3fbee2f75a48bd9efef99e28ebe623dd36db1da9e7ee4",
+      "byte_identical": true
+    },
+    {
+      "file": "date_formatted_unit_labels.json",
+      "sha256": "1bc934e763bf7f6ed1d24f393014442fd5ee80f0fe217ac98d06fbb11eec4ec8",
+      "byte_identical": true
+    },
+    {
+      "file": "existing_investment_separation.json",
+      "sha256": "c30b3678250092dd8b33389106011ef6fd4d636919f8dcba355dcb3003ae8e67",
+      "byte_identical": true
+    },
+    {
+      "file": "fleet_staging.json",
+      "sha256": "2fb2b606aa62bad2d3977457dfed9223c8ed423c0aa37e8ca322fbf47331170f",
+      "byte_identical": true
+    },
+    {
+      "file": "parameter_provenance.json",
+      "sha256": "b010a514378154c5fc352c63e1c6c6284157daea214b070d3e7dcaa553385982",
+      "byte_identical": true
+    },
+    {
+      "file": "technology_role_summary.csv",
+      "sha256": "3ab2f134a57633eba8fac2ffb55603370f2a1a121d3a12af558ae07d08d11ce4",
+      "byte_identical": true
+    },
+    {
+      "file": "validation.json",
+      "sha256": "4b561800066e78e0a2f39a5dacb8136f5f477c0a862d953b177065b3e93a27da",
+      "byte_identical": true
+    }
+  ]
+}

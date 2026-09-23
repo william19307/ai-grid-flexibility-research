@@ -1,0 +1,5 @@
+province,candidate_technology,chp_evidence,captive_evidence,units,capacity_mw
+Gansu,CCGT_fossil_gas,reported_yes,reported_use,1,180.0
+Jiangsu,CCGT_fossil_gas,reported_yes,unknown,81,17673.0
+Jiangsu,CCGT_fossil_gas,unknown,unknown,15,5981.0
+Jiangsu,industrial_byproduct_steam,unknown,reported_use,12,1125.0

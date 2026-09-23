@@ -1,0 +1,41 @@
+{
+  "archive_annualized_fixed_cost_delta_eur_per_mw_year": "48066.92004344388746296382530",
+  "archive_variable_cost_delta_eur_per_mwh": "14.66921783010933557611438183",
+  "conditional_break_even_full_load_hours": "3276.720040572580780168446212",
+  "examples": [
+    {
+      "equivalent_full_load_hours": 1000,
+      "ocgt_eur_per_mw_year": "92153.00975881914177892559528",
+      "ccgt_eur_per_mw_year": "125550.7119721536936657750388"
+    },
+    {
+      "equivalent_full_load_hours": 6000,
+      "ocgt_eur_per_mw_year": "359774.9609783313369008768148",
+      "ccgt_eur_per_mw_year": "319826.5740411192109071543491"
+    }
+  ],
+  "legacy_constructor_trace": [
+    {
+      "file": "work/research/analysis/run_regional_2030_s0_s3.py",
+      "line": 166,
+      "name": "ocgt",
+      "existing_capacity": "fleet['gas']",
+      "max_new": "1000000.0",
+      "investment": "c['ocgt_inv_yr'] * wk",
+      "marginal_cost": "c['gas_mc']",
+      "emissions": "c['gas_co2']"
+    },
+    {
+      "file": "work/research/analysis/run_regional_2030_s0_s3.py",
+      "line": 176,
+      "name": "nb_gas",
+      "existing_capacity": "a['gas']",
+      "max_new": "1000000.0",
+      "investment": "c['ocgt_inv_yr'] * wk",
+      "marginal_cost": "c['gas_mc']",
+      "emissions": "c['gas_co2']"
+    }
+  ],
+  "legacy_source_sha256": "6f0de9ca21189da391f9954f50918312163c0cf4743ac50525372fb179ca3db5",
+  "scope": "Algebraic constant-efficiency comparison only; excludes heat obligations, commitment, outage and network. Not a China build recommendation or actual fleet reestimate."
+}

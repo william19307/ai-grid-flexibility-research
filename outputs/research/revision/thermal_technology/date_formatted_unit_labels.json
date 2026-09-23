@@ -1,0 +1,218 @@
+{
+  "workbook_sha256": "4ed14c94a305ec43af9ac33a49134fcee5c1271e2d93d248ab608c7781ea71d0",
+  "affected_units": 19,
+  "affected_capacity_mw": "6232.0",
+  "records": [
+    {
+      "unit_id": "G100000405483",
+      "cell": "F4953",
+      "raw_numeric_value": "45658",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-01-01 00:00:00",
+      "capacity_mw": "400.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405484",
+      "cell": "F4954",
+      "raw_numeric_value": "45689",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-02-01 00:00:00",
+      "capacity_mw": "400.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405493",
+      "cell": "F5162",
+      "raw_numeric_value": "45658",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-01-01 00:00:00",
+      "capacity_mw": "390.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405494",
+      "cell": "F5163",
+      "raw_numeric_value": "45689",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-02-01 00:00:00",
+      "capacity_mw": "390.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405495",
+      "cell": "F5164",
+      "raw_numeric_value": "45659",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-01-02 00:00:00",
+      "capacity_mw": "400.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405496",
+      "cell": "F5165",
+      "raw_numeric_value": "45690",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-02-02 00:00:00",
+      "capacity_mw": "400.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405523",
+      "cell": "F5191",
+      "raw_numeric_value": "45658",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-01-01 00:00:00",
+      "capacity_mw": "451.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405524",
+      "cell": "F5192",
+      "raw_numeric_value": "45689",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-02-01 00:00:00",
+      "capacity_mw": "451.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405501",
+      "cell": "F5247",
+      "raw_numeric_value": "45658",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-01-01 00:00:00",
+      "capacity_mw": "200.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405502",
+      "cell": "F5248",
+      "raw_numeric_value": "45689",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-02-01 00:00:00",
+      "capacity_mw": "200.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405503",
+      "cell": "F5249",
+      "raw_numeric_value": "45717",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-03-01 00:00:00",
+      "capacity_mw": "200.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405507",
+      "cell": "F5376",
+      "raw_numeric_value": "45658",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-01-01 00:00:00",
+      "capacity_mw": "200.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405508",
+      "cell": "F5377",
+      "raw_numeric_value": "45689",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-02-01 00:00:00",
+      "capacity_mw": "200.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405602",
+      "cell": "F5390",
+      "raw_numeric_value": "45658",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-01-01 00:00:00",
+      "capacity_mw": "100.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405603",
+      "cell": "F5391",
+      "raw_numeric_value": "45689",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-02-01 00:00:00",
+      "capacity_mw": "100.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405527",
+      "cell": "F5730",
+      "raw_numeric_value": "45658",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-01-01 00:00:00",
+      "capacity_mw": "390.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405528",
+      "cell": "F5731",
+      "raw_numeric_value": "45689",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-02-01 00:00:00",
+      "capacity_mw": "390.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405529",
+      "cell": "F5732",
+      "raw_numeric_value": "45659",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-01-02 00:00:00",
+      "capacity_mw": "485.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    },
+    {
+      "unit_id": "G100000405530",
+      "cell": "F5733",
+      "raw_numeric_value": "45690",
+      "style_index": 60,
+      "num_format_id": 16,
+      "num_format_code": "d-mmm",
+      "prepared_label": "2025-02-02 00:00:00",
+      "capacity_mw": "485.0",
+      "action": "KEEP_GEM_ID_AND_ORIGINAL_VALUE; DO_NOT_INFER_INTENDED_UNIT_NAME"
+    }
+  ],
+  "interpretation": "Numeric date-format cells verified; original intended unit identifiers are not recoverable from this alone. This is not a start-year correction.",
+  "auditor_sha256": "8c7f721edbcc1cb3255352c8dd308ec044d1dd798faa99ac06fd3c0d151cbf38"
+}

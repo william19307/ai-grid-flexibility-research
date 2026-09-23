@@ -1,0 +1,62 @@
+{
+  "check_count": 36,
+  "checks": [
+    "all_109_identities_retained",
+    "all_original_fields_retained",
+    "per_unit_record_hashes",
+    "capacity_conservation",
+    "technology_partition",
+    "ccgt_heat_yes",
+    "ccgt_heat_unknown_not_no",
+    "no_natural_gas_cost_for_industrial_fuel",
+    "no_investment_on_existing_stock",
+    "separate_ocgt_option_without_assumed_permission",
+    "no_silent_operational_admission",
+    "date_formatted_names_flagged_from_raw_xml",
+    "independent_archive_formula:OCGT",
+    "independent_archive_formula:CCGT",
+    "independent_conditional_cost_crossover",
+    "investment_ranking_changes_with_utilization",
+    "main_and_neighbour_legacy_roles_located",
+    "zero_discount_capital_recovery",
+    "reject_missing_unit",
+    "reject_duplicate_unit",
+    "reject_capacity_change_against_source",
+    "reject_heat_status_change_against_source",
+    "unknown_technology_retained_without_fallback",
+    "reject_unit",
+    "reject_year",
+    "reject_zero_efficiency",
+    "reject_nonfinite",
+    "reject_zero_lifetime",
+    "reject_missing_parameter_source",
+    "reject_duplicate_parameter",
+    "reject_missing_heat_metadata",
+    "reject_boolean_discount",
+    "reject_unknown_source_hash",
+    "reject_actual_unqualified_cohort",
+    "reject_edited_ready_flags_as_fake_approval",
+    "reject_empty_fleet"
+  ],
+  "independent_conditional_rates": [
+    {
+      "technology": "OCGT",
+      "marginal_cost_eur_per_mwh": 53.524390243902445,
+      "emissions_t_per_mwh": 0.48780487804878053,
+      "annualized_capital_eur_per_mw": 30881.347514916688,
+      "fixed_om_eur_per_mw_year": 7747.272,
+      "annualized_capital_plus_fixed_om_eur_per_mw": 38628.61951491669
+    },
+    {
+      "technology": "CCGT",
+      "marginal_cost_eur_per_mwh": 38.85517241379311,
+      "emissions_t_per_mwh": 0.3448275862068966,
+      "annualized_capital_eur_per_mw": 58890.539558360564,
+      "fixed_om_eur_per_mw_year": 27805.0,
+      "annualized_capital_plus_fixed_om_eur_per_mw": 86695.53955836056
+    }
+  ],
+  "scope": "Source-preserving staging and conditional arithmetic; no operational parameter qualification or provincial solve",
+  "design_commit": "d20a5d5",
+  "validator_sha256": "f641362ed3d2941e90f9f65a5eb70dc1ce85fc9a8fa7a8af861903e581026d2d"
+}
