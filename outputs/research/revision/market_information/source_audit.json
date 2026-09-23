@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-23",
+  "status": "PRIMARY_RULES_VERIFIED_NO_EMPIRICAL_FORECASTS",
+  "checks": [
+    "cross_engine_principle_1",
+    "cross_engine_principle_2",
+    "cross_engine_principle_3",
+    "cross_engine_principle_4",
+    "cross_engine_principle_5",
+    "cross_engine_principle_6",
+    "cross_engine_table_6.36",
+    "cross_engine_table_6.37",
+    "cross_engine_table_6.38",
+    "cross_engine_table_6.39",
+    "cross_engine_table_6.40",
+    "cross_engine_table_6.41",
+    "cross_engine_table_6.42",
+    "cross_engine_table_6.43",
+    "cross_engine_table_6.44",
+    "cross_engine_table_6.45",
+    "jiangsu_notice_96点潮流信息",
+    "jiangsu_notice_日清分数据变化情况信息",
+    "jiangsu_notice_调整后及时披露",
+    "jiangsu_notice_修改计划机组出力",
+    "jiangsu_notice_2026年6月30日"
+  ],
+  "number_of_checks": 21,
+  "national_rule": "国能发监管〔2024〕9号",
+  "official_notice": "https://zfxxgk.nea.gov.cn/2024-01/31/c_1310763726.htm",
+  "original_word_urls": [
+    "https://zfxxgk.nea.gov.cn/1310763726_17072197518981n.doc",
+    "https://www.gov.cn/zhengce/zhengceku/202402/P020240207399607172280.doc"
+  ],
+  "original_copies_byte_identical": true,
+  "raw_word_sha256": "6aaf7a70f9a2c3b2f9b9f1f9f5c7babcfa5689ed9aa447c990f46720e3c87d82",
+  "rendered_pages_visually_checked": [
+    2,
+    3,
+    27,
+    28
+  ],
+  "rendered_page_numbers_are_conversion_specific": true,
+  "extraction": [
+    "macOS textutil from original DOC",
+    "pypdf from locally rendered original DOC with explicit system CJK font configuration"
+  ],
+  "rendering_failure_and_fix": "Initial default font configuration lost Chinese glyphs; rejected. Original DOC unchanged; explicit font configuration produced readable checked pages.",
+  "empirical_forecast_curves_acquired": 0,
+  "empirical_forecast_curves_admitted": 0,
+  "source_files_sha256": {
+    "work/research/sources/market_information_20260923/national_disclosure_nea.doc": "6aaf7a70f9a2c3b2f9b9f1f9f5c7babcfa5689ed9aa447c990f46720e3c87d82",
+    "work/research/sources/market_information_20260923/national_disclosure.doc": "6aaf7a70f9a2c3b2f9b9f1f9f5c7babcfa5689ed9aa447c990f46720e3c87d82",
+    "work/research/sources/market_information_20260923/national_disclosure.txt": "290a5d2ee0eaada396373f8b6200462af2703ef37e7986f5cd4837c04e1adcac",
+    "work/research/sources/market_information_20260923/render/cjk/national_disclosure_nea.pdf": "59cac30e30a38d2cf5dfd1518fd96b13040816ced22b30c4c9fec76d5bd9e7f2",
+    "work/research/sources/market_information_20260923/render/fonts.conf": "00979395c8ca00bb76ad4065bbab7b5a709956eb7455a5c0d5db255133339193",
+    "work/research/sources/market_information_20260923/jiangsu_disclosure_202606.html": "e1781161b623656be4ce2def9e99277f3438bd17c944cf39a06c0fb4629a7dbb",
+    "work/research/analysis/audit_market_information_sources.py": "43d289d341529f9fc60bc71061131c62fb07704c5ffc3700a73d80e8914f5050"
+  },
+  "limitations": [
+    "Disclosure obligation is not evidence of actual publication time or availability of every historical version",
+    "Source access or network failures do not prove data do not exist",
+    "These rules do not establish provincial rule-version applicability for each historical delivery day",
+    "No observed forecast accuracy or operational mechanism gain is computed"
+  ]
+}

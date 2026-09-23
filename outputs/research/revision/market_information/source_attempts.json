@@ -1,0 +1,67 @@
+[
+  {
+    "filename": "gansu_v32.pdf",
+    "url": "https://gxt.gansu.gov.cn/gxt/c126826/202603/174310684/files/0cdc1f06d7d34dc8b701fca3b925f8b7.pdf",
+    "retrieved_at": "2026-09-23T00:42:51.824381+00:00",
+    "status": "failed",
+    "error": "HTTP Error 412: Precondition Failed"
+  },
+  {
+    "filename": "jiangsu_rules.pdf",
+    "url": "https://fzggw.jiangsu.gov.cn/attach/0/3fa35212455a48cea2781639eb202cc4.pdf",
+    "retrieved_at": "2026-09-23T00:42:51.824616+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "filename": "jiangsu_disclosure_202606.html",
+    "url": "https://jsb.nea.gov.cn/dtyw/tz/202606/t20260603_302444.html",
+    "retrieved_at": "2026-09-23T00:42:51.824699+00:00",
+    "http_status": 200,
+    "final_url": "https://jsb.nea.gov.cn/dtyw/tz/202606/t20260603_302444.html",
+    "bytes": 35905,
+    "sha256": "e1781161b623656be4ce2def9e99277f3438bd17c944cf39a06c0fb4629a7dbb",
+    "status": "acquired"
+  },
+  {
+    "filename": "nea_disclosure_qa.html",
+    "url": "https://www.nea.gov.cn/2024-02/07/c_1310763802.htm",
+    "retrieved_at": "2026-09-23T00:42:51.824746+00:00",
+    "http_status": 200,
+    "final_url": "https://www.nea.gov.cn/2024-02/07/c_1310763802.htm",
+    "bytes": 13229,
+    "sha256": "d15de19108af9aa0fe40cefb1d72a22aa3bb18622aba7f5db44f016bbe93732b",
+    "status": "acquired"
+  },
+  {
+    "filename": "gzpec_disclosure_rules.html",
+    "url": "https://www.gzpec.cn/law/jygz/202505/t20250516_34495.html",
+    "retrieved_at": "2026-09-23T00:42:51.824831+00:00",
+    "status": "failed",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.gzpec.cn'. (_ssl.c:1082)>"
+  },
+  {
+    "filename": "nea_rules_notice.html",
+    "url": "https://zfxxgk.nea.gov.cn/2024-01/31/c_1310763726.htm",
+    "retrieved_at": "2026-09-23T00:44:01.525361+00:00",
+    "status": "acquired",
+    "bytes": 6976,
+    "sha256": "ff629248fa23c6368d9bb3e593746bd87ffe501d556490139be60bebe14f773b"
+  },
+  {
+    "filename": "national_disclosure.doc",
+    "url": "https://www.gov.cn/zhengce/zhengceku/202402/P020240207399607172280.doc",
+    "retrieved_at": "2026-09-23T00:44:03.454877+00:00",
+    "status": "acquired",
+    "bytes": 273801,
+    "sha256": "6aaf7a70f9a2c3b2f9b9f1f9f5c7babcfa5689ed9aa447c990f46720e3c87d82"
+  },
+  {
+    "url": "https://zfxxgk.nea.gov.cn/1310763726_17072197518981n.doc",
+    "path": "work/research/sources/market_information_20260923/national_disclosure_nea.doc",
+    "bytes": 273801,
+    "sha256": "6aaf7a70f9a2c3b2f9b9f1f9f5c7babcfa5689ed9aa447c990f46720e3c87d82",
+    "retrieved_at": "2026-09-23T00:44:18.555286+00:00",
+    "magic_hex": "d0cf11e0a1b11ae1"
+  }
+]

@@ -297,3 +297,16 @@ work/figure-env/bin/python work/research/analysis/validate_coupled_grid_compute.
 新核验独立重建节点收支、线路损耗、发电与启停费用、服务成本和转移支付。`mechanism_grid/examples.json` 保留冻结的原选择、21 个响应取点和独立连续启动成本公式；连续最坏值由必要性/可行构造证明，不以有限采样冒充全局最优。20 项新检查和 75/118 项既有模型检查通过。
 
 `input_snapshot.json` 和验证脚本包含人为设定的数学输入；不是实测机组或省级场景。完全预知的条件性重调度、期末义务、不可行/未知状态均明确报告。线性预测端点不得用于宣称非线性电网最坏响应边界。一般网格/启停下的保守采购与实际预测实验仍未完成。代码、证据和设计哈希见 `mechanism_grid/evidence_manifest.json`。
+
+### 阶段 22：市场来源与历史版本准入
+
+```bash
+/Users/apple/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 work/research/analysis/audit_market_information_sources.py
+work/figure-env/bin/python work/research/analysis/validate_forecast_vintages.py
+```
+
+第一项读取排除目录 `work/research/sources/market_information_20260923/` 中的两份原始 DOC、textutil 提取文本、带中文字体的本地 PDF 渲染及江苏通知 HTML；不访问网络。来源 URL、取得时间、原件哈希及失败记录见 `revision/market_information/source_attempts.json` 和 `source_audit.json`。两份官方 DOC 均须匹配 `6aaf7a70f9a2c3b2f9b9f1f9f5c7babcfa5689ed9aa447c990f46720e3c87d82`；若重取不同版本，不得静默覆盖为同一证据。浏览/版本旁证另记于 `additional_access_observations.json`。
+
+来源重建步骤：从国家能源局及中国政府网列明的两个附件 URL 分别取得 `national_disclosure_nea.doc`、`national_disclosure.doc`；从江苏通知 URL 取得 `jiangsu_disclosure_202606.html`。原取得/失败日志为审计记录，应从仓库存档恢复而不是伪造新的取得日期。macOS 运行 `textutil -convert txt .../national_disclosure.doc -output .../national_disclosure.txt`。复制 `revision/market_information/render_fonts.conf` 到源目录 `render/fonts.conf`，以 `FONTCONFIG_FILE` 指向该文件，用捆绑 LibreOffice `--headless --convert-to pdf --outdir .../render/cjk .../national_disclosure_nea.doc` 渲染。首次默认字体配置缺失中文字形已记录，不能使用那版输出。原文未改，渲染仅用于来源审读；跨环境分页可能改变，需重新查看相关条款/附表页。
+
+第二项仅使用人工合成的 96 点曲线，17 项检查不依赖真实市场数据。真实 `approved_vintages.json` 当前为空。版本选择器只是外部来源审核之后的一致性检查，不自动证明时间戳真实性、提取正确性或预测性能；尚未与论文主实验连通。不得将合成样例当作准入数据，也不得把市场“公开信息”直接等同于匿名可取得数据。全新机器完整论文复现仍未完成。

@@ -1,0 +1,29 @@
+{
+  "status": "PASS_SYNTHETIC_VERSION_LOGIC_ONLY",
+  "number_of_checks": 17,
+  "checks": [
+    "whole_latest_eligible_version_without_future_revision_or_mutation",
+    "cutoff_equality_explicitly_allowed",
+    "all_late_returns_unavailable",
+    "no_approved_source_returns_unavailable",
+    "publication_rule_is_not_release_evidence",
+    "post_admission_value_change_rejected",
+    "partial_revision_not_spliced_into_older_complete_curve",
+    "reject_units",
+    "reject_actuals",
+    "reject_end_stamps",
+    "reject_naive_time",
+    "utc_and_local_offset_comparison",
+    "same_release_time_ambiguity_retained",
+    "missing_version_evidence_rejected",
+    "source_review_timestamp_binding",
+    "duplicate_snapshot_ids_rejected",
+    "retrospective_decision_after_delivery_rejected"
+  ],
+  "empirical_forecast_snapshots_admitted": 0,
+  "source_sha256": {
+    "work/research/analysis/validate_forecast_vintages.py": "b35e35833bafb373980b8f38ca75327c653fcb1f3d50c31fa859d2963cd3a3a2",
+    "work/research/models/forecast_vintages.py": "1650c889dad666af9f2b3d5fee13459c14e35530511b71487e869b600c6534fe"
+  },
+  "scope": "Synthetic fixtures; does not verify actual publication timestamps, source authenticity, extraction correctness or forecast skill"
+}

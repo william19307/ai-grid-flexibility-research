@@ -1,0 +1,11 @@
+rule_item,series_label,disclosure_period,access_scope,market,merged_label_from_previous_row,is_observed_forecast
+6.36,系统负荷预测,月,公开（有关市场成员）,省内,False,False
+6.37,系统负荷预测,周、日,公开（有关市场成员）,省内,True,False
+6.38,电力电量供需平衡预测,月,公开（有关市场成员）,省内,False,False
+6.39,电力电量供需平衡预测,日,公开（有关市场成员）,省内,True,False
+6.40,各电网电力平衡预测,月,公开（有关市场成员）,省间,False,False
+6.41,省间联络线输电曲线预测,日前、日内,公开（有关市场成员）,省内,False,False
+6.42,发电总出力预测,日,公开（有关市场成员）,省间、省内,False,False
+6.43,非市场机组总出力预测,日,公开（有关市场成员）,省间、省内,False,False
+6.44,新能源总出力预测,周、日,公开（有关市场成员）,省内,False,False
+6.45,水电（含抽蓄）总出力预测,周、日,公开（有关市场成员）,省间、省内,False,False

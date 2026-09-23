@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://www.jspec.com.cn/pxf-js-outer-infopub/",
+    "method": "in-app browser navigation and follow-up state",
+    "status": "failed",
+    "observed_error": "Navigation timed out; subsequent state was connection-closed error page; cannot infer login requirements",
+    "browser_tab_id": "8"
+  },
+  {
+    "url": "https://fzggw.jiangsu.gov.cn/attach/0/3fa35212455a48cea2781639eb202cc4.pdf",
+    "method": "web PDF reader",
+    "status": "text_accessible_local_download_failed",
+    "observed_cover": "江苏省电力现货市场运营规则 V1.0版",
+    "admission": "No current provincial decision timeline admitted"
+  },
+  {
+    "url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-08-29/508028_20250829_AAAI.pdf",
+    "method": "web search primary issuer report excerpt",
+    "status": "excerpt_only_not_local_full_document",
+    "observed_reference": "江苏省电力现货市场运营规则 V2.0版",
+    "admission": "Version discrepancy corroboration only, not adopted rule text"
+  }
+]

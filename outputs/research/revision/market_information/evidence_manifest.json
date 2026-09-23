@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-23",
+  "scope": "Policy-source qualification and synthetic vintage-selector validation; no empirical forecast admission",
+  "artifact_sha256": {
+    "outputs/research/revision/market_information/ACCESS_AND_INTAKE.md": "21a56a523375e9cc28335e83c82e81988f2a2907ca5176019a5c67ed24bb9115",
+    "outputs/research/revision/market_information/additional_access_observations.json": "afba15b796d5a96ad309a11c84fa143f57dc1e7cdc921e24f3d25b2196fc1b6e",
+    "outputs/research/revision/market_information/approved_vintages.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "outputs/research/revision/market_information/render_fonts.conf": "00979395c8ca00bb76ad4065bbab7b5a709956eb7455a5c0d5db255133339193",
+    "outputs/research/revision/market_information/required_forecast_fields.csv": "2bec08bc4420cbe66cf46940dcdd9b4a6e98e119880528badbdad40f110032ac",
+    "outputs/research/revision/market_information/source_attempts.json": "06e84a894cbb4356abeac5400c69d17e44fe11a1fecbea73378ccc5061f22f38",
+    "outputs/research/revision/market_information/source_audit.json": "4153c12c296165be40bb979396e90c7078294760cebb7e8ec37ae455e8ae628c",
+    "outputs/research/revision/market_information/synthetic_vintage_selection.json": "bb76412dddd8cc5352f11e8cbd926bcd8259ffd1e50af0e9741295314bf3fd37",
+    "outputs/research/revision/market_information/vintage_logic_validation.json": "d12d5a1bd4eb7c6f5ba5dc483694bff70eea88d676af11f9dda91bd99a08819a"
+  },
+  "real_admitted_vintages": 0,
+  "sources_in_git": false,
+  "source_location": "work/research/sources/market_information_20260923",
+  "working_tree_basis": "a9825b8"
+}
