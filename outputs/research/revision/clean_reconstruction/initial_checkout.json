@@ -1,0 +1,66 @@
+{
+  "checked_utc": "2026-09-23T01:26:10.708720+00:00",
+  "checkout": "/Users/apple/Documents/Codex/2026-09-14/ni-k/work/tmp/clean-reconstruction-20260923",
+  "head": "3ffe06110479cc08ad847a31cb9584c0631ef6c2",
+  "remote": "https://github.com/william19307/ai-grid-flexibility-research.git",
+  "tracked_status": "",
+  "initial_input_presence": [
+    {
+      "path": "outputs/research/tables/dvfs_measured_and_derived.csv",
+      "present": true
+    },
+    {
+      "path": "outputs/research/tables/data_registry.csv",
+      "present": true
+    },
+    {
+      "path": "work/research/sources/helios_sensetime/data/Earth/cluster_log.csv",
+      "present": false
+    },
+    {
+      "path": "work/research/sources/helios_sensetime/data/Earth/cluster_gpu_number.csv",
+      "present": false
+    },
+    {
+      "path": "work/research/sources/helios_sensetime/data/Venus/cluster_log.csv",
+      "present": false
+    },
+    {
+      "path": "work/research/sources/helios_sensetime/data/Venus/cluster_gpu_number.csv",
+      "present": false
+    },
+    {
+      "path": "work/research/sources/helios_sensetime/data/Saturn/cluster_log.csv",
+      "present": false
+    },
+    {
+      "path": "work/research/sources/helios_sensetime/data/Saturn/cluster_gpu_number.csv",
+      "present": false
+    },
+    {
+      "path": "work/research/sources/helios_sensetime/data/Uranus/cluster_log.csv",
+      "present": false
+    },
+    {
+      "path": "work/research/sources/helios_sensetime/data/Uranus/cluster_gpu_number.csv",
+      "present": false
+    },
+    {
+      "path": "work/research/sources/tariffs/gansu_2020_12_interpretation_gsei.html",
+      "present": false
+    },
+    {
+      "path": "work/research/sources/tariffs/jiangsu_2020_1183_nanjing_forward_724.pdf",
+      "present": false
+    },
+    {
+      "path": "work/research/sources/tariffs/guizhou_2023_481.html",
+      "present": false
+    },
+    {
+      "path": "work/research/prepared/load_2020_annual_anchored_hourly_shape_UNVALIDATED.npz",
+      "present": false
+    }
+  ],
+  "scope": "New network clone on same host, not a second machine; source/prepared directories not copied"
+}

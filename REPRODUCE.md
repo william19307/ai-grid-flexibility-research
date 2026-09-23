@@ -1,5 +1,7 @@
 # 复现说明
 
+当前独立重建入口见 [阶段 27 操作说明](outputs/research/revision/clean_reconstruction/RUNBOOK.md)。已实测同机新克隆和隔离环境，13/14 项必需输入通过；甘肃原页面尚未恢复，完整认证复算未执行。下列历史流程不表示全部来源已可自动恢复。
+
 环境：`work/figure-env`（Python 3.14；numpy、pandas、scipy、matplotlib、h5py、tables、tabulate）。原始外部数据不入库，按 `outputs/research/tables/data_registry.csv` 的来源、版本与校验值重新获取到 `work/research/sources/`。
 
 按顺序运行（均在仓库根目录，`P=work/figure-env/bin/python`）：
@@ -353,3 +355,11 @@ work/figure-env/bin/python work/research/analysis/validate_demand_cohort.py
 设计先于结果冻结于 ddc24b8。第一条只写 `revision/fixed_cohort_factorial/`，读取阶段 07–09 的三个 Earth Dolly 6h 地区配对证书/原始输入，以及排除目录中的 `load_2020_annual_anchored_hourly_shape_UNVALIDATED.npz`（SHA256 为 86bc5a2ad0c1028cfd9420431e4d75283d2842be958f1c4d3bc092cbc85908f6）。恢复要求沿用对应阶段，不可用新形状文件静默替换。时钟完全匹配且保留 192h；输出 18 个账目哈希、90 行需求指标及全部政策/形状差分。账目不逐份冗余保存，可通过入口复建后核对 `factor_ledger_manifest.json`。
 
 67 项新增检查、72 次政策解析求解及 1 次容量不足拒绝求解通过，第二条 25 项回归通过。1/1,000 个同步复制、0.5 kW/GPU、0.41 idle 和人工发电成本均是假设；背景未验证，群体排除关系未认证。该诊断不是 2030 省级重算、全年容量收益或观测验证。代码/产物/既有回归哈希记录在 evidence_manifest.json；全新机器完整输入重建尚未实测。
+
+### 阶段 27：新克隆、隔离环境及来源恢复
+
+完整命令、版本和失败处理见 `revision/clean_reconstruction/RUNBOOK.md`，核心入口为 `work/research/analysis/restore_certified_inputs.py`，固定依赖在 `work/research/requirements-reconstruction.txt`。恢复范围为认证功率/阶段 24–26 所需链条，不能扩称全部论文。
+
+2026-09-23 实测从 GitHub 网络克隆 3ffe061，使用无系统 site packages 的新 Python 3.14.6 环境安装指定依赖。Helios 固定提交压缩包与八个 CSV、江苏 PDF、贵州 HTML、负荷 HDF5 成员和重新计算的 NPZ 均与预期哈希一致。初次重建因数组 F/C 顺序引入约 4.22e-10 MW 差异而失败；新副本从远端拉取 a8c2003，显式保持原 C 顺序后匹配 NPZ 原哈希。没有修改预期哈希或复制原 prepared。
+
+最终 13/14 项准入，唯一缺失为原甘肃 HTML。两个目前可访问的文章入口均返回不同字节，按原哈希拒绝，阶段 24/26 数值复算未执行。新环境的 75+118+74 项数学检查通过，仅证明对应模型可运行性。全部请求/失败、初始副本状态、环境、数组比较和最终准入见同目录 JSON；第二机器/操作系统及整篇论文重建仍未验证。

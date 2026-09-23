@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-23",
+  "initial_checkout_commit": "3ffe06110479cc08ad847a31cb9584c0631ef6c2",
+  "array_order_fix_commit": "a8c2003e06b826114720dd73fc8ba61a6a5e5e70",
+  "same_host_new_checkout_and_environment": true,
+  "second_machine_or_os_tested": false,
+  "external_sources_copied_from_original_worktree": false,
+  "tracked_transcription_reused_from_git": true,
+  "prepared_array_rebuilt_from_downloaded_member": true,
+  "prepared_array_matches_frozen_sha256": true,
+  "admitted_inputs": 13,
+  "required_inputs": 14,
+  "missing_or_mismatched_inputs": [
+    {
+      "path": "work/research/sources/tariffs/gansu_2020_12_interpretation_gsei.html",
+      "expected_sha256": "63be4112ff3cb2324369e3e3305aacbae6bacbd9cb8947f67bb49a0190ffef17",
+      "actual_sha256": null,
+      "exact": false
+    }
+  ],
+  "isolated_mathematical_checks": {
+    "validate_thermal_commitment.py": 75,
+    "validate_coupled_grid_compute.py": 118,
+    "validate_reservoir_coupling.py": 74
+  },
+  "total_mathematical_checks": 267,
+  "certified_stage24_and_26_numerical_reruns": "NOT_EXECUTED: source gate incomplete",
+  "full_manuscript_reproduction": "NOT_COMPLETE",
+  "public_gansu_variants": "Both current public endpoints return different bytes; original expected hash unchanged",
+  "clone_tracked_status_after_audit": "",
+  "new_processes_still_running": false,
+  "next_action": "Recover the exact historical tariff snapshot through a legitimate source, or independently review and explicitly version a new source/certificate chain. Do not change an old expected hash to declare success.",
+  "original_worktree_required_inputs_unchanged": true,
+  "original_input_hashes_verified": 14
+}

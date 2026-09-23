@@ -1,0 +1,20 @@
+{
+  "sha256": {
+    "outputs/research/revision/clean_reconstruction/DESIGN.md": "c5e739481f2a8502625dc9d62aa3dc947497139bebf3919292dd57a0cb6200ac",
+    "outputs/research/revision/clean_reconstruction/RUNBOOK.md": "2a473da7581d685e678b41095ad3cc83d436566b26d69221cbdf406eb3db49f9",
+    "outputs/research/revision/clean_reconstruction/array_order_rebuild_attempt.json": "8e4a138ea532b579e1c8deb5fb367825918f16b8ae1582ee2918cae7177f771e",
+    "outputs/research/revision/clean_reconstruction/array_reconstruction_diagnostic.json": "5e761835c934ac15fa142937efbc3216b0adbac16ed386e8d06a4225414e7a51",
+    "outputs/research/revision/clean_reconstruction/audit_summary.json": "39549b7de3ce787376f2e74c2906244f9201201bd4da4b0adbbf39ea4853fb27",
+    "outputs/research/revision/clean_reconstruction/gansu_source_resolution.json": "f2c88da5aef6e3f9fa7ad75b84898c96261ef2e1842b44773a52412e66584fd9",
+    "outputs/research/revision/clean_reconstruction/initial_checkout.json": "dff31f5a280420bec2c4924eabf8f6a27ff818c4c65ce719807d1d0d35756354",
+    "outputs/research/revision/clean_reconstruction/isolated_model_checks.json": "fe1b374f0cd333629fe468380009a28bc37c9ac3fcdc99c8038e78b8233b9e23",
+    "outputs/research/revision/clean_reconstruction/network_restore_attempt.json": "2d6acfda2a2cf02c166dc165cd62d90f37e498eaead2fa8f72a1207853b1a3ed",
+    "outputs/research/revision/clean_reconstruction/source_spec.json": "df8893ada7ec2d5c561f363b7e45d330e65be849294e2549c892ba88e74effec",
+    "outputs/research/revision/clean_reconstruction/source_spec_at_first_attempt.json": "49aa76ac42d9315d775b12554757a1b771d1a0eff98561cd7236f5a3fceef805",
+    "outputs/research/revision/阶段27_独立目录重建与复现缺口.md": "6b24e637d2497836aac601dca6970efb3a90cc14f9fcaf03f8ef82b43ab20172",
+    "work/research/analysis/restore_certified_inputs.py": "9c5fbe20bf603ec583915c8a9e69a3909575e20cd58a1b2bdb83f72c06c4ffb7",
+    "work/research/requirements-reconstruction.txt": "5f05a93c0514edc1f18d1c4dfd0a0fe7e2ff542d6b6b4a1d2e134fed93c6a60c"
+  },
+  "first_attempt_spec": "source_spec_at_first_attempt.json binds the initial report; original entry implementation remains available at 3ffe061",
+  "scope": "Same-host isolated partial-chain reconstruction, not full manuscript or second-machine replication"
+}

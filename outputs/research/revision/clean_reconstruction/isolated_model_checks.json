@@ -1,0 +1,41 @@
+{
+  "checked_utc": "2026-09-23T01:27:13.293341+00:00",
+  "environment": {
+    "executable": "/Users/apple/Documents/Codex/2026-09-14/ni-k/work/tmp/reconstruction-venv-20260923/bin/python",
+    "prefix": "/Users/apple/Documents/Codex/2026-09-14/ni-k/work/tmp/reconstruction-venv-20260923",
+    "base_prefix": "/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14",
+    "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "user_site_enabled": false,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "h5py": "3.16.0",
+      "python-dateutil": "2.9.0.post0",
+      "six": "1.17.0"
+    },
+    "pip_check": "No broken requirements found."
+  },
+  "checks": [
+    {
+      "script": "validate_thermal_commitment.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"number_of_checks\": 75,\n  \"exact_dispatch_enumeration_cases\": 64,\n  \"maximum_objective_error\": 0.0,\n  \"scope\": \"Mathematical validation, not calibrated provincial unit commitment or full-year reliability\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "validate_coupled_grid_compute.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"joint_LP_mathematical_validation_passed_NOT_calibrated_regional_result\",\n  \"number_of_checks\": 118,\n  \"independent_capacity_oracle_cases\": 60,\n  \"independent_task_assignment_oracle_cases\": 40,\n  \"maximum_independently_reconstructed_power_balance_error_MW\": 0.0,\n  \"model_sha256\": \"3ac3731ef17e63befba2598fa81a538d5e138e2bd6a321614da9af030bb6fbe2\",\n  \"limitations\": [\n    \"transport network rather than AC security constraints\",\n    \"perfect foresight scenario dispatch\",\n    \"continuous time-sharing rather than validated subhour service execution\",\n    \"this LP validation does not validate task migration, checkpoint overhead, optional unit commitment, outage chronology or calibrated base year\",\n    \"expected unserved bound is not a complete equal-reliability validation\"\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "validate_reservoir_coupling.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"water_conserving_reservoir_extension_mathematically_verified_NOT_empirical_system_result\",\n  \"number_of_checks\": 74,\n  \"independent_dynamic_program_cases\": 60,\n  \"maximum_independent_water_balance_error_m3\": 0.0,\n  \"maximum_independent_electric_balance_error_MW\": 0.0,\n  \"model_sha256\": \"3ac3731ef17e63befba2598fa81a538d5e138e2bd6a321614da9af030bb6fbe2\",\n  \"limitations\": [\n    \"zero travel-time routing\",\n    \"fixed specific-water consumption; no head-dependent efficiency or evaporation\",\n    \"inflows must be incremental, not catchment totals\",\n    \"fixed cyclic initial usable storage must be justified\",\n    \"no empirical dam calibration or matched 2020 hydro-meteorology yet\"\n  ]\n}\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Same-host isolated environment, synthetic model validation only; no source-gate bypass"
+}

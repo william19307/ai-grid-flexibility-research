@@ -1,0 +1,123 @@
+{
+  "scope": "Network-derived candidate compared with original local target only as an oracle; original target not copied into clone",
+  "fields": [
+    {
+      "field": "timestamps_UTC_ns",
+      "candidate_shape": [
+        8784
+      ],
+      "original_shape": [
+        8784
+      ],
+      "candidate_dtype": "int64",
+      "original_dtype": "int64",
+      "equal": true,
+      "candidate_F": true,
+      "original_F": true,
+      "max_abs_difference": 0.0,
+      "n_different": 0
+    },
+    {
+      "field": "provinces",
+      "candidate_shape": [
+        31
+      ],
+      "original_shape": [
+        31
+      ],
+      "candidate_dtype": "<U20",
+      "original_dtype": "<U20",
+      "equal": true,
+      "candidate_F": true,
+      "original_F": true
+    },
+    {
+      "field": "load_MW",
+      "candidate_shape": [
+        8784,
+        31
+      ],
+      "original_shape": [
+        8784,
+        31
+      ],
+      "candidate_dtype": "float64",
+      "original_dtype": "float64",
+      "equal": false,
+      "candidate_F": true,
+      "original_F": false,
+      "max_abs_difference": 4.220055416226387e-10,
+      "n_different": 254735,
+      "candidate_first": [
+        22826.84888119281,
+        13165.933063886754,
+        9963.367030171603,
+        21426.731970976998,
+        14919.447768843693
+      ],
+      "original_first": [
+        22826.848881192953,
+        13165.933063886778,
+        9963.36703017159,
+        21426.731970977024,
+        14919.447768843744
+      ]
+    },
+    {
+      "field": "annual_targets_TWh",
+      "candidate_shape": [
+        31
+      ],
+      "original_shape": [
+        31
+      ],
+      "candidate_dtype": "float64",
+      "original_dtype": "float64",
+      "equal": true,
+      "candidate_F": true,
+      "original_F": true,
+      "max_abs_difference": 0.0,
+      "n_different": 0
+    },
+    {
+      "field": "annual_scaling_factors",
+      "candidate_shape": [
+        31
+      ],
+      "original_shape": [
+        31
+      ],
+      "candidate_dtype": "float64",
+      "original_dtype": "float64",
+      "equal": false,
+      "candidate_F": true,
+      "original_F": true,
+      "max_abs_difference": 6.217248937900877e-15,
+      "n_different": 29,
+      "candidate_first": [
+        1.0176000722076939,
+        0.966475158116332,
+        0.9919389255207826,
+        1.0113398334098136,
+        1.0427350477740995
+      ],
+      "original_first": [
+        1.0176000722077,
+        0.9664751581163337,
+        0.9919389255207812,
+        1.0113398334098147,
+        1.042735047774103
+      ]
+    },
+    {
+      "field": "status",
+      "candidate_shape": [],
+      "original_shape": [],
+      "candidate_dtype": "<U64",
+      "original_dtype": "<U64",
+      "equal": true,
+      "candidate_F": true,
+      "original_F": true
+    }
+  ]
+}

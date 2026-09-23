@@ -1,0 +1,20 @@
+{
+  "expected_sha256": "63be4112ff3cb2324369e3e3305aacbae6bacbd9cb8947f67bb49a0190ffef17",
+  "attempts": [
+    {
+      "url": "https://www.gsei.com.cn/html/1668/2020-12-02/content-303607.html",
+      "accessed_utc": "2026-09-23T01:29:57.250626+00:00",
+      "bytes": 19576,
+      "sha256": "66d30a4a4691ceddbb513dc85abdfdeeb65f76a583fcd8e0c0f377312ef516cd",
+      "exact": false
+    },
+    {
+      "url": "https://manage.gsei.com.cn/index.php/cms/item-view-id-303607-page-1",
+      "accessed_utc": "2026-09-23T01:29:59.059297+00:00",
+      "bytes": 21576,
+      "sha256": "eede38f8e89ab6c7f9e10818687c432127331e7c4f58b8f00ad62e030b7207f8",
+      "exact": false
+    }
+  ],
+  "scope": "Public article endpoints from original item metadata and web search; no authentication bypass"
+}

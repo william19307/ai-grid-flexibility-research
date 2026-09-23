@@ -2,7 +2,7 @@
 
 这是我们的研究同步仓库，记录研究目标、研究过程、已核实证据、模型实现、审计结果和论文工作稿。
 
-**2026-09-23 接手提示：最新实质修订在 `codex/research-evidence-revision` 分支，已推进至阶段 26。先读 [HANDOFF.md](HANDOFF.md) 和 [当前主张状态](outputs/research/revision/CURRENT_CLAIM_STATUS.md)。下文历史成果不代表全部修订门槛已通过；当前没有经完整证据链验证的新省级主结果。**
+**2026-09-23 接手提示：最新实质修订在 `codex/research-evidence-revision` 分支，已推进至阶段 27。先读 [HANDOFF.md](HANDOFF.md) 和 [当前主张状态](outputs/research/revision/CURRENT_CLAIM_STATUS.md)。下文历史成果不代表全部修订门槛已通过；当前没有经完整证据链验证的新省级主结果。**
 
 ## 研究目标
 

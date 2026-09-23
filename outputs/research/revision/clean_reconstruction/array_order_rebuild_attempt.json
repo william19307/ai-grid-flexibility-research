@@ -1,0 +1,110 @@
+{
+  "started_utc": "2026-09-23T01:28:57.072499+00:00",
+  "finished_utc": "2026-09-23T01:28:57.419661+00:00",
+  "source_spec_sha256": "49aa76ac42d9315d775b12554757a1b771d1a0eff98561cd7236f5a3fceef805",
+  "steps": [
+    {
+      "step": "rebuild_prepared_load",
+      "ok": true,
+      "files": [
+        {
+          "path": "work/research/prepared/load_2020_annual_anchored_hourly_shape_UNVALIDATED.npz",
+          "status": "restored_exact",
+          "sha256": "86bc5a2ad0c1028cfd9420431e4d75283d2842be958f1c4d3bc092cbc85908f6",
+          "bytes": 2098547
+        }
+      ]
+    }
+  ],
+  "admission": [
+    {
+      "path": "outputs/research/tables/dvfs_measured_and_derived.csv",
+      "expected_sha256": "26a173f809ba03262a9d19f2b73079fa6b172f6c5fe68bf8abd5ffbd7af6e742",
+      "actual_sha256": "26a173f809ba03262a9d19f2b73079fa6b172f6c5fe68bf8abd5ffbd7af6e742",
+      "exact": true
+    },
+    {
+      "path": "outputs/research/tables/data_registry.csv",
+      "expected_sha256": "a62c1111201b082a88f162128ffbd8d0f79370da72c664657201a1a172fd70ba",
+      "actual_sha256": "a62c1111201b082a88f162128ffbd8d0f79370da72c664657201a1a172fd70ba",
+      "exact": true
+    },
+    {
+      "path": "work/research/sources/helios_sensetime/data/Earth/cluster_log.csv",
+      "expected_sha256": "bb62d7842ee50a093c1f872afa293a8e27500f38dfc5cd1dab3b10c53746b3db",
+      "actual_sha256": "bb62d7842ee50a093c1f872afa293a8e27500f38dfc5cd1dab3b10c53746b3db",
+      "exact": true
+    },
+    {
+      "path": "work/research/sources/helios_sensetime/data/Earth/cluster_gpu_number.csv",
+      "expected_sha256": "cd85b21f9b2651a64ed7ecb86f2c5dea771a3bd55d41537eea976b61aa00642f",
+      "actual_sha256": "cd85b21f9b2651a64ed7ecb86f2c5dea771a3bd55d41537eea976b61aa00642f",
+      "exact": true
+    },
+    {
+      "path": "work/research/sources/helios_sensetime/data/Venus/cluster_log.csv",
+      "expected_sha256": "41153105b5a1beedfc9f3d5151126d8a2b446ba5699a60a41522a6795e726cac",
+      "actual_sha256": "41153105b5a1beedfc9f3d5151126d8a2b446ba5699a60a41522a6795e726cac",
+      "exact": true
+    },
+    {
+      "path": "work/research/sources/helios_sensetime/data/Venus/cluster_gpu_number.csv",
+      "expected_sha256": "08c05fc4d2ac94aceb43f2bfd28d731a089df8e9bb7c3412d2bd211cab2ed57c",
+      "actual_sha256": "08c05fc4d2ac94aceb43f2bfd28d731a089df8e9bb7c3412d2bd211cab2ed57c",
+      "exact": true
+    },
+    {
+      "path": "work/research/sources/helios_sensetime/data/Saturn/cluster_log.csv",
+      "expected_sha256": "f991918de22dd88fd87ed4f4d8b3b8beb34a19a57007037298c08e48d56c2377",
+      "actual_sha256": "f991918de22dd88fd87ed4f4d8b3b8beb34a19a57007037298c08e48d56c2377",
+      "exact": true
+    },
+    {
+      "path": "work/research/sources/helios_sensetime/data/Saturn/cluster_gpu_number.csv",
+      "expected_sha256": "d8760e0e69a43ef2c86eb4316436cdebdf513fc5c2742d43875ddcf546bfae5a",
+      "actual_sha256": "d8760e0e69a43ef2c86eb4316436cdebdf513fc5c2742d43875ddcf546bfae5a",
+      "exact": true
+    },
+    {
+      "path": "work/research/sources/helios_sensetime/data/Uranus/cluster_log.csv",
+      "expected_sha256": "785e4154cefb45dba55bdfb8c3d313f101cd75dbe78b158a09f387ef8f4418af",
+      "actual_sha256": "785e4154cefb45dba55bdfb8c3d313f101cd75dbe78b158a09f387ef8f4418af",
+      "exact": true
+    },
+    {
+      "path": "work/research/sources/helios_sensetime/data/Uranus/cluster_gpu_number.csv",
+      "expected_sha256": "b824e9d839423571f7570a72b3712b0a547926f70ab3d73b9d18b0df3be17e49",
+      "actual_sha256": "b824e9d839423571f7570a72b3712b0a547926f70ab3d73b9d18b0df3be17e49",
+      "exact": true
+    },
+    {
+      "path": "work/research/sources/tariffs/gansu_2020_12_interpretation_gsei.html",
+      "expected_sha256": "63be4112ff3cb2324369e3e3305aacbae6bacbd9cb8947f67bb49a0190ffef17",
+      "actual_sha256": null,
+      "exact": false
+    },
+    {
+      "path": "work/research/sources/tariffs/jiangsu_2020_1183_nanjing_forward_724.pdf",
+      "expected_sha256": "246beceecd970f253592ccb93b4aaf3e9047341cd90c47909103e592b553c05c",
+      "actual_sha256": "246beceecd970f253592ccb93b4aaf3e9047341cd90c47909103e592b553c05c",
+      "exact": true
+    },
+    {
+      "path": "work/research/sources/tariffs/guizhou_2023_481.html",
+      "expected_sha256": "490bd4d968046a013d733df055e1f1e126e8b516e805ca905b7682b1a60aa906",
+      "actual_sha256": "490bd4d968046a013d733df055e1f1e126e8b516e805ca905b7682b1a60aa906",
+      "exact": true
+    },
+    {
+      "path": "work/research/prepared/load_2020_annual_anchored_hourly_shape_UNVALIDATED.npz",
+      "expected_sha256": "86bc5a2ad0c1028cfd9420431e4d75283d2842be958f1c4d3bc092cbc85908f6",
+      "actual_sha256": "86bc5a2ad0c1028cfd9420431e4d75283d2842be958f1c4d3bc092cbc85908f6",
+      "exact": true
+    }
+  ],
+  "all_inputs_admitted": false,
+  "network_requested": false,
+  "local_cache_fallback": false,
+  "full_archive_checksum_verified": false,
+  "scope": "Bounded input reconstruction, not independent physical validation or full manuscript reproduction"
+}

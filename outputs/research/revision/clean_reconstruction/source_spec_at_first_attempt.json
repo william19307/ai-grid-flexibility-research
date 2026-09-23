@@ -24,9 +24,8 @@
   "tariffs": [
     {
       "path": "work/research/sources/tariffs/gansu_2020_12_interpretation_gsei.html",
-      "url": "https://manage.gsei.com.cn/index.php/cms/item-view-id-303607-page-1",
-      "url_note": "Public article endpoint confirmed by current web search and fresh retrieval. Its current bytes differ from the frozen hash; must not be admitted as that original. Historical exact fetch URL is unknown.",
-      "alternate_public_url": "https://www.gsei.com.cn/html/1668/2020-12-02/content-303607.html"
+      "url": "https://www.gsei.com.cn/index.php/cms/item-view-id-303607.html",
+      "url_note": "Endpoint reconstructed from original HTML item id; exact historical fetch URL not recorded in registry"
     },
     {
       "path": "work/research/sources/tariffs/jiangsu_2020_1183_nanjing_forward_724.pdf",
