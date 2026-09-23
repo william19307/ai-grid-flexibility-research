@@ -131,7 +131,10 @@ def rebuild_load(spec):
     expected=pd.date_range('2020-01-01',periods=8784,freq='h',tz='Asia/Shanghai',unit='ns')
     if len(names)!=31 or not clock.equals(expected) or data.shape!=(8784,31):
         raise ValueError('Province/calendar shape mismatch')
-    power=data.to_numpy()*1e6
+    # The frozen prepared input uses C order. Summation across a Fortran-order
+    # array changes floating-point accumulation and therefore the original hash.
+    # Make the historical layout explicit instead of relaxing the certificate.
+    power=np.ascontiguousarray(data.to_numpy()*1e6)
     if not np.isfinite(power).all() or (power<0).any():
         raise ValueError('Nonfinite/negative source demand')
     target=observations.loc[names].electricity_2020_100million_kWh.to_numpy(dtype=float)/10
@@ -147,11 +150,11 @@ def rebuild_load(spec):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--fetch',action='store_true',help='Explicitly enable downloading missing external sources')
+    mode=parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument('--fetch',action='store_true',help='Fetch and verify external sources, including existing inputs')
+    mode.add_argument('--rebuild-only',action='store_true',help='Rebuild from already restored, hash-verified load sources; no network')
     parser.add_argument('--report',default='work/tmp/reconstruction/input_restore.json')
     args=parser.parse_args()
-    if not args.fetch:
-        parser.error('Use --fetch in a fresh checkout; network reconstruction is explicit')
     spec=json.loads(SPEC.read_text()); started=datetime.now(timezone.utc).isoformat()
     jobs=[('helios_pinned_archive',lambda:restore_helios(spec)),('archive_load_member',lambda:restore_load_member(spec))]
     for item in spec['tariffs']:
@@ -165,8 +168,10 @@ def main():
             return dict(step=name,ok=True,files=action())
         except Exception as exc:
             return dict(step=name,ok=False,error_type=type(exc).__name__,error=str(exc))
-    with ThreadPoolExecutor(max_workers=4) as pool:
-        results=list(pool.map(attempt,jobs))
+    results=[]
+    if args.fetch:
+        with ThreadPoolExecutor(max_workers=4) as pool:
+            results=list(pool.map(attempt,jobs))
     results.append(attempt(('rebuild_prepared_load',lambda:rebuild_load(spec))))
     admitted=[]
     for relative,expected in {**spec['policy_input_sha256'],spec['prepared_target']['path']:spec['prepared_target']['sha256']}.items():
@@ -176,7 +181,7 @@ def main():
     report=dict(started_utc=started,finished_utc=datetime.now(timezone.utc).isoformat(),
         source_spec_sha256=sha(SPEC.read_bytes()),steps=results,admission=admitted,
         all_inputs_admitted=all(x['exact'] for x in admitted),
-        local_cache_fallback=False,full_archive_checksum_verified=False,
+        network_requested=args.fetch,local_cache_fallback=False,full_archive_checksum_verified=False,
         scope='Bounded input reconstruction, not independent physical validation or full manuscript reproduction')
     out=ROOT/args.report
     if not out.resolve().is_relative_to(ROOT.resolve()):
