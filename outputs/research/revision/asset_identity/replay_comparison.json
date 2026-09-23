@@ -1,0 +1,40 @@
+{
+  "scope": "same machine, separate output directory; no independent physical evidence",
+  "files": [
+    {
+      "file": "asset_candidates.json",
+      "same_bytes": true,
+      "sha256": "3ac9c9878c53f2be69260711b83a33b415804e33f0955442b3cf7fa4cc116aac"
+    },
+    {
+      "file": "selected_identity_fields.json",
+      "same_bytes": true,
+      "sha256": "4ed9797fc2fa4e00fe1b12c0f2f7a0fc036606fe052ef486284d5d23843cc09c"
+    },
+    {
+      "file": "citation_lineage.json",
+      "same_bytes": true,
+      "sha256": "82360dedd60891a2b27d8eb58f51ee5be5d0421219a74f941ce8942ed4c1ebff"
+    },
+    {
+      "file": "identity_screen.json",
+      "same_bytes": true,
+      "sha256": "71a467ccc73f8f1ebdcc2b70f5acc3dbc6f61627439e0328ad19bbd78fc002cc"
+    },
+    {
+      "file": "capacity_accounting.csv",
+      "same_bytes": true,
+      "sha256": "d43f81f66ccde8cac3cd2e5ed906103044327b6d43079af784ee391e7e092bf3"
+    },
+    {
+      "file": "source_validation.json",
+      "same_bytes": true,
+      "sha256": "385d51440f8962b2ffd6f9f49fb04deb6e1ecc48216b0e8d3a74c0a8c35d076c"
+    },
+    {
+      "file": "validation.json",
+      "same_bytes": true,
+      "sha256": "0b4683c9302a19b680158e241f79521a53bdd44d5346c26f6fa061f234f8d2ca"
+    }
+  ]
+}

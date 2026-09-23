@@ -422,3 +422,12 @@ python3 work/research/analysis/audit_ccgt_primary.py --output-dir work/tmp/ccgt-
 ```
 
 标准库入口。恢复 ccgt_primary/source_access_log.json 中三份 raw_html 原件并核对哈希。17 项检查支持源字节、表行/日期及 109 条原字段守恒，不证明人工语义或现场运行。南通只取得官方网页提取文本，复跑不代表重获原件。详见 `revision/ccgt_primary/RUNBOOK.md`。
+
+### 阶段 35：项目别名与独立资产容量
+
+```bash
+python work/research/analysis/build_asset_identity_staging.py --output-dir work/tmp/asset-identity-stage35-replay
+python work/research/analysis/validate_asset_identity.py --input-dir work/tmp/asset-identity-stage35-replay
+```
+
+构建器需 openpyxl（本机 3.1.5），验证器为标准库。恢复固定 GEM 工作簿和 asset_identity/source_access_log.json 的三个 raw_snapshot HTML，核对哈希。两个当前 GEM 页实际 revision 1280775/1280776，与旧缓存版本分开。109 来源行映射 107 候选资产、24,759 MW；11 项来源与 23 项实现检查及 7 文件同机重建通过。运行准入仍为零，详见 `revision/asset_identity/RUNBOOK.md`。

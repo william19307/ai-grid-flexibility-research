@@ -1,0 +1,33 @@
+{
+  "passed": 23,
+  "checks": [
+    "independent_equivalence_components",
+    "complete_nonoverlapping_provenance",
+    "independent_once_per_asset_capacity",
+    "counting_difference_not_new_capacity",
+    "technology_and_heat_preserved",
+    "investment_and_conditional_parameters_unchanged",
+    "no_operational_admission",
+    "source_hashes_and_vintage_retained",
+    "inputs_not_mutated",
+    "merge_order_independent",
+    "no_automatic_name_or_proximity_merge",
+    "reject_conflict:capacity_mw",
+    "reject_conflict:province",
+    "reject_conflict:chp_evidence",
+    "reject_conflict:new_build_capacity_mw",
+    "reject_cross_unit_number_merge",
+    "reject_source_used_twice",
+    "reject_unknown_source_identity",
+    "reject_unreviewed_matching_rule",
+    "reject_no_source_references",
+    "reject_repeated_inventory_id",
+    "reject_unreviewed_staging_bytes",
+    "resolved_candidates_are_not_dispatch_input"
+  ],
+  "candidate_assets": 107,
+  "candidate_capacity_mw": "24759",
+  "alias_counting_difference_mw": "200",
+  "asset_manifest_sha256": "3ac9c9878c53f2be69260711b83a33b415804e33f0955442b3cf7fa4cc116aac",
+  "scope": "Grouping and accounting implementation only; no external confirmation of identity or empirical operating validation."
+}

@@ -1,0 +1,39 @@
+{
+  "criteria": "Different location IDs; equal province, technology, capacity and start year; distance <= 5 km.",
+  "use": "Candidate screening only; neither a deduplication rule nor a completeness audit.",
+  "candidates": [
+    {
+      "projects": [
+        "CNOOC Funing Thermal power station",
+        "CNOOC Jiangsu Funing power station"
+      ],
+      "location_ids": [
+        "L100000405613",
+        "L100000408127"
+      ],
+      "distance_km": 1.7997193404243637,
+      "coordinate_accuracy": [
+        "exact",
+        "approximate"
+      ],
+      "source_unit_pairs": [
+        [
+          "G100000405489",
+          "G100000412495"
+        ],
+        [
+          "G100000405489",
+          "G100000412494"
+        ],
+        [
+          "G100000405490",
+          "G100000412495"
+        ],
+        [
+          "G100000405490",
+          "G100000412494"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "asset_alias_adjudication_v1",
+  "reviewed_on": "2026-09-23",
+  "source_staging_sha256": "2fb2b606aa62bad2d3977457dfed9223c8ed423c0aa37e8ca322fbf47331170f",
+  "scope": "Research adjudication of one project alias; not an official GEM correction or complete national identity audit.",
+  "decisions": [
+    {
+      "decision_id": "funing_two_records_per_asset_20260923",
+      "relation": "supported_same_asset_inference",
+      "evidence_refs": [
+        "gem_thermal_current",
+        "gem_jiangsu_current",
+        "cnooc_operation"
+      ],
+      "basis": [
+        "Both database project pages cite the same 2020 government project article, despite government domain migration.",
+        "Chinese project aliases and 2 x 100 MW CHP configuration match the operator project account.",
+        "The operator reports two units commissioned in January and May 2022, matching the duplicated capacity and unit labels.",
+        "One database location is approximate; about 1.8 km coordinate separation is not evidence of another built project."
+      ],
+      "conflicts_retained": [
+        "different GEM location IDs",
+        "exact versus approximate coordinates",
+        "different ownership aggregation levels; not resolved as corporate ownership evidence",
+        "different hydrogen-capability completeness; no unified hydrogen claim"
+      ],
+      "limitations": [
+        "Same-source citation is not independent corroboration.",
+        "No serial-number level plant inspection or confirmation by GEM.",
+        "No claim of another 200 MW expansion absent separate evidence.",
+        "No additional heat curve, availability, ramp or 2030 survival evidence."
+      ],
+      "groups": [
+        {
+          "asset_id": "reviewed:funing:unit1",
+          "source_unit_ids": [
+            "G100000405489",
+            "G100000412495"
+          ]
+        },
+        {
+          "asset_id": "reviewed:funing:unit2",
+          "source_unit_ids": [
+            "G100000405490",
+            "G100000412494"
+          ]
+        }
+      ]
+    }
+  ]
+}

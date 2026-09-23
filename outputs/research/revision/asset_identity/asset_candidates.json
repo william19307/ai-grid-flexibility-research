@@ -1,0 +1,4399 @@
+{
+  "schema": "identity_resolved_thermal_candidates_v1",
+  "scope": "RESEARCH_CANDIDATES_NOT_OPERATIONAL_INPUT",
+  "vintage": "legacy_conditional_2030_membership_not_observed_2030",
+  "reviewed_on": "2026-09-23",
+  "asset_candidates": [
+    {
+      "asset_id": "inventory:G100000405196",
+      "source_unit_ids": [
+        "G100000405196"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Gansu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "180.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "reported_use",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2019",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405483",
+      "source_unit_ids": [
+        "G100000405483"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "400.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-01-01 00:00:00",
+        "Status": "operating",
+        "Start year": "2018",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405484",
+      "source_unit_ids": [
+        "G100000405484"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "400.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-02-01 00:00:00",
+        "Status": "operating",
+        "Start year": "2019",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405491",
+      "source_unit_ids": [
+        "G100000405491"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2022",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405492",
+      "source_unit_ids": [
+        "G100000405492"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2022",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405493",
+      "source_unit_ids": [
+        "G100000405493"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "390.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-01-01 00:00:00",
+        "Status": "operating",
+        "Start year": "2005",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405494",
+      "source_unit_ids": [
+        "G100000405494"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "390.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-02-01 00:00:00",
+        "Status": "operating",
+        "Start year": "2006",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405495",
+      "source_unit_ids": [
+        "G100000405495"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "400.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-01-02 00:00:00",
+        "Status": "operating",
+        "Start year": "2021",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405496",
+      "source_unit_ids": [
+        "G100000405496"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "400.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-02-02 00:00:00",
+        "Status": "operating",
+        "Start year": "2021",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405497",
+      "source_unit_ids": [
+        "G100000405497"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2023",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405498",
+      "source_unit_ids": [
+        "G100000405498"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2023",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405501",
+      "source_unit_ids": [
+        "G100000405501"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "200.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-01-01 00:00:00",
+        "Status": "operating",
+        "Start year": "2012",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405502",
+      "source_unit_ids": [
+        "G100000405502"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "200.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-02-01 00:00:00",
+        "Status": "operating",
+        "Start year": "2012",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405503",
+      "source_unit_ids": [
+        "G100000405503"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "200.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-03-01 00:00:00",
+        "Status": "operating",
+        "Start year": "2012",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405507",
+      "source_unit_ids": [
+        "G100000405507"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "200.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-01-01 00:00:00",
+        "Status": "operating",
+        "Start year": "2016",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405508",
+      "source_unit_ids": [
+        "G100000405508"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "200.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-02-01 00:00:00",
+        "Status": "operating",
+        "Start year": "2016",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405511",
+      "source_unit_ids": [
+        "G100000405511"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "180.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2013",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405512",
+      "source_unit_ids": [
+        "G100000405512"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "180.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2013",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405515",
+      "source_unit_ids": [
+        "G100000405515"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "390.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2005",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "resolve_captive_or_public_supply_role",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405516",
+      "source_unit_ids": [
+        "G100000405516"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "390.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2005",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "resolve_captive_or_public_supply_role",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405517",
+      "source_unit_ids": [
+        "G100000405517"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "220.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "3",
+        "Status": "operating",
+        "Start year": "2011",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405518",
+      "source_unit_ids": [
+        "G100000405518"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "220.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "4",
+        "Status": "operating",
+        "Start year": "2011",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405519",
+      "source_unit_ids": [
+        "G100000405519"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "475.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "5",
+        "Status": "operating",
+        "Start year": "2015",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "resolve_captive_or_public_supply_role",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405520",
+      "source_unit_ids": [
+        "G100000405520"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "475.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "6",
+        "Status": "operating",
+        "Start year": "2015",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "resolve_captive_or_public_supply_role",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405521",
+      "source_unit_ids": [
+        "G100000405521"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "475.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2017",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405522",
+      "source_unit_ids": [
+        "G100000405522"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "475.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2017",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405523",
+      "source_unit_ids": [
+        "G100000405523"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "451.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-01-01 00:00:00",
+        "Status": "operating",
+        "Start year": "2017",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405524",
+      "source_unit_ids": [
+        "G100000405524"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "451.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-02-01 00:00:00",
+        "Status": "operating",
+        "Start year": "2017",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405527",
+      "source_unit_ids": [
+        "G100000405527"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "390.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-01-01 00:00:00",
+        "Status": "operating",
+        "Start year": "2005",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405528",
+      "source_unit_ids": [
+        "G100000405528"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "390.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-02-01 00:00:00",
+        "Status": "operating",
+        "Start year": "2005",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405529",
+      "source_unit_ids": [
+        "G100000405529"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "485.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-01-02 00:00:00",
+        "Status": "construction",
+        "Start year": "2025",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405530",
+      "source_unit_ids": [
+        "G100000405530"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "485.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-02-02 00:00:00",
+        "Status": "construction",
+        "Start year": "2025",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405531",
+      "source_unit_ids": [
+        "G100000405531"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "390.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2006",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405532",
+      "source_unit_ids": [
+        "G100000405532"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "390.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2007",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405533",
+      "source_unit_ids": [
+        "G100000405533"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "191.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "3",
+        "Status": "operating",
+        "Start year": "2013",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405534",
+      "source_unit_ids": [
+        "G100000405534"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "191.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "4",
+        "Status": "operating",
+        "Start year": "2013",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405535",
+      "source_unit_ids": [
+        "G100000405535"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "745.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "construction",
+        "Start year": "2026",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "resolve_captive_or_public_supply_role",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405536",
+      "source_unit_ids": [
+        "G100000405536"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "745.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "construction",
+        "Start year": "2028",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "resolve_captive_or_public_supply_role",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405539",
+      "source_unit_ids": [
+        "G100000405539"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "400.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2020",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405540",
+      "source_unit_ids": [
+        "G100000405540"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "400.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2020",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405541",
+      "source_unit_ids": [
+        "G100000405541"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "255.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2017",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405542",
+      "source_unit_ids": [
+        "G100000405542"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "255.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2017",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405543",
+      "source_unit_ids": [
+        "G100000405543"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "200.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2018",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405544",
+      "source_unit_ids": [
+        "G100000405544"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "200.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2018",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405545",
+      "source_unit_ids": [
+        "G100000405545"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "200.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2015",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405546",
+      "source_unit_ids": [
+        "G100000405546"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "200.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2015",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405547",
+      "source_unit_ids": [
+        "G100000405547"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "60.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2018",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405548",
+      "source_unit_ids": [
+        "G100000405548"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "60.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2018",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405549",
+      "source_unit_ids": [
+        "G100000405549"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "180.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2013",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405550",
+      "source_unit_ids": [
+        "G100000405550"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "180.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2013",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405551",
+      "source_unit_ids": [
+        "G100000405551"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "180.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2005",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405552",
+      "source_unit_ids": [
+        "G100000405552"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "180.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2005",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405553",
+      "source_unit_ids": [
+        "G100000405553"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2023",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405554",
+      "source_unit_ids": [
+        "G100000405554"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2023",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405555",
+      "source_unit_ids": [
+        "G100000405555"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "52.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2005",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405558",
+      "source_unit_ids": [
+        "G100000405558"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2023",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405559",
+      "source_unit_ids": [
+        "G100000405559"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2023",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405560",
+      "source_unit_ids": [
+        "G100000405560"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: LNG",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2018",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405561",
+      "source_unit_ids": [
+        "G100000405561"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: LNG",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2018",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405562",
+      "source_unit_ids": [
+        "G100000405562"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "420.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2015",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405563",
+      "source_unit_ids": [
+        "G100000405563"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "420.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2015",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405564",
+      "source_unit_ids": [
+        "G100000405564"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "180.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2017",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405565",
+      "source_unit_ids": [
+        "G100000405565"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "180.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2017",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405566",
+      "source_unit_ids": [
+        "G100000405566"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "460.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2017",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405567",
+      "source_unit_ids": [
+        "G100000405567"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "460.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2017",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405572",
+      "source_unit_ids": [
+        "G100000405572"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2017",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405573",
+      "source_unit_ids": [
+        "G100000405573"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2017",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405574",
+      "source_unit_ids": [
+        "G100000405574"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "80.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2022",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "resolve_captive_or_public_supply_role",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405575",
+      "source_unit_ids": [
+        "G100000405575"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "80.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2023",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "resolve_captive_or_public_supply_role",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405580",
+      "source_unit_ids": [
+        "G100000405580"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "200.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2013",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405581",
+      "source_unit_ids": [
+        "G100000405581"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "200.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2013",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405582",
+      "source_unit_ids": [
+        "G100000405582"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "180.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2017",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405583",
+      "source_unit_ids": [
+        "G100000405583"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "180.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2017",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405584",
+      "source_unit_ids": [
+        "G100000405584"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "459.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2019",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405585",
+      "source_unit_ids": [
+        "G100000405585"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "459.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2019",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405588",
+      "source_unit_ids": [
+        "G100000405588"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2021",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405589",
+      "source_unit_ids": [
+        "G100000405589"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2021",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405594",
+      "source_unit_ids": [
+        "G100000405594"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "400.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2016",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405595",
+      "source_unit_ids": [
+        "G100000405595"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "475.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2021",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405596",
+      "source_unit_ids": [
+        "G100000405596"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "475.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2021",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405597",
+      "source_unit_ids": [
+        "G100000405597"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "50.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2021",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405598",
+      "source_unit_ids": [
+        "G100000405598"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "50.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2021",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405599",
+      "source_unit_ids": [
+        "G100000405599"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "51.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "1996",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "resolve_captive_or_public_supply_role",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405600",
+      "source_unit_ids": [
+        "G100000405600"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "75.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2020",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405601",
+      "source_unit_ids": [
+        "G100000405601"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "75.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2020",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405602",
+      "source_unit_ids": [
+        "G100000405602"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-01-01 00:00:00",
+        "Status": "operating",
+        "Start year": "2022",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405603",
+      "source_unit_ids": [
+        "G100000405603"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2025-02-01 00:00:00",
+        "Status": "operating",
+        "Start year": "2022",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "resolve_date_formatted_unit_name_from_primary_documents",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405757",
+      "source_unit_ids": [
+        "G100000405757"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "54.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2019",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405758",
+      "source_unit_ids": [
+        "G100000405758"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "54.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2019",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405830",
+      "source_unit_ids": [
+        "G100000405830"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "52.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2005",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000405831",
+      "source_unit_ids": [
+        "G100000405831"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "52.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "3",
+        "Status": "operating",
+        "Start year": "2005",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000410252",
+      "source_unit_ids": [
+        "G100000410252"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "450.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2024",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000412261",
+      "source_unit_ids": [
+        "G100000412261"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "65.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "industrial_byproduct_steam",
+      "fuel": "industrial by-product: blast furnace gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "reported_use",
+      "conditional_parameter_reference": null,
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2021",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "industrial_site_shared_gas_and_auxiliaries",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000412262",
+      "source_unit_ids": [
+        "G100000412262"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "65.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "industrial_byproduct_steam",
+      "fuel": "industrial by-product: blast furnace gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "reported_use",
+      "conditional_parameter_reference": null,
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2021",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "industrial_site_shared_gas_and_auxiliaries",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000412270",
+      "source_unit_ids": [
+        "G100000412270"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "industrial_byproduct_steam",
+      "fuel": "industrial by-product: blast furnace gas, industrial by-product: coke oven gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "reported_use",
+      "conditional_parameter_reference": null,
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2022",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "industrial_site_shared_gas_and_auxiliaries",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000412271",
+      "source_unit_ids": [
+        "G100000412271"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "65.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "industrial_byproduct_steam",
+      "fuel": "industrial by-product: blast furnace gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "reported_use",
+      "conditional_parameter_reference": null,
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2018",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "industrial_site_shared_gas_and_auxiliaries",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000412272",
+      "source_unit_ids": [
+        "G100000412272"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "65.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "industrial_byproduct_steam",
+      "fuel": "industrial by-product: blast furnace gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "reported_use",
+      "conditional_parameter_reference": null,
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2018",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "industrial_site_shared_gas_and_auxiliaries",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000412354",
+      "source_unit_ids": [
+        "G100000412354"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "150.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "industrial_byproduct_steam",
+      "fuel": "industrial by-product: blast furnace gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "reported_use",
+      "conditional_parameter_reference": null,
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "3",
+        "Status": "operating",
+        "Start year": "2023",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "industrial_site_shared_gas_and_auxiliaries",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000412355",
+      "source_unit_ids": [
+        "G100000412355"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "80.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "industrial_byproduct_steam",
+      "fuel": "industrial by-product: blast furnace gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "reported_use",
+      "conditional_parameter_reference": null,
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2019",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "industrial_site_shared_gas_and_auxiliaries",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000412356",
+      "source_unit_ids": [
+        "G100000412356"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "80.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "industrial_byproduct_steam",
+      "fuel": "industrial by-product: blast furnace gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "reported_use",
+      "conditional_parameter_reference": null,
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2019",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "industrial_site_shared_gas_and_auxiliaries",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000412357",
+      "source_unit_ids": [
+        "G100000412357"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "80.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "industrial_byproduct_steam",
+      "fuel": "industrial by-product: blast furnace gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "reported_use",
+      "conditional_parameter_reference": null,
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2018",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "industrial_site_shared_gas_and_auxiliaries",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000412573",
+      "source_unit_ids": [
+        "G100000412573"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "120.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "industrial_byproduct_steam",
+      "fuel": "industrial by-product: blast furnace gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "reported_use",
+      "conditional_parameter_reference": null,
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "6",
+        "Status": "operating",
+        "Start year": "2022",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "industrial_site_shared_gas_and_auxiliaries",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100000412574",
+      "source_unit_ids": [
+        "G100000412574"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "120.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "industrial_byproduct_steam",
+      "fuel": "industrial by-product: blast furnace gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "reported_use",
+      "conditional_parameter_reference": null,
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "5",
+        "Status": "operating",
+        "Start year": "2020",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "industrial_site_shared_gas_and_auxiliaries",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100001017684",
+      "source_unit_ids": [
+        "G100001017684"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "135.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "industrial_byproduct_steam",
+      "fuel": "industrial by-product: blast furnace gas",
+      "chp_evidence": "unknown",
+      "captive_evidence": "reported_use",
+      "conditional_parameter_reference": null,
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "Unit 3",
+        "Status": "operating",
+        "Start year": "2019",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "industrial_site_shared_gas_and_auxiliaries",
+        "resolve_heat_service_presence_and_obligations",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "inventory:G100001030385",
+      "source_unit_ids": [
+        "G100001030385"
+      ],
+      "adjudication_id": null,
+      "identity_basis": "unreviewed_inventory_identity",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "217.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2024",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "reviewed:funing:unit1",
+      "source_unit_ids": [
+        "G100000405489",
+        "G100000412495"
+      ],
+      "adjudication_id": "funing_two_records_per_asset_20260923",
+      "identity_basis": "reviewed_alias_inference",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "1",
+        "Status": "operating",
+        "Start year": "2022",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    },
+    {
+      "asset_id": "reviewed:funing:unit2",
+      "source_unit_ids": [
+        "G100000405490",
+        "G100000412494"
+      ],
+      "adjudication_id": "funing_two_records_per_asset_20260923",
+      "identity_basis": "reviewed_alias_inference",
+      "province": "Jiangsu",
+      "role": "existing_candidate_stock",
+      "capacity_mw": "100.0",
+      "new_build_capacity_mw": "0",
+      "candidate_technology": "CCGT_fossil_gas",
+      "fuel": "fossil gas: natural gas",
+      "chp_evidence": "reported_yes",
+      "captive_evidence": "unknown",
+      "conditional_parameter_reference": "CCGT",
+      "source_unit_label_status_vintage": {
+        "Unit / Phase name": "2",
+        "Status": "operating",
+        "Start year": "2022",
+        "Retired year": ""
+      },
+      "unresolved_requirements": [
+        "complete_asset_identity_and_current_existence_review",
+        "gross_net_meter_and_load_scope",
+        "heat_service_and_feasible_power_heat_region",
+        "resolve_captive_or_public_supply_role",
+        "scenario_vintage_and_retirement",
+        "site_grid_interface_or_public_generator_evidence",
+        "unit_availability_and_outage",
+        "unit_fuel_and_cost_boundary",
+        "unit_start_ramp_minimum_output",
+        "validate_or_explicitly_bound_archive_parameter_transfer"
+      ],
+      "dispatch_ready": false
+    }
+  ],
+  "source_units": [
+    {
+      "unit_id": "G100001017684",
+      "source_record_sha256": "aad73a6a5c851621bd02f10f64a1e901fb3f696a4857d38e563aa00048068dac"
+    },
+    {
+      "unit_id": "G100000405757",
+      "source_record_sha256": "2ad852e6305044ebb9b9ce5d310225a493868ac1d9fc15cf853c231996a9a05a"
+    },
+    {
+      "unit_id": "G100000405758",
+      "source_record_sha256": "19004ce4f3b4ad83a83691c51eab10e2d7dd3f3d781ad808f86bda5ba70b09bf"
+    },
+    {
+      "unit_id": "G100000405489",
+      "source_record_sha256": "cf51e1a14996cdd7fd24a8afc64784308eec3d157c5ba0bafc63bda1ba31633c"
+    },
+    {
+      "unit_id": "G100000405490",
+      "source_record_sha256": "a47767a46f96a1ea88634cd31767dc2092f268d071ef2598175a5f5add85d655"
+    },
+    {
+      "unit_id": "G100000412495",
+      "source_record_sha256": "669b3a870369adc99a5abc8328f33b6140721c25da0715f877ddf6753ce14ff7"
+    },
+    {
+      "unit_id": "G100000412494",
+      "source_record_sha256": "4e0b7e5f46938dc7ab1dbcd105f75bfbe0dfc4636be8f11465b03844de58f6d0"
+    },
+    {
+      "unit_id": "G100000405497",
+      "source_record_sha256": "55e9c587f1053005294569714b542625801a9ca92d66e62742053230a141b5ca"
+    },
+    {
+      "unit_id": "G100000405498",
+      "source_record_sha256": "03f492dc4581c9bba72c3f2e2d648c5aa805da20c471270f8715849ac5691bc6"
+    },
+    {
+      "unit_id": "G100000405582",
+      "source_record_sha256": "a6fdaef653d886bf986dd33c879e8d7f29740a55a357e639cc19a23c97b9a6ee"
+    },
+    {
+      "unit_id": "G100000405583",
+      "source_record_sha256": "d810f66360274c943cdac7ebc53a9117d6cf9115c877ad5c43f283aee8591e3d"
+    },
+    {
+      "unit_id": "G100000405584",
+      "source_record_sha256": "21584fafb0bd85bd99839341ba0e931b9aa05febcb396e606896476b39f8dbf1"
+    },
+    {
+      "unit_id": "G100000405585",
+      "source_record_sha256": "e6b006679abc8a0365e51d9f07d0e33029e2b5151fd28b6da25303baece25749"
+    },
+    {
+      "unit_id": "G100000405588",
+      "source_record_sha256": "b32dea9ee5b5bd5d6e1810bbcf337740c79c0935a0e312fba4d7d06a00061b91"
+    },
+    {
+      "unit_id": "G100000405589",
+      "source_record_sha256": "be865ec3f73436627e70c3f438055962fac58777413e31eb227ddf3106bdc70c"
+    },
+    {
+      "unit_id": "G100000405580",
+      "source_record_sha256": "7b5415b248c19469a708592ce7907d41b41c7b9b98d620a674b5630449d8011e"
+    },
+    {
+      "unit_id": "G100000405581",
+      "source_record_sha256": "c9d498d6d1ca4ba3f1e400c72d934134460b81991f56dcfdc540321b64ebe252"
+    },
+    {
+      "unit_id": "G100000405483",
+      "source_record_sha256": "13848f35b14da4df5e9ee07d4fc371a009d0fca39c6010710d7880dffd2d0b7c"
+    },
+    {
+      "unit_id": "G100000405484",
+      "source_record_sha256": "eb15fb329f6af5c27a7f5b40a001024e6558c53d09bb2648a3b71d475e6ab069"
+    },
+    {
+      "unit_id": "G100000405553",
+      "source_record_sha256": "b801c8e71b232bb32a209282fe6eb5430f6a919b40a9f0c4fa05843d6e57b0cf"
+    },
+    {
+      "unit_id": "G100000405554",
+      "source_record_sha256": "b740acbb0e428274453e834b2dc3e90241de766b104d835d2084f7344650e97e"
+    },
+    {
+      "unit_id": "G100000405547",
+      "source_record_sha256": "3985a2a4f6c7b221c2c94fdd583d17db7288d341a6b5c2fed8dee99f126c10b6"
+    },
+    {
+      "unit_id": "G100000405548",
+      "source_record_sha256": "0159b8c2c58a9c16966162fab80208e2b349524e7604f33638c64a74b191ec58"
+    },
+    {
+      "unit_id": "G100000405543",
+      "source_record_sha256": "7f5478c0c74661ec9cd60dc1679f57facf67a77b5de22d677e1787e99b6485c6"
+    },
+    {
+      "unit_id": "G100000405544",
+      "source_record_sha256": "dee93504ee1eabdf09f98af6d079c2f6c6567a5e83b01215ef6b792a58c20df6"
+    },
+    {
+      "unit_id": "G100000405551",
+      "source_record_sha256": "96a344da667a00010673112621b50315a9bf58ef3d74c830f48405cbc755eb2f"
+    },
+    {
+      "unit_id": "G100000405552",
+      "source_record_sha256": "c20d596ba560e79cc8d050c36498f6a2e531f8535868b54961f7b49667f2ebbb"
+    },
+    {
+      "unit_id": "G100000405549",
+      "source_record_sha256": "d2552259c83568ac6c2b890aaf5a02ac1f5cba0c7db7f9debea95245a65eb07c"
+    },
+    {
+      "unit_id": "G100000405550",
+      "source_record_sha256": "4006d589d1d26059e10c1f4112301fd44f7c1a96095a782f05c37c963d463026"
+    },
+    {
+      "unit_id": "G100000405545",
+      "source_record_sha256": "123ce903bd3bfae99c002a1bec4bf9bdc7fd8f064a9a91d2566c6dbb49046b56"
+    },
+    {
+      "unit_id": "G100000405546",
+      "source_record_sha256": "ec5758bacb827007925e0e1dc8bcd549c48fe2e3aa2edefb67048fd1687f3f17"
+    },
+    {
+      "unit_id": "G100000405572",
+      "source_record_sha256": "840495cadd90d94fca151b313935e1854f7d06da47a8c0c66dfcc4f9ff8991b1"
+    },
+    {
+      "unit_id": "G100000405573",
+      "source_record_sha256": "6d05bced16db0c3acdb075af2b9512003e44454777af186d73ea24d0961661f9"
+    },
+    {
+      "unit_id": "G100000405564",
+      "source_record_sha256": "496080e85ea500f4277d1fb4c49a75a23d65eb101a437b5edb828e6840431a84"
+    },
+    {
+      "unit_id": "G100000405565",
+      "source_record_sha256": "2c77ec85169bbe292498ae85938f89a3006117a2eebf3b8ee143d41b291c3a7f"
+    },
+    {
+      "unit_id": "G100000405566",
+      "source_record_sha256": "67ef80476906f8a29d78422071ed503a09b6219a04584e6081db716f4ae79240"
+    },
+    {
+      "unit_id": "G100000405567",
+      "source_record_sha256": "2ccc9b39f01615cd34b28d862ab6e6d856d4196cd3fb6f82a8f60954d93dc02e"
+    },
+    {
+      "unit_id": "G100000405560",
+      "source_record_sha256": "8463ebd0bd72a3c9c06bd1dcae8f23167de867f24057199e59e4bc78b58bd7d5"
+    },
+    {
+      "unit_id": "G100000405561",
+      "source_record_sha256": "d64903be4073aef5b2d61a8ff4dd8cb78bb0ab24330bb510c2d1d3f417d68c77"
+    },
+    {
+      "unit_id": "G100000405493",
+      "source_record_sha256": "5b8d8bdaf5a9710bf100e2078f6c54fe1da12deb2b26cc697af2dfebfb5d3964"
+    },
+    {
+      "unit_id": "G100000405494",
+      "source_record_sha256": "05a86277b198959422b921004dac073194b67b276d6a8058823f3b86b15e0246"
+    },
+    {
+      "unit_id": "G100000405495",
+      "source_record_sha256": "875d74dc39d7ed7106966cb3bdb5c82a560963f4bb3318c874e568798a4cbefe"
+    },
+    {
+      "unit_id": "G100000405496",
+      "source_record_sha256": "09020c546ff956228eef29f4d2bfccbc038613fdce7dd5df47b863e3b27bafb8"
+    },
+    {
+      "unit_id": "G100000405523",
+      "source_record_sha256": "e0db2f3a96777a57c2d82af31f5c6e1a00450a162eaa342a9b54c53b14760e6f"
+    },
+    {
+      "unit_id": "G100000405524",
+      "source_record_sha256": "c0574d73ed41979f2cd27586e29b561f26b92f9e5501b2edbf5945874f522c7a"
+    },
+    {
+      "unit_id": "G100000405515",
+      "source_record_sha256": "f71b4dc90fefa42ac4b40eaff2668d14d854cdaebdb134bea93e5add5316fac6"
+    },
+    {
+      "unit_id": "G100000405516",
+      "source_record_sha256": "61e9d33840b9c0da6c09cb4a52335a4eec26b63bb4e871e41e2ceda57d09e93a"
+    },
+    {
+      "unit_id": "G100000405517",
+      "source_record_sha256": "09b52be278da312b0e835470b58d583aa81c9884594725aec2a90cabf694d84f"
+    },
+    {
+      "unit_id": "G100000405518",
+      "source_record_sha256": "0de069509f61db5ec6c304e4a6ada88a8b7584e5105129046b17ae5c75369d6b"
+    },
+    {
+      "unit_id": "G100000405519",
+      "source_record_sha256": "e815675a264cf367aeb190ff4fdf298180cee7cd2114c721d7e281c233e431bc"
+    },
+    {
+      "unit_id": "G100000405520",
+      "source_record_sha256": "5e03eee6b22f5c20ec286afda7eafe325f2393fa91417cc5e65915aca1d6d6ad"
+    },
+    {
+      "unit_id": "G100000405511",
+      "source_record_sha256": "4599ab874c83eed9611927aabb121141102ba062400cffdfc9bc268a25c16321"
+    },
+    {
+      "unit_id": "G100000405512",
+      "source_record_sha256": "4bb03ce7f862ad157a06e98c21a8b20644d573fbf7e4f5754ddd691fb665741b"
+    },
+    {
+      "unit_id": "G100000405521",
+      "source_record_sha256": "3724d5773cd070fe4d029a6a39bd6167755707fe8772dd1d4a16a1e0efb797d9"
+    },
+    {
+      "unit_id": "G100000405522",
+      "source_record_sha256": "e66dae262cffcd5a49ae234698f42c0aee57c622862021133ed83ea9e8b0300e"
+    },
+    {
+      "unit_id": "G100000405501",
+      "source_record_sha256": "c71f0e1dbf26a5d3099928d2e3c95394e28013cd45c7f9d34c4579a06fc90dfd"
+    },
+    {
+      "unit_id": "G100000405502",
+      "source_record_sha256": "d6593fee552452ca91967d66b32f71eecabc7f3e5661daf9eeee6f48ed162af6"
+    },
+    {
+      "unit_id": "G100000405503",
+      "source_record_sha256": "b87a0174338e3af103bcf7b61f5a602244bdb5722d7b184e904424635d8b3a6f"
+    },
+    {
+      "unit_id": "G100000405539",
+      "source_record_sha256": "6cc6bbc3d46bc799dbea1a32ce50c7ee9e9750f7376e65d7014282516885fc5c"
+    },
+    {
+      "unit_id": "G100000405540",
+      "source_record_sha256": "cfd641155faa4ca6d5e1a413c5ee676df4cbdaf6e0b1b207120299bf46644201"
+    },
+    {
+      "unit_id": "G100000405531",
+      "source_record_sha256": "d9cc4d81bde27ce086edc8498cd4eddcc61a8920dd5f05b687dae636a2af9e30"
+    },
+    {
+      "unit_id": "G100000405532",
+      "source_record_sha256": "bf6e6248629dd98e36d8e4720cfe366fede5607fdc76e726b9689943335743e9"
+    },
+    {
+      "unit_id": "G100000405533",
+      "source_record_sha256": "8588512498644e3fd925b9bb69f2194d4204eea487e46b31228ed507894ac89d"
+    },
+    {
+      "unit_id": "G100000405534",
+      "source_record_sha256": "50001919722ba69fff9f6458634205120e73ee8ca383f91d57cd643873023aa2"
+    },
+    {
+      "unit_id": "G100000405535",
+      "source_record_sha256": "e306ba27bd53f0253a513e1233d5881e92f377d96109124ca2dbe13dbd3dfb83"
+    },
+    {
+      "unit_id": "G100000405536",
+      "source_record_sha256": "49b466ad4c7b6946750730da3e41d988b4a61bf33f87fd4402e0441d27ad896f"
+    },
+    {
+      "unit_id": "G100000405541",
+      "source_record_sha256": "069dc6f038fc36a0ae67a85b2880a4acaa6ca277b229713260bd95e69868b96d"
+    },
+    {
+      "unit_id": "G100000405542",
+      "source_record_sha256": "71f19bd71ede30b067ae672147171cd14b0ba7effcc8a41735401faa48f2ef88"
+    },
+    {
+      "unit_id": "G100001030385",
+      "source_record_sha256": "0f304570a29fe35285a4320c2d49fd20dda6857640c0477b0c62b9f2ac521f47"
+    },
+    {
+      "unit_id": "G100000405600",
+      "source_record_sha256": "f8ad504d2982c68503fc31c2471331b87004b95b9072770cf3b6fca78bc4906e"
+    },
+    {
+      "unit_id": "G100000405601",
+      "source_record_sha256": "f5fe6ffd2c7e97609e942ebd54d21c16df7e2fb29466764cdc8ff1dce8bb4ea4"
+    },
+    {
+      "unit_id": "G100000405599",
+      "source_record_sha256": "80ddf5f00df276e2664c89f92debf284ac8deaf9ddc72e7b28e8c895f4815fb2"
+    },
+    {
+      "unit_id": "G100000405507",
+      "source_record_sha256": "de8ff5b690918e4f0c0d9ea7f419b083a1cf4a106e2152798c257ae36c90af4a"
+    },
+    {
+      "unit_id": "G100000405508",
+      "source_record_sha256": "db5124ae8a6a6946f45ae5abb6d113cdb01d4c4140b67bbbf5fb9f196a41007e"
+    },
+    {
+      "unit_id": "G100000405597",
+      "source_record_sha256": "fa03a1ac100bdaa7f3daa072a397e0337705f21eab583eef08583e835e2d4749"
+    },
+    {
+      "unit_id": "G100000405598",
+      "source_record_sha256": "5ee0a401efa73ec1755a70f553e6e1cd53f1b85de296deff1cbb9ec0663d285f"
+    },
+    {
+      "unit_id": "G100000412357",
+      "source_record_sha256": "96681c997f455da0df13596560696f09f3b4e14d9c29bd891637c0d7a6821f0f"
+    },
+    {
+      "unit_id": "G100000412356",
+      "source_record_sha256": "068587b23369016c59c18533b63003fcb88dd095a1eede8fd83db3078a7bcec8"
+    },
+    {
+      "unit_id": "G100000412355",
+      "source_record_sha256": "4a91ab5e9123ff9d9228586f7b5326ccc0fb4a7c84f4a73b215c3d061a09ca12"
+    },
+    {
+      "unit_id": "G100000412354",
+      "source_record_sha256": "6360a4f46e185cc85c7cea7cf566f67528c6c6918325bd649d0b4f5cc96040c5"
+    },
+    {
+      "unit_id": "G100000405595",
+      "source_record_sha256": "53378ee1d5d72cfd2b5ece1b82f2bb2e55fb0dc0e17cea1bf0d40b10c07bb41f"
+    },
+    {
+      "unit_id": "G100000405596",
+      "source_record_sha256": "8f86742cb0b47707a58c759e112c3cfe02e4e24f5b5a5ad2c43dc20227421171"
+    },
+    {
+      "unit_id": "G100000405602",
+      "source_record_sha256": "791cd292dc7e5fad331f10c8e21a4ab5f78b126f5e1cb908d5014ae898abc8a8"
+    },
+    {
+      "unit_id": "G100000405603",
+      "source_record_sha256": "bed9da5b5d39f645ea46e702c5875df6ae17ff047b70e61ec604ad2e0e79a8d1"
+    },
+    {
+      "unit_id": "G100000405196",
+      "source_record_sha256": "aa146b44d2e30061412f8261c6a0ee7acac58ac678654d78a0376c3b3b4621ef"
+    },
+    {
+      "unit_id": "G100000405555",
+      "source_record_sha256": "4e0876a36bd49e6465e521708b748f5e0b5b66001ed32bd67de05d6fb7930cd0"
+    },
+    {
+      "unit_id": "G100000405830",
+      "source_record_sha256": "f0311f642da9328376b3ac2a857ae6c5fc3464f3d2483d0950849d8d58338967"
+    },
+    {
+      "unit_id": "G100000405831",
+      "source_record_sha256": "6c3c1c6f4d65d2f9d3fbfac17a42df9541d73eb2a8f0396982bc5dfcf4ff6caf"
+    },
+    {
+      "unit_id": "G100000412574",
+      "source_record_sha256": "30d3278937d195941891b963f5fa9c3bdd7837aea3434ce10d15cd5f940586ea"
+    },
+    {
+      "unit_id": "G100000412573",
+      "source_record_sha256": "60380d68bdb64d08ec3ec1c935a41927a5a2d2072531699b2076e32ec8330c99"
+    },
+    {
+      "unit_id": "G100000405491",
+      "source_record_sha256": "48c1fe01b6afe17e25e23d2cb45371ff756581385530657974f1930efd06f8e7"
+    },
+    {
+      "unit_id": "G100000405492",
+      "source_record_sha256": "baf034e27a7987b0c260a62dd4f9619713c3144c54244597a93e6bce66d682e3"
+    },
+    {
+      "unit_id": "G100000405574",
+      "source_record_sha256": "e4301defaddd76e3c0e064391bd643ebb14658cc576ce4ab019a50b7cf4134b3"
+    },
+    {
+      "unit_id": "G100000405575",
+      "source_record_sha256": "ff510ef2c51e43e74eb6126044f48db3baca8084ed21a282250cd04d133bdb43"
+    },
+    {
+      "unit_id": "G100000405527",
+      "source_record_sha256": "4ca2eab241aab8bb3d0dcb258435c6a0cb221cd79a38799edd924dd0c077fbdc"
+    },
+    {
+      "unit_id": "G100000405528",
+      "source_record_sha256": "53fb121c84af7a11b4917972cfcf03aefc48e3c3613b439f16195f62bb6eefbf"
+    },
+    {
+      "unit_id": "G100000405529",
+      "source_record_sha256": "252120ee58c75b46dc0ba3f1bd5cdc447d5cbcce8a54b916dd6a775f381af5e3"
+    },
+    {
+      "unit_id": "G100000405530",
+      "source_record_sha256": "14b6def9bd118b6aea216597e3f37aa23e98e307472c636b6a2b768b0b4ec896"
+    },
+    {
+      "unit_id": "G100000405558",
+      "source_record_sha256": "2ea7a24d5a6d48430f5d8af8c932318df5afe96b451d5431cb079c4c8cbfad15"
+    },
+    {
+      "unit_id": "G100000405559",
+      "source_record_sha256": "3028c0e3b6f05f10fa435067c8d150ce145dd9d8b415a6f56f454b2b2ec900e1"
+    },
+    {
+      "unit_id": "G100000405594",
+      "source_record_sha256": "2d2710de8118afbb809c5c322317fb0b77c6abcf5af568417005e10fb5f59cbe"
+    },
+    {
+      "unit_id": "G100000410252",
+      "source_record_sha256": "c6e3023a750e0095869398e3d04f557a79684b5cc8050f508435e08433fa787f"
+    },
+    {
+      "unit_id": "G100000412272",
+      "source_record_sha256": "c28ed39713a6ec5ff001ee5685eca167c982b575ee51174578c355310d741f09"
+    },
+    {
+      "unit_id": "G100000412271",
+      "source_record_sha256": "15282cc683acd836dd1626db2fdb37e25d29667561e29a97d2383d3ee13dddd1"
+    },
+    {
+      "unit_id": "G100000405562",
+      "source_record_sha256": "c92b34e51a2f1cf00feb420edd3d624ae639de7b7ee6d296fbca30f9ddfb028b"
+    },
+    {
+      "unit_id": "G100000405563",
+      "source_record_sha256": "3859734d8743fa625adde447a31ad45f67f9486f6bfa3796264b950a06396444"
+    },
+    {
+      "unit_id": "G100000412270",
+      "source_record_sha256": "7f107729477ead19a2a795fac0623c0b93ba96b2a47310ab62892b9cedf60280"
+    },
+    {
+      "unit_id": "G100000412262",
+      "source_record_sha256": "c4bdcd7c37afe5cc83675cc2d7fc8fd6beeaad24661a3d473cb083afb1139150"
+    },
+    {
+      "unit_id": "G100000412261",
+      "source_record_sha256": "8592af5bd445ee3499e8abe0fae8617c2ef739ce9dde9f0b1558cf9bcc94fc3e"
+    }
+  ],
+  "investment_options": [
+    {
+      "option_id": "Gansu:new_OCGT",
+      "province": "Gansu",
+      "technology": "OCGT",
+      "role": "prospective_investment_option",
+      "existing_capacity_mw": "0",
+      "max_new_capacity_mw": null,
+      "permission": "UNRESOLVED_POLICY",
+      "conditional_parameter_reference": "OCGT",
+      "dispatch_ready": false
+    },
+    {
+      "option_id": "Guizhou:new_OCGT",
+      "province": "Guizhou",
+      "technology": "OCGT",
+      "role": "prospective_investment_option",
+      "existing_capacity_mw": "0",
+      "max_new_capacity_mw": null,
+      "permission": "UNRESOLVED_POLICY",
+      "conditional_parameter_reference": "OCGT",
+      "dispatch_ready": false
+    },
+    {
+      "option_id": "Jiangsu:new_OCGT",
+      "province": "Jiangsu",
+      "technology": "OCGT",
+      "role": "prospective_investment_option",
+      "existing_capacity_mw": "0",
+      "max_new_capacity_mw": null,
+      "permission": "UNRESOLVED_POLICY",
+      "conditional_parameter_reference": "OCGT",
+      "dispatch_ready": false
+    }
+  ],
+  "conditional_parameters": {
+    "OCGT": {
+      "values": {
+        "efficiency": "0.41",
+        "fuel_cost_per_mwh_th": "20.1",
+        "fuel_co2_t_per_mwh_th": "0.2",
+        "vom_eur_per_mwh": "4.5",
+        "investment_eur_per_kw": "435.24",
+        "fom_percent_per_year": "1.78",
+        "lifetime_years": "25",
+        "discount_rate": "0.05",
+        "marginal_cost_eur_per_mwh": "53.52439024390243902439024390",
+        "emissions_t_per_mwh": "0.4878048780487804878048780488",
+        "annualized_capital_eur_per_mw": "30881.34751491670275453535138",
+        "fixed_om_eur_per_mw_year": "7747.2720",
+        "annualized_capital_plus_fixed_om_eur_per_mw": "38628.61951491670275453535138"
+      },
+      "scope": "ARCHIVE_CONDITIONAL_REFERENCE_NOT_UNIT_CALIBRATION",
+      "heat_coefficients_applied": false,
+      "electrical_meter_basis": "NOT_ESTABLISHED_FOR_SOURCE_UNITS",
+      "efficiency_time_basis": "annual_average_from_archive_description"
+    },
+    "CCGT": {
+      "values": {
+        "efficiency": "0.58",
+        "fuel_cost_per_mwh_th": "20.1",
+        "fuel_co2_t_per_mwh_th": "0.2",
+        "vom_eur_per_mwh": "4.2",
+        "investment_eur_per_kw": "830",
+        "fom_percent_per_year": "3.35",
+        "lifetime_years": "25",
+        "discount_rate": "0.05",
+        "marginal_cost_eur_per_mwh": "38.85517241379310344827586207",
+        "emissions_t_per_mwh": "0.3448275862068965517241379310",
+        "annualized_capital_eur_per_mw": "58890.53955836059021749917665",
+        "fixed_om_eur_per_mw_year": "27805.00",
+        "annualized_capital_plus_fixed_om_eur_per_mw": "86695.53955836059021749917668",
+        "c_b": "2",
+        "c_v": "0.15"
+      },
+      "scope": "ARCHIVE_CONDITIONAL_REFERENCE_NOT_UNIT_CALIBRATION",
+      "heat_coefficients_applied": false,
+      "electrical_meter_basis": "NOT_ESTABLISHED_FOR_SOURCE_UNITS",
+      "efficiency_time_basis": "annual_average_from_archive_description"
+    }
+  },
+  "source_capacity_mw": "24959.0",
+  "resolved_candidate_capacity_mw": "24759.0",
+  "alias_counting_difference_mw": "200.0",
+  "qualified_operational_parameter_sets": 0,
+  "source_staging_sha256": "2fb2b606aa62bad2d3977457dfed9223c8ed423c0aa37e8ca322fbf47331170f",
+  "source_staging_path": "outputs/research/revision/thermal_technology/fleet_staging.json",
+  "adjudication_sha256": "3023aff664abc02d706d2561dc806a09d1718e40e04fa7072e547e7b8dbbc009",
+  "identity_review_source_hashes": {
+    "cnooc_operation": "5bfeb72a1388ffd9de5ffc4e0b6aa8c0ad37fe5d2f97332902fa0806cb781c87",
+    "gem_thermal_current": "8d72cb27fdf76cfef5b03b54d915da05ae23e122240673f6b4cb1103ebc588b9",
+    "gem_jiangsu_current": "6a1df4e609c29299fe27e307a5182fea30326993798e97cfbe795b001a83ce15"
+  }
+}

@@ -1,0 +1,91 @@
+[
+  {
+    "source_id": "gem_thermal",
+    "url": "https://www.gem.wiki/w/index.php?title=CNOOC_Funing_Thermal_power_station&oldid=1061629",
+    "retrieved_on": "2026-09-23",
+    "error": "HTTP Error 403: Forbidden",
+    "admission": "not_admitted_as_local_source"
+  },
+  {
+    "source_id": "gem_jiangsu",
+    "url": "https://www.gem.wiki/w/index.php?title=CNOOC_Jiangsu_Funing_power_station&oldid=1061631",
+    "retrieved_on": "2026-09-23",
+    "error": "HTTP Error 403: Forbidden",
+    "admission": "not_admitted_as_local_source"
+  },
+  {
+    "source_id": "funing_plan",
+    "url": "https://www.funing.gov.cn/art/2020/8/19/art_24074_3414768.html",
+    "retrieved_on": "2026-09-23",
+    "error": "HTTP Error 403: Forbidden",
+    "admission": "not_admitted_as_local_source"
+  },
+  {
+    "source_id": "cnooc_operation",
+    "url": "https://gaspower.cnooc.com.cn/xwdt/qdyw/202501/t20250107_110431.html",
+    "retrieved_on": "2026-09-23",
+    "final_url": "https://gaspower.cnooc.com.cn/xwdt/qdyw/202501/t20250107_110431.html",
+    "status": 200,
+    "content_type": "text/html",
+    "path": "work/research/sources/funing_identity_20260923/cnooc_operation.html",
+    "bytes": 28047,
+    "sha256": "5bfeb72a1388ffd9de5ffc4e0b6aa8c0ad37fe5d2f97332902fa0806cb781c87",
+    "admission": "raw_snapshot"
+  },
+  {
+    "source_id": "funing_government_operation",
+    "url": "https://www.funing.gov.cn/art/2022/5/24/art_6615_3856287.html",
+    "retrieved_on": "2026-09-23",
+    "error": "HTTP Error 403: Forbidden",
+    "admission": "not_admitted_as_local_source"
+  },
+  {
+    "source_id": "funing_environment",
+    "url": "https://www.funing.gov.cn/module/download/downfile.jsp?classid=0&filename=ac90c1dd531f4db396975bbc046ac029.pdf",
+    "retrieved_on": "2026-09-23",
+    "error": "HTTP Error 403: Forbidden",
+    "admission": "not_admitted_as_local_source",
+    "note": "Web PDF text was accessible as a lead, but original bytes and full-page review were not obtained; no PDF values admitted."
+  },
+  {
+    "source_id": "funing_environment_alt",
+    "url": "https://funing.yancheng.gov.cn/module/download/downfile.jsp?classid=0&filename=ac90c1dd531f4db396975bbc046ac029.pdf",
+    "retrieved_on": "2026-09-23",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>",
+    "admission": "not_admitted_as_local_source",
+    "note": "Web PDF text was accessible as a lead, but original bytes and full-page review were not obtained; no PDF values admitted."
+  },
+  {
+    "source_id": "funing_plan_alt",
+    "url": "http://funing.yancheng.gov.cn/art/2020/8/19/art_24074_3414768.html",
+    "retrieved_on": "2026-09-23",
+    "error": "HTTP Error 502: Bad Gateway",
+    "admission": "not_admitted_as_local_source"
+  },
+  {
+    "source_id": "gem_thermal_current",
+    "url": "https://www.gem.wiki/CNOOC_Funing_Thermal_power_station",
+    "retrieved_on": "2026-09-23",
+    "final_url": "https://www.gem.wiki/CNOOC_Funing_Thermal_power_station",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "work/research/sources/funing_identity_20260923/gem_thermal_current.html",
+    "bytes": 56806,
+    "sha256": "8d72cb27fdf76cfef5b03b54d915da05ae23e122240673f6b4cb1103ebc588b9",
+    "admission": "raw_snapshot",
+    "page_revision_id": "1280775"
+  },
+  {
+    "source_id": "gem_jiangsu_current",
+    "url": "https://www.gem.wiki/CNOOC_Jiangsu_Funing_power_station",
+    "retrieved_on": "2026-09-23",
+    "final_url": "https://www.gem.wiki/CNOOC_Jiangsu_Funing_power_station",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "work/research/sources/funing_identity_20260923/gem_jiangsu_current.html",
+    "bytes": 46508,
+    "sha256": "6a1df4e609c29299fe27e307a5182fea30326993798e97cfbe795b001a83ce15",
+    "admission": "raw_snapshot",
+    "page_revision_id": "1280776"
+  }
+]

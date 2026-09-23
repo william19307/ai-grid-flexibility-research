@@ -1,0 +1,4 @@
+view,records_or_assets,capacity_mw,scope
+frozen_inventory,109,24959.0,"source rows, not independently verified distinct assets"
+reviewed_alias_asset_view,107,24759.0,research identity inference; no operating admission
+difference,2,200.0,only Funing duplicate-counting correction
