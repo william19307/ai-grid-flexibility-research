@@ -1,0 +1,150 @@
+{
+  "plan_sha256": "eba200c098e820096c9701afd0412e0a1a2496cde0ca74f14fdedc6ee77d13cd",
+  "acquirer_sha256": "ad3356506be6860f76d50d597b581e5df3da74fb30c0c439bb25fd3305ccf9ed",
+  "completed": 3,
+  "pending": 0,
+  "stop_reason": "complete",
+  "records": [
+    {
+      "request": {
+        "id": "19bab79a2d214db831a2b8ad",
+        "year": 2022,
+        "parameters": {
+          "latitude": "32.822600",
+          "longitude": "121.671700",
+          "start_date": "2022-01-01",
+          "end_date": "2023-01-01",
+          "hourly": "wind_speed_100m,wind_speed_10m,shortwave_radiation,direct_radiation,diffuse_radiation,temperature_2m,surface_pressure",
+          "timezone": "Asia/Shanghai",
+          "models": "era5",
+          "wind_speed_unit": "ms",
+          "cell_selection": "nearest",
+          "elevation": "nan"
+        },
+        "expected_hours": 8784,
+        "conservative_call_equivalents": 27
+      },
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.822600&longitude=121.671700&start_date=2022-01-01&end_date=2023-01-01&hourly=wind_speed_100m%2Cwind_speed_10m%2Cshortwave_radiation%2Cdirect_radiation%2Cdiffuse_radiation%2Ctemperature_2m%2Csurface_pressure&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=nearest&elevation=nan",
+      "retrieved_utc": "2026-09-23T00:07:26.045122+00:00",
+      "validation": {
+        "raw_sha256": "21d9bc32876f280a9b1e195a3a87d10981c94388115023e93c7ca621ca49fe8e",
+        "scientific_content_sha256": "1cefa370c57cb4f691ee8181f8afaefd039f18b5117fbf260c4e5cb647b3d2e9",
+        "bytes": 487219,
+        "hours": 8784,
+        "returned_metadata": {
+          "latitude": 32.75,
+          "longitude": 121.75,
+          "generationtime_ms": 442.5945281982422,
+          "utc_offset_seconds": 28800,
+          "timezone": "Asia/Shanghai",
+          "timezone_abbreviation": "GMT+8",
+          "elevation": 0.0,
+          "hourly_units": {
+            "time": "iso8601",
+            "wind_speed_100m": "m/s",
+            "wind_speed_10m": "m/s",
+            "shortwave_radiation": "W/m\u00b2",
+            "direct_radiation": "W/m\u00b2",
+            "diffuse_radiation": "W/m\u00b2",
+            "temperature_2m": "\u00b0C",
+            "surface_pressure": "hPa"
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "id": "217cfeb77bdc1a0611a2e175",
+        "year": 2023,
+        "parameters": {
+          "latitude": "32.822600",
+          "longitude": "121.671700",
+          "start_date": "2023-01-01",
+          "end_date": "2024-01-01",
+          "hourly": "wind_speed_100m,wind_speed_10m,shortwave_radiation,direct_radiation,diffuse_radiation,temperature_2m,surface_pressure",
+          "timezone": "Asia/Shanghai",
+          "models": "era5",
+          "wind_speed_unit": "ms",
+          "cell_selection": "nearest",
+          "elevation": "nan"
+        },
+        "expected_hours": 8784,
+        "conservative_call_equivalents": 27
+      },
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.822600&longitude=121.671700&start_date=2023-01-01&end_date=2024-01-01&hourly=wind_speed_100m%2Cwind_speed_10m%2Cshortwave_radiation%2Cdirect_radiation%2Cdiffuse_radiation%2Ctemperature_2m%2Csurface_pressure&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=nearest&elevation=nan",
+      "retrieved_utc": "2026-09-23T00:07:35.451843+00:00",
+      "validation": {
+        "raw_sha256": "f8f42a3b50e845c2c2b70b3a1878256ebde0a1369695c282e56bee1405c8a5a3",
+        "scientific_content_sha256": "82ec45a1753521dd0759e2001b9a4e6680e4aeed553bc226f5bb5c7828c70247",
+        "bytes": 487102,
+        "hours": 8784,
+        "returned_metadata": {
+          "latitude": 32.75,
+          "longitude": 121.75,
+          "generationtime_ms": 333.43732357025146,
+          "utc_offset_seconds": 28800,
+          "timezone": "Asia/Shanghai",
+          "timezone_abbreviation": "GMT+8",
+          "elevation": 0.0,
+          "hourly_units": {
+            "time": "iso8601",
+            "wind_speed_100m": "m/s",
+            "wind_speed_10m": "m/s",
+            "shortwave_radiation": "W/m\u00b2",
+            "direct_radiation": "W/m\u00b2",
+            "diffuse_radiation": "W/m\u00b2",
+            "temperature_2m": "\u00b0C",
+            "surface_pressure": "hPa"
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "id": "aea352cecb044e93cb94927d",
+        "year": 2024,
+        "parameters": {
+          "latitude": "32.822600",
+          "longitude": "121.671700",
+          "start_date": "2024-01-01",
+          "end_date": "2025-01-01",
+          "hourly": "wind_speed_100m,wind_speed_10m,shortwave_radiation,direct_radiation,diffuse_radiation,temperature_2m,surface_pressure",
+          "timezone": "Asia/Shanghai",
+          "models": "era5",
+          "wind_speed_unit": "ms",
+          "cell_selection": "nearest",
+          "elevation": "nan"
+        },
+        "expected_hours": 8808,
+        "conservative_call_equivalents": 27
+      },
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=32.822600&longitude=121.671700&start_date=2024-01-01&end_date=2025-01-01&hourly=wind_speed_100m%2Cwind_speed_10m%2Cshortwave_radiation%2Cdirect_radiation%2Cdiffuse_radiation%2Ctemperature_2m%2Csurface_pressure&timezone=Asia%2FShanghai&models=era5&wind_speed_unit=ms&cell_selection=nearest&elevation=nan",
+      "retrieved_utc": "2026-09-23T00:07:38.215548+00:00",
+      "validation": {
+        "raw_sha256": "caeed331f3cb65c6cf610c2825f12e89287c971389f49998bee04455424610db",
+        "scientific_content_sha256": "c95e6378396b780c971b6c04b0de8aaee291558f8f6c13f759d22151952ea04a",
+        "bytes": 488360,
+        "hours": 8808,
+        "returned_metadata": {
+          "latitude": 32.75,
+          "longitude": 121.75,
+          "generationtime_ms": 381.45649433135986,
+          "utc_offset_seconds": 28800,
+          "timezone": "Asia/Shanghai",
+          "timezone_abbreviation": "GMT+8",
+          "elevation": 0.0,
+          "hourly_units": {
+            "time": "iso8601",
+            "wind_speed_100m": "m/s",
+            "wind_speed_10m": "m/s",
+            "shortwave_radiation": "W/m\u00b2",
+            "direct_radiation": "W/m\u00b2",
+            "diffuse_radiation": "W/m\u00b2",
+            "temperature_2m": "\u00b0C",
+            "surface_pressure": "hPa"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "plan_sha256": "eba200c098e820096c9701afd0412e0a1a2496cde0ca74f14fdedc6ee77d13cd",
+  "builder_sha256": "e4fb135f2b684ecbc9dc9a4c4694c45dee89979938efe2f86c85b4112b1f5c15",
+  "observations_sha256": "06a966c68e93b395f3e6f56ca7ba187e8e494512371212963a559446ca260bf0",
+  "weather_sources": [
+    {
+      "year": 2022,
+      "request_id": "19bab79a2d214db831a2b8ad",
+      "raw_sha256": "21d9bc32876f280a9b1e195a3a87d10981c94388115023e93c7ca621ca49fe8e",
+      "meta_sha256": "2dbc0d7313e2fff976545d2bbe57b6e6b1f5c90a957f65094bf50cc80f9e2db3",
+      "returned_latitude": 32.75,
+      "returned_longitude": 121.75
+    },
+    {
+      "year": 2023,
+      "request_id": "217cfeb77bdc1a0611a2e175",
+      "raw_sha256": "f8f42a3b50e845c2c2b70b3a1878256ebde0a1369695c282e56bee1405c8a5a3",
+      "meta_sha256": "2fea4ee7996bfb3d34991c768a82d5f1598bc30d403c6f33b2b6e8cb0abe0523",
+      "returned_latitude": 32.75,
+      "returned_longitude": 121.75
+    },
+    {
+      "year": 2024,
+      "request_id": "aea352cecb044e93cb94927d",
+      "raw_sha256": "caeed331f3cb65c6cf610c2825f12e89287c971389f49998bee04455424610db",
+      "meta_sha256": "8096282d0013191a307664c72db73d2af32e3d5d0929458eecb5b0a32b35bef9",
+      "returned_latitude": 32.75,
+      "returned_longitude": 121.75
+    }
+  ],
+  "curve_sources": {
+    "NREL_ReferenceTurbine_5MW_offshore.yaml": "204f56852ed370f536948433e7071bcef06628ede2d962ef6e28d78404feed2c",
+    "Vestas_V112_3MW.yaml": "8276d84cfdf16ede759c7ba9334353836665ea0c7dc5b9c7639f7da8afe175a6"
+  },
+  "profile_path": "work/research/prepared/rudong_h2_2022_2024_EXPLORATORY.csv.gz",
+  "profile_sha256": "350d4d8cb5e9b129d4db30a614f05f0047cfc00892fe35a95140fcc76bc980d1",
+  "summary_sha256": "a1cc50d30a7e380037ae784357a75881e4b91e1bb0954091c313b9599f861f18",
+  "cases": 9,
+  "hourly_values": 157824,
+  "admission": "EXPLORATORY_ANNUAL_TRANSFER_ONLY; hourly or provincial validation not established",
+  "physically_rejected_curves": [
+    "legacy_generic"
+  ],
+  "assumptions": [
+    "Fixed 100m wind and common 0.85 multiplier; no actual manufacturer curve",
+    "Trapezoidal power endpoints are an integration approximation, not measured hourly means",
+    "Company offshore aggregate mapped to H2 by documentary inference",
+    "All observed years were seen before freezing plan; not blind holdout",
+    "No clipping, model selection or flat time-availability energy correction"
+  ]
+}

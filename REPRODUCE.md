@@ -240,3 +240,17 @@ python work/research/analysis/audit_wind_equipment_sources.py
 ```
 
 第三项使用含 pypdf 的解释器并要求 pdftotext 可用；本轮运行路径为 Codex bundled Python。逐小时诊断重建在排除目录 `work/research/prepared/wind_reference_shapes_2020_UNCALIBRATED.csv.gz`，摘要和哈希进入版本控制。独立数值核验覆盖全部 105,408 个小时值及 12 个积分，而非实际发电量。87 个节点检查明确重复节点和切出边界。两条参考数据由 Contributors to atlite 按 CC-BY-4.0 标记，表值经过归一化、插值和共同系数处理，署名与具体变换见阶段 17 报告。0.85 和端点线性积分仍是假设；未估计实际设备、风场损失、置信区间或省级容量价值。
+
+### 阶段 18：同范围年度观测候选与冻结跨年诊断
+
+方案 `revision/rudong_h2_validation/site_weather_plan.json` 于 `16934de` 冻结。三份年报按 observation_audit.json 的 source_manifest 下载为 `work/research/sources/rudong_h2_observations_20260923/annual2022.pdf` 等，保留 `.pdf.meta.json`（url、sha256、bytes、retrieved_utc），逐文件校核哈希。年报观测核验需要 pypdf 与 pdftotext；计算需 NumPy/Pandas，独立数值核验使用标准库和阶段 17 的独立标量函数。
+
+```bash
+python work/research/analysis/audit_rudong_h2_observations.py
+work/figure-env/bin/python work/research/analysis/validate_rudong_h2_transfer.py
+work/figure-env/bin/python work/research/analysis/verify_rudong_h2_transfer.py
+```
+
+第二项需要阶段 17 固定来源参考曲线，以及 acquisition.json 列出的三组天气响应及 meta，存于上述 sources 目录的 weather 子目录。三年 2022/2023/2024 各包含次年 1 月 1 日全天，输出取完整本年小时及下一端点。已有完整缓存不再请求；缺缓存时可运行 acquire_rudong_h2_weather.py，沿用共享额度台账和锁，不能清空账本或解除旧计划研究暂停。动态 API 字节变化须新留证据，不能冒充原快照。采集清单记录参数、URL、时间、哈希、返回网格及单位。
+
+逐小时输出在排除目录 `work/research/prepared/rudong_h2_2022_2024_EXPLORATORY.csv.gz`，9 条件摘要与全部审计入版本控制。共 157,824 个值独立复算，包含两平年和一闰年、校准前后、三条曲线。固定 2022 年系数、显式计数 CF>1、不裁剪、不切换 gross/net、不以时间可用率当能量损失。观测舍入范围仅为显示精度，不是统计区间。此流程不等于全新机器完整研究复现、小时观测校准或省级验证。

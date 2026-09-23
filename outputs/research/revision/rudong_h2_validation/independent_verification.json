@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "hourly_values": 157824,
+  "cases": 9,
+  "max_absolute_error": "6.12162597357E-16",
+  "analysis_sha256": "86544c4008792e17148f391c22e2a315192daad42b29efb731d4add3c9fe3f16",
+  "verifier_sha256": "7f3e8c88b6ed9d6ec2fd93a7ca81fc1c2d8163add4605f007be154c62992b8c3",
+  "scalar_dependency_sha256": "60f700215f04bd2868b9f80f3e05287022584781487128d238555b0dd040ec91",
+  "observation_rounding_bounds": [
+    {
+      "year": 2023,
+      "curve": "legacy_generic",
+      "error_rounding_lower_pct": "2.305959025228747777771332400",
+      "error_rounding_upper_pct": "2.545131996052347543638978400"
+    },
+    {
+      "year": 2023,
+      "curve": "NREL_ReferenceTurbine_5MW_offshore",
+      "error_rounding_lower_pct": "-0.6671612743676756758596913100",
+      "error_rounding_upper_pct": "-0.4349389252033193573916906900"
+    },
+    {
+      "year": 2023,
+      "curve": "Vestas_V112_3MW",
+      "error_rounding_lower_pct": "-1.453434488153223897753116970",
+      "error_rounding_upper_pct": "-1.223050304646194874641858740"
+    },
+    {
+      "year": 2024,
+      "curve": "legacy_generic",
+      "error_rounding_lower_pct": "-8.712822353783719403178504640",
+      "error_rounding_upper_pct": "-8.517129793409764510658721960"
+    },
+    {
+      "year": 2024,
+      "curve": "NREL_ReferenceTurbine_5MW_offshore",
+      "error_rounding_lower_pct": "-11.79919850243969628111359235",
+      "error_rounding_upper_pct": "-11.61012221465057606996755404"
+    },
+    {
+      "year": 2024,
+      "curve": "Vestas_V112_3MW",
+      "error_rounding_lower_pct": "-12.55419608374132672673758592",
+      "error_rounding_upper_pct": "-12.36673828623277641933777100"
+    }
+  ],
+  "scope": "Arithmetic and frozen transfer rule verified; not independent experimental replication, hourly calibration or provincial evidence."
+}

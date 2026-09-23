@@ -1,0 +1,46 @@
+{
+  "read_utc": "2026-09-23T00:13:58.610932+00:00",
+  "source_kind": "Official CCER public rendered project/reduction detail; manual transcription checked against accessibility text",
+  "project_url": "https://ccer.cets.org.cn/projectPublicity/projectPublicityDetail?applyId=1313873822398681088&ccerId&certificationId&dataType=2&projectInfoId=1367222859084206080&applyStatus",
+  "reduction_url": "https://ccer.cets.org.cn/projectPublicity/projectPublicityDetail?applyId=1453819272081051648&ccerId&certificationId=1486686965234536448&dataType=4&projectInfoId&applyStatus",
+  "project_id": "A210013",
+  "project_name": "江苏新能海力如东H2#350兆瓦海上风电项目",
+  "owner": "江苏新能海力海上风力发电有限公司",
+  "project_status": "已登记",
+  "registration_date_as_rendered": "2025-04-30",
+  "latitude": "32.823201",
+  "longitude": "121.679764",
+  "turbines": 70,
+  "turbine_mw": 5,
+  "capacity_mw": 350,
+  "first_grid_connection": "2021-11-12",
+  "full_commissioning": "2021-12-07",
+  "project_description_expected_annual_net_mwh": 1137330,
+  "expected_not_actual_observation": true,
+  "monitoring_period_start": "2022-01-01",
+  "monitoring_period_end": "2024-12-31",
+  "application_reduction_tonnes_total": 1276244,
+  "annual_reduction_tonnes": {
+    "2022": 401074,
+    "2023": 401662,
+    "2024": 473508
+  },
+  "verification_institution": "中环联合（北京）认证中心有限公司",
+  "attachments_listed": [
+    "经审定的项目设计文件",
+    "项目审定报告",
+    "经核查的减排量核算报告（第一核算期）",
+    "减排量核查报告（第一核算期）"
+  ],
+  "attachments_acquired": false,
+  "access_outcome": "Clicking approved PDD redirected to https://ccer.cets.org.cn/redirectpage displaying 请登录后查看; no login or bypass attempted.",
+  "public_text_checks": 14,
+  "public_text_checks_passed": 14,
+  "full_page_export_available": false,
+  "evidence_limits": [
+    "Record is a transcribed public page finding, not an archived original PDF or raw meter file.",
+    "No turbine brand, actual power curve or monthly MWh read from attachments.",
+    "CO2 reductions are not converted to energy without monitoring equations and meter boundaries.",
+    "Supports project identity and commissioning; does not by itself prove annual company offshore totals equal the metered project series."
+  ]
+}
