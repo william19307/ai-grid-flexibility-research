@@ -414,3 +414,11 @@ python work/research/analysis/validate_thermal_technology_staging.py --input-dir
 ```
 
 均为标准库入口；恢复阶段 23 的 GEM 原工作簿和归档成本 CSV，并保留原哈希。输出 109 台完整待核实清单、三个权限未知的 OCGT 选项、19 个日期格式名称原值及 36 项检查。无旧省级程序导入/执行、无新实证准入或调度重算。详见 `revision/thermal_technology/RUNBOOK.md`。
+
+### 阶段 34：机组身份与建设批次证据
+
+```bash
+python3 work/research/analysis/audit_ccgt_primary.py --output-dir work/tmp/ccgt-primary-replay
+```
+
+标准库入口。恢复 ccgt_primary/source_access_log.json 中三份 raw_html 原件并核对哈希。17 项检查支持源字节、表行/日期及 109 条原字段守恒，不证明人工语义或现场运行。南通只取得官方网页提取文本，复跑不代表重获原件。详见 `revision/ccgt_primary/RUNBOOK.md`。

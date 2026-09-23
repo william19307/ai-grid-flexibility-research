@@ -1,0 +1,67 @@
+[
+  {
+    "source_id": "huaneng_list",
+    "url": "https://www.chng.com.cn/list_yxxw/-/article/7tNnqgwRLpoA/list/23219/2.html",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>",
+    "retrieved_on": "2026-09-23",
+    "evidence_access": "search_extracted_text_only",
+    "retry": "curl with certificate verification also failed; no bypass"
+  },
+  {
+    "source_id": "nantong_contractor",
+    "url": "https://www.geeb.ceec.net.cn/art/2026/7/21/art_18234_2515357.html",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1082)>",
+    "retrieved_on": "2026-09-23",
+    "evidence_access": "search_extracted_text_only",
+    "retry": "curl with certificate verification also failed; no bypass"
+  },
+  {
+    "source_id": "nantong_pipeline",
+    "url": "https://jsggzy.jszwfw.gov.cn/jyxx/003001/003001001/20251224/b1d5106a-0f8b-405d-a941-87b7b8ea43af.html",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>",
+    "retrieved_on": "2026-09-23",
+    "evidence_access": "search_extracted_text_only",
+    "retry": "curl with certificate verification also failed; no bypass"
+  },
+  {
+    "source_id": "qishuyan_owner",
+    "url": "https://hdjs.chd.com.cn/site/316/2017-07-27/e0f68652704a419c88c182a450d213ad.html",
+    "final_url": "https://hdjs.chd.com.cn/site/316/2017-07-27/e0f68652704a419c88c182a450d213ad.html",
+    "http_status": 200,
+    "bytes": 17092,
+    "sha256": "abaa0c7f6482348054a63b5c8f6380967b3d75db15501636a4c49665af962263",
+    "retrieved_on": "2026-09-23",
+    "evidence_access": "raw_html",
+    "path": "work/research/sources/ccgt_primary_20260923/qishuyan_owner.html"
+  },
+  {
+    "source_id": "wuxi_plan",
+    "url": "https://dpc.wuxi.gov.cn/doc/2017/01/20/1464644.shtml",
+    "final_url": "https://dpc.wuxi.gov.cn/doc/2017/01/20/1464644.shtml",
+    "http_status": 200,
+    "bytes": 103830,
+    "sha256": "03d7568cb6ae92d292708ef668b628938ec583352e66b1ccaff77e1d2dc2145f",
+    "retrieved_on": "2026-09-23",
+    "evidence_access": "raw_html",
+    "path": "work/research/sources/ccgt_primary_20260923/wuxi_plan.html"
+  },
+  {
+    "source_id": "wuxi_mee",
+    "url": "https://www.mee.gov.cn/ywgz/hjyxpj/jsxmhjyxpj/nscxmgs/201605/t20160522_339469.shtml",
+    "final_url": "https://www.mee.gov.cn/ywgz/hjyxpj/jsxmhjyxpj/nscxmgs/201605/t20160522_339469.shtml",
+    "http_status": 200,
+    "bytes": 177123,
+    "sha256": "28fe5a47723ba28f421a6861e814c779f4b73397a82b65fd603debb71bc257d5",
+    "retrieved_on": "2026-09-23",
+    "evidence_access": "raw_html",
+    "path": "work/research/sources/ccgt_primary_20260923/wuxi_mee.html"
+  },
+  {
+    "source_id": "nantong_ceec",
+    "url": "https://www.ceec.net.cn/art/2026/7/23/art_11019_2540032.html",
+    "retrieved_on": "2026-09-23",
+    "evidence_access": "web_open_extracted_full_article",
+    "error": "Direct urllib download HTTP 418; no raw HTML snapshot",
+    "published_on": "2026-07-23"
+  }
+]

@@ -1,0 +1,99 @@
+{
+  "schema": "ccgt_primary_events_v1",
+  "reviewed_on": "2026-09-23",
+  "events": [
+    {
+      "event_id": "qishuyan_historical_groups",
+      "sources": [
+        "qishuyan_owner"
+      ],
+      "event_kind": "historical_owner_description",
+      "published_on": "2017-07-27",
+      "scope": "plant and capacity-defined groups; no unique equipment serials",
+      "groups": [
+        {
+          "count": 2,
+          "MW_each": 390,
+          "commission_year": 2005,
+          "CHP_evidence": "not specified"
+        },
+        {
+          "count": 2,
+          "MW_each": 220,
+          "commission_year": 2011,
+          "CHP_evidence": "explicit CHP"
+        },
+        {
+          "count": 2,
+          "MW_each": 475,
+          "commission_year": 2015,
+          "CHP_evidence": "not specified"
+        }
+      ],
+      "interpretation": "The three capacity/year groups match six inventory candidates; absence of heat wording does not establish non-CHP or current operating conditions."
+    },
+    {
+      "event_id": "wuxi_original_proposal",
+      "sources": [
+        "wuxi_mee"
+      ],
+      "event_kind": "proposed_EIA_approval_notice",
+      "published_on": "2012-10-26",
+      "scope": "table row 4 only",
+      "count": 2,
+      "MW_each": 400,
+      "technology": "F-class combined cycle",
+      "interpretation": "Proposed project supports technology and project-level candidate identity, not actual commissioning, final approval or absence of heat. URL migration date in 2016 is not the notice date. Adjacent row 5 is a different Shandong coal CHP project."
+    },
+    {
+      "event_id": "wuxi_reserve_expansion",
+      "sources": [
+        "wuxi_plan"
+      ],
+      "event_kind": "municipal_energy_plan_reserve_expansion",
+      "published_on": "2017-01-20",
+      "scope": "reserve projects section, East Asia expansion row 2",
+      "count": 2,
+      "MW_each": 400,
+      "CHP_evidence": "explicit CHP for proposed expansion",
+      "interpretation": "Do not assign expansion heat obligations to the original inventory pair or add another 800 MW without proof of a distinct built phase."
+    },
+    {
+      "event_id": "nantong_planned_sequence",
+      "sources": [
+        "nantong_pipeline"
+      ],
+      "event_kind": "plan_reported_in_pipeline_tender",
+      "published_on": "2025-12-23",
+      "scope": "paragraph 2.1.2; ordinal first set and another set, not numbered machines",
+      "count": 2,
+      "MW_each": 745,
+      "planned_dates": [
+        "2026-06",
+        "2028-04"
+      ],
+      "physical_unit_numbers": null,
+      "interpretation": "Search extraction only; original bytes unavailable. Planned order cannot resolve inventory IDs or demonstrate realized commissioning. Pipeline design flow is not actual generator fuel availability."
+    },
+    {
+      "event_id": "nantong_unit2_trial",
+      "sources": [
+        "nantong_ceec",
+        "nantong_contractor",
+        "huaneng_list"
+      ],
+      "event_kind": "reported_commissioning_milestone",
+      "event_on": "2026-07-20",
+      "scope": "physical Unit 2, one unit at a two-unit 745 MW project",
+      "count": 1,
+      "MW_each": 745,
+      "physical_unit_numbers": [
+        "2"
+      ],
+      "assigned_GEM_unit_ID": null,
+      "interpretation": "Primary participant full web article reports completed 168-hour trial; owner list corroborates reported commissioning. Not raw-byte archived and not an equipment-to-GEM-ID match. No admission of efficiency curve, hourly availability or 2030 survival. Contractor July report describes remaining Unit 1 construction, not September status."
+    }
+  ],
+  "source_interpretation": "Manually reviewed source semantics; code checks only preservation, source bytes and selected text/table boundaries.",
+  "operational_parameter_sets_admitted": 0
+}

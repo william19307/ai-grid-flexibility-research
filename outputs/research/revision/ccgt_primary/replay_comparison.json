@@ -1,0 +1,15 @@
+{
+  "scope": "same machine, separate output directory; no independent source or physical validation",
+  "files": [
+    {
+      "file": "unit_evidence_overlay.csv",
+      "same_bytes": true,
+      "sha256": "a30e68d5f9b5acd408597c14df1aaf4ed31c55e7023e2538b77dc9234e556b3a"
+    },
+    {
+      "file": "validation.json",
+      "same_bytes": true,
+      "sha256": "f79e022d2528aa10ed606ed7bca6ba9be58efa8e6a726f6275f131a9a5c32d79"
+    }
+  ]
+}
