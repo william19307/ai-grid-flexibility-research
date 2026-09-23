@@ -2,6 +2,8 @@
 
 这是我们的研究同步仓库，记录研究目标、研究过程、已核实证据、模型实现、审计结果和论文工作稿。
 
+**2026-09-23 接手提示：最新实质修订在 `codex/research-evidence-revision` 分支，已推进至阶段 25。先读 [HANDOFF.md](HANDOFF.md) 和 [当前主张状态](outputs/research/revision/CURRENT_CLAIM_STATUS.md)。下文历史成果不代表全部修订门槛已通过；当前没有经完整证据链验证的新省级主结果。**
+
 ## 研究目标
 
 研究题目暂定为：
@@ -68,4 +70,3 @@ git push
 ```
 
 本仓库自 2026-09-17 起公开（当前 v1.0.3；Zenodo 概念 DOI https://doi.org/10.5281/zenodo.22803800 指向最新版本）。代码为 MIT 许可，派生表格、图与文稿为 CC BY 4.0（见 LICENSE）；原始外部数据不再分发，来源与许可见 `outputs/research/tables/data_registry.csv`。投稿稿件：`outputs/research/manuscript/core_paper_en_v1.4.md`（英文）、`中文投稿稿_v1.0.md`（中文）；历史草稿在 `outputs/research/manuscript/archive/`；复现顺序见 `REPRODUCE.md`。引用方式见 `CITATION.cff`。
-
