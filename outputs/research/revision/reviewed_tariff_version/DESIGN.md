@@ -1,0 +1,11 @@
+# Stage 28: explicitly reviewed source version and isolated numerical replay
+
+2026-09-23. Stage 27 made progress but strict original-byte restoration remained 13/14. Examination before this design found that the 21,663-byte frozen Gansu page and the 21,576-byte current dynamic page differ only in one routing/domain script. After removing that one script, all remaining 20,364 bytes match exactly. This is a source-maintenance engineering audit, not a blinded experiment.
+
+Independently verify this localization by regex byte spans and HTMLParser script boundaries; review the changed script as routing/domain configuration, not a tariff source. Compare article text and verify the frozen 192-hour tariff vector against the published clock intervals. Retain the known effective-date and industrial-market-price limitations.
+
+Register only this exact old/new file pair and script/remainder hashes. An explicit opt-in may use a separately named current file when the original is absent. Default admission still requires the original bytes. A present corrupted original, unknown variant, changed article/script, changed manifest, or changed numerical source must fail; do not rewrite any original manifest/certificate or reconstruct pretend original HTML bytes. Every admitted replacement must be carried in the returned proof.
+
+Extend existing stage 24/26 entry points with explicit version opt-in and separate output directories. Fetch the reviewed current source into the independent checkout from stage 27, pull revised code from GitHub, and run the existing tests in its isolated environment. Compare every stage 26 numerical CSV and stage 24 numerical result against the frozen references, and compare ledger payloads after removing only the declared new provenance field. Expect changed provenance-bound ledger hashes; do not call those original-byte matches.
+
+The goal is to establish a numerically identical bounded replay under an explicitly reviewed source version. It does not close strict original-HTML restoration, independently regenerate all 108 schedules, prove a second-machine result, calibrate physical inputs, or complete the manuscript. Keep all earlier failures and current physical-evidence gaps visible.
