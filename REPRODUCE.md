@@ -310,3 +310,15 @@ work/figure-env/bin/python work/research/analysis/validate_forecast_vintages.py
 来源重建步骤：从国家能源局及中国政府网列明的两个附件 URL 分别取得 `national_disclosure_nea.doc`、`national_disclosure.doc`；从江苏通知 URL 取得 `jiangsu_disclosure_202606.html`。原取得/失败日志为审计记录，应从仓库存档恢复而不是伪造新的取得日期。macOS 运行 `textutil -convert txt .../national_disclosure.doc -output .../national_disclosure.txt`。复制 `revision/market_information/render_fonts.conf` 到源目录 `render/fonts.conf`，以 `FONTCONFIG_FILE` 指向该文件，用捆绑 LibreOffice `--headless --convert-to pdf --outdir .../render/cjk .../national_disclosure_nea.doc` 渲染。首次默认字体配置缺失中文字形已记录，不能使用那版输出。原文未改，渲染仅用于来源审读；跨环境分页可能改变，需重新查看相关条款/附表页。
 
 第二项仅使用人工合成的 96 点曲线，17 项检查不依赖真实市场数据。真实 `approved_vintages.json` 当前为空。版本选择器只是外部来源审核之后的一致性检查，不自动证明时间戳真实性、提取正确性或预测性能；尚未与论文主实验连通。不得将合成样例当作准入数据，也不得把市场“公开信息”直接等同于匿名可取得数据。全新机器完整论文复现仍未完成。
+
+### 阶段 23：2030 输入、油气技术和需求边界
+
+```bash
+work/figure-env/bin/python work/research/analysis/audit_2030_input_consistency.py
+```
+
+读取既有 GEM July 2025 原始 China 工作簿、准备表、冻结三省容量表，以及 PyPSA-China 归档需求/成本/存量表；只写 `outputs/research/revision/input_consistency/`，不导入或运行旧求解入口。完整输入路径与 SHA256 见该目录 `source_hashes.json`。源文件恢复沿用本仓库 GEM / Zenodo 归档取得流程；这些未跟踪的原始输入必须先取得且哈希一致，不能仅凭此命令声称全新机器已可复现。
+
+脚本以独立 OOXML 解析核对选入的 109 台油气机组、每台 13 字段，并复原 18 组旧机组数量和容量。类别为 97 台联合循环、12 台工业副产气蒸汽轮机；逐机组候选 CSV 保留 CHP/用途/燃料和未准入状态。成本率由同一归档表使用 Decimal 计算，是情景参数比较，不是中国机组测量。其余账目保留未知投运/退役、统计年代和需求群体缺口，不自动补齐，也不改写原机组或成本文件。
+
+需求群体和跨省边界的修订规范见 `input_boundary_methods_draft.md`；目前为待实证落实的方法要求，未宣称已接入重算。阶段报告说明全部能力边界。不得把这项来源审计当作 2030 物理验证、修正后省级数值或完整 Nature Energy 质量认证。

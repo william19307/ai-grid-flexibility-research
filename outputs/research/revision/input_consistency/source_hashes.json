@@ -1,0 +1,10 @@
+{
+  "work/research/sources/zenodo_16810831/Global-integrated-Plant-Tracker-July-2025_china.xlsx": "4ed14c94a305ec43af9ac33a49134fcee5c1271e2d93d248ab608c7781ea71d0",
+  "work/research/prepared/plant_tracker_2025_unit_inventory.csv": "56ccbfd546af7d5a85289ec0aa6d073268ca7f5e6a171687ef4ec235770b0b6f",
+  "outputs/research/tables/gem_fleet_three_provinces_2020_2030.csv": "fb70c60e2cfb51045d531e24b3355a9233848917b175876e1ad8187bdeb40cb8",
+  "work/research/sources/zenodo_13987282/selected/data/costs/costs_2030.csv": "365d17789eb723e3f687378bcb9ee21a837c752adfd526d49172a065c58d9ac0",
+  "work/research/sources/zenodo_13987282/selected/data/existing_infrastructure/China_current_capacity.csv": "8bf6aa522556595d8b91bab0f421c175db7fd717810587a02f809a70aca39290",
+  "work/research/sources/zenodo_13987282/selected/data/load/Province_Load_2020_2060.csv": "1eaf85b782768bc83403e333ae0d009f8cbfbb7c5ca451e3b9650803eaa43888",
+  "work/research/analysis/run_regional_2030_s0_s3.py": "6f0de9ca21189da391f9954f50918312163c0cf4743ac50525372fb179ca3db5",
+  "work/research/analysis/run_regional_smoke_s0_s1_s2.py": "4be16907f88d9ecf89aab6a3a5cc9b3a0de31ebddea5d96e11ff233d3148f7c2"
+}

@@ -1,0 +1,6 @@
+province_source_label,Technology,Fuel,units,capacity_MW
+Gansu,combined cycle,fossil gas: natural gas,1,180.0
+Jiangsu,combined cycle,fossil gas: LNG,2,200.0
+Jiangsu,combined cycle,fossil gas: natural gas,94,23454.0
+Jiangsu,steam turbine,industrial by-product: blast furnace gas,11,1025.0
+Jiangsu,steam turbine,"industrial by-product: blast furnace gas, industrial by-product: coke oven gas",1,100.0

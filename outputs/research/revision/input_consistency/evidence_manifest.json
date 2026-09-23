@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-23",
+  "basis_commit": "d92b6e7c2f217ddf0b9814d0a54a31093a801b80",
+  "scope": "Legacy source reconstruction; candidate mappings only; no optimization or operational admission",
+  "independent_xml_fields_checked": 1417,
+  "frozen_groups_reconciled": 18,
+  "source_hashes_reverified": true,
+  "artifact_sha256": {
+    "outputs/research/revision/input_boundary_methods_draft.md": "90c960155b308242d9514c639be07ca421e6332e55faed00b57b4f4703392621",
+    "outputs/research/revision/input_consistency/audit_summary.json": "fce24f7a7fa023beae1c5d940d97a0ff26ce6475aea448e1f61b3855faf3e300",
+    "outputs/research/revision/input_consistency/conditional_technology_rates.csv": "0d355c1316593497ea824169915f72303de6c812b47529ff8a5fb36954bc8657",
+    "outputs/research/revision/input_consistency/fleet_vintage_ledger.csv": "3b6508748890b9cd7ad6b68e1086d99039d6b9d341a191da540b28724425ee14",
+    "outputs/research/revision/input_consistency/load_scope_ledger.csv": "04877d888ba5463fd9b3796a110c19f6e170533e17bd5430a05b56ade6695571",
+    "outputs/research/revision/input_consistency/oil_gas_technology_summary.csv": "7b1fadee295a84d72dede1b37b2827d46df666450dcc886091399f07e87ce73f",
+    "outputs/research/revision/input_consistency/renewable_vintage_comparison.csv": "73a56184fb3cbf4ba5f79a9aa524271d3221f9da347795829806fe34787b8c4f",
+    "outputs/research/revision/input_consistency/selected_oil_gas_unit_audit.csv": "21eae3d38864226d5f23b6a3caecafd77f27c515e80dda4f22d6d53412486d07",
+    "outputs/research/revision/input_consistency/source_hashes.json": "b9fd19324190d0baf31e4d1c02f160945020a2dbe9741b64851c94e1c21a82b6",
+    "outputs/research/revision/阶段23_2030输入口径与燃气技术错配.md": "3f2eba999a571bee70723262f67d206558bb3937dec19a777a47141b87cfd2a1",
+    "work/research/analysis/audit_2030_input_consistency.py": "a190bb4ecce955624354179b16ebb0adb9bcdde10d3120b21a2a738c1140f5cf"
+  }
+}

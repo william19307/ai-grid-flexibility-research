@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-23",
+  "status": "SOURCE_AUDIT_ONLY_NO_PROVINCIAL_REESTIMATE",
+  "selected_oil_gas_units": 109,
+  "selected_oil_gas_MW": 24959.0,
+  "ccgt_units": 97,
+  "ccgt_MW": 23834.0,
+  "byproduct_units": 12,
+  "byproduct_MW": 1125.0,
+  "selected_gas_turbine_label_units": 0,
+  "gas_CHP_yes_units": 82,
+  "gas_CHP_yes_MW": 17853.0,
+  "selected_all_technology_units": 3050,
+  "unknown_retirement_selected_units": 3050,
+  "independent_xml_fields_checked": 1417,
+  "frozen_fleet_groups_reconciled": 18,
+  "marginal_cost_OCGT_over_CCGT_percent": 37.75357801501335,
+  "emissions_OCGT_over_CCGT_percent": 41.46341463414633,
+  "limitations": [
+    "No actual 2030 fleet observation",
+    "Missing retirement year is not proof of operation in 2030",
+    "CHP and captive use may overlap; no inferred export or heat capability",
+    "Archive CCGT rates are a conditional parameter comparison, not new measured costs",
+    "No source supports removing all AI from the demand forecast",
+    "Renewable inventory comparisons have different coverage; no subtraction interpreted as missing capacity"
+  ]
+}
