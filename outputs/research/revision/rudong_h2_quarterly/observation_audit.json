@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "plan_sha256": "ce972c86eb621db2a3fd7afcef71dc003ba154e7ddf8b3720586a75aaa02467f",
+  "source_manifest_sha256": "9cfe3bfc12c280f6d6eaaa429c3dc57def6cc034dae956e37e9c6a3c2cf4c5b3",
+  "script_sha256": "218ea5ddaa365e264fccb4923638d09dbf5f386593617d3266ec18fcc3009346",
+  "checks": [
+    {
+      "file": "2023q1.pdf",
+      "page": 5,
+      "header_page": 4,
+      "engine": "pypdf",
+      "energy_values": 4,
+      "percent_values": 2
+    },
+    {
+      "file": "2023q1.pdf",
+      "page": 5,
+      "header_page": 4,
+      "engine": "pdftotext",
+      "energy_values": 4,
+      "percent_values": 2
+    },
+    {
+      "file": "2023h1.pdf",
+      "page": 13,
+      "header_page": 12,
+      "engine": "pypdf",
+      "energy_values": 4,
+      "percent_values": 2
+    },
+    {
+      "file": "2023h1.pdf",
+      "page": 13,
+      "header_page": 12,
+      "engine": "pdftotext",
+      "energy_values": 4,
+      "percent_values": 2
+    },
+    {
+      "file": "2023q3.pdf",
+      "page": 4,
+      "header_page": 4,
+      "engine": "pypdf",
+      "energy_values": 4,
+      "percent_values": 2
+    },
+    {
+      "file": "2023q3.pdf",
+      "page": 4,
+      "header_page": 4,
+      "engine": "pdftotext",
+      "energy_values": 4,
+      "percent_values": 2
+    },
+    {
+      "file": "2024q1.pdf",
+      "page": 4,
+      "header_page": 4,
+      "engine": "pypdf",
+      "energy_values": 4,
+      "percent_values": 2
+    },
+    {
+      "file": "2024q1.pdf",
+      "page": 4,
+      "header_page": 4,
+      "engine": "pdftotext",
+      "energy_values": 4,
+      "percent_values": 2
+    },
+    {
+      "file": "2024h1.pdf",
+      "page": 13,
+      "header_page": 13,
+      "engine": "pypdf",
+      "energy_values": 4,
+      "percent_values": 2
+    },
+    {
+      "file": "2024h1.pdf",
+      "page": 13,
+      "header_page": 13,
+      "engine": "pdftotext",
+      "energy_values": 4,
+      "percent_values": 2
+    },
+    {
+      "file": "2024q3.pdf",
+      "page": 5,
+      "header_page": 5,
+      "engine": "pypdf",
+      "energy_values": 4,
+      "percent_values": 2
+    },
+    {
+      "file": "2024q3.pdf",
+      "page": 5,
+      "header_page": 5,
+      "engine": "pdftotext",
+      "energy_values": 4,
+      "percent_values": 2
+    }
+  ],
+  "energy_field_extractions": 48,
+  "percentage_field_extractions": 24,
+  "duplicate_disclosure_checks": [
+    {
+      "year": 2023,
+      "quarter": 1,
+      "first_source": "2023q1.pdf",
+      "second_source": "2024q1.pdf",
+      "gross_and_export_equal_at_display_precision": true
+    },
+    {
+      "year": 2023,
+      "quarter": 2,
+      "first_source": "2023h1.pdf",
+      "second_source": "2024h1.pdf",
+      "gross_and_export_equal_at_display_precision": true
+    },
+    {
+      "year": 2023,
+      "quarter": 3,
+      "first_source": "2023q3.pdf",
+      "second_source": "2024q3.pdf",
+      "gross_and_export_equal_at_display_precision": true
+    }
+  ],
+  "unique_cumulative_energy_values": 18,
+  "derived_quarters": 12,
+  "cumulative_sha256": "ae0a1b64a836e635dc2f540f48e4e2a7f870505f9002a6b8f803628e5830a9bd",
+  "quarterly_sha256": "5f11e2355402a8b0787c2a04343a9bbaa24ef1c1713fad847a8e9a998e60e329",
+  "annual_observations_sha256": "06a966c68e93b395f3e6f56ca7ba187e8e494512371212963a559446ca260bf0",
+  "scope": "Displayed company totals and difference arithmetic, not independent meter validation. Differences share endpoints and rounding errors; no statistical confidence intervals."
+}

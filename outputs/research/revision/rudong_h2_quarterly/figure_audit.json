@@ -1,0 +1,11 @@
+{
+  "script_sha256": "05aaae3445dc2a022d8baea9c35e2233f3409486b1ddd1be4ae97472d1bf05fa",
+  "analysis_sha256": "613406b008092a1d1bfc5c2d59b892e3accc6540b644cf718f6f262a1357491e",
+  "verification_sha256": "c3ce35a16efc17f7ea19d2fc0f1931f1bad796b01fd3859a49c36f39e3e544c9",
+  "artifacts": {
+    "png": "7de7a85ddf8c2c8e463255321fc151c1da4fb13202cf0e2ae94a74929650a5f8",
+    "pdf": "e9f528ed4f5bbf99c61e0be01f85bde3519cd4472af2e945d24be696691bd01a",
+    "svg": "44ecfa2447d2eb3d39116355b75186fa095224a9fdfac7aff7f1cc9a8f2d0d0a"
+  },
+  "scope": "Diagnostic figure, not final manuscript evidence"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "independent_quarterly_cases": 36,
+  "independent_annual_cancellation_cases": 9,
+  "derived_observation_quarters_checked": 12,
+  "max_quarterly_energy_difference_mwh": "7.47607120552E-11",
+  "analysis_sha256": "613406b008092a1d1bfc5c2d59b892e3accc6540b644cf718f6f262a1357491e",
+  "verifier_sha256": "cdc1488773c42b085c73ddf1fd3510d386913b39e861a9a2590536cc6fa82c0f",
+  "scalar_dependency_sha256": "60f700215f04bd2868b9f80f3e05287022584781487128d238555b0dd040ec91",
+  "scope": "Raw-weather arithmetic and quarterly aggregation; PDF records checked separately. Does not establish actual turbine curves or hourly accuracy."
+}

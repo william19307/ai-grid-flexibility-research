@@ -1,0 +1,38 @@
+{
+  "2023q1.pdf": {
+    "url": "https://file.finance.sina.com.cn/211.154.219.97%3A9494/MRGG/CNSESH_STOCK/2023/2023-4/2023-04-26/9079755.PDF",
+    "sha256": "471e8c7cea7b0a48ad1f6ca4121c53c7081f740e04b03f7e728a69f37b2cf56f",
+    "bytes": 433211,
+    "retrieved_utc": "2026-09-23T00:15:45.571396+00:00"
+  },
+  "2023h1.pdf": {
+    "url": "https://static.cninfo.com.cn/finalpage/2023-08-29/1217673366.PDF",
+    "sha256": "d27b9cd48fed1f0c0eadb9f0542c8f28bc1807e4fcf0865e59e468bb55ed8373",
+    "bytes": 3164469,
+    "retrieved_utc": "2026-09-23T00:15:48.474105+00:00"
+  },
+  "2023q3.pdf": {
+    "url": "https://file.finance.sina.com.cn/211.154.219.97%3A9494/MRGG/CNSESH_STOCK/2023/2023-10/2023-10-28/9603937.PDF",
+    "sha256": "f230e709c86ab5a6bbb19cf92a1e0b2c1b31ccf1e6f1a84c87a508541c346c76",
+    "bytes": 462559,
+    "retrieved_utc": "2026-09-23T00:15:45.160131+00:00"
+  },
+  "2024q1.pdf": {
+    "url": "https://static.cninfo.com.cn/finalpage/2024-04-25/1219790772.PDF",
+    "sha256": "e7bbc0ca7a50a1d745120ee65d6e17e6b018d8c4d4bc4e848a0588e5e5558e6c",
+    "bytes": 546011,
+    "retrieved_utc": "2026-09-23T00:15:51.334970+00:00"
+  },
+  "2024h1.pdf": {
+    "url": "https://file.finance.sina.com.cn/211.154.219.97%3A9494/MRGG/CNSESH_STOCK/2024/2024-8/2024-08-28/10420802.PDF",
+    "sha256": "37b34f0e0028d94d41dc912b956c0ede057e70415426d6cbbe0e5c3ae19abcf3",
+    "bytes": 3542795,
+    "retrieved_utc": "2026-09-23T00:15:55.964841+00:00"
+  },
+  "2024q3.pdf": {
+    "url": "https://static.cninfo.com.cn/finalpage/2024-10-30/1221554584.PDF",
+    "sha256": "7e1f41f4a132d699c1868efb8a59ee05a5f0283a9a938ef4e37f164bc85adaa5",
+    "bytes": 480360,
+    "retrieved_utc": "2026-09-23T00:15:54.068870+00:00"
+  }
+}

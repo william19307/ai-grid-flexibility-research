@@ -1,0 +1,11 @@
+{
+  "plan_sha256": "ce972c86eb621db2a3fd7afcef71dc003ba154e7ddf8b3720586a75aaa02467f",
+  "script_sha256": "06a2a2ef02a436f81d1e6820af25b8b345fca1e241671a95b6b2eedde3288694",
+  "observation_audit_sha256": "497c58d7806640fbb322a7febf2a952ae63fcc3fd3fab9248ea3a34a48c6d6fa",
+  "prior_transfer_audit_sha256": "86544c4008792e17148f391c22e2a315192daad42b29efb731d4add3c9fe3f16",
+  "quarterly_comparison_sha256": "c683680292e739f7ee5db9d4a2dcb6ab2e76617caae5f8b41b396d1a8aa991c8",
+  "annual_cancellation_sha256": "6a4a976804f33d81c9dcc0301d465a6a8109cf34d3a40a5d1e0e526520bbc754",
+  "conditions": 36,
+  "refitted_parameters": 0,
+  "scope": "Exploratory aggregate seasonal diagnostic; all shapes retained including physically rejected generic; not hourly or provincial validation; rounding ranges hold scale fixed and are not confidence intervals."
+}

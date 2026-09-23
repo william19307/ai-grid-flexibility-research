@@ -1,0 +1,13 @@
+year,quarter,gross_mwh,export_mwh,rounding_halfwidth_mwh,current_cumulative_source,current_page,previous_cumulative_source,previous_page,measurement_scope
+2022,1,219000.00,214000.00,500,2023q1.pdf,5,calendar start,,Controlled offshore aggregate; H2 mapping remains documentary inference
+2022,2,236000.00,230000.00,1000,2023h1.pdf,13,2023q1.pdf,5,Controlled offshore aggregate; H2 mapping remains documentary inference
+2022,3,203000.00,197000.00,1000,2023q3.pdf,4,2023h1.pdf,13,Controlled offshore aggregate; H2 mapping remains documentary inference
+2022,4,197000.00,190000.00,1000,annual2022.pdf,11,2023q3.pdf,4,Controlled offshore aggregate; H2 mapping remains documentary inference
+2023,1,207000.00,201000.00,500,2023q1.pdf,5,calendar start,,Controlled offshore aggregate; H2 mapping remains documentary inference
+2023,2,217000.00,211000.00,1000,2023h1.pdf,13,2023q1.pdf,5,Controlled offshore aggregate; H2 mapping remains documentary inference
+2023,3,177000.00,170000.00,1000,2023q3.pdf,4,2023h1.pdf,13,Controlled offshore aggregate; H2 mapping remains documentary inference
+2023,4,257000.00,250000.00,1000,annual2023.pdf,10,2023q3.pdf,4,Controlled offshore aggregate; H2 mapping remains documentary inference
+2024,1,334000.00,318000.00,500,2024q1.pdf,4,calendar start,,Controlled offshore aggregate; H2 mapping remains documentary inference
+2024,2,186000.00,175000.00,1000,2024h1.pdf,13,2024q1.pdf,4,Controlled offshore aggregate; H2 mapping remains documentary inference
+2024,3,230000.00,220000.00,1000,2024q3.pdf,5,2024h1.pdf,13,Controlled offshore aggregate; H2 mapping remains documentary inference
+2024,4,279000.00,267000.00,1000,annual2024.pdf,10,2024q3.pdf,5,Controlled offshore aggregate; H2 mapping remains documentary inference

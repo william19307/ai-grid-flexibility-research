@@ -254,3 +254,18 @@ work/figure-env/bin/python work/research/analysis/verify_rudong_h2_transfer.py
 第二项需要阶段 17 固定来源参考曲线，以及 acquisition.json 列出的三组天气响应及 meta，存于上述 sources 目录的 weather 子目录。三年 2022/2023/2024 各包含次年 1 月 1 日全天，输出取完整本年小时及下一端点。已有完整缓存不再请求；缺缓存时可运行 acquire_rudong_h2_weather.py，沿用共享额度台账和锁，不能清空账本或解除旧计划研究暂停。动态 API 字节变化须新留证据，不能冒充原快照。采集清单记录参数、URL、时间、哈希、返回网格及单位。
 
 逐小时输出在排除目录 `work/research/prepared/rudong_h2_2022_2024_EXPLORATORY.csv.gz`，9 条件摘要与全部审计入版本控制。共 157,824 个值独立复算，包含两平年和一闰年、校准前后、三条曲线。固定 2022 年系数、显式计数 CF>1、不裁剪、不切换 gross/net、不以时间可用率当能量损失。观测舍入范围仅为显示精度，不是统计区间。此流程不等于全新机器完整研究复现、小时观测校准或省级验证。
+
+### 阶段 19：季度观测与年度误差抵消
+
+`revision/rudong_h2_quarterly/analysis_plan.json` 在季度聚合前冻结于 `1eac401`，SHA256 `ce972c86eb621db2a3fd7afcef71dc003ba154e7ddf8b3720586a75aaa02467f`。不重新估计阶段 18 的任何参数，不发起新气象请求。
+
+按该目录 source_manifest.json 的六个 URL 保存对应 PDF 到 `work/research/sources/rudong_h2_quarterly_20260923/`，检查固定 SHA256。部分来源是新浪托管的公司报告原文镜像；不是新闻摘要。PDF 核验需 pypdf 和 pdftotext；本轮使用 Codex bundled Python。跨页表头须保留 PDF 原页，具体页序见 observation_audit.json。原 PDF、meta 和六个表格页渲染仅保留在排除的 sources 目录。
+
+```bash
+python work/research/analysis/audit_rudong_h2_quarters.py
+work/figure-env/bin/python work/research/analysis/analyze_rudong_h2_quarters.py
+work/figure-env/bin/python work/research/analysis/verify_rudong_h2_quarters.py
+work/figure-env/bin/python work/research/analysis/plot_rudong_h2_quarters.py
+```
+
+第二项使用阶段 18 已冻结且校验哈希的小时诊断输出；第三项从相同原始天气和固定曲线使用独立 Decimal 实现重建，不调用生产聚合函数。绘图只读取已核验结果，PNG/PDF/SVG 与图来源哈希同存。三个累计周期的重复 2023 披露必须一致，否则源核验立即失败，不静默选取或平均。Q2–Q4 由累计差分恢复，±1,000 MWh 只是显示末位的保守界，存在共享端点。36 条件/9 年度的计算一致性不构成小时物理验证；未执行全新机器完整论文复现。
