@@ -1,6 +1,6 @@
 # Working methods: industrial captive generation and grid-interface accounting
 
-Status: proposed model boundary informed by historical primary project evidence; not yet implemented in the provincial dispatch solver or validated against site measurements. See the stage-29 report and `captive_boundary/unit_admission_ledger.csv` for source qualification. No new provincial effect estimate is reported.
+Status: stage 31 implements the single-gas, affine-fuel and lossless electrical-interface subset in the coupled-grid solver and verifies synthetic cases. Provincial input integration and validation against site measurements remain incomplete. See the stage-29 report and `captive_boundary/unit_admission_ledger.csv` for source qualification. No new provincial effect estimate is reported.
 
 ## Electrical boundary
 
@@ -38,4 +38,14 @@ Emissions comparison must include the specified industrial process, alternative 
 - Heat/production service, start/ramp/minimum-output/availability data, and reproducible representative operating traces.
 - Declared counterfactual, recovery/end-state rules and whether firm response or conditional energy shifting is estimated.
 
-The stage-29 ledger is documentation only. It does not enforce these requirements in legacy entry points; legacy provincial runs remain prohibited as sources of revised empirical conclusions until a checked input bundle and model implementation are completed.
+The stage-29 ledger is documentation only. It does not enforce these requirements in legacy entry points; legacy provincial runs remain prohibited as sources of revised empirical conclusions until a checked input bundle and all required site-specific physical constraints are completed. The stage-31 generic module does not itself admit the ledger.
+
+## Stage 31 implemented subset and verification
+
+Let `J_t` be signed net import, positive for import, bounded by `-export_limit_t <= J_t <= import_limit_t`. Gross generator power `G_j,t` uses fuel power `F_j,t = h_j G_j,t + f_on,j u_j,t + E_start,j v_j,t / dt`. Auxiliary power is `A_j,t = a_j G_j,t + a_on,j u_j,t + A_start,j v_j,t / dt`. Here `u` and `v` are the existing commitment on/start states. A declared gross process demand excludes these auxiliaries and is mandatory. The private node cannot have ordinary lines bypassing its single interface.
+
+Gas stock has finite energy and net charge/discharge limits and identical initial/terminal states. The implemented gas balance assumes no storage loss. The caller declares LHV or HHV consistently; the solver does not infer or convert gas composition. Input coefficients are explicit, and no measured parameter set is currently admitted. The heat-rate slope is not generally reciprocal average efficiency when no-load or start fuel is nonzero.
+
+Generation-fuel combustion, flaring and fixed other-process-use emissions enter the expected emissions bound; upstream/chemical process emissions require a separate boundary extension. Incremental operating cost includes explicit generator fuel use, flare cost and existing non-fuel unit costs; fixed other-process fuel cost is outside this cost boundary. This is not a complete life-cycle or industrial total-cost estimate.
+
+There are 47 synthetic checks and 19 solve cases (14 feasible, 5 proven infeasible, including an unconstrained comparator). No-site regression passed 267 checks per implementation against the stage-30 baseline; all retained numeric content is unchanged. See `industrial_coupling/RUNBOOK.md`. Heat-service coupling, gas pressure/mixing, site calibration, validated provincial demand decomposition and empirical firm response remain open.

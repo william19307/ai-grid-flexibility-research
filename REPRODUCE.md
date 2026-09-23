@@ -387,3 +387,12 @@ python work/research/analysis/audit_captive_commissioning.py
 ```
 
 恢复 `revision/captive_commissioning/source_access_log.json` 所列四个成功下载文件；年报 PDF、扫描评估 PDF、供应商 HTML 外壳和其直接引用的正文 JS。逐一比对固定哈希。供应商正文只按字符串解码，未执行远端脚本；扫描件须按 RUNBOOK 重新视觉审读人工转录。失败的验收报告记录不作输入。30 项读取/算术/台账检查通过，保留全部 12 条机组并叠加历史时间线；0 次调度、0 套新增运行参数准入。年报是双页排版，PDF 页 18/67 对应目标印刷页 24/122。没有第二机器复现声明。
+
+### 阶段 31：共享煤气与厂区电网接口
+
+```bash
+python work/research/analysis/validate_industrial_coupling.py --output-dir work/tmp/industrial-stage31-replay
+python work/research/analysis/compare_industrial_regression.py --scratch work/tmp/industrial-stage31-regression --output work/tmp/industrial-stage31-comparison.json
+```
+
+只使用明确标记的合成数据；47 项检查、19 次求解（14 可行/5 证明不可行）。第二条从固定历史提交提取旧源、分别运行三个检查套件（各 267 项），要求全新 scratch，避免覆盖；仅排除指定源哈希字段比较。已实际验证此完整入口。解释器需 NumPy/SciPy，不使用 `-O`。详细边界及现场参数准入见 `outputs/research/revision/industrial_coupling/RUNBOOK.md`；没有实测参数、省级新结果或第二机器复现声明。

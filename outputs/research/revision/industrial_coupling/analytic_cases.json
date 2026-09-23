@@ -1,0 +1,3788 @@
+{
+  "shared_fuel_priority": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "s",
+          "probability": 1.0,
+          "load_mw": {
+            "grid": [
+              5.0
+            ],
+            "plant": [
+              4.0
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "old",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 0.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "new",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 1.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.0
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "old",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 0.0,
+              "startup_fuel_mwh": 0.0,
+              "auxiliary_fraction": 0.0,
+              "online_auxiliary_mw": 0.0,
+              "startup_auxiliary_mwh": 0.0
+            },
+            {
+              "generator": "new",
+              "fuel_mwh_per_mwh_gross": 1.0,
+              "no_load_fuel_mw": 0.0,
+              "startup_fuel_mwh": 0.0,
+              "auxiliary_fraction": 0.0,
+              "online_auxiliary_mw": 0.0,
+              "startup_auxiliary_mwh": 0.0
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "s": [
+              6.0
+            ]
+          },
+          "other_process_use_mw": {
+            "s": [
+              2.0
+            ]
+          },
+          "flare_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "import_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "export_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "gas_storage_mwh": 0.0,
+          "initial_gas_mwh": 0.0,
+          "max_storage_charge_mw": 0.0,
+          "max_storage_discharge_mw": 0.0,
+          "generation_fuel_cost_per_mwh": 0.0,
+          "flare_cost_per_mwh": 0.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.4
+        }
+      ]
+    },
+    "result": {
+      "feasible": true,
+      "total_cost": 54.0,
+      "cost_components": {
+        "investment": 0.0,
+        "operating": 54.0,
+        "service_delay": 0.0,
+        "unserved_penalty": 0.0
+      },
+      "new_generator_mw": {
+        "public": 0.0,
+        "old": 0.0,
+        "new": 0.0
+      },
+      "new_line_mw": {},
+      "new_storage_power_mw": {},
+      "new_storage_energy_mwh": {},
+      "expected_unserved_mwh": 0.0,
+      "expected_emissions_t": 4.1,
+      "max_equality_residual": 0.0,
+      "max_inequality_violation": 0.0,
+      "solver_type": "LP",
+      "solver_status": 0,
+      "mip_gap": null,
+      "mip_dual_bound": null,
+      "variables": 14,
+      "equalities": 7,
+      "inequalities": 6,
+      "scenarios": {
+        "s": {
+          "external_fixed_load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "generation": {
+            "public": [
+              5.0
+            ],
+            "old": [
+              -0.0
+            ],
+            "new": [
+              4.0
+            ]
+          },
+          "unserved": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "line_forward": {},
+          "line_reverse": {},
+          "charge": {},
+          "discharge": {},
+          "soc": {},
+          "hydro_generation": {},
+          "hydro_spillage_hm3_per_hour": {},
+          "hydro_volume_hm3": {},
+          "compute_power_mw": {},
+          "completed_work": {},
+          "task_allocations": {},
+          "unit_commitment": {},
+          "terminal_unit_state": {},
+          "industrial_sites": {
+            "steel": {
+              "net_grid_import_mw": [
+                -0.0
+              ],
+              "flare_mw_fuel": [
+                0.0
+              ],
+              "gas_storage_mwh": [
+                0.0,
+                0.0
+              ],
+              "fuel_mw": {
+                "old": [
+                  -0.0
+                ],
+                "new": [
+                  4.0
+                ]
+              },
+              "auxiliary_mw": {
+                "old": [
+                  0.0
+                ],
+                "new": [
+                  0.0
+                ]
+              },
+              "net_generation_mw": {
+                "old": [
+                  -0.0
+                ],
+                "new": [
+                  4.0
+                ]
+              },
+              "gas_production_mw_fuel": [
+                6.0
+              ],
+              "other_process_use_mw_fuel": [
+                2.0
+              ],
+              "gas_boundary_emissions_t": 1.6
+            }
+          },
+          "nodal_balance_marginal_cost": {
+            "grid": [
+              10.0
+            ],
+            "plant": [
+              2.0
+            ]
+          },
+          "simultaneous_storage_slots": {}
+        }
+      }
+    }
+  },
+  "unconstrained_comparator": {
+    "result": {
+      "feasible": true,
+      "total_cost": 0.0,
+      "cost_components": {
+        "investment": 0.0,
+        "operating": 0.0,
+        "service_delay": 0.0,
+        "unserved_penalty": 0.0
+      },
+      "new_generator_mw": {
+        "public": 0.0,
+        "old": 0.0,
+        "new": 0.0
+      },
+      "new_line_mw": {
+        "unrestricted": 0.0
+      },
+      "new_storage_power_mw": {},
+      "new_storage_energy_mwh": {},
+      "expected_unserved_mwh": 0.0,
+      "expected_emissions_t": 0.0,
+      "max_equality_residual": 0.0,
+      "max_inequality_violation": 0.0,
+      "solver_type": "LP",
+      "solver_status": 0,
+      "mip_gap": null,
+      "mip_dual_bound": null,
+      "variables": 11,
+      "equalities": 2,
+      "inequalities": 5,
+      "scenarios": {
+        "s": {
+          "external_fixed_load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "generation": {
+            "public": [
+              0.0
+            ],
+            "old": [
+              9.0
+            ],
+            "new": [
+              0.0
+            ]
+          },
+          "unserved": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "line_forward": {
+            "unrestricted": [
+              0.0
+            ]
+          },
+          "line_reverse": {
+            "unrestricted": [
+              5.0
+            ]
+          },
+          "charge": {},
+          "discharge": {},
+          "soc": {},
+          "hydro_generation": {},
+          "hydro_spillage_hm3_per_hour": {},
+          "hydro_volume_hm3": {},
+          "compute_power_mw": {},
+          "completed_work": {},
+          "task_allocations": {},
+          "unit_commitment": {},
+          "terminal_unit_state": {},
+          "nodal_balance_marginal_cost": {
+            "grid": [
+              -0.0
+            ],
+            "plant": [
+              -0.0
+            ]
+          },
+          "simultaneous_storage_slots": {}
+        }
+      }
+    },
+    "scope": "Same demand and capacity, unlimited fuel and ordinary bidirectional line"
+  },
+  "gross_net_auxiliary": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "s",
+          "probability": 1.0,
+          "load_mw": {
+            "grid": [
+              2.0
+            ],
+            "plant": [
+              10.0
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "gas",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 0.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.0
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "gas",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 0.0,
+              "startup_fuel_mwh": 0.0,
+              "auxiliary_fraction": 0.1,
+              "online_auxiliary_mw": 0.0,
+              "startup_auxiliary_mwh": 0.0
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "s": [
+              20.0
+            ]
+          },
+          "other_process_use_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "flare_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "import_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "export_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "gas_storage_mwh": 0.0,
+          "initial_gas_mwh": 0.0,
+          "max_storage_charge_mw": 0.0,
+          "max_storage_discharge_mw": 0.0,
+          "generation_fuel_cost_per_mwh": 0.0,
+          "flare_cost_per_mwh": 0.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.4
+        }
+      ]
+    },
+    "result": {
+      "feasible": true,
+      "total_cost": 30.0,
+      "cost_components": {
+        "investment": 0.0,
+        "operating": 30.0,
+        "service_delay": 0.0,
+        "unserved_penalty": 0.0
+      },
+      "new_generator_mw": {
+        "public": 0.0,
+        "gas": 0.0
+      },
+      "new_line_mw": {},
+      "new_storage_power_mw": {},
+      "new_storage_energy_mwh": {},
+      "expected_unserved_mwh": 0.0,
+      "expected_emissions_t": 5.5,
+      "max_equality_residual": 0.0,
+      "max_inequality_violation": 0.0,
+      "solver_type": "LP",
+      "solver_status": 0,
+      "mip_gap": null,
+      "mip_dual_bound": null,
+      "variables": 11,
+      "equalities": 6,
+      "inequalities": 5,
+      "scenarios": {
+        "s": {
+          "external_fixed_load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "generation": {
+            "public": [
+              3.0
+            ],
+            "gas": [
+              10.0
+            ]
+          },
+          "unserved": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "line_forward": {},
+          "line_reverse": {},
+          "charge": {},
+          "discharge": {},
+          "soc": {},
+          "hydro_generation": {},
+          "hydro_spillage_hm3_per_hour": {},
+          "hydro_volume_hm3": {},
+          "compute_power_mw": {},
+          "completed_work": {},
+          "task_allocations": {},
+          "unit_commitment": {},
+          "terminal_unit_state": {},
+          "industrial_sites": {
+            "steel": {
+              "net_grid_import_mw": [
+                0.9999999999999998
+              ],
+              "flare_mw_fuel": [
+                0.0
+              ],
+              "gas_storage_mwh": [
+                0.0,
+                0.0
+              ],
+              "fuel_mw": {
+                "gas": [
+                  20.0
+                ]
+              },
+              "auxiliary_mw": {
+                "gas": [
+                  1.0
+                ]
+              },
+              "net_generation_mw": {
+                "gas": [
+                  9.0
+                ]
+              },
+              "gas_production_mw_fuel": [
+                20.0
+              ],
+              "other_process_use_mw_fuel": [
+                0.0
+              ],
+              "gas_boundary_emissions_t": 4.0
+            }
+          },
+          "nodal_balance_marginal_cost": {
+            "grid": [
+              10.0
+            ],
+            "plant": [
+              10.0
+            ]
+          },
+          "simultaneous_storage_slots": {}
+        }
+      }
+    }
+  },
+  "zero_auxiliary_comparator": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "s",
+          "probability": 1.0,
+          "load_mw": {
+            "grid": [
+              2.0
+            ],
+            "plant": [
+              10.0
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "gas",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 0.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.0
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "gas",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 0.0,
+              "startup_fuel_mwh": 0.0,
+              "auxiliary_fraction": 0.0,
+              "online_auxiliary_mw": 0.0,
+              "startup_auxiliary_mwh": 0.0
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "s": [
+              20.0
+            ]
+          },
+          "other_process_use_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "flare_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "import_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "export_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "gas_storage_mwh": 0.0,
+          "initial_gas_mwh": 0.0,
+          "max_storage_charge_mw": 0.0,
+          "max_storage_discharge_mw": 0.0,
+          "generation_fuel_cost_per_mwh": 0.0,
+          "flare_cost_per_mwh": 0.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.4
+        }
+      ]
+    },
+    "result": {
+      "feasible": true,
+      "total_cost": 20.0,
+      "cost_components": {
+        "investment": 0.0,
+        "operating": 20.0,
+        "service_delay": 0.0,
+        "unserved_penalty": 0.0
+      },
+      "new_generator_mw": {
+        "public": 0.0,
+        "gas": 0.0
+      },
+      "new_line_mw": {},
+      "new_storage_power_mw": {},
+      "new_storage_energy_mwh": {},
+      "expected_unserved_mwh": 0.0,
+      "expected_emissions_t": 5.0,
+      "max_equality_residual": 0.0,
+      "max_inequality_violation": 0.0,
+      "solver_type": "LP",
+      "solver_status": 0,
+      "mip_gap": null,
+      "mip_dual_bound": null,
+      "variables": 11,
+      "equalities": 6,
+      "inequalities": 5,
+      "scenarios": {
+        "s": {
+          "external_fixed_load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "generation": {
+            "public": [
+              2.0
+            ],
+            "gas": [
+              10.0
+            ]
+          },
+          "unserved": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "line_forward": {},
+          "line_reverse": {},
+          "charge": {},
+          "discharge": {},
+          "soc": {},
+          "hydro_generation": {},
+          "hydro_spillage_hm3_per_hour": {},
+          "hydro_volume_hm3": {},
+          "compute_power_mw": {},
+          "completed_work": {},
+          "task_allocations": {},
+          "unit_commitment": {},
+          "terminal_unit_state": {},
+          "industrial_sites": {
+            "steel": {
+              "net_grid_import_mw": [
+                -0.0
+              ],
+              "flare_mw_fuel": [
+                -0.0
+              ],
+              "gas_storage_mwh": [
+                0.0,
+                0.0
+              ],
+              "fuel_mw": {
+                "gas": [
+                  20.0
+                ]
+              },
+              "auxiliary_mw": {
+                "gas": [
+                  0.0
+                ]
+              },
+              "net_generation_mw": {
+                "gas": [
+                  10.0
+                ]
+              },
+              "gas_production_mw_fuel": [
+                20.0
+              ],
+              "other_process_use_mw_fuel": [
+                0.0
+              ],
+              "gas_boundary_emissions_t": 4.0
+            }
+          },
+          "nodal_balance_marginal_cost": {
+            "grid": [
+              10.0
+            ],
+            "plant": [
+              -0.0
+            ]
+          },
+          "simultaneous_storage_slots": {}
+        }
+      }
+    }
+  },
+  "export_limit_0.0": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "s",
+          "probability": 1.0,
+          "load_mw": {
+            "grid": [
+              5.0
+            ],
+            "plant": [
+              4.0
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "gas",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 0.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.0
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "gas",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 0.0,
+              "startup_fuel_mwh": 0.0,
+              "auxiliary_fraction": 0.0,
+              "online_auxiliary_mw": 0.0,
+              "startup_auxiliary_mwh": 0.0
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "s": [
+              20.0
+            ]
+          },
+          "other_process_use_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "flare_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "import_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "export_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "gas_storage_mwh": 0.0,
+          "initial_gas_mwh": 0.0,
+          "max_storage_charge_mw": 0.0,
+          "max_storage_discharge_mw": 0.0,
+          "generation_fuel_cost_per_mwh": 0.0,
+          "flare_cost_per_mwh": 0.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.4
+        }
+      ]
+    },
+    "result": {
+      "feasible": true,
+      "total_cost": 50.0,
+      "cost_components": {
+        "investment": 0.0,
+        "operating": 50.0,
+        "service_delay": 0.0,
+        "unserved_penalty": 0.0
+      },
+      "new_generator_mw": {
+        "public": 0.0,
+        "gas": 0.0
+      },
+      "new_line_mw": {},
+      "new_storage_power_mw": {},
+      "new_storage_energy_mwh": {},
+      "expected_unserved_mwh": 0.0,
+      "expected_emissions_t": 7.699999999999999,
+      "max_equality_residual": 0.0,
+      "max_inequality_violation": 0.0,
+      "solver_type": "LP",
+      "solver_status": 0,
+      "mip_gap": null,
+      "mip_dual_bound": null,
+      "variables": 11,
+      "equalities": 6,
+      "inequalities": 5,
+      "scenarios": {
+        "s": {
+          "external_fixed_load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "generation": {
+            "public": [
+              5.0
+            ],
+            "gas": [
+              4.0
+            ]
+          },
+          "unserved": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "line_forward": {},
+          "line_reverse": {},
+          "charge": {},
+          "discharge": {},
+          "soc": {},
+          "hydro_generation": {},
+          "hydro_spillage_hm3_per_hour": {},
+          "hydro_volume_hm3": {},
+          "compute_power_mw": {},
+          "completed_work": {},
+          "task_allocations": {},
+          "unit_commitment": {},
+          "terminal_unit_state": {},
+          "industrial_sites": {
+            "steel": {
+              "net_grid_import_mw": [
+                -0.0
+              ],
+              "flare_mw_fuel": [
+                12.0
+              ],
+              "gas_storage_mwh": [
+                0.0,
+                0.0
+              ],
+              "fuel_mw": {
+                "gas": [
+                  8.0
+                ]
+              },
+              "auxiliary_mw": {
+                "gas": [
+                  0.0
+                ]
+              },
+              "net_generation_mw": {
+                "gas": [
+                  4.0
+                ]
+              },
+              "gas_production_mw_fuel": [
+                20.0
+              ],
+              "other_process_use_mw_fuel": [
+                0.0
+              ],
+              "gas_boundary_emissions_t": 5.199999999999999
+            }
+          },
+          "nodal_balance_marginal_cost": {
+            "grid": [
+              10.0
+            ],
+            "plant": [
+              -0.0
+            ]
+          },
+          "simultaneous_storage_slots": {}
+        }
+      }
+    }
+  },
+  "export_limit_2.0": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "s",
+          "probability": 1.0,
+          "load_mw": {
+            "grid": [
+              5.0
+            ],
+            "plant": [
+              4.0
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "gas",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 0.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.0
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "gas",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 0.0,
+              "startup_fuel_mwh": 0.0,
+              "auxiliary_fraction": 0.0,
+              "online_auxiliary_mw": 0.0,
+              "startup_auxiliary_mwh": 0.0
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "s": [
+              20.0
+            ]
+          },
+          "other_process_use_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "flare_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "import_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "export_limit_mw": {
+            "s": [
+              2.0
+            ]
+          },
+          "gas_storage_mwh": 0.0,
+          "initial_gas_mwh": 0.0,
+          "max_storage_charge_mw": 0.0,
+          "max_storage_discharge_mw": 0.0,
+          "generation_fuel_cost_per_mwh": 0.0,
+          "flare_cost_per_mwh": 0.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.4
+        }
+      ]
+    },
+    "result": {
+      "feasible": true,
+      "total_cost": 30.0,
+      "cost_components": {
+        "investment": 0.0,
+        "operating": 30.0,
+        "service_delay": 0.0,
+        "unserved_penalty": 0.0
+      },
+      "new_generator_mw": {
+        "public": 0.0,
+        "gas": 0.0
+      },
+      "new_line_mw": {},
+      "new_storage_power_mw": {},
+      "new_storage_energy_mwh": {},
+      "expected_unserved_mwh": 0.0,
+      "expected_emissions_t": 6.300000000000001,
+      "max_equality_residual": 0.0,
+      "max_inequality_violation": 0.0,
+      "solver_type": "LP",
+      "solver_status": 0,
+      "mip_gap": null,
+      "mip_dual_bound": null,
+      "variables": 11,
+      "equalities": 6,
+      "inequalities": 5,
+      "scenarios": {
+        "s": {
+          "external_fixed_load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "generation": {
+            "public": [
+              3.0
+            ],
+            "gas": [
+              6.0
+            ]
+          },
+          "unserved": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "line_forward": {},
+          "line_reverse": {},
+          "charge": {},
+          "discharge": {},
+          "soc": {},
+          "hydro_generation": {},
+          "hydro_spillage_hm3_per_hour": {},
+          "hydro_volume_hm3": {},
+          "compute_power_mw": {},
+          "completed_work": {},
+          "task_allocations": {},
+          "unit_commitment": {},
+          "terminal_unit_state": {},
+          "industrial_sites": {
+            "steel": {
+              "net_grid_import_mw": [
+                -2.0
+              ],
+              "flare_mw_fuel": [
+                8.0
+              ],
+              "gas_storage_mwh": [
+                0.0,
+                0.0
+              ],
+              "fuel_mw": {
+                "gas": [
+                  12.0
+                ]
+              },
+              "auxiliary_mw": {
+                "gas": [
+                  0.0
+                ]
+              },
+              "net_generation_mw": {
+                "gas": [
+                  6.0
+                ]
+              },
+              "gas_production_mw_fuel": [
+                20.0
+              ],
+              "other_process_use_mw_fuel": [
+                0.0
+              ],
+              "gas_boundary_emissions_t": 4.800000000000001
+            }
+          },
+          "nodal_balance_marginal_cost": {
+            "grid": [
+              10.0
+            ],
+            "plant": [
+              -0.0
+            ]
+          },
+          "simultaneous_storage_slots": {}
+        }
+      }
+    }
+  },
+  "gas_storage_rate_4.0": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "s",
+          "probability": 1.0,
+          "load_mw": {
+            "grid": [
+              0.0,
+              0.0
+            ],
+            "plant": [
+              0.0,
+              2.0
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "gas",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 0.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.0
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "gas",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 0.0,
+              "startup_fuel_mwh": 0.0,
+              "auxiliary_fraction": 0.0,
+              "online_auxiliary_mw": 0.0,
+              "startup_auxiliary_mwh": 0.0
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "s": [
+              4.0,
+              0.0
+            ]
+          },
+          "other_process_use_mw": {
+            "s": [
+              0.0,
+              0.0
+            ]
+          },
+          "flare_limit_mw": {
+            "s": [
+              100.0,
+              100.0
+            ]
+          },
+          "import_limit_mw": {
+            "s": [
+              100.0,
+              100.0
+            ]
+          },
+          "export_limit_mw": {
+            "s": [
+              0.0,
+              0.0
+            ]
+          },
+          "gas_storage_mwh": 4.0,
+          "initial_gas_mwh": 0.0,
+          "max_storage_charge_mw": 4.0,
+          "max_storage_discharge_mw": 4.0,
+          "generation_fuel_cost_per_mwh": 0.0,
+          "flare_cost_per_mwh": 0.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.4
+        }
+      ]
+    },
+    "result": {
+      "feasible": true,
+      "total_cost": 0.0,
+      "cost_components": {
+        "investment": 0.0,
+        "operating": 0.0,
+        "service_delay": 0.0,
+        "unserved_penalty": 0.0
+      },
+      "new_generator_mw": {
+        "public": 0.0,
+        "gas": 0.0
+      },
+      "new_line_mw": {},
+      "new_storage_power_mw": {},
+      "new_storage_energy_mwh": {},
+      "expected_unserved_mwh": 0.0,
+      "expected_emissions_t": 0.8,
+      "max_equality_residual": 0.0,
+      "max_inequality_violation": 0.0,
+      "solver_type": "LP",
+      "solver_status": 0,
+      "mip_gap": null,
+      "mip_dual_bound": null,
+      "variables": 19,
+      "equalities": 10,
+      "inequalities": 9,
+      "scenarios": {
+        "s": {
+          "external_fixed_load_mw": {
+            "grid": [
+              0.0,
+              0.0
+            ],
+            "plant": [
+              0.0,
+              0.0
+            ]
+          },
+          "generation": {
+            "public": [
+              0.0,
+              -0.0
+            ],
+            "gas": [
+              0.0,
+              2.0
+            ]
+          },
+          "unserved": {
+            "grid": [
+              0.0,
+              0.0
+            ],
+            "plant": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_forward": {},
+          "line_reverse": {},
+          "charge": {},
+          "discharge": {},
+          "soc": {},
+          "hydro_generation": {},
+          "hydro_spillage_hm3_per_hour": {},
+          "hydro_volume_hm3": {},
+          "compute_power_mw": {},
+          "completed_work": {},
+          "task_allocations": {},
+          "unit_commitment": {},
+          "terminal_unit_state": {},
+          "industrial_sites": {
+            "steel": {
+              "net_grid_import_mw": [
+                -0.0,
+                -0.0
+              ],
+              "flare_mw_fuel": [
+                -0.0,
+                0.0
+              ],
+              "gas_storage_mwh": [
+                0.0,
+                4.0,
+                0.0
+              ],
+              "fuel_mw": {
+                "gas": [
+                  -0.0,
+                  4.0
+                ]
+              },
+              "auxiliary_mw": {
+                "gas": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "net_generation_mw": {
+                "gas": [
+                  0.0,
+                  2.0
+                ]
+              },
+              "gas_production_mw_fuel": [
+                4.0,
+                0.0
+              ],
+              "other_process_use_mw_fuel": [
+                0.0,
+                0.0
+              ],
+              "gas_boundary_emissions_t": 0.8
+            }
+          },
+          "nodal_balance_marginal_cost": {
+            "grid": [
+              -0.0,
+              10.0
+            ],
+            "plant": [
+              -0.0,
+              -0.0
+            ]
+          },
+          "simultaneous_storage_slots": {}
+        }
+      }
+    }
+  },
+  "gas_storage_rate_2.0": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "s",
+          "probability": 1.0,
+          "load_mw": {
+            "grid": [
+              0.0,
+              0.0
+            ],
+            "plant": [
+              0.0,
+              2.0
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "gas",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 0.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.0
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "gas",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 0.0,
+              "startup_fuel_mwh": 0.0,
+              "auxiliary_fraction": 0.0,
+              "online_auxiliary_mw": 0.0,
+              "startup_auxiliary_mwh": 0.0
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "s": [
+              4.0,
+              0.0
+            ]
+          },
+          "other_process_use_mw": {
+            "s": [
+              0.0,
+              0.0
+            ]
+          },
+          "flare_limit_mw": {
+            "s": [
+              100.0,
+              100.0
+            ]
+          },
+          "import_limit_mw": {
+            "s": [
+              100.0,
+              100.0
+            ]
+          },
+          "export_limit_mw": {
+            "s": [
+              0.0,
+              0.0
+            ]
+          },
+          "gas_storage_mwh": 4.0,
+          "initial_gas_mwh": 0.0,
+          "max_storage_charge_mw": 2.0,
+          "max_storage_discharge_mw": 2.0,
+          "generation_fuel_cost_per_mwh": 0.0,
+          "flare_cost_per_mwh": 0.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.4
+        }
+      ]
+    },
+    "result": {
+      "feasible": true,
+      "total_cost": 10.0,
+      "cost_components": {
+        "investment": 0.0,
+        "operating": 10.0,
+        "service_delay": 0.0,
+        "unserved_penalty": 0.0
+      },
+      "new_generator_mw": {
+        "public": 0.0,
+        "gas": 0.0
+      },
+      "new_line_mw": {},
+      "new_storage_power_mw": {},
+      "new_storage_energy_mwh": {},
+      "expected_unserved_mwh": 0.0,
+      "expected_emissions_t": 1.5,
+      "max_equality_residual": 0.0,
+      "max_inequality_violation": 0.0,
+      "solver_type": "LP",
+      "solver_status": 0,
+      "mip_gap": null,
+      "mip_dual_bound": null,
+      "variables": 19,
+      "equalities": 10,
+      "inequalities": 9,
+      "scenarios": {
+        "s": {
+          "external_fixed_load_mw": {
+            "grid": [
+              0.0,
+              0.0
+            ],
+            "plant": [
+              0.0,
+              0.0
+            ]
+          },
+          "generation": {
+            "public": [
+              0.0,
+              1.0
+            ],
+            "gas": [
+              0.0,
+              1.0
+            ]
+          },
+          "unserved": {
+            "grid": [
+              0.0,
+              0.0
+            ],
+            "plant": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_forward": {},
+          "line_reverse": {},
+          "charge": {},
+          "discharge": {},
+          "soc": {},
+          "hydro_generation": {},
+          "hydro_spillage_hm3_per_hour": {},
+          "hydro_volume_hm3": {},
+          "compute_power_mw": {},
+          "completed_work": {},
+          "task_allocations": {},
+          "unit_commitment": {},
+          "terminal_unit_state": {},
+          "industrial_sites": {
+            "steel": {
+              "net_grid_import_mw": [
+                -0.0,
+                1.0
+              ],
+              "flare_mw_fuel": [
+                2.0,
+                0.0
+              ],
+              "gas_storage_mwh": [
+                -0.0,
+                2.0,
+                0.0
+              ],
+              "fuel_mw": {
+                "gas": [
+                  -0.0,
+                  2.0
+                ]
+              },
+              "auxiliary_mw": {
+                "gas": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "net_generation_mw": {
+                "gas": [
+                  0.0,
+                  1.0
+                ]
+              },
+              "gas_production_mw_fuel": [
+                4.0,
+                0.0
+              ],
+              "other_process_use_mw_fuel": [
+                0.0,
+                0.0
+              ],
+              "gas_boundary_emissions_t": 1.0
+            }
+          },
+          "nodal_balance_marginal_cost": {
+            "grid": [
+              -0.0,
+              10.0
+            ],
+            "plant": [
+              -0.0,
+              10.0
+            ]
+          },
+          "simultaneous_storage_slots": {}
+        }
+      }
+    }
+  },
+  "no_free_initial_gas": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "s",
+          "probability": 1.0,
+          "load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              2.0
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "gas",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 0.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.0
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "gas",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 0.0,
+              "startup_fuel_mwh": 0.0,
+              "auxiliary_fraction": 0.0,
+              "online_auxiliary_mw": 0.0,
+              "startup_auxiliary_mwh": 0.0
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "other_process_use_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "flare_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "import_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "export_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "gas_storage_mwh": 4.0,
+          "initial_gas_mwh": 4.0,
+          "max_storage_charge_mw": 4.0,
+          "max_storage_discharge_mw": 4.0,
+          "generation_fuel_cost_per_mwh": 0.0,
+          "flare_cost_per_mwh": 0.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.4
+        }
+      ]
+    },
+    "result": {
+      "feasible": true,
+      "total_cost": 20.0,
+      "cost_components": {
+        "investment": 0.0,
+        "operating": 20.0,
+        "service_delay": 0.0,
+        "unserved_penalty": 0.0
+      },
+      "new_generator_mw": {
+        "public": 0.0,
+        "gas": 0.0
+      },
+      "new_line_mw": {},
+      "new_storage_power_mw": {},
+      "new_storage_energy_mwh": {},
+      "expected_unserved_mwh": 0.0,
+      "expected_emissions_t": 1.0,
+      "max_equality_residual": 0.0,
+      "max_inequality_violation": 0.0,
+      "solver_type": "LP",
+      "solver_status": 0,
+      "mip_gap": null,
+      "mip_dual_bound": null,
+      "variables": 11,
+      "equalities": 6,
+      "inequalities": 5,
+      "scenarios": {
+        "s": {
+          "external_fixed_load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "generation": {
+            "public": [
+              2.0
+            ],
+            "gas": [
+              -0.0
+            ]
+          },
+          "unserved": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "line_forward": {},
+          "line_reverse": {},
+          "charge": {},
+          "discharge": {},
+          "soc": {},
+          "hydro_generation": {},
+          "hydro_spillage_hm3_per_hour": {},
+          "hydro_volume_hm3": {},
+          "compute_power_mw": {},
+          "completed_work": {},
+          "task_allocations": {},
+          "unit_commitment": {},
+          "terminal_unit_state": {},
+          "industrial_sites": {
+            "steel": {
+              "net_grid_import_mw": [
+                2.0
+              ],
+              "flare_mw_fuel": [
+                0.0
+              ],
+              "gas_storage_mwh": [
+                4.0,
+                4.0
+              ],
+              "fuel_mw": {
+                "gas": [
+                  -0.0
+                ]
+              },
+              "auxiliary_mw": {
+                "gas": [
+                  0.0
+                ]
+              },
+              "net_generation_mw": {
+                "gas": [
+                  -0.0
+                ]
+              },
+              "gas_production_mw_fuel": [
+                0.0
+              ],
+              "other_process_use_mw_fuel": [
+                0.0
+              ],
+              "gas_boundary_emissions_t": 0.0
+            }
+          },
+          "nodal_balance_marginal_cost": {
+            "grid": [
+              10.0
+            ],
+            "plant": [
+              10.0
+            ]
+          },
+          "simultaneous_storage_slots": {}
+        }
+      }
+    }
+  },
+  "insufficient_process_fuel": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "s",
+          "probability": 1.0,
+          "load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "gas",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 0.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.0
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "gas",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 0.0,
+              "startup_fuel_mwh": 0.0,
+              "auxiliary_fraction": 0.0,
+              "online_auxiliary_mw": 0.0,
+              "startup_auxiliary_mwh": 0.0
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "s": [
+              1.0
+            ]
+          },
+          "other_process_use_mw": {
+            "s": [
+              2.0
+            ]
+          },
+          "flare_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "import_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "export_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "gas_storage_mwh": 0.0,
+          "initial_gas_mwh": 0.0,
+          "max_storage_charge_mw": 0.0,
+          "max_storage_discharge_mw": 0.0,
+          "generation_fuel_cost_per_mwh": 0.0,
+          "flare_cost_per_mwh": 0.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.4
+        }
+      ]
+    },
+    "result": {
+      "feasible": false,
+      "solver_status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "proven_infeasible": true,
+      "accepted_optimal_solution": false,
+      "incumbent_available": false
+    }
+  },
+  "surplus_without_flare_or_export": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "s",
+          "probability": 1.0,
+          "load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "gas",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 0.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.0
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "gas",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 0.0,
+              "startup_fuel_mwh": 0.0,
+              "auxiliary_fraction": 0.0,
+              "online_auxiliary_mw": 0.0,
+              "startup_auxiliary_mwh": 0.0
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "s": [
+              4.0
+            ]
+          },
+          "other_process_use_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "flare_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "import_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "export_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "gas_storage_mwh": 0.0,
+          "initial_gas_mwh": 0.0,
+          "max_storage_charge_mw": 0.0,
+          "max_storage_discharge_mw": 0.0,
+          "generation_fuel_cost_per_mwh": 0.0,
+          "flare_cost_per_mwh": 0.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.4
+        }
+      ]
+    },
+    "result": {
+      "feasible": false,
+      "solver_status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "proven_infeasible": true,
+      "accepted_optimal_solution": false,
+      "incumbent_available": false
+    }
+  },
+  "industrial_demand_cannot_be_shed": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "s",
+          "probability": 1.0,
+          "load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              2.0
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "gas",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 0.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.0
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "gas",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 0.0,
+              "startup_fuel_mwh": 0.0,
+              "auxiliary_fraction": 0.0,
+              "online_auxiliary_mw": 0.0,
+              "startup_auxiliary_mwh": 0.0
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "other_process_use_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "flare_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "import_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "export_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "gas_storage_mwh": 0.0,
+          "initial_gas_mwh": 0.0,
+          "max_storage_charge_mw": 0.0,
+          "max_storage_discharge_mw": 0.0,
+          "generation_fuel_cost_per_mwh": 0.0,
+          "flare_cost_per_mwh": 0.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.4
+        }
+      ],
+      "expected_unserved_limit_mwh": 100.0
+    },
+    "result": {
+      "feasible": false,
+      "solver_status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "proven_infeasible": true,
+      "accepted_optimal_solution": false,
+      "incumbent_available": false
+    }
+  },
+  "startup_energy_dt_1.0": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "s",
+          "probability": 1.0,
+          "load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              8.4
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "gas",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 5.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.5
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "gas",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 1.0,
+              "startup_fuel_mwh": 0.5,
+              "auxiliary_fraction": 0.1,
+              "online_auxiliary_mw": 0.5,
+              "startup_auxiliary_mwh": 0.1
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "s": [
+              28.5
+            ]
+          },
+          "other_process_use_mw": {
+            "s": [
+              3.0
+            ]
+          },
+          "flare_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "import_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "export_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "gas_storage_mwh": 0.0,
+          "initial_gas_mwh": 0.0,
+          "max_storage_charge_mw": 0.0,
+          "max_storage_discharge_mw": 0.0,
+          "generation_fuel_cost_per_mwh": 2.0,
+          "flare_cost_per_mwh": 3.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.4
+        }
+      ],
+      "dt": 1.0,
+      "commitments": [
+        {
+          "generator": "gas",
+          "min_up_steps": 1,
+          "min_down_steps": 1,
+          "startup_cost": 7.0,
+          "shutdown_cost": 0.0,
+          "no_load_cost_per_hour": 1.0,
+          "ramp_up_mw_per_hour": 1000000000.0,
+          "ramp_down_mw_per_hour": 1000000000.0,
+          "startup_limit_mw": 1000000000.0,
+          "shutdown_limit_mw": 1000000000.0,
+          "initial_on": false,
+          "initial_dispatch_mw": 0.0,
+          "initial_duration_steps": 1
+        }
+      ]
+    },
+    "result": {
+      "feasible": true,
+      "total_cost": 113.0,
+      "cost_components": {
+        "investment": 0.0,
+        "operating": 113.0,
+        "service_delay": 0.0,
+        "unserved_penalty": 0.0
+      },
+      "new_generator_mw": {
+        "public": 0.0,
+        "gas": 0.0
+      },
+      "new_line_mw": {},
+      "new_storage_power_mw": {},
+      "new_storage_energy_mwh": {},
+      "expected_unserved_mwh": 0.0,
+      "expected_emissions_t": 6.7,
+      "max_equality_residual": 1.7763568394002505e-15,
+      "max_inequality_violation": 1.7763568394002505e-15,
+      "solver_type": "MILP",
+      "solver_status": 0,
+      "mip_gap": 0.0,
+      "mip_dual_bound": 113.00000000000001,
+      "variables": 14,
+      "equalities": 7,
+      "inequalities": 12,
+      "scenarios": {
+        "s": {
+          "external_fixed_load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "generation": {
+            "public": [
+              0.0
+            ],
+            "gas": [
+              10.000000000000002
+            ]
+          },
+          "unserved": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "line_forward": {},
+          "line_reverse": {},
+          "charge": {},
+          "discharge": {},
+          "soc": {},
+          "hydro_generation": {},
+          "hydro_spillage_hm3_per_hour": {},
+          "hydro_volume_hm3": {},
+          "compute_power_mw": {},
+          "completed_work": {},
+          "task_allocations": {},
+          "unit_commitment": {
+            "gas": {
+              "on": [
+                1.0
+              ],
+              "startup": [
+                1.0
+              ],
+              "shutdown": [
+                0.0
+              ]
+            }
+          },
+          "terminal_unit_state": {
+            "gas": {
+              "on": true,
+              "dispatch_mw": 10.000000000000002,
+              "duration_steps": 1,
+              "remaining_minimum_time_steps": 0
+            }
+          },
+          "industrial_sites": {
+            "steel": {
+              "net_grid_import_mw": [
+                0.0
+              ],
+              "flare_mw_fuel": [
+                3.9999999999999964
+              ],
+              "gas_storage_mwh": [
+                0.0,
+                0.0
+              ],
+              "fuel_mw": {
+                "gas": [
+                  21.500000000000004
+                ]
+              },
+              "auxiliary_mw": {
+                "gas": [
+                  1.6000000000000003
+                ]
+              },
+              "net_generation_mw": {
+                "gas": [
+                  8.400000000000002
+                ]
+              },
+              "gas_production_mw_fuel": [
+                28.5
+              ],
+              "other_process_use_mw_fuel": [
+                3.0
+              ],
+              "gas_boundary_emissions_t": 6.7
+            }
+          },
+          "nodal_balance_marginal_cost": null,
+          "simultaneous_storage_slots": {}
+        }
+      }
+    }
+  },
+  "binding_emissions_dt_1.0": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "s",
+          "probability": 1.0,
+          "load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              8.4
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "gas",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 5.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.5
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "gas",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 1.0,
+              "startup_fuel_mwh": 0.5,
+              "auxiliary_fraction": 0.1,
+              "online_auxiliary_mw": 0.5,
+              "startup_auxiliary_mwh": 0.1
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "s": [
+              28.5
+            ]
+          },
+          "other_process_use_mw": {
+            "s": [
+              3.0
+            ]
+          },
+          "flare_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "import_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "export_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "gas_storage_mwh": 0.0,
+          "initial_gas_mwh": 0.0,
+          "max_storage_charge_mw": 0.0,
+          "max_storage_discharge_mw": 0.0,
+          "generation_fuel_cost_per_mwh": 2.0,
+          "flare_cost_per_mwh": 3.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.4
+        }
+      ],
+      "dt": 1.0,
+      "commitments": [
+        {
+          "generator": "gas",
+          "min_up_steps": 1,
+          "min_down_steps": 1,
+          "startup_cost": 7.0,
+          "shutdown_cost": 0.0,
+          "no_load_cost_per_hour": 1.0,
+          "ramp_up_mw_per_hour": 1000000000.0,
+          "ramp_down_mw_per_hour": 1000000000.0,
+          "startup_limit_mw": 1000000000.0,
+          "shutdown_limit_mw": 1000000000.0,
+          "initial_on": false,
+          "initial_dispatch_mw": 0.0,
+          "initial_duration_steps": 1
+        }
+      ],
+      "emissions_limit_t": 6.7
+    },
+    "result": {
+      "feasible": true,
+      "total_cost": 113.0,
+      "cost_components": {
+        "investment": 0.0,
+        "operating": 113.0,
+        "service_delay": 0.0,
+        "unserved_penalty": 0.0
+      },
+      "new_generator_mw": {
+        "public": 0.0,
+        "gas": 0.0
+      },
+      "new_line_mw": {},
+      "new_storage_power_mw": {},
+      "new_storage_energy_mwh": {},
+      "expected_unserved_mwh": 0.0,
+      "expected_emissions_t": 6.7,
+      "max_equality_residual": 3.552713678800501e-15,
+      "max_inequality_violation": 0.0,
+      "solver_type": "MILP",
+      "solver_status": 0,
+      "mip_gap": 0.0,
+      "mip_dual_bound": 113.00000000000003,
+      "variables": 14,
+      "equalities": 7,
+      "inequalities": 13,
+      "scenarios": {
+        "s": {
+          "external_fixed_load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "generation": {
+            "public": [
+              0.0
+            ],
+            "gas": [
+              10.0
+            ]
+          },
+          "unserved": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "line_forward": {},
+          "line_reverse": {},
+          "charge": {},
+          "discharge": {},
+          "soc": {},
+          "hydro_generation": {},
+          "hydro_spillage_hm3_per_hour": {},
+          "hydro_volume_hm3": {},
+          "compute_power_mw": {},
+          "completed_work": {},
+          "task_allocations": {},
+          "unit_commitment": {
+            "gas": {
+              "on": [
+                1.0
+              ],
+              "startup": [
+                1.0
+              ],
+              "shutdown": [
+                0.0
+              ]
+            }
+          },
+          "terminal_unit_state": {
+            "gas": {
+              "on": true,
+              "dispatch_mw": 10.0,
+              "duration_steps": 1,
+              "remaining_minimum_time_steps": 0
+            }
+          },
+          "industrial_sites": {
+            "steel": {
+              "net_grid_import_mw": [
+                0.0
+              ],
+              "flare_mw_fuel": [
+                3.9999999999999964
+              ],
+              "gas_storage_mwh": [
+                0.0,
+                0.0
+              ],
+              "fuel_mw": {
+                "gas": [
+                  21.500000000000004
+                ]
+              },
+              "auxiliary_mw": {
+                "gas": [
+                  1.6
+                ]
+              },
+              "net_generation_mw": {
+                "gas": [
+                  8.4
+                ]
+              },
+              "gas_production_mw_fuel": [
+                28.5
+              ],
+              "other_process_use_mw_fuel": [
+                3.0
+              ],
+              "gas_boundary_emissions_t": 6.7
+            }
+          },
+          "nodal_balance_marginal_cost": null,
+          "simultaneous_storage_slots": {}
+        }
+      }
+    }
+  },
+  "infeasible_emissions_dt_1.0": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "s",
+          "probability": 1.0,
+          "load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              8.4
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "gas",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 5.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.5
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "gas",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 1.0,
+              "startup_fuel_mwh": 0.5,
+              "auxiliary_fraction": 0.1,
+              "online_auxiliary_mw": 0.5,
+              "startup_auxiliary_mwh": 0.1
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "s": [
+              28.5
+            ]
+          },
+          "other_process_use_mw": {
+            "s": [
+              3.0
+            ]
+          },
+          "flare_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "import_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "export_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "gas_storage_mwh": 0.0,
+          "initial_gas_mwh": 0.0,
+          "max_storage_charge_mw": 0.0,
+          "max_storage_discharge_mw": 0.0,
+          "generation_fuel_cost_per_mwh": 2.0,
+          "flare_cost_per_mwh": 3.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.4
+        }
+      ],
+      "dt": 1.0,
+      "commitments": [
+        {
+          "generator": "gas",
+          "min_up_steps": 1,
+          "min_down_steps": 1,
+          "startup_cost": 7.0,
+          "shutdown_cost": 0.0,
+          "no_load_cost_per_hour": 1.0,
+          "ramp_up_mw_per_hour": 1000000000.0,
+          "ramp_down_mw_per_hour": 1000000000.0,
+          "startup_limit_mw": 1000000000.0,
+          "shutdown_limit_mw": 1000000000.0,
+          "initial_on": false,
+          "initial_dispatch_mw": 0.0,
+          "initial_duration_steps": 1
+        }
+      ],
+      "emissions_limit_t": 6.69
+    },
+    "result": {
+      "feasible": false,
+      "solver_status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "proven_infeasible": true,
+      "accepted_optimal_solution": false,
+      "incumbent_available": false
+    }
+  },
+  "startup_energy_dt_0.5": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "s",
+          "probability": 1.0,
+          "load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              8.3
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "gas",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 5.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.5
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "gas",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 1.0,
+              "startup_fuel_mwh": 0.5,
+              "auxiliary_fraction": 0.1,
+              "online_auxiliary_mw": 0.5,
+              "startup_auxiliary_mwh": 0.1
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "s": [
+              29.0
+            ]
+          },
+          "other_process_use_mw": {
+            "s": [
+              3.0
+            ]
+          },
+          "flare_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "import_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "export_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "gas_storage_mwh": 0.0,
+          "initial_gas_mwh": 0.0,
+          "max_storage_charge_mw": 0.0,
+          "max_storage_discharge_mw": 0.0,
+          "generation_fuel_cost_per_mwh": 2.0,
+          "flare_cost_per_mwh": 3.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.4
+        }
+      ],
+      "dt": 0.5,
+      "commitments": [
+        {
+          "generator": "gas",
+          "min_up_steps": 1,
+          "min_down_steps": 1,
+          "startup_cost": 7.0,
+          "shutdown_cost": 0.0,
+          "no_load_cost_per_hour": 1.0,
+          "ramp_up_mw_per_hour": 1000000000.0,
+          "ramp_down_mw_per_hour": 1000000000.0,
+          "startup_limit_mw": 1000000000.0,
+          "shutdown_limit_mw": 1000000000.0,
+          "initial_on": false,
+          "initial_dispatch_mw": 0.0,
+          "initial_duration_steps": 1
+        }
+      ]
+    },
+    "result": {
+      "feasible": true,
+      "total_cost": 60.5,
+      "cost_components": {
+        "investment": 0.0,
+        "operating": 60.5,
+        "service_delay": 0.0,
+        "unserved_penalty": 0.0
+      },
+      "new_generator_mw": {
+        "public": 0.0,
+        "gas": 0.0
+      },
+      "new_line_mw": {},
+      "new_storage_power_mw": {},
+      "new_storage_energy_mwh": {},
+      "expected_unserved_mwh": 0.0,
+      "expected_emissions_t": 3.4,
+      "max_equality_residual": 1.7763568394002505e-15,
+      "max_inequality_violation": 1.7763568394002505e-15,
+      "solver_type": "MILP",
+      "solver_status": 0,
+      "mip_gap": 0.0,
+      "mip_dual_bound": 60.50000000000001,
+      "variables": 14,
+      "equalities": 7,
+      "inequalities": 12,
+      "scenarios": {
+        "s": {
+          "external_fixed_load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "generation": {
+            "public": [
+              0.0
+            ],
+            "gas": [
+              10.000000000000002
+            ]
+          },
+          "unserved": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "line_forward": {},
+          "line_reverse": {},
+          "charge": {},
+          "discharge": {},
+          "soc": {},
+          "hydro_generation": {},
+          "hydro_spillage_hm3_per_hour": {},
+          "hydro_volume_hm3": {},
+          "compute_power_mw": {},
+          "completed_work": {},
+          "task_allocations": {},
+          "unit_commitment": {
+            "gas": {
+              "on": [
+                1.0
+              ],
+              "startup": [
+                1.0
+              ],
+              "shutdown": [
+                0.0
+              ]
+            }
+          },
+          "terminal_unit_state": {
+            "gas": {
+              "on": true,
+              "dispatch_mw": 10.000000000000002,
+              "duration_steps": 1,
+              "remaining_minimum_time_steps": 0
+            }
+          },
+          "industrial_sites": {
+            "steel": {
+              "net_grid_import_mw": [
+                0.0
+              ],
+              "flare_mw_fuel": [
+                3.9999999999999964
+              ],
+              "gas_storage_mwh": [
+                0.0,
+                0.0
+              ],
+              "fuel_mw": {
+                "gas": [
+                  22.000000000000004
+                ]
+              },
+              "auxiliary_mw": {
+                "gas": [
+                  1.7000000000000002
+                ]
+              },
+              "net_generation_mw": {
+                "gas": [
+                  8.3
+                ]
+              },
+              "gas_production_mw_fuel": [
+                29.0
+              ],
+              "other_process_use_mw_fuel": [
+                3.0
+              ],
+              "gas_boundary_emissions_t": 3.4
+            }
+          },
+          "nodal_balance_marginal_cost": null,
+          "simultaneous_storage_slots": {}
+        }
+      }
+    }
+  },
+  "binding_emissions_dt_0.5": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "s",
+          "probability": 1.0,
+          "load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              8.3
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "gas",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 5.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.5
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "gas",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 1.0,
+              "startup_fuel_mwh": 0.5,
+              "auxiliary_fraction": 0.1,
+              "online_auxiliary_mw": 0.5,
+              "startup_auxiliary_mwh": 0.1
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "s": [
+              29.0
+            ]
+          },
+          "other_process_use_mw": {
+            "s": [
+              3.0
+            ]
+          },
+          "flare_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "import_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "export_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "gas_storage_mwh": 0.0,
+          "initial_gas_mwh": 0.0,
+          "max_storage_charge_mw": 0.0,
+          "max_storage_discharge_mw": 0.0,
+          "generation_fuel_cost_per_mwh": 2.0,
+          "flare_cost_per_mwh": 3.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.4
+        }
+      ],
+      "dt": 0.5,
+      "commitments": [
+        {
+          "generator": "gas",
+          "min_up_steps": 1,
+          "min_down_steps": 1,
+          "startup_cost": 7.0,
+          "shutdown_cost": 0.0,
+          "no_load_cost_per_hour": 1.0,
+          "ramp_up_mw_per_hour": 1000000000.0,
+          "ramp_down_mw_per_hour": 1000000000.0,
+          "startup_limit_mw": 1000000000.0,
+          "shutdown_limit_mw": 1000000000.0,
+          "initial_on": false,
+          "initial_dispatch_mw": 0.0,
+          "initial_duration_steps": 1
+        }
+      ],
+      "emissions_limit_t": 3.4
+    },
+    "result": {
+      "feasible": true,
+      "total_cost": 60.5,
+      "cost_components": {
+        "investment": 0.0,
+        "operating": 60.5,
+        "service_delay": 0.0,
+        "unserved_penalty": 0.0
+      },
+      "new_generator_mw": {
+        "public": 0.0,
+        "gas": 0.0
+      },
+      "new_line_mw": {},
+      "new_storage_power_mw": {},
+      "new_storage_energy_mwh": {},
+      "expected_unserved_mwh": 0.0,
+      "expected_emissions_t": 3.3999999999999995,
+      "max_equality_residual": 7.105427357601002e-15,
+      "max_inequality_violation": 0.0,
+      "solver_type": "MILP",
+      "solver_status": 0,
+      "mip_gap": 0.0,
+      "mip_dual_bound": 60.5,
+      "variables": 14,
+      "equalities": 7,
+      "inequalities": 13,
+      "scenarios": {
+        "s": {
+          "external_fixed_load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "generation": {
+            "public": [
+              0.0
+            ],
+            "gas": [
+              10.0
+            ]
+          },
+          "unserved": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "line_forward": {},
+          "line_reverse": {},
+          "charge": {},
+          "discharge": {},
+          "soc": {},
+          "hydro_generation": {},
+          "hydro_spillage_hm3_per_hour": {},
+          "hydro_volume_hm3": {},
+          "compute_power_mw": {},
+          "completed_work": {},
+          "task_allocations": {},
+          "unit_commitment": {
+            "gas": {
+              "on": [
+                1.0
+              ],
+              "startup": [
+                1.0
+              ],
+              "shutdown": [
+                0.0
+              ]
+            }
+          },
+          "terminal_unit_state": {
+            "gas": {
+              "on": true,
+              "dispatch_mw": 10.0,
+              "duration_steps": 1,
+              "remaining_minimum_time_steps": 0
+            }
+          },
+          "industrial_sites": {
+            "steel": {
+              "net_grid_import_mw": [
+                0.0
+              ],
+              "flare_mw_fuel": [
+                3.999999999999993
+              ],
+              "gas_storage_mwh": [
+                0.0,
+                0.0
+              ],
+              "fuel_mw": {
+                "gas": [
+                  22.000000000000007
+                ]
+              },
+              "auxiliary_mw": {
+                "gas": [
+                  1.7
+                ]
+              },
+              "net_generation_mw": {
+                "gas": [
+                  8.3
+                ]
+              },
+              "gas_production_mw_fuel": [
+                29.0
+              ],
+              "other_process_use_mw_fuel": [
+                3.0
+              ],
+              "gas_boundary_emissions_t": 3.3999999999999995
+            }
+          },
+          "nodal_balance_marginal_cost": null,
+          "simultaneous_storage_slots": {}
+        }
+      }
+    }
+  },
+  "infeasible_emissions_dt_0.5": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "s",
+          "probability": 1.0,
+          "load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              8.3
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "gas",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 5.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.5
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "gas",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 1.0,
+              "startup_fuel_mwh": 0.5,
+              "auxiliary_fraction": 0.1,
+              "online_auxiliary_mw": 0.5,
+              "startup_auxiliary_mwh": 0.1
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "s": [
+              29.0
+            ]
+          },
+          "other_process_use_mw": {
+            "s": [
+              3.0
+            ]
+          },
+          "flare_limit_mw": {
+            "s": [
+              100.0
+            ]
+          },
+          "import_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "export_limit_mw": {
+            "s": [
+              0.0
+            ]
+          },
+          "gas_storage_mwh": 0.0,
+          "initial_gas_mwh": 0.0,
+          "max_storage_charge_mw": 0.0,
+          "max_storage_discharge_mw": 0.0,
+          "generation_fuel_cost_per_mwh": 2.0,
+          "flare_cost_per_mwh": 3.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.4
+        }
+      ],
+      "dt": 0.5,
+      "commitments": [
+        {
+          "generator": "gas",
+          "min_up_steps": 1,
+          "min_down_steps": 1,
+          "startup_cost": 7.0,
+          "shutdown_cost": 0.0,
+          "no_load_cost_per_hour": 1.0,
+          "ramp_up_mw_per_hour": 1000000000.0,
+          "ramp_down_mw_per_hour": 1000000000.0,
+          "startup_limit_mw": 1000000000.0,
+          "shutdown_limit_mw": 1000000000.0,
+          "initial_on": false,
+          "initial_dispatch_mw": 0.0,
+          "initial_duration_steps": 1
+        }
+      ],
+      "emissions_limit_t": 3.39
+    },
+    "result": {
+      "feasible": false,
+      "solver_status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "proven_infeasible": true,
+      "accepted_optimal_solution": false,
+      "incumbent_available": false
+    }
+  },
+  "scenario_probability_accounting": {
+    "inputs": {
+      "nodes": [
+        "grid",
+        "plant"
+      ],
+      "scenarios": [
+        {
+          "name": "low",
+          "probability": 0.75,
+          "load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              2.0
+            ]
+          }
+        },
+        {
+          "name": "high",
+          "probability": 0.25,
+          "load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              2.0
+            ]
+          }
+        }
+      ],
+      "generators": [
+        {
+          "name": "public",
+          "node": "grid",
+          "existing_mw": 100.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 10.0,
+          "emissions_t_per_mwh": 0.5,
+          "availability": {},
+          "min_output_fraction": 0.0
+        },
+        {
+          "name": "gas",
+          "node": "plant",
+          "existing_mw": 10.0,
+          "max_new_mw": 0.0,
+          "investment_cost": 0.0,
+          "marginal_cost": 0.0,
+          "emissions_t_per_mwh": 0.0,
+          "availability": {},
+          "min_output_fraction": 0.0
+        }
+      ],
+      "industrial_sites": [
+        {
+          "name": "steel",
+          "node": "plant",
+          "grid_node": "grid",
+          "units": [
+            {
+              "generator": "gas",
+              "fuel_mwh_per_mwh_gross": 2.0,
+              "no_load_fuel_mw": 0.0,
+              "startup_fuel_mwh": 0.0,
+              "auxiliary_fraction": 0.0,
+              "online_auxiliary_mw": 0.0,
+              "startup_auxiliary_mwh": 0.0
+            }
+          ],
+          "fuel_calorific_basis": "LHV",
+          "load_basis": "gross_process_excluding_generator_auxiliaries",
+          "generator_cost_basis": "non_fuel_operating_cost",
+          "gas_production_mw": {
+            "low": [
+              1.0
+            ],
+            "high": [
+              5.0
+            ]
+          },
+          "other_process_use_mw": {
+            "low": [
+              1.0
+            ],
+            "high": [
+              1.0
+            ]
+          },
+          "flare_limit_mw": {
+            "low": [
+              100.0
+            ],
+            "high": [
+              100.0
+            ]
+          },
+          "import_limit_mw": {
+            "low": [
+              100.0
+            ],
+            "high": [
+              100.0
+            ]
+          },
+          "export_limit_mw": {
+            "low": [
+              0.0
+            ],
+            "high": [
+              0.0
+            ]
+          },
+          "gas_storage_mwh": 0.0,
+          "initial_gas_mwh": 0.0,
+          "max_storage_charge_mw": 0.0,
+          "max_storage_discharge_mw": 0.0,
+          "generation_fuel_cost_per_mwh": 0.0,
+          "flare_cost_per_mwh": 0.0,
+          "combustion_t_per_mwh_fuel": 0.2,
+          "flaring_t_per_mwh_fuel": 0.3,
+          "process_use_t_per_mwh_fuel": 0.3
+        }
+      ]
+    },
+    "result": {
+      "feasible": true,
+      "total_cost": 15.0,
+      "cost_components": {
+        "investment": 0.0,
+        "operating": 15.0,
+        "service_delay": 0.0,
+        "unserved_penalty": 0.0
+      },
+      "new_generator_mw": {
+        "public": 0.0,
+        "gas": 0.0
+      },
+      "new_line_mw": {},
+      "new_storage_power_mw": {},
+      "new_storage_energy_mwh": {},
+      "expected_unserved_mwh": 0.0,
+      "expected_emissions_t": 1.25,
+      "max_equality_residual": 0.0,
+      "max_inequality_violation": 0.0,
+      "solver_type": "LP",
+      "solver_status": 0,
+      "mip_gap": null,
+      "mip_dual_bound": null,
+      "variables": 20,
+      "equalities": 12,
+      "inequalities": 9,
+      "scenarios": {
+        "low": {
+          "external_fixed_load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "generation": {
+            "public": [
+              2.0
+            ],
+            "gas": [
+              -0.0
+            ]
+          },
+          "unserved": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "line_forward": {},
+          "line_reverse": {},
+          "charge": {},
+          "discharge": {},
+          "soc": {},
+          "hydro_generation": {},
+          "hydro_spillage_hm3_per_hour": {},
+          "hydro_volume_hm3": {},
+          "compute_power_mw": {},
+          "completed_work": {},
+          "task_allocations": {},
+          "unit_commitment": {},
+          "terminal_unit_state": {},
+          "industrial_sites": {
+            "steel": {
+              "net_grid_import_mw": [
+                2.0
+              ],
+              "flare_mw_fuel": [
+                0.0
+              ],
+              "gas_storage_mwh": [
+                0.0,
+                0.0
+              ],
+              "fuel_mw": {
+                "gas": [
+                  -0.0
+                ]
+              },
+              "auxiliary_mw": {
+                "gas": [
+                  0.0
+                ]
+              },
+              "net_generation_mw": {
+                "gas": [
+                  -0.0
+                ]
+              },
+              "gas_production_mw_fuel": [
+                1.0
+              ],
+              "other_process_use_mw_fuel": [
+                1.0
+              ],
+              "gas_boundary_emissions_t": 0.3
+            }
+          },
+          "nodal_balance_marginal_cost": {
+            "grid": [
+              10.0
+            ],
+            "plant": [
+              10.0
+            ]
+          },
+          "simultaneous_storage_slots": {}
+        },
+        "high": {
+          "external_fixed_load_mw": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "generation": {
+            "public": [
+              -0.0
+            ],
+            "gas": [
+              2.0
+            ]
+          },
+          "unserved": {
+            "grid": [
+              0.0
+            ],
+            "plant": [
+              0.0
+            ]
+          },
+          "line_forward": {},
+          "line_reverse": {},
+          "charge": {},
+          "discharge": {},
+          "soc": {},
+          "hydro_generation": {},
+          "hydro_spillage_hm3_per_hour": {},
+          "hydro_volume_hm3": {},
+          "compute_power_mw": {},
+          "completed_work": {},
+          "task_allocations": {},
+          "unit_commitment": {},
+          "terminal_unit_state": {},
+          "industrial_sites": {
+            "steel": {
+              "net_grid_import_mw": [
+                -0.0
+              ],
+              "flare_mw_fuel": [
+                0.0
+              ],
+              "gas_storage_mwh": [
+                0.0,
+                0.0
+              ],
+              "fuel_mw": {
+                "gas": [
+                  4.0
+                ]
+              },
+              "auxiliary_mw": {
+                "gas": [
+                  0.0
+                ]
+              },
+              "net_generation_mw": {
+                "gas": [
+                  2.0
+                ]
+              },
+              "gas_production_mw_fuel": [
+                5.0
+              ],
+              "other_process_use_mw_fuel": [
+                1.0
+              ],
+              "gas_boundary_emissions_t": 1.1
+            }
+          },
+          "nodal_balance_marginal_cost": {
+            "grid": [
+              10.0
+            ],
+            "plant": [
+              10.0
+            ]
+          },
+          "simultaneous_storage_slots": {}
+        }
+      }
+    }
+  }
+}

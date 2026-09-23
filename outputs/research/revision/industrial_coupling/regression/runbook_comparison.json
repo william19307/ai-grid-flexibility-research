@@ -1,0 +1,51 @@
+{
+  "baseline_commit": "e936ef6bbce7e8a4ef32c19149a9cad0aa2a759b",
+  "baseline_source": "git show into separate temporary source tree",
+  "environment": "same Python executable, fresh subprocesses for each source/suite",
+  "comparison_only": false,
+  "comparisons": [
+    {
+      "suite": "coupled_grid_compute",
+      "file": "coupled_grid_compute_validation.json",
+      "baseline_sha256": "c32700b1d83e74ccdcb13aeb4d4b085fd452e6c5d103ec4a3c2806a811001fe8",
+      "current_sha256": "b535e5da8f58e7cbd96bedfa56ba5529045916a81579497417f576c7ea452398",
+      "excluded_provenance_fields": [
+        "model_sha256"
+      ],
+      "all_other_content_equal": true,
+      "byte_identical": false
+    },
+    {
+      "suite": "coupled_grid_compute",
+      "file": "coupled_grid_compute_analytic_examples.json",
+      "baseline_sha256": "f7f0398db811e5ab57b9bc06dc6813d84348e693be49c7a2e5db2b20d9a5c535",
+      "current_sha256": "f7f0398db811e5ab57b9bc06dc6813d84348e693be49c7a2e5db2b20d9a5c535",
+      "excluded_provenance_fields": [],
+      "all_other_content_equal": true,
+      "byte_identical": true
+    },
+    {
+      "suite": "thermal_commitment",
+      "file": "thermal_commitment_validation.json",
+      "baseline_sha256": "4e4b7b2e150ea92841ff5dbb2fe5b17d8871018a2f038d673e4783070030fd03",
+      "current_sha256": "8822014d969c6a871f74e6409b4480af6b5b8225b1808655afce977843194d03",
+      "excluded_provenance_fields": [
+        "source_sha256"
+      ],
+      "all_other_content_equal": true,
+      "byte_identical": false
+    },
+    {
+      "suite": "reservoir_coupling",
+      "file": "reservoir_coupling_validation.json",
+      "baseline_sha256": "2631c717fc3fd418572eac46380657d96d24f8f8038b572d57df88762906ebf8",
+      "current_sha256": "c7cfed3edf97f15d5b62d844893525ee5baf2c6048af69ce8917f51ee255060d",
+      "excluded_provenance_fields": [
+        "model_sha256"
+      ],
+      "all_other_content_equal": true,
+      "byte_identical": false
+    }
+  ],
+  "scope": "No-industrial-site behaviour regression; not empirical validation or second-machine reconstruction"
+}

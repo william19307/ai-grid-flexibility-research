@@ -15,6 +15,7 @@ import numpy as np
 from scipy.optimize import linprog, milp, Bounds, LinearConstraint
 from scipy.sparse import coo_matrix, vstack
 import thermal_commitment as thermal
+import industrial_captive as industrial
 
 
 @dataclass
@@ -116,7 +117,8 @@ class Matrix:
 
 def solve(nodes,scenarios,generators,lines=(),storage=(),pools=(),dt=1.,
           fixed_compute=None,expected_unserved_limit_mwh=0.,unserved_cost=10000.,
-          emissions_limit_t=None,reservoirs=(),commitments=(),milp_time_limit_s=120.,external_fixed_load=None):
+          emissions_limit_t=None,reservoirs=(),commitments=(),milp_time_limit_s=120.,external_fixed_load=None,
+          industrial_sites=()):
     """Optimize shared investment and scenario dispatch.
 
 fixed_compute[scenario][pool] can fix a *verified* task-feasible power sequence.
@@ -125,10 +127,14 @@ so an infeasible externally supplied power trajectory is rejected.
 external_fixed_load adds separately verified mandatory power at each node. It
 does not create fluid task variables and cannot be shed as non-compute load; the
 caller must supply its scheduling certificate and power-boundary assumptions.
+industrial_sites adds mandatory private gross process demand, shared gas fuel,
+generator auxiliaries and a lossless signed grid interface. These are explicit
+conditional inputs, not evidence of calibrated industrial flexibility.
     """
     nodes=list(nodes);scenarios=list(scenarios);generators=list(generators);lines=list(lines);storage=list(storage);pools=list(pools)
     reservoirs=list(reservoirs)
     commitments=list(commitments)
+    industrial_sites=list(industrial_sites)
     controls={c.generator:c for c in commitments}
     if len(controls)!=len(commitments):raise ValueError("Duplicate commitment controls")
     gen_by_name={g.name:g for g in generators}
@@ -201,13 +207,14 @@ caller must supply its scheduling certificate and power-boundary assumptions.
     if emissions_limit_t is not None and not finite_nonnegative([emissions_limit_t]):raise ValueError('Invalid emissions limit')
     if fixed_compute is not None:
         if not set(fixed_compute)<=scenario_names or any(not set(v)<={p.name for p in pools} for v in fixed_compute.values()):raise ValueError('Unknown fixed-compute scenario or pool')
+    industrial_nodes=industrial.validate(industrial_sites,nodes,generators,lines,controls,scenario_names,T)
     m=Matrix();gen_new={};line_new={};sp_new={};se_new={}
     for g in generators:gen_new[g.name]=m.var(('new_gen',g.name),g.investment_cost,upper=g.max_new_mw)
     for l in lines:line_new[l.name]=m.var(('new_line',l.name),l.investment_cost,upper=l.max_new_mw)
     for b in storage:
         sp_new[b.name]=m.var(('new_storage_power',b.name),b.power_investment_cost,upper=b.max_new_power_mw)
         se_new[b.name]=m.var(('new_storage_energy',b.name),b.energy_investment_cost,upper=b.max_new_energy_mwh)
-    result_indices={};eens_row={};co2_row={};service_indices=[];op_indices=[]
+    result_indices={};eens_row={};co2_row={};service_indices=[];op_indices=[];fixed_co2=0.
     for s in scenarios:
         probability=s.probability;balances={(n,t):{} for n in nodes for t in range(T)}
         external={n:np.zeros(T) if external_fixed_load is None else np.asarray(external_fixed_load[s.name][n],float) for n in nodes}
@@ -217,7 +224,7 @@ caller must supply its scheduling certificate and power-boundary assumptions.
         for n in nodes:
             arr=[]
             for t in range(T):
-                v=m.var(('unserved',s.name,n,t),probability*dt*unserved_cost,upper=float(s.load_mw[n][t]))
+                v=m.var(('unserved',s.name,n,t),probability*dt*unserved_cost,upper=0. if n in industrial_nodes else float(s.load_mw[n][t]))
                 arr.append(v);balances[n,t][v]=1;eens_row[v]=probability*dt
             ix['unserved'][n]=arr
         for g in generators:
@@ -235,6 +242,9 @@ caller must supply its scheduling certificate and power-boundary assumptions.
                 unit=thermal.add_constraints(m,g,arr,controls[g.name],s.name,dt,probability,availability)
                 ix['commitment'][g.name]=unit
                 for ids in unit.values():op_indices.extend(ids)
+        if industrial_sites:
+            extra_op,extra_co2,constant_co2=industrial.add_constraints(m,industrial_sites,s,dt,ix,balances)
+            op_indices.extend(extra_op);co2_row.update(extra_co2);fixed_co2+=constant_co2
         for l in lines:
             fw=[];rv=[];eff=1-l.loss_fraction
             for t in range(T):
@@ -309,7 +319,7 @@ caller must supply its scheduling certificate and power-boundary assumptions.
                 ix['balance_rows'][n].append(len(m.eq));m.equal(balances[n,t],rhs[n,t],('balance',s.name,n,t))
         result_indices[s.name]=ix
     m.upper(eens_row,expected_unserved_limit_mwh)
-    if emissions_limit_t is not None:m.upper(co2_row,emissions_limit_t)
+    if emissions_limit_t is not None:m.upper(co2_row,emissions_limit_t-fixed_co2)
     ae=m.sparse(m.eq);au=m.sparse(m.ub)
     if controls:
         lower=np.array([a for a,b in m.bounds]);upper=np.array([np.inf if b is None else b for a,b in m.bounds])
@@ -333,7 +343,7 @@ caller must supply its scheduling certificate and power-boundary assumptions.
          'new_generator_mw':{k:float(x[v]) for k,v in gen_new.items()},'new_line_mw':{k:float(x[v]) for k,v in line_new.items()},
          'new_storage_power_mw':{k:float(x[v]) for k,v in sp_new.items()},'new_storage_energy_mwh':{k:float(x[v]) for k,v in se_new.items()},
          'expected_unserved_mwh':float(sum(v*x[i] for i,v in eens_row.items())),
-         'expected_emissions_t':float(sum(v*x[i] for i,v in co2_row.items())),
+         'expected_emissions_t':float(fixed_co2+sum(v*x[i] for i,v in co2_row.items())),
          'max_equality_residual':eq_error,'max_inequality_violation':ub_error,
          'solver_type':'MILP' if controls else 'LP','solver_status':int(fit.status),
          'mip_gap':float(fit.mip_gap) if controls else None,'mip_dual_bound':float(fit.mip_dual_bound) if controls else None,
@@ -353,6 +363,7 @@ caller must supply its scheduling certificate and power-boundary assumptions.
             r['task_allocations'][p.name]=alloc
         r['unit_commitment']={name:{key:x[ids].tolist() for key,ids in unit.items()} for name,unit in ix['commitment'].items()}
         r['terminal_unit_state']={name:thermal.terminal_state(controls[name],r['generation'][name],unit['on']) for name,unit in r['unit_commitment'].items()}
+        if industrial_sites:r['industrial_sites']=industrial.extract(industrial_sites,s,ix,x,dt)
         # MILP commitment changes are discrete: LP balance duals are not available.
         r['nodal_balance_marginal_cost']=None if controls else {n:(fit.eqlin.marginals[ids]/(s.probability*dt)).tolist() for n,ids in ix['balance_rows'].items()}
         r['simultaneous_storage_slots']={b.name:int(np.sum((x[ix['charge'][b.name]]>1e-7)&(x[ix['discharge'][b.name]]>1e-7))) for b in storage}
