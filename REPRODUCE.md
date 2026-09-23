@@ -228,3 +228,15 @@ work/figure-env/bin/python work/research/analysis/analyze_weather_grid_pilot_v2.
 最后一项需要 `pilot_plan.json`、`pilot_acquisition.json` 以及 `work/research/sources/weather_fleet_revision_v2/pilot/{id}.json` 与 `{id}.meta.json` 八组缓存。每项 URL、参数、获取时间与响应哈希见 `pilot_acquisition.json`；原始文件不进入 Git。已完整缓存无需再次下载。缺缓存时，仅可按冻结八请求入口 `acquire_weather_grid_pilot_v2.py` 获取，需保留新获取记录；API 动态响应不能保证逐字节重现旧快照，不得覆盖旧证据。新机器完整复现尚未执行。
 
 采集器共用阶段 13 的锁和额度台账；首次干净环境需要先建立该台账目录与空 `call_ledger.jsonl`，已有台账绝不能清空。旧计划暂停标记不因新试验而解除。正式 421 格点的多年采集不在此试验内。报告及逐变量差值表只说明这四场址两种选择的数值关系，不生成省级风电容量因子。
+
+### 阶段 17：隔离风机曲线形状与设备来源交叉读取
+
+方案 `revision/wind_conversion_v1/conversion_plan.json` 在计算转换前提交为 `5d9884f`。它使用阶段 16 四条 nearest 响应，不新增气象请求。参考 YAML、固定 atlite 源码和海事 PDF 按 `source_manifest.json` 的 URL 保存到 `work/research/sources/wind_conversion_revision_20260923/`，逐文件校对 SHA256。发行人公告镜像的 URL/哈希另见 `equipment_source_audit.json` 的 issuer_source，保存为 `rudong_issuer_2018_065.pdf`；两个 PDF 还须保留原获取 meta。三峡网页只有本轮网页读取证据，无本地快照，复核时不得把脚本中转录字段当作自动重取的来源。
+
+```bash
+work/figure-env/bin/python work/research/analysis/compare_wind_reference_shapes.py
+work/figure-env/bin/python work/research/analysis/verify_wind_reference_shapes.py
+python work/research/analysis/audit_wind_equipment_sources.py
+```
+
+第三项使用含 pypdf 的解释器并要求 pdftotext 可用；本轮运行路径为 Codex bundled Python。逐小时诊断重建在排除目录 `work/research/prepared/wind_reference_shapes_2020_UNCALIBRATED.csv.gz`，摘要和哈希进入版本控制。独立数值核验覆盖全部 105,408 个小时值及 12 个积分，而非实际发电量。87 个节点检查明确重复节点和切出边界。两条参考数据由 Contributors to atlite 按 CC-BY-4.0 标记，表值经过归一化、插值和共同系数处理，署名与具体变换见阶段 17 报告。0.85 和端点线性积分仍是假设；未估计实际设备、风场损失、置信区间或省级容量价值。

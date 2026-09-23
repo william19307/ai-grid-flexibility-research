@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "independent_hourly_values": 105408,
+  "max_absolute_error": "3.108367626885E-16",
+  "independent_energy_sums": 12,
+  "synthetic_knot_checks": 87,
+  "analysis_sha256": "583f415d63e30774279af75e3b31eb7a95c9da9d8e8d4e18687bb03021986b88",
+  "verifier_sha256": "60f700215f04bd2868b9f80f3e05287022584781487128d238555b0dd040ec91",
+  "scope": "Verifies conversion arithmetic and temporal indexing, not physical accuracy or observed generation."
+}

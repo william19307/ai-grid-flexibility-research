@@ -1,0 +1,61 @@
+{
+  "pdf_checks": [
+    {
+      "file": "rudong_msa.pdf",
+      "sha256": "e1347f1303849f26c69cbf74f1ab532b914862496bce95fa1c5b1359cf0326cd",
+      "pages": [
+        17
+      ],
+      "fields_crosschecked": 2,
+      "engines": [
+        "pypdf",
+        "pdftotext"
+      ],
+      "scope": "Text extraction agreement, not verification of installed configuration or generation"
+    },
+    {
+      "file": "rudong_issuer_2018_065.pdf",
+      "sha256": "6d5de67c76a79f4dc60338686c3312c39e4efaa6f2deff6c2ed28177fbdfba39",
+      "pages": [
+        4
+      ],
+      "fields_crosschecked": 3,
+      "engines": [
+        "pypdf",
+        "pdftotext"
+      ],
+      "scope": "Text extraction agreement, not verification of installed configuration or generation"
+    }
+  ],
+  "issuer_source": {
+    "url": "https://pdf.dfcfw.com/pdf/H2_AN201810231219515437_1.pdf",
+    "sha256": "6d5de67c76a79f4dc60338686c3312c39e4efaa6f2deff6c2ed28177fbdfba39",
+    "bytes": 220135,
+    "retrieved_utc": "2026-09-23T00:00:26.398210+00:00",
+    "provenance": "Issuer-authored announcement, third-party PDF mirror; not independent operating verification"
+  },
+  "operator_web_source": {
+    "url": "https://eps.ctg.com.cn/cms/channel/1ywgg1/12587.htm",
+    "retrieved_via": "web tool text, 2026-09-23",
+    "local_snapshot": false,
+    "local_acquisition_failures": [
+      "urllib SSL UNEXPECTED_EOF_WHILE_READING",
+      "curl TLS SSL_ERROR_SYSCALL"
+    ],
+    "fields": {
+      "manufacturer_model": "Dongfang FD77C",
+      "count": 134,
+      "unit_mw": 1.5,
+      "tower_height_m": 61.5,
+      "rotor_diameter_m": 77
+    },
+    "limit": "Tower height is not substituted for hub height; published 2022 text says 2010 commissioning and nearly 9 years, an internal chronology inconsistency retained."
+  },
+  "missing": [
+    "No certified site power curve retrieved for FD77C/H151/H171",
+    "No site hub-height density/loss or metered-generation validation",
+    "Guazhou financing local PDF failed secure TLS retrieval, search result not admitted as verified turbine count",
+    "Guizhou Qingfeng exact operating turbine mix not verified"
+  ],
+  "script_sha256": "74d7c6a30ab5d92ace26e334897d77e420beaedb52c9756947469e57e2809398"
+}
