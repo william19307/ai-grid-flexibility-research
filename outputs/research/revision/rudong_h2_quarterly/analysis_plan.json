@@ -1,0 +1,22 @@
+{
+  "scope": "Exploratory quarterly diagnostic of same 2022-2024 controlled offshore annual candidate, not monthly metered validation",
+  "input_transfer_audit_sha256": "86544c4008792e17148f391c22e2a315192daad42b29efb731d4add3c9fe3f16",
+  "input_profile_sha256": "350d4d8cb5e9b129d4db30a614f05f0047cfc00892fe35a95140fcc76bc980d1",
+  "frozen_2022_annual_scales": "Reuse all three Stage18 annual scale factors without quarterly/year refit",
+  "observations": "Use company-authored Q1/H1/9M reports for2023 and2024, including2022 comparisons; Q4 from annual minus9M",
+  "revision_handling": "Retain duplicate2023 disclosures, compare at displayed precision; disagreements flag rather than silently average",
+  "rounding": "Each reported cumulative MWh halfwidth500; quarter differences halfwidth1000; shared endpoints imply dependent quarter errors",
+  "metrics": [
+    "Unscaled and scaled gross MWh and error per quarter for all three curves",
+    "Annual sum identity and absolute-quarter-error versus net annual-error cancellation",
+    "Gross and export reported separately; no conversion using CO2 or availability"
+  ],
+  "exclusions": [
+    "No new wind model or clipped replacement",
+    "No tuning or selecting best curve",
+    "No p-values or independence claim from12 quarters",
+    "No monthly/hourly validation claim",
+    "No reinterpretation of company scope as direct plant metering"
+  ],
+  "known_data": "All annual model profiles and observed annual totals known; several cumulative observations already read. Plan frozen before quarterly model aggregation, not preregistration or blind holdout."
+}
