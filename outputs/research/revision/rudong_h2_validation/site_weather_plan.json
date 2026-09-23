@@ -1,0 +1,92 @@
+{
+  "unit": {
+    "source_excel_row": "19233",
+    "unit_id": "G100000903072",
+    "province": "Jiangsu",
+    "source_type": "wind",
+    "technology": "Offshore hard mount",
+    "technology_group": "wind_offshore",
+    "name": "Jiangsu Rudong H2 (Guoxin) Offshore wind farm",
+    "phase": "--",
+    "mw": "350",
+    "lat": "32.8226",
+    "lon": "121.6717",
+    "start_year": "2021",
+    "reported_start_year": "2021",
+    "status_at_source_release": "operating",
+    "known_start_after_2020": "True",
+    "by2020_vintage_candidate": "False",
+    "coordinate_available": "True"
+  },
+  "inventory_sha256": "dce044cf7c2cd0d0a81774fc9b10e85ed566fd8e79378949e72459f36432c25a",
+  "observation_audit_sha256": "488f97d3478af51738574797405f6e0b969e42fa8276197d15be94338cc96249",
+  "requests": [
+    {
+      "id": "19bab79a2d214db831a2b8ad",
+      "year": 2022,
+      "parameters": {
+        "latitude": "32.822600",
+        "longitude": "121.671700",
+        "start_date": "2022-01-01",
+        "end_date": "2023-01-01",
+        "hourly": "wind_speed_100m,wind_speed_10m,shortwave_radiation,direct_radiation,diffuse_radiation,temperature_2m,surface_pressure",
+        "timezone": "Asia/Shanghai",
+        "models": "era5",
+        "wind_speed_unit": "ms",
+        "cell_selection": "nearest",
+        "elevation": "nan"
+      },
+      "expected_hours": 8784,
+      "conservative_call_equivalents": 27
+    },
+    {
+      "id": "217cfeb77bdc1a0611a2e175",
+      "year": 2023,
+      "parameters": {
+        "latitude": "32.822600",
+        "longitude": "121.671700",
+        "start_date": "2023-01-01",
+        "end_date": "2024-01-01",
+        "hourly": "wind_speed_100m,wind_speed_10m,shortwave_radiation,direct_radiation,diffuse_radiation,temperature_2m,surface_pressure",
+        "timezone": "Asia/Shanghai",
+        "models": "era5",
+        "wind_speed_unit": "ms",
+        "cell_selection": "nearest",
+        "elevation": "nan"
+      },
+      "expected_hours": 8784,
+      "conservative_call_equivalents": 27
+    },
+    {
+      "id": "aea352cecb044e93cb94927d",
+      "year": 2024,
+      "parameters": {
+        "latitude": "32.822600",
+        "longitude": "121.671700",
+        "start_date": "2024-01-01",
+        "end_date": "2025-01-01",
+        "hourly": "wind_speed_100m,wind_speed_10m,shortwave_radiation,direct_radiation,diffuse_radiation,temperature_2m,surface_pressure",
+        "timezone": "Asia/Shanghai",
+        "models": "era5",
+        "wind_speed_unit": "ms",
+        "cell_selection": "nearest",
+        "elevation": "nan"
+      },
+      "expected_hours": 8808,
+      "conservative_call_equivalents": 27
+    }
+  ],
+  "scope": "One 350 MW H2 site, three complete operating years; no province-wide acquisition authorized",
+  "model_comparison": "Retain all three prior curve shapes at 100 m and multiplier0.85; not actual H2 manufacturer conversion",
+  "temporal_rule": "Fit one annual gross-generation scale using 2022 only; freeze it for2023/2024; show unscaled and scaled results for every curve",
+  "known_data": "All annual observations already examined; exploratory temporal transfer test, not a blind holdout",
+  "capacity_rule": "Do not clip scaled profiles to conceal CF>1; report violation hours and reject physical admission if any",
+  "observation_scope": "Company controlled offshore annual totals; H2 mapping is documented inference, not directly labelled plant meter series",
+  "claim_limits": [
+    "Annual agreement cannot validate hourly shape or provincial reliability",
+    "Time availability not applied as flat energy correction",
+    "Gross and grid export not interchangeable",
+    "No model selected for closeness; all results retained",
+    "GEM point represents farm proxy, not all turbine coordinates"
+  ]
+}

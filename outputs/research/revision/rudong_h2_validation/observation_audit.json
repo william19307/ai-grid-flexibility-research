@@ -1,0 +1,92 @@
+{
+  "source_manifest": {
+    "annual2022.pdf": {
+      "url": "https://dataclouds.cninfo.com.cn/shgonggao/2023/2023-04-26/41a1f094e36011edb476fa163e26e5de.pdf",
+      "sha256": "3ec345d24cb8505614ac4c59002a400317c06d6d364ecc014d4b23272a50956f",
+      "bytes": 3997875,
+      "retrieved_utc": "2026-09-23T00:03:56.801579+00:00"
+    },
+    "annual2023.pdf": {
+      "url": "https://static.cninfo.com.cn/finalpage/2024-04-25/1219790789.PDF",
+      "sha256": "5f8bcee60abc6efd1321163fed5efa443737d3d9c1448ca287791b6e1bc18e1d",
+      "bytes": 4400333,
+      "retrieved_utc": "2026-09-23T00:03:54.882915+00:00"
+    },
+    "annual2024.pdf": {
+      "url": "https://static.cninfo.com.cn/finalpage/2025-04-23/1223218118.PDF",
+      "sha256": "98ba61e70e5227774452a285f00495c25f10c36dff6b3833e639ce8a533fb3fd",
+      "bytes": 1512615,
+      "retrieved_utc": "2026-09-23T00:04:13.647236+00:00"
+    }
+  },
+  "checks": [
+    {
+      "year": 2022,
+      "engine": "pypdf",
+      "pages": [
+        11,
+        31
+      ],
+      "numeric_fields": 4
+    },
+    {
+      "year": 2022,
+      "engine": "pdftotext",
+      "pages": [
+        11,
+        31
+      ],
+      "numeric_fields": 4
+    },
+    {
+      "year": 2023,
+      "engine": "pypdf",
+      "pages": [
+        10,
+        27
+      ],
+      "numeric_fields": 4
+    },
+    {
+      "year": 2023,
+      "engine": "pdftotext",
+      "pages": [
+        10,
+        27
+      ],
+      "numeric_fields": 4
+    },
+    {
+      "year": 2024,
+      "engine": "pypdf",
+      "pages": [
+        10,
+        28
+      ],
+      "numeric_fields": 4
+    },
+    {
+      "year": 2024,
+      "engine": "pdftotext",
+      "pages": [
+        10,
+        28
+      ],
+      "numeric_fields": 4
+    }
+  ],
+  "numeric_values": 12,
+  "extracted_values_across_two_engines": 24,
+  "definition_checks": 3,
+  "capacity_rounding_consistency_checks": 3,
+  "script_sha256": "d23767c263bea6098c4354f5ec8fe18c956c920711fd4b746f82ebf189d6015a",
+  "output_sha256": "06a966c68e93b395f3e6f56ca7ba187e8e494512371212963a559446ca260bf0",
+  "source_scope_limit": "Controlled offshore totals; mapping is documentary inference, not a directly labelled plant meter series.",
+  "boundaries": [
+    "Gross generation and grid export are separate observations.",
+    "Gross-minus-export cannot identify electrical losses versus other accounting components.",
+    "Time availability is not energy availability; no flat correction is inferred.",
+    "Annual/quarterly totals cannot validate hourly ramping, tails or reliability.",
+    "All three annual observations have been examined; temporal tests will not be described as blind holdout."
+  ]
+}
