@@ -1,0 +1,11 @@
+# Stage 24 design: fixed-cohort demand accounting
+
+2026-09-23. Written before implementation and new results. Previous stage 23 is completed progress; source hardware, market and provincial evidence remains incomplete.
+
+Implement an explicit incremental-cohort or embedded-reference-cohort ledger, with one fixed non-cohort background across policies. Require identical time-indexed nodes, positive constant interval duration, nonnegative finite power and explicit MW units. Preserve entire trajectories and reject negative residual background without clipping. Never renormalize policy energy. The no-cohort counterfactual removes only the treated cohort.
+
+Connect the ledger to the already independently verified 192-hour gang trajectories by loading the frozen case certificate and converting all four policies under the same explicit power assumptions. The background used in this integration is synthetic; do not infer an empirical provincial background or a validated facility measurement. Carry the source certificate and power assumptions into the receipt. Produce solver inputs with background in ordinary load and the cohort in mandatory external load, exactly once.
+
+Predefined two-hour accounting counterexample: reference total [8,8] MW includes reference cohort [4,0]; alternative cohort is [0,2]. Correct background [4,8] yields reference peak 8 and alternative peak 10, whereas naïve addition to the total yields reference peak 12 and alternative peak 10. With an investable generator at 10 currency/MW and 5 currency/MWh, correct reference/alternative costs are 160/170; naïve costs 220/190. These are artificial conditions for an algebraic counterexample, not estimates of the paper's bias. No tuning of the example after results.
+
+Validation will include analytic capacity/cost checks, exact reference reconstruction, non-hourly energy accounting, multiple nodes, immutable receipt checks, clock/unit/negative-residual rejection, mandatory cohort preservation under shedding, and complete four-policy integration on one existing verified real task case. Retain all 192 hours, all background GPU occupation and the recovery tail. Actual power and electrical background are not newly observed. Existing source and result archives must remain unchanged.
