@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-23",
+  "design_commit": "d3af59d",
+  "scope": "Demand accounting and analytical integration; no empirical provincial admission",
+  "old_stage23_source_hashes_unchanged": true,
+  "checks": 25,
+  "file_sha256": {
+    "outputs/research/revision/demand_cohort/DESIGN.md": "d2d89e7308e191b37129e9e3b35dfc1e6a9234b85bc031377f39dd0b70595cee",
+    "outputs/research/revision/demand_cohort/synthetic_counterexample_ledgers.json": "88e5e9a594ef9e8cbc995ca28d1adafd50151d0a4d2f590509639d4d196b9412",
+    "outputs/research/revision/demand_cohort/validation.json": "dc11069b756dd40997e764e68357bee47eab3a6d324b519905658f6a1f93db1e",
+    "outputs/research/revision/demand_cohort/verified_trace_synthetic_background_ledger.json": "6c08e232dc66cea1ebff4cad6158886317d879b339a3067c63324b1ee2ac094b",
+    "outputs/research/revision/demand_cohort_methods_draft.md": "30cb9a8a73a5bdaa5640b32527c5018fa1421c3152a55ac8a33af590a38d3fd7",
+    "outputs/research/revision/阶段24_AI群体需求记账与容量反例.md": "48b06d6da9256dd66d9dfcf8ed1930983224fb6c76d52a4ede8bdb2d527483fd",
+    "work/research/analysis/validate_demand_cohort.py": "6e7ae34606e80a0e75e58846ab671f27ae544cd2979e19f0b97ef2961b29792b",
+    "work/research/models/coupled_grid_compute.py": "3ac3731ef17e63befba2598fa81a538d5e138e2bd6a321614da9af030bb6fbe2",
+    "work/research/models/demand_cohort.py": "948a78a752736c6f7291be2177e9ce7ebd88485ee7540d6d010b58ac34656b03",
+    "work/research/models/node_power_mapping.py": "7391aa57403d31d5dc8ebaa0debe7e9415cbab9b99aa207046398100784c3024",
+    "work/research/models/verified_power_bridge.py": "f90f3388b8ada6ea6bb7358ff63a1391d5eeeb0b5a3abec58b1098b2de3debb1"
+  }
+}

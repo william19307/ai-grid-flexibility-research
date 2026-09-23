@@ -322,3 +322,13 @@ work/figure-env/bin/python work/research/analysis/audit_2030_input_consistency.p
 脚本以独立 OOXML 解析核对选入的 109 台油气机组、每台 13 字段，并复原 18 组旧机组数量和容量。类别为 97 台联合循环、12 台工业副产气蒸汽轮机；逐机组候选 CSV 保留 CHP/用途/燃料和未准入状态。成本率由同一归档表使用 Decimal 计算，是情景参数比较，不是中国机组测量。其余账目保留未知投运/退役、统计年代和需求群体缺口，不自动补齐，也不改写原机组或成本文件。
 
 需求群体和跨省边界的修订规范见 `input_boundary_methods_draft.md`；目前为待实证落实的方法要求，未宣称已接入重算。阶段报告说明全部能力边界。不得把这项来源审计当作 2030 物理验证、修正后省级数值或完整 Nature Energy 质量认证。
+
+### 阶段 24：AI 群体需求账目和完整轨迹接入口
+
+```bash
+work/figure-env/bin/python work/research/analysis/validate_demand_cohort.py
+```
+
+只写 `outputs/research/revision/demand_cohort/`；不运行旧省级脚本。读取阶段 07 冻结的 Earth Dolly 6h 江苏配对案例及其全部输入/证书，所需源数据沿用阶段 07–09 的恢复路径。设计 `DESIGN.md` 在 d3af59d 冻结。四次两小时容量求解与解析值比较；四条既有真实任务轨迹在假定功率和人为 3 MW 背景下作 192h 条件联算。25 项检查通过；不是实际省级供电收益、测量功率或新服务质量实验。
+
+`synthetic_counterexample_ledgers.json` 明确为人工反例；`verified_trace_synthetic_background_ledger.json` 含完整普通背景/强制群体/总需求、时钟、观察期指标、认证来源和功率假设。`NO_COHORT` 在真实轨迹接入口表示整个复制集群被移除，包括未参与优化作业与空闲。一般入口不认证调用者声称的群体包含关系；它只强制该关系在账目中一致实现。内容哈希用于一致性检查，不替代来源核实。没有生成新的论文省级主结果。
