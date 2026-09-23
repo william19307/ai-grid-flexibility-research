@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "default_does_not_accept_reviewed_version",
+    "explicit_opt_in_emits_full_version_proof",
+    "reject_changed_tariff",
+    "reject_changed_script",
+    "corrupt_original_cannot_hide_behind_new_version",
+    "original_exact_bytes_remain_preferred_and_default",
+    "unknown_expected_original_hash",
+    "other_missing_source_not_exempted",
+    "changed_numerical_input_not_exempted",
+    "wrong_review_pair_rejected",
+    "nonboolean_opt_in_rejected"
+  ],
+  "number_of_checks": 11,
+  "scope": "Provenance boundary mutation tests, not new physical validation"
+}

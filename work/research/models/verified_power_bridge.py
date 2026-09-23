@@ -8,6 +8,7 @@ from pathlib import Path
 import hashlib,json
 import numpy as np,pandas as pd
 from node_power_mapping import map_gpu_to_node
+from reviewed_tariff_version import admit_inputs
 CELLS=('C00','C10','C01','C11')
 
 
@@ -15,15 +16,14 @@ def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def load_verified_case(root, name):
+def load_verified_case(root, name, *, allow_reviewed_tariff_version=False):
     root=Path(root);out=root/'outputs/research/revision/policy';folder=out/'runs'/name
     spec=json.loads((out/'manifest.json').read_text())
     declared={'_'.join(str(c[k]) for k in ['cluster','workload','slack','tariff']) for c in spec['cases']}
     if name not in declared:raise ValueError('Case was not in the frozen manifest')
     audit=json.loads((out/'case_verification'/f'{name}.json').read_text())
     if audit['row']['run']!=name:raise ValueError('Wrong case certificate')
-    for path,h in spec['input_sha256'].items():
-        if sha(root/path)!=h:raise ValueError(f'Changed upstream input: {path}')
+    replacements=admit_inputs(root,spec['input_sha256'],allow_reviewed_tariff_version=allow_reviewed_tariff_version)
     verifier=root/'work/research/analysis/verify_gang_policy_revision.py'
     inputs=[folder/'summary.json']+[folder/f'{cell}.csv.gz' for cell in CELLS]
     key=hashlib.sha256((sha(verifier)+sha(out/'manifest.json')+''.join(sha(p) for p in inputs)).encode()).hexdigest()
@@ -40,9 +40,10 @@ def load_verified_case(root, name):
     capacity=cap.reindex(start+pd.to_timedelta(np.arange(192)//24,unit='D')).to_numpy(float)
     if not np.isfinite(capacity).all() or (capacity<=0).any():raise ValueError('Missing or nonpositive hourly capacity')
     if (power>capacity[:,None]+1e-7).any():raise ValueError('Power exceeds full-speed homogeneous capacity')
-    return dict(case=case,capacity_gpus=capacity,power_gpu_units={c:d[c].to_numpy(float) for c in CELLS},
-                proof=dict(manifest_sha256=sha(out/'manifest.json'),case_certificate_sha256=sha(out/'case_verification'/f'{name}.json'),
-                           profile_sha256=sha(profile),verifier_sha256=sha(verifier),upstream_inputs_verified=len(spec['input_sha256'])))
+    proof=dict(manifest_sha256=sha(out/'manifest.json'),case_certificate_sha256=sha(out/'case_verification'/f'{name}.json'),
+               profile_sha256=sha(profile),verifier_sha256=sha(verifier),upstream_inputs_verified=len(spec['input_sha256']))
+    if replacements:proof['reviewed_source_versions']=replacements
+    return dict(case=case,capacity_gpus=capacity,power_gpu_units={c:d[c].to_numpy(float) for c in CELLS},proof=proof)
 
 
 def convert_power(bundle, *, replicas, full_active_kw_per_gpu, node_idle_ratio,

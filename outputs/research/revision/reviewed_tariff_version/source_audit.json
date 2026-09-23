@@ -1,0 +1,26 @@
+{
+  "old_sha256": "63be4112ff3cb2324369e3e3305aacbae6bacbd9cb8947f67bb49a0190ffef17",
+  "new_sha256": "eede38f8e89ab6c7f9e10818687c432127331e7c4f58b8f00ad62e030b7207f8",
+  "identical_remainder_sha256": "f4e92296d9841b91fbff356eea80367727cfbdb6d770b952c789057cde084e2f",
+  "old_bytes": 21663,
+  "new_bytes": 21576,
+  "unchanged_bytes": 20364,
+  "old_script_sha256": "e064303ad99a3d66023bdefefebdde78745d2c80a5e532f24bf6060a3c5f3f80",
+  "new_script_sha256": "1130a74faa0d516f98bfbc68c6ca0569176c498787f663f690b666b4191725f6",
+  "source_url": "https://manage.gsei.com.cn/index.php/cms/item-view-id-303607-page-1",
+  "checks": [
+    "exact_known_old_new_raw_hashes",
+    "old_regex_and_independent_parser_spans_identical",
+    "new_regex_and_independent_parser_spans_identical",
+    "all_20364_bytes_outside_one_script_unchanged",
+    "only_reviewed_router_expression_and_document_domain_assignments_changed",
+    "all_192_frozen_tariff_values_match_reviewed_intervals_and_ratios"
+  ],
+  "number_of_checks": 6,
+  "scope": "One explicit source-version review; not original-byte restoration or authentication of all website content",
+  "remaining_limitations": [
+    "2021 effective tariff paired with 2020 workload is a scenario assumption",
+    "Published catalogue ratios are not observed industrial market prices",
+    "No new workload optimization, physical calibration or annual reliability evidence"
+  ]
+}

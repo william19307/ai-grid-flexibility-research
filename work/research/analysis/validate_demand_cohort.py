@@ -1,6 +1,7 @@
 """Frozen analytic accounting example and verified 192h trajectory integration."""
 from pathlib import Path
 import copy
+import argparse
 import hashlib
 import json
 import sys
@@ -11,7 +12,14 @@ sys.path.insert(0, str(ROOT / 'work/research/models'))
 from demand_cohort import reconcile_demand, solver_inputs, verified_case_ledger
 from verified_power_bridge import load_verified_case, convert_power, CELLS
 from coupled_grid_compute import solve, Generator
-OUT = ROOT / 'outputs/research/revision/demand_cohort'
+parser = argparse.ArgumentParser()
+parser.add_argument('--reviewed-tariff-version', action='store_true')
+parser.add_argument('--output-dir', type=Path)
+options = parser.parse_args()
+if options.reviewed_tariff_version and options.output_dir is None:
+    parser.error('Reviewed-source replay requires a separate --output-dir')
+ADMISSION = dict(allow_reviewed_tariff_version=options.reviewed_tariff_version)
+OUT = ROOT / options.output_dir if options.output_dir is not None else ROOT / 'outputs/research/revision/demand_cohort'
 OUT.mkdir(parents=True, exist_ok=True)
 checks = []
 clock = pd.date_range('2020-01-01', periods=2, freq='h', tz='Asia/Shanghai')
@@ -92,12 +100,12 @@ assert before == correct
 checks.append('solver_mutation_does_not_change_frozen_ledger')
 
 case = 'Earth_ft_llama_8b_dolly_6_Jiangsu'
-bundle = load_verified_case(ROOT, case)
+bundle = load_verified_case(ROOT, case, **ADMISSION)
 converted = convert_power(bundle, replicas=1, full_active_kw_per_gpu=.5, node_idle_ratio=.41)
 # Construct a synthetic total containing the exact certified C00 trajectory.
 synthetic_background = np.full(192, 3.)
 reference_total = pd.DataFrame({'A': synthetic_background + converted['power_mw']['C00']}, index=converted['times'])
-real = verified_case_ledger(ROOT, case, reference_total, node='A', mode='embedded_reference', reference_policy='C00',
+real = verified_case_ledger(ROOT, case, reference_total, **ADMISSION, node='A', mode='embedded_reference', reference_policy='C00',
     replicas=1, full_active_kw_per_gpu=.5, node_idle_ratio=.41,
     background_provenance={'status': 'SYNTHETIC', 'description': 'Constant 3 MW background; not provincial measured demand'})
 real_results = {}; residuals = []
@@ -120,7 +128,7 @@ assert np.allclose(removed['scenarios'][0].load_mw['A'], synthetic_background, a
 assert sum(removed['external_fixed_load']['removed_cluster']['A']) == 0
 assert 'entire electrical cluster' in real['payload']['provenance']['no_cohort_meaning']
 checks.append('real_bridge_no_cohort_explicitly_removes_entire_cluster_including_idle_and_background_jobs')
-rejects('verified_recovery_tail_cannot_be_truncated', lambda: verified_case_ledger(ROOT, case, reference_total.iloc[:168],
+rejects('verified_recovery_tail_cannot_be_truncated', lambda: verified_case_ledger(ROOT, case, reference_total.iloc[:168], **ADMISSION,
     node='A', mode='embedded_reference', reference_policy='C00', replicas=1, full_active_kw_per_gpu=.5, node_idle_ratio=.41,
     background_provenance={'status': 'SYNTHETIC'}))
 
@@ -128,6 +136,7 @@ report = dict(date='2026-09-23', checks=checks, number_of_checks=len(checks),
     frozen_design_commit='d3af59d', counterexample=case_results, certified_case=case,
     maximum_real_trace_balance_error_mw=max(residuals), real_trace_results=real_results,
     scope='Accounting and conditional integration only; synthetic background and assumed power; not new provincial estimates')
+if options.reviewed_tariff_version: report['source_admission_mode'] = 'explicit_reviewed_tariff_version'
 for name, obj in [('validation.json', report), ('synthetic_counterexample_ledgers.json', {'correct': correct, 'naive': naive}),
                   ('verified_trace_synthetic_background_ledger.json', real)]:
     (OUT / name).write_text(json.dumps(obj, ensure_ascii=False, indent=2) + '\n')

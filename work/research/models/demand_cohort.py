@@ -105,7 +105,8 @@ def solver_inputs(ledger, policy, *, scenario_name):
 
 
 def verified_case_ledger(root, case, input_demand, *, node, mode, reference_policy,
-                         replicas, full_active_kw_per_gpu, node_idle_ratio, background_provenance):
+                         replicas, full_active_kw_per_gpu, node_idle_ratio, background_provenance,
+                         allow_reviewed_tariff_version=False):
     """Load the frozen case; the electrical cohort is the entire replicated cluster.
 
     Untargeted jobs and server idle stay inside that electrical cohort. NO_COHORT
@@ -113,7 +114,7 @@ def verified_case_ledger(root, case, input_demand, *, node, mode, reference_poli
     """
     if not isinstance(background_provenance, dict) or not background_provenance:
         raise ValueError('Explicit background source or assumption record required')
-    bundle = load_verified_case(root, case)
+    bundle = load_verified_case(root, case, allow_reviewed_tariff_version=allow_reviewed_tariff_version)
     converted = convert_power(bundle, replicas=replicas, full_active_kw_per_gpu=full_active_kw_per_gpu,
                               node_idle_ratio=node_idle_ratio)
     if node not in input_demand.columns or not input_demand.index.equals(converted['times']):

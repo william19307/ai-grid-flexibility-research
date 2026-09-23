@@ -1,6 +1,7 @@
 """Frozen controlled sensitivity; no calibrated provincial benefit estimates."""
 from pathlib import Path
 import copy
+import argparse
 import hashlib
 import json
 import sys
@@ -12,7 +13,15 @@ from fixed_cohort_factorial import mean_preserving_shape, verified_factorial
 from verified_power_bridge import load_verified_case, convert_power, CELLS
 from demand_cohort import solver_inputs, fingerprint
 from coupled_grid_compute import Generator, solve
-OUT = ROOT / 'outputs/research/revision/fixed_cohort_factorial'
+parser = argparse.ArgumentParser()
+parser.add_argument('--reviewed-tariff-version', action='store_true')
+parser.add_argument('--output-dir', type=Path)
+options = parser.parse_args()
+if options.reviewed_tariff_version and options.output_dir is None:
+    parser.error('Reviewed-source replay requires a separate --output-dir')
+ADMISSION = dict(allow_reviewed_tariff_version=options.reviewed_tariff_version)
+OUT = ROOT / options.output_dir if options.output_dir is not None else ROOT / 'outputs/research/revision/fixed_cohort_factorial'
+OUT.mkdir(parents=True, exist_ok=True)
 SOURCE = ROOT / 'work/research/prepared/load_2020_annual_anchored_hourly_shape_UNVALIDATED.npz'
 def sha(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -35,12 +44,12 @@ def rejects(label, action):
 
 for province in ('Jiangsu', 'Gansu', 'Guizhou'):
     case = 'Earth_ft_llama_8b_dolly_6_' + province
-    bundle = load_verified_case(ROOT, case)
+    bundle = load_verified_case(ROOT, case, **ADMISSION)
     converted = convert_power(bundle, replicas=1, full_active_kw_per_gpu=.5, node_idle_ratio=.41)
     full = pd.DataFrame({'grid': archive['load_MW'][:, list(archive['provinces']).index(province)]}, index=clock)
     background = full.loc[converted['times']]
     backgrounds = {str(alpha): mean_preserving_shape(background, alpha) for alpha in (0., .5, 1.)}
-    kwargs = dict(replicas=[1, 1000], node='grid', full_active_kw_per_gpu=.5, node_idle_ratio=.41,
+    kwargs = dict(**ADMISSION, replicas=[1, 1000], node='grid', full_active_kw_per_gpu=.5, node_idle_ratio=.41,
         background_provenance=dict(status='UNVALIDATED_CONDITIONAL_SCENARIO', path=str(SOURCE.relative_to(ROOT)),
             sha256=source_before, province_pairing=province, window='192h, no annual capacity inference',
             inclusion='Assumed incremental; observed cohort exclusion unknown'))
@@ -128,6 +137,7 @@ report = dict(date='2026-09-23', frozen_design_commit='ddc24b8', checks=checks, 
     maximum_balance_error_mw=max(x[0] for x in maxima), maximum_capacity_error_mw=max(x[1] for x in maxima),
     maximum_cost_error=max(x[2] for x in maxima), background_source_sha256=source_before,
     scope='Controlled 192h input and mathematical solver check only; assumed power, unvalidated background, artificial fleet; no provincial empirical benefit')
+if options.reviewed_tariff_version: report['source_admission_mode'] = 'explicit_reviewed_tariff_version'
 for filename, data in [('validation.json',report), ('factor_ledger_manifest.json',records)]:
     (OUT/filename).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
 for filename, table in [('demand_metrics.csv',df), ('policy_contrasts.csv',contrast_df),

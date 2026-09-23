@@ -1,0 +1,50 @@
+{
+  "files": [
+    {
+      "file": "outputs/research/revision/demand_cohort/synthetic_counterexample_ledgers.json",
+      "identical": true,
+      "sha256": "88e5e9a594ef9e8cbc995ca28d1adafd50151d0a4d2f590509639d4d196b9412"
+    },
+    {
+      "file": "outputs/research/revision/demand_cohort/verified_trace_synthetic_background_ledger.json",
+      "identical": true,
+      "sha256": "6c08e232dc66cea1ebff4cad6158886317d879b339a3067c63324b1ee2ac094b"
+    },
+    {
+      "file": "outputs/research/revision/demand_cohort/validation.json",
+      "identical": true,
+      "sha256": "dc11069b756dd40997e764e68357bee47eab3a6d324b519905658f6a1f93db1e"
+    },
+    {
+      "file": "outputs/research/revision/fixed_cohort_factorial/factor_ledger_manifest.json",
+      "identical": true,
+      "sha256": "df024b3f7c2576e4766103efceebe9881a197197ecb3557e0214e21e88cdc325"
+    },
+    {
+      "file": "outputs/research/revision/fixed_cohort_factorial/demand_metrics.csv",
+      "identical": true,
+      "sha256": "44cc3226afb6d4d40a8b0f85daf4d14b06382e9204d4bbbaa561146c5ea2b9f8"
+    },
+    {
+      "file": "outputs/research/revision/fixed_cohort_factorial/shape_interactions.csv",
+      "identical": true,
+      "sha256": "4b9b5c35a85047f0ce3be8db2e023223e86abd2bf6c4ddeac2e835f41a590ab4"
+    },
+    {
+      "file": "outputs/research/revision/fixed_cohort_factorial/policy_contrasts.csv",
+      "identical": true,
+      "sha256": "fa04139d09c05f7195b5f0ffbce672a3ad0ffcd9b9e718aee8a3372efd38ecc0"
+    },
+    {
+      "file": "outputs/research/revision/fixed_cohort_factorial/validation.json",
+      "identical": true,
+      "sha256": "d9a90827fcb129e8f92614ea037482f200296c9ac24ff54e7f11e1b1bd6728c1"
+    },
+    {
+      "file": "outputs/research/revision/fixed_cohort_factorial/solver_oracle_checks.csv",
+      "identical": true,
+      "sha256": "57aedec38af896c70268a03b909661d344cef8b8856d0c63516047659b55624d"
+    }
+  ],
+  "scope": "Original-source default path remains byte-identical; 25 and 67 checks passed"
+}

@@ -22,7 +22,8 @@ def mean_preserving_shape(background, alpha):
 
 
 def verified_factorial(root, case, backgrounds, *, replicas, node,
-                       full_active_kw_per_gpu, node_idle_ratio, background_provenance):
+                       full_active_kw_per_gpu, node_idle_ratio, background_provenance,
+                       allow_reviewed_tariff_version=False):
     """Certify once and convert once per replica level, outside the shape loop.
 
     Backgrounds are asserted to exclude this entire electrical cohort. The
@@ -36,7 +37,7 @@ def verified_factorial(root, case, backgrounds, *, replicas, node,
         isinstance(r, bool) or not isinstance(r, (int, np.integer)) or r < 1 for r in replicas
     ) or len(set(replicas)) != len(replicas):
         raise ValueError('Distinct positive integer replica levels required')
-    bundle = load_verified_case(root, case)
+    bundle = load_verified_case(root, case, allow_reviewed_tariff_version=allow_reviewed_tariff_version)
     ledgers = {}
     first = next(iter(backgrounds.values()))
     if not isinstance(first, pd.DataFrame) or node not in first.columns:
