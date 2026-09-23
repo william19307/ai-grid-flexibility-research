@@ -332,3 +332,13 @@ work/figure-env/bin/python work/research/analysis/validate_demand_cohort.py
 只写 `outputs/research/revision/demand_cohort/`；不运行旧省级脚本。读取阶段 07 冻结的 Earth Dolly 6h 江苏配对案例及其全部输入/证书，所需源数据沿用阶段 07–09 的恢复路径。设计 `DESIGN.md` 在 d3af59d 冻结。四次两小时容量求解与解析值比较；四条既有真实任务轨迹在假定功率和人为 3 MW 背景下作 192h 条件联算。25 项检查通过；不是实际省级供电收益、测量功率或新服务质量实验。
 
 `synthetic_counterexample_ledgers.json` 明确为人工反例；`verified_trace_synthetic_background_ledger.json` 含完整普通背景/强制群体/总需求、时钟、观察期指标、认证来源和功率假设。`NO_COHORT` 在真实轨迹接入口表示整个复制集群被移除，包括未参与优化作业与空闲。一般入口不认证调用者声称的群体包含关系；它只强制该关系在账目中一致实现。内容哈希用于一致性检查，不替代来源核实。没有生成新的论文省级主结果。
+
+### 阶段 25：负荷范围、旧敏感性配对与江苏展望
+
+```bash
+work/figure-env/bin/python work/research/analysis/audit_load_scope_and_peak_sensitivity.py
+```
+
+只写 `outputs/research/revision/load_scope/`。读取 `work/research/sources/load_scope_20260923/` 原始官方 HTML、2020 年锚定数组、归档年度增长和 8 对旧峰值情景 JSON；不导入/运行旧求解入口。该目录 `source_access_log.json` 列出 URL、获取时间、哈希，原取得日志在源目录的 `download_log.json`、`download_supplement.json`。新机器恢复原始页面时须比对 `source_hashes.json`，网页版本不同需记录新证据，不能伪造原取得时间。
+
+16 项检查包括 14 项日期/字段双读取、三省年度增长独立 Decimal 复算、8 对旧情景的 AI 满载功率及刚性电量缩放关系。`qualified_peak_observations.csv` 的 5 条记录均未获准作为全社会小时峰值拟合目标；`peak_sensitivity_scale_audit.csv` 显示旧敏感性同时改变群体电力规模。`jiangsu_2030_outlook_check.json` 比较的是 AI 另加之前的旧背景与 2025 包含既有 AI 的全社会年度量，不应称为总需求误差。没有生成新的小时负荷或省级收益。旧峰荷合理性 CSV 仅作历史存档，解释已由阶段 25 更新。

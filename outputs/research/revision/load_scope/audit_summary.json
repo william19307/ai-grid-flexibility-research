@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-23",
+  "checks": [
+    "js_2020_nov.html:2020-12-10",
+    "js_2020_nov.html:本年度全省统调最高用电负荷11512.49万千瓦",
+    "js_2020_nov.html:1-11月累计全社会用电量5730.26亿千瓦时",
+    "js_peak_aug_nea.html:2020-08-21",
+    "js_peak_aug_nea.html:8月17日13点25分",
+    "js_peak_aug_nea.html:统调最高用电负荷11512万千瓦",
+    "gs_peak_2022_nea.html:2022-09-05",
+    "gs_peak_2022_nea.html:最高达1953万千瓦（7月9日）",
+    "gs_peak_2022_nea.html:同比增长2.93%",
+    "gz_peak_2026_nea.html:2026-01-21",
+    "gz_peak_2026_nea.html:1月4日达到历史最高值2955.3万千瓦",
+    "js_2025_dec.html:2026-01-16",
+    "js_2025_dec.html:年累计全社会用电量8895.41亿千瓦时",
+    "js_2025_dec.html:本年调度用电最高负荷14405.50万千瓦",
+    "three_province_annual_growth_independent_decimal_reconstruction",
+    "eight_frozen_peak_pairs_show_proportional_AI_nameplate_and_rigid_energy_change"
+  ],
+  "number_of_checks": 16,
+  "source_pages": 5,
+  "peak_observations": 5,
+  "admissible_same_scope_hourly_peak_targets": 0,
+  "paired_legacy_sensitivity_cases": 8,
+  "actual_new_dispatch_runs": 0,
+  "limitation": "Source and input audit only. No new calibrated load or provincial outcome."
+}

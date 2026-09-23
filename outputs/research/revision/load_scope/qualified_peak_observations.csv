@@ -1,0 +1,6 @@
+province,period,value_MW,measure,source,scope,admitted_as_hourly_shape_target
+Jiangsu,2020-01/2020-11,115124.9,reported_dispatch_peak,js_2020_nov.html,"统调；year-to-date, not independently established full-year value",False
+Jiangsu,2020-08-17 13:25 local,115120.0,reported_dispatch_peak_event,js_peak_aug_nea.html,time-stamped event; not established hourly average,False
+Gansu,2022-07-09,19530.0,reported_provincial_peak,gs_peak_2022_nea.html,2022 summer; not a 2020 annual observation,False
+Guizhou,2026-01-04,29553.0,reported_dispatch_peak,gz_peak_2026_nea.html,2026 dispatch boundary; not 2020 all-society hourly load,False
+Jiangsu,2025 annual,144055.0,reported_dispatch_peak,js_2025_dec.html,2025 dispatch peak; different year and time resolution from legacy hourly shape,False

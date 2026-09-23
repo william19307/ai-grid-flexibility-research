@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-23",
+  "scope": "Source qualification and paired historical-input audit; no new dispatch or peak calibration",
+  "checks": 16,
+  "admitted_hourly_peak_calibration_targets": 0,
+  "source_hashes_unchanged_after_audit": true,
+  "file_sha256": {
+    "outputs/research/revision/load_scope/audit_summary.json": "a7f3f12af0718578974e0e1edb928e6e97c1e13aaaa97e23d462a0b80c4bf779",
+    "outputs/research/revision/load_scope/jiangsu_2030_outlook_check.json": "b957c6210f360b372a6b7519e22cb0d29d0936efd1eea3eeb0ab6613ff6da0e9",
+    "outputs/research/revision/load_scope/legacy_load_descriptive.csv": "d73ae9e413df8f74d5e405af11b337c4f1b51df22e46af3684862aa9f1425d25",
+    "outputs/research/revision/load_scope/peak_sensitivity_scale_audit.csv": "221c82489b82c909e932b1124b106b3891f55c14a48846e357c65956f733760c",
+    "outputs/research/revision/load_scope/qualified_peak_observations.csv": "5eaf4388b7de8442a4b9a2735973110c18a446422a265577152230570b8186a2",
+    "outputs/research/revision/load_scope/source_access_log.json": "063576b60b82597a6b07f4664a8ab5bc4e041ee6f105d680bb4942e700fc35bd",
+    "outputs/research/revision/load_scope/source_hashes.json": "cba5d1801dd0717bbd091b09d1bf579bc17ff68a4a9a7f6b6b5ce3a07a8ddb41",
+    "outputs/research/revision/load_validation_methods_draft.md": "d71536bb16317d4cc1cbe191c046ff3b5d420281fe12ea0685e2635462a919a4",
+    "outputs/research/revision/阶段25_峰荷证据与旧敏感性混杂审计.md": "98cd5edf66a3259d085621b2070028ee7ade4262751219fd60fba9bdcb63f9b0",
+    "work/research/analysis/audit_load_scope_and_peak_sensitivity.py": "2963afc4359e426c2e083d4f1a2f8b6809135487fca7118ecfbf773423800ec8"
+  }
+}

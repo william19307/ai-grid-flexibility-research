@@ -1,0 +1,9 @@
+{
+  "province": "Jiangsu",
+  "official2025_all_society_TWh": 889.541,
+  "legacy2030_background_TWh": 753.7488243226563,
+  "background_below_observed2025_percent": 15.265420669462538,
+  "gap_TWh": 135.79217567734372,
+  "comparison": "Model background only, before separately added AI. Same all-society anchor concept, unresolved treated-cohort boundary.",
+  "inference": "Old 2030 background is below already observed 2025 use; justify scenario and cohort or revise outlook. Not an error estimate for total model demand."
+}
