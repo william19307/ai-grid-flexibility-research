@@ -283,3 +283,17 @@ work/figure-env/bin/python work/research/analysis/validate_response_cost.py --ou
 新检查使用固定种子 20260923、60 个小规模穷举分配问题及手算实例，结果在 `revision/mechanism_fairness/`。旧两组 CSV（256/360 案）的原哈希与本轮哈希见 `regression/comparison_to_archived.json`，本轮完全相同；原结果未覆盖。源码版本由 validation.json 绑定，旧研究结果须按各自已冻结提交和来源复现，不把更新后的源码哈希冒充旧快照。
 
 框架只对显式有限承诺集合优化，企业同费用响应使用显式容差的上下界，默认采购值相等判断容差为 1e−7 费用单位并写入计划。最低参与支付只是已知成本下、针对给定响应的核算下界，不是策略性支付规则。所有结果均为数学核验，不能视为现实预测质量、市场均衡、真实硬件或省级容量/价格收益。
+
+### 阶段 21：固定响应电网联算与非线性边界反例
+
+运行前设计提交为 `4a32998`。新增 `mechanism_grid.py` 审核逐任务分配与功率，然后输入既有电网模型；不修改原电网、启停或阶段 20 规划模型。
+
+```bash
+work/figure-env/bin/python work/research/analysis/validate_mechanism_grid.py
+work/figure-env/bin/python work/research/analysis/validate_thermal_commitment.py --output-dir outputs/research/revision/mechanism_grid/regression/commitment
+work/figure-env/bin/python work/research/analysis/validate_coupled_grid_compute.py --output-dir outputs/research/revision/mechanism_grid/regression/grid
+```
+
+新核验独立重建节点收支、线路损耗、发电与启停费用、服务成本和转移支付。`mechanism_grid/examples.json` 保留冻结的原选择、21 个响应取点和独立连续启动成本公式；连续最坏值由必要性/可行构造证明，不以有限采样冒充全局最优。20 项新检查和 75/118 项既有模型检查通过。
+
+`input_snapshot.json` 和验证脚本包含人为设定的数学输入；不是实测机组或省级场景。完全预知的条件性重调度、期末义务、不可行/未知状态均明确报告。线性预测端点不得用于宣称非线性电网最坏响应边界。一般网格/启停下的保守采购与实际预测实验仍未完成。代码、证据和设计哈希见 `mechanism_grid/evidence_manifest.json`。

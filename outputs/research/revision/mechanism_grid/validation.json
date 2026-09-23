@@ -1,0 +1,37 @@
+{
+  "status": "PASS_CONDITIONAL_GRID_INTEGRATION_ONLY",
+  "number_of_checks": 20,
+  "checks": [
+    "startup_cost_reverses_forecast_gain_without_reselection",
+    "transfer_identity_under_nonlinear_supply_cost",
+    "plan_unchanged_by_grid_evaluation",
+    "21_follower_mixtures_match_independent_continuous_startup_formula",
+    "transmission_capacity_and_losses_restrict_grid_value",
+    "grid_infeasibility_retained_without_reselection_or_demand_repair",
+    "unresolved_solver_state_not_misreported_as_infeasible",
+    "terminal_minimum_time_obligations_explicit",
+    "half_hour_idle_and_service_costs_preserved",
+    "explicit_unlimited_task_caps_have_portable_fingerprint",
+    "reject_generation_expansion",
+    "reject_line_expansion",
+    "reject_storage_expansion",
+    "reject_clock_mismatch",
+    "reject_shedding_override",
+    "reject_power_without_matching_work",
+    "reject_modified_task_work",
+    "reject_modified_transfer_floor",
+    "reject_broken_event_commitment",
+    "reject_replaced_zero_offer_outside_option"
+  ],
+  "maximum_reference_error": 4.440892098500626e-16,
+  "continuous_follower_cost_formula": "10 at x=0 or 1; 20 at every 0<x<1",
+  "source_sha256": {
+    "work/research/analysis/validate_mechanism_grid.py": "e64229e17a6178623db020011ea7b0d0bc814adca44fb74507d231854c2962eb",
+    "work/research/models/mechanism_grid.py": "7846e414ccc4f5e3d1233064eb2ec30bea17bdfee0d735f6f2a9b2e48d5533d2",
+    "work/research/models/fair_mechanisms.py": "1616fa73dea3ebfc41e494c815da34c387162aae8213107893841ddc13b3532e",
+    "work/research/models/sequential_tasks.py": "26ef2af857343a2434d7d620d6c66fbad74d7c22d76faad45d471039526fc899",
+    "work/research/models/coupled_grid_compute.py": "3ac3731ef17e63befba2598fa81a538d5e138e2bd6a321614da9af030bb6fbe2",
+    "work/research/models/thermal_commitment.py": "bc8a21824dbb43c0e8108fc52b2e45566e771d85d81275fe1e3df7df75a98d0b"
+  },
+  "scope": "Synthetic inputs, fixed capacity, conditional perfect-foresight grid redispatch; no provincial, online, market-equilibrium or empirical forecast claim"
+}

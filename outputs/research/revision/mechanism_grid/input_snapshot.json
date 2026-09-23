@@ -1,0 +1,184 @@
+{
+  "main_task": {
+    "jobs": [
+      {
+        "name": "j",
+        "release": 0,
+        "deadline": 3,
+        "work": 1
+      }
+    ],
+    "q": [
+      1
+    ],
+    "power": [
+      1
+    ],
+    "horizon": 3,
+    "idle_power": 0
+  },
+  "main_grid": {
+    "nodes": [
+      "A"
+    ],
+    "scenario": {
+      "name": "s",
+      "probability": 1,
+      "load_mw": {
+        "A": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "dt": 1.0,
+    "generators": [
+      {
+        "name": "existing",
+        "node": "A",
+        "existing_mw": 1,
+        "max_new_mw": 0,
+        "investment_cost": 0,
+        "marginal_cost": 5,
+        "emissions_t_per_mwh": 0.0,
+        "availability": {
+          "s": [
+            1,
+            0,
+            0
+          ]
+        },
+        "min_output_fraction": 0.0
+      },
+      {
+        "name": "recovery1",
+        "node": "A",
+        "existing_mw": 1,
+        "max_new_mw": 0,
+        "investment_cost": 0,
+        "marginal_cost": 0,
+        "emissions_t_per_mwh": 0.0,
+        "availability": {
+          "s": [
+            0,
+            1,
+            0
+          ]
+        },
+        "min_output_fraction": 0.0
+      },
+      {
+        "name": "recovery2",
+        "node": "A",
+        "existing_mw": 1,
+        "max_new_mw": 0,
+        "investment_cost": 0,
+        "marginal_cost": 0,
+        "emissions_t_per_mwh": 0.0,
+        "availability": {
+          "s": [
+            0,
+            0,
+            1
+          ]
+        },
+        "min_output_fraction": 0.0
+      }
+    ],
+    "commitments": [
+      {
+        "generator": "recovery1",
+        "min_up_steps": 1,
+        "min_down_steps": 1,
+        "startup_cost": 10,
+        "shutdown_cost": 0.0,
+        "no_load_cost_per_hour": 0.0,
+        "ramp_up_mw_per_hour": 1000000000.0,
+        "ramp_down_mw_per_hour": 1000000000.0,
+        "startup_limit_mw": 1000000000.0,
+        "shutdown_limit_mw": 1000000000.0,
+        "initial_on": false,
+        "initial_dispatch_mw": 0.0,
+        "initial_duration_steps": 1
+      },
+      {
+        "generator": "recovery2",
+        "min_up_steps": 1,
+        "min_down_steps": 1,
+        "startup_cost": 10,
+        "shutdown_cost": 0.0,
+        "no_load_cost_per_hour": 0.0,
+        "ramp_up_mw_per_hour": 1000000000.0,
+        "ramp_down_mw_per_hour": 1000000000.0,
+        "startup_limit_mw": 1000000000.0,
+        "shutdown_limit_mw": 1000000000.0,
+        "initial_on": false,
+        "initial_dispatch_mw": 0.0,
+        "initial_duration_steps": 1
+      }
+    ]
+  },
+  "congestion_grid": {
+    "nodes": [
+      "A",
+      "B"
+    ],
+    "scenario": {
+      "name": "s",
+      "probability": 1,
+      "load_mw": {
+        "A": [
+          0,
+          0
+        ],
+        "B": [
+          0,
+          0
+        ]
+      }
+    },
+    "dt": 1.0,
+    "generators": [
+      {
+        "name": "renewable",
+        "node": "A",
+        "existing_mw": 2,
+        "max_new_mw": 0,
+        "investment_cost": 0,
+        "marginal_cost": 0,
+        "emissions_t_per_mwh": 0.0,
+        "availability": {
+          "s": [
+            0,
+            1
+          ]
+        },
+        "min_output_fraction": 0.0
+      },
+      {
+        "name": "local",
+        "node": "B",
+        "existing_mw": 1,
+        "max_new_mw": 0,
+        "investment_cost": 0,
+        "marginal_cost": 20,
+        "emissions_t_per_mwh": 0.0,
+        "availability": {},
+        "min_output_fraction": 0.0
+      }
+    ],
+    "lines": [
+      {
+        "name": "link",
+        "source": "A",
+        "target": "B",
+        "existing_mw": 0.5,
+        "max_new_mw": 0.0,
+        "investment_cost": 0.0,
+        "loss_fraction": 0.2,
+        "flow_cost_per_mwh": 0
+      }
+    ]
+  }
+}

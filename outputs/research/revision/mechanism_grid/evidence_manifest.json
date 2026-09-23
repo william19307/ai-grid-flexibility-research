@@ -1,0 +1,32 @@
+{
+  "design_commit": "4a32998",
+  "scope": "Stage 21 mathematical integration, not provincial or empirical validation",
+  "source_sha256": {
+    "work/research/analysis/validate_mechanism_grid.py": "e64229e17a6178623db020011ea7b0d0bc814adca44fb74507d231854c2962eb",
+    "work/research/models/mechanism_grid.py": "7846e414ccc4f5e3d1233064eb2ec30bea17bdfee0d735f6f2a9b2e48d5533d2",
+    "work/research/models/fair_mechanisms.py": "1616fa73dea3ebfc41e494c815da34c387162aae8213107893841ddc13b3532e",
+    "work/research/models/sequential_tasks.py": "26ef2af857343a2434d7d620d6c66fbad74d7c22d76faad45d471039526fc899",
+    "work/research/models/coupled_grid_compute.py": "3ac3731ef17e63befba2598fa81a538d5e138e2bd6a321614da9af030bb6fbe2",
+    "work/research/models/thermal_commitment.py": "bc8a21824dbb43c0e8108fc52b2e45566e771d85d81275fe1e3df7df75a98d0b"
+  },
+  "artifact_sha256": {
+    "outputs/research/revision/mechanism_grid/design.md": "a63ed4b8abfebf7c16ea1beadedf3ed31bdbd5c54b1da9f3db411d38cc25c403",
+    "outputs/research/revision/mechanism_grid/examples.json": "61325a26a90ec596d864bd06368dc471fc60a132a2ff9ed37f68128d473ad388",
+    "outputs/research/revision/mechanism_grid/input_snapshot.json": "3fd9a21638ca2e537f49f1e82316a9637a661b8407e57cb346213140fea71012",
+    "outputs/research/revision/mechanism_grid/regression/commitment/source_snapshot.json": "dca216e992ef294c34b24eebcf961f374608ff8fa1770202f91dbf62b007d0fd",
+    "outputs/research/revision/mechanism_grid/regression/commitment/thermal_commitment_validation.json": "4e4b7b2e150ea92841ff5dbb2fe5b17d8871018a2f038d673e4783070030fd03",
+    "outputs/research/revision/mechanism_grid/regression/grid/coupled_grid_compute_analytic_examples.json": "f7f0398db811e5ab57b9bc06dc6813d84348e693be49c7a2e5db2b20d9a5c535",
+    "outputs/research/revision/mechanism_grid/regression/grid/coupled_grid_compute_validation.json": "c32700b1d83e74ccdcb13aeb4d4b085fd452e6c5d103ec4a3c2806a811001fe8",
+    "outputs/research/revision/mechanism_grid/validation.json": "1d7499c5616265a124ad8a5dfed9c0a5d77f3c28cbfa99b5728523e71c6a8e79"
+  },
+  "runtime": {
+    "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "next_evidence_priorities": [
+    "Decision-time forecast vintages and rolling commitment information",
+    "Certified gang responses and whole-machine power boundary",
+    "Admitted provincial physical inputs before empirical mechanism claims"
+  ]
+}
