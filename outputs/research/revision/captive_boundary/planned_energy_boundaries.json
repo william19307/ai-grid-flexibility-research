@@ -1,0 +1,21 @@
+{
+  "scope": "Historical bond-project expectations, not observed annual generation or dispatch limits",
+  "source_printed_pages": [
+    14,
+    15,
+    16
+  ],
+  "pdf_one_based_pages": [
+    15,
+    16,
+    17
+  ],
+  "planned_gross_GWh": "965.12",
+  "planned_supply_GWh": "896.6",
+  "planned_incremental_supply_over_old_units_GWh": "417.88",
+  "planned_gross_minus_supply_GWh": "68.52",
+  "unqualified_company_report_plant_total_GWh": "2241",
+  "plant_total_warning": "2023-08-09 company narrative discussing 2022; plant aggregate, not Unit 6 output; not an admitted unit calibration target",
+  "carbon_factor_warning": "2012 regional average used in project appraisal; not present/future marginal avoided emissions",
+  "firm_export_capacity_MW": null
+}

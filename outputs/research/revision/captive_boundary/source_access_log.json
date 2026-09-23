@@ -1,0 +1,27 @@
+[
+  {
+    "url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202202/018760_20220214_S3G6.pdf",
+    "path": "work/research/sources/captive_boundary_20260923/nangang_green_bond_20220214.pdf",
+    "bytes": 3756071,
+    "sha256": "fe509d7399b18d33a0e9fed49936f69f0275aa263eb44a1b1f7e9ddafecab475",
+    "retrieved_utc": "2026-09-23T01:43:36.222484+00:00"
+  },
+  {
+    "url": "https://www.600282.net/InvestorRelations/Details/213e5906-5cac-454d-95e2-9cd1e5e1180e?genresId=fb0640b8-2bc2-46c7-ab2c-3e8b63d1c323",
+    "final_url": "https://www.600282.net/InvestorRelations/Details/213e5906-5cac-454d-95e2-9cd1e5e1180e?genresId=fb0640b8-2bc2-46c7-ab2c-3e8b63d1c323",
+    "path": "work/research/sources/captive_boundary_20260923/nangang_2022_operations.html",
+    "bytes": 70784,
+    "sha256": "9f8c6eaa1abba1138d9cf439bee39e978bf360009d37fff07f2bde75cd746a24",
+    "retrieved_utc": "2026-09-23T01:46:32.833445+00:00",
+    "status": 200
+  },
+  {
+    "url": "https://www.zt.net.cn/index.php?a=show&c=index&catid=38&id=8805&m=content",
+    "final_url": "https://www.zt.net.cn/index.php?a=show&c=index&catid=38&id=8805&m=content",
+    "path": "work/research/sources/captive_boundary_20260923/zhongtian_20180827.html",
+    "bytes": 14592,
+    "sha256": "e9474118aa83db7837453a95123331eba25acdaccb7c76490d59af6023c062ae",
+    "retrieved_utc": "2026-09-23T01:46:33.029387+00:00",
+    "status": 200
+  }
+]

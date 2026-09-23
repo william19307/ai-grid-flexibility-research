@@ -1,0 +1,21 @@
+{
+  "inputs": {
+    "outputs/research/revision/input_consistency/selected_oil_gas_unit_audit.csv": "21eae3d38864226d5f23b6a3caecafd77f27c515e80dda4f22d6d53412486d07",
+    "work/research/sources/captive_boundary_20260923/nangang_green_bond_20220214.pdf": "fe509d7399b18d33a0e9fed49936f69f0275aa263eb44a1b1f7e9ddafecab475",
+    "work/research/sources/captive_boundary_20260923/nangang_2022_operations.html": "9f8c6eaa1abba1138d9cf439bee39e978bf360009d37fff07f2bde75cd746a24",
+    "work/research/sources/captive_boundary_20260923/zhongtian_20180827.html": "e9474118aa83db7837453a95123331eba25acdaccb7c76490d59af6023c062ae"
+  },
+  "code": {
+    "work/research/analysis/audit_captive_generation_boundary.py": "f1ce249579e5dab9966e2c8b44e09b3edb9574fef8fd65b4f6df54927fca2168"
+  },
+  "text_engines": {
+    "pypdf": "6.10.0",
+    "pdfplumber": "0.11.9"
+  },
+  "outputs": {
+    "audit_results.json": "f9f35f21dfc1c7fe7a4f380673ca780dbee6a359c5e159e5b7a4fad86b72ed24",
+    "planned_energy_boundaries.json": "24af50868bea8a1f079394da0a54e8e9272d49cc67bed0d65429718c17032fa1",
+    "source_access_log.json": "fbf46b63c0c8467b325f7a79dc35080ec4ffe079f6cbfadb04efd93e0c55f38c",
+    "unit_admission_ledger.csv": "e7436cc23fe8322a1f0324974ca28d9a9c7b8f4da711447c2d1a4dd9ba8231dd"
+  }
+}

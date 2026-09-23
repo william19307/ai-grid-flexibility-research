@@ -371,3 +371,11 @@ work/figure-env/bin/python work/research/analysis/validate_demand_cohort.py
 新副本从 GitHub 拉取 9b9ce89，重新下载新版页面，使用阶段 27 隔离环境执行 25+67 项既有检查和 72 次因素实验政策求解。四个数值 CSV 逐字节一致，两个验证 JSON 除明确的准入模式外一致，完整 192h 账目及 18 条因素记录仅增加已声明来源证明。原源路径回归另证 9 个产物逐字节不变；新版本准入变异检查 11 项、来源核对 6 项、输出保护 2 项通过。逐记录比较器的 72 个断言不是独立研究样本。
 
 `compare_reviewed_source_replay.py --checkout /absolute/path/to/checkout` 在主研究树比较并保存独立副本产物，来源审读脚本仍需旧本地原件作参照，不能称旧原件已从网络恢复。所有记录位于 `revision/reviewed_tariff_version/`；13 原字节输入 + 1 显式审读版本的限定复算，不代表重新优化 108 案、第二机器/操作系统或完整省级实证。
+
+### 阶段 29：工业自备发电的来源与电网边界
+
+```bash
+python work/research/analysis/audit_captive_generation_boundary.py
+```
+
+环境需要 pypdf/pdfplumber，实测版本在 `revision/captive_boundary/evidence_manifest.json`。先按同目录 RUNBOOK 和 source_access_log 恢复三份原始机构文件到排除目录，核对固定哈希；动态页面不同则单独审读，不能改原预期直接放行。源码只读取阶段 23 台账和本阶段来源，不导入旧调度入口。48 项来源/算术/覆盖核对通过，完整相关 PDF 页已渲染审读；输出 12 台、1,125 MW 全量台账、两条候选项目匹配与预期电量分界。外送和可靠调节容量留空，未执行省级重算、未实现新的求解器准入。第二机器复现未验证。
