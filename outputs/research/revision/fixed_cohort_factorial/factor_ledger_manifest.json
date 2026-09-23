@@ -1,0 +1,326 @@
+[
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Jiangsu",
+    "shape": "0.0",
+    "replicas": 1,
+    "ledger_sha256": "b8d74c1a73cfced52e5771231dd6a7726794884e9be1f8018721d7b21233f8eb",
+    "cohort_sha256": "cae9343e4936d67392d9c8cfc38997b9827585ffc696ec7eacbfa86a3ed6aab8",
+    "background_sha256": "8921d3c5cea761582acec29501aecf321d3f90525635fd00f9db771faffebb86",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "d817a6b8ef356eec7a4f2b9b1b08e2258e8f855e550544a2e614046ddc18e0c6",
+      "profile_sha256": "5a424856de5b80aa22462090eda25dc86784d7d3d63d1e216ca0da7c99e36f0b",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  },
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Jiangsu",
+    "shape": "0.5",
+    "replicas": 1,
+    "ledger_sha256": "fa447376b18de16ef6d4f59573f9a298e198183ae2a9d076156a058c9af3f252",
+    "cohort_sha256": "cae9343e4936d67392d9c8cfc38997b9827585ffc696ec7eacbfa86a3ed6aab8",
+    "background_sha256": "b326ed91c465d2150ceccddcce3aa2862a1dd8d14bb9e29919a1a58636e11316",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "d817a6b8ef356eec7a4f2b9b1b08e2258e8f855e550544a2e614046ddc18e0c6",
+      "profile_sha256": "5a424856de5b80aa22462090eda25dc86784d7d3d63d1e216ca0da7c99e36f0b",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  },
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Jiangsu",
+    "shape": "1.0",
+    "replicas": 1,
+    "ledger_sha256": "235950f9befc97d2e30505b4b4d5f433583faf00a2368520e4b16e0918725484",
+    "cohort_sha256": "cae9343e4936d67392d9c8cfc38997b9827585ffc696ec7eacbfa86a3ed6aab8",
+    "background_sha256": "e1db7db3cbee663f3849dc1634784a6f99d5f3e794645616f4a5f3de5bb5390d",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "d817a6b8ef356eec7a4f2b9b1b08e2258e8f855e550544a2e614046ddc18e0c6",
+      "profile_sha256": "5a424856de5b80aa22462090eda25dc86784d7d3d63d1e216ca0da7c99e36f0b",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  },
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Jiangsu",
+    "shape": "0.0",
+    "replicas": 1000,
+    "ledger_sha256": "2f785c134f0bd1f04a45aba5bdd8563f9a632da7777a0d02ff77c44a7772ff9d",
+    "cohort_sha256": "8a0617f3cc8cb7e850b1fd012fb564afb058dffa4499b0aaf967427e337d6a5d",
+    "background_sha256": "8921d3c5cea761582acec29501aecf321d3f90525635fd00f9db771faffebb86",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "d817a6b8ef356eec7a4f2b9b1b08e2258e8f855e550544a2e614046ddc18e0c6",
+      "profile_sha256": "5a424856de5b80aa22462090eda25dc86784d7d3d63d1e216ca0da7c99e36f0b",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  },
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Jiangsu",
+    "shape": "0.5",
+    "replicas": 1000,
+    "ledger_sha256": "6d9a1653adb468695c36b1b934ea149c7bb6aa30482f9125bb49ccff85eccb4b",
+    "cohort_sha256": "8a0617f3cc8cb7e850b1fd012fb564afb058dffa4499b0aaf967427e337d6a5d",
+    "background_sha256": "b326ed91c465d2150ceccddcce3aa2862a1dd8d14bb9e29919a1a58636e11316",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "d817a6b8ef356eec7a4f2b9b1b08e2258e8f855e550544a2e614046ddc18e0c6",
+      "profile_sha256": "5a424856de5b80aa22462090eda25dc86784d7d3d63d1e216ca0da7c99e36f0b",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  },
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Jiangsu",
+    "shape": "1.0",
+    "replicas": 1000,
+    "ledger_sha256": "fd3561d84cc28d318c7d0d3dec288c82342d779fd2866c07aab67562e620ed09",
+    "cohort_sha256": "8a0617f3cc8cb7e850b1fd012fb564afb058dffa4499b0aaf967427e337d6a5d",
+    "background_sha256": "e1db7db3cbee663f3849dc1634784a6f99d5f3e794645616f4a5f3de5bb5390d",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "d817a6b8ef356eec7a4f2b9b1b08e2258e8f855e550544a2e614046ddc18e0c6",
+      "profile_sha256": "5a424856de5b80aa22462090eda25dc86784d7d3d63d1e216ca0da7c99e36f0b",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  },
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Gansu",
+    "shape": "0.0",
+    "replicas": 1,
+    "ledger_sha256": "6f535d854e7435f1e74eb3b1588864f9ce78b4be1e533ae6b89e0026c2cc680c",
+    "cohort_sha256": "4b7d3b927bb2a3a5fc368c6085b1ea17b74ae5ecda4e13a1da84b161fd81c674",
+    "background_sha256": "dbd20e7e8007a18b3bab46cb7c9880f5a31312bc2d14acf0e99d0c87e68aaa83",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "415a92eac89c39bffe506c3341366f61aeb188a03bcaef4f172df99653a331aa",
+      "profile_sha256": "9e7e8af96f728c54b75aa03420754181659591f0671a55c8fb4350ccdce9809a",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  },
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Gansu",
+    "shape": "0.5",
+    "replicas": 1,
+    "ledger_sha256": "c13ed330a78e4f7ad2be59b8d79660e73a959f1fe11e48cb1a87bef2edb23a85",
+    "cohort_sha256": "4b7d3b927bb2a3a5fc368c6085b1ea17b74ae5ecda4e13a1da84b161fd81c674",
+    "background_sha256": "20880467c87a15b1022bbb061ed932001e1a2c6b2ca31058fb0a8e5147fffd64",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "415a92eac89c39bffe506c3341366f61aeb188a03bcaef4f172df99653a331aa",
+      "profile_sha256": "9e7e8af96f728c54b75aa03420754181659591f0671a55c8fb4350ccdce9809a",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  },
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Gansu",
+    "shape": "1.0",
+    "replicas": 1,
+    "ledger_sha256": "b897a5d243015a98beae060b202e257f1decb932c191cff643823d0fb7f75d99",
+    "cohort_sha256": "4b7d3b927bb2a3a5fc368c6085b1ea17b74ae5ecda4e13a1da84b161fd81c674",
+    "background_sha256": "dc2eddbc75ea7a06639273a70ebf82d5b416c3a2bb5058b6aa5d19e8b7b5a3ee",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "415a92eac89c39bffe506c3341366f61aeb188a03bcaef4f172df99653a331aa",
+      "profile_sha256": "9e7e8af96f728c54b75aa03420754181659591f0671a55c8fb4350ccdce9809a",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  },
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Gansu",
+    "shape": "0.0",
+    "replicas": 1000,
+    "ledger_sha256": "e62d8433d4a0958e68581e4570ec150ae648d988baac5bbdaba765fef54c8bf4",
+    "cohort_sha256": "9e76f0b0ee5c1094a1a4615dbdaf2d400e6ff5095c76e5e0663933e1121705fd",
+    "background_sha256": "dbd20e7e8007a18b3bab46cb7c9880f5a31312bc2d14acf0e99d0c87e68aaa83",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "415a92eac89c39bffe506c3341366f61aeb188a03bcaef4f172df99653a331aa",
+      "profile_sha256": "9e7e8af96f728c54b75aa03420754181659591f0671a55c8fb4350ccdce9809a",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  },
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Gansu",
+    "shape": "0.5",
+    "replicas": 1000,
+    "ledger_sha256": "7a315c6779511028cde157cdcd840a98b6936d5bf0772bd170697abc045da899",
+    "cohort_sha256": "9e76f0b0ee5c1094a1a4615dbdaf2d400e6ff5095c76e5e0663933e1121705fd",
+    "background_sha256": "20880467c87a15b1022bbb061ed932001e1a2c6b2ca31058fb0a8e5147fffd64",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "415a92eac89c39bffe506c3341366f61aeb188a03bcaef4f172df99653a331aa",
+      "profile_sha256": "9e7e8af96f728c54b75aa03420754181659591f0671a55c8fb4350ccdce9809a",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  },
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Gansu",
+    "shape": "1.0",
+    "replicas": 1000,
+    "ledger_sha256": "959a382fe51c5c703cf6775c0c19f65a6cbd187e6d315b860ec8ecfc24570360",
+    "cohort_sha256": "9e76f0b0ee5c1094a1a4615dbdaf2d400e6ff5095c76e5e0663933e1121705fd",
+    "background_sha256": "dc2eddbc75ea7a06639273a70ebf82d5b416c3a2bb5058b6aa5d19e8b7b5a3ee",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "415a92eac89c39bffe506c3341366f61aeb188a03bcaef4f172df99653a331aa",
+      "profile_sha256": "9e7e8af96f728c54b75aa03420754181659591f0671a55c8fb4350ccdce9809a",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  },
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Guizhou",
+    "shape": "0.0",
+    "replicas": 1,
+    "ledger_sha256": "d6d28c922e5c4fa47d0396f6862ea10ef87501797207f81c5f4a00fb6e86256a",
+    "cohort_sha256": "226af002cef80cdbb4df3b17b088d7922c21063d72b7eecb05cc5d3cde17e727",
+    "background_sha256": "e60fdd8bb13f4b01a21e0629849e2fbf89435a5963af9ca1656bf7cf032e475d",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "830e632f0613dce93c78f1c9c4c05fe6026a030ea7107a70680c87afbc28f619",
+      "profile_sha256": "8a404b9e233beb37c161d801f509857569c5f8aeb840ab91b0b348bd58476ed2",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  },
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Guizhou",
+    "shape": "0.5",
+    "replicas": 1,
+    "ledger_sha256": "7508dfc0e79c1006046d930d10f21af6ef9b4c197635b9e9fb4eef7c355ea651",
+    "cohort_sha256": "226af002cef80cdbb4df3b17b088d7922c21063d72b7eecb05cc5d3cde17e727",
+    "background_sha256": "a97059908c0b2e8ecebdcffc72d60226ed7c455a6fb5305bf53075f634c5e3bd",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "830e632f0613dce93c78f1c9c4c05fe6026a030ea7107a70680c87afbc28f619",
+      "profile_sha256": "8a404b9e233beb37c161d801f509857569c5f8aeb840ab91b0b348bd58476ed2",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  },
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Guizhou",
+    "shape": "1.0",
+    "replicas": 1,
+    "ledger_sha256": "d108658c0756ce0561289c54234c01f4cfb272dd0e58ec85225daf0b95ea6e58",
+    "cohort_sha256": "226af002cef80cdbb4df3b17b088d7922c21063d72b7eecb05cc5d3cde17e727",
+    "background_sha256": "039f057dfdd067771c8267b04103daa037a2dfd91ccf55a1115764149372e740",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "830e632f0613dce93c78f1c9c4c05fe6026a030ea7107a70680c87afbc28f619",
+      "profile_sha256": "8a404b9e233beb37c161d801f509857569c5f8aeb840ab91b0b348bd58476ed2",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  },
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Guizhou",
+    "shape": "0.0",
+    "replicas": 1000,
+    "ledger_sha256": "7d198773675bebac6693b284ec86024cee8ea3e5113555e19fa361138bcbe264",
+    "cohort_sha256": "fa959c6ca714179ec0541cf30983c04130a1084f5af4b26d7f8100a88c0fa597",
+    "background_sha256": "e60fdd8bb13f4b01a21e0629849e2fbf89435a5963af9ca1656bf7cf032e475d",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "830e632f0613dce93c78f1c9c4c05fe6026a030ea7107a70680c87afbc28f619",
+      "profile_sha256": "8a404b9e233beb37c161d801f509857569c5f8aeb840ab91b0b348bd58476ed2",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  },
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Guizhou",
+    "shape": "0.5",
+    "replicas": 1000,
+    "ledger_sha256": "f575cc3c315a4c12e0dc1d120784caa7235e09faedcac50b40ed4396a494cf9c",
+    "cohort_sha256": "fa959c6ca714179ec0541cf30983c04130a1084f5af4b26d7f8100a88c0fa597",
+    "background_sha256": "a97059908c0b2e8ecebdcffc72d60226ed7c455a6fb5305bf53075f634c5e3bd",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "830e632f0613dce93c78f1c9c4c05fe6026a030ea7107a70680c87afbc28f619",
+      "profile_sha256": "8a404b9e233beb37c161d801f509857569c5f8aeb840ab91b0b348bd58476ed2",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  },
+  {
+    "case": "Earth_ft_llama_8b_dolly_6_Guizhou",
+    "shape": "1.0",
+    "replicas": 1000,
+    "ledger_sha256": "6b88cf92e3efefbeb6e87a920e62ec54843b704471b16dad29f542bf34d57d7b",
+    "cohort_sha256": "fa959c6ca714179ec0541cf30983c04130a1084f5af4b26d7f8100a88c0fa597",
+    "background_sha256": "039f057dfdd067771c8267b04103daa037a2dfd91ccf55a1115764149372e740",
+    "start": "2020-04-06T00:00:00+08:00",
+    "end": "2020-04-13T23:00:00+08:00",
+    "hours": 192,
+    "proof": {
+      "manifest_sha256": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+      "case_certificate_sha256": "830e632f0613dce93c78f1c9c4c05fe6026a030ea7107a70680c87afbc28f619",
+      "profile_sha256": "8a404b9e233beb37c161d801f509857569c5f8aeb840ab91b0b348bd58476ed2",
+      "verifier_sha256": "c5911d2e21c27e7a6b6c8a877acd0bf508ba210d68d24c571b119edac302162b",
+      "upstream_inputs_verified": 13
+    }
+  }
+]

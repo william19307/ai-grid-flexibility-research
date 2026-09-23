@@ -342,3 +342,14 @@ work/figure-env/bin/python work/research/analysis/audit_load_scope_and_peak_sens
 只写 `outputs/research/revision/load_scope/`。读取 `work/research/sources/load_scope_20260923/` 原始官方 HTML、2020 年锚定数组、归档年度增长和 8 对旧峰值情景 JSON；不导入/运行旧求解入口。该目录 `source_access_log.json` 列出 URL、获取时间、哈希，原取得日志在源目录的 `download_log.json`、`download_supplement.json`。新机器恢复原始页面时须比对 `source_hashes.json`，网页版本不同需记录新证据，不能伪造原取得时间。
 
 16 项检查包括 14 项日期/字段双读取、三省年度增长独立 Decimal 复算、8 对旧情景的 AI 满载功率及刚性电量缩放关系。`qualified_peak_observations.csv` 的 5 条记录均未获准作为全社会小时峰值拟合目标；`peak_sensitivity_scale_audit.csv` 显示旧敏感性同时改变群体电力规模。`jiangsu_2030_outlook_check.json` 比较的是 AI 另加之前的旧背景与 2025 包含既有 AI 的全社会年度量，不应称为总需求误差。没有生成新的小时负荷或省级收益。旧峰荷合理性 CSV 仅作历史存档，解释已由阶段 25 更新。
+
+### 阶段 26：固定群体与形状独立控制
+
+```bash
+work/figure-env/bin/python work/research/analysis/validate_fixed_cohort_factorial.py
+work/figure-env/bin/python work/research/analysis/validate_demand_cohort.py
+```
+
+设计先于结果冻结于 ddc24b8。第一条只写 `revision/fixed_cohort_factorial/`，读取阶段 07–09 的三个 Earth Dolly 6h 地区配对证书/原始输入，以及排除目录中的 `load_2020_annual_anchored_hourly_shape_UNVALIDATED.npz`（SHA256 为 86bc5a2ad0c1028cfd9420431e4d75283d2842be958f1c4d3bc092cbc85908f6）。恢复要求沿用对应阶段，不可用新形状文件静默替换。时钟完全匹配且保留 192h；输出 18 个账目哈希、90 行需求指标及全部政策/形状差分。账目不逐份冗余保存，可通过入口复建后核对 `factor_ledger_manifest.json`。
+
+67 项新增检查、72 次政策解析求解及 1 次容量不足拒绝求解通过，第二条 25 项回归通过。1/1,000 个同步复制、0.5 kW/GPU、0.41 idle 和人工发电成本均是假设；背景未验证，群体排除关系未认证。该诊断不是 2030 省级重算、全年容量收益或观测验证。代码/产物/既有回归哈希记录在 evidence_manifest.json；全新机器完整输入重建尚未实测。

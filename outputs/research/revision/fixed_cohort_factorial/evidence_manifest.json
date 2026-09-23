@@ -1,0 +1,36 @@
+{
+  "frozen_design_commit": "ddc24b8",
+  "versions": {
+    "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1"
+  },
+  "sha256": {
+    "outputs/research/revision/demand_cohort/validation.json": "dc11069b756dd40997e764e68357bee47eab3a6d324b519905658f6a1f93db1e",
+    "outputs/research/revision/fixed_cohort_factorial/DESIGN.md": "b34249f64fa6756d40ea30bd9d6c7f185bde5e9ac2229119e00fadf2acfc1fd4",
+    "outputs/research/revision/fixed_cohort_factorial/demand_metrics.csv": "44cc3226afb6d4d40a8b0f85daf4d14b06382e9204d4bbbaa561146c5ea2b9f8",
+    "outputs/research/revision/fixed_cohort_factorial/factor_ledger_manifest.json": "df024b3f7c2576e4766103efceebe9881a197197ecb3557e0214e21e88cdc325",
+    "outputs/research/revision/fixed_cohort_factorial/policy_contrasts.csv": "fa04139d09c05f7195b5f0ffbce672a3ad0ffcd9b9e718aee8a3372efd38ecc0",
+    "outputs/research/revision/fixed_cohort_factorial/shape_interactions.csv": "4b9b5c35a85047f0ce3be8db2e023223e86abd2bf6c4ddeac2e835f41a590ab4",
+    "outputs/research/revision/fixed_cohort_factorial/solver_oracle_checks.csv": "57aedec38af896c70268a03b909661d344cef8b8856d0c63516047659b55624d",
+    "outputs/research/revision/fixed_cohort_factorial/validation.json": "d9a90827fcb129e8f92614ea037482f200296c9ac24ff54e7f11e1b1bd6728c1",
+    "outputs/research/revision/fixed_cohort_factorial_methods_draft.md": "1f28f6eb6804d0ca51f4f284d6ceb28b1f1922b285926228e3aa02a38566bf4c",
+    "outputs/research/revision/policy/manifest.json": "ffe736992bd79d13c235c98d1e91b86adda503e92eb07d0cf74aea6e9b1bf624",
+    "outputs/research/revision/阶段26_固定群体与负荷形状独立控制.md": "5569c576df5a4df9dc9b9784a0ebcad47d39472bdd260db3c89b8d682b0ffc76",
+    "work/research/analysis/validate_demand_cohort.py": "6e7ae34606e80a0e75e58846ab671f27ae544cd2979e19f0b97ef2961b29792b",
+    "work/research/analysis/validate_fixed_cohort_factorial.py": "c7b11f59d381f93713282cfc93d6130dfe96c7280dc92a87592cc883e8853de7",
+    "work/research/models/coupled_grid_compute.py": "3ac3731ef17e63befba2598fa81a538d5e138e2bd6a321614da9af030bb6fbe2",
+    "work/research/models/demand_cohort.py": "948a78a752736c6f7291be2177e9ce7ebd88485ee7540d6d010b58ac34656b03",
+    "work/research/models/fixed_cohort_factorial.py": "fb39f2961af43c72fc2a74de56500eb6a3e02e2d7fe513c17aab28fec0c71f34",
+    "work/research/models/node_power_mapping.py": "7391aa57403d31d5dc8ebaa0debe7e9415cbab9b99aa207046398100784c3024",
+    "work/research/models/verified_power_bridge.py": "f90f3388b8ada6ea6bb7358ff63a1391d5eeeb0b5a3abec58b1098b2de3debb1"
+  },
+  "external_background": {
+    "path": "work/research/prepared/load_2020_annual_anchored_hourly_shape_UNVALIDATED.npz",
+    "sha256": "86bc5a2ad0c1028cfd9420431e4d75283d2842be958f1c4d3bc092cbc85908f6"
+  },
+  "schedule_inputs": "Three cases carry certificate and original profile hashes in factor_ledger_manifest.json; original input hashes are verified by the bridge against policy/manifest.json",
+  "regression": "25 checks passed; prior tracked output unchanged",
+  "scope": "Local conditional validation; external source reconstruction and full clean-machine reproduction remain unverified"
+}
