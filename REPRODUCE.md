@@ -379,3 +379,11 @@ python work/research/analysis/audit_captive_generation_boundary.py
 ```
 
 环境需要 pypdf/pdfplumber，实测版本在 `revision/captive_boundary/evidence_manifest.json`。先按同目录 RUNBOOK 和 source_access_log 恢复三份原始机构文件到排除目录，核对固定哈希；动态页面不同则单独审读，不能改原预期直接放行。源码只读取阶段 23 台账和本阶段来源，不导入旧调度入口。48 项来源/算术/覆盖核对通过，完整相关 PDF 页已渲染审读；输出 12 台、1,125 MW 全量台账、两条候选项目匹配与预期电量分界。外送和可靠调节容量留空，未执行省级重算、未实现新的求解器准入。第二机器复现未验证。
+
+### 阶段 30：机组投产时间与参数证据分级
+
+```bash
+python work/research/analysis/audit_captive_commissioning.py
+```
+
+恢复 `revision/captive_commissioning/source_access_log.json` 所列四个成功下载文件；年报 PDF、扫描评估 PDF、供应商 HTML 外壳和其直接引用的正文 JS。逐一比对固定哈希。供应商正文只按字符串解码，未执行远端脚本；扫描件须按 RUNBOOK 重新视觉审读人工转录。失败的验收报告记录不作输入。30 项读取/算术/台账检查通过，保留全部 12 条机组并叠加历史时间线；0 次调度、0 套新增运行参数准入。年报是双页排版，PDF 页 18/67 对应目标印刷页 24/122。没有第二机器复现声明。

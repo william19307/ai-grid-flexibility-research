@@ -1,0 +1,19 @@
+{
+  "source": "nangang_green_assessment_20211216.pdf",
+  "source_sha256": "e7dda041267d8ec0c0b754ae81df4408f76f5766fafd09ada5f2cfb5d021731e",
+  "pdf_one_based_pages": [6, 7],
+  "printed_pages": [4, 5],
+  "method": "Manual transcription after viewing both complete rendered pages; no successful text-layer extraction, no independent OCR validation",
+  "document_role": "Third-party pre-issuance green-bond assessment, hosted by SSE; describes reviewed approvals but is not the original approval or plant acceptance test",
+  "reported_project": "1x120 MW resources comprehensive utilization generation project",
+  "reported_total_investment_10k_CNY": "47116.38",
+  "reported_permits": [
+    {"type": "project_approval", "date": "2021-07-06", "reference": "苏发改能源发[2021]633号"},
+    {"type": "site_selection_reply", "date": "2021-05-07", "reference": null},
+    {"type": "environmental_approval", "date": "2020-11-04", "reference": "宁环表复[2020]38号"}
+  ],
+  "reported_old_units": {"count": 4, "capacity_each_MW": 50, "approx_whole_plant_thermal_efficiency_percent": "31.5"},
+  "reported_already_operating_subcritical_technology": {"approx_whole_plant_thermal_efficiency_percent": "near 41", "unique_unit_id": null},
+  "efficiency_limits": "Approximate narrative comparison; load level, calorific basis, numerator auxiliary boundary, measurement protocol and part-load curve are not established. Not assigned to inventory Unit 5 or Unit 6.",
+  "admitted_as_measured_dispatch_parameters": false
+}

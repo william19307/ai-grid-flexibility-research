@@ -4,9 +4,9 @@
 
 ## 2026-09-23 修订同步
 
-当前仓库经核实为 **PUBLIC**；本次按用户明确要求同步已有修订。工作分支为 `codex/research-evidence-revision`，最新研究阶段为 29，接手从 [HANDOFF.md](HANDOFF.md) 开始。保持 `main` 和已投稿文件的历史状态。
+当前仓库经核实为 **PUBLIC**；本次按用户明确要求同步已有修订。工作分支为 `codex/research-evidence-revision`，最新研究阶段为 30，接手从 [HANDOFF.md](HANDOFF.md) 开始。保持 `main` 和已投稿文件的历史状态。
 
-本次纳入阶段 01–29 的已提交模型、方法工作稿、来源审计、派生验证结果、研究日志及复现入口。没有新增外部原始归档、`work/research/prepared/`、运行环境或未跟踪的审读临时目录。`sources/nbs_2021/province_electricity_2020_transcription.csv` 是既有受 Git 跟踪的人工转录例外，原始年鉴图片及外部下载文件未随 Git 传输；完整复算需要按阶段清单重建输入，尚未验证全新机器一键复现。
+本次纳入阶段 01–30 的已提交模型、方法工作稿、来源审计、派生验证结果、研究日志及复现入口。没有新增外部原始归档、`work/research/prepared/`、运行环境或未跟踪的审读临时目录。`sources/nbs_2021/province_electricity_2020_transcription.csv` 是既有受 Git 跟踪的人工转录例外，原始年鉴图片及外部下载文件未随 Git 传输；完整复算需要按阶段清单重建输入，尚未验证全新机器一键复现。
 
 ## 纳入 GitHub
 
@@ -26,3 +26,5 @@
 这些文件的来源与重建方法必须通过 `outputs/research/tables/data_registry.csv`、审计 JSON 和论文引用追溯。任何将仓库改为公开仓库的决定，都应先重新检查数据许可和未发表研究内容。
 
 阶段 29 新增的三份外部原始 PDF/HTML 同样不进入 Git；`revision/captive_boundary/` 保存来源收据、哈希、候选逐机组台账、预期电量分类与复核结果。源网页后续变化可能需要重新审读，不承诺新机器即时取得旧字节。
+
+阶段 30 保存许可元数据的人工转录、历史投产补证叠加表、来源分级和审计记录。两份 PDF、供应商页面及其正文资源均留本地；未成功取得的验收报告不作为准入数据。扫描件的视觉转录与机器双读明确区分。

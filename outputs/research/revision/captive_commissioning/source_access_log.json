@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://oss.yanshougs.com/ccd5f07d33b91dda4b231e238ac73f4a.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.4dpower.com.cn/newsinfo/3917331.html",
+    "final_url": "https://www.4dpower.com.cn/newsinfo/3917331.html",
+    "path": "work/research/sources/nangang_permits_20260923/nangang_supplier_20220804.html",
+    "bytes": 648,
+    "sha256": "86d6a0a56bb99fee5ec9a31e8ed87876748aa2ebca89380c18489673348854ca",
+    "retrieved_utc": "2026-09-23T01:53:00.036980+00:00"
+  },
+  {
+    "url": "https://nwzimg.wezhan.cn/pubsf/10291/10291315/cdn-static-pages/newsinfo/pc/3917331_zh-cn.nocookie.html.Body.js?version=20260921085747",
+    "final_url": "https://nwzimg.wezhan.cn/pubsf/10291/10291315/cdn-static-pages/newsinfo/pc/3917331_zh-cn.nocookie.html.Body.js?version=20260921085747",
+    "path": "work/research/sources/nangang_permits_20260923/nangang_supplier_body.js",
+    "bytes": 130634,
+    "sha256": "d602d47808a4aeeac0034487277f93c05d6a737487e999c5f1d41137efc55be4",
+    "retrieved_utc": "2026-09-23T01:53:56.942341+00:00"
+  },
+  {
+    "url": "https://www.600282.net/Upload/files/%E5%8D%97%E4%BA%AC%E9%92%A2%E9%93%81%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B82022%20%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A.pdf",
+    "final_url": "https://www.600282.net/Upload/files/%E5%8D%97%E4%BA%AC%E9%92%A2%E9%93%81%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B82022%20%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A.pdf",
+    "path": "work/research/sources/nangang_permits_20260923/nangang_annual_2022.pdf",
+    "bytes": 11461091,
+    "sha256": "3a5446e09e95c32ec1d4f3d573dbc941eda2d11d6434b928c83ae419baad90c4",
+    "retrieved_utc": "2026-09-23T01:56:10.742241+00:00"
+  },
+  {
+    "url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202112/018760_20211216_KC17.pdf",
+    "final_url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202112/018760_20211216_KC17.pdf",
+    "path": "work/research/sources/nangang_permits_20260923/nangang_green_assessment_20211216.pdf",
+    "bytes": 1747424,
+    "sha256": "e7dda041267d8ec0c0b754ae81df4408f76f5766fafd09ada5f2cfb5d021731e",
+    "retrieved_utc": "2026-09-23T01:55:10.631190+00:00"
+  }
+]

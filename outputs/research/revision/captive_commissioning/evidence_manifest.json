@@ -1,0 +1,40 @@
+{
+  "inputs": {
+    "outputs/research/revision/captive_boundary/unit_admission_ledger.csv": "e7436cc23fe8322a1f0324974ca28d9a9c7b8f4da711447c2d1a4dd9ba8231dd",
+    "work/research/sources/nangang_permits_20260923/nangang_annual_2022.pdf": "3a5446e09e95c32ec1d4f3d573dbc941eda2d11d6434b928c83ae419baad90c4",
+    "work/research/sources/nangang_permits_20260923/nangang_green_assessment_20211216.pdf": "e7dda041267d8ec0c0b754ae81df4408f76f5766fafd09ada5f2cfb5d021731e",
+    "work/research/sources/nangang_permits_20260923/nangang_supplier_20220804.html": "86d6a0a56bb99fee5ec9a31e8ed87876748aa2ebca89380c18489673348854ca",
+    "work/research/sources/nangang_permits_20260923/nangang_supplier_body.js": "d602d47808a4aeeac0034487277f93c05d6a737487e999c5f1d41137efc55be4"
+  },
+  "code": {
+    "work/research/analysis/audit_captive_commissioning.py": "07131c744b14a26fffe9f81fbb572b7e9c8aabce1931e43817ab1bb8643db279"
+  },
+  "outputs": {
+    "assessment_visual_transcription.json": "91070d9879d72fb14a9565ba07be5e21b4a7e5efb8e4348caaf8953ed6b88cda",
+    "unit_evidence_overlay.csv": "f5c828b39f95e2e0b9b8d7f0e816b5e52188540e97fae8adf96f0072c9286281",
+    "audit_results.json": "2d4e62b2bfb07f0b4707c85429f5462a3c5ad4aa054991ba1c061dc94fb782ce",
+    "source_access_log.json": "1b47019db5f5a90aba458ef487c8600324bfdfdd79b5dfaa73ace6871d6d39c5"
+  },
+  "dependencies": {
+    "pypdf": "6.10.0",
+    "pdfplumber": "0.11.9"
+  },
+  "visual_review": {
+    "annual_pdf_pages": [
+      18,
+      67
+    ],
+    "annual_printed_pages": [
+      24,
+      122
+    ],
+    "assessment_pdf_pages": [
+      6,
+      7
+    ],
+    "assessment_printed_pages": [
+      4,
+      5
+    ]
+  }
+}
