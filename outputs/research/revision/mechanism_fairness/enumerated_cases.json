@@ -1,0 +1,350 @@
+[
+  {
+    "case": 0,
+    "feasible": true,
+    "enumerated_assignments": 3,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 1,
+    "feasible": false
+  },
+  {
+    "case": 2,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 3,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 4,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 5,
+    "feasible": true,
+    "enumerated_assignments": 3,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 6,
+    "feasible": true,
+    "enumerated_assignments": 1,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 7,
+    "feasible": true,
+    "enumerated_assignments": 6,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 8,
+    "feasible": true,
+    "enumerated_assignments": 4,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 9,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 10,
+    "feasible": true,
+    "enumerated_assignments": 5,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 11,
+    "feasible": true,
+    "enumerated_assignments": 3,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 12,
+    "feasible": true,
+    "enumerated_assignments": 1,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 13,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 14,
+    "feasible": false
+  },
+  {
+    "case": 15,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 16,
+    "feasible": true,
+    "enumerated_assignments": 1,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 17,
+    "feasible": true,
+    "enumerated_assignments": 1,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 18,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 19,
+    "feasible": true,
+    "enumerated_assignments": 3,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 20,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 21,
+    "feasible": true,
+    "enumerated_assignments": 4,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 22,
+    "feasible": true,
+    "enumerated_assignments": 1,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 23,
+    "feasible": true,
+    "enumerated_assignments": 1,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 24,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 25,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 26,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 27,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 28,
+    "feasible": true,
+    "enumerated_assignments": 3,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 29,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 30,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 31,
+    "feasible": true,
+    "enumerated_assignments": 3,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 32,
+    "feasible": false
+  },
+  {
+    "case": 33,
+    "feasible": true,
+    "enumerated_assignments": 4,
+    "selected_commitment_mw": 1
+  },
+  {
+    "case": 34,
+    "feasible": false
+  },
+  {
+    "case": 35,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 36,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 37,
+    "feasible": true,
+    "enumerated_assignments": 1,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 38,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 39,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 40,
+    "feasible": true,
+    "enumerated_assignments": 3,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 41,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 42,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 43,
+    "feasible": true,
+    "enumerated_assignments": 7,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 44,
+    "feasible": true,
+    "enumerated_assignments": 1,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 45,
+    "feasible": true,
+    "enumerated_assignments": 1,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 46,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 47,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 48,
+    "feasible": true,
+    "enumerated_assignments": 1,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 49,
+    "feasible": true,
+    "enumerated_assignments": 1,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 50,
+    "feasible": true,
+    "enumerated_assignments": 6,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 51,
+    "feasible": true,
+    "enumerated_assignments": 7,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 52,
+    "feasible": true,
+    "enumerated_assignments": 2,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 53,
+    "feasible": false
+  },
+  {
+    "case": 54,
+    "feasible": true,
+    "enumerated_assignments": 4,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 55,
+    "feasible": true,
+    "enumerated_assignments": 4,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 56,
+    "feasible": true,
+    "enumerated_assignments": 3,
+    "selected_commitment_mw": 1
+  },
+  {
+    "case": 57,
+    "feasible": false
+  },
+  {
+    "case": 58,
+    "feasible": true,
+    "enumerated_assignments": 4,
+    "selected_commitment_mw": 0
+  },
+  {
+    "case": 59,
+    "feasible": true,
+    "enumerated_assignments": 1,
+    "selected_commitment_mw": 0
+  }
+]

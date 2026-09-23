@@ -269,3 +269,17 @@ work/figure-env/bin/python work/research/analysis/plot_rudong_h2_quarters.py
 ```
 
 第二项使用阶段 18 已冻结且校验哈希的小时诊断输出；第三项从相同原始天气和固定曲线使用独立 Decimal 实现重建，不调用生产聚合函数。绘图只读取已核验结果，PNG/PDF/SVG 与图来源哈希同存。三个累计周期的重复 2023 披露必须一致，否则源核验立即失败，不静默选取或平均。Q2–Q4 由累计差分恢复，±1,000 MWh 只是显示末位的保守界，存在共享端点。36 条件/9 年度的计算一致性不构成小时物理验证；未执行全新机器完整论文复现。
+
+### 阶段 20：同信息价格/事件框架及净收益采购
+
+新增 fair_mechanisms.py，将预测规划与实现成本评估分离，使用已存在的分数任务 LP。sequential_tasks.py 新增可选的时段电量上界和参考目标费用上界；未使用新选项时旧可行域与目标保持不变。两份旧验证脚本新增 `--output-dir`，输入仍固定读取原 `outputs/research/tables/dvfs_measured_and_derived.csv`，不能随输出路径切换输入。
+
+```bash
+work/figure-env/bin/python work/research/analysis/validate_fair_mechanisms.py
+work/figure-env/bin/python work/research/analysis/validate_sequential_tasks.py --output-dir outputs/research/revision/mechanism_fairness/regression/sequential
+work/figure-env/bin/python work/research/analysis/validate_response_cost.py --output-dir outputs/research/revision/mechanism_fairness/regression/response
+```
+
+新检查使用固定种子 20260923、60 个小规模穷举分配问题及手算实例，结果在 `revision/mechanism_fairness/`。旧两组 CSV（256/360 案）的原哈希与本轮哈希见 `regression/comparison_to_archived.json`，本轮完全相同；原结果未覆盖。源码版本由 validation.json 绑定，旧研究结果须按各自已冻结提交和来源复现，不把更新后的源码哈希冒充旧快照。
+
+框架只对显式有限承诺集合优化，企业同费用响应使用显式容差的上下界，默认采购值相等判断容差为 1e−7 费用单位并写入计划。最低参与支付只是已知成本下、针对给定响应的核算下界，不是策略性支付规则。所有结果均为数学核验，不能视为现实预测质量、市场均衡、真实硬件或省级容量/价格收益。

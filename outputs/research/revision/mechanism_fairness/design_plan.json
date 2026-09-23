@@ -1,0 +1,34 @@
+{
+  "purpose": "Repair unfair oracle-price versus maximum-event procurement comparison; mathematical framework only until empirical forecasts/grid/hardware validated",
+  "shared_inputs": [
+    "Identical fixed jobs, rates, whole-power assumptions, deadlines and physical limits",
+    "Forecast marginal resource cost known at decision time",
+    "Same tariff outside option, immutable baseline and complete horizon including rebound"
+  ],
+  "decision_separation": "Planning function cannot receive realized costs; separate evaluator receives frozen schedules afterwards",
+  "event_procurement": "Enumerate all explicitly offered nonnegative MW quantities including zero opt-out; choose greatest worst-tie forecast net resource saving; exact only within this offer set, not continuous-global optimal claim",
+  "follower": "Minimize tariff plus service cost for each commitment; bound all epsilon-optimal follower choices with best/worst forecast resource objective",
+  "price": "Posted exogenous forecast marginal-cost signal; not a dual from a realized coordinated solution; optimality is a linear-price mathematical benchmark, not deployment evidence",
+  "accounting": "Report physical resource savings, retailer cash and provider welfare separately; minimum weak-participation transfer; transfer cancellation identity required",
+  "recovery": "Explicit optional aggregate non-event energy bound relative to fixed outside option; no work dropping or deadline repair",
+  "tests": [
+    "Analytic interior procurement beating maximum response",
+    "Tie cases with opposite grid benefits",
+    "Recovery energy infeasibility",
+    "Negative price and non-unit dt",
+    "Planning invariance to realized evaluation values",
+    "Exhaustive small integer assignment oracles with all commitment choices",
+    "Full work/window/capacity and bill/transfer reconstruction"
+  ],
+  "exclusions": [
+    "No provincial benefit claims",
+    "No market equilibrium, strategic bidding or baseline manipulation equilibrium",
+    "No real forecast accuracy claims",
+    "No new empirical model parameter fit"
+  ],
+  "source_sha256": {
+    "work/research/models/sequential_tasks.py": "e305155f4b5bc78dfa8c330b880093076a33b7ea5f005ee88ffb4962ecbe71e5",
+    "work/research/models/response_cost.py": "d75a47d0f6bb53640be0a385e8eb48e4898fd6c5391e57226b4300e3331339ac",
+    "work/research/analysis/run_regional_2030_s0_s3.py": "6f0de9ca21189da391f9954f50918312163c0cf4743ac50525372fb179ca3db5"
+  }
+}

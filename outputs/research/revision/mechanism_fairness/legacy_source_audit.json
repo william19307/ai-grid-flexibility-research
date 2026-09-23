@@ -1,0 +1,11 @@
+{
+  "scope": "Source snapshot audit, not execution of legacy provincial script",
+  "source_file": "work/research/analysis/run_regional_2030_s0_s3.py",
+  "source_sha256": "6f0de9ca21189da391f9954f50918312163c0cf4743ac50525372fb179ca3db5",
+  "findings": {
+    "price_signal": "S2 nodal marginal costs, clipped at zero then scaled to tariff mean; lines231-234",
+    "event_source": "S1 nodal marginal costs; lines237-244; file header says NOAI and differs",
+    "procurement": "cost_at_max_response; line247; maximize quantity then minimize firm cost"
+  },
+  "new_results_not_provincial": true
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "analytic_examples.json": "5a7a994a3f784d68f4d1ff4ed76c9e59f1dbd259ff10aa9ee8c99c6858501827",
+    "design_plan.json": "59e918093ca788d4ff0dc9cccf3a0a3175fe2a5675812d782a32e7c95f2fb050",
+    "enumerated_cases.json": "e5ec5752e84363e55c0c64a87be8899a45a6cc30edd11ca449c1b5c4755aab74",
+    "legacy_source_audit.json": "b425b7165257795ebb46910bb696fa58fe91201e5be8e56ca2ea441f130012b0",
+    "regression/comparison_to_archived.json": "13c3a56318f83e241566f8eb5e2277c143bcfcd947cfd09b97a153f0277545ab",
+    "regression/response/response_cost_examples.json": "e19848a726e634f5928c2647885256a6b53074ed765ebbd9231d00f6222b140a",
+    "regression/response/response_cost_scenarios_NOT_market_estimates.csv": "db6e3751f0636b195015fbc09b75a6cad01ad24ae45859b7ada634ad12342d59",
+    "regression/response/response_cost_validation.json": "e88a4ad0ffa172203b3d78b82ae61536c7afb0eef64a5d23bf82be7a9cc99f63",
+    "regression/sequential/sequential_task_benchmark_ASSUMED_arrivals.csv": "dd2fb74864c072d44e37110a4f196222d6628c911ba64887af0fe1337ec9dd4e",
+    "regression/sequential/sequential_task_examples.json": "9efb45ae7e4c95605aac32a15fc6d4efa4bb6a9a386303a5066e17d9c8736021",
+    "regression/sequential/sequential_task_oracle_cases.json": "4dda9518dd94394bb3680d477fba4b715483de35e458220db1d070810fa7b85c",
+    "regression/sequential/sequential_task_validation.json": "09479076fa5f99fc14c8fcffa63750908f8d316916c7bea4a02499404610a699",
+    "validation.json": "b22a8d38bc29550f324fd76b1dca47951dd50a53576fbd32f08784e885b85181"
+  },
+  "scope": "Local mathematical and regression evidence; not provincial or empirical validation"
+}

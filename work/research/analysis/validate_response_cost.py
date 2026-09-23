@@ -1,13 +1,16 @@
 """Validate cost frontiers using hand calculations and scenario sweeps."""
 from pathlib import Path
-import sys,json,hashlib
+import sys,json,hashlib,argparse
 import numpy as np
 import pandas as pd
 ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT/'work/research/models'))
 from sequential_tasks import Job,schedule,baseline_asap
 from response_cost import fixed_response,cost_at_max_response
-OUT=ROOT/'outputs/research/tables'
+parser=argparse.ArgumentParser()
+parser.add_argument('--output-dir',type=Path,default=ROOT/'outputs/research/tables')
+OUT=parser.parse_args().output_dir
+OUT.mkdir(parents=True,exist_ok=True)
 checks=[]
 jobs=[Job('batch',0,2,1.5)]
 # All costs in arbitrary currency, power in MW. Free dispatch [1,.5], cost 2.5.
@@ -41,7 +44,7 @@ assert np.allclose(r['committed']['slot_average_power'],[0,0,1])
 checks.append('lexicographic_max_response_then_min_cost')
 # An event cap cannot create savings relative to an unrestricted optimum.
 rows=[];details=[]
-data=pd.read_csv(OUT/'dvfs_measured_and_derived.csv')
+data=pd.read_csv(ROOT/'outputs/research/tables/dvfs_measured_and_derived.csv')
 for name,g in data.groupby('Workload',sort=False):
     q=g['normalized throughput'].to_numpy();p=g['total GPU power'].to_numpy()/1e6
     h=12;event=[4,5,6];u=.9;idle=.2*p.max()

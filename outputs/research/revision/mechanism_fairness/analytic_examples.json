@@ -1,0 +1,1163 @@
+{
+  "interior_quantity": {
+    "plan": {
+      "feasible": true,
+      "horizon": 3,
+      "dt": 1.0,
+      "tariff": [
+        0.0,
+        1.0,
+        2.0
+      ],
+      "forecast_cost": [
+        10.0,
+        0.0,
+        40.0
+      ],
+      "event_slots": [
+        0
+      ],
+      "baseline": {
+        "power_mw": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "allocations": [
+          {
+            "job": "j",
+            "slot": 0,
+            "mode": 0,
+            "pool_fraction": 1.0,
+            "work": 1.0
+          }
+        ],
+        "energy_mwh": 1.0,
+        "energy_bill": 0.0,
+        "service_cost": 0.0,
+        "participation_transfer": 0.0,
+        "forecast_resource_cost": 10.0,
+        "actual_event_reduction_mw": [
+          0.0
+        ],
+        "non_event_energy_change_mwh": 0.0
+      },
+      "price": {
+        "power_mw": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "allocations": [
+          {
+            "job": "j",
+            "slot": 0,
+            "mode": 0,
+            "pool_fraction": 0.5,
+            "work": 0.5
+          },
+          {
+            "job": "j",
+            "slot": 1,
+            "mode": 0,
+            "pool_fraction": 0.5,
+            "work": 0.5
+          }
+        ],
+        "energy_mwh": 1.0,
+        "energy_bill": 5.0,
+        "service_cost": 0.0,
+        "participation_transfer": 5.0,
+        "forecast_resource_cost": 5.0,
+        "actual_event_reduction_mw": [
+          0.5
+        ],
+        "non_event_energy_change_mwh": 0.5
+      },
+      "event_candidates": [
+        {
+          "commitment_mw": 0.0,
+          "feasible": true,
+          "mode": "opt_out",
+          "follower_minimum_cost": 0.0,
+          "forecast_best": {
+            "power_mw": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "allocations": [
+              {
+                "job": "j",
+                "slot": 0,
+                "mode": 0,
+                "pool_fraction": 1.0,
+                "work": 1.0
+              }
+            ],
+            "energy_mwh": 1.0,
+            "energy_bill": 0.0,
+            "service_cost": 0.0,
+            "participation_transfer": 0.0,
+            "forecast_resource_cost": 10.0,
+            "actual_event_reduction_mw": [
+              0.0
+            ],
+            "non_event_energy_change_mwh": 0.0
+          },
+          "forecast_worst": {
+            "power_mw": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "allocations": [
+              {
+                "job": "j",
+                "slot": 0,
+                "mode": 0,
+                "pool_fraction": 1.0,
+                "work": 1.0
+              }
+            ],
+            "energy_mwh": 1.0,
+            "energy_bill": 0.0,
+            "service_cost": 0.0,
+            "participation_transfer": 0.0,
+            "forecast_resource_cost": 10.0,
+            "actual_event_reduction_mw": [
+              0.0
+            ],
+            "non_event_energy_change_mwh": 0.0
+          },
+          "worst_case_forecast_resource_saving": 0.0
+        },
+        {
+          "commitment_mw": 0.5,
+          "feasible": true,
+          "mode": "event_contract",
+          "follower_minimum_cost": 0.5,
+          "forecast_best": {
+            "power_mw": [
+              0.5,
+              0.5,
+              0.0
+            ],
+            "allocations": [
+              {
+                "job": "j",
+                "slot": 0,
+                "mode": 0,
+                "pool_fraction": 0.5,
+                "work": 0.5
+              },
+              {
+                "job": "j",
+                "slot": 1,
+                "mode": 0,
+                "pool_fraction": 0.5,
+                "work": 0.5
+              }
+            ],
+            "energy_mwh": 1.0,
+            "energy_bill": 0.5,
+            "service_cost": 0.0,
+            "participation_transfer": 0.5,
+            "forecast_resource_cost": 5.0,
+            "actual_event_reduction_mw": [
+              0.5
+            ],
+            "non_event_energy_change_mwh": 0.5
+          },
+          "forecast_worst": {
+            "power_mw": [
+              0.5,
+              0.5,
+              0.0
+            ],
+            "allocations": [
+              {
+                "job": "j",
+                "slot": 0,
+                "mode": 0,
+                "pool_fraction": 0.5,
+                "work": 0.5
+              },
+              {
+                "job": "j",
+                "slot": 1,
+                "mode": 0,
+                "pool_fraction": 0.5,
+                "work": 0.5
+              }
+            ],
+            "energy_mwh": 1.0,
+            "energy_bill": 0.5,
+            "service_cost": 0.0,
+            "participation_transfer": 0.5,
+            "forecast_resource_cost": 5.0,
+            "actual_event_reduction_mw": [
+              0.5
+            ],
+            "non_event_energy_change_mwh": 0.5
+          },
+          "worst_case_forecast_resource_saving": 5.0
+        },
+        {
+          "commitment_mw": 1.0,
+          "feasible": true,
+          "mode": "event_contract",
+          "follower_minimum_cost": 1.5,
+          "forecast_best": {
+            "power_mw": [
+              0.0,
+              0.5,
+              0.5
+            ],
+            "allocations": [
+              {
+                "job": "j",
+                "slot": 1,
+                "mode": 0,
+                "pool_fraction": 0.5,
+                "work": 0.5
+              },
+              {
+                "job": "j",
+                "slot": 2,
+                "mode": 0,
+                "pool_fraction": 0.5,
+                "work": 0.5
+              }
+            ],
+            "energy_mwh": 1.0,
+            "energy_bill": 1.5,
+            "service_cost": 0.0,
+            "participation_transfer": 1.5,
+            "forecast_resource_cost": 20.0,
+            "actual_event_reduction_mw": [
+              1.0
+            ],
+            "non_event_energy_change_mwh": 1.0
+          },
+          "forecast_worst": {
+            "power_mw": [
+              0.0,
+              0.5,
+              0.5
+            ],
+            "allocations": [
+              {
+                "job": "j",
+                "slot": 1,
+                "mode": 0,
+                "pool_fraction": 0.5,
+                "work": 0.5
+              },
+              {
+                "job": "j",
+                "slot": 2,
+                "mode": 0,
+                "pool_fraction": 0.5,
+                "work": 0.5
+              }
+            ],
+            "energy_mwh": 1.0,
+            "energy_bill": 1.5,
+            "service_cost": 0.0,
+            "participation_transfer": 1.5,
+            "forecast_resource_cost": 20.0,
+            "actual_event_reduction_mw": [
+              1.0
+            ],
+            "non_event_energy_change_mwh": 1.0
+          },
+          "worst_case_forecast_resource_saving": -10.0
+        }
+      ],
+      "selected_contract_index": 1,
+      "selected_commitment_mw": 0.5,
+      "follower_cost_tolerance": 0.0,
+      "selection_value_tolerance": 1e-07,
+      "recovery_energy_budget_mwh": null,
+      "scope": "FINITE_OFFER_SET_FLUID_MODEL_MATHEMATICAL_BENCHMARK",
+      "assumptions": [
+        "Exogenous linear forecast resource costs, no realized cost in planning",
+        "Complete known job set, preemptive time sharing, no task dropping",
+        "All physical caps and service requirements common across mechanisms",
+        "Contract tie bounds within explicit bill tolerance; pessimistic forecast endpoint retained",
+        "Participation transfer is an accounting floor for the prescribed response, not an incentive-compatible payment rule",
+        "Recovery cap is a contract term, not a change in the shared service requirement",
+        "No provincial, reliability, market-equilibrium or deployability result"
+      ]
+    },
+    "evaluation": {
+      "realized_cost": [
+        10.0,
+        0.0,
+        40.0
+      ],
+      "selected_commitment_mw": 0.5,
+      "baseline": {
+        "realized_supply_cost": 10.0,
+        "resource_saving": 0.0,
+        "retailer_cash_saving": 0.0,
+        "provider_welfare_change": 0.0,
+        "participation_transfer": 0.0,
+        "energy_bill_change": 0.0,
+        "service_cost_change": 0.0,
+        "weak_participation": true
+      },
+      "price": {
+        "realized_supply_cost": 5.0,
+        "resource_saving": 5.0,
+        "retailer_cash_saving": 5.0,
+        "provider_welfare_change": 0.0,
+        "participation_transfer": 5.0,
+        "energy_bill_change": 5.0,
+        "service_cost_change": 0.0,
+        "weak_participation": true
+      },
+      "selected_contract_forecast_best_endpoint": {
+        "realized_supply_cost": 5.0,
+        "resource_saving": 5.0,
+        "retailer_cash_saving": 5.0,
+        "provider_welfare_change": 0.0,
+        "participation_transfer": 0.5,
+        "energy_bill_change": 0.5,
+        "service_cost_change": 0.0,
+        "weak_participation": true
+      },
+      "selected_contract_forecast_worst_endpoint": {
+        "realized_supply_cost": 5.0,
+        "resource_saving": 5.0,
+        "retailer_cash_saving": 5.0,
+        "provider_welfare_change": 0.0,
+        "participation_transfer": 0.5,
+        "energy_bill_change": 0.5,
+        "service_cost_change": 0.0,
+        "weak_participation": true
+      },
+      "alternatives": [
+        {
+          "commitment_mw": 0.0,
+          "forecast_best_endpoint": {
+            "realized_supply_cost": 10.0,
+            "resource_saving": 0.0,
+            "retailer_cash_saving": 0.0,
+            "provider_welfare_change": 0.0,
+            "participation_transfer": 0.0,
+            "energy_bill_change": 0.0,
+            "service_cost_change": 0.0,
+            "weak_participation": true
+          },
+          "forecast_worst_endpoint": {
+            "realized_supply_cost": 10.0,
+            "resource_saving": 0.0,
+            "retailer_cash_saving": 0.0,
+            "provider_welfare_change": 0.0,
+            "participation_transfer": 0.0,
+            "energy_bill_change": 0.0,
+            "service_cost_change": 0.0,
+            "weak_participation": true
+          }
+        },
+        {
+          "commitment_mw": 0.5,
+          "forecast_best_endpoint": {
+            "realized_supply_cost": 5.0,
+            "resource_saving": 5.0,
+            "retailer_cash_saving": 5.0,
+            "provider_welfare_change": 0.0,
+            "participation_transfer": 0.5,
+            "energy_bill_change": 0.5,
+            "service_cost_change": 0.0,
+            "weak_participation": true
+          },
+          "forecast_worst_endpoint": {
+            "realized_supply_cost": 5.0,
+            "resource_saving": 5.0,
+            "retailer_cash_saving": 5.0,
+            "provider_welfare_change": 0.0,
+            "participation_transfer": 0.5,
+            "energy_bill_change": 0.5,
+            "service_cost_change": 0.0,
+            "weak_participation": true
+          }
+        },
+        {
+          "commitment_mw": 1.0,
+          "forecast_best_endpoint": {
+            "realized_supply_cost": 20.0,
+            "resource_saving": -10.0,
+            "retailer_cash_saving": -10.0,
+            "provider_welfare_change": 0.0,
+            "participation_transfer": 1.5,
+            "energy_bill_change": 1.5,
+            "service_cost_change": 0.0,
+            "weak_participation": true
+          },
+          "forecast_worst_endpoint": {
+            "realized_supply_cost": 20.0,
+            "resource_saving": -10.0,
+            "retailer_cash_saving": -10.0,
+            "provider_welfare_change": 0.0,
+            "participation_transfer": 1.5,
+            "energy_bill_change": 1.5,
+            "service_cost_change": 0.0,
+            "weak_participation": true
+          }
+        }
+      ],
+      "scope": "Ex-post evaluation of frozen forecast endpoints, not realized-optimal tie bounds or oracle reoptimization"
+    }
+  },
+  "adverse_realization_without_reselection": {
+    "realized_cost": [
+      0.0,
+      10.0,
+      1.0
+    ],
+    "selected_commitment_mw": 0.5,
+    "baseline": {
+      "realized_supply_cost": 0.0,
+      "resource_saving": 0.0,
+      "retailer_cash_saving": 0.0,
+      "provider_welfare_change": 0.0,
+      "participation_transfer": 0.0,
+      "energy_bill_change": 0.0,
+      "service_cost_change": 0.0,
+      "weak_participation": true
+    },
+    "price": {
+      "realized_supply_cost": 5.0,
+      "resource_saving": -5.0,
+      "retailer_cash_saving": -5.0,
+      "provider_welfare_change": 0.0,
+      "participation_transfer": 5.0,
+      "energy_bill_change": 5.0,
+      "service_cost_change": 0.0,
+      "weak_participation": true
+    },
+    "selected_contract_forecast_best_endpoint": {
+      "realized_supply_cost": 5.0,
+      "resource_saving": -5.0,
+      "retailer_cash_saving": -5.0,
+      "provider_welfare_change": 0.0,
+      "participation_transfer": 0.5,
+      "energy_bill_change": 0.5,
+      "service_cost_change": 0.0,
+      "weak_participation": true
+    },
+    "selected_contract_forecast_worst_endpoint": {
+      "realized_supply_cost": 5.0,
+      "resource_saving": -5.0,
+      "retailer_cash_saving": -5.0,
+      "provider_welfare_change": 0.0,
+      "participation_transfer": 0.5,
+      "energy_bill_change": 0.5,
+      "service_cost_change": 0.0,
+      "weak_participation": true
+    },
+    "alternatives": [
+      {
+        "commitment_mw": 0.0,
+        "forecast_best_endpoint": {
+          "realized_supply_cost": 0.0,
+          "resource_saving": 0.0,
+          "retailer_cash_saving": 0.0,
+          "provider_welfare_change": 0.0,
+          "participation_transfer": 0.0,
+          "energy_bill_change": 0.0,
+          "service_cost_change": 0.0,
+          "weak_participation": true
+        },
+        "forecast_worst_endpoint": {
+          "realized_supply_cost": 0.0,
+          "resource_saving": 0.0,
+          "retailer_cash_saving": 0.0,
+          "provider_welfare_change": 0.0,
+          "participation_transfer": 0.0,
+          "energy_bill_change": 0.0,
+          "service_cost_change": 0.0,
+          "weak_participation": true
+        }
+      },
+      {
+        "commitment_mw": 0.5,
+        "forecast_best_endpoint": {
+          "realized_supply_cost": 5.0,
+          "resource_saving": -5.0,
+          "retailer_cash_saving": -5.0,
+          "provider_welfare_change": 0.0,
+          "participation_transfer": 0.5,
+          "energy_bill_change": 0.5,
+          "service_cost_change": 0.0,
+          "weak_participation": true
+        },
+        "forecast_worst_endpoint": {
+          "realized_supply_cost": 5.0,
+          "resource_saving": -5.0,
+          "retailer_cash_saving": -5.0,
+          "provider_welfare_change": 0.0,
+          "participation_transfer": 0.5,
+          "energy_bill_change": 0.5,
+          "service_cost_change": 0.0,
+          "weak_participation": true
+        }
+      },
+      {
+        "commitment_mw": 1.0,
+        "forecast_best_endpoint": {
+          "realized_supply_cost": 5.5,
+          "resource_saving": -5.5,
+          "retailer_cash_saving": -5.5,
+          "provider_welfare_change": 0.0,
+          "participation_transfer": 1.5,
+          "energy_bill_change": 1.5,
+          "service_cost_change": 0.0,
+          "weak_participation": true
+        },
+        "forecast_worst_endpoint": {
+          "realized_supply_cost": 5.5,
+          "resource_saving": -5.5,
+          "retailer_cash_saving": -5.5,
+          "provider_welfare_change": 0.0,
+          "participation_transfer": 1.5,
+          "energy_bill_change": 1.5,
+          "service_cost_change": 0.0,
+          "weak_participation": true
+        }
+      }
+    ],
+    "scope": "Ex-post evaluation of frozen forecast endpoints, not realized-optimal tie bounds or oracle reoptimization"
+  },
+  "follower_ties": {
+    "feasible": true,
+    "horizon": 3,
+    "dt": 1.0,
+    "tariff": [
+      0.0,
+      1.0,
+      1.0
+    ],
+    "forecast_cost": [
+      10.0,
+      0.0,
+      40.0
+    ],
+    "event_slots": [
+      0
+    ],
+    "baseline": {
+      "power_mw": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "allocations": [
+        {
+          "job": "j",
+          "slot": 0,
+          "mode": 0,
+          "pool_fraction": 1.0,
+          "work": 1.0
+        }
+      ],
+      "energy_mwh": 1.0,
+      "energy_bill": 0.0,
+      "service_cost": 0.0,
+      "participation_transfer": 0.0,
+      "forecast_resource_cost": 10.0,
+      "actual_event_reduction_mw": [
+        0.0
+      ],
+      "non_event_energy_change_mwh": 0.0
+    },
+    "price": {
+      "power_mw": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "allocations": [
+        {
+          "job": "j",
+          "slot": 1,
+          "mode": 0,
+          "pool_fraction": 1.0,
+          "work": 1.0
+        }
+      ],
+      "energy_mwh": 1.0,
+      "energy_bill": 0.0,
+      "service_cost": 0.0,
+      "participation_transfer": 0.0,
+      "forecast_resource_cost": 0.0,
+      "actual_event_reduction_mw": [
+        1.0
+      ],
+      "non_event_energy_change_mwh": 1.0
+    },
+    "event_candidates": [
+      {
+        "commitment_mw": 0.0,
+        "feasible": true,
+        "mode": "opt_out",
+        "follower_minimum_cost": 0.0,
+        "forecast_best": {
+          "power_mw": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "allocations": [
+            {
+              "job": "j",
+              "slot": 0,
+              "mode": 0,
+              "pool_fraction": 1.0,
+              "work": 1.0
+            }
+          ],
+          "energy_mwh": 1.0,
+          "energy_bill": 0.0,
+          "service_cost": 0.0,
+          "participation_transfer": 0.0,
+          "forecast_resource_cost": 10.0,
+          "actual_event_reduction_mw": [
+            0.0
+          ],
+          "non_event_energy_change_mwh": 0.0
+        },
+        "forecast_worst": {
+          "power_mw": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "allocations": [
+            {
+              "job": "j",
+              "slot": 0,
+              "mode": 0,
+              "pool_fraction": 1.0,
+              "work": 1.0
+            }
+          ],
+          "energy_mwh": 1.0,
+          "energy_bill": 0.0,
+          "service_cost": 0.0,
+          "participation_transfer": 0.0,
+          "forecast_resource_cost": 10.0,
+          "actual_event_reduction_mw": [
+            0.0
+          ],
+          "non_event_energy_change_mwh": 0.0
+        },
+        "worst_case_forecast_resource_saving": 0.0
+      },
+      {
+        "commitment_mw": 1.0,
+        "feasible": true,
+        "mode": "event_contract",
+        "follower_minimum_cost": 1.0,
+        "forecast_best": {
+          "power_mw": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "allocations": [
+            {
+              "job": "j",
+              "slot": 1,
+              "mode": 0,
+              "pool_fraction": 1.0,
+              "work": 1.0
+            }
+          ],
+          "energy_mwh": 1.0,
+          "energy_bill": 1.0,
+          "service_cost": 0.0,
+          "participation_transfer": 1.0,
+          "forecast_resource_cost": 0.0,
+          "actual_event_reduction_mw": [
+            1.0
+          ],
+          "non_event_energy_change_mwh": 1.0
+        },
+        "forecast_worst": {
+          "power_mw": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "allocations": [
+            {
+              "job": "j",
+              "slot": 2,
+              "mode": 0,
+              "pool_fraction": 1.0,
+              "work": 1.0
+            }
+          ],
+          "energy_mwh": 1.0,
+          "energy_bill": 1.0,
+          "service_cost": 0.0,
+          "participation_transfer": 1.0,
+          "forecast_resource_cost": 40.0,
+          "actual_event_reduction_mw": [
+            1.0
+          ],
+          "non_event_energy_change_mwh": 1.0
+        },
+        "worst_case_forecast_resource_saving": -30.0
+      }
+    ],
+    "selected_contract_index": 0,
+    "selected_commitment_mw": 0.0,
+    "follower_cost_tolerance": 0.0,
+    "selection_value_tolerance": 1e-07,
+    "recovery_energy_budget_mwh": null,
+    "scope": "FINITE_OFFER_SET_FLUID_MODEL_MATHEMATICAL_BENCHMARK",
+    "assumptions": [
+      "Exogenous linear forecast resource costs, no realized cost in planning",
+      "Complete known job set, preemptive time sharing, no task dropping",
+      "All physical caps and service requirements common across mechanisms",
+      "Contract tie bounds within explicit bill tolerance; pessimistic forecast endpoint retained",
+      "Participation transfer is an accounting floor for the prescribed response, not an incentive-compatible payment rule",
+      "Recovery cap is a contract term, not a change in the shared service requirement",
+      "No provincial, reliability, market-equilibrium or deployability result"
+    ]
+  },
+  "recovery_bound": {
+    "feasible": true,
+    "horizon": 3,
+    "dt": 1.0,
+    "tariff": [
+      0.0,
+      1.0,
+      2.0
+    ],
+    "forecast_cost": [
+      10.0,
+      0.0,
+      40.0
+    ],
+    "event_slots": [
+      0
+    ],
+    "baseline": {
+      "power_mw": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "allocations": [
+        {
+          "job": "j",
+          "slot": 0,
+          "mode": 0,
+          "pool_fraction": 1.0,
+          "work": 1.0
+        }
+      ],
+      "energy_mwh": 1.0,
+      "energy_bill": 0.0,
+      "service_cost": 0.0,
+      "participation_transfer": 0.0,
+      "forecast_resource_cost": 10.0,
+      "actual_event_reduction_mw": [
+        0.0
+      ],
+      "non_event_energy_change_mwh": 0.0
+    },
+    "price": {
+      "power_mw": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "allocations": [
+        {
+          "job": "j",
+          "slot": 0,
+          "mode": 0,
+          "pool_fraction": 0.5,
+          "work": 0.5
+        },
+        {
+          "job": "j",
+          "slot": 1,
+          "mode": 0,
+          "pool_fraction": 0.5,
+          "work": 0.5
+        }
+      ],
+      "energy_mwh": 1.0,
+      "energy_bill": 5.0,
+      "service_cost": 0.0,
+      "participation_transfer": 5.0,
+      "forecast_resource_cost": 5.0,
+      "actual_event_reduction_mw": [
+        0.5
+      ],
+      "non_event_energy_change_mwh": 0.5
+    },
+    "event_candidates": [
+      {
+        "commitment_mw": 0.0,
+        "feasible": true,
+        "mode": "opt_out",
+        "follower_minimum_cost": 0.0,
+        "forecast_best": {
+          "power_mw": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "allocations": [
+            {
+              "job": "j",
+              "slot": 0,
+              "mode": 0,
+              "pool_fraction": 1.0,
+              "work": 1.0
+            }
+          ],
+          "energy_mwh": 1.0,
+          "energy_bill": 0.0,
+          "service_cost": 0.0,
+          "participation_transfer": 0.0,
+          "forecast_resource_cost": 10.0,
+          "actual_event_reduction_mw": [
+            0.0
+          ],
+          "non_event_energy_change_mwh": 0.0
+        },
+        "forecast_worst": {
+          "power_mw": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "allocations": [
+            {
+              "job": "j",
+              "slot": 0,
+              "mode": 0,
+              "pool_fraction": 1.0,
+              "work": 1.0
+            }
+          ],
+          "energy_mwh": 1.0,
+          "energy_bill": 0.0,
+          "service_cost": 0.0,
+          "participation_transfer": 0.0,
+          "forecast_resource_cost": 10.0,
+          "actual_event_reduction_mw": [
+            0.0
+          ],
+          "non_event_energy_change_mwh": 0.0
+        },
+        "worst_case_forecast_resource_saving": 0.0
+      },
+      {
+        "commitment_mw": 0.5,
+        "feasible": false,
+        "reason": "commitment_or_recovery_infeasible"
+      },
+      {
+        "commitment_mw": 1.0,
+        "feasible": false,
+        "reason": "commitment_or_recovery_infeasible"
+      }
+    ],
+    "selected_contract_index": 0,
+    "selected_commitment_mw": 0.0,
+    "follower_cost_tolerance": 0.0,
+    "selection_value_tolerance": 1e-07,
+    "recovery_energy_budget_mwh": 0,
+    "scope": "FINITE_OFFER_SET_FLUID_MODEL_MATHEMATICAL_BENCHMARK",
+    "assumptions": [
+      "Exogenous linear forecast resource costs, no realized cost in planning",
+      "Complete known job set, preemptive time sharing, no task dropping",
+      "All physical caps and service requirements common across mechanisms",
+      "Contract tie bounds within explicit bill tolerance; pessimistic forecast endpoint retained",
+      "Participation transfer is an accounting floor for the prescribed response, not an incentive-compatible payment rule",
+      "Recovery cap is a contract term, not a change in the shared service requirement",
+      "No provincial, reliability, market-equilibrium or deployability result"
+    ]
+  },
+  "half_hour_idle_service": {
+    "feasible": true,
+    "horizon": 3,
+    "dt": 0.5,
+    "tariff": [
+      -2.0,
+      1.0,
+      3.0
+    ],
+    "forecast_cost": [
+      8.0,
+      -1.0,
+      10.0
+    ],
+    "event_slots": [
+      0
+    ],
+    "baseline": {
+      "power_mw": [
+        1.2,
+        0.2,
+        0.2
+      ],
+      "allocations": [
+        {
+          "job": "j",
+          "slot": 0,
+          "mode": 0,
+          "pool_fraction": 1.0,
+          "work": 0.5
+        }
+      ],
+      "energy_mwh": 0.7999999999999999,
+      "energy_bill": -0.7999999999999998,
+      "service_cost": 0.0,
+      "participation_transfer": 0.0,
+      "forecast_resource_cost": 5.7,
+      "actual_event_reduction_mw": [
+        0.0
+      ],
+      "non_event_energy_change_mwh": 0.0
+    },
+    "price": {
+      "power_mw": [
+        0.2,
+        1.2,
+        0.2
+      ],
+      "allocations": [
+        {
+          "job": "j",
+          "slot": 1,
+          "mode": 0,
+          "pool_fraction": 1.0,
+          "work": 0.5
+        }
+      ],
+      "energy_mwh": 0.7999999999999999,
+      "energy_bill": 1.2000000000000002,
+      "service_cost": 0.2,
+      "participation_transfer": 2.2,
+      "forecast_resource_cost": 1.4000000000000001,
+      "actual_event_reduction_mw": [
+        1.0
+      ],
+      "non_event_energy_change_mwh": 0.5
+    },
+    "event_candidates": [
+      {
+        "commitment_mw": 0.0,
+        "feasible": true,
+        "mode": "opt_out",
+        "follower_minimum_cost": -0.7999999999999998,
+        "forecast_best": {
+          "power_mw": [
+            1.2,
+            0.2,
+            0.2
+          ],
+          "allocations": [
+            {
+              "job": "j",
+              "slot": 0,
+              "mode": 0,
+              "pool_fraction": 1.0,
+              "work": 0.5
+            }
+          ],
+          "energy_mwh": 0.7999999999999999,
+          "energy_bill": -0.7999999999999998,
+          "service_cost": 0.0,
+          "participation_transfer": 0.0,
+          "forecast_resource_cost": 5.7,
+          "actual_event_reduction_mw": [
+            0.0
+          ],
+          "non_event_energy_change_mwh": 0.0
+        },
+        "forecast_worst": {
+          "power_mw": [
+            1.2,
+            0.2,
+            0.2
+          ],
+          "allocations": [
+            {
+              "job": "j",
+              "slot": 0,
+              "mode": 0,
+              "pool_fraction": 1.0,
+              "work": 0.5
+            }
+          ],
+          "energy_mwh": 0.7999999999999999,
+          "energy_bill": -0.7999999999999998,
+          "service_cost": 0.0,
+          "participation_transfer": 0.0,
+          "forecast_resource_cost": 5.7,
+          "actual_event_reduction_mw": [
+            0.0
+          ],
+          "non_event_energy_change_mwh": 0.0
+        },
+        "worst_case_forecast_resource_saving": 0.0
+      },
+      {
+        "commitment_mw": 0.5,
+        "feasible": true,
+        "mode": "event_contract",
+        "follower_minimum_cost": 0.05000000000000007,
+        "forecast_best": {
+          "power_mw": [
+            0.7,
+            0.7,
+            0.2
+          ],
+          "allocations": [
+            {
+              "job": "j",
+              "slot": 0,
+              "mode": 0,
+              "pool_fraction": 0.4999999999999999,
+              "work": 0.24999999999999994
+            },
+            {
+              "job": "j",
+              "slot": 1,
+              "mode": 0,
+              "pool_fraction": 0.5,
+              "work": 0.25
+            }
+          ],
+          "energy_mwh": 0.7999999999999999,
+          "energy_bill": -0.04999999999999993,
+          "service_cost": 0.1,
+          "participation_transfer": 0.8499999999999999,
+          "forecast_resource_cost": 3.55,
+          "actual_event_reduction_mw": [
+            0.5
+          ],
+          "non_event_energy_change_mwh": 0.24999999999999997
+        },
+        "forecast_worst": {
+          "power_mw": [
+            0.7,
+            0.7,
+            0.2
+          ],
+          "allocations": [
+            {
+              "job": "j",
+              "slot": 0,
+              "mode": 0,
+              "pool_fraction": 0.49999999999999994,
+              "work": 0.24999999999999997
+            },
+            {
+              "job": "j",
+              "slot": 1,
+              "mode": 0,
+              "pool_fraction": 0.5,
+              "work": 0.25
+            }
+          ],
+          "energy_mwh": 0.7999999999999999,
+          "energy_bill": -0.04999999999999993,
+          "service_cost": 0.1,
+          "participation_transfer": 0.8499999999999999,
+          "forecast_resource_cost": 3.55,
+          "actual_event_reduction_mw": [
+            0.5
+          ],
+          "non_event_energy_change_mwh": 0.24999999999999997
+        },
+        "worst_case_forecast_resource_saving": 2.1500000000000004
+      },
+      {
+        "commitment_mw": 1.0,
+        "feasible": true,
+        "mode": "event_contract",
+        "follower_minimum_cost": 0.8999999999999999,
+        "forecast_best": {
+          "power_mw": [
+            0.2,
+            1.2,
+            0.2
+          ],
+          "allocations": [
+            {
+              "job": "j",
+              "slot": 1,
+              "mode": 0,
+              "pool_fraction": 1.0,
+              "work": 0.5
+            }
+          ],
+          "energy_mwh": 0.7999999999999999,
+          "energy_bill": 0.7,
+          "service_cost": 0.2,
+          "participation_transfer": 1.6999999999999997,
+          "forecast_resource_cost": 1.4000000000000001,
+          "actual_event_reduction_mw": [
+            1.0
+          ],
+          "non_event_energy_change_mwh": 0.5
+        },
+        "forecast_worst": {
+          "power_mw": [
+            0.2,
+            1.2,
+            0.2
+          ],
+          "allocations": [
+            {
+              "job": "j",
+              "slot": 1,
+              "mode": 0,
+              "pool_fraction": 1.0,
+              "work": 0.5
+            }
+          ],
+          "energy_mwh": 0.7999999999999999,
+          "energy_bill": 0.7,
+          "service_cost": 0.2,
+          "participation_transfer": 1.6999999999999997,
+          "forecast_resource_cost": 1.4000000000000001,
+          "actual_event_reduction_mw": [
+            1.0
+          ],
+          "non_event_energy_change_mwh": 0.5
+        },
+        "worst_case_forecast_resource_saving": 4.3
+      }
+    ],
+    "selected_contract_index": 2,
+    "selected_commitment_mw": 1.0,
+    "follower_cost_tolerance": 0.0,
+    "selection_value_tolerance": 1e-07,
+    "recovery_energy_budget_mwh": null,
+    "scope": "FINITE_OFFER_SET_FLUID_MODEL_MATHEMATICAL_BENCHMARK",
+    "assumptions": [
+      "Exogenous linear forecast resource costs, no realized cost in planning",
+      "Complete known job set, preemptive time sharing, no task dropping",
+      "All physical caps and service requirements common across mechanisms",
+      "Contract tie bounds within explicit bill tolerance; pessimistic forecast endpoint retained",
+      "Participation transfer is an accounting floor for the prescribed response, not an incentive-compatible payment rule",
+      "Recovery cap is a contract term, not a change in the shared service requirement",
+      "No provincial, reliability, market-equilibrium or deployability result"
+    ]
+  }
+}

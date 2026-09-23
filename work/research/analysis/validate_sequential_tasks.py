@@ -1,12 +1,15 @@
 """Independent analytic/matching checks and explicitly assumed task scenarios."""
 from pathlib import Path
-import sys, json, itertools, hashlib
+import sys, json, itertools, hashlib, argparse
 import numpy as np
 import pandas as pd
 ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT/'work/research/models'))
 from sequential_tasks import Job, schedule, baseline_asap
-OUT=ROOT/'outputs/research/tables'
+parser=argparse.ArgumentParser()
+parser.add_argument('--output-dir',type=Path,default=ROOT/'outputs/research/tables')
+OUT=parser.parse_args().output_dir
+OUT.mkdir(parents=True,exist_ok=True)
 
 checks=[]
 # Analytic linear-power two-slot case: 1.5 work => at least .5 in event slot.
@@ -57,7 +60,7 @@ for k in range(120):
                          'enumerated_feasible':bool(oracle),'solver_feasible':result['feasible']})
 checks.append('120_independent_exhaustive_assignment_oracles')
 
-data=pd.read_csv(OUT/'dvfs_measured_and_derived.csv');rows=[];examples=[]
+data=pd.read_csv(ROOT/'outputs/research/tables/dvfs_measured_and_derived.csv');rows=[];examples=[]
 for workload,g in data.groupby('Workload',sort=False):
     q=g['normalized throughput'].to_numpy();p=g['total GPU power'].to_numpy()
     for utilization in [.6,.75,.9,.95]:

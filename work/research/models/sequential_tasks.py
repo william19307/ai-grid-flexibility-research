@@ -23,12 +23,16 @@ class Job:
 def schedule(jobs: Sequence[Job], q, power, horizon: int, idle_power: float,
              dt: float = 1., prices=None, power_caps=None,
              event_slots=None, baseline_power=None, relax_windows=False,
-             service_cost_per_work=None, energy_limit=None):
+             service_cost_per_work=None, energy_limit=None,
+             energy_window_limits=(), reference_objective_ceiling=None):
     """Minimize energy cost, or maximize minimum per-slot event reduction.
 
 No work dropping or spilling outside horizon. Infeasibility is returned, never
 silently converted to load shedding. relax_windows is an explicit upper-bound
 comparison in which all releases/deadlines become 0/horizon.
+energy_window_limits contains (unique slot indices, maximum MWh) pairs.
+reference_objective_ceiling constrains another explicitly specified linear
+bill-plus-service objective while the current objective breaks its ties.
     """
     q, power = np.asarray(q, float), np.asarray(power, float)
     if horizon <= 0 or dt <= 0 or q.ndim != 1 or power.shape != q.shape:
@@ -49,6 +53,23 @@ comparison in which all releases/deadlines become 0/horizon.
     service_cost = np.zeros((len(jobs),horizon)) if service_cost_per_work is None else np.asarray(service_cost_per_work,float)
     if service_cost.shape != (len(jobs),horizon) or not np.isfinite(service_cost).all():
         raise ValueError('Service cost must be a finite job by time array, in currency per work unit')
+    windows=[]
+    for slots,limit in energy_window_limits:
+        slots=list(slots)
+        if (not slots or any(not isinstance(t,(int,np.integer)) or isinstance(t,(bool,np.bool_)) or not 0<=t<horizon for t in slots)
+                or len(set(slots))!=len(slots) or not np.isfinite(limit) or limit<0):
+            raise ValueError('Invalid energy-window slots or limit')
+        windows.append((slots,float(limit)))
+    reference=None
+    if reference_objective_ceiling is not None:
+        if set(reference_objective_ceiling)!={'prices','service_cost_per_work','maximum'}:
+            raise ValueError('Reference objective requires prices, service costs and maximum')
+        rp=np.asarray(reference_objective_ceiling['prices'],float)
+        rs=np.asarray(reference_objective_ceiling['service_cost_per_work'],float)
+        maximum=reference_objective_ceiling['maximum']
+        if rp.shape!=(horizon,) or rs.shape!=(len(jobs),horizon) or not np.isfinite(rp).all() or not np.isfinite(rs).all() or not np.isfinite(maximum):
+            raise ValueError('Invalid reference objective')
+        reference=(rp,rs,float(maximum))
     event = [] if event_slots is None else sorted(set(event_slots))
     if event and (min(event) < 0 or max(event) >= horizon):
         raise ValueError('Event outside horizon')
@@ -76,6 +97,15 @@ comparison in which all releases/deadlines become 0/horizon.
         energy_row=csr_matrix((power[mi]-idle_power)*dt).reshape((1,n))
         au=vstack([au,energy_row],format='csr')
         bu=np.r_[bu,float(energy_limit)-horizon*idle_power*dt]
+    for slots,limit in windows:
+        row=csr_matrix(np.asarray(pm[slots].sum(axis=0))*dt)
+        au=vstack([au,row],format='csr')
+        bu=np.r_[bu,limit-len(slots)*idle_power*dt]
+    if reference is not None:
+        rp,rs,maximum=reference
+        row=csr_matrix(rp[ti]*(power[mi]-idle_power)*dt+rs[ji,ti]*q[mi]*dt).reshape((1,n))
+        au=vstack([au,row],format='csr')
+        bu=np.r_[bu,maximum-idle_power*dt*rp.sum()]
     c = prices[ti]*(power[mi]-idle_power)*dt + service_cost[ji,ti]*q[mi]*dt
     bounds = [(0,1)]*n
     if event:
@@ -102,6 +132,10 @@ comparison in which all releases/deadlines become 0/horizon.
     work_error = float(np.max(np.abs(completed-np.array([j.work for j in jobs]))))
     assert work_error < 1e-7 and capacity_violation < 1e-7
     assert not finite.size or np.max(slotpower[finite]-caps[finite]) < 1e-7
+    assert all(slotpower[slots].sum()*dt<=limit+1e-7 for slots,limit in windows)
+    if reference is not None:
+        rp,rs,maximum=reference
+        assert rp@slotpower*dt+np.sum(rs[ji,ti]*q[mi]*dt*y)<=maximum+1e-7
     if not relax_windows:
         lookup = {j.name:j for j in jobs}
         assert all(lookup[a['job']].release <= a['slot'] < lookup[a['job']].deadline for a in allocations)

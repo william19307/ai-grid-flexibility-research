@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "comparisons": [
+    {
+      "file": "sequential_task_benchmark_ASSUMED_arrivals.csv",
+      "rows": 256,
+      "exact_dataframe_match": true,
+      "old_sha256": "dd2fb74864c072d44e37110a4f196222d6628c911ba64887af0fe1337ec9dd4e",
+      "new_sha256": "dd2fb74864c072d44e37110a4f196222d6628c911ba64887af0fe1337ec9dd4e"
+    },
+    {
+      "file": "response_cost_scenarios_NOT_market_estimates.csv",
+      "rows": 360,
+      "exact_dataframe_match": true,
+      "old_sha256": "db6e3751f0636b195015fbc09b75a6cad01ad24ae45859b7ada634ad12342d59",
+      "new_sha256": "db6e3751f0636b195015fbc09b75a6cad01ad24ae45859b7ada634ad12342d59"
+    }
+  ],
+  "note": "No optional extension used in these regressions; archived input/output files were not overwritten."
+}

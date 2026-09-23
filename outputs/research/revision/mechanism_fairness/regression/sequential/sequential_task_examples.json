@@ -1,0 +1,2201 @@
+[
+  {
+    "case": {
+      "workload": "ft_llama_8b_dolly",
+      "utilization_assumption": 0.9,
+      "deadline_window_slots_assumption": 1,
+      "idle_power_fraction_assumption": 0.2,
+      "horizon_hours": 12,
+      "event_start_hour": 4,
+      "event_hours": 3,
+      "baseline_event_power_W": 15263.814069743508,
+      "sequential_min_slot_reduction_W": 3646.1744057032843,
+      "relaxed_min_slot_reduction_W": 7539.791463611119,
+      "relaxation_gap_W": 3893.617057907835,
+      "sequential_energy_Wh_at_selected_max_response_solution": 159437.5158022,
+      "maximum_work_error": 1.1102230246251565e-16,
+      "is_empirical_workload_trace": false,
+      "is_grid_capacity_result": false
+    },
+    "jobs": [
+      {
+        "name": "cohort_00",
+        "release": 0,
+        "deadline": 1,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_01",
+        "release": 1,
+        "deadline": 2,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_02",
+        "release": 2,
+        "deadline": 3,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_03",
+        "release": 3,
+        "deadline": 4,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_04",
+        "release": 4,
+        "deadline": 5,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_05",
+        "release": 5,
+        "deadline": 6,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_06",
+        "release": 6,
+        "deadline": 7,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_07",
+        "release": 7,
+        "deadline": 8,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_08",
+        "release": 8,
+        "deadline": 9,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_09",
+        "release": 9,
+        "deadline": 10,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_10",
+        "release": 10,
+        "deadline": 11,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_11",
+        "release": 11,
+        "deadline": 12,
+        "work": 0.9
+      }
+    ],
+    "baseline_power": [
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508
+    ],
+    "sequential": {
+      "feasible": true,
+      "relaxed_windows": false,
+      "slot_average_power": [
+        13277.50450697999,
+        15263.814069743508,
+        14401.02954898194,
+        13277.50450697999,
+        11617.639664040222,
+        11617.639664040224,
+        11617.639664040224,
+        14401.02954898194,
+        12620.302991513168,
+        14401.02954898194,
+        11678.568018173406,
+        15263.814069743508
+      ],
+      "slot_completed_work": [
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.8999999999999999,
+        0.9,
+        0.9,
+        0.9
+      ],
+      "completed_work_by_job": {
+        "cohort_00": 0.9,
+        "cohort_01": 0.9,
+        "cohort_02": 0.9,
+        "cohort_03": 0.9,
+        "cohort_04": 0.9,
+        "cohort_05": 0.9,
+        "cohort_06": 0.9,
+        "cohort_07": 0.9,
+        "cohort_08": 0.8999999999999999,
+        "cohort_09": 0.9,
+        "cohort_10": 0.9,
+        "cohort_11": 0.9
+      },
+      "energy": 159437.5158022,
+      "energy_cost": 159437.51580220007,
+      "service_cost": 0.0,
+      "objective_cost": 159437.51580220007,
+      "power_cap_cost_marginals": null,
+      "minimum_event_slot_reduction": 3646.1744057032843,
+      "maximum_work_error": 1.1102230246251565e-16,
+      "maximum_capacity_violation": 0.0,
+      "allocations": [
+        {
+          "job": "cohort_00",
+          "slot": 0,
+          "mode": 3,
+          "pool_fraction": 0.9466666666666665,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_01",
+          "slot": 1,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_02",
+          "slot": 2,
+          "mode": 4,
+          "pool_fraction": 0.918103448275862,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_03",
+          "slot": 3,
+          "mode": 3,
+          "pool_fraction": 0.9466666666666665,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_04",
+          "slot": 4,
+          "mode": 1,
+          "pool_fraction": 0.043478260869565244,
+          "work": 0.03508879363135336
+        },
+        {
+          "job": "cohort_04",
+          "slot": 4,
+          "mode": 2,
+          "pool_fraction": 0.956521739130436,
+          "work": 0.8649112063686479
+        },
+        {
+          "job": "cohort_05",
+          "slot": 5,
+          "mode": 1,
+          "pool_fraction": 0.04347826086956597,
+          "work": 0.03508879363135395
+        },
+        {
+          "job": "cohort_05",
+          "slot": 5,
+          "mode": 2,
+          "pool_fraction": 0.9565217391304339,
+          "work": 0.864911206368646
+        },
+        {
+          "job": "cohort_06",
+          "slot": 6,
+          "mode": 1,
+          "pool_fraction": 0.04347826086956631,
+          "work": 0.035088793631354226
+        },
+        {
+          "job": "cohort_06",
+          "slot": 6,
+          "mode": 2,
+          "pool_fraction": 0.9565217391304337,
+          "work": 0.8649112063686458
+        },
+        {
+          "job": "cohort_07",
+          "slot": 7,
+          "mode": 4,
+          "pool_fraction": 0.918103448275862,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_08",
+          "slot": 8,
+          "mode": 1,
+          "pool_fraction": 0.4634146341463419,
+          "work": 0.37399519065613224
+        },
+        {
+          "job": "cohort_08",
+          "slot": 8,
+          "mode": 4,
+          "pool_fraction": 0.5365853658536581,
+          "work": 0.5260048093438677
+        },
+        {
+          "job": "cohort_09",
+          "slot": 9,
+          "mode": 4,
+          "pool_fraction": 0.918103448275862,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_10",
+          "slot": 10,
+          "mode": 2,
+          "pool_fraction": 0.9953271028037382,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_11",
+          "slot": 11,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        }
+      ]
+    },
+    "relaxed": {
+      "feasible": true,
+      "relaxed_windows": true,
+      "slot_average_power": [
+        16591.10224972137,
+        16591.102249721203,
+        16591.10224972136,
+        16591.102249721203,
+        7724.022606132383,
+        7724.02260613239,
+        7724.02260613239,
+        16591.1022497212,
+        16591.1022497212,
+        16591.102249721203,
+        16591.102249721203,
+        16591.102249721203
+      ],
+      "slot_completed_work": [
+        1.0000000000000127,
+        1.0,
+        1.0000000000000118,
+        1.0,
+        0.599999999999999,
+        0.6,
+        0.5999999999999999,
+        0.9999999999999996,
+        0.9999999999999998,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "completed_work_by_job": {
+        "cohort_00": 0.9,
+        "cohort_01": 0.9,
+        "cohort_02": 0.9000000000000001,
+        "cohort_03": 0.8999999999999999,
+        "cohort_04": 0.900000000000012,
+        "cohort_05": 0.9,
+        "cohort_06": 0.9,
+        "cohort_07": 0.8999999999999997,
+        "cohort_08": 0.8999999999999939,
+        "cohort_09": 0.9000000000000168,
+        "cohort_10": 0.9,
+        "cohort_11": 0.9000000000000001
+      },
+      "energy": 172491.98806588832,
+      "energy_cost": 172491.98806588832,
+      "service_cost": 0.0,
+      "objective_cost": 172491.98806588832,
+      "power_cap_cost_marginals": null,
+      "minimum_event_slot_reduction": 7539.791463611119,
+      "maximum_work_error": 1.6764367671839864e-14,
+      "maximum_capacity_violation": 1.2656542480726785e-14,
+      "allocations": [
+        {
+          "job": "cohort_00",
+          "slot": 0,
+          "mode": 5,
+          "pool_fraction": 0.8119297876813238,
+          "work": 0.8119297876813238
+        },
+        {
+          "job": "cohort_00",
+          "slot": 1,
+          "mode": 5,
+          "pool_fraction": 0.08807021231867618,
+          "work": 0.08807021231867618
+        },
+        {
+          "job": "cohort_01",
+          "slot": 7,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_02",
+          "slot": 1,
+          "mode": 5,
+          "pool_fraction": 0.011929787681323745,
+          "work": 0.011929787681323745
+        },
+        {
+          "job": "cohort_02",
+          "slot": 10,
+          "mode": 5,
+          "pool_fraction": 0.8880702123186763,
+          "work": 0.8880702123186763
+        },
+        {
+          "job": "cohort_03",
+          "slot": 2,
+          "mode": 5,
+          "pool_fraction": 0.3880702123186884,
+          "work": 0.3880702123186884
+        },
+        {
+          "job": "cohort_03",
+          "slot": 6,
+          "mode": 1,
+          "pool_fraction": 0.6343283582089551,
+          "work": 0.5119297876813116
+        },
+        {
+          "job": "cohort_04",
+          "slot": 0,
+          "mode": 5,
+          "pool_fraction": 0.18807021231868873,
+          "work": 0.18807021231868873
+        },
+        {
+          "job": "cohort_04",
+          "slot": 2,
+          "mode": 5,
+          "pool_fraction": 0.6119297876813233,
+          "work": 0.6119297876813233
+        },
+        {
+          "job": "cohort_04",
+          "slot": 9,
+          "mode": 5,
+          "pool_fraction": 0.09999999999999998,
+          "work": 0.09999999999999998
+        },
+        {
+          "job": "cohort_05",
+          "slot": 5,
+          "mode": 1,
+          "pool_fraction": 0.13869135995414955,
+          "work": 0.11192978768130661
+        },
+        {
+          "job": "cohort_05",
+          "slot": 6,
+          "mode": 0,
+          "pool_fraction": 0.3656716417910451,
+          "work": 0.08807021231868832
+        },
+        {
+          "job": "cohort_05",
+          "slot": 11,
+          "mode": 5,
+          "pool_fraction": 0.7000000000000051,
+          "work": 0.7000000000000051
+        },
+        {
+          "job": "cohort_06",
+          "slot": 5,
+          "mode": 1,
+          "pool_fraction": 0.49563699825480556,
+          "work": 0.4000000000000051
+        },
+        {
+          "job": "cohort_06",
+          "slot": 8,
+          "mode": 5,
+          "pool_fraction": 0.49999999999999495,
+          "work": 0.49999999999999495
+        },
+        {
+          "job": "cohort_07",
+          "slot": 3,
+          "mode": 5,
+          "pool_fraction": 0.6999999999999876,
+          "work": 0.6999999999999876
+        },
+        {
+          "job": "cohort_07",
+          "slot": 4,
+          "mode": 0,
+          "pool_fraction": 0.36567164179104494,
+          "work": 0.08807021231868828
+        },
+        {
+          "job": "cohort_07",
+          "slot": 10,
+          "mode": 5,
+          "pool_fraction": 0.11192978768132372,
+          "work": 0.11192978768132372
+        },
+        {
+          "job": "cohort_08",
+          "slot": 4,
+          "mode": 1,
+          "pool_fraction": 0.6343283582089538,
+          "work": 0.5119297876813107
+        },
+        {
+          "job": "cohort_08",
+          "slot": 5,
+          "mode": 0,
+          "pool_fraction": 0.36567164179104483,
+          "work": 0.08807021231868825
+        },
+        {
+          "job": "cohort_08",
+          "slot": 11,
+          "mode": 5,
+          "pool_fraction": 0.299999999999995,
+          "work": 0.299999999999995
+        },
+        {
+          "job": "cohort_09",
+          "slot": 3,
+          "mode": 5,
+          "pool_fraction": 0.30000000000001237,
+          "work": 0.30000000000001237
+        },
+        {
+          "job": "cohort_09",
+          "slot": 7,
+          "mode": 5,
+          "pool_fraction": 0.09999999999999958,
+          "work": 0.09999999999999958
+        },
+        {
+          "job": "cohort_09",
+          "slot": 8,
+          "mode": 5,
+          "pool_fraction": 0.5000000000000049,
+          "work": 0.5000000000000049
+        },
+        {
+          "job": "cohort_10",
+          "slot": 9,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_11",
+          "slot": 1,
+          "mode": 5,
+          "pool_fraction": 0.9000000000000001,
+          "work": 0.9000000000000001
+        }
+      ]
+    }
+  },
+  {
+    "case": {
+      "workload": "ft_llama_8b_dolly",
+      "utilization_assumption": 0.9,
+      "deadline_window_slots_assumption": 2,
+      "idle_power_fraction_assumption": 0.2,
+      "horizon_hours": 12,
+      "event_start_hour": 4,
+      "event_hours": 3,
+      "baseline_event_power_W": 15263.814069743508,
+      "sequential_min_slot_reduction_W": 6451.65081549247,
+      "relaxed_min_slot_reduction_W": 7539.791463611119,
+      "relaxation_gap_W": 1088.1406481186486,
+      "sequential_energy_Wh_at_selected_max_response_solution": 164018.6355925541,
+      "maximum_work_error": 1.6653345369377348e-15,
+      "is_empirical_workload_trace": false,
+      "is_grid_capacity_result": false
+    },
+    "jobs": [
+      {
+        "name": "cohort_00",
+        "release": 0,
+        "deadline": 2,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_01",
+        "release": 1,
+        "deadline": 3,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_02",
+        "release": 2,
+        "deadline": 4,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_03",
+        "release": 3,
+        "deadline": 5,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_04",
+        "release": 4,
+        "deadline": 6,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_05",
+        "release": 5,
+        "deadline": 7,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_06",
+        "release": 6,
+        "deadline": 8,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_07",
+        "release": 7,
+        "deadline": 9,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_08",
+        "release": 8,
+        "deadline": 10,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_09",
+        "release": 9,
+        "deadline": 11,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_10",
+        "release": 10,
+        "deadline": 12,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_11",
+        "release": 11,
+        "deadline": 12,
+        "work": 0.9
+      }
+    ],
+    "baseline_power": [
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508
+    ],
+    "sequential": {
+      "feasible": true,
+      "relaxed_windows": false,
+      "slot_average_power": [
+        13226.81445605567,
+        11734.976506413868,
+        15263.814069743508,
+        14401.02954898194,
+        8812.163254251038,
+        8812.163254251038,
+        8812.163254251038,
+        16591.102249721207,
+        16591.102249721207,
+        16591.102249721174,
+        16591.10224972121,
+        16591.102249721203
+      ],
+      "slot_completed_work": [
+        0.8954192444385941,
+        0.9045807555614059,
+        0.9,
+        0.9,
+        0.7333333333333335,
+        0.7333333333333333,
+        0.7333333333333334,
+        1.0000000000000002,
+        1.0000000000000002,
+        0.9999999999999978,
+        1.0000000000000004,
+        1.0
+      ],
+      "completed_work_by_job": {
+        "cohort_00": 0.9,
+        "cohort_01": 0.9,
+        "cohort_02": 0.9,
+        "cohort_03": 0.9,
+        "cohort_04": 0.9,
+        "cohort_05": 0.8999999999999999,
+        "cohort_06": 0.9000000000000001,
+        "cohort_07": 0.9000000000000004,
+        "cohort_08": 0.9000000000000001,
+        "cohort_09": 0.8999999999999984,
+        "cohort_10": 0.9000000000000001,
+        "cohort_11": 0.9
+      },
+      "energy": 164018.6355925541,
+      "energy_cost": 164018.6355925541,
+      "service_cost": 0.0,
+      "objective_cost": 164018.6355925541,
+      "power_cap_cost_marginals": null,
+      "minimum_event_slot_reduction": 6451.65081549247,
+      "maximum_work_error": 1.6653345369377348e-15,
+      "maximum_capacity_violation": 4.440892098500626e-16,
+      "allocations": [
+        {
+          "job": "cohort_00",
+          "slot": 0,
+          "mode": 3,
+          "pool_fraction": 0.941848390446521,
+          "work": 0.8954192444385941
+        },
+        {
+          "job": "cohort_00",
+          "slot": 1,
+          "mode": 4,
+          "pool_fraction": 0.004672897196261792,
+          "work": 0.004580755561405927
+        },
+        {
+          "job": "cohort_01",
+          "slot": 1,
+          "mode": 2,
+          "pool_fraction": 0.9953271028037382,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_02",
+          "slot": 2,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_03",
+          "slot": 3,
+          "mode": 4,
+          "pool_fraction": 0.918103448275862,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_04",
+          "slot": 4,
+          "mode": 0,
+          "pool_fraction": 0.13018242122719692,
+          "work": 0.03135379440824038
+        },
+        {
+          "job": "cohort_04",
+          "slot": 4,
+          "mode": 1,
+          "pool_fraction": 0.869817578772803,
+          "work": 0.7019795389250931
+        },
+        {
+          "job": "cohort_04",
+          "slot": 5,
+          "mode": 1,
+          "pool_fraction": 0.20651541593949949,
+          "work": 0.1666666666666665
+        },
+        {
+          "job": "cohort_05",
+          "slot": 5,
+          "mode": 0,
+          "pool_fraction": 0.13018242122719714,
+          "work": 0.03135379440824044
+        },
+        {
+          "job": "cohort_05",
+          "slot": 5,
+          "mode": 1,
+          "pool_fraction": 0.6633021628333032,
+          "work": 0.5353128722584264
+        },
+        {
+          "job": "cohort_05",
+          "slot": 6,
+          "mode": 0,
+          "pool_fraction": 0.1301824212271973,
+          "work": 0.031353794408240473
+        },
+        {
+          "job": "cohort_05",
+          "slot": 6,
+          "mode": 1,
+          "pool_fraction": 0.37418058051800307,
+          "work": 0.3019795389250926
+        },
+        {
+          "job": "cohort_06",
+          "slot": 6,
+          "mode": 1,
+          "pool_fraction": 0.4956369982547997,
+          "work": 0.4000000000000003
+        },
+        {
+          "job": "cohort_06",
+          "slot": 7,
+          "mode": 5,
+          "pool_fraction": 0.4999999999999998,
+          "work": 0.4999999999999998
+        },
+        {
+          "job": "cohort_07",
+          "slot": 7,
+          "mode": 5,
+          "pool_fraction": 0.5000000000000004,
+          "work": 0.5000000000000004
+        },
+        {
+          "job": "cohort_07",
+          "slot": 8,
+          "mode": 5,
+          "pool_fraction": 0.3999999999999999,
+          "work": 0.3999999999999999
+        },
+        {
+          "job": "cohort_08",
+          "slot": 8,
+          "mode": 5,
+          "pool_fraction": 0.6000000000000003,
+          "work": 0.6000000000000003
+        },
+        {
+          "job": "cohort_08",
+          "slot": 9,
+          "mode": 5,
+          "pool_fraction": 0.2999999999999998,
+          "work": 0.2999999999999998
+        },
+        {
+          "job": "cohort_09",
+          "slot": 9,
+          "mode": 5,
+          "pool_fraction": 0.699999999999998,
+          "work": 0.699999999999998
+        },
+        {
+          "job": "cohort_09",
+          "slot": 10,
+          "mode": 5,
+          "pool_fraction": 0.20000000000000037,
+          "work": 0.20000000000000037
+        },
+        {
+          "job": "cohort_10",
+          "slot": 10,
+          "mode": 5,
+          "pool_fraction": 0.8000000000000002,
+          "work": 0.8000000000000002
+        },
+        {
+          "job": "cohort_10",
+          "slot": 11,
+          "mode": 5,
+          "pool_fraction": 0.09999999999999999,
+          "work": 0.09999999999999999
+        },
+        {
+          "job": "cohort_11",
+          "slot": 11,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        }
+      ]
+    },
+    "relaxed": {
+      "feasible": true,
+      "relaxed_windows": true,
+      "slot_average_power": [
+        16591.10224972137,
+        16591.102249721203,
+        16591.10224972136,
+        16591.102249721203,
+        7724.022606132383,
+        7724.02260613239,
+        7724.02260613239,
+        16591.1022497212,
+        16591.1022497212,
+        16591.102249721203,
+        16591.102249721203,
+        16591.102249721203
+      ],
+      "slot_completed_work": [
+        1.0000000000000127,
+        1.0,
+        1.0000000000000118,
+        1.0,
+        0.599999999999999,
+        0.6,
+        0.5999999999999999,
+        0.9999999999999996,
+        0.9999999999999998,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "completed_work_by_job": {
+        "cohort_00": 0.9,
+        "cohort_01": 0.9,
+        "cohort_02": 0.9000000000000001,
+        "cohort_03": 0.8999999999999999,
+        "cohort_04": 0.900000000000012,
+        "cohort_05": 0.9,
+        "cohort_06": 0.9,
+        "cohort_07": 0.8999999999999997,
+        "cohort_08": 0.8999999999999939,
+        "cohort_09": 0.9000000000000168,
+        "cohort_10": 0.9,
+        "cohort_11": 0.9000000000000001
+      },
+      "energy": 172491.98806588832,
+      "energy_cost": 172491.98806588832,
+      "service_cost": 0.0,
+      "objective_cost": 172491.98806588832,
+      "power_cap_cost_marginals": null,
+      "minimum_event_slot_reduction": 7539.791463611119,
+      "maximum_work_error": 1.6764367671839864e-14,
+      "maximum_capacity_violation": 1.2656542480726785e-14,
+      "allocations": [
+        {
+          "job": "cohort_00",
+          "slot": 0,
+          "mode": 5,
+          "pool_fraction": 0.8119297876813238,
+          "work": 0.8119297876813238
+        },
+        {
+          "job": "cohort_00",
+          "slot": 1,
+          "mode": 5,
+          "pool_fraction": 0.08807021231867618,
+          "work": 0.08807021231867618
+        },
+        {
+          "job": "cohort_01",
+          "slot": 7,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_02",
+          "slot": 1,
+          "mode": 5,
+          "pool_fraction": 0.011929787681323745,
+          "work": 0.011929787681323745
+        },
+        {
+          "job": "cohort_02",
+          "slot": 10,
+          "mode": 5,
+          "pool_fraction": 0.8880702123186763,
+          "work": 0.8880702123186763
+        },
+        {
+          "job": "cohort_03",
+          "slot": 2,
+          "mode": 5,
+          "pool_fraction": 0.3880702123186884,
+          "work": 0.3880702123186884
+        },
+        {
+          "job": "cohort_03",
+          "slot": 6,
+          "mode": 1,
+          "pool_fraction": 0.6343283582089551,
+          "work": 0.5119297876813116
+        },
+        {
+          "job": "cohort_04",
+          "slot": 0,
+          "mode": 5,
+          "pool_fraction": 0.18807021231868873,
+          "work": 0.18807021231868873
+        },
+        {
+          "job": "cohort_04",
+          "slot": 2,
+          "mode": 5,
+          "pool_fraction": 0.6119297876813233,
+          "work": 0.6119297876813233
+        },
+        {
+          "job": "cohort_04",
+          "slot": 9,
+          "mode": 5,
+          "pool_fraction": 0.09999999999999998,
+          "work": 0.09999999999999998
+        },
+        {
+          "job": "cohort_05",
+          "slot": 5,
+          "mode": 1,
+          "pool_fraction": 0.13869135995414955,
+          "work": 0.11192978768130661
+        },
+        {
+          "job": "cohort_05",
+          "slot": 6,
+          "mode": 0,
+          "pool_fraction": 0.3656716417910451,
+          "work": 0.08807021231868832
+        },
+        {
+          "job": "cohort_05",
+          "slot": 11,
+          "mode": 5,
+          "pool_fraction": 0.7000000000000051,
+          "work": 0.7000000000000051
+        },
+        {
+          "job": "cohort_06",
+          "slot": 5,
+          "mode": 1,
+          "pool_fraction": 0.49563699825480556,
+          "work": 0.4000000000000051
+        },
+        {
+          "job": "cohort_06",
+          "slot": 8,
+          "mode": 5,
+          "pool_fraction": 0.49999999999999495,
+          "work": 0.49999999999999495
+        },
+        {
+          "job": "cohort_07",
+          "slot": 3,
+          "mode": 5,
+          "pool_fraction": 0.6999999999999876,
+          "work": 0.6999999999999876
+        },
+        {
+          "job": "cohort_07",
+          "slot": 4,
+          "mode": 0,
+          "pool_fraction": 0.36567164179104494,
+          "work": 0.08807021231868828
+        },
+        {
+          "job": "cohort_07",
+          "slot": 10,
+          "mode": 5,
+          "pool_fraction": 0.11192978768132372,
+          "work": 0.11192978768132372
+        },
+        {
+          "job": "cohort_08",
+          "slot": 4,
+          "mode": 1,
+          "pool_fraction": 0.6343283582089538,
+          "work": 0.5119297876813107
+        },
+        {
+          "job": "cohort_08",
+          "slot": 5,
+          "mode": 0,
+          "pool_fraction": 0.36567164179104483,
+          "work": 0.08807021231868825
+        },
+        {
+          "job": "cohort_08",
+          "slot": 11,
+          "mode": 5,
+          "pool_fraction": 0.299999999999995,
+          "work": 0.299999999999995
+        },
+        {
+          "job": "cohort_09",
+          "slot": 3,
+          "mode": 5,
+          "pool_fraction": 0.30000000000001237,
+          "work": 0.30000000000001237
+        },
+        {
+          "job": "cohort_09",
+          "slot": 7,
+          "mode": 5,
+          "pool_fraction": 0.09999999999999958,
+          "work": 0.09999999999999958
+        },
+        {
+          "job": "cohort_09",
+          "slot": 8,
+          "mode": 5,
+          "pool_fraction": 0.5000000000000049,
+          "work": 0.5000000000000049
+        },
+        {
+          "job": "cohort_10",
+          "slot": 9,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_11",
+          "slot": 1,
+          "mode": 5,
+          "pool_fraction": 0.9000000000000001,
+          "work": 0.9000000000000001
+        }
+      ]
+    }
+  },
+  {
+    "case": {
+      "workload": "ft_llama_8b_dolly",
+      "utilization_assumption": 0.9,
+      "deadline_window_slots_assumption": 4,
+      "idle_power_fraction_assumption": 0.2,
+      "horizon_hours": 12,
+      "event_start_hour": 4,
+      "event_hours": 3,
+      "baseline_event_power_W": 15263.814069743508,
+      "sequential_min_slot_reduction_W": 6451.650815492467,
+      "relaxed_min_slot_reduction_W": 7539.791463611119,
+      "relaxation_gap_W": 1088.1406481186523,
+      "sequential_energy_Wh_at_selected_max_response_solution": 166078.17717057967,
+      "maximum_work_error": 3.1086244689504383e-15,
+      "is_empirical_workload_trace": false,
+      "is_grid_capacity_result": false
+    },
+    "jobs": [
+      {
+        "name": "cohort_00",
+        "release": 0,
+        "deadline": 4,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_01",
+        "release": 1,
+        "deadline": 5,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_02",
+        "release": 2,
+        "deadline": 6,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_03",
+        "release": 3,
+        "deadline": 7,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_04",
+        "release": 4,
+        "deadline": 8,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_05",
+        "release": 5,
+        "deadline": 9,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_06",
+        "release": 6,
+        "deadline": 10,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_07",
+        "release": 7,
+        "deadline": 11,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_08",
+        "release": 8,
+        "deadline": 12,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_09",
+        "release": 9,
+        "deadline": 12,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_10",
+        "release": 10,
+        "deadline": 12,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_11",
+        "release": 11,
+        "deadline": 12,
+        "work": 0.9
+      }
+    ],
+    "baseline_power": [
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508
+    ],
+    "sequential": {
+      "feasible": true,
+      "relaxed_windows": false,
+      "slot_average_power": [
+        14401.02954898194,
+        14401.02954898194,
+        15263.814069743508,
+        12620.302991513168,
+        8812.16325425104,
+        8812.163254251009,
+        8812.16325425104,
+        16591.1022497212,
+        16591.1022497212,
+        16591.10224972121,
+        16591.102249721207,
+        16591.1022497212
+      ],
+      "slot_completed_work": [
+        0.9,
+        0.9,
+        0.9,
+        0.8999999999999999,
+        0.7333333333333336,
+        0.7333333333333297,
+        0.7333333333333338,
+        0.9999999999999998,
+        0.9999999999999999,
+        1.0000000000000007,
+        1.0000000000000002,
+        0.9999999999999998
+      ],
+      "completed_work_by_job": {
+        "cohort_00": 0.9,
+        "cohort_01": 0.9,
+        "cohort_02": 0.9,
+        "cohort_03": 0.8999999999999999,
+        "cohort_04": 0.8999999999999969,
+        "cohort_05": 0.9,
+        "cohort_06": 0.9000000000000001,
+        "cohort_07": 0.9000000000000007,
+        "cohort_08": 0.9,
+        "cohort_09": 0.8999999999999995,
+        "cohort_10": 0.9,
+        "cohort_11": 0.9000000000000001
+      },
+      "energy": 166078.17717057967,
+      "energy_cost": 166078.17717057967,
+      "service_cost": 0.0,
+      "objective_cost": 166078.17717057967,
+      "power_cap_cost_marginals": null,
+      "minimum_event_slot_reduction": 6451.650815492467,
+      "maximum_work_error": 3.1086244689504383e-15,
+      "maximum_capacity_violation": 8.881784197001252e-16,
+      "allocations": [
+        {
+          "job": "cohort_00",
+          "slot": 0,
+          "mode": 4,
+          "pool_fraction": 0.918103448275862,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_01",
+          "slot": 1,
+          "mode": 4,
+          "pool_fraction": 0.918103448275862,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_02",
+          "slot": 2,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_03",
+          "slot": 3,
+          "mode": 1,
+          "pool_fraction": 0.4634146341463419,
+          "work": 0.37399519065613224
+        },
+        {
+          "job": "cohort_03",
+          "slot": 3,
+          "mode": 4,
+          "pool_fraction": 0.5365853658536581,
+          "work": 0.5260048093438677
+        },
+        {
+          "job": "cohort_04",
+          "slot": 4,
+          "mode": 0,
+          "pool_fraction": 0.13018242122719656,
+          "work": 0.03135379440824029
+        },
+        {
+          "job": "cohort_04",
+          "slot": 4,
+          "mode": 1,
+          "pool_fraction": 0.8698175787728033,
+          "work": 0.7019795389250933
+        },
+        {
+          "job": "cohort_04",
+          "slot": 5,
+          "mode": 0,
+          "pool_fraction": 0.13018242122720028,
+          "work": 0.031353794408241195
+        },
+        {
+          "job": "cohort_04",
+          "slot": 6,
+          "mode": 1,
+          "pool_fraction": 0.16766516457849864,
+          "work": 0.13531287225842215
+        },
+        {
+          "job": "cohort_05",
+          "slot": 5,
+          "mode": 1,
+          "pool_fraction": 0.8698175787727973,
+          "work": 0.7019795389250886
+        },
+        {
+          "job": "cohort_05",
+          "slot": 6,
+          "mode": 0,
+          "pool_fraction": 0.13018242122719795,
+          "work": 0.03135379440824063
+        },
+        {
+          "job": "cohort_05",
+          "slot": 7,
+          "mode": 5,
+          "pool_fraction": 0.16666666666667088,
+          "work": 0.16666666666667088
+        },
+        {
+          "job": "cohort_06",
+          "slot": 6,
+          "mode": 1,
+          "pool_fraction": 0.7021524141943044,
+          "work": 0.5666666666666711
+        },
+        {
+          "job": "cohort_06",
+          "slot": 7,
+          "mode": 5,
+          "pool_fraction": 0.033333333333328025,
+          "work": 0.033333333333328025
+        },
+        {
+          "job": "cohort_06",
+          "slot": 9,
+          "mode": 5,
+          "pool_fraction": 0.300000000000001,
+          "work": 0.300000000000001
+        },
+        {
+          "job": "cohort_07",
+          "slot": 7,
+          "mode": 5,
+          "pool_fraction": 0.8000000000000008,
+          "work": 0.8000000000000008
+        },
+        {
+          "job": "cohort_07",
+          "slot": 8,
+          "mode": 5,
+          "pool_fraction": 0.09999999999999983,
+          "work": 0.09999999999999983
+        },
+        {
+          "job": "cohort_08",
+          "slot": 8,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_09",
+          "slot": 9,
+          "mode": 5,
+          "pool_fraction": 0.6999999999999997,
+          "work": 0.6999999999999997
+        },
+        {
+          "job": "cohort_09",
+          "slot": 10,
+          "mode": 5,
+          "pool_fraction": 0.10000000000000019,
+          "work": 0.10000000000000019
+        },
+        {
+          "job": "cohort_09",
+          "slot": 11,
+          "mode": 5,
+          "pool_fraction": 0.09999999999999959,
+          "work": 0.09999999999999959
+        },
+        {
+          "job": "cohort_10",
+          "slot": 10,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_11",
+          "slot": 11,
+          "mode": 5,
+          "pool_fraction": 0.9000000000000001,
+          "work": 0.9000000000000001
+        }
+      ]
+    },
+    "relaxed": {
+      "feasible": true,
+      "relaxed_windows": true,
+      "slot_average_power": [
+        16591.10224972137,
+        16591.102249721203,
+        16591.10224972136,
+        16591.102249721203,
+        7724.022606132383,
+        7724.02260613239,
+        7724.02260613239,
+        16591.1022497212,
+        16591.1022497212,
+        16591.102249721203,
+        16591.102249721203,
+        16591.102249721203
+      ],
+      "slot_completed_work": [
+        1.0000000000000127,
+        1.0,
+        1.0000000000000118,
+        1.0,
+        0.599999999999999,
+        0.6,
+        0.5999999999999999,
+        0.9999999999999996,
+        0.9999999999999998,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "completed_work_by_job": {
+        "cohort_00": 0.9,
+        "cohort_01": 0.9,
+        "cohort_02": 0.9000000000000001,
+        "cohort_03": 0.8999999999999999,
+        "cohort_04": 0.900000000000012,
+        "cohort_05": 0.9,
+        "cohort_06": 0.9,
+        "cohort_07": 0.8999999999999997,
+        "cohort_08": 0.8999999999999939,
+        "cohort_09": 0.9000000000000168,
+        "cohort_10": 0.9,
+        "cohort_11": 0.9000000000000001
+      },
+      "energy": 172491.98806588832,
+      "energy_cost": 172491.98806588832,
+      "service_cost": 0.0,
+      "objective_cost": 172491.98806588832,
+      "power_cap_cost_marginals": null,
+      "minimum_event_slot_reduction": 7539.791463611119,
+      "maximum_work_error": 1.6764367671839864e-14,
+      "maximum_capacity_violation": 1.2656542480726785e-14,
+      "allocations": [
+        {
+          "job": "cohort_00",
+          "slot": 0,
+          "mode": 5,
+          "pool_fraction": 0.8119297876813238,
+          "work": 0.8119297876813238
+        },
+        {
+          "job": "cohort_00",
+          "slot": 1,
+          "mode": 5,
+          "pool_fraction": 0.08807021231867618,
+          "work": 0.08807021231867618
+        },
+        {
+          "job": "cohort_01",
+          "slot": 7,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_02",
+          "slot": 1,
+          "mode": 5,
+          "pool_fraction": 0.011929787681323745,
+          "work": 0.011929787681323745
+        },
+        {
+          "job": "cohort_02",
+          "slot": 10,
+          "mode": 5,
+          "pool_fraction": 0.8880702123186763,
+          "work": 0.8880702123186763
+        },
+        {
+          "job": "cohort_03",
+          "slot": 2,
+          "mode": 5,
+          "pool_fraction": 0.3880702123186884,
+          "work": 0.3880702123186884
+        },
+        {
+          "job": "cohort_03",
+          "slot": 6,
+          "mode": 1,
+          "pool_fraction": 0.6343283582089551,
+          "work": 0.5119297876813116
+        },
+        {
+          "job": "cohort_04",
+          "slot": 0,
+          "mode": 5,
+          "pool_fraction": 0.18807021231868873,
+          "work": 0.18807021231868873
+        },
+        {
+          "job": "cohort_04",
+          "slot": 2,
+          "mode": 5,
+          "pool_fraction": 0.6119297876813233,
+          "work": 0.6119297876813233
+        },
+        {
+          "job": "cohort_04",
+          "slot": 9,
+          "mode": 5,
+          "pool_fraction": 0.09999999999999998,
+          "work": 0.09999999999999998
+        },
+        {
+          "job": "cohort_05",
+          "slot": 5,
+          "mode": 1,
+          "pool_fraction": 0.13869135995414955,
+          "work": 0.11192978768130661
+        },
+        {
+          "job": "cohort_05",
+          "slot": 6,
+          "mode": 0,
+          "pool_fraction": 0.3656716417910451,
+          "work": 0.08807021231868832
+        },
+        {
+          "job": "cohort_05",
+          "slot": 11,
+          "mode": 5,
+          "pool_fraction": 0.7000000000000051,
+          "work": 0.7000000000000051
+        },
+        {
+          "job": "cohort_06",
+          "slot": 5,
+          "mode": 1,
+          "pool_fraction": 0.49563699825480556,
+          "work": 0.4000000000000051
+        },
+        {
+          "job": "cohort_06",
+          "slot": 8,
+          "mode": 5,
+          "pool_fraction": 0.49999999999999495,
+          "work": 0.49999999999999495
+        },
+        {
+          "job": "cohort_07",
+          "slot": 3,
+          "mode": 5,
+          "pool_fraction": 0.6999999999999876,
+          "work": 0.6999999999999876
+        },
+        {
+          "job": "cohort_07",
+          "slot": 4,
+          "mode": 0,
+          "pool_fraction": 0.36567164179104494,
+          "work": 0.08807021231868828
+        },
+        {
+          "job": "cohort_07",
+          "slot": 10,
+          "mode": 5,
+          "pool_fraction": 0.11192978768132372,
+          "work": 0.11192978768132372
+        },
+        {
+          "job": "cohort_08",
+          "slot": 4,
+          "mode": 1,
+          "pool_fraction": 0.6343283582089538,
+          "work": 0.5119297876813107
+        },
+        {
+          "job": "cohort_08",
+          "slot": 5,
+          "mode": 0,
+          "pool_fraction": 0.36567164179104483,
+          "work": 0.08807021231868825
+        },
+        {
+          "job": "cohort_08",
+          "slot": 11,
+          "mode": 5,
+          "pool_fraction": 0.299999999999995,
+          "work": 0.299999999999995
+        },
+        {
+          "job": "cohort_09",
+          "slot": 3,
+          "mode": 5,
+          "pool_fraction": 0.30000000000001237,
+          "work": 0.30000000000001237
+        },
+        {
+          "job": "cohort_09",
+          "slot": 7,
+          "mode": 5,
+          "pool_fraction": 0.09999999999999958,
+          "work": 0.09999999999999958
+        },
+        {
+          "job": "cohort_09",
+          "slot": 8,
+          "mode": 5,
+          "pool_fraction": 0.5000000000000049,
+          "work": 0.5000000000000049
+        },
+        {
+          "job": "cohort_10",
+          "slot": 9,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_11",
+          "slot": 1,
+          "mode": 5,
+          "pool_fraction": 0.9000000000000001,
+          "work": 0.9000000000000001
+        }
+      ]
+    }
+  },
+  {
+    "case": {
+      "workload": "ft_llama_8b_dolly",
+      "utilization_assumption": 0.9,
+      "deadline_window_slots_assumption": 8,
+      "idle_power_fraction_assumption": 0.2,
+      "horizon_hours": 12,
+      "event_start_hour": 4,
+      "event_hours": 3,
+      "baseline_event_power_W": 15263.814069743508,
+      "sequential_min_slot_reduction_W": 6451.65081549247,
+      "relaxed_min_slot_reduction_W": 7539.791463611119,
+      "relaxation_gap_W": 1088.1406481186486,
+      "sequential_energy_Wh_at_selected_max_response_solution": 170447.25729033316,
+      "maximum_work_error": 3.3306690738754696e-16,
+      "is_empirical_workload_trace": false,
+      "is_grid_capacity_result": false
+    },
+    "jobs": [
+      {
+        "name": "cohort_00",
+        "release": 0,
+        "deadline": 8,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_01",
+        "release": 1,
+        "deadline": 9,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_02",
+        "release": 2,
+        "deadline": 10,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_03",
+        "release": 3,
+        "deadline": 11,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_04",
+        "release": 4,
+        "deadline": 12,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_05",
+        "release": 5,
+        "deadline": 12,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_06",
+        "release": 6,
+        "deadline": 12,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_07",
+        "release": 7,
+        "deadline": 12,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_08",
+        "release": 8,
+        "deadline": 12,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_09",
+        "release": 9,
+        "deadline": 12,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_10",
+        "release": 10,
+        "deadline": 12,
+        "work": 0.9
+      },
+      {
+        "name": "cohort_11",
+        "release": 11,
+        "deadline": 12,
+        "work": 0.9
+      }
+    ],
+    "baseline_power": [
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508,
+      15263.814069743508
+    ],
+    "sequential": {
+      "feasible": true,
+      "relaxed_windows": false,
+      "slot_average_power": [
+        15263.814069743508,
+        13936.525889765811,
+        15263.814069743508,
+        16591.102249721203,
+        8812.163254251038,
+        8812.163254251038,
+        8812.163254251038,
+        16591.102249721203,
+        16591.1022497212,
+        16591.1022497212,
+        16591.102249721203,
+        16591.102249721203
+      ],
+      "slot_completed_work": [
+        0.9,
+        0.8,
+        0.9,
+        1.0,
+        0.7333333333333334,
+        0.7333333333333334,
+        0.7333333333333334,
+        1.0,
+        1.0,
+        0.9999999999999998,
+        1.0,
+        1.0
+      ],
+      "completed_work_by_job": {
+        "cohort_00": 0.9,
+        "cohort_01": 0.9,
+        "cohort_02": 0.9,
+        "cohort_03": 0.9,
+        "cohort_04": 0.8999999999999997,
+        "cohort_05": 0.9,
+        "cohort_06": 0.9000000000000001,
+        "cohort_07": 0.9,
+        "cohort_08": 0.9,
+        "cohort_09": 0.9,
+        "cohort_10": 0.9,
+        "cohort_11": 0.9
+      },
+      "energy": 170447.25729033316,
+      "energy_cost": 170447.25729033316,
+      "service_cost": 0.0,
+      "objective_cost": 170447.25729033316,
+      "power_cap_cost_marginals": null,
+      "minimum_event_slot_reduction": 6451.65081549247,
+      "maximum_work_error": 3.3306690738754696e-16,
+      "maximum_capacity_violation": 0.0,
+      "allocations": [
+        {
+          "job": "cohort_00",
+          "slot": 0,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_01",
+          "slot": 1,
+          "mode": 5,
+          "pool_fraction": 0.8,
+          "work": 0.8
+        },
+        {
+          "job": "cohort_01",
+          "slot": 3,
+          "mode": 5,
+          "pool_fraction": 0.09999999999999998,
+          "work": 0.09999999999999998
+        },
+        {
+          "job": "cohort_02",
+          "slot": 2,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_03",
+          "slot": 3,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_04",
+          "slot": 4,
+          "mode": 0,
+          "pool_fraction": 0.13018242122719745,
+          "work": 0.03135379440824051
+        },
+        {
+          "job": "cohort_04",
+          "slot": 4,
+          "mode": 1,
+          "pool_fraction": 0.8698175787728026,
+          "work": 0.7019795389250929
+        },
+        {
+          "job": "cohort_04",
+          "slot": 5,
+          "mode": 0,
+          "pool_fraction": 0.13018242122719728,
+          "work": 0.03135379440824047
+        },
+        {
+          "job": "cohort_04",
+          "slot": 6,
+          "mode": 1,
+          "pool_fraction": 0.16766516457850317,
+          "work": 0.1353128722584258
+        },
+        {
+          "job": "cohort_05",
+          "slot": 5,
+          "mode": 1,
+          "pool_fraction": 0.8698175787728027,
+          "work": 0.7019795389250929
+        },
+        {
+          "job": "cohort_05",
+          "slot": 6,
+          "mode": 1,
+          "pool_fraction": 0.24536566730049572,
+          "work": 0.19802046107490712
+        },
+        {
+          "job": "cohort_06",
+          "slot": 6,
+          "mode": 0,
+          "pool_fraction": 0.13018242122719753,
+          "work": 0.03135379440824053
+        },
+        {
+          "job": "cohort_06",
+          "slot": 6,
+          "mode": 1,
+          "pool_fraction": 0.45678674689380366,
+          "work": 0.36864620559175987
+        },
+        {
+          "job": "cohort_06",
+          "slot": 7,
+          "mode": 5,
+          "pool_fraction": 0.09999999999999998,
+          "work": 0.09999999999999998
+        },
+        {
+          "job": "cohort_06",
+          "slot": 8,
+          "mode": 5,
+          "pool_fraction": 0.39999999999999963,
+          "work": 0.39999999999999963
+        },
+        {
+          "job": "cohort_07",
+          "slot": 7,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_08",
+          "slot": 8,
+          "mode": 5,
+          "pool_fraction": 0.6000000000000003,
+          "work": 0.6000000000000003
+        },
+        {
+          "job": "cohort_08",
+          "slot": 9,
+          "mode": 5,
+          "pool_fraction": 0.2999999999999997,
+          "work": 0.2999999999999997
+        },
+        {
+          "job": "cohort_09",
+          "slot": 9,
+          "mode": 5,
+          "pool_fraction": 0.7000000000000001,
+          "work": 0.7000000000000001
+        },
+        {
+          "job": "cohort_09",
+          "slot": 10,
+          "mode": 5,
+          "pool_fraction": 0.19999999999999996,
+          "work": 0.19999999999999996
+        },
+        {
+          "job": "cohort_10",
+          "slot": 10,
+          "mode": 5,
+          "pool_fraction": 0.8,
+          "work": 0.8
+        },
+        {
+          "job": "cohort_10",
+          "slot": 11,
+          "mode": 5,
+          "pool_fraction": 0.09999999999999998,
+          "work": 0.09999999999999998
+        },
+        {
+          "job": "cohort_11",
+          "slot": 11,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        }
+      ]
+    },
+    "relaxed": {
+      "feasible": true,
+      "relaxed_windows": true,
+      "slot_average_power": [
+        16591.10224972137,
+        16591.102249721203,
+        16591.10224972136,
+        16591.102249721203,
+        7724.022606132383,
+        7724.02260613239,
+        7724.02260613239,
+        16591.1022497212,
+        16591.1022497212,
+        16591.102249721203,
+        16591.102249721203,
+        16591.102249721203
+      ],
+      "slot_completed_work": [
+        1.0000000000000127,
+        1.0,
+        1.0000000000000118,
+        1.0,
+        0.599999999999999,
+        0.6,
+        0.5999999999999999,
+        0.9999999999999996,
+        0.9999999999999998,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "completed_work_by_job": {
+        "cohort_00": 0.9,
+        "cohort_01": 0.9,
+        "cohort_02": 0.9000000000000001,
+        "cohort_03": 0.8999999999999999,
+        "cohort_04": 0.900000000000012,
+        "cohort_05": 0.9,
+        "cohort_06": 0.9,
+        "cohort_07": 0.8999999999999997,
+        "cohort_08": 0.8999999999999939,
+        "cohort_09": 0.9000000000000168,
+        "cohort_10": 0.9,
+        "cohort_11": 0.9000000000000001
+      },
+      "energy": 172491.98806588832,
+      "energy_cost": 172491.98806588832,
+      "service_cost": 0.0,
+      "objective_cost": 172491.98806588832,
+      "power_cap_cost_marginals": null,
+      "minimum_event_slot_reduction": 7539.791463611119,
+      "maximum_work_error": 1.6764367671839864e-14,
+      "maximum_capacity_violation": 1.2656542480726785e-14,
+      "allocations": [
+        {
+          "job": "cohort_00",
+          "slot": 0,
+          "mode": 5,
+          "pool_fraction": 0.8119297876813238,
+          "work": 0.8119297876813238
+        },
+        {
+          "job": "cohort_00",
+          "slot": 1,
+          "mode": 5,
+          "pool_fraction": 0.08807021231867618,
+          "work": 0.08807021231867618
+        },
+        {
+          "job": "cohort_01",
+          "slot": 7,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_02",
+          "slot": 1,
+          "mode": 5,
+          "pool_fraction": 0.011929787681323745,
+          "work": 0.011929787681323745
+        },
+        {
+          "job": "cohort_02",
+          "slot": 10,
+          "mode": 5,
+          "pool_fraction": 0.8880702123186763,
+          "work": 0.8880702123186763
+        },
+        {
+          "job": "cohort_03",
+          "slot": 2,
+          "mode": 5,
+          "pool_fraction": 0.3880702123186884,
+          "work": 0.3880702123186884
+        },
+        {
+          "job": "cohort_03",
+          "slot": 6,
+          "mode": 1,
+          "pool_fraction": 0.6343283582089551,
+          "work": 0.5119297876813116
+        },
+        {
+          "job": "cohort_04",
+          "slot": 0,
+          "mode": 5,
+          "pool_fraction": 0.18807021231868873,
+          "work": 0.18807021231868873
+        },
+        {
+          "job": "cohort_04",
+          "slot": 2,
+          "mode": 5,
+          "pool_fraction": 0.6119297876813233,
+          "work": 0.6119297876813233
+        },
+        {
+          "job": "cohort_04",
+          "slot": 9,
+          "mode": 5,
+          "pool_fraction": 0.09999999999999998,
+          "work": 0.09999999999999998
+        },
+        {
+          "job": "cohort_05",
+          "slot": 5,
+          "mode": 1,
+          "pool_fraction": 0.13869135995414955,
+          "work": 0.11192978768130661
+        },
+        {
+          "job": "cohort_05",
+          "slot": 6,
+          "mode": 0,
+          "pool_fraction": 0.3656716417910451,
+          "work": 0.08807021231868832
+        },
+        {
+          "job": "cohort_05",
+          "slot": 11,
+          "mode": 5,
+          "pool_fraction": 0.7000000000000051,
+          "work": 0.7000000000000051
+        },
+        {
+          "job": "cohort_06",
+          "slot": 5,
+          "mode": 1,
+          "pool_fraction": 0.49563699825480556,
+          "work": 0.4000000000000051
+        },
+        {
+          "job": "cohort_06",
+          "slot": 8,
+          "mode": 5,
+          "pool_fraction": 0.49999999999999495,
+          "work": 0.49999999999999495
+        },
+        {
+          "job": "cohort_07",
+          "slot": 3,
+          "mode": 5,
+          "pool_fraction": 0.6999999999999876,
+          "work": 0.6999999999999876
+        },
+        {
+          "job": "cohort_07",
+          "slot": 4,
+          "mode": 0,
+          "pool_fraction": 0.36567164179104494,
+          "work": 0.08807021231868828
+        },
+        {
+          "job": "cohort_07",
+          "slot": 10,
+          "mode": 5,
+          "pool_fraction": 0.11192978768132372,
+          "work": 0.11192978768132372
+        },
+        {
+          "job": "cohort_08",
+          "slot": 4,
+          "mode": 1,
+          "pool_fraction": 0.6343283582089538,
+          "work": 0.5119297876813107
+        },
+        {
+          "job": "cohort_08",
+          "slot": 5,
+          "mode": 0,
+          "pool_fraction": 0.36567164179104483,
+          "work": 0.08807021231868825
+        },
+        {
+          "job": "cohort_08",
+          "slot": 11,
+          "mode": 5,
+          "pool_fraction": 0.299999999999995,
+          "work": 0.299999999999995
+        },
+        {
+          "job": "cohort_09",
+          "slot": 3,
+          "mode": 5,
+          "pool_fraction": 0.30000000000001237,
+          "work": 0.30000000000001237
+        },
+        {
+          "job": "cohort_09",
+          "slot": 7,
+          "mode": 5,
+          "pool_fraction": 0.09999999999999958,
+          "work": 0.09999999999999958
+        },
+        {
+          "job": "cohort_09",
+          "slot": 8,
+          "mode": 5,
+          "pool_fraction": 0.5000000000000049,
+          "work": 0.5000000000000049
+        },
+        {
+          "job": "cohort_10",
+          "slot": 9,
+          "mode": 5,
+          "pool_fraction": 0.9,
+          "work": 0.9
+        },
+        {
+          "job": "cohort_11",
+          "slot": 1,
+          "mode": 5,
+          "pool_fraction": 0.9000000000000001,
+          "work": 0.9000000000000001
+        }
+      ]
+    }
+  }
+]
