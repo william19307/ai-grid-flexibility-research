@@ -1,0 +1,126 @@
+{
+  "checks": [
+    "strict_original_mode_still_rejects",
+    "reviewed_mode_explicitly_records_replacement",
+    "historical_original_not_fabricated",
+    "network_receipt_matches_reviewed_file",
+    "cohort_admission_mode_declared",
+    "cohort_all_numeric_results_and_existing_checks_identical",
+    "factorial_admission_mode_declared",
+    "factorial_all_numeric_results_and_existing_checks_identical",
+    "synthetic_accounting_examples_byte_identical",
+    "new_ledger_hash_matches_new_payload",
+    "provenance_changes_ledger_hash",
+    "single_bound_reviewed_source_in_proof",
+    "complete_192h_ledger_identical_except_declared_provenance",
+    "demand_metrics.csv_byte_identical",
+    "policy_contrasts.csv_byte_identical",
+    "shape_interactions.csv_byte_identical",
+    "solver_oracle_checks.csv_byte_identical",
+    "all_18_predeclared_ledgers_present",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical",
+    "factor_ledger_hash_changes_with_provenance",
+    "single_bound_reviewed_source_in_proof",
+    "factor_clock_cohort_background_and_certificate_identical"
+  ],
+  "number_of_checks": 72,
+  "checkout_commit": "9b9ce89a0b5c38d1b7e45ce28cf037cc8c62446e",
+  "clone_tracked_status": "",
+  "original_source_mode": "Still 13/14 including prepared load; original Gansu HTML not restored",
+  "reviewed_source_mode": "13 original-byte inputs plus one explicitly reviewed HTML version; all required inputs admitted",
+  "isolated_checks": {
+    "cohort": 25,
+    "factorial": 67
+  },
+  "factorial_policy_solves": 72,
+  "replayed_outputs": [
+    {
+      "path": "outputs/research/revision/reviewed_tariff_version/replayed/cohort/synthetic_counterexample_ledgers.json",
+      "sha256": "88e5e9a594ef9e8cbc995ca28d1adafd50151d0a4d2f590509639d4d196b9412"
+    },
+    {
+      "path": "outputs/research/revision/reviewed_tariff_version/replayed/cohort/validation.json",
+      "sha256": "545a860e8d685a79c50140cfbcf7217c42006c8c47a5705e0f3cba09b7c9ae50"
+    },
+    {
+      "path": "outputs/research/revision/reviewed_tariff_version/replayed/cohort/verified_trace_synthetic_background_ledger.json",
+      "sha256": "2ad7bf629afae13aeb3efefa17cca03066076489a0d1e32abc23e503aecb368c"
+    },
+    {
+      "path": "outputs/research/revision/reviewed_tariff_version/replayed/factorial/demand_metrics.csv",
+      "sha256": "44cc3226afb6d4d40a8b0f85daf4d14b06382e9204d4bbbaa561146c5ea2b9f8"
+    },
+    {
+      "path": "outputs/research/revision/reviewed_tariff_version/replayed/factorial/factor_ledger_manifest.json",
+      "sha256": "46d4e472850f0f7ddeccccc9be504e7bcd8cd53f13a1235e883e1dcec9ca1c89"
+    },
+    {
+      "path": "outputs/research/revision/reviewed_tariff_version/replayed/factorial/policy_contrasts.csv",
+      "sha256": "fa04139d09c05f7195b5f0ffbce672a3ad0ffcd9b9e718aee8a3372efd38ecc0"
+    },
+    {
+      "path": "outputs/research/revision/reviewed_tariff_version/replayed/factorial/shape_interactions.csv",
+      "sha256": "4b9b5c35a85047f0ce3be8db2e023223e86abd2bf6c4ddeac2e835f41a590ab4"
+    },
+    {
+      "path": "outputs/research/revision/reviewed_tariff_version/replayed/factorial/solver_oracle_checks.csv",
+      "sha256": "57aedec38af896c70268a03b909661d344cef8b8856d0c63516047659b55624d"
+    },
+    {
+      "path": "outputs/research/revision/reviewed_tariff_version/replayed/factorial/validation.json",
+      "sha256": "3fab6a5cb23620c9b0d9cdd299aa8ebf76a4e985f0411a1b53343dd131df7a1d"
+    }
+  ],
+  "all_numerical_outputs_identical": true,
+  "scope": "Same-host isolated bounded replay of existing certified trajectories; no new 108-case optimization, second OS/machine or full-manuscript physical validation"
+}

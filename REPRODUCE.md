@@ -1,6 +1,6 @@
 # 复现说明
 
-当前独立重建入口见 [阶段 27 操作说明](outputs/research/revision/clean_reconstruction/RUNBOOK.md)。已实测同机新克隆和隔离环境，13/14 项必需输入通过；甘肃原页面尚未恢复，完整认证复算未执行。下列历史流程不表示全部来源已可自动恢复。
+当前独立重建先读 [阶段 27](outputs/research/revision/clean_reconstruction/RUNBOOK.md)，显式来源版本复算再读 [阶段 28](outputs/research/revision/reviewed_tariff_version/RUNBOOK.md)。同机新克隆/隔离环境的限定链条已在显式版本下复算且数值一致；严格原 HTML 恢复仍是 13/14。下列历史流程不表示整篇论文或所有原件已恢复。
 
 环境：`work/figure-env`（Python 3.14；numpy、pandas、scipy、matplotlib、h5py、tables、tabulate）。原始外部数据不入库，按 `outputs/research/tables/data_registry.csv` 的来源、版本与校验值重新获取到 `work/research/sources/`。
 
@@ -363,3 +363,11 @@ work/figure-env/bin/python work/research/analysis/validate_demand_cohort.py
 2026-09-23 实测从 GitHub 网络克隆 3ffe061，使用无系统 site packages 的新 Python 3.14.6 环境安装指定依赖。Helios 固定提交压缩包与八个 CSV、江苏 PDF、贵州 HTML、负荷 HDF5 成员和重新计算的 NPZ 均与预期哈希一致。初次重建因数组 F/C 顺序引入约 4.22e-10 MW 差异而失败；新副本从远端拉取 a8c2003，显式保持原 C 顺序后匹配 NPZ 原哈希。没有修改预期哈希或复制原 prepared。
 
 最终 13/14 项准入，唯一缺失为原甘肃 HTML。两个目前可访问的文章入口均返回不同字节，按原哈希拒绝，阶段 24/26 数值复算未执行。新环境的 75+118+74 项数学检查通过，仅证明对应模型可运行性。全部请求/失败、初始副本状态、环境、数组比较和最终准入见同目录 JSON；第二机器/操作系统及整篇论文重建仍未验证。
+
+### 阶段 28：明确来源版本与限定链条独立复算
+
+设计先于复算冻结于 ff23671。对甘肃原/新 HTML 使用正则字节跨度和独立 HTMLParser 边界审读：除一个路由/域名脚本外的 20,364 字节一致，192 个价形值不变。原清单和认证文件不修改，新版另存，默认仍严格验证原件，仅 `--reviewed-tariff-version` 开启这一具体审读版本，输出目录必须全新/为空。命令见上述阶段 28 操作说明。
+
+新副本从 GitHub 拉取 9b9ce89，重新下载新版页面，使用阶段 27 隔离环境执行 25+67 项既有检查和 72 次因素实验政策求解。四个数值 CSV 逐字节一致，两个验证 JSON 除明确的准入模式外一致，完整 192h 账目及 18 条因素记录仅增加已声明来源证明。原源路径回归另证 9 个产物逐字节不变；新版本准入变异检查 11 项、来源核对 6 项、输出保护 2 项通过。逐记录比较器的 72 个断言不是独立研究样本。
+
+`compare_reviewed_source_replay.py --checkout /absolute/path/to/checkout` 在主研究树比较并保存独立副本产物，来源审读脚本仍需旧本地原件作参照，不能称旧原件已从网络恢复。所有记录位于 `revision/reviewed_tariff_version/`；13 原字节输入 + 1 显式审读版本的限定复算，不代表重新优化 108 案、第二机器/操作系统或完整省级实证。

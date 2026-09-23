@@ -1,0 +1,15 @@
+{
+  "checks": [
+    {
+      "script": "validate_demand_cohort.py",
+      "exit_code": 2,
+      "prior_output_preserved": true
+    },
+    {
+      "script": "validate_fixed_cohort_factorial.py",
+      "exit_code": 2,
+      "prior_output_preserved": true
+    }
+  ],
+  "scope": "Protect pre-existing evidence; numerical calculations unchanged"
+}

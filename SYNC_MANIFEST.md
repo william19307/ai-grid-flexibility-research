@@ -4,9 +4,9 @@
 
 ## 2026-09-23 修订同步
 
-当前仓库经核实为 **PUBLIC**；本次按用户明确要求同步已有修订。工作分支为 `codex/research-evidence-revision`，最新研究阶段为 27，接手从 [HANDOFF.md](HANDOFF.md) 开始。保持 `main` 和已投稿文件的历史状态。
+当前仓库经核实为 **PUBLIC**；本次按用户明确要求同步已有修订。工作分支为 `codex/research-evidence-revision`，最新研究阶段为 28，接手从 [HANDOFF.md](HANDOFF.md) 开始。保持 `main` 和已投稿文件的历史状态。
 
-本次纳入阶段 01–27 的已提交模型、方法工作稿、来源审计、派生验证结果、研究日志及复现入口。没有新增外部原始归档、`work/research/prepared/`、运行环境或未跟踪的审读临时目录。`sources/nbs_2021/province_electricity_2020_transcription.csv` 是既有受 Git 跟踪的人工转录例外，原始年鉴图片及外部下载文件未随 Git 传输；完整复算需要按阶段清单重建输入，尚未验证全新机器一键复现。
+本次纳入阶段 01–28 的已提交模型、方法工作稿、来源审计、派生验证结果、研究日志及复现入口。没有新增外部原始归档、`work/research/prepared/`、运行环境或未跟踪的审读临时目录。`sources/nbs_2021/province_electricity_2020_transcription.csv` 是既有受 Git 跟踪的人工转录例外，原始年鉴图片及外部下载文件未随 Git 传输；完整复算需要按阶段清单重建输入，尚未验证全新机器一键复现。
 
 ## 纳入 GitHub
 

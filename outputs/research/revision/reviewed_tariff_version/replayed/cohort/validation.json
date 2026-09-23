@@ -1,0 +1,84 @@
+{
+  "date": "2026-09-23",
+  "checks": [
+    "embedded_reference_exact_reconstruction_and_no_energy_renormalization",
+    "correct_capacity_and_cost_match_predefined_independent_formula",
+    "naive_capacity_and_cost_match_predefined_independent_formula",
+    "double_counting_reverses_capacity_and_net_cost_conclusion_in_counterexample",
+    "no_cohort_removes_only_treated_cohort_background_unchanged",
+    "cohort_mandatory_even_with_large_background_shedding_allowance",
+    "multiple_nodes_half_hour_MW_to_MWh_conservation",
+    "all_system_peak_ties_and_energy_denominator_preserved",
+    "negative_background_not_clipped",
+    "reject_unit_kW",
+    "reject_dt_hours_0",
+    "reject_dt_hours_0.5",
+    "reject_mode_unknown",
+    "reject_reference_policy_missing",
+    "reject_naive_clock",
+    "reject_reverse_clock",
+    "reject_nan",
+    "reject_negative",
+    "no_silent_policy_clock_shift",
+    "no_silent_node_remapping",
+    "mutated_ledger_rejected",
+    "solver_mutation_does_not_change_frozen_ledger",
+    "four_real_certified_192h_trajectories_with_synthetic_background_match_analytic_dispatch",
+    "real_bridge_no_cohort_explicitly_removes_entire_cluster_including_idle_and_background_jobs",
+    "verified_recovery_tail_cannot_be_truncated"
+  ],
+  "number_of_checks": 25,
+  "frozen_design_commit": "d3af59d",
+  "counterexample": {
+    "correct": {
+      "reference": {
+        "capacity_mw": 8.0,
+        "cost": 160.0
+      },
+      "alternative": {
+        "capacity_mw": 10.0,
+        "cost": 170.0
+      }
+    },
+    "naive": {
+      "reference": {
+        "capacity_mw": 12.0,
+        "cost": 220.0
+      },
+      "alternative": {
+        "capacity_mw": 10.0,
+        "cost": 190.0
+      }
+    }
+  },
+  "certified_case": "Earth_ft_llama_8b_dolly_6_Jiangsu",
+  "maximum_real_trace_balance_error_mw": 0.0,
+  "real_trace_results": {
+    "C00": {
+      "energy_mwh": 640.0794543263889,
+      "cost": 3200.3972716319468,
+      "hours": 192,
+      "balance_error_mw": 0.0
+    },
+    "C10": {
+      "energy_mwh": 637.7806224422303,
+      "cost": 3188.903112211151,
+      "hours": 192,
+      "balance_error_mw": 0.0
+    },
+    "C01": {
+      "energy_mwh": 640.0794543263889,
+      "cost": 3200.3972716319454,
+      "hours": 192,
+      "balance_error_mw": 0.0
+    },
+    "C11": {
+      "energy_mwh": 637.7122105974731,
+      "cost": 3188.5610529873666,
+      "hours": 192,
+      "balance_error_mw": 0.0
+    }
+  },
+  "scope": "Accounting and conditional integration only; synthetic background and assumed power; not new provincial estimates",
+  "source_admission_mode": "explicit_reviewed_tariff_version"
+}

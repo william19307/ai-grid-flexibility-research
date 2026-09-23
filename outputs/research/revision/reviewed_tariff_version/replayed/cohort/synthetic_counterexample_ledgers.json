@@ -1,0 +1,170 @@
+{
+  "correct": {
+    "payload": {
+      "cohort_id": "artificial",
+      "mode": "embedded_reference",
+      "unit": "MW",
+      "dt_hours": 1.0,
+      "nodes": [
+        "A"
+      ],
+      "times": [
+        "2020-01-01T00:00:00+08:00",
+        "2020-01-01T01:00:00+08:00"
+      ],
+      "reference_policy": "reference",
+      "supplied_demand_mw": {
+        "A": [
+          8.0,
+          8.0
+        ]
+      },
+      "background_mw": {
+        "A": [
+          4.0,
+          8.0
+        ]
+      },
+      "cohort_mw": {
+        "reference": {
+          "A": [
+            4.0,
+            0.0
+          ]
+        },
+        "alternative": {
+          "A": [
+            0.0,
+            2.0
+          ]
+        }
+      },
+      "total_mw": {
+        "reference": {
+          "A": [
+            8.0,
+            8.0
+          ]
+        },
+        "alternative": {
+          "A": [
+            4.0,
+            10.0
+          ]
+        }
+      },
+      "metrics": {
+        "reference": {
+          "total_energy_mwh": 16.0,
+          "cohort_energy_mwh": 4.0,
+          "background_energy_mwh": 12.0,
+          "total_peak_mw": 8.0,
+          "cohort_peak_mw": 4.0,
+          "cohort_horizon_energy_share": 0.25,
+          "cohort_at_total_peak_min_mw": 0.0,
+          "cohort_at_total_peak_max_mw": 4.0
+        },
+        "alternative": {
+          "total_energy_mwh": 14.0,
+          "cohort_energy_mwh": 2.0,
+          "background_energy_mwh": 12.0,
+          "total_peak_mw": 10.0,
+          "cohort_peak_mw": 2.0,
+          "cohort_horizon_energy_share": 0.14285714285714285,
+          "cohort_at_total_peak_min_mw": 2.0,
+          "cohort_at_total_peak_max_mw": 2.0
+        }
+      },
+      "reference_reconstruction_residual_mw": 0.0,
+      "provenance": {
+        "scope": "Synthetic algebraic example, no empirical claim"
+      },
+      "limitation": "Scope assertions require external evidence; this ledger does not certify empirical demand or power calibration"
+    },
+    "sha256": "1bd5daa5def160d9c24347ede6b4629a9b8211db4714b09dd0bc4c7627a63e49"
+  },
+  "naive": {
+    "payload": {
+      "cohort_id": "artificial",
+      "mode": "incremental",
+      "unit": "MW",
+      "dt_hours": 1.0,
+      "nodes": [
+        "A"
+      ],
+      "times": [
+        "2020-01-01T00:00:00+08:00",
+        "2020-01-01T01:00:00+08:00"
+      ],
+      "reference_policy": "reference",
+      "supplied_demand_mw": {
+        "A": [
+          8.0,
+          8.0
+        ]
+      },
+      "background_mw": {
+        "A": [
+          8.0,
+          8.0
+        ]
+      },
+      "cohort_mw": {
+        "reference": {
+          "A": [
+            4.0,
+            0.0
+          ]
+        },
+        "alternative": {
+          "A": [
+            0.0,
+            2.0
+          ]
+        }
+      },
+      "total_mw": {
+        "reference": {
+          "A": [
+            12.0,
+            8.0
+          ]
+        },
+        "alternative": {
+          "A": [
+            8.0,
+            10.0
+          ]
+        }
+      },
+      "metrics": {
+        "reference": {
+          "total_energy_mwh": 20.0,
+          "cohort_energy_mwh": 4.0,
+          "background_energy_mwh": 16.0,
+          "total_peak_mw": 12.0,
+          "cohort_peak_mw": 4.0,
+          "cohort_horizon_energy_share": 0.2,
+          "cohort_at_total_peak_min_mw": 4.0,
+          "cohort_at_total_peak_max_mw": 4.0
+        },
+        "alternative": {
+          "total_energy_mwh": 18.0,
+          "cohort_energy_mwh": 2.0,
+          "background_energy_mwh": 16.0,
+          "total_peak_mw": 10.0,
+          "cohort_peak_mw": 2.0,
+          "cohort_horizon_energy_share": 0.1111111111111111,
+          "cohort_at_total_peak_min_mw": 2.0,
+          "cohort_at_total_peak_max_mw": 2.0
+        }
+      },
+      "reference_reconstruction_residual_mw": null,
+      "provenance": {
+        "scope": "Synthetic algebraic example, no empirical claim"
+      },
+      "limitation": "Scope assertions require external evidence; this ledger does not certify empirical demand or power calibration"
+    },
+    "sha256": "c46953eca5fc5c25835f6faecdf9e9507cf53157f215a941035f91dca3df4ef2"
+  }
+}

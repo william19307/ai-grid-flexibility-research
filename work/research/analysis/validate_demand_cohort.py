@@ -20,6 +20,8 @@ if options.reviewed_tariff_version and options.output_dir is None:
     parser.error('Reviewed-source replay requires a separate --output-dir')
 ADMISSION = dict(allow_reviewed_tariff_version=options.reviewed_tariff_version)
 OUT = ROOT / options.output_dir if options.output_dir is not None else ROOT / 'outputs/research/revision/demand_cohort'
+if options.reviewed_tariff_version and OUT.exists() and any(OUT.iterdir()):
+    parser.error('Reviewed-source output directory must be empty; preserve earlier evidence')
 OUT.mkdir(parents=True, exist_ok=True)
 checks = []
 clock = pd.date_range('2020-01-01', periods=2, freq='h', tz='Asia/Shanghai')
