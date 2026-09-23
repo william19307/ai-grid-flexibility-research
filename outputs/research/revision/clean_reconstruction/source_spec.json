@@ -1,0 +1,69 @@
+{
+  "scope": "External inputs required by existing certified-power and fixed-cohort validations; not all manuscript inputs",
+  "policy_input_sha256": {
+    "outputs/research/tables/dvfs_measured_and_derived.csv": "26a173f809ba03262a9d19f2b73079fa6b172f6c5fe68bf8abd5ffbd7af6e742",
+    "outputs/research/tables/data_registry.csv": "a62c1111201b082a88f162128ffbd8d0f79370da72c664657201a1a172fd70ba",
+    "work/research/sources/helios_sensetime/data/Earth/cluster_log.csv": "bb62d7842ee50a093c1f872afa293a8e27500f38dfc5cd1dab3b10c53746b3db",
+    "work/research/sources/helios_sensetime/data/Earth/cluster_gpu_number.csv": "cd85b21f9b2651a64ed7ecb86f2c5dea771a3bd55d41537eea976b61aa00642f",
+    "work/research/sources/helios_sensetime/data/Venus/cluster_log.csv": "41153105b5a1beedfc9f3d5151126d8a2b446ba5699a60a41522a6795e726cac",
+    "work/research/sources/helios_sensetime/data/Venus/cluster_gpu_number.csv": "08c05fc4d2ac94aceb43f2bfd28d731a089df8e9bb7c3412d2bd211cab2ed57c",
+    "work/research/sources/helios_sensetime/data/Saturn/cluster_log.csv": "f991918de22dd88fd87ed4f4d8b3b8beb34a19a57007037298c08e48d56c2377",
+    "work/research/sources/helios_sensetime/data/Saturn/cluster_gpu_number.csv": "d8760e0e69a43ef2c86eb4316436cdebdf513fc5c2742d43875ddcf546bfae5a",
+    "work/research/sources/helios_sensetime/data/Uranus/cluster_log.csv": "785e4154cefb45dba55bdfb8c3d313f101cd75dbe78b158a09f387ef8f4418af",
+    "work/research/sources/helios_sensetime/data/Uranus/cluster_gpu_number.csv": "b824e9d839423571f7570a72b3712b0a547926f70ab3d73b9d18b0df3be17e49",
+    "work/research/sources/tariffs/gansu_2020_12_interpretation_gsei.html": "63be4112ff3cb2324369e3e3305aacbae6bacbd9cb8947f67bb49a0190ffef17",
+    "work/research/sources/tariffs/jiangsu_2020_1183_nanjing_forward_724.pdf": "246beceecd970f253592ccb93b4aaf3e9047341cd90c47909103e592b553c05c",
+    "work/research/sources/tariffs/guizhou_2023_481.html": "490bd4d968046a013d733df055e1f1e126e8b516e805ca905b7682b1a60aa906"
+  },
+  "helios": {
+    "commit": "159f0caeec16600b9b6017862952a36aae01c43f",
+    "url": "https://raw.githubusercontent.com/S-Lab-System-Group/HeliosData/159f0caeec16600b9b6017862952a36aae01c43f/data.zip",
+    "bytes": 36437672,
+    "sha256": "3d22a5f6c0ae669e2fcbfe4200fa9c48664507bc397c677bad8f085222c032ac"
+  },
+  "tariffs": [
+    {
+      "path": "work/research/sources/tariffs/gansu_2020_12_interpretation_gsei.html",
+      "url": "https://www.gsei.com.cn/index.php/cms/item-view-id-303607.html",
+      "url_note": "Endpoint reconstructed from original HTML item id; exact historical fetch URL not recorded in registry"
+    },
+    {
+      "path": "work/research/sources/tariffs/jiangsu_2020_1183_nanjing_forward_724.pdf",
+      "url": "https://www.njqxq.gov.cn/qxqrmzf/qxqfzhggj/202011/P020201111396651530459.pdf"
+    },
+    {
+      "path": "work/research/sources/tariffs/guizhou_2023_481.html",
+      "url": "https://fgw.guizhou.gov.cn/zwgk/zcwj/zcwj/202306/t20230628_80566840.html"
+    }
+  ],
+  "archive": {
+    "id": "35e9e7ae-27b9-41ff-b520-90820f0d30b9",
+    "key": "PyPSA-China-main .zip",
+    "size": 16887440879,
+    "checksum": "md5:dc8eb359652d152ed849fc58e0617d72",
+    "links": {
+      "self": "https://zenodo.org/api/records/13987282/files/PyPSA-China-main%20.zip/content"
+    }
+  },
+  "load_member": {
+    "name": "PyPSA-China-main /data/load/load_2020_weatheryears_1979_2016_TWh.h5",
+    "bytes": 2255944,
+    "compressed_bytes": 2098297,
+    "crc32": 1438880105,
+    "offset": 46188384,
+    "compression": 8,
+    "local_path": "work/research/sources/zenodo_13987282/selected/data/load/load_2020_weatheryears_1979_2016_TWh.h5",
+    "sha256": "ebb85d2a982ffd91c3e6b816e7d5e2132f14d57edc6f2a3378d581789a64f03b",
+    "member_crc_and_size_verified": true,
+    "full_archive_checksum_verified": false
+  },
+  "transcription": {
+    "path": "work/research/sources/nbs_2021/province_electricity_2020_transcription.csv",
+    "sha256": "a8882c071dc35ca6ba3943f21d4033364c575923502d69e5cae730d7fcfb2e3d",
+    "status": "Tracked manual transcription; original table visual review is prior evidence, not repeated by hydration"
+  },
+  "prepared_target": {
+    "path": "work/research/prepared/load_2020_annual_anchored_hourly_shape_UNVALIDATED.npz",
+    "sha256": "86bc5a2ad0c1028cfd9420431e4d75283d2842be958f1c4d3bc092cbc85908f6"
+  }
+}

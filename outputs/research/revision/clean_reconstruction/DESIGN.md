@@ -1,0 +1,11 @@
+# Stage 27: clean-checkout reconstruction attempt
+
+2026-09-23. Prior turn completed stage 26 and pushed 0f1314e; this is a new reproducibility check. Public source probes already showed two tariff requests returning HTTP 403 and one matching frozen bytes. This is an engineering audit, not a blinded scientific experiment.
+
+Use a separate network clone of the revision branch, a new Python 3.14 virtual environment without system site packages, public PyPI packages pinned in `work/research/requirements-reconstruction.txt`, and external downloads made by `restore_certified_inputs.py`. Do not copy sources, prepared arrays, environments or caches from the working research tree. The fresh checkout necessarily contains the previously published derived results and certificates; verification of those is not a new run of policy optimization.
+
+Reconstruct the original Helios archive from a commit-pinned upstream URL; verify the archive and all eight CSV files. Fetch just the required load HDF5 member from the versioned 16.9 GB archive using exact ranges and check name, length, CRC and frozen SHA256. Rebuild the annual-anchored array directly from that load member and the tracked manual transcription, without downloading unrelated weather or altering calibration targets. Authenticate all 13 frozen policy input files plus the prepared array. Do not amend existing expected hashes when downloads differ.
+
+Record environment installation and every attempted input outcome, including network denials and hash mismatches. If all inputs pass, rerun stages 24 and 26 in the separate clone and compare their numerical outputs and hashes. If inputs fail, record the certified numerical runs as not executed, not as passed. Independent synthetic grid/commitment checks may still run in the new environment but do not close the failed reconstruction gate. Do not loosen certificates or import local cached files to force a pass.
+
+The outcome is scoped to this bounded chain on the same host with a new checkout/environment. It cannot establish a second-machine/OS result or full manuscript reproduction. Original study sources, certificates, submitted manuscript and weather hold remain unchanged. Store executable recovery steps, failure evidence and next required actions, then sync the revision branch.
