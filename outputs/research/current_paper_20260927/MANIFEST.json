@@ -1,0 +1,566 @@
+{
+  "schema_version": 1,
+  "package": "current_paper_20260927",
+  "prepared_date": "2026-09-27",
+  "evidence_through_revision_stage": 35,
+  "evidence_date": "2026-09-23",
+  "evidence_base_commit": "f4bd66b564e50d0a7e30d5f4cca6ebe522b5df33",
+  "branch": "codex/research-evidence-revision",
+  "manifest_scope": "All package files except MANIFEST.json itself; the adjacent ZIP is also excluded.",
+  "file_count": 80,
+  "files": [
+    {
+      "path": "00_阅读说明.md",
+      "bytes": 3292,
+      "sha256": "3799e0b15beb1d652c776a9cafaf7a5589d0f22bbbbe96b182038033d819a840",
+      "category": "package_guide"
+    },
+    {
+      "path": "01_current_revision/core_paper_en_v1.5_review.docx",
+      "bytes": 231194,
+      "sha256": "1b447f3decd92b524ac2bb5ff3396ddb07a5601c5a26ea1dff76f32398400f17",
+      "category": "current_review_manuscript"
+    },
+    {
+      "path": "01_current_revision/core_paper_en_v1.5_review.md",
+      "bytes": 17960,
+      "sha256": "c4b608e0208c0c1d890e2bd8a5d37f9f6ae0de6512428c036544a680efd2c5b3",
+      "category": "current_review_manuscript"
+    },
+    {
+      "path": "01_current_revision/figures/fig1_policy_attribution.png",
+      "bytes": 199480,
+      "sha256": "0b7ea2df6a120078bcbe3a750b1026a555442d46a9f4a544f7987249d1efa9d7",
+      "category": "current_review_manuscript",
+      "byte_identical_to": "outputs/research/revision/policy/figures/policy_attribution_bounds.png"
+    },
+    {
+      "path": "01_current_revision/figures/figS1_quarterly_diagnostic.png",
+      "bytes": 293561,
+      "sha256": "7de7a85ddf8c2c8e463255321fc151c1da4fb13202cf0e2ae94a74929650a5f8",
+      "category": "current_review_manuscript",
+      "byte_identical_to": "outputs/research/revision/rudong_h2_quarterly/quarterly_diagnostic.png"
+    },
+    {
+      "path": "01_current_revision/supplementary_information_v1.5_review.docx",
+      "bytes": 323632,
+      "sha256": "48d56108083469e54bcf5d9277ac3ae2034e7e95a38361856e459f0dc0339c0c",
+      "category": "current_review_manuscript"
+    },
+    {
+      "path": "01_current_revision/supplementary_information_v1.5_review.md",
+      "bytes": 15994,
+      "sha256": "1e2cef0a5de648cd7ca9c6bda02fa41ce58daa803f595e2d3ae3b19f25598375",
+      "category": "current_review_manuscript"
+    },
+    {
+      "path": "02_original_submission_v1.4/README.md",
+      "bytes": 453,
+      "sha256": "6e3b24ecbcf2d3a1b843f37a6ef273ad3492e938cd4c6555e806f45d48aa2a13",
+      "category": "historical_submission_archive"
+    },
+    {
+      "path": "02_original_submission_v1.4/core_paper_en_v1.4.docx",
+      "bytes": 502035,
+      "sha256": "494ac6ed123fc23003485c7eb4b749d12ddb59173a224a14cf217cda4ad9461d",
+      "category": "historical_submission_archive",
+      "byte_identical_to": "outputs/research/manuscript/docx/core_paper_en_v1.4.docx"
+    },
+    {
+      "path": "02_original_submission_v1.4/core_paper_en_v1.4.md",
+      "bytes": 31418,
+      "sha256": "83ee8c4274376ea215b36ef39b09ef00d3340c9a17c98beff0a75f95c7274337",
+      "category": "historical_submission_archive",
+      "byte_identical_to": "outputs/research/manuscript/core_paper_en_v1.4.md"
+    },
+    {
+      "path": "02_original_submission_v1.4/cover_letter_nature_energy.docx",
+      "bytes": 12767,
+      "sha256": "92c104e0171dbd521a321b7b22f3ffa5421f7a6d60bb03180f140a9af9ab8e89",
+      "category": "historical_submission_archive",
+      "byte_identical_to": "outputs/research/manuscript/docx/cover_letter_nature_energy.docx"
+    },
+    {
+      "path": "02_original_submission_v1.4/cover_letter_nature_energy.md",
+      "bytes": 4781,
+      "sha256": "0fd11d4fe8e46613014f2b21ddfa276c0f2621080cb558f04f7214a1e5757d27",
+      "category": "historical_submission_archive",
+      "byte_identical_to": "outputs/research/manuscript/cover_letter_nature_energy.md"
+    },
+    {
+      "path": "02_original_submission_v1.4/figures/fig1_constraints_and_power.pdf",
+      "bytes": 51026,
+      "sha256": "a532b3616aee2e9a83034aac8a369a98423808c66746989a9e921e79297be2bb",
+      "category": "historical_submission_archive",
+      "byte_identical_to": "outputs/research/figures/submission/fig1_constraints_and_power.pdf"
+    },
+    {
+      "path": "02_original_submission_v1.4/figures/fig1_constraints_and_power.png",
+      "bytes": 249258,
+      "sha256": "bab05cf729e15ed97bf3cff4b00dbdbb7ec84d22508f5c354bf53d50511aad07",
+      "category": "historical_submission_archive",
+      "byte_identical_to": "outputs/research/figures/submission/fig1_constraints_and_power.png"
+    },
+    {
+      "path": "02_original_submission_v1.4/figures/fig2_cost_by_scenario.pdf",
+      "bytes": 19293,
+      "sha256": "b5ef1916381c4d606242c35965b8c7230d9c25d8aad5c1ce7f9a8469ee019900",
+      "category": "historical_submission_archive",
+      "byte_identical_to": "outputs/research/figures/submission/fig2_cost_by_scenario.pdf"
+    },
+    {
+      "path": "02_original_submission_v1.4/figures/fig2_cost_by_scenario.png",
+      "bytes": 104159,
+      "sha256": "74e7e12c7a43e87093a4a16baa5003ce738c9fae380fc4f9d69de1dc262b8e1b",
+      "category": "historical_submission_archive",
+      "byte_identical_to": "outputs/research/figures/submission/fig2_cost_by_scenario.png"
+    },
+    {
+      "path": "02_original_submission_v1.4/figures/fig3_realised_share.pdf",
+      "bytes": 18410,
+      "sha256": "fff7147da220942827b934e47ec31574ae9ae2716eea8b6eb1b1bd9e76032996",
+      "category": "historical_submission_archive",
+      "byte_identical_to": "outputs/research/figures/submission/fig3_realised_share.pdf"
+    },
+    {
+      "path": "02_original_submission_v1.4/figures/fig3_realised_share.png",
+      "bytes": 81401,
+      "sha256": "9768828cf57b207a930d923cf626edc85ad202849788528b7c669cd198c0ccb4",
+      "category": "historical_submission_archive",
+      "byte_identical_to": "outputs/research/figures/submission/fig3_realised_share.png"
+    },
+    {
+      "path": "02_original_submission_v1.4/figures/fig4_robustness.pdf",
+      "bytes": 17649,
+      "sha256": "b202be0a57830352493e094c3204568daa74e4fcd258fe2900cf0f8c41fb8206",
+      "category": "historical_submission_archive",
+      "byte_identical_to": "outputs/research/figures/submission/fig4_robustness.pdf"
+    },
+    {
+      "path": "02_original_submission_v1.4/figures/fig4_robustness.png",
+      "bytes": 84396,
+      "sha256": "e6332f8fc108936f3cf12fafa7932461ab2a944d988cb9dbe99a964b33c603a1",
+      "category": "historical_submission_archive",
+      "byte_identical_to": "outputs/research/figures/submission/fig4_robustness.png"
+    },
+    {
+      "path": "02_original_submission_v1.4/supplementary_data_1.xlsx",
+      "bytes": 33851,
+      "sha256": "0c086ef446e7de483d708f8560b92352aa00927d8ebe68265dc4a54218020b62",
+      "category": "historical_submission_archive",
+      "byte_identical_to": "outputs/research/manuscript/supplementary_data_1.xlsx"
+    },
+    {
+      "path": "02_original_submission_v1.4/supplementary_information_v1.4.docx",
+      "bytes": 32552,
+      "sha256": "607fab3a3c5941f8ddcce36e3a0fe2c4e5df8d1218dffd082ac30370795e99ba",
+      "category": "historical_submission_archive",
+      "byte_identical_to": "outputs/research/manuscript/docx/supplementary_information_v1.4.docx"
+    },
+    {
+      "path": "02_original_submission_v1.4/supplementary_information_v1.4.md",
+      "bytes": 78923,
+      "sha256": "97ddc38b5fd923c7e47637a045926d0fd22f2b1bad84aae17ca1f47880a0c455",
+      "category": "historical_submission_archive",
+      "byte_identical_to": "outputs/research/manuscript/supplementary_information_v1.4.md"
+    },
+    {
+      "path": "02_original_submission_v1.4/supplementary_information_v1.4.pdf",
+      "bytes": 1425417,
+      "sha256": "512c097947d4073b93a30ca26cfe251a668aa4b358481f09826c15f7c00651db",
+      "category": "historical_submission_archive",
+      "byte_identical_to": "outputs/research/manuscript/docx/supplementary_information_v1.4.pdf"
+    },
+    {
+      "path": "03_research_records/CURRENT_CLAIM_STATUS.md",
+      "bytes": 15623,
+      "sha256": "5e07c3ab797d289581b36672fea0ebd0a75e18cd90b1925208a5acb4c2c60e80",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/CURRENT_CLAIM_STATUS.md"
+    },
+    {
+      "path": "03_research_records/HANDOFF.md",
+      "bytes": 8996,
+      "sha256": "03ad1bbd6106b0d60a280b4aefd600e5567fa7ab85c60bbe6e52bab75e5574ef",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "HANDOFF.md"
+    },
+    {
+      "path": "03_research_records/REPRODUCE.md",
+      "bytes": 45942,
+      "sha256": "6502336105d82af3b1604e34b0bbde500f293ca2222a3e57224d7b6a03bb0f6c",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "REPRODUCE.md"
+    },
+    {
+      "path": "03_research_records/RESEARCH_LOG.md",
+      "bytes": 60916,
+      "sha256": "da2c433f8d9ee19975c1720615d8abb39a69b121991a48877af80b327a76b0d8",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "RESEARCH_LOG.md"
+    },
+    {
+      "path": "03_research_records/REVISION_STATUS.md",
+      "bytes": 18487,
+      "sha256": "f18ddfbaa47f230beef9c38cb7debf69b9e8be723f69bf9aaecf81a7101c429d",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/REVISION_STATUS.md"
+    },
+    {
+      "path": "03_research_records/SYNC_MANIFEST.md",
+      "bytes": 4321,
+      "sha256": "23b28d64c718d32004721e87ecab5987ea6c8ec7f9545a350208fef38cc27098",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "SYNC_MANIFEST.md"
+    },
+    {
+      "path": "03_research_records/methods/asset_identity_methods_draft.md",
+      "bytes": 2432,
+      "sha256": "6ac611c9c436b9421b046a506af80acdcfa4d6c784e54438026316807ccbc947",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/asset_identity_methods_draft.md"
+    },
+    {
+      "path": "03_research_records/methods/captive_generation_methods_draft.md",
+      "bytes": 6443,
+      "sha256": "e7d893672ae58c3eeff6ef81c12dd9f8e35d93ba45e8ef7a7bde2089f9d43b28",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/captive_generation_methods_draft.md"
+    },
+    {
+      "path": "03_research_records/methods/demand_cohort_methods_draft.md",
+      "bytes": 3068,
+      "sha256": "30cb9a8a73a5bdaa5640b32527c5018fa1421c3152a55ac8a33af590a38d3fd7",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/demand_cohort_methods_draft.md"
+    },
+    {
+      "path": "03_research_records/methods/fixed_cohort_factorial_methods_draft.md",
+      "bytes": 1636,
+      "sha256": "1f28f6eb6804d0ca51f4f284d6ceb28b1f1922b285926228e3aa02a38566bf4c",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/fixed_cohort_factorial_methods_draft.md"
+    },
+    {
+      "path": "03_research_records/methods/forecast_information_methods_draft.md",
+      "bytes": 2881,
+      "sha256": "89e8bf34832d9094414aa38091f0d7de0a7822f4390980fd9f92ab168b9d8718",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/forecast_information_methods_draft.md"
+    },
+    {
+      "path": "03_research_records/methods/input_boundary_methods_draft.md",
+      "bytes": 4107,
+      "sha256": "90c960155b308242d9514c639be07ca421e6332e55faed00b57b4f4703392621",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/input_boundary_methods_draft.md"
+    },
+    {
+      "path": "03_research_records/methods/load_validation_methods_draft.md",
+      "bytes": 3205,
+      "sha256": "d71536bb16317d4cc1cbe191c046ff3b5d420281fe12ea0685e2635462a919a4",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/load_validation_methods_draft.md"
+    },
+    {
+      "path": "03_research_records/methods/mechanism_grid_methods_draft.md",
+      "bytes": 4232,
+      "sha256": "733d8bb9a3a64b3f3ce904d7e77a6ced3f2451b25e936830289be5d5c28b8dc2",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/mechanism_grid_methods_draft.md"
+    },
+    {
+      "path": "03_research_records/methods/mechanism_information_methods_draft.md",
+      "bytes": 4871,
+      "sha256": "bc98b6f7509e4e82db35c8d1ee7e8cc8142a943d83ac085cd9d5f2ec81f3f098",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/mechanism_information_methods_draft.md"
+    },
+    {
+      "path": "03_research_records/methods/policy_attribution_methods_draft.md",
+      "bytes": 6096,
+      "sha256": "ee570c6e1e378be9a07e791079c3199c0e4fff7702ece2c03fb9a9b4db7374f4",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/policy_attribution_methods_draft.md"
+    },
+    {
+      "path": "03_research_records/methods/power_admission_methods_draft.md",
+      "bytes": 3800,
+      "sha256": "53fb7865055f9386613e44dab4f84fe5b31095502e464f491386dd0500704801",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/power_admission_methods_draft.md"
+    },
+    {
+      "path": "03_research_records/methods/renewable_temporal_validation_methods_draft.md",
+      "bytes": 3966,
+      "sha256": "08fca6b698524a1246a798a7b0d23350397d80ae0b129e82dad02e1934fca642",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/renewable_temporal_validation_methods_draft.md"
+    },
+    {
+      "path": "03_research_records/methods/service_replay_methods_draft.md",
+      "bytes": 5843,
+      "sha256": "b1dce470407fa46f283fa784fdc6fe8079489906f3c57d64ad2e3d35a937e291",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/service_replay_methods_draft.md"
+    },
+    {
+      "path": "03_research_records/methods/thermal_technology_methods_draft.md",
+      "bytes": 2572,
+      "sha256": "2e12b797ccb1072b96d77d06792f689c9a51a39a298ac21632f49d94156045ba",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/thermal_technology_methods_draft.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段01_抽水蓄能修正.md",
+      "bytes": 3928,
+      "sha256": "c59350876426601bd72ef58cc5b1eb5361465359263de4c5060601cf5fb1031a",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段01_抽水蓄能修正.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段02_功率边界与归因对照.md",
+      "bytes": 6522,
+      "sha256": "8d605ff6901f810f4696b298c811afc73df532bd0f775b1ef5c1f3f9e3f24d83",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段02_功率边界与归因对照.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段03_无AI反事实校正.md",
+      "bytes": 4612,
+      "sha256": "62fa49e4234107152a3556ba5f9ea1e6f39f48e93a32419db06674de95667dbc",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段03_无AI反事实校正.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段04_固定服务期限与真实时序.md",
+      "bytes": 7070,
+      "sha256": "5515392828fbadc468a1525a3c805cdf0d75880cf3ba9db07cfdcc01f86d8d1d",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段04_固定服务期限与真实时序.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段05_真实任务整组回放.md",
+      "bytes": 7042,
+      "sha256": "e82a286abb3c075c578d20bfc4e34c92ebc5e41bd4dffa29c76c541ffa951734",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段05_真实任务整组回放.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段06_跨时间与功率曲线验证.md",
+      "bytes": 5843,
+      "sha256": "d68c3751eb73b051d8cea87a6f7d67627de076ab9635295d7840a204851b62d3",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段06_跨时间与功率曲线验证.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段07_固定服务下的政策归因.md",
+      "bytes": 5205,
+      "sha256": "05d8061d0a8a999cb1b6681d06e343f59bcaa6b38f174061a8d18fcd76051086",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段07_固定服务下的政策归因.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段08_机组启停模型与解析核验.md",
+      "bytes": 5530,
+      "sha256": "7c0eece153fd534c5adfc2bfbf403806bbb848228b1eaaad24424eb8fff1e60f",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段08_机组启停模型与解析核验.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段09_真实排程与电网的功率接入.md",
+      "bytes": 3422,
+      "sha256": "5ed8b4858c03aa1516b89c4c0742010ac36cb50ab58d334e6de3b06268499b3b",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段09_真实排程与电网的功率接入.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段10_外部整机功率证据与计能边界.md",
+      "bytes": 5685,
+      "sha256": "b5ace11f6c6ec131bfb5464d811ca17c751b2902a0b562b259bf50c5b86befe3",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段10_外部整机功率证据与计能边界.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段11_整机节能的可测准入条件.md",
+      "bytes": 3719,
+      "sha256": "7f26164e7194a23a39b426c5a4e1cc21f4505688bdf96e51125c5cee6e3f4362",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段11_整机节能的可测准入条件.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段12_多年天气来源与全年验证边界.md",
+      "bytes": 5531,
+      "sha256": "8b27750f1185f058a5be391608230d2d4000bca10720a8f06b7c3a9e273f765d",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段12_多年天气来源与全年验证边界.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段13_显式ERA5与小时区间重建.md",
+      "bytes": 5151,
+      "sha256": "6cc0e3f3857e6ab89309912ec0702de80f91dac9bd9bd6ac29fd72c29a9d1ea7",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段13_显式ERA5与小时区间重建.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段14_固定投资的完整年份验证入口.md",
+      "bytes": 4171,
+      "sha256": "7953d4c265e1287ca91cac3a6f29c48e40050c3928796c93faae21166e649991",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段14_固定投资的完整年份验证入口.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段15_风电海陆错配与校准样本边界.md",
+      "bytes": 4368,
+      "sha256": "121716c080cf7fcd20d69c6f5466e45d68d7b81fe6ea1ab146aec9dad2e30ec2",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段15_风电海陆错配与校准样本边界.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段16_技术分离候选与网格配对试验.md",
+      "bytes": 5393,
+      "sha256": "32d936aded470099c17270892ca02aa8185eaad5236b1d6ab97fdbb124a665b2",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段16_技术分离候选与网格配对试验.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段17_风机曲线敏感性与项目设备证据.md",
+      "bytes": 6076,
+      "sha256": "b01aa9063177b8666ec91ea4273c557def904d13415f58807707711543db32a5",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段17_风机曲线敏感性与项目设备证据.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段18_实际年度发电量与跨年校准检验.md",
+      "bytes": 7135,
+      "sha256": "7dba85d230e335eabee0c26b3643de7e688440faf20f0dea03e85132b1f50fe4",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段18_实际年度发电量与跨年校准检验.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段19_季度观测揭示年度误差抵消.md",
+      "bytes": 6385,
+      "sha256": "37269e9c6d5946d9a5091c3dc2ec2d409576e9c8c74bc7c98ffa4222413ca569",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段19_季度观测揭示年度误差抵消.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段20_机制比较信息与采购目标修正.md",
+      "bytes": 6678,
+      "sha256": "0ba1e94b8624fcaa880ed159a7287a4900956bf32960f36ffb911315f62c2559",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段20_机制比较信息与采购目标修正.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段21_机制响应电网联算与非线性边界反例.md",
+      "bytes": 6504,
+      "sha256": "c1028ba987dceaa4a671a0cbb0a2b683f438f3bbece96449bfb3e38336cca071",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段21_机制响应电网联算与非线性边界反例.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段22_决策时信息来源与预测版本准入.md",
+      "bytes": 4024,
+      "sha256": "207ed52db69f410bda691472e5baa8a1fadd442550d06779e74507604733d3fa",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段22_决策时信息来源与预测版本准入.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段23_2030输入口径与燃气技术错配.md",
+      "bytes": 6737,
+      "sha256": "3f2eba999a571bee70723262f67d206558bb3937dec19a777a47141b87cfd2a1",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段23_2030输入口径与燃气技术错配.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段24_AI群体需求记账与容量反例.md",
+      "bytes": 4787,
+      "sha256": "48b06d6da9256dd66d9dfcf8ed1930983224fb6c76d52a4ede8bdb2d527483fd",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段24_AI群体需求记账与容量反例.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段25_峰荷证据与旧敏感性混杂审计.md",
+      "bytes": 5982,
+      "sha256": "98cd5edf66a3259d085621b2070028ee7ade4262751219fd60fba9bdcb63f9b0",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段25_峰荷证据与旧敏感性混杂审计.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段26_固定群体与负荷形状独立控制.md",
+      "bytes": 3094,
+      "sha256": "5569c576df5a4df9dc9b9784a0ebcad47d39472bdd260db3c89b8d682b0ffc76",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段26_固定群体与负荷形状独立控制.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段27_独立目录重建与复现缺口.md",
+      "bytes": 4346,
+      "sha256": "6b24e637d2497836aac601dca6970efb3a90cc14f9fcaf03f8ef82b43ab20172",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段27_独立目录重建与复现缺口.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段28_网页版本审读与认证轨迹独立复算.md",
+      "bytes": 3914,
+      "sha256": "d46074bb80f2d4ed13f3f7fdbe1e9f84877b5109de7015bcd57d49de00bf504e",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段28_网页版本审读与认证轨迹独立复算.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段29_工业自备发电与电网调节边界.md",
+      "bytes": 6137,
+      "sha256": "2e35a8d67a0d5b7b331eea1248642f193139473541f7a31e16df4fc7c4f9252f",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段29_工业自备发电与电网调节边界.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段30_投产时间与参数证据分级.md",
+      "bytes": 4447,
+      "sha256": "4fc659aff39d04d31897e191f1d8b76e44bca05462da808931541374e01bc868",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段30_投产时间与参数证据分级.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段31_共享煤气与厂区接口模型验证.md",
+      "bytes": 5146,
+      "sha256": "5f4fdf93c461f628f8f14a4044beff6f4ee38dabadb72ec4bcb2a712938eda94",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段31_共享煤气与厂区接口模型验证.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段32_工业年度电量与统计范围审读.md",
+      "bytes": 4843,
+      "sha256": "9ea5e136cc58548dad43bdc559830d2513780d4a3caaedee159b5b424fab5244",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段32_工业年度电量与统计范围审读.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段33_燃气技术用途与存量新增分离.md",
+      "bytes": 4737,
+      "sha256": "0f3859cd2b72af3e55ed137080ec8e7f592c5e657483955d8d94cf6cf9abc0a9",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段33_燃气技术用途与存量新增分离.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段34_燃气机组身份与建设批次证据.md",
+      "bytes": 4458,
+      "sha256": "50a5c88711391bcc61e361903ecee36d456ce8480f4ba9ab8690f803c34a9b3e",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段34_燃气机组身份与建设批次证据.md"
+    },
+    {
+      "path": "03_research_records/stages/阶段35_阜宁项目别名与重复容量记账.md",
+      "bytes": 4365,
+      "sha256": "31de007614d1d63da6844638396b84e0486f055737be14eda3a567df8a270d64",
+      "category": "research_record_snapshot",
+      "byte_identical_to": "outputs/research/revision/阶段35_阜宁项目别名与重复容量记账.md"
+    },
+    {
+      "path": "03_research_records/证据索引.md",
+      "bytes": 3752,
+      "sha256": "6b93fcbb4b12783289fd4390adc37cc4991558a97c0c7039eee2a09e454cefde",
+      "category": "research_record_snapshot"
+    }
+  ]
+}
