@@ -451,3 +451,18 @@ python3 work/research/analysis/verify_literature_revision.py
 ```
 
 第一条联网读取 Crossref 与 arXiv 当前元数据，保留原 16 项登记并新增 5 项 2026 年直接相关研究；第二条只读本地产物，核对 21 个连续唯一 ID、17 项元数据标题、6 条主张引用和 6 类创新边界。重跑可能反映出版商或预印本后续元数据更新，须审读差异后再提交，不能自动覆盖。该阶段核定广义首次主张为 0，当前支持贡献为同一固定群体的四格归因与转换边界反例；不生成硬件测量或省级系统结果。
+
+
+## v1.6 文献整合审读稿（2026-09-27）
+
+阶段 36 的联网元数据登记、全文边界审计和 v1.6 主文可在仓库根目录按下列顺序重建与独立核验。文献登记与全文审计入口会联网读取 Crossref、arXiv 和固定开放版本，结果可能随出版记录或远端可用性变化；其余检查读取本地证据。
+
+```bash
+/Users/apple/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 work/research/analysis/build_literature_revision.py
+/Users/apple/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 work/research/analysis/verify_literature_revision.py
+/Users/apple/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 work/research/analysis/audit_caprara_fulltext.py
+/Users/apple/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 work/research/drafts/build_manuscript_v16.py
+/Users/apple/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 work/research/analysis/verify_manuscript_v16.py
+```
+
+当前核验结果为：21 项直接相关研究，17 项 DOI/arXiv 元数据标题通过，37 项文献结构检查通过；Caprara 等 27 页正式版本全文审计 13 项通过；v1.6 含 23 条参考文献，全部被引用并按首次出现排序，7 项内部证据登记、2 张表和 1 幅图通过独立检查。Word 渲染为 8 页 Letter 版并逐页检查。以上检查认证引用完整性和声明边界，不认证省级系统收益或投稿就绪。

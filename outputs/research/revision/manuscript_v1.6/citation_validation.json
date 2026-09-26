@@ -1,0 +1,11 @@
+{
+  "source": "outputs/research/current_paper_20260927/01_current_revision/core_paper_en_v1.5_review.md",
+  "evidence_commit": "510780e9ead27698e33cedf24df5a5a171a8f11b",
+  "references": 23,
+  "cited_references": 23,
+  "references_in_first_appearance_order": true,
+  "internal_evidence_register_entries": 7,
+  "broad_first_claims": 0,
+  "nature_energy_system_claim_ready": false,
+  "docx_created": true
+}

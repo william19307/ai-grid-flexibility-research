@@ -75,7 +75,8 @@
     "repository public; LICENSE/CITATION/.zenodo.json; releases v1.0.0–v1.0.3; Zenodo concept DOI 10.5281/zenodo.22803800, frozen v1.0.3 DOI 10.5281/zenodo.22804268",
     "final cross-document consistency workflow: 12 confirmed fixes applied, critic verdict READY; superseded drafts archived; Chinese manuscript with Chinese-labelled figures and submission statement",
     "English v1.4 submitted to Nature Energy as Article on 2026-09-17, manuscript NENERGY-26093649; SI v1.4 (readable tables, S6 fix, values unchanged) and supplementary_data_1.xlsx; Chinese manuscript ref [11] and submission letter updated with the ID",
-    "revision stage 36: direct literature registry expanded from 16 to 21 studies; 11 Crossref DOI and 6 arXiv metadata records verified; broad first claims removed; contribution narrowed to same-cohort factorial attribution and grid-translation counterexamples"
+    "revision stage 36: direct literature registry expanded from 16 to 21 studies; 11 Crossref DOI and 6 arXiv metadata records verified; broad first claims removed; contribution narrowed to same-cohort factorial attribution and grid-translation counterexamples",
+    "manuscript v1.6 literature-integrated review edition: 23 references all cited in first-appearance order, independent citation validation passed, and 8-page DOCX/PDF visually inspected; provincial system claims remain open"
   ],
   "requirements_still_open": {
     "novelty": "stage 36 literature audit completed; broad first claims are closed, while the narrowed attribution/boundary contribution still requires common-hardware and held-out system evidence for Nature Energy-level impact",
@@ -84,11 +85,10 @@
     "Q3": "event contracts gameable and low-value; continuous marginal-cost-shaped price closes gap to <1%; cost pass-through and sub-hourly inference remain open",
     "national_scope": "province network, generation/asset calibration and 2030/2035 scenarios pending; annual provincial load anchor available but hourly shape remains unvalidated; peak check shows Gansu/Guizhou anchored peaks overstated",
     "robustness": "multi-weather done for wind/solar (single-year hydro and load shape remain); outages and external system pending",
-    "paper": "evidence-bounded English v1.5 review edition assembled and visually checked; formal citation revision in progress; provincial results, final SI/data/figures and cover letter remain open; submitted v1.4 is historical and not treated as validated",
+    "paper": "literature-integrated English v1.6 review edition assembled and visually checked; 23 references all cited and independently validated; provincial results, final SI/data/figure set and cover letter remain open; submitted v1.4 is historical and not treated as validated",
     "regions": "candidate set screened (Gansu/Ningxia/Inner Mongolia; Jiangsu/Guangdong; Guizhou); final choice pending calibration data; Gansu large hydro absent from archive"
   },
   "next_actions": [
-    "generate and visually verify the citation-integrated v1.6 review manuscript from the stage 36 evidence commit",
     "obtain common-hardware whole-node AC measurements with matched useful work, quality, idle and transition accounting",
     "resolve actual SLA/topology and whether the treated AI cohort is already embedded in provincial demand",
     "complete technology/vintage-consistent renewable, hydro, thermal, transmission and demand inputs",
@@ -96,7 +96,7 @@
     "rebuild the final manuscript, SI, data, figures and cover letter from the accepted result source and cross-audit every claim"
   ],
   "live_jobs": [],
-  "previous_goal_turn_classification": "progress: stage 36 changed the defensible novelty boundary using verified current primary-source metadata; Nature Energy evidence gates remain open",
-  "latest_manuscript": "outputs/research/current_paper_20260927/01_current_revision/core_paper_en_v1.5_review.md",
+  "previous_goal_turn_classification": "progress: stage 36 literature audit and v1.6 citation integration completed and independently checked; Nature Energy empirical evidence gates remain open",
+  "latest_manuscript": "outputs/research/revision/manuscript_v1.6/core_paper_en_v1.6_review.md",
   "latest_phase_report": "outputs/research/revision/阶段36_文献增量与创新边界复核.md"
 }

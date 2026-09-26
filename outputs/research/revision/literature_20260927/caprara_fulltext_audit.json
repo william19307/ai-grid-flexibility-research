@@ -1,0 +1,31 @@
+{
+  "access_date": "2026-09-27",
+  "citation": "Caprara et al., International Journal of Electrical Power & Energy Systems 178, 111940 (2026)",
+  "doi": "10.1016/j.ijepes.2026.111940",
+  "repository_item_api": "https://upcommons.upc.edu/server/api/core/items/c15cab92-e0eb-4124-852d-e02e1dde9bdc",
+  "repository_handle": "https://hdl.handle.net/2117/472510",
+  "bitstream_content_url": "https://upcommons.upc.edu/server/api/core/bitstreams/e87ee20a-d65c-451d-8023-ef0bc3ec3325/content",
+  "bitstream_uuid": "e87ee20a-d65c-451d-8023-ef0bc3ec3325",
+  "filename": "1-s2.0-S0142061526003820-main.pdf",
+  "license": "CC BY 4.0 as reported by the repository/publisher record",
+  "bytes": 9261880,
+  "md5": "c4691772b88d0da335d034fde0dbbe35",
+  "sha256": "9afe7c3efe6fb986de0c95cf524c3309255447306258c7e2a378a53d35da78a6",
+  "pages": 27,
+  "text_anchor_checks": {
+    "gpu_side_boundary": true,
+    "non_it_not_modeled": true,
+    "latency_proxy": true,
+    "no_measured_power": true,
+    "first_order_power": true,
+    "rebound_missing": true,
+    "dependencies_missing": true,
+    "delay_cost_assumption": true
+  },
+  "checks_passed": 13,
+  "interpretation": {
+    "overlap": "production trace, latency-proxy classification, task-duration uncertainty and modeled response-window deferral are prior art",
+    "limits": "GPU-side linear power estimate; no measured facility boundary, rescheduling rebound or task dependencies; historical waiting supports an assumed no-extra-cost deferral rule rather than an observed contract deadline",
+    "remaining_manuscript_contribution": "same fixed cohort factorial attribution under explicit completion benchmarks plus translation-boundary tests"
+  }
+}

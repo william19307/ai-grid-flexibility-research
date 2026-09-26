@@ -2,6 +2,12 @@
 
 本仓库同步的是研究过程和可复现的审计结果，不同步原始外部归档。
 
+## 2026-09-27 v1.6 文献整合稿同步
+
+新增 `outputs/research/revision/manuscript_v1.6/`，包括可编辑 Word、审阅 PDF、Markdown 源稿、引用验证记录和 Figure 1；同步阶段 36 的 21 项文献登记、17 项当前元数据核验、创新矩阵、主张—引用账目，以及 Caprara 等正式版本 27 页全文的 13 项边界审计。v1.6 有 23 条参考文献，全部被正文引用并按首次出现排序，8 页版面逐页检查通过。
+
+这些文件记录当前可守住的贡献和缺口，不表示省级系统收益已经重算或稿件已达到投稿状态。Caprara 正式 PDF 原件、渲染页面和其他临时检查文件继续留在 Git 排除目录；Git 只同步审计结果、文件标识和可复现入口。
+
 ## 2026-09-27 论文整理同步
 
 新增 `outputs/research/current_paper_20260927/`：包括可编辑的 v1.5 英文主文和补充方法审读稿、两张当前证据图、原投稿 v1.4 的历史冻结副本、阶段 01–35 报告、14 份方法工作稿、中文证据索引和 SHA-256 清单。相邻 ZIP 便于整包下载。该整理包没有把尚未完成的省级实证写成最终结果；原投稿文件按字节一致性检查保留。
@@ -10,9 +16,9 @@ Word 文档由 `work/research/drafts/build_current_paper_docx.py` 生成，已�
 
 ## 2026-09-23 修订同步
 
-当前仓库经核实为 **PUBLIC**；本次按用户明确要求同步已有修订。工作分支为 `codex/research-evidence-revision`，最新研究阶段为 35，接手从 [HANDOFF.md](HANDOFF.md) 开始。保持 `main` 和已投稿文件的历史状态。
+当前仓库经核实为 **PUBLIC**；本次按用户明确要求同步已有修订。工作分支为 `codex/research-evidence-revision`，最新研究阶段为 36，接手从 [HANDOFF.md](HANDOFF.md) 开始。保持 `main` 和已投稿文件的历史状态。
 
-本次纳入阶段 01–35 的已提交模型、方法工作稿、来源审计、派生验证结果、研究日志及复现入口。没有新增外部原始归档、`work/research/prepared/`、运行环境或未跟踪的审读临时目录。`sources/nbs_2021/province_electricity_2020_transcription.csv` 是既有受 Git 跟踪的人工转录例外，原始年鉴图片及外部下载文件未随 Git 传输；完整复算需要按阶段清单重建输入，尚未验证全新机器一键复现。
+本次纳入阶段 01–36 的已提交模型、方法工作稿、来源审计、派生验证结果、研究日志及复现入口。没有新增外部原始归档、`work/research/prepared/`、运行环境或未跟踪的审读临时目录。`sources/nbs_2021/province_electricity_2020_transcription.csv` 是既有受 Git 跟踪的人工转录例外，原始年鉴图片及外部下载文件未随 Git 传输；完整复算需要按阶段清单重建输入，尚未验证全新机器一键复现。
 
 ## 纳入 GitHub
 

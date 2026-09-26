@@ -34,9 +34,9 @@ NEW_RECORDS = [
         "title": "Data center workload flexibility for power system demand response: Evidence from Alibaba traces",
         "publication_status": "International Journal of Electrical Power & Energy Systems 178 (2026), 111940",
         "canonical_url": "https://doi.org/10.1016/j.ijepes.2026.111940",
-        "inspection_level": "Publisher abstract, highlights and open university repository record inspected",
+        "inspection_level": "Open-access version-of-record PDF obtained from the university repository; methods, assumptions, results and limitations inspected visually and by two text engines",
         "known_overlap": "Real workload traces, latency-derived deferrability, a service-aware deferral rule and modeled short-notice demand response are already published",
-        "next_comparison": "Do not claim first trace-based flexibility quantification; distinguish observed queue latency from a completion contract and compare mode choice with start-time choice on the same fixed cohort",
+        "next_comparison": "Do not claim first trace-based flexibility quantification; distinguish observed queue latency from a completion contract and compare mode choice with start-time choice on the same fixed cohort while retaining completion and rebound accounting",
         "primary_evidence_url": "https://www.sciencedirect.com/science/article/pii/S0142061526003820",
     },
     {
@@ -94,7 +94,7 @@ NOVELTY_ROWS = [
         "theme": "Trace-based deferral",
         "prior_evidence": "L17 derives deferrability and demand-response estimates from more than one million Alibaba trace tasks",
         "remaining_contribution": "Same-cohort factorial separation of operating mode and start time under an explicit completion benchmark",
-        "manuscript_action": "Cite L17 and state that queue latency is not an observed deadline",
+        "manuscript_action": "Cite L17 and state that queue latency is not an observed deadline; retain complete-cohort completion and rebound accounting as the narrower difference",
         "status": "narrow_contribution_survives",
     },
     {

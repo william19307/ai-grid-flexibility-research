@@ -348,7 +348,14 @@ def configure_document(document, short_title):
         run.font.color.rgb = RGBColor(90, 90, 90)
 
 
-def build(markdown_path, output_path, short_title):
+def build(
+    markdown_path,
+    output_path,
+    short_title,
+    *,
+    subject="Revision v1.5 review edition; evidence through revision stage 35",
+    comments="Prepared as an evidence-bounded review manuscript on 27 September 2026.",
+):
     document = Document()
     configure_document(document, short_title)
     lines = markdown_path.read_text(encoding="utf-8").splitlines()
@@ -435,9 +442,9 @@ def build(markdown_path, output_path, short_title):
 
     core = document.core_properties
     core.title = lines[0].lstrip("# ")
-    core.subject = "Revision v1.5 review edition; evidence through revision stage 35"
+    core.subject = subject
     core.author = "William Wei; Lanlan Liu"
-    core.comments = "Prepared as an evidence-bounded review manuscript on 27 September 2026."
+    core.comments = comments
     output_path.parent.mkdir(parents=True, exist_ok=True)
     document.save(output_path)
 
