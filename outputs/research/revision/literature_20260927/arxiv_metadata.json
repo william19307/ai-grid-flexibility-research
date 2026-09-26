@@ -1,0 +1,93 @@
+{
+  "2609.09787": {
+    "arxiv_id": "2609.09787",
+    "title": "Spatial LLM Workload Shifting Needs Foresight: Model Commitment for AI Data Center Operation under Power Grid Constraints",
+    "published": "2026-09-09T06:37:48Z",
+    "updated": "2026-09-09T06:37:48Z",
+    "authors": [
+      "Bojun Du",
+      "Hongyang Jia",
+      "Tonghui Li",
+      "Qingchun Hou",
+      "Ze Wang",
+      "Ershun Du",
+      "Ning Zhang"
+    ],
+    "summary": "AI data centers may face power supply shortages during certain periods, requiring operators to shift large language model (LLM) inference workloads spatially to maintain service rates. However, existing workload-shifting methods typically assume that any data center with sufficient computing resources can immediately serve shifted requests, which may lead to infeasible transfers and unserved demand. This letter proposes model commitment (MC), a mixed-integer linear programming framework that jointly schedules model deployment and cross-site request routing under power constraints and electricity-price signals. First, MC formulates the intertemporal coupling introduced by model replica loading. Second, it translates prefill and decode latency requirements into the amount of demand that each replica can serve. Case studies based on real-world data show that MC enables AI data center operators to achieve a 100% service rate under time-varying grid conditions and reduce total operating cost by 29.0%."
+  },
+  "2309.16792": {
+    "arxiv_id": "2309.16792",
+    "title": "Agent Coordination via Contextual Regression (AgentCONCUR) for Data Center Flexibility",
+    "published": "2023-09-28T18:39:42Z",
+    "updated": "2024-06-20T02:14:09Z",
+    "authors": [
+      "Vladimir Dvorkin"
+    ],
+    "summary": "A network of spatially distributed data centers can provide operational flexibility to power systems by shifting computing tasks among electrically remote locations. However, harnessing this flexibility in real-time through the standard optimization techniques is challenged by the need for sensitive operational datasets and substantial computational resources. To alleviate the data and computational requirements, this paper introduces a coordination mechanism based on contextual regression. This mechanism, abbreviated as AgentCONCUR, associates cost-optimal task shifts with public and trusted contextual data (e.g., real-time prices) and uses regression on this data as a coordination policy. Notably, regression-based coordination does not learn the optimal coordination actions from a labeled dataset. Instead, it exploits the optimization structure of the coordination problem to ensure feasible and cost-effective actions. A NYISO-based study reveals large coordination gains and the optimal features for the successful regression-based coordination."
+  },
+  "2601.22487": {
+    "arxiv_id": "2601.22487",
+    "title": "Coordinating GPU Data Centers and Power Grid Regulation Service for Exogenous Carbon Benefits",
+    "published": "2026-01-30T02:57:34Z",
+    "updated": "2026-06-24T23:39:52Z",
+    "authors": [
+      "Ali Jahanshahi",
+      "Sara Rashidi Golrouye",
+      "Osten Anderson",
+      "Nanpeng Yu",
+      "Daniel Wong"
+    ],
+    "summary": "The rapid growth of AI/ML data centers has led to higher energy consumption and carbon emissions. The shift to renewable energy and growing data center energy demands can destabilize the power grid. Power grids rely on frequency regulation reserves, typically fossil-fueled power plants, to stabilize and balance the supply and demand of electricity. This paper sheds light on the hidden carbon emissions of frequency regulation service. Our work explores how modern GPU data centers can coordinate with power grids to reduce the need for fossil-fueled frequency regulation reserves. We first introduce a novel metric, Exogenous Carbon, to quantify grid-side carbon emission reductions resulting from data center participation in regulation service. We additionally introduce EcoCenter, a framework to maximize the amount of frequency regulation provision that GPU data centers can provide, and thus, reduce the amount of frequency regulation reserves necessary. We demonstrate that data center participation in frequency regulation can result in Exogenous carbon savings that can outweigh operational carbon emissions"
+  },
+  "2408.00741": {
+    "arxiv_id": "2408.00741",
+    "title": "DynamoLLM: Designing LLM Inference Clusters for Performance and Energy Efficiency",
+    "published": "2024-08-01T17:40:45Z",
+    "updated": "2024-08-01T17:40:45Z",
+    "authors": [
+      "Jovan Stojkovic",
+      "Chaojie Zhang",
+      "Íñigo Goiri",
+      "Josep Torrellas",
+      "Esha Choukse"
+    ],
+    "summary": "The rapid evolution and widespread adoption of generative large language models (LLMs) have made them a pivotal workload in various applications. Today, LLM inference clusters receive a large number of queries with strict Service Level Objectives (SLOs). To achieve the desired performance, these models execute on power-hungry GPUs causing the inference clusters to consume large amount of energy and, consequently, result in excessive carbon emissions. Fortunately, we find that there is a great opportunity to exploit the heterogeneity in inference compute properties and fluctuations in inference workloads, to significantly improve energy-efficiency. However, such a diverse and dynamic environment creates a large search-space where different system configurations (e.g., number of instances, model parallelism, and GPU frequency) translate into different energy-performance trade-offs. To address these challenges, we propose DynamoLLM, the first energy-management framework for LLM inference environments. DynamoLLM automatically and dynamically reconfigures the inference cluster to optimize for energy and cost of LLM serving under the service's performance SLOs. We show that at a service-level, DynamoLLM conserves 53% energy and 38% operational carbon emissions, and reduces 61% cost to the customer, while meeting the latency SLOs."
+  },
+  "2606.25098": {
+    "arxiv_id": "2606.25098",
+    "title": "Power-Flexible AI Data Centers: A New Paradigm for Grid-Responsive Compute",
+    "published": "2026-06-23T19:13:19Z",
+    "updated": "2026-06-23T19:13:19Z",
+    "authors": [
+      "Chris Williams",
+      "Philip Colangelo",
+      "Ayse Coskun",
+      "Ethan Levine",
+      "Andy Neale",
+      "Ciaran Roberts",
+      "Shayan Sengupta",
+      "Nikhil Shirolkar",
+      "Varun Sivaram",
+      "Sarah Soares",
+      "Ethan Tiao",
+      "Scott Underwood",
+      "Daniel Wilson",
+      "Frank Sharp",
+      "Luke Wainwright",
+      "Harry Petty",
+      "Scott Wallace",
+      "Brandon Records"
+    ],
+    "summary": "The rapid expansion of artificial intelligence (AI) infrastructure is driving unprecedented growth in electricity demand from data centers. Traditional power-system planning treats large computing facilities as inflexible peak loads, leading to costly infrastructure upgrades and long delays in grid interconnection. Recent work has shown that AI clusters can reduce electricity consumption during peak demand through software-based workload orchestration. This article explores how modern GPU-based AI data centers can operate as grid-interactive assets that respond dynamically to power system conditions. We describe an architecture integrating grid signals, workload scheduling, and power telemetry for fine-grained cluster power control. Experimental results from a real-world deployment on a 130 kW GPU cluster demonstrate multiple forms of flexibility, including rapid load reduction, sustained curtailment, and carbon-aware operation while preserving service levels for priority jobs. We further demonstrate performance-aware load shifting across geographically distributed clusters, enabling workloads to migrate toward regions with lower grid stress. Together, these capabilities transform AI infrastructure from static electricity consumers into flexible resources that support grid reliability, accelerate interconnection, and improve computing sustainability."
+  },
+  "2608.30901": {
+    "arxiv_id": "2608.30901",
+    "title": "Flexible Training Workloads in Large-Scale AI Data Centers for Transient-Stability Support in Transmission-Constrained Power Systems",
+    "published": "2026-08-31T14:51:22Z",
+    "updated": "2026-08-31T14:51:22Z",
+    "authors": [
+      "Jae-Kyeong Kim"
+    ],
+    "summary": "The rapid expansion of large-scale artificial intelligence (AI) data centers is adding substantial, concentrated, and rapidly varying loads to transmission-constrained power systems. Although such load variations are generally regarded as operational challenges, this paper presents an alternative perspective in which the upward load flexibility of AI data centers could be coordinated for transient-stability support. To this end, this paper proposes training-induced load surge (TILS), a fast demand-side strategy that initiates or resumes flexible AI training workloads after fault clearing to increase active-power demand at electrically effective locations. The resulting load increase allows accelerating generators to supply additional electrical power, thereby reducing the accelerating-power imbalance and limiting the first-swing rotor-angle excursion. The underlying mechanism is first clarified in a single-machine infinite-bus (SMIB) system and then evaluated in the IEEE 39-bus system and a large-scale Korean power system. Results across all three systems demonstrate that TILS can increase the transient-stability-constrained generation limit. Larger responses, earlier activation, and siting at buses with a stronger electrical influence on the critical generators provide greater generation-limit increases. These results suggest that the upward load-response capability of AI data centers can provide complementary transient-stability support when sufficient electrical headroom, flexible workloads, and reliable grid-triggered activation are available."
+  }
+}

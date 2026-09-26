@@ -1,0 +1,16 @@
+{
+  "access_date": "2026-09-27",
+  "base_records": 16,
+  "new_records": 5,
+  "total_records": 21,
+  "crossref_records": 11,
+  "arxiv_records": 6,
+  "metadata_checks": 17,
+  "all_metadata_checks_pass": true,
+  "novelty_rows": 6,
+  "claim_rows": 6,
+  "broad_first_claims_remaining": 0,
+  "supported_current_contribution": "same-cohort factorial attribution under explicit completion benchmarks plus translation-boundary counterexamples",
+  "nature_energy_system_claim_ready": false,
+  "remaining_gate": "common-hardware service measurements and aligned fixed-investment held-out system validation"
+}

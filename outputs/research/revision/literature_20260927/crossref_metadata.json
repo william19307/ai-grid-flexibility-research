@@ -1,0 +1,208 @@
+{
+  "L01": {
+    "doi": "10.1038/s41560-025-01927-1",
+    "title": "AI data centres as grid-interactive assets",
+    "container_title": "Nature Energy",
+    "published_date_parts": [
+      2025,
+      12,
+      5
+    ],
+    "authors": [
+      "Philip Colangelo",
+      "Ayse K. Coskun",
+      "Jack Megrue",
+      "Ciaran Roberts",
+      "Shayan Sengupta",
+      "Varun Sivaram",
+      "Ethan Tiao",
+      "Aroon Vijaykar",
+      "Chris Williams",
+      "Daniel C. Wilson",
+      "Brandon Records",
+      "Zack MacFarland",
+      "Daniel Dreiling",
+      "Nathan Morey",
+      "Anuja Ratnayake",
+      "Baskar Vairamohan"
+    ],
+    "type": "journal-article",
+    "publisher": "Springer Science and Business Media LLC",
+    "url": "https://doi.org/10.1038/s41560-025-01927-1"
+  },
+  "L02": {
+    "doi": "10.1016/j.apenergy.2022.119930",
+    "title": "Remunerating space–time, load-shifting flexibility from data centers in electricity markets",
+    "container_title": "Applied Energy",
+    "published_date_parts": [
+      2022,
+      11
+    ],
+    "authors": [
+      "Weiqi Zhang",
+      "Victor M. Zavala"
+    ],
+    "type": "journal-article",
+    "publisher": "Elsevier BV",
+    "url": "https://doi.org/10.1016/j.apenergy.2022.119930"
+  },
+  "L04": {
+    "doi": "10.24149/wp2606",
+    "title": "Processing Power: The Effect of Data Centers on  Wholesale Electricity Markets",
+    "container_title": "Federal Reserve Bank of Dallas, Working Papers",
+    "published_date_parts": [
+      2026,
+      3
+    ],
+    "authors": [
+      "Owen Kay",
+      "Robert Reaser",
+      "Reid Taylor"
+    ],
+    "type": "journal-article",
+    "publisher": "Federal Reserve Bank of Dallas",
+    "url": "https://doi.org/10.24149/wp2606"
+  },
+  "L05": {
+    "doi": "10.1016/j.adapen.2024.100202",
+    "title": "Spatio-temporal load shifting for truly clean computing",
+    "container_title": "Advances in Applied Energy",
+    "published_date_parts": [
+      2025,
+      3
+    ],
+    "authors": [
+      "Iegor Riepin",
+      "Tom Brown",
+      "Victor M. Zavala"
+    ],
+    "type": "journal-article",
+    "publisher": "Elsevier BV",
+    "url": "https://doi.org/10.1016/j.adapen.2024.100202"
+  },
+  "L06": {
+    "doi": "10.1016/j.joule.2020.08.001",
+    "title": "Mitigating Curtailment and Carbon Emissions through Load Migration between Data Centers",
+    "container_title": "Joule",
+    "published_date_parts": [
+      2020,
+      10
+    ],
+    "authors": [
+      "Jiajia Zheng",
+      "Andrew A. Chien",
+      "Sangwon Suh"
+    ],
+    "type": "journal-article",
+    "publisher": "Elsevier BV",
+    "url": "https://doi.org/10.1016/j.joule.2020.08.001"
+  },
+  "L07": {
+    "doi": "10.1016/j.enpol.2017.07.018",
+    "title": "Shifting load through space–The economics of spatial demand side management using distributed data centers",
+    "container_title": "Energy Policy",
+    "published_date_parts": [
+      2017,
+      10
+    ],
+    "authors": [
+      "Gilbert Fridgen",
+      "Robert Keller",
+      "Markus Thimmel",
+      "Lars Wederhake"
+    ],
+    "type": "journal-article",
+    "publisher": "Elsevier BV",
+    "url": "https://doi.org/10.1016/j.enpol.2017.07.018"
+  },
+  "L09": {
+    "doi": "10.1145/3765611.3815593",
+    "title": "To Defer or To Shift? The Role of AI Data Center Flexibility on Grid Interconnection",
+    "container_title": "Proceedings of the 2026 ACM Sustainability Week",
+    "published_date_parts": [
+      2026,
+      6,
+      22
+    ],
+    "authors": [
+      "Yize Chen",
+      "Xiaogui Zheng"
+    ],
+    "type": "proceedings-article",
+    "publisher": "ACM",
+    "url": "https://doi.org/10.1145/3765611.3815593"
+  },
+  "L12": {
+    "doi": "10.1016/j.apenergy.2025.126020",
+    "title": "Decarbonizing data centers through regional bits migration: A comprehensive assessment of China's ‘eastern data, Western computing’ initiative and its global implications",
+    "container_title": "Applied Energy",
+    "published_date_parts": [
+      2025,
+      8
+    ],
+    "authors": [
+      "Yingbo Zhang",
+      "Hangxin Li",
+      "Shengwei Wang"
+    ],
+    "type": "journal-article",
+    "publisher": "Elsevier BV",
+    "url": "https://doi.org/10.1016/j.apenergy.2025.126020"
+  },
+  "L13": {
+    "doi": "10.1038/s44432-026-00013-5",
+    "title": "A net-grid-benefit test for interconnecting AI data centres",
+    "container_title": "npj Environmental Social Sciences",
+    "published_date_parts": [
+      2026,
+      6,
+      4
+    ],
+    "authors": [
+      "Shaikh Afnan Birahim"
+    ],
+    "type": "journal-article",
+    "publisher": "Springer Science and Business Media LLC",
+    "url": "https://doi.org/10.1038/s44432-026-00013-5"
+  },
+  "L14": {
+    "doi": "10.1049/stg2.70020",
+    "title": "Bi‐Level Optimisation Model for Harvesting Spatial‐Temporal Load Shifting Flexibility of Data Centres Using Endogenously Formed Locational Price Signal",
+    "container_title": "IET Smart Grid",
+    "published_date_parts": [
+      2025,
+      1
+    ],
+    "authors": [
+      "Ding Ma",
+      "Yujian Ye",
+      "Yizhi Wu",
+      "Dezhi Xu",
+      "Zhaohao Ding",
+      "Goran Strbac"
+    ],
+    "type": "journal-article",
+    "publisher": "Institution of Engineering and Technology (IET)",
+    "url": "https://doi.org/10.1049/stg2.70020"
+  },
+  "L17": {
+    "doi": "10.1016/j.ijepes.2026.111940",
+    "title": "Data center workload flexibility for power system demand response: Evidence from Alibaba traces",
+    "container_title": "International Journal of Electrical Power &amp; Energy Systems",
+    "published_date_parts": [
+      2026,
+      5
+    ],
+    "authors": [
+      "Adriano Caprara",
+      "Ying Yu",
+      "Fei Teng",
+      "Adrià Junyent-Ferré",
+      "Eduard Bullich-Massagué",
+      "Mònica Aragüés-Peñalba"
+    ],
+    "type": "journal-article",
+    "publisher": "Elsevier BV",
+    "url": "https://doi.org/10.1016/j.ijepes.2026.111940"
+  }
+}

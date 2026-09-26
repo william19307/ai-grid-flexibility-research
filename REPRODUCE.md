@@ -442,3 +442,12 @@ python work/research/analysis/validate_asset_identity.py --input-dir work/tmp/as
 ```
 
 构建器需 openpyxl（本机 3.1.5），验证器为标准库。恢复固定 GEM 工作簿和 asset_identity/source_access_log.json 的三个 raw_snapshot HTML，核对哈希。两个当前 GEM 页实际 revision 1280775/1280776，与旧缓存版本分开。109 来源行映射 107 候选资产、24,759 MW；11 项来源与 23 项实现检查及 7 文件同机重建通过。运行准入仍为零，详见 `revision/asset_identity/RUNBOOK.md`。
+
+### 阶段 36：文献增量与创新边界
+
+```bash
+python3 work/research/analysis/build_literature_revision.py
+python3 work/research/analysis/verify_literature_revision.py
+```
+
+第一条联网读取 Crossref 与 arXiv 当前元数据，保留原 16 项登记并新增 5 项 2026 年直接相关研究；第二条只读本地产物，核对 21 个连续唯一 ID、17 项元数据标题、6 条主张引用和 6 类创新边界。重跑可能反映出版商或预印本后续元数据更新，须审读差异后再提交，不能自动覆盖。该阶段核定广义首次主张为 0，当前支持贡献为同一固定群体的四格归因与转换边界反例；不生成硬件测量或省级系统结果。
