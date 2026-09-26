@@ -26,7 +26,12 @@ def main() -> int:
     with zipfile.ZipFile(TEMP, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
         for path in files:
             arcname = f"{PACKAGE.name}/{path.relative_to(PACKAGE).as_posix()}"
-            archive.write(path, arcname)
+            info = zipfile.ZipInfo(arcname, date_time=(2026, 9, 27, 0, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.create_system = 3
+            info.external_attr = 0o100644 << 16
+            info.flag_bits |= 0x800
+            archive.writestr(info, path.read_bytes(), compress_type=zipfile.ZIP_DEFLATED, compresslevel=9)
 
     manifest = json.loads((PACKAGE / "MANIFEST.json").read_text(encoding="utf-8"))
     expected = {item["path"]: item["sha256"] for item in manifest["files"]}
