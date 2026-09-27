@@ -488,3 +488,15 @@ v1.7 以阶段 37 固定提交 `b6da0c7` 为证据锚。先完成阶段 37 输�
 ```
 
 最终 DOCX 还必须用文档渲染器生成 PNG/PDF 并逐页检查。当前固定产物为 9 页 Letter；26 条参考文献全部引用并按首次出现排序，8 项内部证据、24 个 MLPerf 配对、2 张表和 1 幅图通过核验。验证不代表 Nature Energy 系统主张已就绪。
+
+
+## 阶段 38 与 v1.8
+
+恢复阶段 37 的官方固定提交及相同 NVIDIA 目录（增加 run_1/spl.txt、mlperf_log_detail.txt、power/client.json），运行：
+
+```sh
+python3 work/research/analysis/correct_mlperf_power_window.py
+python3 work/research/analysis/verify_mlperf_power_corrected.py
+```
+
+源字节清单在 `outputs/research/revision/mlperf_power_corrected/source_manifest.json`。此入口取代旧提取中的功率上限和均值口径，不能生成缺失的常规侧测量。材料入口为 `work/research/drafts/build_evidence_package_v18.py`，需 python-docx；Excel 入口为 `build_evidence_workbook_v18.mjs`，需通过桌面依赖加载器提供 artifact-tool。先运行 Python 生成工作中间表，在可解析该依赖的临时目录运行 JS；三个 DOCX 用 documents 技能渲染，再将同名 PDF 放回审读包。使用 `work/research/analysis/verify_review_package_v18.py` 核对 CSV/Excel、引用、空表和 PDF。文档工具依赖并非论文物理模型；本节不承诺全链路省级实证复现。

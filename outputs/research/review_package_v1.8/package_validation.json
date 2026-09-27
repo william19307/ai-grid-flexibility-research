@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "cells_compared_with_csv": 2105,
+  "table_rows": {
+    "Evidence gates": 6,
+    "Conditional factorials": 108,
+    "External power": 24,
+    "Provincial inputs": 10
+  },
+  "references": 26,
+  "pdf_pages": {
+    "core_paper_en_v1.8_review.pdf": 9,
+    "cover_letter_nature_energy_DRAFT.pdf": 1,
+    "supplementary_information_v1.8_review.pdf": 8
+  },
+  "field_observations": 0,
+  "provincial_holdout_executed": false,
+  "submission_ready": false,
+  "scope": "Export integrity and evidence-boundary verification, not empirical acceptance"
+}

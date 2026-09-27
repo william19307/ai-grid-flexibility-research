@@ -1,0 +1,11 @@
+input_group,available,missing_for_admission,evidence_path_from_outputs_research
+Load,2018 hourly source; 2020 annual calibration,Same-year hourly scope; AI embedded boundary,tables/china_load_input_audit.csv
+Thermal identity,"107 candidate assets, 24759 MW after one alias adjudication","Remaining identity, vintage and retirement confirmation",revision/asset_identity/asset_candidates.json
+Thermal operation,Technology and CHP classifications,Heat demand; min output; ramp; startup; outage; heat-rate evidence,revision/thermal_technology/fleet_staging.json
+Industrial supply,12 by-product-gas units; shared-fuel model implemented,"Site load, gas supply, auxiliaries, storage and net grid exchange",revision/captive_operating/annual_energy_disclosures.csv
+Reservoirs,Hydro classification and annual water-source audits,"Compatible hourly inflow, usable storage, head and release rules",tables/major_hydro_annual_source_volume_m3.csv
+Pumped storage,Separated from natural-inflow supply,"Observed efficiency, duration and operating boundary",revision/阶段01_抽水蓄能修正.md
+Wind and solar,Technology/vintage recovery; limited site diagnostics,Matched fleet and hourly observations; calibrated conversion/losses,revision/weather_site_technology/archived_sites_with_technology_and_vintage.csv
+Interprovincial exchange,Published line inventory and conflict checks,Study-year directional capability and operating constraints,tables/china_transmission_identity_checks.csv
+Forecast information,Decision-time interface exists,Timestamped archived participant-visible forecasts,revision/REVISION_STATUS.md
+Holdout provenance,Previously inspected weather years recorded,Untouched period or explicit retrospective designation,revision/fixed_fleet_annual/validation.json

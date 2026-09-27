@@ -259,6 +259,8 @@ def add_table(document, rows):
     }.get(len(rows[0]), [Inches(6.45 / len(rows[0]))] * len(rows[0]))
     for ridx, row_values in enumerate(rows):
         row = table.rows[ridx]
+        # Keep each evidence row intact across page boundaries.
+        row._tr.get_or_add_trPr().append(OxmlElement('w:cantSplit'))
         if ridx == 0:
             set_repeat_table_header(row)
         for cidx, value in enumerate(row_values):

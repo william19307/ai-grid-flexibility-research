@@ -1,0 +1,7 @@
+gate_id,requirement,status,available_evidence,completion_requirement
+G1,Paired whole-node AC measurement,missing,"No field data or equipment available (user, 2026-09-27)",Both arms; equal work/quality; full horizon; repeated uncertainty
+G2,Actual SLA and topology,missing,Historical trace and aggregate gang feasibility only,Versioned contract; devices; links; timestamped assignments
+G3,Provincial physical inputs,incomplete,Candidate inventories and scope audits,"Admitted load, generation, heat, water, exchanges and renewable observations"
+G4,Full-year held-out validation,not executed,Annual evaluator has synthetic checks only,Freeze investments and evaluate admitted unseen or explicitly retrospective years
+G5,Final SI and supplementary data,review draft,Corrected SI and review workbook supplied,Regenerate from final admitted empirical results
+G6,Final cover letter,draft,Existing submission ID retained; no new submission,Final findings and author/editorial declarations

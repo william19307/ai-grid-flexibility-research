@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "independently_recomputed_rows": 24,
+  "checks": [
+    "3d-unet-99/Offline",
+    "3d-unet-99.9/Offline",
+    "bert-99/Offline",
+    "bert-99/Server",
+    "bert-99.9/Offline",
+    "bert-99.9/Server",
+    "dlrm-v2-99/Offline",
+    "dlrm-v2-99/Server",
+    "dlrm-v2-99.9/Offline",
+    "dlrm-v2-99.9/Server",
+    "gptj-99/Offline",
+    "gptj-99/Server",
+    "gptj-99.9/Offline",
+    "gptj-99.9/Server",
+    "llama2-70b-99.9/Offline",
+    "llama2-70b-99.9/Server",
+    "resnet50/Offline",
+    "resnet50/Server",
+    "retinanet/Offline",
+    "retinanet/Server",
+    "rnnt/Offline",
+    "rnnt/Server",
+    "stable-diffusion-xl/Offline",
+    "stable-diffusion-xl/Server"
+  ],
+  "tolerance_w": 1e-09,
+  "scope": "Window sample arithmetic and four corrected cap values; not hardware or accuracy certification"
+}

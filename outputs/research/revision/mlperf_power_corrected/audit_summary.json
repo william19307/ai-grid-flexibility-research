@@ -1,0 +1,37 @@
+{
+  "source_commit": "343c3d2cb03f2ae02b1023a44e4a45ba4b8422ef",
+  "matched_rows": 24,
+  "corrected_cap_rows": [
+    {
+      "benchmark": "dlrm-v2-99.9",
+      "scenario": "Offline",
+      "old_cap_w": 275,
+      "corrected_cap_w": 450
+    },
+    {
+      "benchmark": "dlrm-v2-99.9",
+      "scenario": "Server",
+      "old_cap_w": 275,
+      "corrected_cap_w": 450
+    },
+    {
+      "benchmark": "llama2-70b-99.9",
+      "scenario": "Offline",
+      "old_cap_w": 350,
+      "corrected_cap_w": 450
+    },
+    {
+      "benchmark": "llama2-70b-99.9",
+      "scenario": "Server",
+      "old_cap_w": 350,
+      "corrected_cap_w": 450
+    }
+  ],
+  "window_ac_sample_mean_w_min": 4115.419133034379,
+  "window_ac_sample_mean_w_max": 5960.320166666666,
+  "minimum_window_samples": 600,
+  "standard_power_files_in_git_tree": [],
+  "method": "Arithmetic mean of aggregate SPL Watts samples within inclusive LoadGen power_begin/power_end timestamps as supplied; no clock transformation or extrapolation.",
+  "scope": "Secondary extraction; not an official recertification. Accuracy thresholds, clock synchronization and same physical serial number not independently established. No paired AC energy saving.",
+  "whole_node_energy_saving_computable": false
+}

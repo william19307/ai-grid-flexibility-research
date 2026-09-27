@@ -1,0 +1,1 @@
+job_id,contract_id,contract_version,arrival_utc,deadline_utc,required_gpus,memory_gb_per_gpu,work_fingerprint,quality_result
