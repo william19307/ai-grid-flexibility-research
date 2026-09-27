@@ -92,7 +92,7 @@ gates=[
  ['G5','Final SI and supplementary data','review draft','Corrected SI and review workbook supplied','Regenerate from final admitted empirical results'],
  ['G6','Final cover letter','draft','Existing submission ID retained; no new submission','Final findings and author/editorial declarations']]
 with (OUT/'data/evidence_gates.csv').open('w') as f:
- w=csv.writer(f);w.writerow(['gate_id','requirement','status','available_evidence','completion_requirement']);w.writerows(gates)
+ w=csv.writer(f,lineterminator="\n");w.writerow(['gate_id','requirement','status','available_evidence','completion_requirement']);w.writerows(gates)
 inputs=[
  ['Load','2018 hourly source; 2020 annual calibration','Same-year hourly scope; AI embedded boundary','tables/china_load_input_audit.csv'],
  ['Thermal identity','107 candidate assets, 24759 MW after one alias adjudication','Remaining identity, vintage and retirement confirmation','revision/asset_identity/asset_candidates.json'],
@@ -105,13 +105,13 @@ inputs=[
  ['Forecast information','Decision-time interface exists','Timestamped archived participant-visible forecasts','revision/阶段21_固定响应与非线性系统成本.md'],
  ['Holdout provenance','Previously inspected weather years recorded','Untouched period or explicit retrospective designation','revision/fixed_fleet_annual/validation.json']]
 with (OUT/'data/provincial_input_register.csv').open('w') as f:
- w=csv.writer(f);w.writerow(['input_group','available','missing_for_admission','evidence_path_from_outputs_research']);w.writerows(inputs)
+ w=csv.writer(f,lineterminator="\n");w.writerow(['input_group','available','missing_for_admission','evidence_path_from_outputs_research']);w.writerows(inputs)
 # Do not silently retain a guessed filename in the register.
 for row in inputs:
  if not (ROOT/'outputs/research'/row[3]).exists():
   row[3]='revision/REVISION_STATUS.md'
 with (OUT/'data/provincial_input_register.csv').open('w') as f:
- w=csv.writer(f);w.writerow(['input_group','available','missing_for_admission','evidence_path_from_outputs_research']);w.writerows(inputs)
+ w=csv.writer(f,lineterminator="\n");w.writerow(['input_group','available','missing_for_admission','evidence_path_from_outputs_research']);w.writerows(inputs)
 for src,dst in [(REV/'policy/certified_factorials.csv','conditional_factorials.csv'),(REV/'mlperf_power_corrected/matched_results.csv','external_power_corrected.csv')]:
     shutil.copy2(src,OUT/'data'/dst)
 for name in ['source_manifest','independent_verification','audit_summary']:

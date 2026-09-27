@@ -101,7 +101,7 @@ def main():
     normal_power = [x for x in tree if '/power/' in x or x.endswith('/spl.txt')]
     assert not normal_power
     with (OUT/'matched_results.csv').open('w') as f:
-        writer=csv.DictWriter(f,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
+        writer=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator="\n");writer.writeheader();writer.writerows(rows)
     summary=dict(source_commit=EXPECTED_COMMIT, matched_rows=len(rows), corrected_cap_rows=changes,
         window_ac_sample_mean_w_min=min(r['window_ac_sample_mean_w'] for r in rows),
         window_ac_sample_mean_w_max=max(r['window_ac_sample_mean_w'] for r in rows),
