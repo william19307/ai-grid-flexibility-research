@@ -2,6 +2,11 @@
 
 > **2026-09-27 最新接续（阶段 38 / v1.8）**：功率提取纠错见 `outputs/research/revision/阶段38_功率窗口纠错与实证交接.md`。4 条继承功率上限改为 450 W；24 条 LoadGen 窗口均值为 4.115–5.960 kW，独立 Decimal 复算通过。旧阶段 37 的 session 均值和相应功率上限不再是当前依据。最新材料为 `outputs/research/review_package_v1.8/`，含主文、SI、补充数据审读表、投稿信草稿和现场接收空表。用户已明确暂无现场数据或设备；双侧整机实测与实际 SLA/拓扑缺失，省级物理输入未完整准入，省级全年留出验证未执行。**本包未达到最终投稿状态。**
 
+## 中文阅读与公开数据路线澄清
+
+2026-09-27 新增 `outputs/research/review_package_v1.8_zh/`：主文、S1–S13、投稿信中文审读译稿及公开数据使用说明。**公开数据可以补证，不要求作者自有设备。** 阶段 10 已使用另一平台的公开整机实测；现有 MLPerf 常规侧缺交流日志。若公开资料提供可比较的两组整机测量、可关联的服务要求与设备拓扑，即可支持对应结论。若采用公开基准 SLO 或声明的合成拓扑，则保持条件模型表述，不声称生产实测。此次只完成翻译和解释，没有关闭实证门槛。
+
+
 
 更新：2026-09-27；研究核查已推进至修订阶段 37。阶段 37 固定并审计 MLPerf v4.0 同一 8×H100 DGX 的常规/MaxQ 性能和限功率侧交流整机测量，确认公开证据可约束任务相关性能代价，但因常规侧没有交流功率日志，仍不能计算整机节能率。v1.7 已以阶段 37 固定提交为证据锚生成，26 条参考文献、8 项内部证据和 9 页 Word/PDF 已完成结构与逐页复核；提交候选包已输出。原投稿归档和全部接手记录继续保留。
 
@@ -18,7 +23,7 @@ cd ai-grid-flexibility-research
 
 按以下顺序阅读：
 
-1. [v1.7 功率边界整合审读稿](outputs/research/revision/manuscript_v1.7/README.md)：先看当前主文、PDF 和引用验证；同硬件证据细节见[阶段 37 功率准入审计](outputs/research/revision/阶段37_MLPerf同硬件功率准入审计.md)，历史补充方法和原投稿归档见[当前论文整理包](outputs/research/current_paper_20260927/00_阅读说明.md)。
+1. 优先阅读 [v1.8 当前英文审读包](outputs/research/review_package_v1.8/README.md) 或 [v1.8 中文译稿](outputs/research/review_package_v1.8_zh/README.md)。以下为历史接续：[v1.7 功率边界整合审读稿](outputs/research/revision/manuscript_v1.7/README.md)：先看当前主文、PDF 和引用验证；同硬件证据细节见[阶段 37 功率准入审计](outputs/research/revision/阶段37_MLPerf同硬件功率准入审计.md)，历史补充方法和原投稿归档见[当前论文整理包](outputs/research/current_paper_20260927/00_阅读说明.md)。
 2. [当前修订状态](outputs/research/revision/REVISION_STATUS.md)：完成门槛、仍缺的证据及最新接续点。
 3. [当前主张状态](outputs/research/revision/CURRENT_CLAIM_STATUS.md)：哪些原稿结论需要撤回、限缩或重算。
 4. [研究日志](RESEARCH_LOG.md)：过程、失败记录、来源和各阶段提交。
@@ -61,7 +66,7 @@ cd ai-grid-flexibility-research
 
 ## 下一步实质工作
 
-v1.7 已完成整合与 Word/PDF 复核。硬件实证的下一步仍是同一节点上常规与候选档位的双侧交流功率、完成时间、质量、空闲和切换能量测量；公开 MLPerf 的单侧 MaxQ 功率不能替代。限定链条的独立复算可按 [阶段 28 操作说明](outputs/research/revision/reviewed_tariff_version/RUNBOOK.md) 使用显式审读版本；不得冒称旧 HTML 已恢复。下一实质工作结合 [阶段 30 操作说明](outputs/research/revision/captive_commissioning/RUNBOOK.md) 中已识别许可号补齐机组唯一身份、厂区净购售电与共享煤气边界；模型入口已由阶段 31 实现，但台账尚未形成可接入的实测参数包。复现见 `outputs/research/revision/industrial_coupling/RUNBOOK.md`。按阶段 33 `thermal_technology/RUNBOOK.md` 接续已有逐机组整理入口，补齐供热/身份及运行证据，继续建立技术、年代、燃料和用途一致的机组输入及明确的需求群体/跨省边界，再使用固定绝对 AI 群体入口重做省级形状敏感性。继续补齐实际服务/拓扑、真实决策时预测、水库/供热/机组运行及风光观测证据，然后进行固定投资的全年与样本外验证。最后从唯一结果来源重写主文、SI、数据表、图和投稿信，并交叉审读。详细门槛以当前状态表为准。
+当前 v1.8 已完成整合；中文阅读包已补充。硬件实证可通过合适公开实测或后续实验补齐，目标是同一节点上常规与候选档位的双侧交流功率、完成时间、质量、空闲和切换能量测量；公开 MLPerf 的单侧 MaxQ 功率不能替代。限定链条的独立复算可按 [阶段 28 操作说明](outputs/research/revision/reviewed_tariff_version/RUNBOOK.md) 使用显式审读版本；不得冒称旧 HTML 已恢复。下一实质工作结合 [阶段 30 操作说明](outputs/research/revision/captive_commissioning/RUNBOOK.md) 中已识别许可号补齐机组唯一身份、厂区净购售电与共享煤气边界；模型入口已由阶段 31 实现，但台账尚未形成可接入的实测参数包。复现见 `outputs/research/revision/industrial_coupling/RUNBOOK.md`。按阶段 33 `thermal_technology/RUNBOOK.md` 接续已有逐机组整理入口，补齐供热/身份及运行证据，继续建立技术、年代、燃料和用途一致的机组输入及明确的需求群体/跨省边界，再使用固定绝对 AI 群体入口重做省级形状敏感性。继续补齐实际服务/拓扑、真实决策时预测、水库/供热/机组运行及风光观测证据，然后进行固定投资的全年与样本外验证。最后从唯一结果来源重写主文、SI、数据表、图和投稿信，并交叉审读。详细门槛以当前状态表为准。
 
 已经向用户询问实际硬件/SLA，以及三省平台历史预测导出是否可提供；2026-09-27 已回复暂无现场数据或设备；三省历史预测导出仍未取得。不要把缺失数据替换成未标明的合成观测。
 

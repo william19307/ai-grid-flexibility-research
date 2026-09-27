@@ -1,0 +1,17 @@
+{
+  "edition": "v1.8 Chinese review translation",
+  "english_baseline_commit": "5ee24dfcaa879d25d58ad431fe4dca7781dac994",
+  "references_exactly_preserved": 26,
+  "supplement_sections": 13,
+  "equations_exactly_preserved": 5,
+  "key_numeric_tokens_present": true,
+  "figures_unchanged": true,
+  "rendered_pages_visually_inspected": {
+    "main": 10,
+    "si": 8,
+    "letter": 1
+  },
+  "new_empirical_observations": 0,
+  "new_provincial_annual_runs": 0,
+  "submission_ready": false
+}
