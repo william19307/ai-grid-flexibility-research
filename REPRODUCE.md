@@ -477,3 +477,14 @@ python3 work/research/analysis/verify_mlperf_power_pair.py
 ```
 
 构建器匹配 NVIDIA 8×H100 DGX 常规/MaxQ 的 24 个任务—精度—场景记录，读取有效性能、精度、MaxQ PTDaemon 交流功率和配置功率上限。来源提交、相对路径与 SHA-256 进入清单，原始 MLPerf 文件不再分发。16 项独立检查通过。常规侧没有系统功率日志，因而输出必须保持 `whole_node_energy_saving_computable=false`；本阶段不能校准 Helios 功率曲线或生成省级收益。
+
+### v1.7 功率边界整合审读稿
+
+v1.7 以阶段 37 固定提交 `b6da0c7` 为证据锚。先完成阶段 37 输出，再运行：
+
+```bash
+/Users/apple/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 work/research/drafts/build_manuscript_v17.py
+/Users/apple/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 work/research/analysis/verify_manuscript_v17.py
+```
+
+最终 DOCX 还必须用文档渲染器生成 PNG/PDF 并逐页检查。当前固定产物为 9 页 Letter；26 条参考文献全部引用并按首次出现排序，8 项内部证据、24 个 MLPerf 配对、2 张表和 1 幅图通过核验。验证不代表 Nature Energy 系统主张已就绪。

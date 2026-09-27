@@ -1,0 +1,12 @@
+{
+  "source": "outputs/research/revision/manuscript_v1.6/core_paper_en_v1.6_review.md",
+  "stage_37_evidence_commit": "b6da0c7",
+  "references": 26,
+  "cited_references": 26,
+  "references_in_first_appearance_order": true,
+  "internal_evidence_register_entries": 8,
+  "mlperf_matched_rows": 24,
+  "whole_node_energy_saving_computable": false,
+  "nature_energy_system_claim_ready": false,
+  "docx_created": true
+}
