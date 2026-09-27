@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "checks_passed": 16,
+  "checks": [
+    "24 matched benchmark-scenario-accuracy rows",
+    "rows are unique",
+    "positive paired performance",
+    "finite plausible performance ratios",
+    "plausible AC system-power means",
+    "at least 600 power samples per row",
+    "standard AC power absent",
+    "energy saving marked non-computable",
+    "accuracy records retained",
+    "source commit pinned",
+    "summary records zero standard-power rows",
+    "summary rejects savings claim",
+    "system descriptions match except name",
+    "only system-name field differs",
+    "source manifest covers raw evidence",
+    "raw repository data not redistributed"
+  ]
+}

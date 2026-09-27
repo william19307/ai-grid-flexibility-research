@@ -1,0 +1,11 @@
+{
+  "same_hardware_fields_after_name_exclusion": true,
+  "differences": {
+    "system_name": [
+      "NVIDIA DGX H100 (8x H100-SXM-80GB, TensorRT)",
+      "NVIDIA DGX H100 (8x H100-SXM-80GB, MaxQ, TensorRT)"
+    ]
+  },
+  "standard_system": "DGX-H100_H100-SXM-80GBx8_TRT",
+  "maxq_system": "DGX-H100_H100-SXM-80GBx8_TRT_MaxQ"
+}

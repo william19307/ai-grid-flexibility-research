@@ -466,3 +466,14 @@ python3 work/research/analysis/verify_literature_revision.py
 ```
 
 当前核验结果为：21 项直接相关研究，17 项 DOI/arXiv 元数据标题通过，37 项文献结构检查通过；Caprara 等 27 页正式版本全文审计 13 项通过；v1.6 含 23 条参考文献，全部被引用并按首次出现排序，7 项内部证据登记、2 张表和 1 幅图通过独立检查。Word 渲染为 8 页 Letter 版并逐页检查。以上检查认证引用完整性和声明边界，不认证省级系统收益或投稿就绪。
+
+### 阶段 37：MLPerf 同硬件功率准入审计
+
+先将 MLCommons 官方 `inference_results_v4.0` 固定提交 `343c3d2cb03f2ae02b1023a44e4a45ba4b8422ef` 的稀疏或完整副本放在 `work/tmp/mlperf-inference-v40`。该目录受 Git 排除，不随本仓库同步。然后运行：
+
+```bash
+python3 work/research/analysis/audit_mlperf_power_pair.py
+python3 work/research/analysis/verify_mlperf_power_pair.py
+```
+
+构建器匹配 NVIDIA 8×H100 DGX 常规/MaxQ 的 24 个任务—精度—场景记录，读取有效性能、精度、MaxQ PTDaemon 交流功率和配置功率上限。来源提交、相对路径与 SHA-256 进入清单，原始 MLPerf 文件不再分发。16 项独立检查通过。常规侧没有系统功率日志，因而输出必须保持 `whole_node_energy_saving_computable=false`；本阶段不能校准 Helios 功率曲线或生成省级收益。

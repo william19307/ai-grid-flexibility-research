@@ -1,0 +1,22 @@
+{
+  "source_repository": "https://github.com/mlcommons/inference_results_v4.0",
+  "source_commit": "343c3d2cb03f2ae02b1023a44e4a45ba4b8422ef",
+  "matched_result_rows": 24,
+  "unique_benchmark_accuracy_profiles": 13,
+  "scenarios": [
+    "Offline",
+    "Server"
+  ],
+  "all_performance_results_valid": true,
+  "all_accuracy_records_present": true,
+  "maxq_system_power_rows": 24,
+  "standard_system_power_rows": 0,
+  "maxq_to_standard_performance_ratio_min": 0.6513353115727002,
+  "maxq_to_standard_performance_ratio_median": 0.7457262552366659,
+  "maxq_to_standard_performance_ratio_max": 0.8202936780093203,
+  "maxq_measured_system_power_mean_w_min": 3776.898383,
+  "maxq_measured_system_power_mean_w_max": 5376.640283,
+  "whole_node_energy_saving_computable": false,
+  "admission_decision": "service_performance_admissible_power_savings_not_admissible",
+  "reason": "The same-system MaxP arm has no submitted AC system-power measurement."
+}

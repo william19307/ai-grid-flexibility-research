@@ -1,0 +1,46 @@
+{
+  "access_date": "2026-09-27",
+  "article": {
+    "title": "Characterization of high-resolution AI data center training workloads on single and multiple GPU nodes",
+    "authors": [
+      "Ahmed Abd Elaziz Elsayed",
+      "Abdullah Azhar Al-Obaidi",
+      "Hany E. Z. Farag"
+    ],
+    "journal": "Scientific Data",
+    "volume": 13,
+    "article_number": 1268,
+    "year": 2026,
+    "doi": "10.1038/s41597-026-07496-6",
+    "url": "https://www.nature.com/articles/s41597-026-07496-6"
+  },
+  "reported_scope": {
+    "node_sessions": 32,
+    "node_hardware": "8-GPU H100 and B200 nodes",
+    "node_sampling_interval_ms": 20,
+    "node_power_definition": "sum of individual GPU power telemetry",
+    "whole_node_ac_power": false,
+    "cpu_power_available_for_node_sessions": false
+  },
+  "text_anchors": [
+    {
+      "article_line": 167,
+      "finding": "CPU power and temperature were unavailable in the virtualized node-scale environment."
+    },
+    {
+      "article_line": 316,
+      "finding": "Multi-GPU node figures aggregate individual GPU power."
+    },
+    {
+      "article_line": 411,
+      "finding": "The paper explicitly defines node power as the sum of GPU powers because access was limited."
+    }
+  ],
+  "admission_decision": "admit_for_high_resolution_gpu_dynamics_only",
+  "excluded_uses": [
+    "whole-node AC calibration",
+    "facility overhead calibration",
+    "same-work power-mode energy savings",
+    "cooling or UPS response"
+  ]
+}
